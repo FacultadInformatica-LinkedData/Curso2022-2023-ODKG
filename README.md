@@ -1,7 +1,5 @@
-Course XXXX-XXXX
-================
-
-**Note to those forking this repository: Replace XXXX-XXXX with the years of the course everywhere here so that everything works**
+Course 2022-2023-ODKG
+=====================
 
 This is the repository that we will use for our collaborative work and for uploading all the assignments for our course.
 

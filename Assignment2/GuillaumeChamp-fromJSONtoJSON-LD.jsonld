@@ -1,0 +1,45 @@
+{
+  "@context :{
+    "my":"https://github.com/GuillaumeChamp",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "fullName": "rdfs:label",
+    "hometown": "rdfs:label",
+    "school": "rdfs:label",
+    "motherName": "rdfs:label",
+    "teachers": "rdfs:label",
+    "description": "rdfs:comment",
+    "name": "rdfs:label",
+    "age" : "rdfs:literal"
+  },
+  "@id": "https://github.com/GuillaumeChamp/me"
+  "@type": "my:ontology/personne"
+  "fullName" : "Guillaume Champtoussel",
+  "hometown" : "Vidauban",
+  "age" : 22,
+  "school" : "ENSEA",
+  "motherName" : "lisa",
+  "Subjects" :[
+    {
+      "@id":"https://github.com/GuillaumeChamp/topic/computerSecurity",
+      "@type":"my:ontology:topic"
+      "name" : "Computer Security",
+      "teachers" : [
+        "Dario Fiore",
+        "Ignacio Cascudo",
+        "Srdjan Matic",
+        "Juan Caballero"
+      ],
+      "description" : "This course will focus on providing the students with a global view of the field of computer security.\nClasses will be divided in 4 independent blocks of lectures, each lasting 3-4 weeks and taught by different\nteachers. Each block provides basic concepts in a core area of computer security: cryptography, physical\nsecurity, network security, and software security. Each block will comprise lectures to provide the student\nwith basic concepts and a homework to practice and demonstrate the learned concepts"
+    },
+    {
+      "@id":"https://github.com/GuillaumeChamp/topic/OpenData",
+      "@type":"my:ontology:topic"
+      "name" : "Open Data and Knowledge Graphs",
+      "teachers" : [
+        "Oscar Corcho",
+        "Daniel Garijo Verdejo"
+      ],
+      "description" : "During this course you will learn about the main foundations for Knowledge Graphs, including the W3C\nrecommendations that are applicable in this area (RDF, RDF Schema, SPARQL, OWL, CSV on the Web) and\nmethodologies for the generation and publication of Knowledge Graphs from multiple heterogeneous data sources\nand formats, using Linked Data technologies. You will also learn about how to create shared agreed vocabularies\nand ontologies that can give support to Knowledge Graph generation and publication, and will understand how\nthese principles and approaches have been applied to several domains. You will work on a practical hands-on\nexercise that will be the basis for your participation in hackatons and other similar events"
+    }
+  ]
+}

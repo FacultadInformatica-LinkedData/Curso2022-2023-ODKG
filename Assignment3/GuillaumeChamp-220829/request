@@ -1,1 +1,8 @@
-select distinct ?Concept where {?Concept a rdfs:Class} LIMIT 100
+select distinct ?class where {?Concept a ?class}
+select distinct ?subclass where {?subclass rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Establishment>}
+select distinct ?city where {?city a <http://GP-onto.fi.upm.es/exercise2#City>}
+
+prefix ns0:	<http://GP-onto.fi.upm.es/exercise2#>
+select ?city ?number where {
+?city rdfs:label "Santiago_de_Compostela".
+?city ns0:hasInhabitantNumber ?number}

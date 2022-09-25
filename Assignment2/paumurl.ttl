@@ -10,4 +10,4 @@ ex:Computer101 ex:hasOwner ex:User10A .
 ex:Measurement8401 ex:hasTemperature 29 ;
                    ex:atTime "2010-06-12T12:00:12"^^xsd:datetime .
 
-ex:User10A ex:hasName "Pedro .
+ex:User10A ex:hasName "Pedro" .

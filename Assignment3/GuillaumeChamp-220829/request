@@ -1,0 +1,1 @@
+select distinct ?Concept where {?Concept a rdfs:Class} LIMIT 100

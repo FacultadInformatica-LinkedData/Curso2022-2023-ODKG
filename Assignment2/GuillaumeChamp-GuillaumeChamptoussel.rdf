@@ -11,6 +11,6 @@
 :Sensor029
 	:hasMeasurement Measurement8401.
 :Measurement8401
-	:has Temperature29.
+	:hasTemperature 29.
 :Measurement8401
 	:atTime "2010-06-12T12:00:12"^^xsd:date

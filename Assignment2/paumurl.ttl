@@ -1,5 +1,5 @@
 @prefix ex: <http://example.org/#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema# .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ex:Class01 ex:includes ex:Sensor029, ex:Computer101 .
 

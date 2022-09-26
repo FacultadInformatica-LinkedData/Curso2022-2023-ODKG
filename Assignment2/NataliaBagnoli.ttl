@@ -1,0 +1,11 @@
+@prefisso cd: <http://www.recshop.fake/cd#> .
+@prefisso rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefisso xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.recshop.fake/cd/Beatles> cd:artista [
+    un rdf:Borsa;
+    rdf:_1 "Giovanni";
+    rdf:_2 "Paolo";
+    rdf:_3 "Giorgio";
+    rdf:_4 "Ringo"
+  ] .

@@ -1,8 +1,60 @@
-select distinct ?class where {?Concept a ?class}
-select distinct ?subclass where {?subclass rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Establishment>}
-select distinct ?city where {?city a <http://GP-onto.fi.upm.es/exercise2#City>}
+Q1
+prefix ont:<http://dbpedia.org/ontology/>
+prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select ?property where {
+  ont:Politician ?property ?value .
+}
 
-prefix ns0:	<http://GP-onto.fi.upm.es/exercise2#>
-select ?city ?number where {
-?city rdfs:label "Santiago_de_Compostela".
-?city ns0:hasInhabitantNumber ?number}
+Q2
+prefix ont:<http://dbpedia.org/ontology/>
+prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select ?property where {
+  ont:Politician ?property ?value.
+     FILTER(?property not in ( rdf:type ))
+}
+
+Q3
+prefix ont:<http://dbpedia.org/ontology/>
+prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select distinct ?value ?property where {
+  ont:Politician ?property ?value.
+     FILTER(?property not in ( rdf:type ))
+}
+
+Q4
+prefix ont:<http://dbpedia.org/ontology/>
+prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+select distinct ?value ?property where {
+  ont:Politician ?property ?value.
+     FILTER(?property in ( rdfs:label ))
+}
+
+prefix ont:<http://dbpedia.org/ontology/>
+prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+select distinct ?value ?property where {
+  ont:Politician ?property ?value.
+     FILTER(?property in ( <http://xmlns.com/foaf/0.1/topic> ))
+}
+
+prefix ont:<http://dbpedia.org/ontology/>
+prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+select distinct ?value ?property where {
+  ont:Politician ?property ?value.
+     FILTER(?property in ( <http://www.w3.org/2007/05/powder-s#describedby> ))
+}
+other have only one value
+
+Q5 :
+prefix ont:<http://dbpedia.org/ontology/>
+prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select distinct (count(distinct ?value) as ?number) ?property where {
+  ont:Politician ?property ?value.
+     FILTER(?property not in ( rdf:type))
+}

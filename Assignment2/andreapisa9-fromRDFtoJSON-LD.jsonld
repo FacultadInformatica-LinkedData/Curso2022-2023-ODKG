@@ -13,39 +13,27 @@
       "@id": "class:Class01",
       "pred:includes": [
         {
-          "@id": "sensor:Sensor029"
+          "@id": "sensor:Sensor029",
+          "pred:hasMeasurement": {
+            "@id": "mes:Measurement8401",
+            "pred:hasTempreature": {
+              "@type": "xsd:integer",
+              "@value": "29"
+            }
+          },
+            "pred:atTime": {
+              "@type": "xsd:dateTime",
+              "@value": "2010-06-12T12:00:12"
+            }
         },
         {
-          "@id": "comp:Computer01"
+          "@id": "comp:Computer01",
+          "pred:hasOwner": {
+            "@id": "user:User10A",
+            "pred:hasName": "Pedro"
+          }
         }
       ]
-    },
-    {
-      "@id": "sensor:Sensor029",
-      "pred:hasMeasurement": {
-        "@id": "mes:Measurement8401"
-      }
-    },
-    {
-      "@id": "comp:Computer01",
-      "pred:hasOwner": {
-        "@id": "user:User10A"
-      }
-    },
-    {
-      "@id": "mes:Measurement8401",
-      "pred:hasTempreature": {
-        "@type": "xsd:integer",
-        "@value": "29"
-      },
-      "pred:atTime": {
-        "@type": "xsd:dateTime",
-        "@value": "2010-06-12T12:00:12"
-      }
-    },
-    {
-      "@id": "user:User10A",
-      "pred:hasName": "Pedro"
     }
   ]
 }

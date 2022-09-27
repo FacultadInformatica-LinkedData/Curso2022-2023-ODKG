@@ -2,11 +2,12 @@
   "@context :{
     "my":"https://github.com/GuillaumeChamp",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "fullName": "rdfs:label",
-    "hometown": "rdfs:label",
-    "school": "rdfs:label",
-    "motherName": "rdfs:label",
-    "teachers": "rdfs:label",
+    "vcard": "https://www.w3.org/2001/vcard-rdf/3.0#",
+    "fullName": "vcard:FN",
+    "hometown": "rdfs:Locality",
+    "school": "vcard:Orgname",
+    "motherName": "vcard:FN",
+    "teachers": "vcard:FN",
     "description": "rdfs:comment",
     "name": "rdfs:label",
     "age" : "rdfs:literal"

@@ -32,17 +32,17 @@
    }
    {
  	 “@id”: “http://www.namespace.es/natalia#”,
-   “@type”:”person/mysubjects”,
-   "subjectName": “Data Mining And Time Series”, 
-   “teachers”: [“Juan Pedro Caraca-Valente Hernandez”, “Aurora Perez Perez”], 
-   “description”:"During this course you will learn he main techniques of Data Mining including Classification and Clustering techniques. Some more recent methods for Data Analysis, including Deep Learning Techniques will also be covered."
+         “@type”:”person/mysubjects”,
+         "subjectName": “Data Mining And Time Series”, 
+         “teachers”: [“Juan Pedro Caraca-Valente Hernandez”, “Aurora Perez Perez”], 
+         “description”:"During this course you will learn he main techniques of Data Mining including Classification and Clustering techniques. Some more recent methods for Data Analysis, including Deep Learning Techniques will also be covered."
    }
    {
  	 “@id”: “http://www.namespace.es/natalia#”,
-   “@type”:”person/mysubjects”,
-   "subjectName": “Complex Data In Health”, 
-   “teachers”: [“Antonio Jesus Diaz Honrubia”, “Ernestina Menasalvas Ruiz”, "Alejandro Rodriguez Gonzalez"], 
-   “description”: "The aim of the subject is to identify various types of data that can co-exist in the context of health data and how to approach its manipulation, processing, and analysis.."
+         “@type”:”person/mysubjects”,
+         "subjectName": “Complex Data In Health”, 
+         “teachers”: [“Antonio Jesus Diaz Honrubia”, “Ernestina Menasalvas Ruiz”, "Alejandro Rodriguez Gonzalez"], 
+         “description”: "The aim of the subject is to identify various types of data that can co-exist in the context of health data and how to approach its manipulation, processing, and analysis.."
    }
    ] 
 }

@@ -1,0 +1,16 @@
+@prefix : <Assignment2.org/entities#>
+@prefix p: <Assignment2.org/properties#>
+
+:Class01 
+    p:includes :Sensor029;
+    p:includes :Computer101
+
+:Sensor029 p:hasMeasurement :Measurement8401
+
+:Computer101 p:hasOwner :User10A
+
+:Measurement8401
+    p:hasTemperature "29";
+    p:atTime "2010-06-12T 12:00:12"
+
+:User10A p:hasName "Pedro"

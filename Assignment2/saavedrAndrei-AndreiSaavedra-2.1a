@@ -1,0 +1,17 @@
+PREFIX : <http://www.ontogrid.net/StickyNote#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+:event3 a :PinarAlper .
+:event3 a :CaroleGoble .
+:event3 :release_date "2006-05-15"^^xsd:date .
+
+:event4 a :OscarCorcho .
+:event4 :release_date "2006-05-16"^^xsd:date .
+
+:event5 a :CaroleGoble .
+:event5 :release_date "2006-05-15"^^xsd:date .
+
+

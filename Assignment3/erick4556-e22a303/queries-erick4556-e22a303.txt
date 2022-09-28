@@ -1,0 +1,39 @@
+1. Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
+
+select distinct ?p where {
+?i a <http://dbpedia.org/ontology/Politician>.
+?i ?p ?o.
+}
+
+2. Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+
+select distinct ?p where {
+?i a <http://dbpedia.org/ontology/Politician>.
+?i ?p ?o.
+filter (?p!=rdf:type)
+} 
+
+3. Which different values exist for the properties, except rdf:type, of the instances of the Politician class?
+
+select distinct ?o where {
+?i a <http://dbpedia.org/ontology/Politician>.
+?i ?p ?o.
+filter (?p!=rdf:type)
+}
+
+4. For each of the properties, except rdf:type, that can be applied to instances of the Politician class, which different values do they take in those instances?
+
+select distinct ?p ?o where {
+?i a <http://dbpedia.org/ontology/Politician>.
+?i ?p ?o.
+filter (?p!=rdf:type)
+} 
+
+5. For each of the properties, except rdf:type, that can be applied to instances of the Politician class, how many distinct values do they take in those instances?
+
+PREFIX endp: <http://dbpedia.org/ontology/Politician>
+select distinct ?p count(distinct ?o) as ?c_values where {
+?i a endp:.
+?i ?p ?o.
+filter (?p!=rdf:type)
+}

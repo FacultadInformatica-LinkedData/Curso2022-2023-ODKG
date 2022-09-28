@@ -1,1 +1,65 @@
+1. Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
+*SPARQL Query:
+prefix db:<http://dbpedia.org/ontology/>
 
+SELECT  ?prop
+WHERE {
+ ?pol a db:Politician.
+ ?pol ?prop ?val
+}
+*Result:
+https://es.dbpedia.org/sparql?default-graph-uri=&query=prefix+db%3A%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT++%3Fprop%0D%0AWHERE+%7B%0D%0A+%3Fpol+a+db%3APolitician.%0D%0A+%3Fpol+%3Fprop+%3Fval%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+2. Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+*SPARQL Query:
+prefix db:<http://dbpedia.org/ontology/>
+
+SELECT  ?prop
+WHERE {
+ ?pol a db:Politician.
+ ?pol ?prop ?val.
+ FILTER(?prop!=rdf:type)
+}
+*Result:
+https://es.dbpedia.org/sparql?default-graph-uri=&query=prefix+db%3A%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT++%3Fprop%0D%0AWHERE+%7B%0D%0A+%3Fpol+a+db%3APolitician.%0D%0A+%3Fpol+%3Fprop+%3Fval.%0D%0A+FILTER%28%3Fprop%21%3Drdf%3Atype%29%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+3. Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+*SPARQL Query:
+prefix db:<http://dbpedia.org/ontology/>
+
+SELECT distinct ?prop
+WHERE {
+ ?pol a db:Politician.
+ ?pol ?prop ?val.
+ FILTER(?prop!=rdf:type)
+}
+*Result:
+https://es.dbpedia.org/sparql?default-graph-uri=&query=prefix+db%3A%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+distinct+%3Fprop%0D%0AWHERE+%7B%0D%0A+%3Fpol+a+db%3APolitician.%0D%0A+%3Fpol+%3Fprop+%3Fval.%0D%0A+FILTER%28%3Fprop%21%3Drdf%3Atype%29%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+4. For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+*SPARQL Query:
+prefix db:<http://dbpedia.org/ontology/>
+
+SELECT distinct ?prop ?val
+WHERE {
+ ?pol a db:Politician.
+ ?pol ?prop ?val.
+ FILTER(?prop!=rdf:type)
+}
+*Result:
+https://es.dbpedia.org/sparql?default-graph-uri=&query=prefix+db%3A%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+distinct+%3Fprop+%3Fval%0D%0AWHERE+%7B%0D%0A+%3Fpol+a+db%3APolitician.%0D%0A+%3Fpol+%3Fprop+%3Fval.%0D%0A+FILTER%28%3Fprop%21%3Drdf%3Atype%29%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+
+
+5. For each of these applicable properties, except for rdf:type, how many distinct values do they take globally for all those instances?
+*SPARQL Query:
+prefix db:<http://dbpedia.org/ontology/>
+
+SELECT distinct ?prop count(distinct ?val) as ?Values
+WHERE {
+ ?pol a db:Politician.
+ ?pol ?prop ?val.
+ FILTER(?prop!=rdf:type)
+}
+*Result:
+https://es.dbpedia.org/sparql?default-graph-uri=&query=prefix+db%3A%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+distinct+%3Fprop+count%28distinct+%3Fval%29+as+%3FValues%0D%0AWHERE+%7B%0D%0A+%3Fpol+a+db%3APolitician.%0D%0A+%3Fpol+%3Fprop+%3Fval.%0D%0A+FILTER%28%3Fprop%21%3Drdf%3Atype%29%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+

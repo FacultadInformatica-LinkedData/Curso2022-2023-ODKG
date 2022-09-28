@@ -32,7 +32,6 @@ for s, p, o in g:
 
 """
 
-# Visualize the results
 g.add((ns.University, RDF.type, RDFS.Class))
 for s, p, o in g.triples((None, RDF.type, RDFS.Class)):
   print(s)
@@ -45,7 +44,6 @@ for s, p, o in g.triples((None, RDFS.subClassOf, ns.Person)):
 
 """**TASK 6.3: Create a new individual of Researcher named "Jane Smith"**"""
 
-# Visualize the results
 g.add((ns.JaneSmith,RDF.type,ns.Researcher))
 for s, p, o in g.triples((None, RDF.type, ns.Researcher)):
   print(s,p,o)
@@ -58,8 +56,6 @@ g.add((ns.JaneSmith, vcard.Given, Literal("Jane")))
 g.add((ns.JaneSmith, vcard.Family, Literal("Smith")))
 
 
-# Visualize the results
-
 for s, p, o in g.triples((ns.JaneSmith, None, None)):
   print(s,p,o)
 
@@ -69,7 +65,6 @@ vcard = Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
 g.add((ns.UPM, RDF.type, ns.University))
 g.add((ns.JohnSmith, vcard.work, ns.UPM))
 
-# Visualize the results
 
 for s, p, o in g.triples((ns.JohnSmith, vcard.work, None)):
   print(s,p,o)

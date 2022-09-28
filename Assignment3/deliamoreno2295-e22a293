@@ -1,1 +1,65 @@
+1. Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
+
+
+PREFIX pol: <http://dbpedia.org/ontology/> 
+select  ?predicate  where {
+ ?subject a pol:Politician .
+?subject ?predicate ?object.
+
+}
+Resultados 1:
+https://dbpedia.org/sparql/?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=PREFIX+pol%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E+%0D%0Aselect++%3Fpredicate++where+%7B%0D%0A+%3Fsubject+a+pol%3APolitician+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject.%0D%0A%0D%0A%7D&format=text%2Fhtml&timeout=30000&signal_void=on&signal_unconnected=on
+
+2. Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+
+PREFIX pol: <http://dbpedia.org/ontology/> 
+select  ?predicate  where {
+ ?subject a pol:Politician .
+?subject ?predicate ?object.
+filter (?predicate!=rdf:type)
+
+}
+
+Resultados 2:
+https://dbpedia.org/sparql/?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=PREFIX+pol%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E+%0D%0Aselect++%3Fpredicate++where+%7B%0D%0A+%3Fsubject+a+pol%3APolitician+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject.%0D%0Afilter+%28%3Fpredicate%21%3Drdf%3Atype%29%0D%0A%0D%0A%7D%0D%0A&format=text%2Fhtml&timeout=30000&signal_void=on&signal_unconnected=on
+
+3. Which different values exist for the properties, except rdf:type, of the instances of the Politician class?
+
+PREFIX pol: <http://dbpedia.org/ontology/> 
+select distinct ?predicate  where {
+ ?subject a pol:Politician .
+?subject ?predicate ?object.
+filter (?predicate!=rdf:type)
+
+} 
+
+Resultados 3:
+https://dbpedia.org/sparql/?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=PREFIX+pol%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E+%0D%0Aselect+distinct+%3Fpredicate++where+%7B%0D%0A+%3Fsubject+a+pol%3APolitician+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject.%0D%0Afilter+%28%3Fpredicate%21%3Drdf%3Atype%29%0D%0A%0D%0A%7D+%0D%0A&format=text%2Fhtml&timeout=30000&signal_void=on&signal_unconnected=on
+
+4. For each of the properties, except rdf:type, that can be applied to instances of the Politician class, which different values do they take in those instances?
+
+
+PREFIX pol: <http://dbpedia.org/ontology/> 
+select distinct ?predicate ?object  where {
+ ?subject a pol:Politician .
+?subject ?predicate ?object.
+filter (?predicate!=rdf:type)
+
+} 
+
+Resultados 4:
+https://dbpedia.org/sparql/?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=%0D%0APREFIX+pol%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E+%0D%0Aselect+distinct+%3Fpredicate+%3Fobject++where+%7B%0D%0A+%3Fsubject+a+pol%3APolitician+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject.%0D%0Afilter+%28%3Fpredicate%21%3Drdf%3Atype%29%0D%0A%0D%0A%7D+%0D%0A&format=text%2Fhtml&timeout=30000&signal_void=on&signal_unconnected=on
+
+5. For each of the properties, except rdf:type, that can be applied to instances of the Politician class, how many distinct values do they take in those instances?
+
+PREFIX pol: <http://dbpedia.org/ontology/> 
+select distinct ?predicate count(distinct ?object) as ?conteo  where {
+ ?subject a pol:Politician .
+?subject ?predicate ?object.
+filter (?predicate!=rdf:type)
+
+} 
+
+Resultados 5:
+https://dbpedia.org/sparql/?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=%0D%0APREFIX+pol%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E+%0D%0Aselect+distinct+%3Fpredicate+count%28distinct+%3Fobject%29+as+%3Fconteo++where+%7B%0D%0A+%3Fsubject+a+pol%3APolitician+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject.%0D%0Afilter+%28%3Fpredicate%21%3Drdf%3Atype%29%0D%0A%0D%0A%7D+&format=text%2Fhtml&timeout=30000&signal_void=on&signal_unconnected=on
 

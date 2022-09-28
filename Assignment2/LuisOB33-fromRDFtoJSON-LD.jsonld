@@ -1,0 +1,37 @@
+{
+    "@context":{
+        "ex":"http://www.example.org/#",
+        "xml":"http://www.w3.org/2001/XMLSchema#",
+        "Graph": "ex:Graph"
+    },
+    "@id":"GraphExercise",
+    "@type":"ex:Graph",
+    "Graph":[
+        {
+            "@id":"ex:Class01",
+            "ex:includes":[
+                {"@id":"ex:Sensor029"},
+                {"@id":"ex:Computer101"}
+            ]
+        },
+        {
+            "@id":"ex:Computer101",
+            "ex:hasOwner":{"@id":"ex:User10A"}
+        },
+        {   "@id":"ex:Measurement8401",
+            "ex:hasTemperature":{"@value":29},
+            "ex:atTime":{
+                "@value":"2010-06-12T12:00:12",
+                "@type":"xml:date"
+            }
+        },
+        {
+            "@id":"ex:Sensor029",
+            "ex:hasMeasurement":{"@id":"ex:Measurement8401"}
+        },
+        {
+            "@id":"ex:User10A",
+            "ex:hasName":{"@value":"Pedro"}
+        }
+    ]
+}

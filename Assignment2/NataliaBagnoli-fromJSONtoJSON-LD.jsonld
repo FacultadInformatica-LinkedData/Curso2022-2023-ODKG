@@ -1,0 +1,97 @@
+{
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#”,
+    “predicate”:  "http://www.namespace.es/predicate#”,
+    “town”:  "http://www.namespace.es/town#”,
+    “person”: "http://www.namespace.es/person#”,
+    “university”: "http://www.namespace.es/university#”,
+    “subject”:  "http://www.namespace.es/subject#”,
+  },
+  "@graph": [
+  {
+	"@id": ”person:NataliaBagnoli”,
+	“predicate:fullName”: {
+			“@value”: “Natalia Bagnoli”,
+			“@type”: “xsd:string”
+	},
+  “predicate:homeTown”: {
+	     “@id”: “town:Italy”
+	}, 
+	“predicate:age”: {
+			“@value”: “23”,
+			“@type”: “xsd:integer”
+	},
+	“predicate:almaMater”: {
+			“@id”: “university:Politecnico Of Milan”
+	},
+	“predicate:mother”: {
+			“@id”: “person:Giovanna”
+	},
+	“predicate:father”: {
+			“@id”: “person:Francesco”
+	},
+	“predicate:subjects”: [
+	{
+			“@id”: “subject:Open Data And Knowledge Graphs”
+	},
+	{
+			“@id”: “subject:Data Mining And Time Series”
+  },
+	{
+			“@id”: “subject:Complex Data In Health”
+	}
+	]
+	},
+	{
+	“@id”: “subject:Open Data And Knowledge Graphs”,
+	“predicate:subjectName”: {
+			“@value”: “Open Data And Knowledge Graphs”,
+			“@type”: “xsd:string”
+	},
+	“predicate:teacher”: [
+	{
+			“@id”: “person:Oscar Corcho Garcia”
+	},
+       {
+			“@id”: “person:Raul Garcia Castro”
+	}],
+	“predicate:description”: {
+			“@value”: “During this course you will learn about the main foundations for Knowledge Graphs and methodologies for the generation and publication of Knowledge Graphs from multiple heterogeneous data sources and formats, using Linked Data technologies.”,
+			“@type”: “xsd:string”
+	}},
+	{
+	“@id”: “subject:Data Mining And Time Series”,
+	“predicate:subjectName”: {
+			“@value”: “Data Mining And Time Series”,
+			“@type”: “xsd:string”
+	},
+	“predicate:teacher”: [
+	{
+			“@id”: “person:Juan Pedro Caraca-Valente Hernandez”
+	},
+       {
+			“@id”: “person:Aurora Perez Perez”
+	}],
+	“predicate:description”: {
+			“@value”: “During this course you will learn he main techniques of Data Mining including Classification and Clustering techniques. Some more recent methods for Data Analysis, including Deep Learning Techniques will also be covered.”,
+			 “@type”: “xsd:string”
+	}},
+	{
+	“@id”: “subject:Complex Data In Health”,
+	“predicate:subjectName”: {
+			“@value”: “Complex Data In Health”,
+			“@type”: “xsd:string”
+	},
+	“predicate:teacher”: [
+	{
+			“@id”: “person:Antonio Jesus Diaz Honrubia”
+	},
+       {
+			“@id”: “person:Ernestina Menasalvas Ruiz”
+	}],
+	“predicate:description”: {
+			“@value”: “The aim of the subject is to identify various types of data that can co-exist in the context of health data and how to approach its manipulation, processing, and analysis.”,
+			 “@type”: “xsd:string”
+	}}
+  ]
+}

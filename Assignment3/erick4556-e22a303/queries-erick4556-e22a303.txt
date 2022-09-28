@@ -5,6 +5,8 @@ select distinct ?p where {
 ?i ?p ?o.
 }
 
+Result: https://es.dbpedia.org/sparql?default-graph-uri=&query=select+distinct+%3Fp+where+%7B%0D%0A%3Fi+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E.%0D%0A%3Fi+%3Fp+%3Fo.%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
 2. Get all the properties, except rdf:type, that can be applied to instances of the Politician class
 
 select distinct ?p where {
@@ -12,6 +14,8 @@ select distinct ?p where {
 ?i ?p ?o.
 filter (?p!=rdf:type)
 } 
+
+Result: https://es.dbpedia.org/sparql?default-graph-uri=&query=select+distinct+%3Fp+where+%7B%0D%0A%3Fi+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E.%0D%0A%3Fi+%3Fp+%3Fo.%0D%0Afilter+%28%3Fp%21%3Drdf%3Atype%29%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
 
 3. Which different values exist for the properties, except rdf:type, of the instances of the Politician class?
 
@@ -21,13 +25,17 @@ select distinct ?o where {
 filter (?p!=rdf:type)
 }
 
+Result: https://es.dbpedia.org/sparql?default-graph-uri=&query=select+distinct+%3Fo+where+%7B%0D%0A%3Fi+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E.%0D%0A%3Fi+%3Fp+%3Fo.%0D%0Afilter+%28%3Fp%21%3Drdf%3Atype%29%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
 4. For each of the properties, except rdf:type, that can be applied to instances of the Politician class, which different values do they take in those instances?
 
 select distinct ?p ?o where {
 ?i a <http://dbpedia.org/ontology/Politician>.
 ?i ?p ?o.
 filter (?p!=rdf:type)
-} 
+}
+
+Result: https://es.dbpedia.org/sparql?default-graph-uri=&query=select+distinct+%3Fp+%3Fo+where+%7B%0D%0A%3Fi+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E.%0D%0A%3Fi+%3Fp+%3Fo.%0D%0Afilter+%28%3Fp%21%3Drdf%3Atype%29%0D%0A%7D%0D%0A&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
 
 5. For each of the properties, except rdf:type, that can be applied to instances of the Politician class, how many distinct values do they take in those instances?
 
@@ -37,3 +45,5 @@ select distinct ?p count(distinct ?o) as ?c_values where {
 ?i ?p ?o.
 filter (?p!=rdf:type)
 }
+
+Result: https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+endp%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E%0D%0Aselect+distinct+%3Fp+count%28distinct+%3Fo%29+as+%3Fc_values+where+%7B%0D%0A%3Fi+a+endp%3A.%0D%0A%3Fi+%3Fp+%3Fo.%0D%0Afilter+%28%3Fp%21%3Drdf%3Atype%29%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+

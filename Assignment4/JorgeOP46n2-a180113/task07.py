@@ -48,7 +48,6 @@ for r in g.query(q1):
 
 """
 
-# TO DO
 
 print("RDFLib")
 for s, p, o in g.triples((None, RDF.type, ns.Person)):
@@ -70,13 +69,12 @@ q1 = prepareQuery("""
 
 for r in g.query(q1):
   print(r.persona)
-# Visualize the results
+
 
 """**TASK 7.3: List all individuals of "Person" and all their properties including their class with RDFLib and SPARQL**
 
 """
 
-# TO DO
 
 print("RDFLib")
 for s, p, o in g.triples((None, RDF.type, ns.Person)):

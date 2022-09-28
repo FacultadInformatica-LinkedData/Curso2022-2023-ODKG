@@ -76,7 +76,7 @@ FILTER (?properties != rdf:type)
 
 PREFIX dbop: <http://dbpedia.org/ontology/Politician>
 
-SELECT DISTINCT ?properties COUNT(?equis) as ?count_values
+SELECT DISTINCT ?properties COUNT(DISTINCT ?equis) as ?count_values
 
 WHERE {
 ?ins a dbop: . 

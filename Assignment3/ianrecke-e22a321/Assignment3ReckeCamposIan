@@ -1,0 +1,54 @@
+Assignment 3 done by Ian Recke Campos.
+
+##Exercise 1: Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
+
+
+select distinct ?property where
+{
+?dataset a <http://dbpedia.org/ontology/Politician>  . ?dataset ?property ?value .
+}
+
+#Result: https://es.dbpedia.org/sparql?default-graph-uri=&query=select+distinct+%3Fproperty+where%0D%0A%7B%0D%0A%3Fdataset+a+<http%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician>++.+%3Fdataset+%3Fproperty+%3Fvalue+.%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+##Exercise 2: Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+
+select distinct ?property where
+{
+?dataset a <http://dbpedia.org/ontology/Politician>  . ?dataset ?property ?value .
+FILTER(?property != rdf:type)
+}
+
+#Result: https://es.dbpedia.org/sparql?default-graph-uri=&query=select+distinct+%3Fproperty+where%0D%0A%7B%0D%0A%3Fdataset+a+<http%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician>++.+%3Fdataset+%3Fproperty+%3Fvalue+.%0D%0AFILTER%28%3Fproperty+%21%3D+rdf%3Atype%29%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+##Exercise 3: Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+
+select distinct ?value where
+{
+?dataset a <http://dbpedia.org/ontology/Politician>  . ?dataset ?property ?value .
+FILTER(?property != rdf:type)
+}
+
+#Result: https://es.dbpedia.org/sparql?default-graph-uri=&query=select+distinct+%3Fvalue+where%0D%0A%7B%0D%0A%3Fdataset+a+<http%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician>++.+%3Fdataset+%3Fproperty+%3Fvalue+.%0D%0AFILTER%28%3Fproperty+%21%3D+rdf%3Atype%29%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+
+##Exercise 4: For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+
+select distinct ?property ?value where
+{
+?dataset a <http://dbpedia.org/ontology/Politician>  . ?dataset ?property ?value .
+FILTER(?property != rdf:type)
+}
+
+#Result: https://es.dbpedia.org/sparql?default-graph-uri=&query=select+distinct+%3Fproperty+%3Fvalue+where%0D%0A%7B%0D%0A%3Fdataset+a+<http%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician>++.+%3Fdataset+%3Fproperty+%3Fvalue+.%0D%0AFILTER%28%3Fproperty+%21%3D+rdf%3Atype%29%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+
+#Exercise 5: For each of these applicable properties, except for rdf:type, how many distinct values do they take globally for all those instances?
+
+
+select distinct ?property COUNT(distinct ?value) as ?valueCount where
+{
+?dataset a <http://dbpedia.org/ontology/Politician>  . ?dataset ?property ?value .
+FILTER(?property != rdf:type)
+}
+
+#Result: https://es.dbpedia.org/sparql?default-graph-uri=&query=select+distinct+%3Fproperty+COUNT%28distinct+%3Fvalue%29+as+%3FvalueCount+where%0D%0A%7B%0D%0A%3Fdataset+a+<http%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician>++.+%3Fdataset+%3Fproperty+%3Fvalue+.%0D%0AFILTER%28%3Fproperty+%21%3D+rdf%3Atype%29%0D%0A%7D%0D%0A&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+

@@ -1,0 +1,9 @@
+PREFIX ont: <http://dbpedia.org/ontology/>
+
+SELECT ?property COUNT(DISTINCT ?values) AS ?values_count
+WHERE {
+    ?politician a ont:Politician .
+    ?politician ?property ?values
+    FILTER(?property != rdf:type)
+}
+ORDER BY desc(?values_count)

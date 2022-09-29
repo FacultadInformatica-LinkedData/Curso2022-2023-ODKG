@@ -1,0 +1,7 @@
+PREFIX ont: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?property
+WHERE {
+    ?politician a ont:Politician .
+    ?politician ?property ?object
+}

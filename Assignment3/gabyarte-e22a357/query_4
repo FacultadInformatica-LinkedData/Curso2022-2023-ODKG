@@ -6,3 +6,5 @@ WHERE {
     ?politician ?property ?values
     FILTER(?property != rdf:type)
 }
+
+# https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+ont%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fproperty+%3Fvalues%0D%0AWHERE+%7B%0D%0A++++%3Fpolitician+a+ont%3APolitician+.%0D%0A++++%3Fpolitician+%3Fproperty+%3Fvalues%0D%0A++++FILTER%28%3Fproperty+%21%3D+rdf%3Atype%29%0D%0A%7D%0D%0A&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+

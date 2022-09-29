@@ -1,0 +1,140 @@
+To answer we can just read in the previous request or we can also filter for each properties.
+Here is the answer of the 3 first properties :
+
+@prefix res: <http://www.w3.org/2005/sparql-results#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+_:_ a res:ResultSet .
+_:_ res:resultVariable "value" , "property" .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value "Politiker"@de ] ;
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value "polaiteoir"@ga ] ;
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value "politician"@en ] ;
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value "politicien"@fr ] ;
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value "politicus"@nl ] ;
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value "politik"@sl ] ;
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value "pol\u00EDtico"@pt ] ;
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value "\u03C0\u03BF\u03BB\u03B9\u03C4\u03B9\u03BA\u03CC\u03C2"@el ] ;
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value "\u653F\u6CBB\u5BB6"@ja ] ;
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value "\uC815\uCE58\uC778"@ko ] ;
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value "\u0633\u06CC\u0627\u0633\u062A\u062F\u0627\u0646"@ur ] ;
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+
+
+@prefix res: <http://www.w3.org/2005/sparql-results#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+_:_ a res:ResultSet .
+_:_ res:resultVariable "value" , "property" .
+@prefix dbo:	<http://dbpedia.org/ontology/> .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value dbo:President ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value dbo: ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value dbo:Ambassador ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value dbo:Chancellor ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value dbo:Congressman ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value dbo:Deputy ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value dbo:Governor ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value dbo:Lieutenant ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value dbo:Mayor ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value dbo:MemberOfParliament ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value dbo:Minister ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value dbo:PrimeMinister ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value dbo:Senator ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value dbo:VicePresident ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value dbo:VicePrimeMinister ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value dbo:minister ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value dbo:politician ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value dbo:prefect ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value <http://dbpedia.org/ontology/\u062D\u0627\u06A9\u0645> ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value <http://dbpedia.org/ontology/\u0633\u0641\u06CC\u0631> ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value <http://dbpedia.org/ontology/\u0645\u062C\u0644\u0633_\u06A9\u06D2_\u0634\u0631\u06A9\u0627\u0621> ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value <http://dbpedia.org/ontology/data/definitions.ttl> ] ;
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+
+
+@prefix res: <http://www.w3.org/2005/sparql-results#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+_:_ a res:ResultSet .
+_:_ res:resultVariable "value" , "property" .
+@prefix wdrs:	<http://www.w3.org/2007/05/powder-s#> .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value <http://es.dbpedia.org/about/id/entity/http/dbpedia.org/ontology/> ] ;
+      res:binding [ res:variable "property" ; res:value wdrs:describedby ] ] .
+@prefix ns1:	<http://localhost:8890/about/id/entity/https/dbpedia.org/ontology/> .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value ns1:Politician ] ;
+      res:binding [ res:variable "property" ; res:value wdrs:describedby ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value <http://localhost:8890/about/id/entity/http/dbpedia.org/ontology/data/definitions.ttl> ] ;
+      res:binding [ res:variable "property" ; res:value wdrs:describedby ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value <http://dbpedia.org/ontology/data/definitions.ttl> ] ;
+      res:binding [ res:variable "property" ; res:value wdrs:describedby ] ] .
+@prefix ns2:	<http://localhost:8890/about/id/entity/http/dbpedia.org/ontology/> .
+_:_ res:solution [
+      res:binding [ res:variable "value" ; res:value ns2:Person ] ;
+      res:binding [ res:variable "property" ; res:value wdrs:describedby ] ] .
+

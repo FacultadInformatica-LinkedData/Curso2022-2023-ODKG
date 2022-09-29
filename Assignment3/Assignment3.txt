@@ -1,0 +1,57 @@
+SELECT DISTINCT ?property
+WHERE 
+{  
+?politician rdf:type <http://dbpedia.org/ontology/Politician> .
+?politician ?property ?value
+} 
+
+https://es.dbpedia.org/sparql?default-graph-uri=&query=SELECT+DISTINCT+%3Fproperty%0D%0AWHERE+%0D%0A%7B++%0D%0A%3Fpolitician+rdf%3Atype+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E+.%0D%0A%3Fpolitician+%3Fproperty+%3Fvalue%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+
+
+SELECT DISTINCT ?property 	
+WHERE 
+{  
+?politician rdf:type <http://dbpedia.org/ontology/Politician> .
+?politician ?property ?value .
+filter(?property != rdf:type) 
+}
+
+https://es.dbpedia.org/sparql?default-graph-uri=&query=SELECT+DISTINCT+%3Fproperty+%09%0D%0AWHERE+%0D%0A%7B++%0D%0A%3Fpolitician+rdf%3Atype+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E+.%0D%0A%3Fpolitician+%3Fproperty+%3Fvalue+.%0D%0Afilter%28%3Fproperty+%21%3D+rdf%3Atype%29+%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+
+
+SELECT DISTINCT ?value
+WHERE
+{  
+?politician rdf:type <http://dbpedia.org/ontology/Politician> .
+?politician ?property ?value .
+filter(?property != rdf:type) 
+}
+
+https://es.dbpedia.org/sparql?default-graph-uri=&query=SELECT+DISTINCT+%3Fvalue%0D%0AWHERE%0D%0A%7B++%0D%0A%3Fpolitician+rdf%3Atype+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E+.%0D%0A%3Fpolitician+%3Fproperty+%3Fvalue+.%0D%0Afilter%28%3Fproperty+%21%3D+rdf%3Atype%29+%0D%0A%7D+&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+
+
+SELECT DISTINCT ?property ?value 
+WHERE
+{  
+?politician rdf:type <http://dbpedia.org/ontology/Politician> .
+?politician ?property ?value .
+filter( ?property != rdf:type)
+} 
+
+https://es.dbpedia.org/sparql?default-graph-uri=&query=SELECT+DISTINCT+%3Fproperty+%3Fvalue+%0D%0AWHERE%0D%0A%7B++%0D%0A%3Fpolitician+rdf%3Atype+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E+.%0D%0A%3Fpolitician+%3Fproperty+%3Fvalue+.%0D%0Afilter%28+%3Fproperty+%21%3D+rdf%3Atype%29%0D%0A%7D+&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+
+
+SELECT DISTINCT ?property (COUNT (DISTINCT ?value) AS ?numValue)
+WHERE
+{  
+?politician rdf:type <http://dbpedia.org/ontology/Politician> .
+?politician ?property ?value .
+filter( ?property != rdf:type)
+}
+
+https://es.dbpedia.org/sparql?default-graph-uri=&query=SELECT+DISTINCT+%3Fproperty+%28COUNT+%28DISTINCT+%3Fvalue%29+AS+%3FnumValue%29%0D%0AWHERE%0D%0A%7B++%0D%0A%3Fpolitician+rdf%3Atype+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E+.%0D%0A%3Fpolitician+%3Fproperty+%3Fvalue+.%0D%0Afilter%28+%3Fproperty+%21%3D+rdf%3Atype%29%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+

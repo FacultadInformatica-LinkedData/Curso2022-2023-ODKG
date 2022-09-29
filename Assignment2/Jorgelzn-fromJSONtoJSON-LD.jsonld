@@ -1,0 +1,44 @@
+{
+    "@context":{
+        "rdfs":"http://www.w3.org/2000/01/rdf-schema#",
+        "fullname":"rdfs:fullname",
+        "hometown":"rdfs:hometown",
+        "age":"rdfs:age",
+        "almaMater":"rdfs:almaMater",
+        "parents":"rdfs:parents",
+        "mother":"rdfs:mother",
+        "father":"rdfs:father",
+        "subjects":"rdfs:name",
+        "name":"rdfs:name",
+        "teachers":"rdfs:teachers",
+        "description":"rdfs:description"
+    },
+    "@id":"rdfs:student",
+    "@type":"rdfs:people",
+    "fullName":"Jorge Lizcano Gómez-Calcerrada",
+    "hometown": "Boadilla del Monte",
+    "age": 22,
+    "almaMater": "Universidad Politécnica de Madrid",
+    "parents":{
+        "mother":"Maria Jose",
+        "father":"Bernardo"
+    },
+    "subjects":[
+        {
+        "name":"Open Data and Knowledge Graphs",
+        "teachers":[
+            "Oscar Corcho",
+            "Daniel Garijo Verdejo"
+        ],
+        "descripton":"In this subject we study about the semantic web"
+        },
+        {
+            "name":"Big data",
+            "teachers":[
+                "Antonio La Torre Fuente",
+                "Jesus Montes Sanchez"
+            ],
+            "descripton":"This course teaches how to aproach problems with huge volumes of data"
+        }
+    ]
+}

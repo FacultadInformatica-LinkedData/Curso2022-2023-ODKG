@@ -9,7 +9,7 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-!pip install rdflib 
+#!pip install rdflib 
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -36,7 +36,7 @@ for s,p,o in g.triples((None,RDFS.subClassOf,ns.Person)):
 print("\nSPARQL")
 q1 = prepareQuery('''
   SELECT ?subcl WHERE { 
-    ?subcl rdfs:subClassOf ns:Person. 
+    ?subcl rdfs:subClassOf ns:Person . 
   }
   ''',
   initNs={'rdfs':RDFS, 'ns':ns}
@@ -54,24 +54,24 @@ for r in g.query(q1):
 print("RDFLib")
 for s,p,o in g.triples((None,RDF.type,ns.Person)) :
   print(s)
-  for s2,p,o in g.triples((None,RDFS.subClassOf,ns.Person)) :
-    for s3,p1,o1 in g.triples((None,RDF.type,s2)) :
-      print(s3)
+
+for s,p,o in g.triples((None,RDFS.subClassOf,ns.Person)) :
+  for s2,p1,o1 in g.triples((None,RDF.type,s)) :
+    print(s2)
 
 #SPARQL
 print("\nSPARQL")
 q2 = prepareQuery('''
   SELECT  ?i  WHERE 
   {
-    {?sub rdfs:subClassOf ns:Person.
-    ?i a ?sub} UNION 
-    {?i a ns:Person}.
+    ?sub rdfs:subClassOf* ns:Person .
+    ?i a ?sub
   }  
-  ''',initNs = { "ns": ns}
+  ''',initNs={'rdfs':RDFS, 'ns':ns}
 )
 
 for r in g.query(q2):
-  print(r)
+  print(r.i)
 
 """**TASK 7.3: List all individuals of "Person" and all their properties including their class with RDFLib and SPARQL**
 
@@ -83,7 +83,7 @@ for r in g.query(q2):
 print("RDLib")
 for s, p, o in g.triples((None, RDF.type, ns.Person)):
     for s2, p2, o2 in g.triples((s, None, None)):
-        print(s, p2, o2)
+        print(s2, p2, o2)
 
 for s, p, o in g.triples((None, RDFS.subClassOf, ns.Person)):
   for s2, p2, o2 in g.triples((None, RDF.type, s)):
@@ -93,19 +93,12 @@ for s, p, o in g.triples((None, RDFS.subClassOf, ns.Person)):
 #SPARQL
 print("\nSPARQL")
 q3 = prepareQuery('''
-  SELECT ?i ?prop ?value WHERE { 
-    {
-        ?i rdf:type ns:Person.
-        ?i ?prop ?value.
-    }
-    UNION 
-    {
-        ?i ?prop ?value.
-        ?i rdf:type ?subclass.
-        ?subclass rdfs:subClassOf ns:Person.      
-    }
+  SELECT ?i ?prop ?value WHERE {
+    ?sub rdfs:subClassOf* ns:Person .
+    ?i a ?sub .
+    ?i ?prop ?value
   }
-  ''', initNs={"rdfs": RDFS, "ns": ns, "rdf": RDF}
+  ''', initNs={"rdfs": RDFS, "ns": ns}
 ) 
 
 for r in g.query(q3):

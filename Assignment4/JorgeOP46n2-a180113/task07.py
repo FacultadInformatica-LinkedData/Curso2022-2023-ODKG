@@ -92,7 +92,7 @@ q1 = prepareQuery("""
     {?persona rdf:type ns:Person.}
 
     UNION{
-      ?subclase rdfs:subClassOf ns:Person.
+      ?subclase rdfs:subclassOf* ns:Person.
       ?persona rdf:type ?subclase
     }
     ?persona ?propiedad ?Value

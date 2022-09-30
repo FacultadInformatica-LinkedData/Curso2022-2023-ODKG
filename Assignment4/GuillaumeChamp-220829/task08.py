@@ -8,30 +8,28 @@ Original file is located at
 
 **Task 08: Completing missing data**
 """
+from rdflib import Graph, Namespace
+from rdflib.namespace import RDF
 
-!pip install rdflib
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
-
-from rdflib import Graph, Namespace, Literal, URIRef
 g1 = Graph()
 g2 = Graph()
-g1.parse(github_storage+"/rdf/data01.rdf", format="xml")
-g2.parse(github_storage+"/rdf/data02.rdf", format="xml")
+g1.parse(github_storage + "/rdf/data01.rdf", format="xml")
+g2.parse(github_storage + "/rdf/data02.rdf", format="xml")
 
 """Tarea: lista todos los elementos de la clase Person en el primer grafo (data01.rdf) y completa los campos (given name, family name y email) que puedan faltar con los datos del segundo grafo (data02.rdf). Puedes usar consultas SPARQL o iterar el grafo, o ambas cosas."""
 
-from rdflib.namespace import RDF, RDFS
 data = Namespace("http://data.org#")
-for s,p,o in g1.triples((None,RDF.type,data.Person)) :
-    for ss,pp,oo in g2.triples((s,None,None)) :
-      g1.add((s,pp,oo))
-#print g1
+for s, p, o in g1.triples((None, RDF.type, data.Person)):
+    for ss, pp, oo in g2.triples((s, None, None)):
+        g1.add((s, pp, oo))
+# print g1
 print("graph 1")
-for s,p,o in g1.triples((None,RDF.type,data.Person)) :
-    for ss,pp,oo in g1.triples((s,None,None)) :
-      print(ss,pp,oo)
-#print g2
+for s, p, o in g1.triples((None, RDF.type, data.Person)):
+    for ss, pp, oo in g1.triples((s, None, None)):
+        print(ss, pp, oo)
+# print g2
 print("graph 2")
-for s,p,o in g2.triples((None,RDF.type,data.Person)) :
-    for ss,pp,oo in g2.triples((s,None,None)) :
-      print(ss,pp,oo)
+for s, p, o in g2.triples((None, RDF.type, data.Person)):
+    for ss, pp, oo in g2.triples((s, None, None)):
+        print(ss, pp, oo)

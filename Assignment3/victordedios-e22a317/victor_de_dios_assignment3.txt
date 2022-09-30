@@ -11,6 +11,7 @@ where{
 
 2-Get all the properties, except rdf:type, that can be applied to instances of the Politician class
 
+
 PREFIX vocab: <http://dbpedia.org/ontology/>
 select  DISTINCT ?properties 
 where{
@@ -22,6 +23,7 @@ where{
 
 3-Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
 
+
 PREFIX vocab: <http://dbpedia.org/ontology/>
 select  DISTINCT ?values
 where{
@@ -32,6 +34,7 @@ where{
 
 
 4-For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+
 
 PREFIX vocab: <http://dbpedia.org/ontology/>
 select  DISTINCT ?properties ?values

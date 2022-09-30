@@ -10,7 +10,7 @@
 :Computer101 p:hasOwner :User10A
 
 :Measurement8401
-    p:hasTemperature "29";
-    p:atTime "2010-06-12T 12:00:12"
+    p:hasTemperature 29;
+    p:atTime "2010-06-12T 12:00:12"^^xsd:datetime
 
 :User10A p:hasName "Pedro"

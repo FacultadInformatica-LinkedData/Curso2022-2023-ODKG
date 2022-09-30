@@ -1,0 +1,58 @@
+IMPORTANT NOTE: ALL QUERYS ARE LIMITED TO 10 ELEMENTS DUE TO TIME EXCECUTIONS
+
+1. Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
+
+PREFIX dbonto: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?p
+WHERE {
+    ?x rdf:type dbonto:Politician .
+    ?x ?p ?val
+} LIMIT 10
+
+2. Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+
+PREFIX dbonto: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?p
+WHERE {
+    ?x rdf:type dbonto:Politician .
+    ?x ?p ?val
+    MINUS{
+      FILTER(?p=rdf:type)
+    }
+} LIMIT 10
+
+3. Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+
+PREFIX dbonto: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?val
+WHERE {
+    ?x rdf:type dbonto:Politician .
+    ?x ?p ?val
+    MINUS{
+      FILTER(?p=rdf:type)
+    }
+} LIMIT 10
+
+4. For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+
+PREFIX dbonto: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?p ?val
+WHERE {
+    ?x rdf:type dbonto:Politician .
+    ?x ?p ?val
+    MINUS{
+      FILTER(?p=rdf:type)
+    }
+} LIMIT 10
+
+5. For each of these applicable properties, except for rdf:type, how many distinct values do they take globally for all those instances?
+
+PREFIX dbonto: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?p COUNT(DISTINCT ?val)
+WHERE {
+    ?x rdf:type dbonto:Politician .
+    ?x ?p ?val
+    MINUS{
+      FILTER(?p=rdf:type)
+    }
+} LIMIT 10

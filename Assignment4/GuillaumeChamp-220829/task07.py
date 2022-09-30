@@ -68,15 +68,9 @@ for s, p, o in g.triples((None, RDFS.subClassOf, ns.Person)):
 q3 = prepareQuery('''
   SELECT DISTINCT ?instance ?predicate ?object WHERE 
   {
-    { 
-      ?sub rdfs:subClassOf* ns:Person.
-      ?instance a ?sub.
-    } 
-    UNION {
       ?sub rdfs:subClassOf* ns:Person.
       ?instance a ?sub.
       ?instance ?predicate ?object.
-    }.
   }  
   ''', initNs={"ns": ns}
                   )

@@ -1,0 +1,168 @@
+@prefix res: <http://www.w3.org/2005/sparql-results#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+_:_ a res:ResultSet .
+_:_ res:resultVariable "property" .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdf:type ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdf:type ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdf:type ] ] .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value owl:equivalentClass ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value owl:equivalentClass ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value owl:equivalentClass ] ] .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:label ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:isDefinedBy ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:isDefinedBy ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:isDefinedBy ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value owl:sameAs ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value owl:sameAs ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:subClassOf ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:subClassOf ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:subClassOf ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value rdfs:subClassOf ] ] .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value foaf:topic ] ] .
+@prefix wdrs:	<http://www.w3.org/2007/05/powder-s#> .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value wdrs:describedby ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value wdrs:describedby ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value wdrs:describedby ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value wdrs:describedby ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value wdrs:describedby ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value wdrs:describedby ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value wdrs:describedby ] ] .
+@prefix prov:	<http://www.w3.org/ns/prov#> .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value prov:wasDerivedFrom ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value prov:wasDerivedFrom ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "property" ; res:value prov:wasDerivedFrom ] ] .

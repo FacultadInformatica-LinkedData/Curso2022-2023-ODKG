@@ -1,0 +1,36 @@
+{
+    "@context":{
+        "people":"http://example.org/elements/student",
+	"fullName": "people:fullName",
+        "hometown":"people:hometown",
+        "age":"people:age",
+        "almaMater":"people:almaMater",
+        "subject":"people:subject",
+        "parentsName":"people:parentsName",
+        "subjectName":"subject:subjectName",
+	
+        "teachers":"subject:subjectTeachers",
+        "description":"subject:subjectDescription"
+    },
+
+    "@id":"http://example.org/elements/Marta",
+    "@type":"people",
+    "fullName":"Marta Alonso Tubía",
+    "homeTown":"Miranda de Ebro",
+    "age":"23",
+    "almaMater":"UPM",
+    "parentsName": ["Felix","Conchi"],
+	"subjects":[
+			{
+				"subjectName":"Open Data and Knowledge Graphs",
+				"teachers":["Oscar Corcho Garcia","Raul Garcia Castro"],
+				"description":"During this course you will learn about the main foundations for Open Data and Knowledge Graphs, including the W3C recommendations that are applicable in this area (RDF, RDF Schema, SPARQL, OWL, CSV on the Web) and methodologies for the generation and publication of Knowledge Graphs from multiple heterogeneous data sources and formats, using Linked Data technologies."
+			},
+			{
+				"subjectName":"Machine Learning",
+				"teachers":["Pedro Maria Larrañaga Mugica ","Maria Concepcion Bielza Lozoya"],
+				"description":"  Esta asignatura expone varios métodos para resolver problemas de clasificación supervisada, no supervisada, y relaciones entre las variables del sistema."
+			}
+
+			]
+}

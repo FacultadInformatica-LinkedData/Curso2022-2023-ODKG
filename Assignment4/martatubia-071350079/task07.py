@@ -9,7 +9,7 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-!pip install rdflib 
+!pip install rdflib
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -32,25 +32,24 @@ ns = Namespace("http://somewhere#")
 # Primero con RDFLib
 for s,p,o in g.triples((None, RDFS.subClassOf, ns.Person)):
     print(s)
-    for subclass,p2,o2 in g.triples((None, RDFS.subClassOf, s)):
-      print(subclass)
+    
     
 #Segundo con SPARQL
 from rdflib.plugins.sparql import prepareQuery 
 q1 = prepareQuery('''
   SELECT 
-    ?Subclass ?Subsubclass
+    ?Subclass 
   WHERE { 
     ?Subclass rdfs:subClassOf ns:Person.
-    ?Subsubclass rdfs:subClassOf ?Subclass
+    
   }
   ''',
   initNs = {"rdfs":RDFS, "ns":ns}
 )
 
 
-for s1,s2 in g.query(q1):
-  print(s1,s2)
+for s1 in g.query(q1):
+  print(s1)
 
 """**TASK 7.2: List all individuals of "Person" with RDFLib and SPARQL (remember the subClasses)**
 
@@ -72,13 +71,8 @@ q2 = prepareQuery('''
   SELECT 
     ?persona 
   WHERE { 
-    {
-    ?persona rdf:type ns:Person.
-    }
-    UNION{
-    ?subclass rdfs:subClassOf ns:Person.
-    ?persona rdf:type ?subclass.
-    }
+    ?subclass rdfs:subClassOf* ns:Person.
+    ?persona rdf:type ?subclass. 
         }
   ''',
   initNs = {"rdfs":RDFS, "ns":ns, "rdf":RDF}
@@ -87,7 +81,7 @@ q2 = prepareQuery('''
 # Visualize the results
 print("\n Ahora con SPARQL")
 for r in g.query(q2):
-  print(r)
+  print(r.persona)
 
 """**TASK 7.3: List all individuals of "Person" and all their properties including their class with RDFLib and SPARQL**
 
@@ -97,35 +91,23 @@ for r in g.query(q2):
 for s,r,o in g.triples((None,RDF.type, ns.Person)):
   for s2,r2,o2 in g.triples((s,None,None)):
     print(s,r2,o2)
-for s,r,o in g.triples((None,RDF.type, ns.Researcher)):
-  for s2,r2,o2 in g.triples((s,None,None)):
-    print(s,r2,o2)
-for s,r,o in g.triples((None,RDF.type, ns.PhDstudent)):
-  for s2,r2,o2 in g.triples((s,None,None)):
-    print(s,r2,o2)
+
+for subclase,p2,o2 in g.triples((None,RDFS.subClassOf,ns.Person)):
+    for ins,p3,o3 in g.triples((None, RDF.type, subclase)):
+       for s2,r2,o2 in g.triples((ins,None,None)):
+          print(s,r2,o2)
+
 
 q3 = prepareQuery('''
   SELECT 
     ?persona ?r ?o
   WHERE { 
-    
-    {?persona rdf:type ns:Person.
-  
-    ?persona ?r ?o.}
-    UNION{?persona rdf:type ns:Researcher.
-  
-    ?persona ?r ?o.
-
+?clase rdfs:subClassOf* ns:Person.
+?persona rdf:type ?clase.
+?persona ?r ?o.
     }
-    UNION{?persona rdf:type ns:PhDstudent.
-  
-    ?persona ?r ?o.
-
-    }
-    
-        }
   ''',
-  initNs = {"ns":ns, "rdf":RDF}
+  initNs = {"ns":ns, "rdf":RDF, "rdfs":RDFS}
 )
 
 print("\n Ahora con SPARQL")

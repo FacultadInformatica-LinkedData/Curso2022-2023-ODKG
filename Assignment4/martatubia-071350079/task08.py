@@ -29,57 +29,20 @@ for s,r,o in g2:
 
 from rdflib.plugins.sparql import prepareQuery
 vcard= Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
-q = prepareQuery('''
-  SELECT 
-    ?s ?p ?o
-  WHERE { 
-    ?s vcard:Given ?o
-    
-  }
-  ''',
-  initNs = {"vcard": vcard}
-)
+ns=Namespace("http://data.org#")
+Personas1=[]  #personas en grafo 1. Para estas personas con atributos vacíos en given name, family name y email, rellenaremos datos de g2.
+
+for s,p,o in g1.triples((None,RDF.type,ns.Person)):
+  Personas1.append(s)
 
 
-
-for r in g2.query(q):
-  g1.add((r.s,vcard.Given,r.o))
-
-
-
-q2 = prepareQuery('''
-  SELECT 
-    ?s ?p ?o
-  WHERE { 
-    ?s vcard:Family ?o
-    
-  }
-  ''',
-  initNs = {"vcard": vcard}
-)
-
-
-
-for r2 in g2.query(q2):
-  g1.add((r2.s,vcard.Family,r2.o))
-
-
- 
-q3 = prepareQuery('''
-  SELECT 
-    ?s ?p ?o
-  WHERE { 
-    ?s vcard:EMAIL ?o
-    
-  }
-  ''',
-  initNs = {"vcard": vcard}
-)
-
-
-
-for r3 in g2.query(q3):
-  g1.add((r3.s,vcard.EMAIL,r3.o))
+for persona in Personas1:
+  if not list(g1.triples((persona,vcard.Given,None))):
+      g1.add((persona,vcard.Given,g2.value(persona,vcard.Given,None)))
+  if not list(g1.triples((persona,vcard.Family,None))):
+      g1.add((persona,vcard.Family,g2.value(persona,vcard.Family,None)))
+  if not list(g1.triples((persona,vcard.EMAIL,None))):
+      g1.add((persona,vcard.EMAIL,g2.value(persona,vcard.EMAIL,None)))
 
 
 for a,b,c in g1:

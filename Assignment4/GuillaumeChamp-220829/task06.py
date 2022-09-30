@@ -9,7 +9,7 @@ Original file is located at
 **Task 06: Modifying RDF(s)**
 """
 from rdflib import Graph, Namespace, Literal, XSD
-from rdflib.namespace import RDF, RDFS
+from rdflib.namespace import RDF, RDFS, FOAF
 
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
 
@@ -61,7 +61,7 @@ for s, p, o in g:
 """**TASK 6.5: Add UPM as the university where John Smith works**"""
 
 g.add((ns.UPM, RDF.type, ns.University))
-g.add((ns.JohnSmith, VCARD.ORGPROPERTIES, ns.UPM))
+g.add((ns.JohnSmith, FOAF.Organization, ns.UPM))
 # Visualize the results
 for s, p, o in g:
     print(s, p, o)

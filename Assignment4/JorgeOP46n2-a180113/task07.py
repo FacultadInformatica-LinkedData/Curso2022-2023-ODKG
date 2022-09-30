@@ -9,7 +9,7 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-!pip install rdflib 
+#pip install rdflib
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -20,8 +20,8 @@ from rdflib.plugins.sparql import prepareQuery
 g = Graph()
 g.namespace_manager.bind('ns', Namespace("http://somewhere#"), override=False)
 g.namespace_manager.bind('vcard', Namespace("http://www.w3.org/2001/vcard-rdf/3.0#"), override=False)
-g.parse(github_storage+"/rdf/example6.rdf", format="xml")
-#g.parse("example6.rdf", format="xml")
+#g.parse(github_storage+"/rdf/example6.rdf", format="xml")
+g.parse("../course_materials/rdf/example6.rdf", format="xml")
 
 ns = Namespace("http://somewhere#")
 
@@ -64,7 +64,7 @@ q1 = prepareQuery("""
        UNION
        {?subclase rdfs:subClassOf ns:Person.
         ?persona rdf:type ?subclase.}
-      
+
     }""", initNs={"ns":ns})
 
 for r in g.query(q1):
@@ -90,7 +90,7 @@ print("SPARQL")
 q1 = prepareQuery("""
     SELECT DISTINCT ?persona ?propiedad WHERE{
     {?persona rdf:type ns:Person.}
-    
+
     UNION{
       ?subclase rdfs:subClassOf ns:Person.
       ?persona rdf:type ?subclase

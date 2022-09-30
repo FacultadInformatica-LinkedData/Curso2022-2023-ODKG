@@ -59,9 +59,8 @@ for s,p,o in g.triples((None, RDFS.subClassOf, ns.Person)):
         
 q2 = prepareQuery('''
   SELECT ?Subject WHERE { 
-    {?Subject rdf:type ns:Person.} UNION
-    {?SubClass rdfs:subClassOf ns:Person.
-     ?Subject rdf:type ?SubClass.}
+    ?Class rdfs:subClassOf* ns:Person.
+    ?Subject rdf:type ?Class.
   }
   ''',
   initNs = { "rdf": RDF, "rdfs": RDFS, "ns": ns}
@@ -87,11 +86,9 @@ for s,p,o in g.triples((None, RDFS.subClassOf, ns.Person)):
 
 q3 = prepareQuery('''
   SELECT ?Subject ?Predicate ?Object WHERE { 
-    {?Subject rdf:type ns:Person.
-     ?Subject ?Predicate ?Object} UNION
-    {?SubClass rdfs:subClassOf ns:Person.
-     ?Subject rdf:type ?SubClass.
-     ?Subject ?Predicate ?Object}
+    ?Class rdfs:subClassOf* ns:Person.
+    ?Subject rdf:type ?Class.
+    ?Subject ?Predicate ?Object
   }
   ''',
   initNs = { "rdf": RDF, "rdfs": RDFS, "ns": ns}

@@ -9,7 +9,7 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-!pip install rdflib 
+#!pip install rdflib 
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -25,20 +25,24 @@ g.parse(github_storage+"/rdf/example6.rdf", format="xml")
 
 """**TASK 7.1: List all subclasses of "Person" with RDFLib and SPARQL**"""
 
+def printSubClassesOf(className):
+  for s,p,o in g.triples((None, RDFS.subClassOf, className)):
+    print(s)
+    printSubClassesOf(s)
+
 # TO DO
 # Visualize the results (RDFLib)
-for s,p,o in g.triples((None, RDFS.subClassOf, ns.Person)):
-  print(s)
+printSubClassesOf(ns.Person)
 
 # SPARQL
 from rdflib.plugins.sparql import prepareQuery
 
 q1 = prepareQuery('''
   SELECT ?Subject WHERE { 
-    ?Subject rdfs:subClassOf ns:Person. 
+    ?Subject rdfs:subClassOf+ ns:Person. 
   }
   ''',
-  initNs = { "ns": ns}
+  initNs = { "ns": ns} # We do subclassOf+ to consider the full taxonomy (without taking into account the root resource Person)
 )
 
 for r in g.query(q1):
@@ -48,29 +52,28 @@ for r in g.query(q1):
 
 """
 
+def printInstancesofTaxonomy(className):
+  for instance,p,o in g.triples((None, RDF.type, className)):
+      print(instance)
+  for s,p,o in g.triples((None, RDFS.subClassOf, className)):
+    printInstancesofTaxonomy(s)
+
 # TO DO
 # Visualize the results (RDFLib)
-for people1,p,o in g.triples((None, RDF.type, ns.Person)):
-  print(people1)
 
-for subclasses,p,o in g.triples((None, RDFS.subClassOf, ns.Person)):
-  for people2,p,o in g.triples((None, RDF.type, subclasses)):
-    print(people2)
+printInstancesofTaxonomy(ns.Person)
 
 # SPARQL
 
 q2 = prepareQuery('''
 SELECT ?people
 WHERE { 
-  { ?people a ns:Person 
-  } 
-  UNION
-{ ?subclasses rdfs:subClassOf ns:Person.
+{ ?subclasses rdfs:subClassOf* ns:Person.
   ?people a ?subclasses
  } 
 }
   ''',
-  initNs = { "ns": ns}
+  initNs = { "ns": ns} # By using the * property path we get both the class Person and its subclasses so no union is needed at the query
 )
 
 
@@ -84,31 +87,27 @@ for r in g.query(q2):
 # TO DO
 # Visualize the results
 
-for people1,p,o in g.triples((None, RDF.type, ns.Person)):
-  for people1,rel,val in g.triples((people1, None, None)):
-    print(people1,rel)
+def printInstancesAndPropertiesOfTaxonomy(className):
+  for instance,p,o in g.triples((None, RDF.type, className)):
+    for instance,properties,o in g.triples((instance, None, None)):
+      print(instance,properties)
+  for s,p,o in g.triples((None, RDFS.subClassOf, className)):
+    printInstancesAndPropertiesOfTaxonomy(s)
 
-for subclasses,r,c in g.triples((None, RDFS.subClassOf, ns.Person)):
-  for people2,p_2,o_2 in g.triples((None, RDF.type, subclasses)):
-    for people2,rel_2,val_2 in g.triples((people2, None, None)):
-      print(people2,rel_2)
+printInstancesAndPropertiesOfTaxonomy(ns.Person)
 
 # SPARQL
 
 q3 = prepareQuery('''
 SELECT ?people ?properties
 WHERE { 
-  { ?people a ns:Person. 
-    ?people ?properties ?values
-  } 
-  UNION
-{ ?subclasses rdfs:subClassOf ns:Person.
+{ ?subclasses rdfs:subClassOf* ns:Person.
   ?people a ?subclasses.
   ?people ?properties ?values
  } 
 }
   ''',
-  initNs = { "ns": ns}
+  initNs = { "ns": ns} #Same usage of *
 )
 
 for r in g.query(q3):

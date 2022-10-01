@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "personal": "http://wwww.personal-information.test/api/students/",
+    "subject": "personal:subject/",
+    "fullName": "personal:fullName",
+    "homeTown": "personal:homeTown",
+    "age": "personal:age",
+    "almaMater": "personal:almaMater",
+    "parents": "personal:parents",
+    "subjectName": "subject:subjectName"
+  },
+  "@id": "personal:AATQY9015",
+  "@type": "personal",
+  "fullName": "Erick Abdiel Cedeño Guerra",
+  "homeTown": "Panama",
+  "age": 25,
+  "almaMater": "Technological University of Panama",
+  "parents": {
+    "mother": "Eiline Guerra",
+    "father": "Eric Cedeño"
+  },
+  "subjects": [
+    {
+      "subjectName": "Open Data and Knowledge Graphs",
+      "professor": "Oscar Corcho",
+      "description": "During this course you will learn about the main foundations for Knowledge Graphs, including the W3C recommendations that are applicable in this area (RDF, RDF Schema, SPARQL, OWL, CSV on the Web) and methodologies for the generation and publication of Knowledge Graphs from multiple heterogeneous data sources and formats, using Linked Data technologies."
+    },
+    {
+      "subjectName": "Data Processes",
+      "professor": "Ernestina Menasalvas",
+      "description": "This course introduces fundamental tools and technologies necessary to transform raw data into information."
+    },
+    {
+      "subjectName": "Big Data",
+      "professor": "Jesús Montes",
+      "description": "This course will allow the student to gain the fundamentals for the analysis of large volumes of data."
+    }
+  ]
+}

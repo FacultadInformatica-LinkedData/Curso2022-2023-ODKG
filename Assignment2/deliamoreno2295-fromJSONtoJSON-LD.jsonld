@@ -1,0 +1,120 @@
+
+
+/* JSON */
+{
+"id":"https://www.linkedin.com/feed/-",
+"FullName":"Delia Aminta Moreno Perdomo",
+"Hometown":"Tegucigalpa, Honduras",
+"Age":"27”,
+"AlmaMater":"Universidad Nacional Autónoma de Honduras”,
+"ParentsName":{
+  "MotherName":"Rosa Vilma Perdomo Ramos",
+  "FatherName":"Jose Oscar Moreno Cruz"
+  },
+"subjects2022":[
+  {
+"name":"Big Data",
+"Teacher":"Jesús Montes",
+"About":"During these course you will learn how to manage huge amount of Data."
+},
+{
+"name":"Cloud Computing and Big Data Ecosystems Design",
+"Teacher":"Marta Patiño" ,
+"About":"During these course you will learn how to manage huge amount of Data and the different tecnologies using in Big Data like Flink."
+},
+{
+"name":"Data Processes",
+"Teacher":"Ernestina Menasalvas",
+"About":"This course introduces fundamental tools and technologies necessary to transform raw data into information. In doing so, you'll learn how to write code to work with data. "
+},
+{
+"name":"Intelligent Systems",
+"Teacher":"Martín Molina" ,
+"About":"During these course you will learn how to manage huge amount of Data."
+},
+{
+"name":"Machine Learning",
+"Teacher":"Pedro Larrañaga",
+"About":"During these course you will be able to learn how to work the different types of machine learning"
+},
+{
+"name":"Open Data and Knowledge Graphs",
+"Teacher":"Oscar Corcho",
+"About":"During these course you will learn how to manage huge amount of Data."
+},
+{
+"name":"Big Data",
+"Teacher":"Arminda Moreno",
+"About":"During these course you will learn how to analyce data using statician."
+}
+
+]
+
+
+/* JSON  to JSONLD */
+
+{
+"@context":{
+          "personalInfo":"https://www.linkedin.com/",
+          "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+          "FullName":"rdfs:label",
+          "Hometown":"rdfs:label",
+          "Age":"rdfs:comment" ,
+          "MotherName":"rdfs:label",
+          "FatherName":"rdfs:label",
+          "AlmaMater":"rdfs:label",
+          "ParentsName":"rdfs:label",
+          "name":"rdfs:comment",
+          "Teacher":"rdfs:label",
+          "About":"rdfs:comment"
+},
+"@id":"https://www.linkedin.com/feed/",
+"@types":"personalInfo:/feed/",
+"FullName":"Delia Aminta Moreno Perdomo",
+"Hometown":"Tegucigalpa, Honduras",
+"Age":27,
+"AlmaMater": "Universidad Nacional Autónoma de Honduras",
+"ParentsName":{
+  "MotherName": "Rosa Vilma Perdomo Ramos",
+  "FatherName": "Jose Oscar Moreno Cruz"
+  },
+"subjects2022":[
+  {
+"name":"Big Data",
+"Teacher":"Jesús Montes",
+"About":"During these course you will learn how to manage huge amount of Data."
+},
+{
+"name":"Cloud Computing and Big Data Ecosystems Design",
+"Teacher":"Marta Patiño" ,
+"About":"During these course you will learn how to manage huge amount of Data and the different tecnologies using in Big Data like Flink."
+},
+{
+"name":"Data Processes",
+"Teacher":"Ernestina Menasalvas",
+"About":"This course introduces fundamental tools and technologies necessary to transform raw data into information. In doing so, you'll learn how to write code to work with data. "
+},
+{
+"name":"Intelligent Systems",
+"Teacher":"Martín Molina" ,
+"About":"During these course you will learn how to manage huge amount of Data."
+},
+{
+"name":"Machine Learning",
+"Teacher":"Pedro Larrañaga",
+"About":"During these course you will be able to learn how to work the different types of machine learning"
+},
+{
+"name":"Open Data and Knowledge Graphs",
+"Teacher":"Oscar Corcho",
+"About":"During these course you will learn how to manage huge amount of Data."
+},
+{
+"name":"Big Data",
+"Teacher":"Arminda Moreno",
+"About":"During these course you will learn how to analyce data using statician."
+}
+
+]
+
+}

@@ -9,7 +9,9 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-!pip install rdflib 
+# In terminal
+# !pip install rdflib
+
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -67,7 +69,7 @@ from rdflib.plugins.sparql import prepareQuery
 q1 = prepareQuery("""
 SELECT ?ind WHERE {
   {
-    ?s rdfs:subClassOf ns:Person.
+    ?s rdfs:subClassOf* ns:Person.
     ?ind rdf:type ?s.
   }
   UNION
@@ -105,7 +107,7 @@ from rdflib.plugins.sparql import prepareQuery
 q1 = prepareQuery("""
 SELECT ?ind ?prop ?obj WHERE {
   {
-    ?s rdfs:subClassOf ns:Person.
+    ?s rdfs:subClassOf* ns:Person.
     ?ind rdf:type ?s.
     ?ind ?prop ?obj.
   }

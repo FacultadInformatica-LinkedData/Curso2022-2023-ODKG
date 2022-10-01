@@ -79,6 +79,6 @@ print(g.serialize(format="turtle"))
 # TO DO
 print("Task 6.5")
 g.add((ns.UPM, RDF.type, ns.University))
-g.add((ns.JohnSmith, vcard.Work, ns.UPM))
+g.add((ns.JohnSmith, ns.Works, ns.UPM))
 # Visualize the results
 print(g.serialize(format="turtle"))

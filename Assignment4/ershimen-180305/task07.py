@@ -65,6 +65,9 @@ print("Task 7.2")
 print("RDFLib")
 for s, _, _ in g.triples((None, RDF.type, ns.Person)):
     print(s)
+for subclass, _, _ in g.triples((None, RDFS.subClassOf, ns.Person)):
+  for s, _, _ in g.triples((None, RDF.type, subclass)):
+    print(s)
 
 print()
 
@@ -73,7 +76,14 @@ print("SPARQL")
 q1 = prepareQuery('''
   PREFIX ns: <http://somewhere#>
   SELECT ?Individual WHERE { 
-    ?Individual rdf:type ns:Person.
+    {
+      ?Individual rdf:type ns:Person.
+    }
+    UNION
+    {
+      ?SubClass rdfs:subClassOf ns:Person.
+      ?Individual rdf:type ?SubClass
+    }
   }
   ''')
 
@@ -94,6 +104,10 @@ print("RDFLib")
 for s, _, _ in g.triples((None, RDF.type, ns.Person)):
   for _, p, o in g.triples((s, None, None)):
     print(s, p, o)
+for subclass, _, _ in g.triples((None, RDFS.subClassOf, ns.Person)):
+  for s, _, _ in g.triples((None, RDF.type, subclass)):
+    for _, p, o in g.triples((s, None, None)):
+      print(s, p, o)
 
 print()
 
@@ -101,9 +115,16 @@ print()
 print("SPARQL")
 q1 = prepareQuery('''
   PREFIX ns: <http://somewhere#>
-  SELECT ?Individual ?Property ?Class WHERE { 
-    ?Individual rdf:type ns:Person.
-    ?Individual ?Property ?Class
+  SELECT ?Individual ?Property ?Class WHERE {
+    {
+      ?Individual rdf:type ns:Person.
+    }
+    UNION
+    {
+      ?SubClass rdfs:subClassOf ns:Person.
+      ?Individual rdf:type ?SubClass.
+    }
+    ?Individual ?Property ?Class.
   }
   ''')
 

@@ -3,7 +3,7 @@
 
 # **Task 06: Modifying RDF(s)**
 
-# In[2]:
+# In[10]:
 
 
 get_ipython().system('pip install rdflib ')
@@ -12,7 +12,7 @@ github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedDa
 
 # Leemos el fichero RDF de la forma que lo hemos venido haciendo
 
-# In[3]:
+# In[11]:
 
 
 from rdflib import Graph, Namespace, Literal
@@ -25,7 +25,7 @@ g.parse(github_storage+"/rdf/example5.rdf", format="xml")
 
 # Create a new class named Researcher
 
-# In[4]:
+# In[12]:
 
 
 ns = Namespace("http://somewhere#")
@@ -37,10 +37,11 @@ for s, p, o in g:
 # **TASK 6.1: Create a new class named "University"**
 # 
 
-# In[5]:
+# In[13]:
 
 
 # TO DO
+g.add((ns.University, RDF.type, RDFS.Class))
 # Visualize the results
 for s, p, o in g:
   print(s,p,o)
@@ -48,10 +49,11 @@ for s, p, o in g:
 
 # **TASK 6.2: Add "Researcher" as a subclass of "Person"**
 
-# In[6]:
+# In[14]:
 
 
 # TO DO
+g.add((ns.Researcher, RDFS.subClassOf, ns.Person))
 # Visualize the results
 for s, p, o in g:
   print(s,p,o)
@@ -59,29 +61,40 @@ for s, p, o in g:
 
 # **TASK 6.3: Create a new individual of Researcher named "Jane Smith"**
 
-# In[7]:
+# In[15]:
 
 
 # TO DO
+g.add((ns.JaneSmith, RDF.type, ns.Researcher))
 # Visualize the results
 for s, p, o in g:
-  print(s,p,o)
+    print(s,p,o)
 
 
 # **TASK 6.4: Add to the individual JaneSmith the fullName, given and family names**
 
-# In[19]:
+# In[17]:
 
 
 # TO DO
-# Visualize the results
+relationsw3=Namespace("http://www.w3.org/2001/vcard-rdf/3.0/")
+g.add((ns.JaneSmith, relationsw3.FN, Literal("Jane Smith")))
+g.add((ns.JaneSmith, relationsw3.Given, Literal("Jane")))
+g.add((ns.JaneSmith, relationsw3.Family, Literal("Smith")))
+#Visualize the results
+for s, p, o in g:
+    print(s,p,o)
 
 
 # **TASK 6.5: Add UPM as the university where John Smith works**
 
-# In[20]:
+# In[18]:
 
 
 # TO DO
-# Visualize the results
+g.add((ns.JohnSmith, ns.workAt, ns.UPM))
+g.add((ns.UPM, RDF.type, ns.University))
+#Visualize the results
+for s, p, o in g:
+    print(s,p,o)
 

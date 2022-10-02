@@ -54,10 +54,9 @@ for s, p, o in g.triples((ns.JaneSmith, None, None)):
   print(s,p,o)
 
 """**TASK 6.5: Add UPM as the university where John Smith works**"""
-
 # DONE
 g.add((ns.UPM, RDF.type, ns.University))
-g.add((ns.JonhSmith, VCARD.Work, ns.UPM))
+g.add((ns.JonhSmith, ns.Work, ns.UPM))
 # Visualize the results       
 for s, p, o in g.triples((ns.UPM, None, None)):
   print(s,p,o)        

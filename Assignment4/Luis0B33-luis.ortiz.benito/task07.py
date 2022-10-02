@@ -9,8 +9,6 @@ g.namespace_manager.bind('vcard', Namespace("http://www.w3.org/2001/vcard-rdf/3.
 g.parse(github_storage+"/rdf/example6.rdf", format="xml")
 
 """**TASK 7.1: List all subclasses of "Person" with RDFLib and SPARQL**"""
-
-# Done
 from rdflib.plugins.sparql import prepareQuery
 ns = Namespace("http://somewhere#")
 
@@ -35,26 +33,20 @@ for subclass, property, value in g.triples((None, RDFS.subClassOf, ns.Person)):
 
 """
 #SPARQL
-
-#DONE
 query2 = prepareQuery("""
   SELECT ?person WHERE{
-    {
-      ?person a ns:Person.
-    } UNION {
-      ?subclass RDFS:subClassOf ns:Person.
-      ?person a ?subclass.
-    }
+    ?subclass RDFS:subClassOf* ns:Person.
+    ?person a ?subclass.
   }
   """, initNs = {
       "ns":ns,
       "RDFS":RDFS
   }
 )
-
 # Visualize the results
 for r in g.query(query2):
   print(r.person)
+
 #RDFLIB
 for individual, property, value in g.triples((None, RDF.type, ns.Person)):
   print(f"{individual}")
@@ -69,11 +61,7 @@ for subclass, prop, val in g.triples((None, RDFS.subClassOf, ns.Person)):
 #DONE
 query3 = prepareQuery("""
   SELECT ?subclass ?person ?property  WHERE{
-    {
-      ?person a ns:Person.
-    } UNION {
-      ?subclass RDFS:subClassOf ns:Person.
-    }
+    ?subclass RDFS:subClassOf* ns:Person.
     ?person a ?subclass.
     ?person ?property ?value.
   }

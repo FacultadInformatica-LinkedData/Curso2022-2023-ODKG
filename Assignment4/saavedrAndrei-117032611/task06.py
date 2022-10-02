@@ -11,7 +11,6 @@ Original file is located at
 **Task 06: Modifying RDF(s)**
 """
 
-!pip install rdflib 
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -88,9 +87,11 @@ from rdflib import FOAF
 
 ns = Namespace("http://somewhere#")
 vcard = Namespace("http://www.w3.org/2001/vcard-rdf/3.0/")
+ns1 = Namespace("http://assignment4/")
 
-g.add((ns.JohnSmith, vcard.work, ns.UPM))
+g.add((ns.JohnSmith, ns1.work, ns.UPM))
 
 for s, p, o in g:
   print(s, p, o)
 
+print(g.serialize())

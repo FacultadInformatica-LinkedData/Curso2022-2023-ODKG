@@ -9,7 +9,7 @@ Original file is located at
 **Task 06: Modifying RDF(s)**
 """
 
-!pip install rdflib
+!pip install rdflib 
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -31,11 +31,12 @@ g.add((ns.Researcher, RDF.type, RDFS.Class))
 for s, p, o in g:
   print(s,p,o)
 
-"""**TASK 6.1: Create a new class named "University"**"""
+"""**TASK 6.1: Create a new class named "University"**
+
+"""
 
 #TO DO
-u = Namespace("http://somewhere#")
-g.add((u.University, RDF.type, RDFS.Class))
+g.add((ns.University, RDF.type, RDFS.Class))
 # Visualize the results
 for s, p, o in g:
   print(s,p,o)
@@ -43,8 +44,7 @@ for s, p, o in g:
 """**TASK 6.2: Add "Researcher" as a subclass of "Person"**"""
 
 #TO DO
-r = Namespace("http://somewhere#")
-g.add((r.Researcher, RDFS.subClassOf, r.Person))
+g.add((ns.Researcher, RDFS.subClassOf, ns.Person))
 
 # Visualize the results
 for s, p, o in g:
@@ -53,9 +53,8 @@ for s, p, o in g:
 """**TASK 6.3: Create a new individual of Researcher named "Jane Smith"**"""
 
 #TO DO
-r = Namespace("http://somewhere#")
 VCARD = Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
-g.add((r.JaneSmith, VCARD.type, r.Researcher))
+g.add((ns.JaneSmith, RDF.type, ns.Researcher))
 
 # Visualize the results
 for s, p, o in g:
@@ -64,11 +63,10 @@ for s, p, o in g:
 """**TASK 6.4: Add to the individual JaneSmith the fullName, given and family names**"""
 
 #TO DO
-r = Namespace("http://somewhere#")
 VCARD = Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
-g.add((r.JaneSmith, VCARD.FN, Literal("Jane Smith")))
-g.add((r.JaneSmith, VCARD.Given, Literal("Jane")))
-g.add((r.JaneSmith, VCARD.Family, Literal("Smith")))
+g.add((ns.JaneSmith, VCARD.FN, Literal("Jane Smith")))
+g.add((ns.JaneSmith, VCARD.Given, Literal("Jane")))
+g.add((ns.JaneSmith, VCARD.Family, Literal("Smith")))
 # Visualize the results
 for s, p, o in g:
   print(s,p,o)
@@ -76,11 +74,9 @@ for s, p, o in g:
 """**TASK 6.5: Add UPM as the university where John Smith works**"""
 
 #TO DO
-r = Namespace("http://somewhere#")
-VCARD = Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
 
-g.add((r.UPM, RDF.type, r.University))
-g.add((r.JohnSmith, VCARD.Work, r.UPM))
+g.add((ns.UPM, RDF.type, ns.University))
+g.add((ns.JohnSmith, ns.Work, ns.UPM))
 
 # Visualize the results
 for s, p, o in g:

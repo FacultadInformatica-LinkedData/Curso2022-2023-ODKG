@@ -81,7 +81,7 @@ q1 = prepareQuery('''
     }
     UNION
     {
-      ?SubClass rdfs:subClassOf ns:Person.
+      ?SubClass rdfs:subClassOf* ns:Person.
       ?Individual rdf:type ?SubClass
     }
   }
@@ -121,7 +121,7 @@ q1 = prepareQuery('''
     }
     UNION
     {
-      ?SubClass rdfs:subClassOf ns:Person.
+      ?SubClass rdfs:subClassOf* ns:Person.
       ?Individual rdf:type ?SubClass.
     }
     ?Individual ?Property ?Class.

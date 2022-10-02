@@ -9,9 +9,10 @@ Original file is located at
 **Task 09: Data linking**
 """
 
-!pip install rdflib
+# pip install rdflib, Terminal
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials/"
 
+from typing import Type
 from rdflib import Graph, Namespace, Literal, URIRef
 g1 = Graph()
 g2 = Graph()
@@ -38,16 +39,22 @@ q1 = prepareQuery('''
 
 print("Individuos, apodo y nombre de familia grafo 1##############")
 for r in g1.query(q1):
-  print(r)
+  for r1 in g2.query(q1):
+    if r.given == r1.given:
+      if r.family == r1.family:
+        g3.add((r.Subject, OWL.sameAs, r1.Subject))
 
-print("Individuos, apodo y nombre de familia grafo 2##############")
-for r in g2.query(q1):
-  print(r)
+for subj, pred, obj in g3:
+  print("Grafo g3##############")
+  print(subj,pred,obj)
+  print("Grafo g1##############")
+  for s, p, o in g1.triples((subj, None, None)):
+    print(s, p, o)
+  print("Grafo g2##############")
+  for s, p, o in g2.triples((obj, None, None)):
+    print(s, p, o)
 
-print("inserta estas coincidencias en g3########")
-g3.add((URIRef('http://data.three.org#SaraJones'), OWL.sameAs, URIRef('http://data.four.org#0001')))
-g3.add((URIRef('http://data.three.org#JohnDoe'), OWL.sameAs, URIRef('http://data.four.org#0005')))
-
+print("\n\n")
 print("Grafo g3##############")
 for subj, pred, obj in g3:
   print(subj,pred,obj)

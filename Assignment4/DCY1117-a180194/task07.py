@@ -9,7 +9,7 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-!pip install rdflib 
+# pip install rdflib, Terminal
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -62,12 +62,12 @@ for s, p, o in g.triples((None, RDFS.subClassOf, ns.Person)):
   
 print("SPARQL##########")
 
+# elt*, A path of zero or more occurrences of elt
+
 q1 = prepareQuery('''
-  SELECT ?Subject WHERE { 
-    { ?s rdfs:subClassOf ns:Person.
-      ?Subject rdf:type ?s }
-    UNION
-    { ?Subject rdf:type ns:Person }
+  SELECT ?Subject ?class WHERE { 
+    ?class rdfs:subClassOf* ns:Person.
+    ?Subject rdf:type ?class
   } 
   ''',
   initNs = { "ns": ns}
@@ -97,13 +97,9 @@ print("SPARQL##########")
 
 q1 = prepareQuery('''
   SELECT ?Subject ?prop ?class WHERE { 
-    { ?class rdfs:subClassOf ns:Person.
-      ?Subject rdf:type ?class.
-      ?Subject ?prop ?o. }
-    UNION
-    { ?Subject rdf:type ns:Person. 
-      ?Subject ?prop ?o 
-      OPTIONAL{ ?Subject rdf:type ?class }}
+    ?class rdfs:subClassOf* ns:Person.
+    ?Subject rdf:type ?class.
+    ?Subject ?prop ?o. 
   } 
   ''',
   initNs = { "ns": ns}

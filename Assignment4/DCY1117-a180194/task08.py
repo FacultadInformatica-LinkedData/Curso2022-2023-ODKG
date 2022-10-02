@@ -9,7 +9,7 @@ Original file is located at
 **Task 08: Completing missing data**
 """
 
-!pip install rdflib
+# pip install rdflib, Terminal
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
 
 from rdflib import Graph, Namespace, Literal, URIRef
@@ -25,55 +25,49 @@ from rdflib.plugins.sparql import prepareQuery
 ns = Namespace("http://data.org#")
 VCARD = Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
 
-print("Grafo g1##############")
-for subj, pred, obj in g1:
-  print(subj,pred,obj)
-
-print("Elementos de la clase Person en el primer grafo 1############")
+print("Elementos de la clase person y su given name, family name y email############")
 
 q1 = prepareQuery('''
-  SELECT ?Subject WHERE { 
-    ?Subject rdf:type ns:Person 
-  } 
-  ''',
-  initNs = { "ns": ns}
-)
-
-for r in g1.query(q1):
-  print(r)
-
-print("Grafo 2 , Elementos de la clase persona y su given name, family name y email##############")
-
-q2 = prepareQuery('''
   SELECT ?Subject ?given ?family ?email WHERE { 
     ?Subject rdf:type ns:Person.
-    OPTIONAL{ ?Subject VCARD:Given ?given. }
-    OPTIONAL{ ?Subject VCARD:Family ?family. }
-    OPTIONAL{ ?Subject VCARD:EMAIL ?email. }
+    OPTIONAL{ ?Subject VCARD:Given ?given }.
+    OPTIONAL{ ?Subject VCARD:Family ?family }.
+    OPTIONAL{ ?Subject VCARD:EMAIL ?email }.
   }
   ''',
   initNs = { "ns": ns ,"VCARD": VCARD }
 )
 
-for r in g2.query(q2):
+print("print grafo 1############")
+
+for r in g1.query(q1):
   print(r)
 
-print("Completar campos en el grafo 1############")
+print("print grafo 2############")
 
-g1.add((ns.SaraJones, VCARD.Given, Literal('Sara')))
-g1.add((ns.SaraJones, VCARD.Family, Literal('Jones')))
-g1.add((ns.SaraJones, VCARD.EMAIL, Literal('sara.jones@data.org')))
+for r in g2.query(q1):
+  print(r)
 
-g1.add((ns.JohnSmith, VCARD.Given, Literal('John')))
-g1.add((ns.JohnSmith, VCARD.Family, Literal('Smith')))
-g1.add((ns.JohnSmith, VCARD.EMAIL, Literal('j.smith@data.org')))
+for r in g1.query(q1):
+  if(r.given == None):
+    for r1 in g2.query(q1):
+      if r1.Subject == r.Subject:
+        g1.add((r.Subject, VCARD.Given, r1.given))
+  if(r.family == None):
+    for r1 in g2.query(q1):
+      if r1.Subject == r.Subject:
+        g1.add((r.Subject, VCARD.Family, r1.family))
+  if(r.email == None):
+    for r1 in g2.query(q1):
+      if r1.Subject == r.Subject:
+        g1.add((r.Subject, VCARD.EMAIL, r1.email))
+  
+print("print grafo 1############")
 
-g1.add((ns.JohnDoe, VCARD.Given, Literal('John')))
-g1.add((ns.JohnDoe, VCARD.Family, Literal('Doe')))
-g1.add((ns.JohnDoe, VCARD.EMAIL, Literal('doe@data.org')))
+for r in g1.query(q1):
+  print(r)
 
-g1.add((ns.HarryPotter, VCARD.Given, Literal('Harry')))
-g1.add((ns.HarryPotter, VCARD.EMAIL, Literal('hpotter@hogwarts.org')))
+print("print grafo 2############")
 
-for r in g2.query(q2):
+for r in g2.query(q1):
   print(r)

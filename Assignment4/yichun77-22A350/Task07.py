@@ -9,7 +9,7 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-!pip install rdflib 
+#!pip install rdflib 
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -56,7 +56,7 @@ q_person = prepareQuery('''
   SELECT ?s WHERE { 
     {?s rdf:type ns:Person} 
     UNION{
-      ?s rdfs:subClassOf ns:Person .
+      ?s rdfs:subClassOf* ns:Person .
       ?s rdf:type ?Subclass .}
   }''',
   initNs = {"rdfs": RDFS, "ns": ns, "rdf": RDF}
@@ -85,7 +85,7 @@ q_pro = prepareQuery('''
       ?s rdf:type ns:Person .
       ?s ?p ?o
     } UNION {
-      ?sub rdfs:subClassOf ns:Person .
+      ?sub rdfs:subClassOf* ns:Person .
       ?s rdf:type ?sub .
       ?s ?p ?o }
   }''',

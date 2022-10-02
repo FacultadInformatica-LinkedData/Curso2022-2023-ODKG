@@ -17,6 +17,7 @@ github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedDa
 
 from rdflib import Graph, Namespace, Literal
 from rdflib.namespace import RDF, RDFS
+ns=Namespace("http://somewhere#")
 g = Graph()
 g.namespace_manager.bind('ns', Namespace("http://somewhere#"), override=False)
 g.namespace_manager.bind('vcard', Namespace("http://www.w3.org/2001/vcard-rdf/3.0#"), override=False)
@@ -44,6 +45,13 @@ for r in g.query(q1):
   print(r)
 
 
+# In[6]:
+
+
+for s, p, o in g.triples((None, RDFS.subClassOf, ns.Person)):
+    print(s)
+
+
 # **TASK 7.2: List all individuals of "Person" with RDFLib and SPARQL (remember the subClasses)**
 # 
 
@@ -65,6 +73,16 @@ q2 = prepareQuery('''
 
 for r in g.query(q2):
   print(r)
+
+
+# In[12]:
+
+
+for s,p,o in g.triples((None, RDF.type, None)):
+    for s0,p0,o0 in g.triples((o, RDFS.subClassOf, ns.Person)):
+        print(s)
+    for _,_,_ in g.triples((s, RDF.type, ns.Person)):
+        print(s)
 
 
 # **TASK 7.3: List all individuals of "Person" and all their properties including their class with RDFLib and SPARQL**
@@ -89,6 +107,18 @@ q3 = prepareQuery('''
 
 for r in g.query(q3):
   print(r)
+
+
+# In[14]:
+
+
+for s,_,t in g.triples((None, RDF.type, None)):
+    for _,_,_ in g.triples((t, RDFS.subClassOf, ns.Person)):
+        for _,p,o in g.triples((s, None, None)):
+            print(s,p,o)
+    for _,_,_ in g.triples((s, RDF.type, ns.Person)):
+         for _,p,o in g.triples((s, None, None)):
+            print(s,p,o)
 
 
 # In[ ]:

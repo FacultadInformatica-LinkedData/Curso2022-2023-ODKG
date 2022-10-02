@@ -1,0 +1,63 @@
+#1. Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
+
+Result: https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+EXO%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fproperty+WHERE%7B%0D%0A++++%3Fpolitician+a+EXO%3APolitician.%0D%0A++++%3Fpolitician+%3Fproperty+%3Fobject%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+---Query---
+PREFIX EXO: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?property WHERE{
+    ?politician a EXO:Politician.
+    ?politician ?property ?object
+}
+
+#2. Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+
+Result: https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+EXO%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fproperty+WHERE%7B%0D%0A++++%3Fpolitician+a+EXO%3APolitician.%0D%0A++++%3Fpolitician+%3Fproperty+%3Fobject.%0D%0A++++FILTER%28%3Fproperty+%21%3D+rdf%3Atype%29%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+---Query---
+PREFIX EXO: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?property WHERE{
+    ?politician a EXO:Politician.
+    ?politician ?property ?object.
+    FILTER(?property != rdf:type)
+}
+
+#3. Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+
+Result: https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+EXO%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0A++++++++++++SELECT+DISTINCT+%3Fvalue+WHERE%7B%0D%0A++++++++++++++++%3Fpolitician+a+EXO%3APolitician.%0D%0A++++++++++++++++%3Fpolitician+%3Fproperty+%3Fvalue.%0D%0A++++++++++++++++FILTER%28%3Fproperty+%21%3D+rdf%3Atype%29.%0D%0A++++++++++++%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+---Query---
+PREFIX EXO: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?value WHERE{
+    ?politician a EXO:Politician.
+    ?politician ?property ?value.
+    FILTER(?property != rdf:type).
+}
+
+#4. For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+
+Result: https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+EXO%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0A++++++++++++SELECT+DISTINCT+%3Fproperty+%3Fvalue+WHERE%7B%0D%0A++++++++++++++++%3Fpolitician+a+EXO%3APolitician.%0D%0A++++++++++++++++%3Fpolitician+%3Fproperty+%3Fvalue.%0D%0A++++++++++++++++FILTER%28%3Fproperty+%21%3D+rdf%3Atype%29.%0D%0A++++++++++++%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+---Query---
+PREFIX EXO: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?property ?value WHERE{
+    ?politician a EXO:Politician.
+    ?politician ?property ?value.
+    FILTER(?property != rdf:type).
+}
+
+#5. For each of these applicable properties, except for rdf:type, how many distinct values do they take globally for all those instances?
+
+Result: https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+EXO%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0A++++++++++++SELECT+DISTINCT+%3Fproperty+COUNT%28%3Fvalue%29+as+%3FnumValues+WHERE%7B%0D%0A++++++++++++++++%3Fpolitician+a+EXO%3APolitician.%0D%0A++++++++++++++++%3Fpolitician+%3Fproperty+%3Fvalue.%0D%0A++++++++++++++++FILTER%28%3Fproperty+%21%3D+rdf%3Atype%29.%0D%0A++++++++++++%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+---Query---
+PREFIX EXO: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?property COUNT(?value) as ?numValues WHERE{
+    ?politician a EXO:Politician.
+    ?politician ?property ?value.
+    FILTER(?property != rdf:type).
+}

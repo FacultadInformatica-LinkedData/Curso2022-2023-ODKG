@@ -1,0 +1,173 @@
+{
+    "@context":{
+        "people":"http://www.ontologies.org/ontologies/People#",
+        "ex":"http://www.example.org/",
+        "homeTown":"ex:homeTown",
+        "fullName":"ex:fullName",
+        "age":"ex:age",
+        "almaMater":"ex:almaMater",
+        "fatherName":"ex:fatherName",
+        "motherName":"ex:motherName",
+        "subjects":"ex:subjects",
+        "subjectName":"ex:subjectName",
+        "parentsName":"ex:parentsName",
+        "courseTeachers":"ex:courseTeachers",
+        "teacher":"ex:teacher",
+        "briefDescription":"ex:briefDescription"
+    },
+    "@id":"ex:LuisOrtizBenito",
+	"@type" : "people:student",
+    "fullName":"Luis Ortiz Benito",
+    "homeTown":"Getafe",
+    "age": 21,
+    "almaMater":["Universidad Politecnica de Madrid","Universidad Carlos III de Madrid"],
+    "parentsName":{
+        "fatherName":"Luis Ortiz Caballero",
+        "motherName":"María Beatriz Benito García"
+    },
+    "subjects":[
+        {
+            "subjectName":"Open Data and Knowledge Graphs",
+            "courseTeachers":[
+                {
+                    "@id":"ex:OscarCorchoGarcía",
+                    "@type" : "people:teacher",
+                    "fullName":"Oscar Corcho García"
+                },
+                {
+                    "@id":"ex:RaulGarcíaCastro",
+                    "@type" : "people:teacher",
+                    "fullName":"Raul García Castro"
+                }
+            ],
+            "briefDescription":"During this course you will learn about the main foundations for Knowledge Graphs, including the W3C recommendations that are applicable in this area (RDF, RDF Schema, SPARQL, OWL, CSV on the Web) and methodologies for the generation and publication of Knowledge Graphs from multiple heterogeneous data sources and formats, using Linked Data technologies. You will also learn about how to create shared agreed vocabularies and ontologies that can give support to Knowledge Graph generation and publication, and will understand how these principles and approaches have been applied to several domains. You will work on a practical hands-on exercise that will be the basis for your participation in hackatons and other similar events"
+        },
+        {
+            "subjectName":"Introduction to Research Methodology",
+            "courseTeachers":[
+                {
+                    "@id":"ex:OscarCorchoGarcía",
+                    "@type" : "people:teacher",
+                    "fullName":"Oscar Corcho García"
+                }
+            ],
+            "briefDescription":"This seminar aims to inform and orient students about the most common techniques, standards and systems for the practice of scientific research and its methodological and documentary bases."
+        },
+        {
+            "subjectName":"BigData",
+            "courseTeachers":[
+                {
+                    "@id":"ex:AntonioLatorreFuente",
+                    "@type" : "people:teacher",
+                    "fullName":"Antonio Latorre De La Fuente"
+                },
+                {
+                    "@id":"ex:JesusMontesSanchez",
+                    "@type" : "people:teacher",
+                    "fullName":"Jesus Montes Sanchez"
+                }
+            ],
+            "briefDescription":"This course will allow the student to gain the fundamentals for the analysis of large volumes of data. With an eminently practical approach, the technologies and fundamentals necessary to successfully accomplish the whole data analysis process will be presented in the context of Big Data, from the raw data to the models derived from them."
+        },
+        {
+            "subjectName":"Cloud computing and big data ecosystems design",
+            "courseTeachers":[
+                {
+                    "@id":"ex:MartaPatiñoMartinez",
+                    "@type" : "people:teacher",
+                    "fullName":"Marta Patiño Martinez"
+                },
+                {
+                    "@id":"ex:TonghongLi",
+                    "@type" : "people:teacher",
+                    "fullName":"Tonghong Li"
+                },
+                {
+                    "@id":"ex:Ainhoa Azqueta Alzuaz",
+                    "@type" : "people:teacher",
+                    "fullName":"Ainhoa Azqueta Alzuaz"
+                }
+            ],
+            "briefDescription":"This course presents traditional data management systems and architectures for scalable distributed systems and data management systems: bigtable, data streaming, persistent queues"
+        },
+        {
+            "subjectName":"DataProcesses",
+            "courseTeachers":[
+                {
+                    "@id":"ex:AlejandroRodríguezGonzález",
+                    "@type" : "people:teacher",
+                    "fullName":"Alejandro Rodríguez González"
+                },
+                {
+                    "@id":"ex:ErnestinaMenasalvas",
+                    "@type" : "people:teacher",
+                    "fullName":"Ernestina Menasalvas"
+                },
+                {
+                    "@id":"ex:MaríaCovadongaFernándezBaizán",
+                    "@type" : "people:teacher",
+                    "fullName":"María Covadonga Fernández Baizán"
+                },
+                {
+                    "@id":"ex:AntonioJesúsDíazHonrubia",
+                    "@type" : "people:teacher",
+                    "fullName":"Antonio Jesús Díaz Honrubia"
+                },
+                {
+                    "@id":"ex:LuisMengual",
+                    "@type" : "people:teacher",
+                    "fullName":"Luis Mengual"
+                }
+            ],
+            "briefDescription":"In this course we will deepen on the importance of data for an organization. In fact, the course is centered on the process of extraction of knowledge from databases as a support for decision making."
+        },
+        {
+            "subjectName":"Statistical Data Analysis",
+            "courseTeachers":[
+                {
+                    "@id":"ex:JacintoGonzález",
+                    "@type" : "people:teacher",
+                    "fullName":"Jacinto González"
+                },
+                {
+                    "@id":"ex:JuanAntonioFernández",
+                    "@type" : "people:teacher",
+                    "fullName":"Juan Antonio Fernández"
+                },
+                {
+                    "@id":"ex:AntonioJiménez",
+                    "@type" : "people:teacher",
+                    "fullName":"Antonio Jiménez"
+                },
+                {
+                    "@id":"ex:ArmindaMoreno",
+                    "@type" : "people:teacher",
+                    "fullName":"Arminda Moreno"
+                },
+                {
+                    "@id":"ex:MaríaIsabelRodríguezGaliano",
+                    "@type" : "people:teacher",
+                    "fullName":"María Isabel Rodríguez Galiano"
+                }
+            ],
+            "briefDescription":"The course is intended to be a non-exhaustive survey of techinques to convert multivariate data into useful information so that good decisions can be made. The perspective is twofold, theorical and applied, covering topics such as: exploratory data analysis, statistical summaries and graphical representations, dimensionality reduction regression techniques and time series analysis. There will be an emphasis on hands-on application of the theory and methods throughout, with extensive use of R.The course is taught in three modules which are broken down in topics below and properly referenced in the timeline."
+        },
+        {
+            "subjectName":"Machine Learning",
+            "courseTeachers":[
+                {
+                    "@id":"ex:MaríaConcepciónBielza",
+                    "@type" : "people:teacher",
+                    "fullName":"María Concepción Bielza"
+                },
+                {
+                    "@id":"ex:PedroLarrañaga",
+                    "@type" : "people:teacher",
+                    "fullName":"Pedro Larrañaga"
+                }
+            ],
+            "briefDescription":"Machine Learning transforms data into knowledge and provides general purpose systems that adapt to circumstances adapts to the circumstances. This course exposes several methods to solve problems of supervised, unsupervised, and supervised, unsupervised, and relationships between system variables."
+        }
+
+    ]
+}

@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "test": "http://www.oeg-upm.net/element/Properties#",
+    "xsd": "http://www.w3.org/2001/XMLSchema"
+  },
+  "@graph": [
+    {
+      "@id": "test:Class01",
+      "test:includes": [
+        {
+          "@id": "test:Sensor029",
+          "test:hasMeasurement": {
+            "@id": "test:Measurement8401",
+            "test:hasTemperature": {
+              "@value": "29",
+              "@type": "xsd:integer"
+            },
+            "test:atTime": {
+              "@value": "2010-06-12T10:00:12",
+              "@type": "xsd:dateTime"
+            }
+          }
+        },
+        {
+          "@id": "test:Computer101",
+          "test:hasOwner": {
+            "@id": "test:User10A",
+            "test:hasName": {
+              "@value": "Pedro"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

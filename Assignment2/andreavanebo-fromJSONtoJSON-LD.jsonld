@@ -1,0 +1,45 @@
+{
+	"@context":{
+		"fullname": "http://xmlns.com/foaf/0.1/name",
+		"hometown": "rdfs:label",
+		"age": "rdfs:label",
+		"almaMater": "rdfs:label",
+		"parents": "rdfs:label",
+		"subjects": "rdf:Container",
+		"Person": "http://xmlns.com/foaf/0.1/Person",
+		"subject": "http://xmlns.com/foaf/0.1/Subjec",
+		"name": "rdfs:label",
+		"teachers": "rdfs:label",
+		"brief_description": "rdfs:comment"
+	},	
+	"@id": "1",
+	"@type": "Person",
+ 	"fullname": "Andrea Hetlevik Vanebo",
+	"hometown":"Kongsberg",
+	"age":22,
+	"almaMater":"NTNU",
+	"parents":"Elisabeth and Roger",
+	"subjects":[{
+		
+			"@id":"1",
+			"@type":"subject",
+			"name":"Data processes",
+			"teachers":"teacher1",
+			"brief_description":"description number 1"
+		},
+		{
+			"@id":"2",
+			"@type":"subject",
+			"name":"Open Data and Knowledge Graphs",
+			"teachers":"teacher2, teacher3 and teacher4",
+			"brief_description":"description number 2"
+		},
+		{
+			"@id":"3",
+			"@type":"subject",
+			"name":"Fundamentals of Finance",
+			"teachers":"teacher5",
+			"brief_description":"description number 3"
+		}
+	]
+}

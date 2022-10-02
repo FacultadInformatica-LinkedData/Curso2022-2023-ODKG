@@ -1,0 +1,162 @@
+
+1 --- Get all the properties that can be applied to instances of the Politician class
+
+SELECT DISTINCT ?property {
+<http://dbpedia.org/ontology/Politician> ?property ?value
+}
+
+2 --- Same but without the rdf:type
+
+SELECT DISTINCT ?property {
+<http://dbpedia.org/ontology/Politician> ?property ?value
+filter (?property != rdf:type)
+}
+
+3 --- Which different values exist for the properties, except rdf:type, of the instances of the Politician class?
+
+SELECT DISTINCT ?property ?value {
+<http://dbpedia.org/ontology/Politician> ?property ?value
+filter (?property != rdf:type)
+}
+
+4 --- For each of the properties, except rdf:type, that can be applied to instances of the Politician class, which different values do they take in those instances?
+
+SELECT DISTINCT ?property COUNT(?value) {
+<http://dbpedia.org/ontology/Politician> ?property ?value
+filter (?property != rdf:type)
+}
+
+5 --- For each of the properties, except rdf:type, that can be applied to instances of the Politician class, how many
+distinct values do they take in those instances?
+
+SELECT DISTINCT ?property COUNT(DISTINCT(?value)) {
+<http://dbpedia.org/ontology/Politician> ?property ?value
+filter (?property != rdf:type)}
+
+------------------------------------------------------
+
+Results
+
+# 1 
+
+property
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+http://www.w3.org/2002/07/owl#equivalentClass
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+http://www.w3.org/2002/07/owl#sameAs
+http://www.w3.org/2000/01/rdf-schema#subClassOf
+http://xmlns.com/foaf/0.1/topic
+http://www.w3.org/2007/05/powder-s#describedby
+http://www.w3.org/ns/prov#wasDerivedFrom
+
+# 2
+
+property
+http://www.w3.org/2002/07/owl#equivalentClass
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+http://www.w3.org/2002/07/owl#sameAs
+http://www.w3.org/2000/01/rdf-schema#subClassOf
+http://xmlns.com/foaf/0.1/topic
+http://www.w3.org/2007/05/powder-s#describedby
+http://www.w3.org/ns/prov#wasDerivedFrom
+
+# 3
+
+property	value
+http://www.w3.org/2002/07/owl#equivalentClass	http://www.wikidata.org/entity/Q82955
+http://www.w3.org/2000/01/rdf-schema#label	
+"Politiker"@de
+http://www.w3.org/2000/01/rdf-schema#label	
+"polaiteoir"@ga
+http://www.w3.org/2000/01/rdf-schema#label	
+"politician"@en
+http://www.w3.org/2000/01/rdf-schema#label	
+"politicien"@fr
+http://www.w3.org/2000/01/rdf-schema#label	
+"politicus"@nl
+http://www.w3.org/2000/01/rdf-schema#label	
+"politik"@sl
+http://www.w3.org/2000/01/rdf-schema#label	
+"político"@pt
+http://www.w3.org/2000/01/rdf-schema#label	
+"πολιτικός"@el
+http://www.w3.org/2000/01/rdf-schema#label	
+"政治家"@ja
+http://www.w3.org/2000/01/rdf-schema#label	
+"정치인"@ko
+http://www.w3.org/2000/01/rdf-schema#label	
+"سیاستدان"@ur
+http://www.w3.org/2000/01/rdf-schema#isDefinedBy	http://dbpedia.org/ontology/
+http://www.w3.org/2002/07/owl#sameAs	http://dbpedia.org/ontology/Politician
+http://www.w3.org/2000/01/rdf-schema#subClassOf	http://dbpedia.org/ontology/Person
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/President
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/Ambassador
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/Chancellor
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/Congressman
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/Deputy
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/Governor
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/Lieutenant
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/Mayor
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/MemberOfParliament
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/Minister
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/PrimeMinister
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/Senator
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/VicePresident
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/VicePrimeMinister
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/minister
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/politician
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/prefect
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/حاکم
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/سفیر
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/مجلس_کے_شرکاء
+http://xmlns.com/foaf/0.1/topic	http://dbpedia.org/ontology/data/definitions.ttl
+http://www.w3.org/2007/05/powder-s#describedby	http://es.dbpedia.org/about/id/entity/http/dbpedia.org/ontology/
+http://www.w3.org/2007/05/powder-s#describedby	http://localhost:8890/about/id/entity/https/dbpedia.org/ontology/Politician
+http://www.w3.org/2007/05/powder-s#describedby	http://localhost:8890/about/id/entity/http/dbpedia.org/ontology/data/definitions.ttl
+http://www.w3.org/2007/05/powder-s#describedby	http://dbpedia.org/ontology/data/definitions.ttl
+http://www.w3.org/2007/05/powder-s#describedby	http://localhost:8890/about/id/entity/http/dbpedia.org/ontology/Person
+http://www.w3.org/ns/prov#wasDerivedFrom	http://mappings.dbpedia.org/index.php/OntologyClass:Politician
+
+# 4
+
+property	callret-1
+http://www.w3.org/2002/07/owl#sameAs	
+2
+http://www.w3.org/2007/05/powder-s#describedby	
+7
+http://www.w3.org/ns/prov#wasDerivedFrom	
+3
+http://www.w3.org/2000/01/rdf-schema#label	
+32
+http://www.w3.org/2000/01/rdf-schema#subClassOf	
+4
+http://www.w3.org/2000/01/rdf-schema#isDefinedBy	
+3
+http://xmlns.com/foaf/0.1/topic	
+22
+http://www.w3.org/2002/07/owl#equivalentClass	
+3
+
+# 5
+
+property	callret-1
+http://www.w3.org/2002/07/owl#sameAs	
+1
+http://www.w3.org/ns/prov#wasDerivedFrom	
+1
+http://www.w3.org/2000/01/rdf-schema#label	
+11
+http://www.w3.org/2000/01/rdf-schema#subClassOf	
+1
+http://www.w3.org/2000/01/rdf-schema#isDefinedBy	
+1
+http://www.w3.org/2002/07/owl#equivalentClass	
+1
+http://xmlns.com/foaf/0.1/topic	
+22
+http://www.w3.org/2007/05/powder-s#describedby	
+5
+

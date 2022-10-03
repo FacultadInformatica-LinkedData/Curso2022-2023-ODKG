@@ -11,7 +11,7 @@ Original file is located at
 
 
 
-!pip install rdflib
+#!pip install rdflib
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
 
 from rdflib import Graph, Namespace, Literal, URIRef

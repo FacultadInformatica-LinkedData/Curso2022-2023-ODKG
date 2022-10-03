@@ -45,7 +45,7 @@ for s, p, o in g:
 
 """**TASK 6.3: Create a new individual of Researcher named "Jane Smith"**"""
 
-g.add((ns.JaneSmith, RDF.type, ns.Reseachers))
+g.add((ns.JaneSmith, RDF.type, ns.Reseacher))
 
 """**TASK 6.4: Add to the individual JaneSmith the fullName, given and family names**"""
 

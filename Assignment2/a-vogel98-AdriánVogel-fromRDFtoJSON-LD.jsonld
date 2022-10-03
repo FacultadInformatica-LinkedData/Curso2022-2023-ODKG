@@ -1,0 +1,37 @@
+{
+"@context": {
+	"name": "http://www.namespace.es/names#",
+	"s": "http://www.w3.org/2001/XMLSchema#"
+	},
+"@graph": [
+	{
+	"@id": "name:Class01",
+	"name:includes": [
+			{
+			"@id": "name:Sensor029",
+			"name:hasMeasurement": {
+				"@id": "name:Measurement8401",
+				"name:hasTemperature": {
+					"@value": 29,
+					"@type": "s:integer"
+				},
+				"name:atTime": {
+					"@value": "2010-06-12T12:00:12",
+					"@type": "s:dateTime"
+				}
+			}
+		},
+			{
+			"@id": "name:Computer101",
+			"name:hasOwner": {
+				"@id": "name:User10A",
+				"name:hasName": {
+					"@value": "Pedro",
+					"@type": "s:string"
+				}
+			}
+		}
+		]
+	}
+]
+}

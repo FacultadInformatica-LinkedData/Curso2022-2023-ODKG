@@ -1,0 +1,94 @@
+{
+  "@context": {
+    "base": "http://assignment.02/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  },
+  "@graph": [
+    {
+      "@id": "base:Andrei_Saavedra",
+      "base:fullName": "Andrei Saavedra Rivera",
+      "base:Age": 22,
+      "base:homeTown": {
+        "@id": "Huancayo, Peru"
+      },
+      "base:almaMater": {
+        "@id": "Universidad Continental"
+      },
+      "base:parents": [
+        {
+          "@id": "base:Rocio_Rivera"
+        },
+        {
+          "@id": "base:Roger_Saavedra"
+        }
+      ],
+      "base:subjects": [
+        {
+          "@id" : "base:DP",
+          "base:name": "Data Processes",
+          "base:teachers": [
+            {
+              "@id": "base:Ernestina_Menasalvas"
+            },
+            {
+              "@id": "base:Alejandro_Rodriguez"
+            }
+          ],
+          "base:description": "This course introduces fundamental tools and technologies necessary to transform raw data into information"
+          
+        },
+        {
+          "@id" : "base:OdKg",
+          "base:name": "Open Data & Knowledge Graphs",
+          "base:teachers": [
+            {
+              "@id": "base:Oscar_Corcho"
+            },
+            {
+              "@id": "base:Daniel_Garijo"
+            }
+          ],
+          "base:description": "Main foundations of Open Data and Knowledge Graphs, and we will see how these principles are being applied in numerous areas"
+          
+        },
+        {
+          "@id" : "base:Stats_Data",
+          "base:name": "Statistical Data Analysis",
+          "base:teachers": [
+            {
+              "@id": "base:Arminda_Moreno"
+            }
+          ],
+          "base:description": "This course does a review of statistical inference confidence intervals and test hypothesis"
+          
+        },
+        {
+          "@id" : "base:Intell_Sys.",
+          "base:name": "Intelligent Systems",
+          "base:teachers": [
+            {
+              "@id": "base:Martin_Molina"
+            }
+          ],
+          "base:description": "This course describe AI applications using an integrated system view"
+          
+        },
+        {
+          "@id" : "base:BD.",
+          "base:name": "Big Data",
+          "base:teachers": [
+            {
+              "@id": "base:Antonio_LaTorre"
+            },
+            {
+              "@id": "base:Jesus_Montes"
+            }
+          ],
+          "base:description": "This course introduces Big data that exceeds the processing capacity of conventional database systems"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+@prefix test: <http://test.com/#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+test:Class01 test:includes test:Sensor029 ;
+              test:includes test:Computer101 .
+
+test:Sensor029 test:hasMeasurement test:Measurement8401 .
+
+test:Measurement8401 test:hasTemperature 29 ;
+                      test:atTime "2010-06-12T12:00:12"^^xsd:datetime .
+
+test:Computer101 test:hasOwner test:User10A .
+
+test:User10A test:hasName "Pedro" . 

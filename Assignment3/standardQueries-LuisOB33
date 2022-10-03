@@ -1,0 +1,181 @@
+#1. Get all the classes
+
+Result: https://es.dbpedia.org/sparql?default-graph-uri=&query=SELECT+DISTINCT+%3Ftype+WHERE+%7B%0D%0A++++%3Felement+a+%3Ftype.%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+--Query--
+SELECT DISTINCT ?type WHERE {
+  ?element a ?type.
+}
+
+#2. Get the subclasses of the class Establishment
+
+Result: http://sandbox.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fsandbox.linkeddata.es%2FGrado_20122013&query=PREFIX+n3%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A++++++++++++PREFIX+EXR%3A+%3Chttp%3A%2F%2FGP-onto.fi.upm.es%2Fexercise2%23%3E%0D%0A++++++++++++SELECT+DISTINCT+%3Fsubclass%0D%0A++++++++++++++++WHERE+%7B%0D%0A++++++++++++++++++++%3Fsubclass+n3%3AsubClassOf+EXR%3AEstablishment%0D%0A++++++++++++++++%7D&format=text%2Fhtml&timeout=0&debug=on
+
+--Query--
+PREFIX n3: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX EXR: <http://GP-onto.fi.upm.es/exercise2#>
+SELECT DISTINCT ?subclass WHERE {
+  ?subclass n3:subClassOf EXR:Establishment
+}
+
+#3. Get the instances of the class City
+
+Result: http://sandbox.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fsandbox.linkeddata.es%2FGrado_20122013&query=PREFIX+n3%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+EXR%3A+%3Chttp%3A%2F%2FGP-onto.fi.upm.es%2Fexercise2%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fcity+WHERE+%7B%0D%0A++++++++%3Fcity+a+EXR%3ACity%0D%0A%7D&format=text%2Fhtml&timeout=0&debug=on
+
+--Query--
+PREFIX n3: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX EXR: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT ?city WHERE {
+  ?city a EXR:City
+}
+
+#4. Get the number of inhabitants of Santiago de Compostela
+
+Result: http://sandbox.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fsandbox.linkeddata.es%2FGrado_20122013&query=PREFIX+n3%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+EXR%3A+%3Chttp%3A%2F%2FGP-onto.fi.upm.es%2Fexercise2%23%3E%0D%0A%0D%0ASELECT+%3FhabCount+WHERE+%7B%0D%0A++++++++EXR%3ASantiago_de_Compostela+EXR%3AhasInhabitantNumber+%3FhabCount%0D%0A++++%7D%0D%0A&format=text%2Fhtml&timeout=0&debug=on
+
+--Query--
+PREFIX n3: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX EXR: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?habCount WHERE {
+  EXR:Santiago_de_Compostela EXR:hasInhabitantNumber ?habCount
+}
+
+#5. Get the number of inhabitants of Santiago de Compostela and of Arzua
+
+Result: http://sandbox.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fsandbox.linkeddata.es%2FGrado_20122013&query=PREFIX+n3%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+EXR%3A+%3Chttp%3A%2F%2FGP-onto.fi.upm.es%2Fexercise2%23%3E%0D%0A%0D%0ASELECT+%3Fcity+%3FhabCount%0D%0A++++WHERE+%7B%0D%0A++++++++%3Fcity+EXR%3AhasInhabitantNumber+%3FhabCount.%0D%0A++++++++FILTER+regex%28%3Fcity%2C+%22Arzua%7CSantiago_de_Compostela%22%2C+%22i%22%29%0D%0A++++%7D&format=text%2Fhtml&timeout=0&debug=on
+
+--Query--
+PREFIX n3: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX EXR: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?city ?habCount WHERE {
+  ?city EXR:hasInhabitantNumber ?habCount.
+  FILTER regex(?city, "Arzua|Santiago_de_Compostela", "i")
+}
+
+#6. Get different places with the inhabitants number, ordering the results by name of the place (ascending) 
+
+Result: http://sandbox.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fsandbox.linkeddata.es%2FGrado_20122013&query=+PREFIX+n3%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A++++++++++++PREFIX+EXR%3A+%3Chttp%3A%2F%2FGP-onto.fi.upm.es%2Fexercise2%23%3E%0D%0A++++++++++++%0D%0A++++++++++++SELECT+%3Fcity+%3FhabCount%0D%0A++++++++++++++++WHERE+%7B%0D%0A++++++++++++++++++++%3Fcity+EXR%3AhasInhabitantNumber+%3FhabCount.%0D%0A++++++++++++++++%7DORDER+BY+ASC%28%3Fcity%29&format=text%2Fhtml&timeout=0&debug=on
+
+--Query--
+PREFIX n3: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX EXR: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?city ?habCount WHERE {
+  ?city EXR:hasInhabitantNumber ?habCount.
+}ORDER BY ASC(?city)
+
+#7. Get all the instances of Locality with their inhabitant number (if it exists)
+
+Result: http://sandbox.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fsandbox.linkeddata.es%2FGrado_20122013&query=PREFIX+n3%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A++++++++PREFIX+EXR%3A+%3Chttp%3A%2F%2FGP-onto.fi.upm.es%2Fexercise2%23%3E%0D%0A++++++++%0D%0A++++++++SELECT+%3Flocality+%3FhabCount%0D%0A++++++++++++WHERE+%7B%0D%0A++++++++++++++++%3Fplace+n3%3AsubClassOf+EXR%3ALocality.%0D%0A++++++++++++++++%3Flocality+a+%3Fplace.%0D%0A++++++++++++++++OPTIONAL+%7B%3Flocality+EXR%3AhasInhabitantNumber+%3FhabCount.%7D%0D%0A++++++++++++%7D&format=text%2Fhtml&timeout=0&debug=on
+
+--Query--
+PREFIX n3: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX EXR: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?locality ?habCount WHERE {
+  ?place n3:subClassOf EXR:Locality.
+  ?locality a ?place.
+  OPTIONAL {?locality EXR:hasInhabitantNumber ?habCount.}
+}
+
+#8. Get all the places with more than 200.000 inhabitants
+
+Result: http://sandbox.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fsandbox.linkeddata.es%2FGrado_20122013&query=PREFIX+n3%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A++++++++PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0A++++++++PREFIX+EXR%3A+%3Chttp%3A%2F%2FGP-onto.fi.upm.es%2Fexercise2%23%3E%0D%0A++++++++%0D%0A++++++++SELECT+%3Flocality+%3FhabCount%0D%0A++++++++++++WHERE+%7B%0D%0A++++++++++++++++%3Fplace+n3%3AsubClassOf+EXR%3ALocality.%0D%0A++++++++++++++++%3Flocality+a+%3Fplace.%0D%0A++++++++++++++++OPTIONAL+%7B%3Flocality+EXR%3AhasInhabitantNumber+%3FhabCount+%7D%0D%0A++++++++++++++++FILTER%28xsd%3Ainteger%28%3FhabCount%29+%3E+200000%29%0D%0A++++++++++++%7D&format=text%2Fhtml&timeout=0&debug=on
+
+--Query--
+PREFIX n3: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX EXR: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?locality ?habCount WHERE {
+  ?place n3:subClassOf EXR:Locality.
+  ?locality a ?place.
+  OPTIONAL {?locality EXR:hasInhabitantNumber ?habCount }
+  FILTER(xsd:integer(?habCount) > 200000)
+}
+
+#9. Get postal data of Pazo_Breogan (street, number, locality, province)
+
+Result: http://sandbox.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fsandbox.linkeddata.es%2FGrado_20122013&query=PREFIX+n3%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A++++++++++++PREFIX+EXR%3A+%3Chttp%3A%2F%2FGP-onto.fi.upm.es%2Fexercise2%23%3E%0D%0A++++++++++++%0D%0A++++++++++++SELECT+DISTINCT+%3Fstreet+%3Fnumber+%3Flocality+%3Fprovince+WHERE+%7B%0D%0A++++++++++++++++++++EXR%3APazo_Breogan+EXR%3AisPlacedIn+%3Flocality.%0D%0A++++++++++++++++++++%3Flocality+EXR%3AinProvince+%3Fprovince.%0D%0A++++++++++++++++++++EXR%3APazo_Breogan+EXR%3AhasAddress+%3Faddress.%0D%0A++++++++++++++++++++%3Faddress+EXR%3AhasStreet+%3Fstreet.%0D%0A++++++++++++++++++++%3Faddress+EXR%3AhasNumber+%3Fnumber.%0D%0A++++++++++++++++++++%0D%0A++++++++++++++++%7D&format=text%2Fhtml&timeout=0&debug=on
+
+--Query--
+PREFIX n3: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX EXR: <http://GP-onto.fi.upm.es/exercise2#>
+
+PREFIX n3: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX EXR: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT ?street ?number ?locality ?province WHERE {
+  EXR:Pazo_Breogan EXR:isPlacedIn ?locality.
+  ?locality EXR:inProvince ?province.
+  EXR:Pazo_Breogan EXR:hasAddress ?address.
+  ?address EXR:hasStreet ?street.
+  ?address EXR:hasNumber ?number.
+}
+
+#10. Get the subclasses of class Location
+
+Result: http://sandbox.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fsandbox.linkeddata.es%2FGrado_20122013&query=PREFIX+n3%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A++++++++++++PREFIX+EXR%3A+%3Chttp%3A%2F%2FGP-onto.fi.upm.es%2Fexercise2%23%3E%0D%0A++++++++++++SELECT+DISTINCT+%3Fsubclass%0D%0A++++++++++++++++WHERE+%7B%0D%0A++++++++++++++++++++%3Fsubclass+n3%3AsubClassOf+EXR%3ALocation%0D%0A++++++++++++++++%7D&format=text%2Fhtml&timeout=0&debug=on
+
+--Query--
+PREFIX n3: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX EXR: <http://GP-onto.fi.upm.es/exercise2#>
+SELECT DISTINCT ?subclass WHERE {
+  ?subclass n3:subClassOf EXR:Location
+}
+
+#11. Get the instances of class Locality
+
+Result: http://sandbox.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fsandbox.linkeddata.es%2FGrado_20122013&query=PREFIX+n3%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+EXR%3A+%3Chttp%3A%2F%2FGP-onto.fi.upm.es%2Fexercise2%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Flocality%0D%0AWHERE+%7B%0D%0A++%3Flocality+a+EXR%3ALocality%0D%0A%7D&format=text%2Fhtml&timeout=0&debug=on
+--Query--
+PREFIX n3: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX EXR: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT ?locality WHERE {
+  ?locality a EXR:Locality
+}
+
+#12. Describe the resource with rdfs:label "Madrid"
+
+Result: http://sandbox.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fsandbox.linkeddata.es%2FGrado_20122013&query=PREFIX+n3%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A++++++++++++PREFIX+EXR%3A+%3Chttp%3A%2F%2FGP-onto.fi.upm.es%2Fexercise2%23%3E%0D%0A++++++++++++DESCRIBE+EXR%3AMadrid&format=text%2Fx-html%2Btr&timeout=0&debug=on
+
+--Query--
+PREFIX n3: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX EXR: <http://GP-onto.fi.upm.es/exercise2#>
+DESCRIBE EXR:Madrid
+
+#13. Construct the RDF(S) graph that directly relates all the touristic places with their respective provinces, using a new property called ”isIn” 
+
+Result: http://sandbox.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fsandbox.linkeddata.es%2FGrado_20122013&query=PREFIX+n3%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+EXR%3A+%3Chttp%3A%2F%2FGP-onto.fi.upm.es%2Fexercise2%23%3E%0D%0A%0D%0ACONSTRUCT%7B%3Fplace+EXR%3Aisin+%3Fprov%7D+WHERE%7B%0D%0A++%3Fplace+n3%3AsubClassOf+%3Flocality.%0D%0A++%3Flocality+EXR%3AinProvince+%3Fprov%0D%0A%7D&format=text%2Fx-html%2Btr&timeout=0&debug=on
+
+--Query--
+PREFIX n3: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX EXR: <http://GP-onto.fi.upm.es/exercise2#>
+
+CONSTRUCT{?place EXR:isin ?prov} WHERE{
+  ?place n3:subClassOf ?locality.
+  ?locality EXR:inProvince ?prov
+}
+
+#14. Ask if there is some instance of Town
+
+Result: http://sandbox.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fsandbox.linkeddata.es%2FGrado_20122013&query=PREFIX+n3%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A++++++++++++PREFIX+EXR%3A+%3Chttp%3A%2F%2FGP-onto.fi.upm.es%2Fexercise2%23%3E%0D%0A++++++++++++%0D%0A++++++++++++ASK+%7B+%3Fx+a+EXR%3ATown+%7D&format=text%2Fhtml&timeout=0&debug=on
+
+--Query--
+PREFIX n3: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX EXR: <http://GP-onto.fi.upm.es/exercise2#>
+
+ASK { ?x a EXR:Town }
+
+#15. Ask if there is some instance of Chapel
+
+Result: http://sandbox.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fsandbox.linkeddata.es%2FGrado_20122013&query=PREFIX+n3%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A++++++++++++PREFIX+EXR%3A+%3Chttp%3A%2F%2FGP-onto.fi.upm.es%2Fexercise2%23%3E%0D%0A++++++++++++%0D%0A++++++++++++ASK+%7B+%3Fx+a+EXR%3AChapel+%7D&format=text%2Fhtml&timeout=0&debug=on
+
+--Query--
+PREFIX n3: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX EXR: <http://GP-onto.fi.upm.es/exercise2#>
+
+ASK { ?x a EXR:Chapel }

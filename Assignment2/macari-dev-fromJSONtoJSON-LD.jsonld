@@ -1,0 +1,51 @@
+{
+	"@context":{
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"person":"http://www.ontologies.org/ontologies/People#",
+		"s":"http://www.example.org/",
+		"hometown":"s:hometown",
+		"fullname":"s:fullname",
+		"age":"s:age",
+		"alma_mater":"s:almamater",
+		"subjects":"s:subjects",
+		"parents-name":"s:parents",
+		"father":"s:father",
+		"mother":"s:mother",
+		"student":"s:student",
+		"description":"s:description",
+		"teachers":"s:teachers"
+		},
+		
+	"@id":"http://www.example.org/",
+	"@type" : "person:student",
+	"fullname":{
+		"@value":"Alejandro Carlos Macari Trias",
+		"@type":"xsd:string"
+		},
+	"hometown":{
+	
+		"@value":"Caracas",
+		"@type":"xsd:string"
+		},
+	"age":26,
+	"almamater":{
+		"@value":"UNIMET",
+		"@type":"xsd:string"
+		},
+	"parents":{
+		"father":{
+			"@value":"Alejandro Macari",
+			"@type":"xsd:string"
+		},
+		"mother":{
+			"@value":"Isabel Elena Trias",
+			"@type":"xsd:string"
+		}
+	},
+	"subjects":[{
+		"name":"Open Data and Knowledge Graphs",
+		"teachers":["Oscar Corcho Garcia","Raul Garcia Castro", "Daniel Garijo"],
+		"description":"I don't want to type a description."
+	}]
+
+}

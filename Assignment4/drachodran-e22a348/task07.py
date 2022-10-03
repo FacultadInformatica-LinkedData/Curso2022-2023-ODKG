@@ -70,7 +70,7 @@ ns = Namespace("http://somewhere#")
 q3 = prepareQuery('''
   SELECT ?individuals ?properties WHERE {
     {
-      ?individuals rdf:type ns.Person.
+      ?individuals rdf:type ns:Person.
       ?individuals ?properties ?o.
       ?properties rdf:type rdf:Property
     }

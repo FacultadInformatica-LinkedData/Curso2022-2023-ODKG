@@ -1,0 +1,36 @@
+{
+    "@context":{
+        "":"http://www.example.org/#",
+        "xml":"http://www.w3.org/2001/XMLSchema#"
+    },
+    "@id":":RDF2JSONLD",
+    "@type":":Graph",
+    "Graph":[
+        {
+            "@id":":Class01",
+            ":includes":[
+                {"@id":":Sensor029"},
+                {"@id":":Computer101"}
+            ]
+        },
+        {
+            "@id":":Computer101",
+            ":hasOwner":{"@id":":User10A"}
+        },
+        {   "@id":":Measurement8401",
+            ":hasTemperature":{"@value":"29"},
+            ":atTime":{
+                "@value":"2010-06-12T12:00:12",
+                "@type":"xml:date"
+            }
+        },
+        {
+            "@id":":Sensor029",
+            "ex:hasMeasurement":{"@id":"ex:Measurement8401"}
+        },
+        {
+            "@id":":User10A",
+            "ex:hasName":{"@value":"Pedro"}
+        }
+    ]
+}

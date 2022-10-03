@@ -1,0 +1,116 @@
+/* JSON */
+"id":47504438,
+"fullname":"Nataly Melissa Matias Rayme",
+"hometown":"Lima-Perú",
+"age":"29”,
+"almamater":"Universidad Nacional Mayor de San Marcos",
+"mothername":"Teresa Rayme Serrano",
+"fathername":"Aurelio Matias Gonzales",
+"subjects":
+[
+{
+  "subjectname":"Open Data and Knowledge Graphs ",
+  "teacher":"Oscar Corcho",
+  "briefdescription": "You will learn about the main foundations for Knowledge Graphs, including the W3C recommendations that are applicable in this area (RDF, RDF Schema, SPARQL, OWL, CSV on the Web) and methodologies for the generation and publication of Knowledge Graphs from multiple heterogeneous data sources and formats, using Linked Data technologies"
+},
+
+{
+"subjectname":"Big Data ",
+"teacher":"Jesus Montes",
+"briefdescription": "This course will allow the student to gain the fundamentals for the analysis of large volumes of data. With an eminently practical approach, the technologies and fundamentals necessary to successfully accomplish the whole data analysis process will be presented in the context of Big Data, from the raw data to the models derived from them"
+} ,
+{
+"subjectname":"Cloud computing and big data ecosystems design ",
+"teacher":"Marta Patiño",
+"briefdescription": "This course presents traditional data management systems and architectures for scalable distributed systems and data management systems: bigtable, data streaming, persistent queues"
+} ,
+{
+"subjectname":"Data processes ",
+"teacher":"Ernestina Menasalvas",
+"briefdescription": "In this course we will deepen on the importance of data for an organization. In fact, the course is centered on the process of extraction of knowledge from databases as a support for decision making"
+},
+{
+"subjectname":"Statistical data analysis",
+"teacher":"Arminda Moreno",
+"briefdescription": "The course is intended to be a non-exhaustive survey of techinques to convert multivariate data into useful information so that good decisions can be made"
+},
+{
+"subjectname":"Machine learning",
+"teacher":"Pedro Larrañaga",
+"briefdescription": "El Aprendizaje Automático transforma los datos en conocimiento y proporciona sistemas de propósito general que se adaptan a las circunstancias. Esta asignatura expone varios métodos para resolver problemas de clasificación supervisada, no supervisada, y relaciones entre las variables del sistema"
+},
+
+{
+"subjectname":"Intelligent Systems",
+"teacher":"Martin Molina",
+"briefdescription": "This course starts with a general characterization of intelligent systems with an overview of the main approaches and basic concepts related to knowledge representation and reasoning. Then, the course presents AI methods that are applicable to the design and construction of intelligent systems"
+}
+]
+
+/* Transform to JSON-LD */
+
+{
+"@context": {
+  "inf":"http://wwww.my-information.pe/NatalyMatias/",
+  "subjects": "http://wwww.my-information.pe/NatalyMatias/subjects/",
+
+  "fullname":"inf:fullname",
+  "hometown":"inf:hometown",
+  "age":"inf:age",
+  "almamater":"inf:almamater",
+  "mothername": "inf:mothername",
+  "fathername": "inf:fathername",
+  "subjectname": "subjects:subjectname",
+  "teacher": "subjects:teacher",
+  "briefdescription" : "subjects:briefdescription"
+},
+"@id":"inf:47504438",
+"@type": "inf",
+"fullname":"Nataly Melissa Matias Rayme",
+"hometown":"Lima-Perú",
+"age":29,
+"almamater":"Universidad Nacional Mayor de San Marcos",
+"mothername":"Teresa Rayme Serrano",
+"fathername":"Aurelio Matias Gonzales",
+
+"subjects":
+[
+{
+  "subjectname":"Open Data and Knowledge Graphs ",
+  "teacher":"Oscar Corcho",
+  "briefdescription": "You will learn about the main foundations for Knowledge Graphs, including the W3C recommendations that are applicable in this area (RDF, RDF Schema, SPARQL, OWL, CSV on the Web) and methodologies for the generation and publication of Knowledge Graphs from multiple heterogeneous data sources and formats, using Linked Data technologies"
+},
+
+{
+"subjectname":"Big Data ",
+"teacher":"Jesus Montes",
+"briefdescription": "This course will allow the student to gain the fundamentals for the analysis of large volumes of data. With an eminently practical approach, the technologies and fundamentals necessary to successfully accomplish the whole data analysis process will be presented in the context of Big Data, from the raw data to the models derived from them"
+} ,
+{
+"subjectname":"Cloud computing and big data ecosystems design ",
+"teacher":"Marta Patiño",
+"briefdescription": "This course presents traditional data management systems and architectures for scalable distributed systems and data management systems: bigtable, data streaming, persistent queues"
+} ,
+{
+"subjectname":"Data processes ",
+"teacher":"Ernestina Menasalvas",
+"briefdescription": "In this course we will deepen on the importance of data for an organization. In fact, the course is centered on the process of extraction of knowledge from databases as a support for decision making"
+},
+{
+"subjectname":"Statistical data analysis",
+"teacher":"Arminda Moreno",
+"briefdescription": "The course is intended to be a non-exhaustive survey of techinques to convert multivariate data into useful information so that good decisions can be made"
+},
+{
+"subjectname":"Machine learning",
+"teacher":"Pedro Larrañaga",
+"briefdescription": "El Aprendizaje Automático transforma los datos en conocimiento y proporciona sistemas de propósito general que se adaptan a las circunstancias. Esta asignatura expone varios métodos para resolver problemas de clasificación supervisada, no supervisada, y relaciones entre las variables del sistema"
+},
+
+{
+"subjectname":"Intelligent Systems",
+"teacher":"Martin Molina",
+"briefdescription": "This course starts with a general characterization of intelligent systems with an overview of the main approaches and basic concepts related to knowledge representation and reasoning. Then, the course presents AI methods that are applicable to the design and construction of intelligent systems"
+}
+]
+}

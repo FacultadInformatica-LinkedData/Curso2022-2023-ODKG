@@ -1,0 +1,34 @@
+1.
+SELECT DISTINCT ?property WHERE {
+ ?pol ?property ?value.
+ ?pol a <http://dbpedia.org/ontology/Politician>
+}
+
+2.
+SELECT DISTINCT ?property WHERE {
+ ?pol ?property ?value.
+ ?pol a <http://dbpedia.org/ontology/Politician>.
+ FILTER (?property != rdf:type)
+}
+
+3.
+SELECT DISTINCT ?property ?type WHERE {
+ ?value a ?type.
+ ?pol ?property ?value.
+ ?pol a <http://dbpedia.org/ontology/Politician>.
+ FILTER (?property != rdf:type)
+}
+
+4.
+SELECT ?property ?value WHERE {
+ ?pol ?property ?value.
+ ?pol a <http://dbpedia.org/ontology/Politician>.
+ FILTER (?property != rdf:type)
+}
+
+5.
+SELECT ?property COUNT(DISTINCT ?value) WHERE {
+ ?pol ?property ?value.
+ ?pol a <http://dbpedia.org/ontology/Politician>.
+ FILTER (?property != rdf:type)
+}

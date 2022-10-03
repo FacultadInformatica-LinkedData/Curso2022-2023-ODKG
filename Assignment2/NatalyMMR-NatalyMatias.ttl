@@ -1,0 +1,14 @@
+@prefix : <http://www.ontogrid.net/example1B#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Class01 :includes :Sensor029,
+    :Computer101 .
+
+:Sensor029 :hasMeasurement :Measurement8401 .
+
+:Measurement8401 :atTime "2010-06-12 T12:00:12"^^xsd:dateTimeStamp;
+  :hasTemperature 29 .
+
+:Computer101 :hasOwner :User10A .
+
+:User10A :hasName "Pedro" .

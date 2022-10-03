@@ -1,0 +1,44 @@
+{
+	"@context": {
+		"names": "http://www.namespace.es/names/",
+		"person": "names:person",
+		"fullName": "names:fullName",
+		"homeTown": "names:homeTown",
+		"age": "names:age",
+		"almaMater": "names:almaMater",
+		"parents": "names:parents",
+		"subjects": "names:subjects",
+		"subjectName": "names:subjects",
+		"teachers": "names:subjects",
+		"description": "names:description"
+	},
+	"@id": "names:RafaSojo",
+	"@type": "person",
+	"fullName": "Rafael Sojo García",
+	"hometown": "Torre-Pacheco,Murcia",
+	"age": 21,
+	"almaMater": "Universidad Politecnica de Madrid",
+	"parents": ["Rafael Sojo Contreras", "Victoria Antonia Garcia Perez"],
+	"subjects": [
+		{
+			"subjectName": "Open Data and Knowledge Graphs",
+			"teachers": ["Oscar Corcho Garcia", "Raul Garcia Castro"],
+			"description": "During this course you will learn about the main foundations for Knowledge Graphs, including the W3C recommendations that are applicable in this area"
+		},
+		{
+			"subjectName": "Big Data",
+			"teachers": ["Antonio Latorre De La Fuente", "Jesus Montes Sanchez"],
+			"description": "This course will allow the student to gain the fundamentals for the analysis of large volumes of data"
+		},
+		{
+			"subjectName": "Cloud Computing And Big Data Ecosystems",
+			"teachers": ["Marta Patiño Martinez", "Ainhoa Azqueta Alzuaz", "Tonghong Li"],
+			"description": "This course presents traditional data management systems and architectures for scalable distributed systems and data management systems"
+		},
+		{
+			"subjectName": "Machine Learning",
+			"teachers": ["Pedro Maria Larrañaga Mugica", "Maria Concepcion Bielza Lozoya"],
+			"description": " Esta asignatura expone varios métodos para resolver problemas de clasificación supervisada, no supervisada, y relaciones entre las variables del sistema."
+		}
+	]
+}

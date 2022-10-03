@@ -1,0 +1,61 @@
+Query 1
+select distinct ?property 
+FROM <http://dbpedia.org/ontology/Politician>
+WHERE {
+ ?instance rdf:type <http://dbpedia.org/ontology/Politician>.
+?instance ?property ?value
+}
+https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=select+distinct+%3Fproperty+%0D%0AFROM+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E%0D%0AWHERE+%7B%0D%0A+%3Finstance+rdf%3Atype+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E.%0D%0A%3Finstance+%3Fproperty+%3Fvalue%0D%0A%7D%0D%0A%0D%0A&format=text%2Fhtml&timeout=30000&signal_void=on&signal_unconnected=onhttps://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=select+distinct+%3Fproperty+%0D%0AFROM+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E%0D%0AWHERE+%7B%0D%0A+%3Finstance+rdf%3Atype+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E.%0D%0A%3Finstance+%3Fproperty+%3Fvalue%0D%0A%7D%0D%0A%0D%0A&format=text%2Fhtml&timeout=30000&signal_void=on&signal_unconnected=on
+
+Query 2
+select distinct ?property 
+FROM <http://dbpedia.org/ontology/Politician>
+WHERE {
+ ?instance rdf:type <http://dbpedia.org/ontology/Politician>.
+?instance ?property ?value.
+?property a rdf:Property.
+FILTER NOT EXISTS { 
+?property a rdf:type.
+ }
+}
+https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=select+distinct+%3Fproperty+%0D%0AFROM+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E%0D%0AWHERE+%7B%0D%0A+%3Finstance+rdf%3Atype+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E.%0D%0A%3Finstance+%3Fproperty+%3Fvalue.%0D%0A%3Fproperty+a+rdf%3AProperty.%0D%0AFILTER+NOT+EXISTS+%7B+%0D%0A%3Fproperty+a+rdf%3Atype.%0D%0A+%7D%0D%0A%7D%0D%0A&format=text%2Fhtml&timeout=30000&signal_void=on&signal_unconnected=on
+
+Query 3
+select distinct ?value
+FROM <http://dbpedia.org/ontology/Politician>
+WHERE {
+ ?instance rdf:type <http://dbpedia.org/ontology/Politician>.
+?instance ?property ?value.
+?property a rdf:Property.
+FILTER NOT EXISTS { 
+?property a rdf:type.
+ }
+}
+https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=select+distinct+%3Fvalue%0D%0AFROM+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E%0D%0AWHERE+%7B%0D%0A+%3Finstance+rdf%3Atype+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E.%0D%0A%3Finstance+%3Fproperty+%3Fvalue.%0D%0A%3Fproperty+a+rdf%3AProperty.%0D%0AFILTER+NOT+EXISTS+%7B+%0D%0A%3Fproperty+a+rdf%3Atype.%0D%0A+%7D%0D%0A%7D%0D%0A&format=text%2Fhtml&timeout=30000&signal_void=on&signal_unconnected=on
+
+Query 4
+select distinct ?property ?value
+FROM <http://dbpedia.org/ontology/Politician>
+WHERE {
+ ?instance rdf:type <http://dbpedia.org/ontology/Politician>.
+?instance ?property ?value.
+?property a rdf:Property.
+FILTER NOT EXISTS { 
+?property a rdf:type.
+ }
+}
+https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=select+distinct+%3Fproperty+%3Fvalue%0D%0AFROM+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E%0D%0AWHERE+%7B%0D%0A+%3Finstance+rdf%3Atype+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E.%0D%0A%3Finstance+%3Fproperty+%3Fvalue.%0D%0A%3Fproperty+a+rdf%3AProperty.%0D%0AFILTER+NOT+EXISTS+%7B+%0D%0A%3Fproperty+a+rdf%3Atype.%0D%0A+%7D%0D%0A%7D%0D%0A%0D%0A&format=text%2Fhtml&timeout=30000&signal_void=on&signal_unconnected=on
+
+Query 5
+select  ?property COUNT(DISTINCT ?value) as ?Value_count
+FROM <http://dbpedia.org/ontology/Politician>
+WHERE {
+ ?instance rdf:type <http://dbpedia.org/ontology/Politician>.
+?instance ?property ?value.
+?property a rdf:Property.
+FILTER NOT EXISTS { 
+?property a rdf:type.
+ }
+}
+https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=select++%3Fproperty+COUNT%28DISTINCT+%3Fvalue%29+as+%3FValue_count%0D%0AFROM+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E%0D%0AWHERE+%7B%0D%0A+%3Finstance+rdf%3Atype+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E.%0D%0A%3Finstance+%3Fproperty+%3Fvalue.%0D%0A%3Fproperty+a+rdf%3AProperty.%0D%0AFILTER+NOT+EXISTS+%7B+%0D%0A%3Fproperty+a+rdf%3Atype.%0D%0A+%7D%0D%0A%7D%0D%0A%0D%0A&format=text%2Fhtml&timeout=30000&signal_void=on&signal_unconnected=on
+

@@ -1,0 +1,32 @@
+{
+  "@context :{
+    "my":"https://github.com/GuillaumeChamp",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "atTime": "rdfs:date",
+    "hasTemperature": "rdfs:statement",
+    "hasName" : "rdfs:label"
+  },
+  "@id": "https://github.com/GuillaumeChamp/class01"
+  "@type": "my:ontology/class"
+  {
+    "includes":{
+      "@id": "https://github.com/GuillaumeChamp/sensor029"
+      "@type": "my:ontology/sensor"
+      "hasMeasurement":{
+        "@id": "https://github.com/GuillaumeChamp/Measurement8401"
+        "@type": "my:ontology/Measurement"
+        "hasTemperature":29,
+        "atTime":"2010-06-12T12:00:12"
+      }
+    },
+    "includes":{
+      "@id": "https://github.com/GuillaumeChamp/computer101"
+      "@type": "my:ontology/computer"
+      "hasOwner":{
+        "@id": "https://github.com/GuillaumeChamp/User10A"
+        "@type": "my:ontology/User"
+        "hasName":"pedro"
+      }
+    }
+  }
+}

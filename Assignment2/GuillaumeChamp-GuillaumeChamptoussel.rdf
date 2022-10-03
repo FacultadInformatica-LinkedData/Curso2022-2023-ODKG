@@ -1,0 +1,16 @@
+@base <?>
+@prefix : <?#>
+
+:class01
+	:includes :sensor029,
+	:computer101.
+:computer101
+	:hasOwner :User101.
+:User10A
+	:hasName :pedro.
+:Sensor029
+	:hasMeasurement :Measurement8401.
+:Measurement8401
+	:hasTemperature :29.
+:Measurement8401
+	:atTime "2010-06-12T12:00:12"^^xsd:date

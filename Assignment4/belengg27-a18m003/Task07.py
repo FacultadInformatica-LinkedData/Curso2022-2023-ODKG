@@ -6,7 +6,7 @@
 # In[1]:
 
 
-get_ipython().system('pip install rdflib ')
+get_ipython().system('pip install rdflib')
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
 
 
@@ -22,15 +22,27 @@ g.namespace_manager.bind('ns', Namespace("http://somewhere#"), override=False)
 g.namespace_manager.bind('vcard', Namespace("http://www.w3.org/2001/vcard-rdf/3.0#"), override=False)
 g.parse(github_storage+"/rdf/example6.rdf", format="xml")
 
+for s,p,o in g: 
+  print(s,p,o)
+
 
 # **TASK 7.1: List all subclasses of "Person" with RDFLib and SPARQL**
 
-# In[13]:
+# In[3]:
 
 
+# RDFLib
+ns = Namespace("http://somewhere#")    
+
+for s,p,o in g.triples((None, RDFS.subClassOf, ns.Person)):
+    print(s)
+
+
+# In[4]:
+
+
+# SPARQL
 from rdflib.plugins.sparql import prepareQuery
-
-ns = Namespace("http://somewhere#")
 
 q1 = prepareQuery('''
   SELECT ?s WHERE { 
@@ -49,15 +61,32 @@ for r in g.query(q1):
 # **TASK 7.2: List all individuals of "Person" with RDFLib and SPARQL (remember the subClasses)**
 # 
 
-# In[18]:
+# In[5]:
 
+
+# RDFLib
+
+# Individuals of "Person"
+for s,p,o in g.triples((None, RDF.type, ns.Person)):
+  print(s)
+
+# Individuals of the subclases of "Person"
+for subclass,_,_ in g.triples((None, RDFS.subClassOf, ns.Person)):
+    for ind,_,_ in g.triples((None, RDF.type, subclass)):
+        print(ind)
+
+
+# In[6]:
+
+
+# SPARQL
 
 q2 = prepareQuery('''
   SELECT ?ind WHERE { 
     {
     ?ind RDF:type ns:Person . 
     } UNION {
-    ?s RDFS:subClassOf ns:Person .
+    ?s RDFS:subClassOf* ns:Person .
     ?ind RDF:type ?s .
     }
   }
@@ -74,18 +103,35 @@ for r in g.query(q2):
 # **TASK 7.3: List all individuals of "Person" and all their properties including their class with RDFLib and SPARQL**
 # 
 
-# In[25]:
+# In[7]:
 
 
+# RDFLib
+# Individuals of "Person"
+for s1,p1,o1 in g.triples((None, RDF.type, ns.Person)):
+    for s2,p2,o2 in g.triples((s1, None, None)):
+        print(s2, p2)
+
+# Individuals of the subclases of "Person"
+for s1,p1,o1 in g.triples((None, RDFS.subClassOf, ns.Person)):
+    for s2,p2,o2 in g.triples((None, RDF.type, s1)):
+        for s3,p3,o3 in g.triples((s2, None, None)):
+            print(s3,p3)
+
+
+# In[8]:
+
+
+# SPARQL
 q3 = prepareQuery('''
-  SELECT ?ind ?prop ?s WHERE { 
+  SELECT ?ind ?prop WHERE { 
     {
     ?ind RDF:type ns:Person . 
     } UNION {
-    ?s RDFS:subClassOf ns:Person .
-    ?ind RDF:type ?prop .
+    ?s RDFS:subClassOf* ns:Person .
+    ?ind RDF:type ?s .
     }
-    ?ind ?prop ?s .
+    ?ind ?prop ?obj
   }
   ''',
   initNs = {"RDF":RDF, "RDFS":RDFS, "ns": ns}
@@ -94,5 +140,5 @@ q3 = prepareQuery('''
 
 # Visualize the results
 for r in g.query(q3):
- print(r.ind, r.prop, r.s)
+ print(r.ind, r.prop)
 

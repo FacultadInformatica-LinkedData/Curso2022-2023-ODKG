@@ -92,7 +92,7 @@ for s, p, o in g:
 
 
 g.add((ns.UPM, RDF.type, ns.University))
-g.add((ns.JonhSmith, VCARD.Work, ns.UPM))
+g.add((ns.JonhSmith, ns.work, ns.UPM))
 
 # Visualize the results
 for s, p, o in g:

@@ -66,13 +66,12 @@ for s, p, o in g.triples((None, RDFS.subClassOf, ns.Person)):
       print(s2, p2, s)
 q3 = prepareQuery("""
   SELECT ?sub ?o ?p  WHERE{
-    ?sub RDFS:subClassOf* ns:Person.
+    ?sub rdfs:subClassOf* ns:Person.
     ?o a ?sub.
     ?o ?p ?value.
   }
   """, initNs = {
-      "ns":ns,
-      "RDFS":RDFS
+      "ns":ns
   }
 )
 

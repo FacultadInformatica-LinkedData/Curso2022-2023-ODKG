@@ -15,7 +15,18 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-!pip install rdflib 
+# !pip install rdflib 
+# For a Python script the library should be installed via terminal and pip commmand:
+# $ pip install rdflib
+# Latest version via Github:
+# $ pip install git+https://github.com/RDFLib/rdflib.git@master#egg=rdflib
+
+# Alternatively, the package could be installed via the script as:
+# import subprocess
+# import sys
+# def install(rdflib):
+#     subprocess.check_call([sys.executable, "-m", "pip", "install", rdflib])
+
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2020-2021/master/Assignment4"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -40,7 +51,7 @@ print("List all subclasses of \"Person\" via SPARQL:")
 q = prepareQuery('''
   SELECT ?Subject
   WHERE { 
-    ?Subject rdfs:subClassOf ns:Person
+    ?Subject rdfs:subClassOf* ns:Person
   }
   ''',
   initNs = { "ns": ns, "rdfs": RDFS}
@@ -65,7 +76,7 @@ q = prepareQuery('''
     {?Subject rdf:type ns:Person} 
     UNION
     {
-     ?Subclass rdfs:subClassOf ns:Person .
+     ?Subclass rdfs:subClassOf* ns:Person .
      ?Subject  rdf:type ?Subclass 
     }
   }
@@ -97,7 +108,7 @@ q = prepareQuery('''
     }
     UNION 
     {
-     ?Subclass rdfs:subClassOf ns:Person .
+     ?Subclass rdfs:subClassOf* ns:Person .
      ?Subject  rdf:type ?Subclass .
      ?Subject ?Pre ?Obj
     }

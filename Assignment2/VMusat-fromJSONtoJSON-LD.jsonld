@@ -1,0 +1,49 @@
+{
+	"@context": {
+		"obj": "http://www.example.es/object",
+		"person": "obj:person",
+		"fullName": "obj:fullName",
+		"hometown": "obj:hometown",
+		"age": "obj:age",
+		"almaMater": "obj:almaMater",
+		"parents": "obj:parents",
+		"subjects": "obj:subjects",
+		"subName": "obj:subjects",
+		"subTeachers": "obj:subjects",
+		"subDescription": "obj:description"
+	},
+	"@id": "obj:VMusat",
+	"@type": "person",
+	"fullName": "Valentin Iulian Musat",
+	"hometown": "Madrid",
+	"age": 22,
+	"almaMater": "UPM",
+	"parents": ["Pedro", "Lucia"],
+	"subjects": [
+		{
+			"subName": "Big Data",
+			"subTeachers": ["Antonio Latorre De La Fuente", "Jesus Montes Sanchez"],
+			"subDescription": "This course will allow the student to gain the fundamentals for the analysis of large volumes of data"
+		},
+		{
+			"subName": "Open Data and Knowledge Graphs",
+			"subTeachers": ["Oscar Corcho Garcia", "Raul Garcia Castro"],
+			"subDescription": "During this course you will learn about the main foundations for Knowledge Graphs, including the W3C recommendations that are applicable in this area"
+		},
+		{
+			"subName": "Data Mining And Time Series",
+			"subTeachers": ["Juan Pedro Caraca-Valente Hernandez", "Aurora Perez Perez”"],
+			"subDescription": "During this course you will learn he main techniques of Data Mining including Classification and Clustering techniques. Some more recent methods for Data Analysis, including Deep Learning Techniques will also be covered."
+		},
+		{
+			"subName": "Cloud Computing And Big Data Ecosystems",
+			"subTeachers": ["Marta Patiño Martinez", "Ainhoa Azqueta Alzuaz", "Tonghong Li"],
+			"subDescription": "This course presents traditional data management systems and architectures for scalable distributed systems and data management systems"
+		},
+		{
+			"subName": "Machine Learning",
+			"subTeachers": ["Pedro Maria Larrañaga Mugica", "Maria Concepcion Bielza Lozoya"],
+			"subDescription": " Esta asignatura expone varios métodos para resolver problemas de clasificación supervisada, no supervisada, y relaciones entre las variables del sistema."
+		}
+	]
+}

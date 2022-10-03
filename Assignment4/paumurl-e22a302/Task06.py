@@ -99,6 +99,6 @@ for s, p, o in g:
 # Visualize the results
 from rdflib.namespace import FOAF
 g.add((ns.UPM, RDF.type, ns.University))
-g.add((ns.JohnSmith, FOAF.member, ns.UPM))
+g.add((ns.JohnSmith, ns.work, ns.UPM))
 for s, p, o in g:
   print(s,p,o)

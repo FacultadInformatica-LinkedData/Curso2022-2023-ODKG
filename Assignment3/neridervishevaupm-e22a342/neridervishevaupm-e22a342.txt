@@ -1,0 +1,84 @@
+# Advanced set of SPARQL queries
+# Neri Dervisheva Dailova
+
+# 1. Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
+
+PREFIX dbp: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?p AS ?properties
+WHERE
+{
+    ?s a dbp:Politician ;
+    ?p ?o
+}
+
+RESULT:
+https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+dbp%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fp+AS+%3Fproperties%0D%0AWHERE%0D%0A%7B%0D%0A++++%3Fs+a+dbp%3APolitician+%3B%0D%0A++++%3Fp+%3Fo%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+
+# 2. Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+
+PREFIX dbp: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>       
+
+SELECT DISTINCT ?p AS ?properties
+WHERE
+{
+    ?s a dbp:Politician ;
+    ?p ?o .
+    FILTER (?p != rdf:type)
+}
+
+RESULT:
+https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+dbp%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E+++++++%0D%0A%0D%0ASELECT+DISTINCT+%3Fp+AS+%3Fproperties%0D%0AWHERE%0D%0A%7B%0D%0A++++%3Fs+a+dbp%3APolitician+%3B%0D%0A++++%3Fp+%3Fo+.%0D%0A++++FILTER+%28%3Fp+%21%3D+rdf%3Atype%29%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+
+# 3. Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+
+PREFIX dbp: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>       
+
+SELECT DISTINCT ?o AS ?values
+WHERE
+{
+    ?s a dbp:Politician ;
+    ?p ?o .
+    FILTER (?p != rdf:type)
+}
+
+RESULT:
+https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+dbp%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E+++++++%0D%0A%0D%0ASELECT+DISTINCT+%3Fo+AS+%3Fvalues%0D%0AWHERE%0D%0A%7B%0D%0A++++%3Fs+a+dbp%3APolitician+%3B%0D%0A++++%3Fp+%3Fo+.%0D%0A++++FILTER+%28%3Fp+%21%3D+rdf%3Atype%29%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+
+# 4. For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+
+PREFIX dbp: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>       
+
+SELECT DISTINCT ?p AS ?properties ?o AS ?values
+WHERE
+{
+    ?s a dbp:Politician ;
+    ?p ?o .
+    FILTER (?p != rdf:type)
+}
+
+RESULT:
+https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+dbp%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E+++++++%0D%0A%0D%0ASELECT+DISTINCT+%3Fp+AS+%3Fproperties+%3Fo+AS+%3Fvalues%0D%0AWHERE%0D%0A%7B%0D%0A++++%3Fs+a+dbp%3APolitician+%3B%0D%0A++++%3Fp+%3Fo+.%0D%0A++++FILTER+%28%3Fp+%21%3D+rdf%3Atype%29%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+
+# 5. For each of these applicable properties, except for rdf:type, how many distinct values do they take globally for all those instances?
+
+PREFIX dbp: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?p AS ?properties count(DISTINCT ?o) as ?numberOfValues
+WHERE
+{
+    ?s a dbp:Politician ;
+    ?p ?o .
+    FILTER (?p != rdf:type)
+}
+
+RESULT:
+https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+dbp%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fp+AS+%3Fproperties+count%28DISTINCT+%3Fo%29+as+%3FnumberOfValues%0D%0AWHERE%0D%0A%7B%0D%0A++++%3Fs+a+dbp%3APolitician+%3B%0D%0A++++%3Fp+%3Fo+.%0D%0A++++FILTER+%28%3Fp+%21%3D+rdf%3Atype%29%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+

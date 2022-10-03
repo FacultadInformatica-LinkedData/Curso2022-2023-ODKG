@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "class": "http://www.w3.org/namespaces/class/",
+    "pred": "http://www.w3.org/namespaces/pred/",
+    "sensor": "http://www.w3.org/namespaces/ontology/sensor/",
+    "comp": "http://www.w3.org/namespaces/ontology/computer/",
+    "mes": "http://www.w3.org/namespaces/ontology/measurement/",
+    "user": "http://www.w3.org/namespaces/ontology/user/"
+  },
+  "@graph": [
+    {
+      "@id": "class:Class01",
+      "pred:includes": [
+        {
+          "@id": "sensor:Sensor029",
+          "pred:hasMeasurement": {
+            "@id": "mes:Measurement8401",
+            "pred:hasTempreature": {
+              "@type": "xsd:integer",
+              "@value": "29"
+            }
+          },
+            "pred:atTime": {
+              "@type": "xsd:dateTime",
+              "@value": "2010-06-12T12:00:12"
+            }
+        },
+        {
+          "@id": "comp:Computer01",
+          "pred:hasOwner": {
+            "@id": "user:User10A",
+            "pred:hasName": "Pedro"
+          }
+        }
+      ]
+    }
+  ]
+}

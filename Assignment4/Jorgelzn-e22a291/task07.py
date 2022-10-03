@@ -9,7 +9,6 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-!pip install rdflib 
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -30,7 +29,7 @@ ns = Namespace("http://somewhere#")
 
 q1 = prepareQuery('''
   SELECT ?Subclass WHERE { 
-    ?Subclass rdfs:subClassOf ns:Person. 
+    ?Subclass rdfs:subClassOf+ ns:Person. 
   }
   ''',
   initNs = { "rdfs":RDFS, "ns":ns}
@@ -39,6 +38,8 @@ q1 = prepareQuery('''
 print("RDFLib")
 for s, p, o in g.triples((None, RDFS.subClassOf, ns.Person)):
   print(s)
+  for a, b, c in g.triples((None, RDFS.subClassOf, s)):
+    print(a)
 print("SPARQL")
 for r in g.query(q1):
   print(r.Subclass)
@@ -50,14 +51,7 @@ for r in g.query(q1):
 # TO DO
 q1 = prepareQuery('''
   SELECT ?person WHERE {
-    ?person rdf:type ns:Person.
-  }
-  ''',
-  initNs = { "rdf":RDF, "ns":ns}
-)
-q2 = prepareQuery('''
-  SELECT ?person WHERE {
-    ?subclass rdfs:subClassOf ns:Person.
+    ?subclass rdfs:subClassOf* ns:Person.
     ?person rdf:type ?subclass.
   }
   ''',
@@ -75,26 +69,15 @@ for s, p, o in g.triples((None, RDFS.subClassOf, ns.Person)):
 print("SPARQL")
 for r in g.query(q1):
   print(r.person)
-for r in g.query(q2):
-  print(r.person)
 
 """**TASK 7.3: List all individuals of "Person" and all their properties including their class with RDFLib and SPARQL**
 
 """
 
-from os import XATTR_REPLACE
 # TO DO
 q1 = prepareQuery('''
   SELECT ?person ?p ?o WHERE {
-    ?person rdf:type ns:Person.
-    ?person ?p ?o.
-  }
-  ''',
-  initNs = { "rdf":RDF, "ns":ns}
-)
-q2 = prepareQuery('''
-  SELECT ?person ?p ?o WHERE {
-    ?subclass rdfs:subClassOf ns:Person.
+    ?subclass rdfs:subClassOf* ns:Person.
     ?person rdf:type ?subclass.
     ?person ?p ?o.
   }
@@ -114,6 +97,4 @@ for s, p, o in g.triples((None, RDFS.subClassOf, ns.Person)):
 
 print("SPARQL")
 for r in g.query(q1):
-  print(r)
-for r in g.query(q2):
   print(r)

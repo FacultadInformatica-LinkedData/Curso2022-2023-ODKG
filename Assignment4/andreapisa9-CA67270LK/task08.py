@@ -26,8 +26,7 @@ ns = Namespace("http://data.org#")
 #get all instances of Person in g1
 q1 = prepareQuery('''
   SELECT ?Subject WHERE{
-    ?Subject a ?Class .
-    FILTER (?Class in (ns:Person))
+    ?Subject a ns:Person
   }
   ''',
   initNs={"ns" : ns}

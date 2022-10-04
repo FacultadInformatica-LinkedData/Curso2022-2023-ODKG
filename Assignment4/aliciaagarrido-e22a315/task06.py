@@ -88,7 +88,7 @@ for s, p, o in g:
 ns = Namespace("http://somewhere#")
 g.add((ns.UPM, RDF.type, ns.University))
 
-g.add((ns.JaneSmith, VCARD.Work, ns.UPM))
+g.add((ns.JaneSmith, ns.Work, ns.UPM))
 
 # Visualize the results
 for s, p, o in g:

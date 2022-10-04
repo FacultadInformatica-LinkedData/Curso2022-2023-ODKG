@@ -22,7 +22,7 @@ g.namespace_manager.bind('vcard', Namespace("http://www.w3.org/2001/vcard-rdf/3.
 g.parse(github_storage+"/rdf/example6.rdf", format="xml")
 
 """**TASK 7.1: List all subclasses of "Person" with RDFLib and SPARQL**"""
-
+# 7.1 with SPARQL
 from rdflib.plugins.sparql import prepareQuery
 
 ns = Namespace("http://somewhere#")
@@ -38,10 +38,15 @@ q1 = prepareQuery("""
 for r in g.query(q1):
   print(r)
 
+  # 7.1 with rdflib
+
+for t in g.triples((None, RDFS.subClassOf, ns.Person)):
+  print(t)
+
 """**TASK 7.2: List all individuals of "Person" with RDFLib and SPARQL (remember the subClasses)**
 
 """
-
+# 7.2 with SPARQL
 q2 = prepareQuery('''
   SELECT ?individuals WHERE {
     {
@@ -59,11 +64,19 @@ q2 = prepareQuery('''
 for t in g.query(q2):
   print(t)
 # Visualize the results
+# 7.2 with rdflib
+for s,p,o in g.triples((None,RDF.type,ns.Person)):
+  print(s)
+
+for person, property, object in g.triples((None, RDFS.subClassOf, ns.Person)):
+  for descendant_person, second_property, second_object in g.triples((None, RDF.type, person)):
+   print(descendant_person)
+
 
 """**TASK 7.3: List all individuals of "Person" and all their properties including their class with RDFLib and SPARQL**
 
 """
-
+# 7.3 with SPARQL
 from rdflib.plugins.sparql import prepareQuery
 
 ns = Namespace("http://somewhere#")
@@ -86,4 +99,13 @@ q3 = prepareQuery('''
 for y in g.query(q3):
   print(y)
 
-# Visualize the results
+# 7.3 with rdflib
+
+for person, property, object in g.triples((None, RDF.type, ns.Person)):
+  for descendant_person, second_property, second_object in g.triples((s, None, None)):
+    print(descendant_person, second_property)
+
+for person, property, object in g.triples((None, RDFS.subClassOf, ns.Person)):
+  for descendant_person, second_property, second_object in g.triples((None, RDF.type, person)):
+    for subdescendant_person, third_property, third_object in g.triples((descendant_person, None, None)):
+      print(person, descendant_person, third_property)

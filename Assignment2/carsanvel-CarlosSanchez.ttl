@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @prefix names: <http://www.namespace.es/names#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 names:Class01 names:includes names:Sensor029;
@@ -7,3 +8,14 @@ names:Computer101 names:hasOwner names:User10A.
 names:Measurement8401 names:hasTemperature "29"^^xsd:integer;
 			 names:atTime "2010-06-12T12:00:12"^^xsd:dateTime.
 names:User10A names:hasName "Pedro" ^^xsd:string.
+=======
+@prefix names: <http://www.namespace.es/names#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+names:Class01 names:includes names:Sensor029;
+	     names:includes names:Computer101.
+names:Sensor029 names:hasMeasurement names:Measurement8401.
+names:Computer101 names:hasOwner names:User10A.
+names:Measurement8401 names:hasTemperature "29"^^xsd:integer;
+			 names:atTime "2010-06-12T12:00:12"^^xsd:dateTime.
+names:User10A names:hasName "Pedro" ^^xsd:string.
+>>>>>>> 1ab953ec4409654d0cf9c0f21fbcc1340422de1a

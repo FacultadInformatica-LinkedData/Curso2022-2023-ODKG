@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Paula Robles López
 paumurl
 e22a302
@@ -65,4 +66,73 @@ e22a302
 	"description":"Subject regarding big data"}]
 
 }
+=======
+Paula Robles López
+paumurl
+e22a302
+
+##########
+#JSON
+
+{
+"fullName":"Paula Robles López",
+"hometown":"Granada",
+"age":24,
+"almaMater":"UPM",
+"fatherName":"Manuel",
+"motherName":"Aurora",
+"course":[{
+	"nameSubject":"OD&KG",
+	"teacher":"Oscar Corcho",
+	"description":"Subject regarding Open Data and Knowledge Graphs"},
+	{
+	"nameSubject":"Data Processes",
+	"teacher":"Ernestina Menasalvas",
+	"description":"Subject regarding data processes"},
+	{
+	"nameSubject":"Big Data",
+	"teacher":"Jesús Montes",
+	"description":"Subject regarding big data"}]
+
+}
+
+
+##########
+#JSON-LD
+
+{"@context":{
+	"rdfs":"http://www.w3.org/2000/01/rdf-schema#",
+	"rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+	"xsd":"http://www.w3.org/2001/XMLSchema#",
+	"fullName":"rdfs:label",
+	"age":"xsd:integer",
+	"almaMatter":"rdfs:label",
+	"fatherName":"rdfs:label",
+	"motherName":"rdfs:label",
+ 	"nameSubject":"rdfs:label",
+	"teacher":"rdfs:label",
+	"description":"rdfs:comment"
+	},
+
+"fullName":"Paula Robles López",
+"hometown":"Granada",
+"age":24,
+"almaMater":"UPM",
+"fatherName":"Manuel",
+"motherName":"Aurora",
+"course":[{
+	"nameSubject":"OD&KG",
+	"teacher":"Oscar Corcho",
+	"description":"Subject regarding Open Data and Knowledge Graphs"},
+	{
+	"nameSubject":"Data Processes",
+	"teacher":"Ernestina Menasalvas",
+	"description":"Subject regarding data processes"},
+	{
+	"nameSubject":"Big Data",
+	"teacher":"Jesús Montes",
+	"description":"Subject regarding big data"}]
+
+}
+>>>>>>> 1ab953ec4409654d0cf9c0f21fbcc1340422de1a
 	

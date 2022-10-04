@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "@context": {
     "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -42,3 +43,49 @@
 }
 ]
 }  
+=======
+{
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ex": "http://www.ontogrid.net/example2B#"
+  },
+  "@graph": [
+    {
+      "@id": "ex:Class01",
+      "ex:includes": [
+        {
+          "@id": "ex:Sensor029",
+          "ex:hasMeasurement":
+          {
+          "@id": "ex:Measurement8401",
+            "ex:hasTemperature":
+            {"@value":29,
+             "@type":"xsd:integer"
+            },
+
+            "ex:atTime":
+            {"@value":"2010-06-12T 12:00:12",
+             "@type":"xsd:dateTime"
+            }
+            }
+        },
+        {
+          "@id": "ex:Computer101",
+          "ex:hasOwner":
+          {
+          "@id": "ex:User10A",
+            "ex:hasName":
+            {"@value":"Pedro"
+
+            }
+       	  }
+
+
+
+       }
+
+  ]
+}
+]
+}  
+>>>>>>> 1ab953ec4409654d0cf9c0f21fbcc1340422de1a

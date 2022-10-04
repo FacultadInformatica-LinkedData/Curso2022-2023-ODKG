@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @prefix : <http://www.namespace.es/natalia#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 :Class01 
@@ -11,4 +12,19 @@
 :hasMeasurement :Measurement8401.
 :Measurement8401
 :hasTemperature "29"^^xsd:integer;
+=======
+@prefix : <http://www.namespace.es/natalia#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+:Class01 
+:includes :Sensor029; 
+:includes :Computer101.
+:Computer101
+:hasOwner :User10A.
+:User10A
+:hasName "Pedro"^^xsd:string.
+:Sensor029 
+:hasMeasurement :Measurement8401.
+:Measurement8401
+:hasTemperature "29"^^xsd:integer;
+>>>>>>> 1ab953ec4409654d0cf9c0f21fbcc1340422de1a
 :atTime "2010-06-12T12:00:12"^^xsd:dateTime.

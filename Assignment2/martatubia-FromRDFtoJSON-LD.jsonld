@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "@context": {
     "class": "http://www.oeg-upm.net/element/",
@@ -44,4 +45,52 @@
       "prop:hasName": "Pedro"
     }
   ]
+=======
+{
+  "@context": {
+    "class": "http://www.oeg-upm.net/element/",
+    "xsd": "http://www.w3.org/2001/XMLSchema",
+    "prop": "http://www.oeg-upm.net/element/Properties#"
+  },
+  "@graph": [
+    {
+      "@id": "class:Class01",
+      "class:includes": [
+        {
+          "@id": "class:Sensor029"
+        },
+        {
+          "@id": "class:Computer101"
+        }
+      ]
+    },
+    {
+      "@id": "class:Sensor029",
+      "prop:hasMeasurement": {
+        "@id": "class:Measurement8401"
+      }
+    },
+    {
+      "@id": "class:Measurement8401",
+      "prop:hasTemperature": {
+        "@value": "29",
+        "@type": "xsd:integer"
+      },
+      "prop:atTime": {
+        "@value": "2010-06-12T10:00:12",
+        "@type": "xsd:dateTime"
+      }
+    },
+    {
+      "@id": "class:Computer101",
+      "prop:hasOwner": {
+        "@id": "class:User10A"
+      }
+    },
+    {
+      "@id": "class:User10A",
+      "prop:hasName": "Pedro"
+    }
+  ]
+>>>>>>> 1ab953ec4409654d0cf9c0f21fbcc1340422de1a
 }

@@ -49,6 +49,10 @@ for r in g.query(q1):
 for s, p, o in g.triples((None, RDF.type, ns.Person)):
     print(s)
 
+for s,p,o in g.triples ((None, RDFS.subClassOf, ns.Person)):
+    for a,b,c in g.triples((None, RDF.type, s)):
+        print (a)
+
 from rdflib.plugins.sparql import prepareQuery
 ns = Namespace("http://somewhere#")
 
@@ -70,6 +74,11 @@ for r in g.query(q2):
 for s, p, o in g.triples((None, RDF.type, (ns.Person) )):
     for a, b, c in g.triples((s, None, None)):
         print(a, b, c)
+
+for s, p, o in g.triples((None, RDF.subClassOf, (ns.Person) )):
+    for a, b, c in g.triples((s, None, RDF.type, s)):
+        for d, e, f in g.triples((a, None, None)):
+            print (d,e,f)
 
 from rdflib.plugins.sparql import prepareQuery
 ns = Namespace("http://somewhere#")

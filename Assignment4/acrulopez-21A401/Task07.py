@@ -78,12 +78,12 @@ q2 = prepareQuery(
     """
   SELECT ?individuals WHERE { 
     { 
-        ?individuals rdf:type ns:Person
+        ?individuals rdf:type ns:Person .
     }
     UNION
     {
-        ?subclasses rdfs:subClassOf ns:Person . 
-        ?individuals rdf:type ?subclasses
+        ?subclasses rdfs:subClassOf* ns:Person . 
+        ?individuals rdf:type ?subclasses .
     }
   }
   """,
@@ -118,7 +118,7 @@ q3 = prepareQuery(
     }
     UNION
     {
-        ?subclasses rdfs:subClassOf ns:Person . 
+        ?subclasses rdfs:subClassOf* ns:Person . 
         ?individuals rdf:type ?subclasses
     }
     ?individuals ?b ?c

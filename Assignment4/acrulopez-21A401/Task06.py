@@ -94,7 +94,7 @@ for s, p, o in g:
 
 g.add((ns.UPM, RDF.type, ns.University))
 g.add((ns.Works, RDFS.range, ns.String))
-g.add((ns.JohnSmith, VCARD.Works, ns.UPM))
+g.add((ns.JohnSmith, ns.Works, ns.UPM))
 # Visualize the results
 for s, p, o in g:
     print(s, p, o)

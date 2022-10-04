@@ -60,6 +60,6 @@ for s, p, o in g:
 """**TASK 6.5: Add UPM as the university where John Smith works**"""
 
 g.add((ns.UPM, RDF.type, ns.University))
-g.add((ns.UPM, vcard.hasMember, ns.JohnSmith))
+g.add((ns.JohnSmith, ns.worksAt,  ns.UPM))
 for s, p, o in g:
   print(s,p,o)

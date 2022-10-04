@@ -67,8 +67,7 @@ print('SPARQL results:')
 q1 = prepareQuery('''
     SELECT ?Subject WHERE 
     {
-      ?subclasses a|rdfs:subClassOf* ns:Person.
-      ?Subject a ?subclasses
+      ?Subject a/rdfs:subClassOf* ns:Person.
     }
   ''',
   initNs = {"ns": ns}
@@ -97,8 +96,7 @@ print('SPARQL results:')
 q1 = prepareQuery('''
     SELECT ?Subject ?Prop WHERE 
       { 
-        ?subclasses a|rdfs:subClassOf* ns:Person.
-        ?Subject a ?subclasses.
+        ?Subject a/rdfs:subClassOf* ns:Person.
         ?Subject ?Prop ?o
       }
   ''',

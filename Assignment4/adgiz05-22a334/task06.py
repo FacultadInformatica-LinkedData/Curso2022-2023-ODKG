@@ -64,8 +64,9 @@ for s, p, o in g:
 
 """**TASK 6.5: Add UPM as the university where John Smith works**"""
 
+jobs = Namespace("http://jobs#")
 g.add((ns.UPM, RDF.type, ns.University))
-g.add((ns.JohnSmith, vcard.Works, ns.UPM))
+g.add((ns.JohnSmith, jobs.Works, ns.UPM))
 
 for s, p, o in g:
   print(s,p,o)

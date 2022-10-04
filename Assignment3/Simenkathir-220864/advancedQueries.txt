@@ -1,0 +1,32 @@
+Query 1 :
+SELECT DISTINCT ?prop
+WHERE {
+?person rdf:type <http://dbpedia.org/ontology/Politician>. ?person ?prop ?val.
+}
+
+Query 2:
+SELECT DISTINCT ?prop
+WHERE {
+?person rdf:type <http://dbpedia.org/ontology/Politician>. ?person ?prop ?val.
+FILTER (rdf:type != ?prop).
+}
+
+Query 3:
+SELECT DISTINCT ?prop ?val
+WHERE {
+?person rdf:type <http://dbpedia.org/ontology/Politician>. ?person ?prop ?val.
+FILTER (rdf:type != ?prop).
+}
+
+Query 4:
+SELECT DISTINCT ?person ?prop ?val
+WHERE {
+?person rdf:type <http://dbpedia.org/ontology/Politician>. ?person ?prop ?val.
+FILTER (rdf:type != ?prop). }
+
+Query 5:
+SELECT ?prop (count(distinct ?val))
+WHERE {
+?person rdf:type <http://dbpedia.org/ontology/Politician>. ?person ?prop ?val.
+FILTER (rdf:type != ?prop).
+} order by ?prop

@@ -92,7 +92,7 @@ for s, p, o in g:
 
 
 # TO DO
-g.add((ns.JohnSmith, VCARD.Work, ns.UPM))
+g.add((ns.JohnSmith, ns.Work, ns.UPM))
 # Visualize the results
 for s, p, o in g:
   print(s,p,o)

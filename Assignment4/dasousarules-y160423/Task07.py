@@ -76,7 +76,7 @@ q2 = prepareQuery('''
   SELECT ?ind WHERE { 
     {?ind a ns:Person.}
     UNION
-    {?sc rdfs:subClassOf ns:Person.
+    {?sc rdfs:subClassOf* ns:Person.
      ?ind a ?sc}
   }
   ''',
@@ -109,14 +109,13 @@ for s,p,o in g.triples((None, RDFS.subClassOf, NS.Person)):
 
 # sparql
 q3 = prepareQuery('''
-  SELECT ?ind ?p ?c WHERE {
+  SELECT ?ind ?p ?o WHERE {
   {
     ?ind a ns:Person.
-    ?ind a ?c .
     ?ind ?p ?o .
   } UNION {
-    ?c rdfs:subClassOf ns:Person .
-    ?ind a ?c .
+    ?sc rdfs:subClassOf* ns:Person .
+    ?ind a ?sc .
     ?ind ?p ?o
   }
   }

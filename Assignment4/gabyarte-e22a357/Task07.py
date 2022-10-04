@@ -49,13 +49,10 @@ for subclass in g.subjects(RDFS.subClassOf, ns.Person):
 # %%
 q2 = prepareQuery('''
         SELECT ?individual
-        WHERE {{
-            ?subclass rdfs:subClassOf ns:Person .
+        WHERE {
+            ?subclass rdfs:subClassOf* ns:Person .
             ?individual a ?subclass
         }
-        UNION {
-            ?individual a ns:Person
-        }}
     ''',
     initNs={
         'ns': ns,
@@ -79,15 +76,11 @@ for person_class in classes:
 # %%
 q3 = prepareQuery('''
         SELECT ?individual ?property ?value
-        WHERE {{
-            ?subclass rdfs:subClassOf ns:Person .
+        WHERE {
+            ?subclass rdfs:subClassOf* ns:Person .
             ?individual a ?subclass .
             ?individual ?property ?value
         }
-        UNION {
-            ?individual a ns:Person .
-            ?individual ?property ?value
-        }}
     ''',
     initNs={
         'ns': ns,

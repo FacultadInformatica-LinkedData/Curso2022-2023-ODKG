@@ -60,7 +60,7 @@ q = prepareQuery("""
 SELECT ?s WHERE {
 {?s rdf:type ns:Person.}
 UNION
-{?sub rdfs:subClassOf ns:Person.
+{?sub rdfs:subClassOf* ns:Person.
 ?s rdf:type ?sub.}
 
 }
@@ -93,7 +93,7 @@ q = prepareQuery("""
     { ?s rdf:type ns:Person.
     ?s ?p ?o.}
     UNION
-    {   ?x rdfs:subClassOf ns:Person.
+    {   ?x rdfs:subClassOf* ns:Person.
         ?s rdf:type ?x.
         ?s ?p ?o}
   }

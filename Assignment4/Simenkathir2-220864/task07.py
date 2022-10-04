@@ -9,7 +9,7 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-!pip install rdflib 
+#!pip install rdflib 
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2020-2021/master/Assignment4"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -23,17 +23,16 @@ g.parse(github_storage+"/resources/example6.rdf", format="xml")
 
 """TASK 7.1: List all subclasses of "Person" with RDFLib and SPARQL"""
 
-
+ns = Namespace("http://somewhere#")
 for s, p, o in g.triples((None, RDFS.subClassOf, ns.Person)):
     print(s)
 
 from rdflib.plugins.sparql import prepareQuery
-ns = Namespace("http://somewhere#")
 
 q1 = prepareQuery('''
 SELECT ?subclasses 
 WHERE {
-    ?subclasses rdfs:subClassOf ns:Person.
+    ?subclasses rdfs:subClassOf* ns:Person.
 }
 
 ''',

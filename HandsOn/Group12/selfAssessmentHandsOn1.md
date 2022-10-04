@@ -10,7 +10,7 @@
 
 
 - [x] Contains at least one CSV file 
-- [] The CSV files belong to one of the selected domains
+- [x] The CSV files belong to one of the selected domains
 - [] Contains at least one CSV file 
 - [] The CSV files belong to one of the selected domains
 

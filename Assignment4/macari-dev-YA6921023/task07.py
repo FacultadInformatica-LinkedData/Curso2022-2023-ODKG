@@ -9,7 +9,6 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-!pip install rdflib 
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -36,7 +35,7 @@ for s, p, o in g.triples((None, RDFS.subClassOf, ns.Person)):
 query = prepareQuery("""
   SELECT ?subject
   WHERE {
-    ?subject rdfs:subClassOf/rdfs:subClassOf*  <http://somewhere#Person>.
+    ?subject rdfs:subClassOf+  <http://somewhere#Person>.
   }
 """)
 
@@ -59,7 +58,7 @@ for s, p, o in g.triples((None, RDF.type, ns.Person)):
 query = prepareQuery("""
   SELECT ?subject
   WHERE {
-    ?subject rdf:type/rdfs:subClassOf <http://somewhere#Person>.
+    ?subject rdf:type/rdfs:subClassOf* <http://somewhere#Person>.
   }
 """
 )

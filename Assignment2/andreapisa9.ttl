@@ -1,0 +1,14 @@
+@prefix cd: <http://www.recshop.fake/cd#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.recshop.fake/cd/Empire Burlesque> cd:artist "Bob Dylan";
+  cd:company "Columbia";
+  cd:country "USA";
+  cd:price "10.90";
+  cd:year "1985" .
+
+<http://www.recshop.fake/cd/Hide your heart> cd:artist "Bonnie Tyler";
+  cd:company "CBS Records";
+  cd:country "UK";
+  cd:price "9.90";
+  cd:year "1988" .

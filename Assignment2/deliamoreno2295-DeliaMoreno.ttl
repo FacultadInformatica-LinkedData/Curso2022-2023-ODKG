@@ -1,0 +1,14 @@
+@prefix Ass2: <http://example.org/#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Ass2:Class01 Ass2:includes Ass2:Sensor029, Ass2:Computer101 .
+
+Ass2:Sensor029 Ass2:hasMeasurement Ass2:Measurement8401 .
+
+Ass2:Measurement8401 Ass2:hasTemperature 29 ;
+                   Ass2:atTime "2010-06-12T12:00:12"^^xsd:datetime .
+
+Ass2:Computer101 Ass2:hasOwner Ass2:User10A .
+
+
+Ass2:User10A Ass2:hasName "Pedro" .

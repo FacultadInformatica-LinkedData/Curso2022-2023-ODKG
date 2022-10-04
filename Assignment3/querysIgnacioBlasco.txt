@@ -1,0 +1,51 @@
+#1 Get all the properties that can be applied to instances of the Politician class 
+SELECT DISTINCT ?p WHERE{
+
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?pror ?value
+}
+
+Result: https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=SELECT+DISTINCT+%3Fprop+WHERE%7B%0D%0A%0D%0A%3Fx+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E.%0D%0A%3Fx+%3Fprop+%3Fvalue.%0D%0A%7D&format=text%2Fhtml&timeout=30000&signal_void=on&signal_unconnected=on
+
+#2 Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+SELECT DISTINCT ?prop WHERE{
+
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?prop ?value
+FILTER (?prop != rdf:type)
+}
+
+Result: https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=SELECT+DISTINCT+%3Fprop+WHERE%7B%0D%0A%0D%0A%3Fx+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E.%0D%0A%3Fx+%3Fprop+%3Fvalue%0D%0AFILTER+%28%3Fprop+%21%3D+rdf%3Atype%29%0D%0A%7D&format=text%2Fhtml&timeout=30000&signal_void=on&signal_unconnected=on
+
+#3 Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+
+SELECT DISTINCT ?value WHERE{
+
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?prop ?value
+FILTER (?prop != rdf:type)
+
+}
+Result: https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=SELECT+DISTINCT+%3Fvalue+WHERE%7B%0D%0A%0D%0A%3Fx+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E.%0D%0A%3Fx+%3Fprop+%3Fvalue%0D%0AFILTER+%28%3Fprop+%21%3D+rdf%3Atype%29%0D%0A%0D%0A%7D&format=text%2Fhtml&timeout=30000&signal_void=on&signal_unconnected=ontology
+
+#4 For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+
+SELECT DISTINCT ?prop ?value WHERE{
+
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?prop ?value
+FILTER (?prop != rdf:type)
+}
+
+Result:https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=SELECT+DISTINCT+%3Fprop+%3Fvalue+WHERE%7B%0D%0A%0D%0A%3Fx+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E.%0D%0A%3Fx+%3Fprop+%3Fvalue%0D%0AFILTER+%28%3Fprop+%21%3D+rdf%3Atype%29%0D%0A%7D&format=text%2Fhtml&timeout=30000&signal_void=on&signal_unconnected=on
+
+#5For each of these applicable properties, except for rdf:type, how many distinct values do they take globally for all those instances?
+
+SELECT DISTINCT ?prop COUNT(?value) WHERE{
+
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?prop ?value
+FILTER (?prop != rdf:type)
+}
+
+Result: https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=SELECT+DISTINCT+%3Fprop+COUNT%28%3Fvalue%29+WHERE%7B%0D%0A%0D%0A%3Fx+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E.%0D%0A%3Fx+%3Fprop+%3Fvalue%0D%0AFILTER+%28%3Fprop+%21%3D+rdf%3Atype%29%0D%0A%7D&format=text%2Fhtml&timeout=30000&signal_void=on&signal_unconnected=on

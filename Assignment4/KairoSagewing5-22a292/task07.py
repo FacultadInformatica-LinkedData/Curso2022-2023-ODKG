@@ -20,6 +20,21 @@ for s, p, o in g:
 NS = Namespace("http://somewhere#")
 from rdflib.plugins.sparql import prepareQuery
 
+#RDFLib 
+
+# I'm not sure how to do it for taxonomies bigger than this one with RDFLib
+# in order to list all subclasses of the subclasses (like I'm doing
+# with SPARQL), so I'm keeping it simple for now
+
+for s1,p,o in g.triples((None, RDFS.subClassOf, NS.Person)):
+  print(s1)
+  for s2,p,o in g.triples((None, RDFS.subClassOf, s1)):
+    print(s2)
+
+# SPARQL
+
+print()
+
 q1 = prepareQuery('''
   SELECT ?Sub WHERE { 
     ?Sub RDFS:subClassOf* ns:Person.
@@ -39,6 +54,23 @@ for r in g.query(q1):
 """
 
 # TO DO
+
+#RDFLib
+
+# Like above, this was done knowing already the results
+# that should appear
+
+for s,p,o in g.triples((None, RDF.type, NS.Person)):
+  print(s)
+
+for s1,p,o in g.triples((None, RDFS.subClassOf, NS.Person)):
+  for s2,p,o in g.triples((None, RDF.type, s1)):
+    print(s2)
+
+#SPARQL
+
+print()
+
 q2 = prepareQuery('''
   SELECT ?Persons WHERE { 
     {
@@ -59,12 +91,31 @@ for r in g.query(q2):
 """
 
 # TO DO
+
+#RDFLib
+
+# Like above, this was done knowing already the results
+# that should appear
+
+for s1,p1,o1 in g.triples((None, RDF.type, NS.Person)):
+  for s2,p2,o2 in g.triples((s1, None, None)):
+    print(s2, p2)
+
+for s1,p1,o1 in g.triples((None, RDFS.subClassOf, NS.Person)):
+  for s2,p2,o2 in g.triples((None, RDF.type, s1)):
+    for s3,p3,o3 in g.triples((s2, None, None)):
+      print(s3, p3)
+
+#SPARQL
+
+print()
+
 q3 = prepareQuery('''
-  SELECT ?Persons ?Properties WHERE { 
+  SELECT ?Persons ?Properties ?Value WHERE { 
     {
       ?Sub RDFS:subClassOf* ns:Person.
       ?Persons RDF:type ?Sub.
-      ?Persons ?a ?Properties
+      ?Persons ?Properties ?Value
     }
   }
   ''',

@@ -1,0 +1,36 @@
+{
+	"context":{
+		
+		"class":"http://xmlns.com/foaf/0.1/Class",
+		"includes":"http://xmlns.com/foaf/0.1/includes",
+		"sensor":"http://xmlns.com/foaf/0.1/Sensor",
+		"measurement":"http://xmlns.com/foaf/0.1/Measurement",
+		"computer":"http://xmlns.com/foaf/0.1/Computer",
+		"person":"http://xmlns.com/foaf/0.1/Person",
+		"temperature":"rdfs:label",
+		"time":"rdfs:label",
+		"name":"rdfs:label"	
+	},
+	"@id": "Class01",
+	"@type": "class",
+	"includes":[{
+		"@id": "Sensor029",
+		"@type": "sensor",
+		"measurement":{
+			"@id": "Measurement8401",
+			"@type": "measurement",
+			"temperature":29,
+			"time":"2010-06-12T12:00:12"
+        	}
+		},
+		{
+		"@id": "Computer101",
+		"@type": "computer",
+		"owner": {
+			"@id":"User10A",
+			"@type":"person",
+			"name":"Pedro"
+			}
+      }
+	]	
+}

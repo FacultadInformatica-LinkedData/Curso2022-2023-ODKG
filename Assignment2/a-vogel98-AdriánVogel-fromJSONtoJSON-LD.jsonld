@@ -1,0 +1,29 @@
+{
+	"@context": {
+		"names": "http://www.namespace.es/names/",
+		"person": "names:person",
+		"fullName": "names:fullName",
+		"homeTown": "names:homeTown",
+		"age": "names:age",
+		"almaMater": "names:almaMater",
+		"parents": "names:parents",
+		"subjects": "names:subjects",
+		"Name": "names:subjects",
+		"teachers": "names:subjects",
+		"description": "names:description"
+	},
+	"@id": "names:adriánVogel",
+	"@type": "person",
+	"fullName": "Adrián Vogel Fernández",
+	"hometown": "Madrid",
+	"age": 24,
+	"almaMater": "UPM",
+	"parents": ["Adrián", "Begoña"],
+	"subjects": 
+		{
+			"Name": "Open Data and Knowledge Graphs",
+			"teachers": "Oscar Corcho Garcia",
+			"description": "During this course you will learn about the main foundations for Knowledge Graphs, including the W3C recommendations that are applicable in this area"
+		}
+	
+}

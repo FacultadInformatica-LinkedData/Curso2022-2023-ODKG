@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "a": "http://example.org/#"
+  },
+  "@graph": [
+    {
+      "@id": "a:Class01",
+      "a:includes": [
+        {
+          "@id": "a:Sensor029"
+        },
+        {
+          "@id": "a:Computer101"
+        }
+      ]
+    },
+    {
+      "@id": "a:Sensor029",
+      "a:hasMeasurement": {
+        "@id": "a:Measurement8401"
+      }
+    },
+    {
+      "@id": "a:Computer101",
+      "a:hasOwner": {
+        "@id": "a:User10A"
+      }
+    },
+    {
+      "@id": "a:Measurement8401",
+      "a:hasTemperature": {
+        "@type": "xsd:integer",
+        "@value": "29"
+      },
+      "a:atTime": {
+        "@type": "xsd:datetime",
+        "@value": "2010-06-12T12:00:12"
+      }
+    },
+    {
+      "@id": "a:User10A",
+      "a:hasName": "Pedro"
+    }
+  ]
+}

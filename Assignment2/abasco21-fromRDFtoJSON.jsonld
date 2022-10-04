@@ -1,0 +1,34 @@
+{
+	"@context":{
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"vocab": "http://www.ontologies.org/ontologies/example#",
+		
+		"includes": "vocab:includes", 
+		"hasMeasurement": "vocab:hasMeasurement",
+		"hasOwner": "vocab:hasOwner",
+
+
+		"hasTemperature": "xsd:decimal",
+		"atTime": "xsd:dateTimeStamp",
+		"hasName": "xsd:string"
+		
+	},
+	"@id":"vocab:Class01",
+	"includes": [
+	{
+		"@id":"vocab:Sensor029",
+		"hasMeasurement":{
+			"@id":"vocab:Measurement8401",
+			"hasTemperature": "29",
+			"atTime": "2010-06-12T12:00:12"
+		}
+	},
+	{
+		"@id":"vocab:Computer101",
+		"hasOwner":{
+			"@id":"vocab:User10A",
+			"hasName": "Pedro"
+		}
+	}
+	]
+}

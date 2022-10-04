@@ -1,0 +1,65 @@
+{
+    "@context": {
+        "": "<http://xmlns.com/foaf/0.1/>",
+        "firstname": "http://xmlns.com/foaf/0.1/#term_firstName",
+        "familyname": "http://xmlns.com/foaf/0.1/#term_family_name",
+        "homeLocation": "https://schema.org/homeLocation",
+        "age": "rdfs:label",
+        "almaMater": "rdfs:label",
+        "parent": "https://schema.org/parent",
+        "subjects": "rdfs:label",
+        "subjectname": "rdfs:lbel",
+        "teacher": "rdfs:label",
+        "description": "rdfs:label"
+
+    },
+    "@id": "",
+    "@type": "Person",
+    "firstname": "Simen",
+    "familyname": "Kathirgamadas",
+    "homeLocation": "Oslo",
+    "age": "24",
+    "almaMater": "NTNU",
+    "parent": [ {
+        "@id": "",
+        "firstname": "Ravithas",
+        "familyname": "Kathirgamadas"
+    },
+    {
+        "@id": "",
+        "firstname": "Jegatheeswary",
+        "familyname": "Kathirgamadas"
+        } ],
+    "subjects":[
+        {
+            "@id":"",
+            "subjectname": "Fundamentals of Finance",
+            "teacher": "Nina",
+            "description": "During this course you will learn fundamentals of finance"
+            
+        },
+
+        {
+            "@id":"",
+            "subjectname": "Management, communication and relation in working groups",
+            "teacher": "Susana",
+            "description": "During this course you will leanr skills about management, communication and relation in working groups",
+        },
+        {
+            "@id":"",
+            "subjectname": "Open data and knowledge graphs",
+            "teacher": ["Oscar Corcho Garcia","Raul Garcia Castro"],
+            "description": "During this course you will learn about linked data technologies"
+
+        }
+    ]
+
+
+
+
+
+    
+
+
+
+}

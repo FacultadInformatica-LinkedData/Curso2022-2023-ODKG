@@ -8,9 +8,11 @@
 
 **The "csv" directory:**
 
+
 - [x] Contains at least one CSV file 
-- [] The CSV files belong to one 
-of the selected domains
+- [] The CSV files belong to one of the selected domains
+- [] Contains at least one CSV file 
+- [] The CSV files belong to one of the selected domains
 
 **The "datasetRequirements.html" file:**
 

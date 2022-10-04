@@ -1,0 +1,28 @@
+{
+	"@context":{
+		"fullName": "rdfs:label",
+		"homeTown": "rdfs:label",
+		"age": : "rdfs:label",
+    	"almaMater": "rdfs:label",
+		"parentsName": "rdfs:label",
+		"subjects" : "upm:subjects"
+	},
+	"fullName": "Álvaro Montorio Piñeiro",
+	"homeTown": "Pozuelo de Alarcón",
+	"age": : {
+        "@value": "22",
+        "@type": "xsd:int"
+      },
+    "almaMater": "UPM",
+	"parentsName": "Javier and Carmen",
+	"subjects" : [
+		{
+			"name":"Deep Learning",
+			"teachers":    ["Martin Molina Gonzalez","Luis Baumela Molina","Daniel Manrique Gamo", "Emilio Serrano Fernandez"],
+			"description": "Deep learning has emerged from the connectionist branch of machine learning, aided by the arrival of big data and
+			increased computational power (e. g., parallelization using graphics processing units - GPUs). Deep learning has
+			showed better performance than other approaches to solve problems that cope with large amounts of data as it is
+			required, for example, in computer vision (image or video processing) or speech understanding" 
+		}		
+	]
+}

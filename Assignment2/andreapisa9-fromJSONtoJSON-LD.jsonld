@@ -1,0 +1,126 @@
+{
+  "@context":
+  {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "pred": "https://www.w3.org/predicate/",
+  	"name":"https://www.w3.org/ontology/person/fullName/",
+  	"town":"https://www.w3.org/ontology/city/",
+    "uni":"https://www.w3.org/ontology/university/",
+  	"subject":"https://www.w3.org/ontology/uniSubject/",
+    "desc":"https://www.w3.org/ontology/subjDescription"
+	},
+  "@graph":[
+      {
+        "@id": "name:Andrea Pisani",
+        "pred:homeTown": {
+          "@id":"town:Tropea"
+        },
+        "pred:age": {
+          "@type":"integer",
+          "@value":"23"
+        },
+        "pred:almaMater": {
+          "@id":"uni:UNIPR"
+        },
+        "pred:parents": [
+          {
+            "@id": "name:Francesco Pisani"
+          },
+          {
+            "@id": "name:Tina Tripodi"
+          }
+        ],
+        "pred:subjects": [
+          {
+            "@id": "subject:I & E Minor",
+            "pred:teachers": [
+              {
+                "@id": "name:Raul Sanchis"
+              }
+            ],
+            "pred:briefDescription":{
+              "@id":"desc:Business case study"
+            }
+          },
+          {
+            "@id": "subject:Data Mining & Time Series",
+            "pred:teachers": [
+              {
+                "@id": "name:Aurora Perez Perez"
+              }
+            ],
+            "pred:briefDescription":{
+              "@id":"desc:Knowledge Discovery in Data"
+            }
+          },
+          {
+            "@id": "subject:Complex Data in Health",
+            "pred:teachers": [
+              {
+                "@id": "name:Alejandro Rodriguez Gonzalez"
+              },
+              {
+                "@id": "name:Lucía Prieto Santamaria"
+              },
+              {
+                "@id": "name:Massimiliano Zanin"
+              }
+			],
+            "pred:briefDescription":{
+              "@id":"desc:Biomedical Data and Disease Networks"
+            }
+		},
+		{
+          "@id": "subject:Open Data & Knowledge Graphs",
+          "pred:teachers": [
+              {
+                "@id": "name:Oscar Corcho García"
+              },
+              {
+                "@id": "name:Raúl García Castro"
+              }
+			],
+          "pred:briefDescription":{
+            "@id":"desc:RDF, JSON-LD, Linked Data, Open Source Data and Semantic Web"
+          }
+		},
+		{
+          "@id": "subject:Cloud Computing & Big Data Ecosystems Design",
+          "pred:teachers": [
+              {
+                "@id": "name:Marta Patiño Martinez"
+              }
+            ],
+          "pred:briefDescription":{
+            "@id":"desc:Database Management and Java"
+          }
+		},
+		{
+          "@id": "subject:Massively Parallel Machine Learning",
+          "pred:teachers": [
+              {
+                "@id": "name:Alberto Mozo"
+              }
+            ],
+          "pred:briefDescription": {
+            "@id":"desc:Parallelization of common ML algorithms"
+          }
+		},
+		{
+          "@id": "subject:Data Analysis",
+          "pred:teachers": [
+              {
+                "@id": "name:Ernestina Menasalvas Ruiz"
+              },
+              {
+                "@id": "name:Alejandro Rodriguez Gonzalez"
+              }
+			],
+          "pred:briefDescription": {
+            "@id":"desc:Data Analysis Project Management"
+          }
+		}
+        ]
+      }
+    ]
+}

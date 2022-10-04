@@ -1,0 +1,63 @@
+1. 
+
+prefix dbo: <http://dbpedia.org/ontology/>
+
+SELECT ?property 
+WHERE 
+{
+?instances a <http://dbpedia.org/ontology/Politician> .
+?instances ?property ?object
+
+}
+
+2.
+
+SELECT ?property 
+WHERE 
+{
+?instances a <http://dbpedia.org/ontology/Politician> .
+?instances ?property ?object
+
+FILTER ( ?property != rdf:type )
+}
+
+3. 
+
+SELECT ?property ?values
+WHERE 
+{
+?instances a <http://dbpedia.org/ontology/Politician> .
+?instances ?property ?values
+
+FILTER ( ?property != rdf:type )
+}
+
+4.
+
+SELECT DISTINCT ?property  ?values
+WHERE 
+{
+?instances a <http://dbpedia.org/ontology/Politician> .
+?instances ?property ?values
+
+FILTER ( ?property != rdf:type )
+FILTER(lang(?values) = "en")
+} 
+
+5.
+
+
+SELECT DISTINCT ?instances (COUNT (?values) AS ?Count_Values)
+WHERE 
+{
+?instances a <http://dbpedia.org/ontology/Politician> .
+?instances ?property ?values
+
+FILTER ( ?property != rdf:type )
+FILTER(lang(?values) = "en")
+}
+
+
+
+
+

@@ -1,0 +1,53 @@
+{
+    "@context":{
+        "rdfs":"http://www.w3.org/2000/01/rdf-schema#",
+        "class":"rdfs:class",
+        "includes":"rdf:includes",
+        "sensor":"rdfs:sensor",
+        "computer":"rdfs:computer",
+        "hasMeasurement":"rdfs:hasMeasurement",
+        "measurement":"rdfs:measurement",
+        "hasTemperature":"rdfs:hasTemperature",
+        "atTime":"rdfs:atTime",
+        "hasOwner":"rdfs:hasOwner",
+        "user":"rdfs:user",
+        "hasName":"rdfs:hasName",
+        "graph":"rdf:graph"
+    },
+    "@id":"graph1",
+    "graph":[
+        {
+            "@id":"class01",
+            "@type":"class",
+            "includes":[
+                {"@id":"sensor029"},
+                {"@id":"computer101"}
+            ]
+        },
+        {
+            "@id":"sensor029",
+            "@type":"sensor",
+            "hasMeasurement":{
+                "@id":"measurement8401"
+            }
+        },
+        {
+            "@id":"computer101",
+            "@type":"computer",
+            "hasOwner":{
+                "@id":"user10A"
+            }
+        },
+        {
+            "@id":"measurement8401",
+            "@type":"measurement",
+            "hastemperature": 29,
+            "atTime":"2010-06-12T12:00:12"
+        },
+        {
+            "@id":"user10A",
+            "@type":"user",
+            "hasName": "Pedro"
+        }
+    ]
+}

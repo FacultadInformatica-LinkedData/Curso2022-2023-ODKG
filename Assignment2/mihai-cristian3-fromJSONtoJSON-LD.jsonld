@@ -1,0 +1,80 @@
+{
+	"@context":{
+      	"ex":"http://exercise2b.org/",
+      	"people":"http://www.ontologies.org/ontologies/People#",
+      	"fullName":"ex:fullName",
+      	"hometown":"ex:hometown",
+      	"age":"ex:age",
+      	"almaMater":"ex:almaMater",
+      	"nameParents":"ex:nameParents",
+      	"nameMother":"ex:nameMother",
+      	"nameFather":"ex:nameFather",
+      	"subjects":"ex:subjects",
+      	"subjectName":"ex:subjectName",
+      	"teachers":"ex:teachers",
+      	"description":"ex:description"
+    },
+	"@id": "ex:MihaiCristianUrsa",
+	"@type": "people:student",
+	"fullName": "Mihai Cristian Ursa",
+	"hometown": "Bistrita",
+	"age": 25,
+	"almaMater": "Universidad Politécnica de Madrid",
+	"nameParents": {
+		"nameMother": "Mihaela",
+		"nameFather": "Cristian"
+	},
+	"subjects": [{
+			"@id": "ex:DataProcesses",
+			"@type": "ex:subject",
+			"subjectName": "Data Processes",
+			"teachers": [{
+					"@id": "ex:ErnestinaMenasalvas",
+					"@type": "people:teacher",
+					"fullName": "Ernestina Menasalvas"
+				},
+				{
+					"@id": "ex:AlejandroRodríguezGonzález",
+					"@type": "people:teacher",
+					"fullName": "Alejandro Rodríguez González"
+				},
+				{
+					"@id": "ex:AntonioJesusDíazHonrubia",
+					"@type": "people:teacher",
+					"fullName": "Antonio Jesus Díaz Honrubia"
+				}
+
+			],
+			"description": "The goal of this course is to go through the complete data science process."
+		},
+		{
+			"@id": "ex:OpenDataKnowledgeGraphs",
+			"@type": "ex:subject",
+			"subjectName": "Open Data and Knowledge Graphs",
+			"teachers": [
+				{
+					"@id": "ex:OscarCorchoGarcía",
+					"@type": "people:teacher",
+					"fullName": "Oscar Corcho García"
+				},
+				{
+					"@id": "ex:RaúlGarcíaCastro",
+					"@type": "people:teacher",
+					"fullName": "Raúl García Castro"
+				}
+			],
+			"description": "The objective of this course is to provide students with theoretical and practical knowledge about open data and knowledge graphs. "
+		},
+		{
+			"@id": "ex:ResearchMetholodogy",
+			"@type": "ex:subject",
+			"subjectName": "Research etholodogy",
+			"teachers": [{
+					"@id": "ex:OscarCorchoGarcía",
+					"@type": "people:teacher",
+					"fullName": "Oscar Corcho García"}
+			],
+			"description": "The goal of this course is to go through the complete data science process."
+		}
+	]
+}

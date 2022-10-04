@@ -5,7 +5,7 @@ Original file is located at
 **Task 06: Modifying RDF(s)**
 """
 
-!pip install rdflib
+#!pip install rdflib
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2020-2021/master/Assignment4"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -46,4 +46,4 @@ g.add((janeURI, vcard.Family, Literal("Smith")))
 """*TASK 6.5: Add UPM as the university where John Smith works**"""
 
 g.add((ns.UPM, RDF.type, ns.University))
-g.add((ns.JonhSmith, vcard.Work, ns.UPM))
+g.add((ns.JonhSmith, ns.Work, ns.UPM))

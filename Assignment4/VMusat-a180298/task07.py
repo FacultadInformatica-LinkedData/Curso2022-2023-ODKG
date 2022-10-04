@@ -5,7 +5,7 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-!pip install rdflib
+#!pip install rdflib
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2020-2021/master/Assignment4"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -30,7 +30,6 @@ from rdflib.plugins.sparql import prepareQuery
 q1 = '''
     SELECT DISTINCT ?sub WHERE
     { ?sub rdfs:subClassOf* ns:Person }
-    LIMIT 10
     '''
 query1 = prepareQuery(q1, initNs={"ns": ns, 'rdfs': RDFS})
 
@@ -54,7 +53,6 @@ q2 = '''
             ?per rdf:type ?sub
             }
          }     
-    LIMIT 10
     '''
 query2 = prepareQuery(q2, initNs={"ns": ns, 'rdfs': RDFS, 'rdf': RDF})
 
@@ -82,7 +80,6 @@ q3 = '''
             ?per rdf:type ?sub 
             }
          }     
-    LIMIT 50
     '''
 query3 = prepareQuery(q3, initNs={"ns": ns, 'rdfs': RDFS, 'rdf': RDF})
 

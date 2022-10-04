@@ -1,7 +1,7 @@
 # GROUP03 MEMBERS 
 
-|Full Name|Github User|    
-|----|-----|-------|     
+| Full Name | Github User |    
+| ---- |-----|-------|     
 | Luis Ortiz Benito | luisOB33 | 
 | Ignacio Francisco Blasco Alís | Blas47 | 
 | José Ignacio Álvarez de Miranda | jialvarezdemiranda | 

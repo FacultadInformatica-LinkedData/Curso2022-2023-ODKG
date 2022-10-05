@@ -1,0 +1,68 @@
+==================================
+Advanced set of SPARQL queries
+LAURA ARTILES MARTINEZ
+==================================
+
+1.	Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
+PREFIX p:<http://dbpedia.org/ontology/>
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ 
+select distinct ?property
+       where { 
+         ?s rdf:type p:Politician. 
+         ?s ?property ?value.
+}
+order by ?property
+
+2.	Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+PREFIX p:<http://dbpedia.org/ontology/>
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ 
+select distinct ?property
+       where { 
+         ?s rdf:type p:Politician. 
+         ?s ?property ?value.
+         filter (?property != rdf:type).
+}
+order by ?property
+
+3.	Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+PREFIX p:<http://dbpedia.org/ontology/>
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ 
+select distinct ?value
+       where { 
+         ?s rdf:type p:Politician. 
+         ?s ?property ?value.
+         filter (?property != rdf:type).
+}
+
+
+
+4.	For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+PREFIX p:<http://dbpedia.org/ontology/>
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ 
+select distinct ?property ?value
+       where {
+?s rdf:type p:Politician. 
+?s ?property ?value.
+filter (?property != rdf:type).
+}
+order by ?property
+
+5.	For each of these applicable properties, except for rdf:type, how many distinct values do they take globally for all those instances?
+
+PREFIX p:<http://dbpedia.org/ontology/>
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ 
+select ?property (count(distinct ?value) as ?numero)
+       where { 
+         ?ind rdf:type p:Politician. 
+         ?ind  ?property ?value.
+         filter (?property != rdf:type).
+}
+group by ?property
+order by ?property
+
+                

@@ -74,6 +74,16 @@
             <h2>Description of user interface:</h2>
             <p>Example of description of the application user interface....</p>
             <h2>Mockups:</h2>
+            <div class="container" id="mockupsContainerList">
+              <!-- make mockups here -->
+              <div class="mockupContainer" id="screen01">
+                <p>Mockup screen 1 here--</p>
+              </div>
+              <div class="mockupContainer" id="screen02">
+                <p>Mockup screen 2 here...</p>
+              </div>
+              <!-- more mockups here... -->
+            </div>
         </div>
     </body>
 </html>
@@ -147,15 +157,16 @@ body {
     text-align: center;
     vertical-align: top;
   }
-  #RequirementsCheckList{
+  #RequirementsCheckList, #mockupsContainerList{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-left: 5px;
 
   }
-  .requirmentContainer{
+  .requirmentContainer, .mockupContainer{
     margin: 0rem 2.5rem 2.5rem 0rem;
   }
+  
 
 </style>

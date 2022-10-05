@@ -1,1 +1,2 @@
 Guillaume Champtoussel
+Maximilian Virkus

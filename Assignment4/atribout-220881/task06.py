@@ -9,13 +9,10 @@ Original file is located at
 **Task 06: Modifying RDF(s)**
 """
 
-!pip install rdflib 
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2021-2022/master/Assignment4/course_materials"
-
-"""Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
-
 from rdflib import Graph, Namespace, Literal, XSD
 from rdflib.namespace import RDF, RDFS
+
 g = Graph()
 g.namespace_manager.bind('ns', Namespace("http://somewhere#"), override=False)
 g.namespace_manager.bind('vcard', Namespace("http://www.w3.org/2001/vcard-rdf/3.0#"), override=False)
@@ -64,7 +61,7 @@ for s, p, o in g:
 
 DBP = Namespace("http://dbpedia.org/property/")
 g.add((ns.UPM, RDF.type, ns.University))
-g.add((ns.JohnSmith, DBP.occupation, ns.UPM))
+g.add((ns.JohnSmith, DBP.workplace, ns.UPM))
 # Visualize the results
 for s, p, o in g:
   print(s,p,o)

@@ -6,7 +6,7 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-!pip install rdflib 
+#!pip install rdflib 
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2020-2021/master/Assignment4"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
@@ -40,7 +40,7 @@ for r in g.query(q1):
 for s, p, o in g.triples((None, RDF.type, ns.Person)):
   print(f"{s}")
 for s,p,o in g.triples((None, RDFS.subClassOf, ns.Person)):
-  for s2,p2,o2 in g.triples((None, RDF.type, subClass)):
+  for s2,p2,o2 in g.triples((None, RDF.type, s)):
     print(s2)
 q1 = prepareQuery('''
   SELECT 

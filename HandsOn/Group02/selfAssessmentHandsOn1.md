@@ -6,4 +6,4 @@
 
 - requirements/datasetRequirements.html : justification of the correspondence between the dataset and the requirements  
 
-- requirements/applicationRequirements.html : explication of requirements with user interface mock-ups
+- requirements/applicationRequirements.html : explanation of the application requirements with user interface mock-ups

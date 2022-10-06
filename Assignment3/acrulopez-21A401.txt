@@ -1,0 +1,48 @@
+1.- Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
+
+prefix db: <http://dbpedia.org/ontology/>
+
+select distinct ?prop where {
+?p a db:Politician .
+?a ?prop ?p
+} 
+
+2.- Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+
+prefix db: <http://dbpedia.org/ontology/>
+
+select distinct ?prop where {
+?p a db:Politician .
+?a ?prop ?p .
+filter (?prop != rdf:type)
+} 
+
+3.- Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+
+prefix db: <http://dbpedia.org/ontology/>
+
+select distinct ?prop where {
+?p a db:Politician .
+?p ?prop ?a .
+filter (?prop != rdf:type)
+} 
+
+4.- For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+
+prefix db: <http://dbpedia.org/ontology/>
+
+select distinct ?a where {
+?p a db:Politician .
+?p ?prop ?a .
+filter (?prop != rdf:type)
+} 
+
+5.- For each of these applicable properties, except for rdf:type, how many distinct values do they take globally for all those instances?
+
+prefix db: <http://dbpedia.org/ontology/>
+
+select count distinct ?a where {
+?p a db:Politician .
+?p ?prop ?a .
+filter (?prop != rdf:type)
+} 

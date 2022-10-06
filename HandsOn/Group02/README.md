@@ -1,4 +1,4 @@
-Alexia Huc - @alexiahc
+Alexia Huc-Lhuillery - @alexiahc
 
 Antoine Tribout - @atribout
 

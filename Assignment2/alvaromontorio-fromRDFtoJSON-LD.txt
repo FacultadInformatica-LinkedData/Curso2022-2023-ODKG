@@ -1,0 +1,43 @@
+{
+	"@context":{
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"vocab": "http://oeg-upm.net/ontologies/#"
+	},
+	"@id": "vocab:Class01",
+	"vocab:includes": [
+		{
+			"@id": "vocab:Sensor029"
+        },
+        {
+          "@id": "vocab:Computer101"
+        }
+      ]
+    },
+    {
+      "@id": "vocab:Sensor029",
+      "vocab:hasMeasurement": {
+        "@id": "vocab:Measurement8401"
+      }
+    },
+    {
+      "@id": "vocab:Computer101",
+      "vocab:hasOwner": {
+        "@id": "vocab:User10A"
+      }
+    },
+    {
+      "@id": "vocab:Measurement8401",
+      "vocab:hasTemperature": 29,
+      "vocab:atTime": {
+        "@value": "2010-06-12T12:00:12",
+        "@type": "xsd:dateTime"
+      }
+    },
+    {
+      "@id": "vocab:User10A",
+      "vocab:hasName": {
+        "@value": "Pedro",
+        "@type": "xsd:string"
+      }
+	}
+}

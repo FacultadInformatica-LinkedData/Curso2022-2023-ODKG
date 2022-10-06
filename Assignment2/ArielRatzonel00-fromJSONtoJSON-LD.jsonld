@@ -1,0 +1,38 @@
+{
+	"@context": {
+		"names": "http://www.namespace.es/names/",
+		"person": "names:person",
+		"fullName": "names:fullName",
+		"homeTown": "names:homeTown",
+		"age": "names:age",
+		"almaMater": "names:almaMater",
+		"parents": "names:parents",
+		"subjects": "names:subjects",
+		"subjectName": "names:subjects",
+		"teachers": "names:subjects",
+		"description": "names:description"
+	},
+	"@id": "names:ArielRatzonel",
+	"@type": "person",
+	"fullName": "Ariel Ratzonel",
+	"hometown": "Milan, Italy",
+	"age": 22,
+	"almaMater": "Politecnico di Milano",
+	"parents": ["Yitzhak", "Iryna"],
+	"subjects": [
+		{
+			"subjectName": "Open Data and Knowledge Graphs",
+			"teachers": ["Oscar Corcho Garcia", "Raul Garcia Castro"],
+			"description": "During this course you will learn about the main foundations for Knowledge Graphs and methodologies for the generation and publication of Knowledge Graphs from multiple heterogeneous data sources and formats, using Linked Data technologies."
+		},
+		{
+			"subjectName": "Data Mining and Time Series",
+			"teachers": ["Juan Pedro Caraca-Valente Hernandez", "Aurora Perez Perez"],
+			"description": "During this course you will learn he main techniques of Data Mining including Classification and Clustering techniques. Some more recent methods for Data Analysis, including Deep Learning Techniques will also be covered."
+		},
+		{
+			"subjectName": "Complex Data In Health",
+			"teachers": ["Otero Carrasco Belen", "Prieto Santamaria Lucia"],
+			"description": "The aim of the subject is to identify various types of data that can co-exist in the context of health data and how to approach its manipulation, processing, and analysis."
+		}
+}

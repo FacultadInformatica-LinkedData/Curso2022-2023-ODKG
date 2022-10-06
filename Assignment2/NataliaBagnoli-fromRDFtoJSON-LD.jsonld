@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "": "http://www.namespace.es/natalia#".
+  },
+  "@graph": [
+    {
+      "@id": ":Class01",
+      ":includes": [
+        {
+          "@id": ":Sensor029"
+        },
+        {
+          "@id": ":Computer101"
+        }
+      ]
+    },
+    {
+      "@id": ":Sensor029",
+      ":hasMeasurement": {
+        ":Measurement8401"
+      }
+    },
+    {
+      "@id": ":Computer101",
+      ":hasOwner": {
+        "@id": ":User10A"
+      }
+    },
+    {
+      "@id": ":User10A",
+      ":hasName": "Pedro"
+    },
+    {
+      "@id": ":Measurement8401",
+      ":hasTemperature": {
+        "@type": "xsd:integer",
+        "@value": "29"
+      },
+      ":atTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2010-06-12T12:00:12"
+      }
+    }
+  ]
+}

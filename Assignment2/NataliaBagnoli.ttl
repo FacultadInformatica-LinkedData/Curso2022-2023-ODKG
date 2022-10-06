@@ -1,0 +1,11 @@
+@prefix cd: <http://www.recshop.fake/cd#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.recshop.fake/cd/Beatles> cd:artist [
+    a rdf:Bag;
+    rdf:_1 "John";
+    rdf:_2 "Paul";
+    rdf:_3 "George";
+    rdf:_4 "Ringo"
+  ] .

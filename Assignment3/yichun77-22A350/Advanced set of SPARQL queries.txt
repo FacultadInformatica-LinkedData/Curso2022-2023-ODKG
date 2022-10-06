@@ -1,0 +1,47 @@
+- Question 1 -
+PREFIX db:<http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?properties WHERE{
+ ?object a db:Politician .
+ ?object ?properties ?values .
+} ORDER BY (?properties)
+
+
+- Question 2 -
+PREFIX db:<http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?properties WHERE{
+ ?object a db:Politician .
+ ?object ?properties ?values .
+ FILTER(?properties != rdf:type) .
+} ORDER BY (?properties)
+
+
+- Question 3 -
+PREFIX db:<http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?values WHERE{
+ ?object a db:Politician .
+ ?object ?properties ?values .
+ FILTER(?properties != rdf:type) .
+} ORDER BY (?values)
+
+
+- Question 4 -
+PREFIX db:<http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?properties ?values WHERE{
+ ?object a db:Politician .
+ ?object ?properties ?values .
+ FILTER(?properties != rdf:type) . 
+} ORDER BY (?values)
+
+
+- Question 5 -
+PREFIX db:<http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?properties COUNT(DISTINCT ?values) WHERE{
+ ?object a db:Politician .
+ ?object ?properties ?values .
+ FILTER(?properties != rdf:type) . 
+} 

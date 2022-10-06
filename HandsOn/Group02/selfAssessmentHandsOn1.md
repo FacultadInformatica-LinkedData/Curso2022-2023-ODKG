@@ -1,9 +1,25 @@
-**H01 :**
+# Hands-on assignment 1 – Self assessment
 
-- README.md : complete with all group members
+## Checklist
 
-- csv/* : full dataset with the 4 CSV files corresponding to the 4 years 
+**The “README.md” file:**
 
-- requirements/datasetRequirements.html : justification of the correspondence between the dataset and the requirements  
+- [✓] Includes the names and GitHub users of all the members of the group
 
-- requirements/applicationRequirements.html : explanation of the application requirements with user interface mock-ups
+**The "csv" directory:**
+
+- [✓] Contains at least one CSV file 
+- [✓] The CSV files belong to one of the selected domains
+
+**The "datasetRequirements.html" file:**
+
+- [✓] Identifies the licenses of all the selected datasets
+- [✓] Identifies those entities in the selected datasets that can be linked with entities in other datasets
+- [✓] Identifies those entities in other datasets that can be linked with entities in the selected datasets 
+
+**The "applicationRequirements.html” file:**
+
+- [✓] Includes a description of the application user interface
+
+## Comments on the self-assessment
+_(If required)_

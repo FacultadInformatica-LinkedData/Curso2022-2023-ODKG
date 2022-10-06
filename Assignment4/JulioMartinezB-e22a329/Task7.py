@@ -44,24 +44,24 @@ print("")
 print("")
 print("Task 7.2")
 print("")
-print("RDFLibMine:")
+print("RDFLib:")
 
-for subj in g.subjects(RDF.type,ns.Person):
+"""for subj in g.subjects(RDF.type,ns.Person):
     print(subj)
   
 
 for subj in g.subjects(RDF.type/RDFS.subClassOf,ns.Person):
-    print(subj) 
+    print(subj) """
 
-"""print("")
-print("RDFLibNotMine:")
+print("")
+print("RDFLib:")
 
 for subj,pred,obj in g.triples((None, RDF.type, ns.Person)):
   print(subj)
 
 for subj,pred,obj in g.triples((None, RDFS.subClassOf, ns.Person)):
   for subj1,pred1,obj1 in g.triples ((None, RDF.type,subj)):
-    print(subj1)"""
+    print(subj1)
 
 #SPARQL
 print("")

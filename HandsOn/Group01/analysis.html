@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
 <body>
 
 <h1>Dataset analysis</h1>
 
 <h2>Data analysis and schema</h2>
+<table>
+    <tr>
+      <th>Column</th>
+      <th>Type</th>
+      <th>Comments / Range (Rounded)</th>
+      <th>Problems</th>
+    </tr>
+    <tr>
+      <td>Provincia</td>
+      <td>String</td>
+      <td>Not unique, values = [Castellón, Valencia, Alicante]</td>
+      <td></td>
+    </tr>
+    <tr>
+        <td>Area_de_salud</td>
+        <td>String</td>
+        <td>Not unique, linkeable</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Nombre</td>
+        <td>String</td>
+        <td>Unique</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Domicilio</td>
+        <td>String</td>
+        <td>Unique</td>
+        <td>Not standarized</td>
+      </tr>
+      <tr>
+        <td>Telefono</td>
+        <td>String</td>
+        <td>Unique, Emtpy values, they start with 96</td>
+        <td>Type String, some of them have spaces in between</td>
+      </tr>
+      <tr>
+        <td>Gestionado_por</td>
+        <td>String</td>
+        <td>Not unique, linkeable</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Ciudad</td>
+        <td>String</td>
+        <td>Not unique, linkeable</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Ubicación</td>
+        <td>String</td>
+        <td>Unique, 2 coordinates</td>
+        <td></td>
+      </tr>
+</table>
 
-Add Belen's table
 
 <h2>Licensing</h2>
 

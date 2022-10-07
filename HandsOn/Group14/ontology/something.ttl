@@ -1,1 +1,1 @@
-
+#An OWL file with the ontology developed, according to the resource naming strategy defined, and using the Turtle syntax

@@ -16,7 +16,7 @@ ns:belongs_to a owl:ObjectProperty ;
     rdfs:range ns:city,
         ns:province .
 
-ns:company a owl:Class ;
+ns:Company a owl:Class ;
     rdfs:label "company" ;
     rdfs:subClassOf ns:entity .
 
@@ -30,22 +30,22 @@ ns:managed_by a owl:ObjectProperty ;
     rdfs:domain ns:center ;
     rdfs:range ns:entity .
 
-ns:public_institution a owl:Class ;
+ns:Public_institution a owl:Class ;
     rdfs:label "public_institution" ;
     rdfs:subClassOf ns:entity .
 
-ns:province a owl:Class ;
+ns:Province a owl:Class ;
     rdfs:label "province" .
 
-ns:center a owl:Class ;
+ns:Center a owl:Class ;
     rdfs:label "center" .
 
-ns:city a owl:Class ;
+ns:City a owl:Class ;
     rdfs:label "city" .
 
-ns:health_area a owl:Class ;
+ns:Gealth_area a owl:Class ;
     rdfs:label "health_area" .
 
-ns:entity a owl:Class ;
+ns:Entity a owl:Class ;
     rdfs:label "entity" .
 

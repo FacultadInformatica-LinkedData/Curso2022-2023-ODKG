@@ -1,0 +1,55 @@
+1. Get all the properties that can be applied to instances of the Politician class  
+ 
+PREFIX db: <http://dbpedia.org/ontology/> 
+ 
+SELECT DISTINCT ?p WHERE { 
+?s a db:Politician . 
+?s ?p ?o
+}  
+ 
+2. Get all the properties, except rdf:type, that can be applied to instances of the Politician class 
+ 
+PREFIX db: <http://dbpedia.org/ontology/> 
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+ 
+SELECT DISTINCT ?p WHERE { 
+?s a db:Politician . 
+?s ?p ?o . 
+FILTER (?p != rdf:type) 
+}  
+ 
+3. Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician? 
+ 
+PREFIX db: <http://dbpedia.org/ontology/> 
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+ 
+SELECT DISTINCT ?v WHERE { 
+?s a db:Politician . 
+?s ?p ?v . 
+FILTER (?p != rdf:type) 
+}  
+ 
+4. For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances? 
+ 
+PREFIX db: <http://dbpedia.org/ontology/> 
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> 
+
+ 
+SELECT DISTINCT ?p ?v WHERE { 
+?s a db:Politician . 
+?s ?p ?v
+FILTER(?p !=rdf:type)
+}  
+ 
+5. For each of these applicable properties, except for rdf:type, how many DISTINCT values do they take globally for all those instances? 
+ 
+PREFIX db: <http://dbpedia.org/ontology/> 
+ 
+SELECT DISTINCT ?p COUNT(?v) WHERE { 
+?s a db:Politician . 
+?s ?p ?v . 
+FILTER (?p != rdf:type) 
+} 

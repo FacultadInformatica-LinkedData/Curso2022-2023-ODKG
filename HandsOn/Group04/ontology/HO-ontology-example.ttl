@@ -1,0 +1,22 @@
+
+@prefix : <http://www.urbanElementsMadrid.es/> .
+@prefix p: <http://www.urbanElementsMadrid.es/ontology/ont#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <https://www.urbanElementsMadrid.es/ontology/ont#> .
+
+<http://www.urbanElementsMadrid.es/ontology/ont#> a owl:Ontology .
+
+<http://www.urbanElementsMadrid.es/resource/Fountain/FUE_01_0001> rdf:type :Fountain ;
+							 p:hasAddress "PLAZA COMENDADORAS" ;
+							 p:hasDistrict <http://www.urbanElementsMadrid.es/resource/District/1> ;
+							 p:latitude 40.4272429 ;
+							 p:longitude -3.7086003 ;
+						         p:hasId "FUE_01_0001" .
+
+<http://www.urbanElementsMadrid.es/resource/District/1> p:hasId 1 ;
+							p:hasName "CENTRO" .
+
+											 

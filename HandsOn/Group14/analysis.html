@@ -34,23 +34,78 @@ TODO: The resource naming strategy defined
 <h1>Data analyse</h1>
 <p>There is an analysis for each type of data</p>
 
-<h2>first column ...</h2>
+<h2>ID</h2>
 <p>the format is ...</p>
 
-<h2>first column ...</h2>
-<p>the format is ...</p>
+<h2>Identifiant station</h2>
+<p>Meaning : station id
+    The format is numbers which are uniques. For one unique value the id is a label "31024_relai". The station id 31024 exist so this one is just a relay
+    For all others values, the number goes from 1000 to 93000. Most of them are subsequent but there are a lot of disparity.
+    The better way to use it can be a key and rename the problematic one with a floating value or with a sub type
+</p>
 
-<h2>first column ...</h2>
-<p>the format is ...</p>
+<h2>Nom station</h2>
+<p>Meaning : station id
+    The format is a string. This is a label. Two of them have the same label but there are not the same they just have the name of the street, but they are not in the same city.
+    We can use them as label by including the city to don't mix them
+</p>
 
-<h2>first column ...</h2>
-<p>the format is ...</p>
+<h2>Station en fonctionnement</h2>
+<p>Meaning : operational station
+    The format is boolean (OUI=True). All values are true for the dataset.
+</p>
 
-<h2>first column ...</h2>
-<p>the format is ...</p>
+<h2>Capacité de la station</h2>
+<p>Meaning : station capacity
+</p>
 
-<h1>Data naming strategies</h1>
-<p>regarding the previous analysis, we decided to implement this naming strategies : </p>
+<h2>Nombre de bornettes libres</h2>
+<p>Meaning : number of free place
+</p>
 
+<h2>Nombre total vélos disponibles</h2>
+<p>Meaning : number of available bikes
+</p>
+
+<h2>Vélos mécaniques dipsonibles</h2>
+<p>Meaning : number of mechanical bikes available
+
+</p>
+
+<h2>Vélos électriques diponibles</h2>
+<p>Meaning : number of electric bikes available
+</p>
+
+<h2>Borne de paiement disponibles</h2>
+<p>Meaning : paying station available
+
+</p>
+
+
+<h2>retour vélib possibles</h2>
+<p>Meaning : bike deposit available
+
+</p>
+<h2>Actualisation de la donnée</h2>
+<p>Meaning : data updating
+    These are date-time values. There are 165 unique values the others are duplicate.
+    The precision is in second. 20 of them are prior to september 2022, and they will be ignored by the application but include in the dataset as outdated value (or missing stations)
+</p>
+<h2>coordonnées géographiques</h2>
+<p>Meaning : geo point
+    There are double floating value indicating the position they have different precision.
+    At least 8 digits. At most 15 digits.
+    There are all different.
+</p>
+<h2>Nom communes équipées</h2>
+<p>Meaning : city name
+    This are city name. There are 61 different values. There are the real name without mistakes.
+    Most of them are Paris (993 iterations among the 1441 values)
+</p>
+<h2>Code INSEE communes équipées</h2>
+<p>Meaning : ???
+    Empty data. Will be ignored
+</p>
+<h1>Resources naming strategies</h1>
 </body>
 </html>

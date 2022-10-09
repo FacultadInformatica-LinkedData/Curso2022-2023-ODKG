@@ -1,6 +1,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix ns: <https://www.healthfinder.io/group08/resource/namespace#> .
+@prefix nsont: <https://www.healthfinder.io/group08/resource/ontology/> .
+@prefix nsdata: <https://www.healthfinder.io/group08/resource/resource/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -32,12 +33,12 @@ geo:location a owl:ObjectProperty ;
 geo:longitude a owl:DatatypeProperty ;
     rdfs:label "longitude" .
 
-ns:belongTo a owl:ObjectProperty ;
+nsont:belongTo a owl:ObjectProperty ;
     rdfs:label "belong to" ;
     rdfs:domain ns:Address ;
     rdfs:range ns:Municipality .
 
-ns:isIn a owl:ObjectProperty ;
+nsont:isIn a owl:ObjectProperty ;
     rdfs:label "is in" ;
     rdfs:domain ns:Clinic,
         ns:Defibrillator ;
@@ -47,37 +48,37 @@ ns:isIn a owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-ns:openingHours a owl:DatatypeProperty ;
+nsdata:openingHours a owl:DatatypeProperty ;
     rdfs:label "opening hours" .
 
-ns:ownership a owl:DatatypeProperty ;
+nsdata:ownership a owl:DatatypeProperty ;
     rdfs:label "ownership" .
 
-ns:specialization a owl:DatatypeProperty ;
+nsdata:specialization a owl:DatatypeProperty ;
     rdfs:label "specialization" .
 
-ns:tipology a owl:DatatypeProperty ;
+nsdata:tipology a owl:DatatypeProperty ;
     rdfs:label "typology" .
 
-ns:tipologyOfClinic a owl:DatatypeProperty ;
+nsdata:tipologyOfClinic a owl:DatatypeProperty ;
     rdfs:label "tipology of clinic" .
 
 #################################################################
 #    Classes
 #################################################################
 
-ns:Clinic a owl:Class ;
+nsdata:Clinic a owl:Class ;
     rdfs:label "Clinic" .
 
-ns:Defibrillator a owl:Class ;
+nsdata:Defibrillator a owl:Class ;
     rdfs:label "Defibrillator" .
 
-ns:Municipality a owl:Class ;
+nsdata:Municipality a owl:Class ;
     rdfs:label "Municipality" .
 
-ns:Address a owl:Class ;
+nsdata:Address a owl:Class ;
     rdfs:label "Address" .
 
-ns:Establishment a owl:Class ;
+nsdata:Establishment a owl:Class ;
     rdfs:label "Establishment" .
 

@@ -1,21 +1,22 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix ns: <http://www.dialysisComunidadValenciana.es/dialysisCV/ontology/> .
+@prefix nsr: <http://www.dialysisComunidadValenciana.es/dialysisCV/resource/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ns:VALENCIA a ns:province .
-ns:H_Dr_Peset a ns:health_area .
-ns:CLINICA_DIAVERUM_ALFAFAR a ns:center .
-ns:DIAVERUM a ns:entity .
-ns:ALFAFAR a ns:city .
+nsr:VALENCIA a ns:province .
+nsr:H_Dr_Peset a ns:health_area .
+nsr:CLINICA_DIAVERUM_ALFAFAR a ns:center .
+nsr:DIAVERUM a ns:entity .
+nsr:ALFAFAR a ns:city .
 
-ns:CLINICA_DIAVERUM_ALFAFAR ns:address "C/ Profesora Ana Rojo, 1"^^xsd:string ;
+nsr:CLINICA_DIAVERUM_ALFAFAR ns:address "C/ Profesora Ana Rojo, 1"^^xsd:string ;
                             ns:telephone "961801811"^^xsd:string ;
                             ns:lat "39.41751001400007"^^xsd:float ;
                             ns:long "-0.38313997899996305"^^xsd:float .
 
-ns:CLINICA_DIAVERUM_ALFAFAR ns:is_in ns:H_Dr_Peset .
-ns:H_Dr_Peset ns:belongs_to ns:ALFAFAR .
-ns:ALFAFAR ns:belongs_to ns:VALENCIA .
-ns:CLINICA_DIAVERUM_ALFAFAR ns:managed_by ns:DIAVERUM.
+nsr:CLINICA_DIAVERUM_ALFAFAR ns:is_in ns:H_Dr_Peset .
+nsr:H_Dr_Peset ns:belongs_to ns:ALFAFAR .
+nsr:ALFAFAR ns:belongs_to ns:VALENCIA .
+nsr:CLINICA_DIAVERUM_ALFAFAR ns:managed_by ns:DIAVERUM.

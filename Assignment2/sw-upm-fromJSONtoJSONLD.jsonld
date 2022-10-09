@@ -1,0 +1,39 @@
+{
+	"@context": {
+		"assign2b": "http://exercise2b.org/assign2b/",
+		"person": "assign2b:person",
+		"fullName": "assign2b:fullName",
+		"hometown": "assign2b:hometown",
+		"age": "assign2b:age",
+		"almaMater": "assign2b:almaMater",
+		"parents": "assign2b:parents",
+		"subjects": "assign2b:subjects",
+		"subjectName": "assign2b:subjects",
+		"teachers": "assign2b:subjects",
+		"description": "assign2b:description"
+	},
+	"@id": "assign2b:StephanWolters",
+	"@type": "person",
+	"fullName": "Stephan Wolters",
+	"hometown": "Madrid",
+	"age": 51,
+	"almaMater": "Humboldt-Universität zu Berlin",
+	"parents": ["Wolfgang Wolters", "Annegret Wolters"],
+	"subjects": [
+		{
+			"subjectName": "Open Data and Knowledge Graphs",
+			"teachers": ["Oscar Corcho Garcia", "Daniel Garijo", "Raul Garcia Castro"],
+			"description": "The objective of this course is to provide students with theoretical and practical knowledge about open data and knowledge graphs."
+		},
+		{
+			"subjectName": "Machine Learning",
+			"teachers": ["Pedro Maria Larrañaga Mugica", "Maria Concepcion Bielza Lozoya"],
+			"description": "This subject exposes various methods to solve problems of supervised and unsupervised classification, and relations between the variables of the system."
+		},
+		{
+			"subjectName": "Cloud Computing And Big Data Ecosystems",
+			"teachers": ["Marta Patiño Martinez", "Ainhoa Azqueta Alzuaz", "Tonghong Li"],
+			"description": "This course presents traditional data management systems and architectures for scalable distributed systems and data management systems"
+		}
+	]
+}

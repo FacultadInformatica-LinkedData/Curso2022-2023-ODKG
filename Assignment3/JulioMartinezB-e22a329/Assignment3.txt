@@ -1,0 +1,74 @@
+1.
+Get all the properties that can be applied to 
+instances of the Politician class.
+
+PREFIX : <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?property
+WHERE{ 
+ ?subject rdf:type :Politician .
+ ?subject ?property ?object
+}
+
+Result:
+https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A+%0D%0ASELECT+DISTINCT+%3Fproperty%0D%0AWHERE%7B+%0D%0A+%3Fsubject+rdf%3Atype+%3APolitician+.%0D%0A+%3Fsubject+%3Fproperty+%3Fobject%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+
+2.
+Get all the properties, except rdf:type,
+that can be applied to instances of the 
+Politician class.
+
+PREFIX : <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?property
+WHERE{ 
+ ?subject rdf:type :Politician .
+ ?subject ?property ?object.
+ FILTER (?property != rdf:type)
+}
+
+Result:
+https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A+%0D%0ASELECT+DISTINCT+%3Fproperty%0D%0AWHERE%7B+%0D%0A+%3Fsubject+rdf%3Atype+%3APolitician+.%0D%0A+%3Fsubject+%3Fproperty+%3Fobject.%0D%0A+FILTER+%28%3Fproperty+%21%3D+rdf%3Atype%29%0D%0A%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+3.
+Which different values exist for the properties,
+except for rdf:type, applicable to the instances 
+of Politician.
+
+PREFIX : <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?object
+WHERE{ 
+ ?subject rdf:type :Politician .
+ ?subject ?property ?object.
+ FILTER (?property != rdf:type)
+}
+
+Result:
+https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A+%0D%0ASELECT+DISTINCT+%3Fobject%0D%0AWHERE%7B+%0D%0A+%3Fsubject+rdf%3Atype+%3APolitician+.%0D%0A+%3Fsubject+%3Fproperty+%3Fobject.%0D%0A+FILTER+%28%3Fproperty+%21%3D+rdf%3Atype%29%0D%0A%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+4. 
+For each of these applicable properties, except
+for rdf:type, which different values do they take 
+globally for all those instances?
+ 
+PREFIX : <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?property ?object
+WHERE{ 
+ ?subject rdf:type :Politician .
+ ?subject ?property ?object.
+ FILTER (?property != rdf:type)
+}
+
+5. 
+For each of the properties, except rdf:type, 
+that can be applied to instances of the 
+Politician class, how many distinct values
+ do they take in those instances?
+ 
+PREFIX : <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?property COUNT(DISTINCT ?object as ?count)
+WHERE{ 
+ ?subject rdf:type :Politician .
+ ?subject ?property ?object.
+ FILTER (?property != rdf:type)
+}
+

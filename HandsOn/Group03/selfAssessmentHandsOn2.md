@@ -20,9 +20,9 @@
 
 **The "OWL" file:**
 
-- [ ] Creation of ontology directory.
-- [ ] Ontology depeloment using ttl extension.
-- [ ] Follows resource naming strategy.
+- [X] Creation of ontology directory.
+- [X] Ontology depeloment using ttl extension.
+- [X] Follows resource naming strategy.
 
 **--------- Detailed Task list -------------**
 - [ ] Uses the .ttl extension

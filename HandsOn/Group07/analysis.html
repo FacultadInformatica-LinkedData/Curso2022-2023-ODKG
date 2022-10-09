@@ -81,71 +81,81 @@
           <tr id="ca3c520e-88e8-4219-b6ac-7f25c34d5ee5">
             <th class="simple-table-header-color simple-table-header" style="width:174.5px">Variable</th>
             <th class="simple-table-header-color simple-table-header" style="width:90.5px">Type</th>
+            <th class="simple-table-header-color simple-table-header" style="width:100px">Range</th>
             <th class="simple-table-header-color simple-table-header" style="width:392.5px">Description</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td style="width:174.5px">
-              <strong>PROVINCIA</strong>
+              PROVINCIA
             </td>
             <td style="width:90.5px">Integer</td>
-            <td style="width:392.5px">28 (Madrid)</td>
+            <td>[28]</td>
+            <td style="width:392.5px">Province (Madrid)</td>
           </tr>
           <tr>
             <td style="width:174.5px">
-              <strong>MUNICIPIO</strong>
+              MUNICIPIO
             </td>
             <td style="width:90.5px">Integer</td>
-            <td style="width:392.5px">79 </td>
+            <td>[79]</td>
+            <td style="width:392.5px">Municipality </td>
           </tr>
           <tr>
             <td style="width:174.5px">
-              <strong>ESTACION</strong>
+              ESTACION
             </td>
             <td style="width:90.5px">Integer</td>
+            <td>Not unique</td>
             <td style="width:392.5px">Identifier of the monitoring station</td>
           </tr>
           <tr>
             <td style="width:174.5px">
-              <strong>MAGNITUD</strong>
+              MAGNITUD
             </td>
             <td style="width:90.5px">Integer</td>
+            <td> [1 - 44] </td>
             <td style="width:392.5px">Component of air monitored</td>
           </tr>
           <tr>
             <td style="width:174.5px">
-              <strong>PUNTO_MUESTREO</strong>
+              PUNTO_MUESTREO
             </td>
             <td style="width:90.5px">String</td>
+            <td>Not unique</td>
             <td style="width:392.5px">Province, municipality, station, monitoring and sampling technique</td>
           </tr>
           <tr>
             <td style="width:174.5px">
-              <strong>AÑO</strong>
+              AÑO
             </td>
             <td style="width:90.5px">Integer</td>
-            <td style="width:392.5px">Year (2022)</td>
+            <td>[2022]</td>
+            <td style="width:392.5px">Year</td>
           </tr>
           <tr>
             <td style="width:174.5px">
-              <strong>MES</strong>
+              MES
             </td>
             <td style="width:90.5px">Integer</td>
-            <td style="width:392.5px">Month (01 - 12)</td>
+            <td>[01 - 12]</td>
+            <td style="width:392.5px">Month</td>
           </tr>
           <tr>
             <td style="width:174.5px">
-              <strong>DXX</strong>
+              DXX
             </td>
             <td style="width:90.5px">Float</td>
+            <td>[0 - 44] </td>
             <td style="width:392.5px">Value monitored</td>
           </tr>
           <tr>
             <td style="width:174.5px">
-              <strong>VXX</strong>
+              VXX
             </td>
             <td style="width:90.5px">String</td>
+            <td>[V, N]</td>
             <td style="width:392.5px">Validity of the value obtained (V ⇒ valid, N ⇒ not valid)</td>
           </tr>
         </tbody>
@@ -169,6 +179,20 @@
       <ul class="bulleted-list">
         <li style="list-style-type:disc">Ontology: <a
             href="http://smartcity.airquality.es/airquality/ontology">http://smartcity.airquality.es/airquality/ontology</a>
+          <dl>
+            <dd>- Classes:
+              <a
+                href="http://smartcity.airquality.es/airquality/ontology<ontologyName>#<className">http://smartcity.airquality.es/airquality/ontology</a>
+            </dd>
+            <dd>- Properties:
+              <a
+                href="http://smartcity.airquality.es/airquality/ontology">http://smartcity.airquality.es/airquality/ontology</a>
+            </dd>
+            <dd>- Classes:
+              <a
+                href="http://smartcity.airquality.es/airquality/ontology">http://smartcity.airquality.es/airquality/ontology</a>
+            </dd>
+          </dl>
         </li>
       </ul>
     </div>

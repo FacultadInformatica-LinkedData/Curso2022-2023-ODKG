@@ -31,4 +31,5 @@
 - [X] Contains at least one class that will be used to link to other entities
 
 ## Comments on the self-assessment
-We haven't defined the domain in all properties because we want to use some of them, such as "hasStreet" for more than one type of class
+We haven't defined the domain in all properties because we want to use some of them, such as "hasStreet" for more than one type of class. 
+Moreover, to relate both parking zones and parking meters, we use the BlockId property. This relation is many-to-one, which allows us to acquire the parking area information from a parking meter.

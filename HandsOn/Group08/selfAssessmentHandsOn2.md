@@ -22,8 +22,8 @@
 - [x] Contains at least one class
 - [x] Contains at least one object property (where the value of the property is a resource)
 - [x] Contains at least one datatype property (where the value of the property is a string literal, usually typed)
-- [ ] Defines the domain of all the properties (the origin of the property)
-- [ ] Defines the range of all the properties (the destination of the property)
+- [x] Defines the domain of all the properties (the origin of the property)
+- [x] Defines the range of all the properties (the destination of the property)
 - [x] Defines all class names starting with a capital letter
 - [x] Defines all property names starting with a non-capital letter
 - [x] Does not mix labels in different languages (e.g., Spanish and English)

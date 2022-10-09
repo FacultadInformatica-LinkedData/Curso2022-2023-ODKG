@@ -1,0 +1,117 @@
+@prefix : <http://www.group10.org/pl/ontology/ParkingLotsMadrid#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.group10.org/pl/ontology/ParkingLotsMadrid#> .
+
+<http://www.group10.org/pl/ontology/ParkingLotsMadrid#> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#hasStreet
+:hasStreet rdf:type owl:ObjectProperty ;
+           rdfs:range :Street .
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#hasDistrict
+:hasDistrict rdf:type owl:ObjectProperty ;
+           rdfs:range :District .
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#hasNeighborhood
+:hasNeighborhood rdf:type owl:ObjectProperty ;
+           rdfs:range :Neighborhood.
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#hasLocation
+:hasLocation rdf:type owl:ObjectProperty ;
+           rdfs:range :Location.
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#hasParkingMeter
+:hasParkingMeter rdf:type owl:ObjectProperty ;
+           rdfs:domain :ParkingMeterTicket ;
+           rdfs:range :ParkingMeter.
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#blockId
+:blockId rdf:type owl:DataProperty ;
+           rdfs:range xsd:integer .
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#parkingMeterId
+:parkingMeterId rdf:type owl:DataProperty ;
+           rdfs:domain :ParkingMeter ;
+           rdfs:range xsd:string.
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#color
+:color rdf:type owl:DataProperty ;
+           rdfs:domain :ParkingArea ;
+           rdfs:range xsd:string.
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#parkingSpaces
+:parkingSpaces rdf:type owl:DataProperty ;
+           rdfs:domain :ParkingArea ;
+           rdfs:range xsd:integer.
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#startDateTime
+:startDateTime rdf:type owl:DataProperty ;
+           rdfs:domain :ParkingMeterTicket ;
+           rdfs:range xsd:dateTime.
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#endDateTime
+:endDateTime rdf:type owl:DataProperty ;
+           rdfs:domain :ParkingMeterTicket ;
+           rdfs:range xsd:dateTime.
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#hasLongitude
+:hasLongitude rdf:type owl:DataProperty ;
+           rdfs:domain :Location ;
+           rdfs:range xsd:decimal.
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#hasLatitude
+:hasLatitude rdf:type owl:DataProperty ;
+           rdfs:domain :Location ;
+           rdfs:range xsd:decimal.
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#hasDisctrictNumber
+:hasDisctrictNumber rdf:type owl:DataProperty ;
+           rdfs:domain :District;
+           rdfs:range xsd:string.
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#hasNeighborhoodNumber
+:hasNeighborhoodNumber rdf:type owl:DataProperty ;
+           rdfs:domain :Neighborhood;
+           rdfs:range xsd:string.
+
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#ParkingMeter
+:ParkingMeter rdf:type owl:Class .
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#ParkingMeterTicket
+:ParkingMeterTicket rdf:type owl:Class .
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#Location
+:Location rdf:type owl:Class .
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#ParkingArea
+:ParkingArea rdf:type owl:Class .
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#Street
+:Street rdf:type owl:Class .
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#District
+:District rdf:type owl:Class .
+
+###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#Neighborhood
+:Neighborhood rdf:type owl:Class .

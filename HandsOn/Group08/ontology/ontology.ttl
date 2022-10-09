@@ -4,6 +4,8 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+<https://www.healthfinder.io/group08/ontology> rdf:type owl:Ontology .
+
 geo: a owl:Ontology ;
     dc:creator "Alejandro Macari",
         "Andrea Pisani",
@@ -13,6 +15,10 @@ geo: a owl:Ontology ;
     dc:description "Ontology code created by Chowlk" ;
     dc:title "HealthFinder Ontology" ;
     owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Object Properties
+#################################################################
 
 geo:latitude a owl:DatatypeProperty ;
     rdfs:label "latitude" .
@@ -36,6 +42,10 @@ ns:isIn a owl:ObjectProperty ;
         ns:Defibrillator ;
     rdfs:range ns:Establishment .
 
+#################################################################
+#    Data properties
+#################################################################
+
 ns:openingHours a owl:DatatypeProperty ;
     rdfs:label "opening hours" .
 
@@ -46,10 +56,14 @@ ns:specialization a owl:DatatypeProperty ;
     rdfs:label "specialization" .
 
 ns:tipology a owl:DatatypeProperty ;
-    rdfs:label "tipology" .
+    rdfs:label "typology" .
 
 ns:tipologyOfClinic a owl:DatatypeProperty ;
     rdfs:label "tipology of clinic" .
+
+#################################################################
+#    Classes
+#################################################################
 
 ns:Clinic a owl:Class ;
     rdfs:label "Clinic" .

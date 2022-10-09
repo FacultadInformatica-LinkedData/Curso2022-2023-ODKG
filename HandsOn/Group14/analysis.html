@@ -57,34 +57,55 @@ TODO: The resource naming strategy defined
 
 <h2>Capacité de la station</h2>
 <p>Meaning : station capacity
+    This data is an integer that goes from 0 to 75.
+    13 data have the value 0 that all correspond to not working station (+ the "relai"). Because this data will not be useful, we will remove" them.
+    So, the effective range is from 7 to 75 but because the application will work with an API in a real time context we will consider a range from 0 to 512.
 </p>
 
 <h2>Nombre de bornettes libres</h2>
 <p>Meaning : number of free place
+    This data is an integer that goes from 0 to 68.
+    Surprisingly, we see that number of free place+number_of_available_bike != capacity in some case.
+    They might be a corruption on the data or damage to the station.
+    Because the application will work with an API in a real time context we will consider a range from 0 to 512.
 </p>
 
 <h2>Nombre total vélos disponibles</h2>
 <p>Meaning : number of available bikes
+    This data is an integer that goes from 0 to 67.
+    We see that number of free number_of_mechanical_bike+number_of_electric_bike = number_of_available_bike in every case which is coherent.
+    The distribution is logarithmic (most of the station have few bike and only some of them have a lot of bikes).
+    Because the application will work with an API in a real time context we will consider a range from 0 to 512.
 </p>
 
 <h2>Vélos mécaniques dipsonibles</h2>
 <p>Meaning : number of mechanical bikes available
-
+    This data is an integer that goes from 0 to 55.
+    The distribution is logarithmic (most of the station have few bike and only some of them have a lot of bikes).
+    Because the application will work with an API in a real time context we will consider a range from 0 to 512.
 </p>
 
 <h2>Vélos électriques diponibles</h2>
 <p>Meaning : number of electric bikes available
+    This data is an integer that goes from 0 to 34.
+    The distribution is logarithmic (most of the station have few bike and only some of them have a lot of bikes).
+    Because the application will work with an API in a real time context we will consider a range from 0 to 512.
 </p>
 
 <h2>Borne de paiement disponibles</h2>
 <p>Meaning : paying station available
-
+    This data is a boolean.
+    There are 1406 true and 35 false. Among the false there are data that will already be ignored (because of others data) but not only
+    We will keep the false and display them as no paying station and display a message "take your phone and install the app to pay)
 </p>
 
 
 <h2>retour vélib possibles</h2>
 <p>Meaning : bike deposit available
-
+    This data is a boolean.
+    There are 1406 true and 35 false. The false are also those with no paying station available
+    Most of them will be discarded them because this station seem to present anomalies (no bike = ghost station, not working)
+    For the 17 that seem normals, to be sure we need to send someone or wait customer's feedback.
 </p>
 <h2>Actualisation de la donnée</h2>
 <p>Meaning : data updating

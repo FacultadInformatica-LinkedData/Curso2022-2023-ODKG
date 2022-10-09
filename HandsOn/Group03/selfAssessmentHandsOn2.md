@@ -42,14 +42,14 @@
 
 **The "RDF" file:**
 
-- [ ] Sample instantiation of the ontology.
-- [ ] Follows resource naming strategy.
+- [X] Sample instantiation of the ontology.
+- [X] Follows resource naming strategy.
 
 **--------- Detailed Task list -------------**
-- [ ] Uses the .ttl extension
-- [ ] Is serialized in the Turtle format
-- [ ] Follows the resource naming strategy
-- [ ] Does not include the definition of ontology terms
+- [X] Uses the .ttl extension
+- [X] Is serialized in the Turtle format
+- [X] Follows the resource naming strategy
+- [X] Does not include the definition of ontology terms
 
 ## Comments on self-assessment ##
 

@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "example": "http://example.org/"
+  },
+  "@graph": [
+    {
+      "@id": "example:Alex",
+      "example:fullName": {
+        "@type": "xsd:string",
+        "@value": "Alejandro de la Cruz Lopez"
+      },
+      "example:homeTown": {
+        "@type": "xsd:string",
+        "@value": "Jaen"
+      },
+      "example:age": {
+        "@type": "xsd:int",
+        "@value": 24
+      },
+      "example:almaMater": {
+        "@type": "xsd:string",
+        "@value": "Universidad Politécnica de Madrid"
+      },
+      "example:parentsName": {
+        "example:fatherName": {
+          "@type": "xsd:string",
+          "@value": "Jose"
+        },
+        "example:motherName": {
+          "@type": "xsd:string",
+          "@value": "Maica"
+        },
+        "example:subjects": [
+          {
+            "@id": "example:I&E",
+            "example:teachers": [
+              {
+                "@id": "Raul"
+              }
+            ],
+            "example:briefDescription": {
+              "@type": "xsd:string",
+              "@value": "Entrepreneurship studies"
+            }
+          },
+          {
+            "@id": "example:Data Mining & Time Series",
+            "example:teachers": [
+              {
+                "@id": "Aurora"
+              }
+            ],
+            "example:briefDescription": {
+              "@type": "xsd:string",
+              "@value": "KDD process and automation"
+            }
+          },
+          {
+            "@id": "subject:Complex Data in Health",
+            "example:teachers": [
+              {
+                "@id": "name:Alejandro Rodriguez Gonzalez"
+              },
+              {
+                "@id": "name:Lucía Prieto Santamaria"
+              },
+              {
+                "@id": "name:Massimiliano Zanin"
+              }
+            ],
+            "example:briefDescription": {
+              "@type": "xsd:string",
+              "@value": "Use of data science on health"
+            }
+          },
+          {
+            "@id": "example:Open Data & Knowledge Graphs",
+            "example:teachers": [
+              {
+                "@id": "name:Oscar Corcho García"
+              },
+              {
+                "@id": "name:Raúl García Castro"
+              }
+            ],
+            "example:briefDescription": {
+              "@type": "xsd:string",
+              "@value": "Knowledge graphs and open data studies"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

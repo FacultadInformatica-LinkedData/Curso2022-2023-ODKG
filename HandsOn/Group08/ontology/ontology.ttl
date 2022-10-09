@@ -1,4 +1,4 @@
- @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix ns: <https://www.healthfinder.io/group08/resource/namespace#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .

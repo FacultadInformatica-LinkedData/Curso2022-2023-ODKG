@@ -1,0 +1,51 @@
+{
+	"@context": {
+		"name": "http://example.org/elements/student",
+		"person": "name:person",
+		"fullName": "name:fullName",
+		"hometown": "name:hometown",
+		"age": "name:age",
+		"almaMater": "name:almaMater",
+		"parents":"name:parents",
+        "mother":"name:mother",
+        "father":"name:father",
+		"subjects": "name:subjects",
+		"subjectName": "name:subjectName",
+		"teachers": "name:teachers",
+		"description": "name:description"
+	},
+	"@id": "name:laurartiles",
+	"@type": "person",
+	"fullName": "Laura Artiles Martinez",
+	"hometown": "Madrid",
+	"age": 23,
+	"almaMater": "UPM",
+	"parents": {
+		"mother": "Marta",
+		"father": "Carlos"
+	},
+	"subjects":
+	[
+		{
+			"subjectName":"Big Data",
+			"teachers":["Antonio Latorre De La Fuente", "Jesus Montes Sanchez"],
+			"description":"This course will allow the student to gain the fundamentals for the analysis of large volumes of data."
+		},
+		{
+			"subjectName":"Open Data and Knowledge Graphs",
+			"teachers":["Oscar Corcho Garcia", "Raul Garcia Castro"],
+			"description":"During this course the student will learn about the main foundations for Knowledge Graphs."
+		},
+		{
+			"subjectName":"Negocio en Ti",
+			"teachers":"Juan Carlos Crespo Zaragoza",
+			"description":"La asignatura presenta los aspectos fundamentales los aspectos fundamentales en los que se asientan los modelos de negocio de las distintas empresas que se dedican a los servicios TI"
+		},
+		{
+			"subjectName":"Direccion de Empresas de Ti",
+			"teachers":"Fernando Aldana Laso",
+			"description":"La asignatura se adentra en las áreas de Producción, marketing y recursos humanos de las empresas del sector"
+		}
+	]
+	
+}

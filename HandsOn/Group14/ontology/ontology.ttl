@@ -10,6 +10,7 @@
 bs: a owl:Ontology ;
     dc:description "Ontology code created by Chowlk" .
 
+### Properties ###
 bs:availableBikes a owl:DatatypeProperty ;
     rdfs:label "available bikes" ;
     rdfs:domain bs:BikeStation ;
@@ -45,48 +46,7 @@ bs:returnOfVeilbPossible a owl:DatatypeProperty ;
     rdfs:domain bs:BikeStation ;
     rdfs:range xsd:boolean .
 
-dbo:capasity a owl:DatatypeProperty ;
-    rdfs:label "capasity" ;
-    rdfs:domain bs:BikeStation ;
-    rdfs:range xsd:nonNegativeInteger .
-
-dbo:locatedInArea a owl:FunctionalProperty,
-        owl:ObjectProperty ;
-    rdfs:label "located in area" ;
-    rdfs:domain bs:BikeStation ;
-    rdfs:range dbo:Municipality .
-
-paw:lastUpdateOn a owl:DatatypeProperty ;
-    rdfs:label "last update on" ;
-    rdfs:domain bs:BikeStation ;
-    rdfs:range xsd:dateTime .
-
-schema:id a owl:DatatypeProperty ;
-    rdfs:label "id" ;
-    rdfs:domain bs:BikeStation ;
-    rdfs:range xsd:string .
-
-schema:latitude a owl:DatatypeProperty ;
-    rdfs:label "latitude" ;
-    rdfs:domain bs:BikeStation ;
-    rdfs:range xsd:float .
-
-schema:longitude a owl:DatatypeProperty ;
-    rdfs:label "longitude" ;
-    rdfs:domain bs:BikeStation ;
-    rdfs:range xsd:float .
-
-schema:name a owl:DatatypeProperty ;
-    rdfs:label "name" ;
-    rdfs:domain bs:BikeStation ;
-    rdfs:range xsd:string .
-
-dbo:Municipality a owl:Class ;
-    rdfs:label "Municipality" .
-
-schema:CivicStructure a owl:Class ;
-    rdfs:label "Civic Structure" .
-
+### Class ###
 bs:BikeStation a owl:Class ;
     rdfs:label "Bike Station" ;
     rdfs:subClassOf schema:CivicStructure .

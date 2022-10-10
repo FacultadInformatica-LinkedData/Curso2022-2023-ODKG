@@ -1,0 +1,93 @@
+@prefix bs: <http://smartbikes.org/ontology/bikeStation#> .
+@prefix dbo: <https://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix paw: <http://purl.org/pav/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+bs: a owl:Ontology ;
+    dc:description "Ontology code created by Chowlk" .
+
+bs:availableBikes a owl:DatatypeProperty ;
+    rdfs:label "available bikes" ;
+    rdfs:domain bs:BikeStation ;
+    rdfs:range xsd:nonNegativeInteger .
+
+bs:availableElectricalBikes a owl:DatatypeProperty ;
+    rdfs:label "available electrical bikes" ;
+    rdfs:domain bs:BikeStation ;
+    rdfs:range xsd:nonNegativeInteger .
+
+bs:availableMechanicalBikes a owl:DatatypeProperty ;
+    rdfs:label "available mechanical bikes" ;
+    rdfs:domain bs:BikeStation ;
+    rdfs:range xsd:nonNegativeInteger .
+
+bs:availableParkingSpots a owl:DatatypeProperty ;
+    rdfs:label "available parking spots" ;
+    rdfs:domain bs:BikeStation ;
+    rdfs:range xsd:nonNegativeInteger .
+
+bs:inUse a owl:DatatypeProperty ;
+    rdfs:label "in use" ;
+    rdfs:domain bs:BikeStation ;
+    rdfs:range xsd:boolean .
+
+bs:paymentTerminalAvailable a owl:DatatypeProperty ;
+    rdfs:label "payment terminal available" ;
+    rdfs:domain bs:BikeStation ;
+    rdfs:range xsd:boolean .
+
+bs:returnOfVeilbPossible a owl:DatatypeProperty ;
+    rdfs:label "return of veilb possible" ;
+    rdfs:domain bs:BikeStation ;
+    rdfs:range xsd:boolean .
+
+dbo:capasity a owl:DatatypeProperty ;
+    rdfs:label "capasity" ;
+    rdfs:domain bs:BikeStation ;
+    rdfs:range xsd:nonNegativeInteger .
+
+dbo:locatedInArea a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "located in area" ;
+    rdfs:domain bs:BikeStation ;
+    rdfs:range dbo:Municipality .
+
+paw:lastUpdateOn a owl:DatatypeProperty ;
+    rdfs:label "last update on" ;
+    rdfs:domain bs:BikeStation ;
+    rdfs:range xsd:dateTime .
+
+schema:id a owl:DatatypeProperty ;
+    rdfs:label "id" ;
+    rdfs:domain bs:BikeStation ;
+    rdfs:range xsd:string .
+
+schema:latitude a owl:DatatypeProperty ;
+    rdfs:label "latitude" ;
+    rdfs:domain bs:BikeStation ;
+    rdfs:range xsd:float .
+
+schema:longitude a owl:DatatypeProperty ;
+    rdfs:label "longitude" ;
+    rdfs:domain bs:BikeStation ;
+    rdfs:range xsd:float .
+
+schema:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:domain bs:BikeStation ;
+    rdfs:range xsd:string .
+
+dbo:Municipality a owl:Class ;
+    rdfs:label "Municipality" .
+
+schema:CivicStructure a owl:Class ;
+    rdfs:label "Civic Structure" .
+
+bs:BikeStation a owl:Class ;
+    rdfs:label "Bike Station" ;
+    rdfs:subClassOf schema:CivicStructure .
+

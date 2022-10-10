@@ -1,0 +1,56 @@
+{
+	"@context":{
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"person": "https://www.w3.org/ontology/person/",
+	  	"homeTown":"person:city",
+		"almaMater":"person:university",
+		"age":"person:age",
+      	"father":"person:father",
+      	"mother":"person:mother",
+      "subject": "https://www.w3.org/ontology/subject/",
+      "briefDescription":"xsd:string"
+	},
+  	"@id": "person:Alejandro Basco Plaza",
+	"homeTown": "Toledo",
+	"age": 40,
+	"almaMater": "Universidad Carlos III",
+  	"parents":{
+      "father": "Jesus",
+      "mother": "Maria Jesus"
+	},
+  "studySubjects":[
+  		{	
+          "@id":"subject:Intelligent systems",
+           "briefDescription":"In a broad sense, intelligent systems can be considered as a type of computer system that integrates artificialintelligence algorithms to solve problems in complex environments using limited resources. Intelligent systems arecapable of acquiring and using knowledge by integrating methods based on machine learning, knowledge representation and reasoning.",
+          "teachers":{
+            "teacher1":"person:Martín Molina",
+            "teacher2":"person:Daniel Manrique",
+            "teacher3":"person:Mari Carmen Suárez de Figueroa",
+            "teacher4":"person:Asunción Gómez Pérez",
+            "teacher5":"person:Mariano Rico"
+            
+        	}
+		},	
+    {	
+          "@id":"subject:Open Data and Knowledge Graphs",
+           "briefDescription":"The objective of this course is to provide students with theoretical and practical knowledge about open data and knowledge graphs. Students will learn the methodological and technological foundations for the generation and publication of open data, with a special focus on how such data is often being structured and made available as knowledge graphs. The acquired knowledge will be also applicable for the management of knowledge graphs of private data, handled by private organisations. Special emphasis will be made on how such knowledge graphs can be used as data sources for data science activities, as well ahow data science is being used for knowledge graph management and curation purposes.",
+          "teachers":{
+            "teacher1":"person:Oscar Corcho",
+            "teacher2":"person:Daniel Garijo Verdejo",
+            "teacher3":"person:Raúl García Castro"            
+        	}
+		},
+    {	
+          "@id":"Statistical Data Analysis",
+           "briefDescription":"This course is intended to be a non-exhaustive survey of techinques to turn multivariate data into useful information so that informed decisions can be made. The perspective is twofold, theoretical and applied, covering topics such as: exploratory data analysis, multivariate statistical summaries and graphical representations, dimensionality reduction, regression techniques and time series analysis. There will be an emphasis on hands-on application of the theory and methods throughout, with extensive use of R",
+          "teachers":{
+            "teacher1":"person:Martín Molina",
+            "teacher2":"person:Daniel Manrique",
+            "teacher3":"person:Mari Carmen Suárez de Figueroa",
+            "teacher4":"person:Asunción Gómez Pérez",
+            "teacher5":"person:Mariano Rico"
+            
+        	}
+		}
+	]
+}

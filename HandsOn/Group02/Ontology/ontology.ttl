@@ -1,89 +1,104 @@
- @prefix bicyacoc: <http://bicycleaccident/group2/ontology/class#> .
-@prefix byciacoc: <http://www.owl-ontologies.com/byciacoc#> .
-@prefix byciacop: <http://www.owl-ontologies.com/byciacop#> .
+ @prefix bicyacoc: <http://bicycleaccident.com/group2/ontology/class#> .
+@prefix bicyacop: <http://bicycleaccident.com/group2/ontology/property#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix ev: <https://motools.sourceforge.net/event/event.html#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf1: <http://www.owl-ontologies.com/rdf#> .
-@prefix rdfs1: <http://www.owl-ontologies.com/rdfs#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix time: <http://www.w3.org/2006/time#> .
+@prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-bicyacoc: dc:creator "Group 2" ;
+bicyacoc: a owl:Ontology ;
+    dc:creator "Group 2" ;
     dc:description "Ontology code created by Chowlk" ;
     dc:title "Status of bicycle accident" ;
-    rdf1:type owl:Ontology ;
     owl:versionInfo "0.0.1" .
 
-byciacop:hasType rdf1:type owl:ObjectProperty ;
-    rdfs1:domain bicyacoc:Accident ;
-    rdfs1:label "has type" ;
-    rdfs1:range rdf1:XMLLiteral .
+bicyacop:address a owl:ObjectProperty ;
+    rdfs:label "address" ;
+    rdfs:range rdf:XMLLiteral .
 
-byciacop:isConductor rdf1:type owl:ObjectProperty ;
-    rdfs1:domain byciacoc:Victim ;
-    rdfs1:label "is conductor" .
+byciacop:hasType a owl:ObjectProperty ;
+    rdfs:label "has type" ;
+    rdfs:domain bicyacoc:Accident ;
+    rdfs:range rdf:XMLLiteral .
 
-rdfs1:label rdf1:type owl:ObjectProperty ;
-    rdfs1:label "label" ;
-    rdfs1:range rdf1:XMLLiteral .
+byciacop:isConductor a owl:ObjectProperty ;
+    rdfs:label "is conductor" ;
+    rdfs:domain byciacoc:Victim .
 
-xsd:boolean rdf1:type owl:Class ;
-    rdfs1:label "boolean" .
+xsd:boolean a owl:Class ;
+    rdfs:label "boolean" .
 
-geo:lat rdf1:type owl:ObjectProperty ;
-    rdfs1:domain geo:SpatialThing ;
-    rdfs1:label "lat" ;
-    rdfs1:range xsd:float .
+wgs84:lat a owl:ObjectProperty ;
+    rdfs:label "lat" ;
+    rdfs:domain wgs84:SpatialThing ;
+    rdfs:range xsd:float .
 
-geo:long rdf1:type owl:ObjectProperty ;
-    rdfs1:domain geo:SpatialThing ;
-    rdfs1:label "long" ;
-    rdfs1:range xsd:float .
+wgs84:long a owl:ObjectProperty ;
+    rdfs:label "long" ;
+    rdfs:domain wgs84:SpatialThing ;
+    rdfs:range xsd:float .
 
-foaf:gender rdf1:type owl:ObjectProperty ;
-    rdfs1:domain byciacoc:Victim ;
-    rdfs1:label "gender" ;
-    rdfs1:range rdf1:XMLLiteral .
+time:hasBeginning a owl:ObjectProperty ;
+    rdfs:label "has beginning" ;
+    rdfs:domain time:TemporalEntity ;
+    rdfs:range time:Instant .
 
-ev:agent rdf1:type owl:ObjectProperty ;
-    rdfs1:domain bicyacoc:Accident ;
-    rdfs1:label "agent" ;
-    rdfs1:range byciacoc:Victim .
+time:inXSDDate a owl:ObjectProperty ;
+    rdfs:label "in x s d date" ;
+    rdfs:domain time:Instant ;
+    rdfs:range xsd:timeDate .
 
-ev:term_place rdf1:type owl:ObjectProperty ;
-    rdfs1:label "term_place" ;
-    rdfs1:range geo:SpatialThing .
+foaf:gender a owl:ObjectProperty ;
+    rdfs:label "gender" ;
+    rdfs:domain byciacoc:Victim ;
+    rdfs:range rdf:XMLLiteral .
 
-ev:term_time rdf1:type owl:ObjectProperty ;
-    rdfs1:label "term_time" ;
-    rdfs1:range time:TemporalEntity .
+ev:agent a owl:ObjectProperty ;
+    rdfs:label "agent" ;
+    rdfs:domain bicyacoc:Accident ;
+    rdfs:range byciacoc:Victim .
 
-time:TemporalEntity rdf1:type owl:Class ;
-    rdfs1:label "Temporal Entity" .
+ev:term_place a owl:ObjectProperty ;
+    rdfs:label "term_place" ;
+    rdfs:range wgs84:SpatialThing .
 
-foaf:agent rdf1:type owl:Class ;
-    rdfs1:label "agent" .
+ev:term_time a owl:ObjectProperty ;
+    rdfs:label "term_time" ;
+    rdfs:range time:TemporalEntity .
 
-ev:Event rdf1:type owl:Class ;
-    rdfs1:label "Event" .
+xsd:timeDate a owl:Class ;
+    rdfs:label "time Date" .
 
-bicyacoc:Accident rdf1:type owl:Class ;
-    rdfs1:label "Accident" ;
-    rdfs1:subClassOf ev:Event .
+foaf:agent a owl:Class ;
+    rdfs:label "agent" .
 
-xsd:float rdf1:type owl:Class ;
-    rdfs1:label "float" .
+ev:Event a owl:Class ;
+    rdfs:label "Event" .
 
-byciacoc:Victim rdf1:type owl:Class ;
-    rdfs1:label "Victim" ;
-    rdfs1:subClassOf foaf:agent .
+bicyacoc:Accident a owl:Class ;
+    rdfs:label "Accident" ;
+    rdfs:subClassOf ev:Event .
 
-rdf1:XMLLiteral rdf1:type owl:Class ;
-    rdfs1:label "X M L Literal" .
+xsd:float a owl:Class ;
+    rdfs:label "float" .
 
-geo:SpatialThing rdf1:type owl:Class ;
-    rdfs1:label "Spatial Thing" .
+time:Instant a owl:Class ;
+    rdfs:label "Instant" .
+
+time:TemporalEntity a owl:Class ;
+    rdfs:label "Temporal Entity" .
+
+byciacoc:Victim a owl:Class ;
+    rdfs:label "Victim" ;
+    rdfs:subClassOf foaf:agent .
+
+rdf:XMLLiteral a owl:Class ;
+    rdfs:label "X M L Literal" .
+
+wgs84:SpatialThing a owl:Class ;
+    rdfs:label "Spatial Thing" .
 

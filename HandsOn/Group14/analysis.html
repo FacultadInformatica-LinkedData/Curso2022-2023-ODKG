@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>License</h1>
-<h2>License analyse</h2>
+<h2>License analysis</h2>
 <p>
     The current license of the dataset is described here : <a href="https://opendatacommons.org/licenses/odbl/">opendatacommons.org/licenses/odbl/</a>
     To use the dataset we have to :
@@ -29,7 +29,7 @@
 
 <p>Because we want to let the possibility link these data with the bike state data and other urban facilities (cross transportation for example) we decided to keep the opendata commons license</p>
 
-<h1>Data analyse</h1>
+<h1>Data analysis</h1>
 <p>There is an analysis for each type of data</p>
 
 <h2>ID</h2>
@@ -37,7 +37,7 @@
 
 <h2>Identifiant station</h2>
 <p>Meaning : station id
-    The format is numbers which are uniques. For one unique value the id is a label "31024_relai". The station id 31024 exist so this one is just a relay
+    The format is numbers which are uniques. For one unique value the id is a label "31024_relai". The station id 31024 exist so this one is just a relay.
     For all others values, the number goes from 1000 to 93000. Most of them are subsequent but there are a lot of disparity.
     The better way to use it can be a key and rename the problematic one with a floating value or with a sub type
 </p>
@@ -56,7 +56,7 @@
 <h2>Capacité de la station</h2>
 <p>Meaning : station capacity
     This data is an integer that goes from 0 to 75.
-    13 data have the value 0 that all correspond to not working station (+ the "relai"). Because this data will not be useful, we will remove" them.
+    13 data have the value 0 that all correspond to not working station (+ the "relai"). Because this data will not be useful, we will remove them.
     So, the effective range is from 7 to 75 but because the application will work with an API in a real time context we will consider a range from 0 to 512.
 </p>
 

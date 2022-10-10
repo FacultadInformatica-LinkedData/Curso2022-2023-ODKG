@@ -1,0 +1,45 @@
+ASSIGNMENT 2: Stephan Wolters
+
+1. Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>):
+PREFIX dbpedia: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?prop
+WHERE{
+dbpedia:Politician ?prop ?n.
+?prop a rdf:Property
+}
+
+2. Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+PREFIX dbpedia: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?prop
+WHERE{
+dbpedia:Politician ?prop ?n.
+?prop a rdf:Property.
+FILTER(?prop != rdf:type)
+}
+
+3. Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+PREFIX dbpedia: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?value
+WHERE{
+dbpedia:Politician ?prop ?value.
+?prop a rdf:Property.
+FILTER(?prop != rdf:type)
+}
+
+4. For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+PREFIX dbpedia: <http://dbpedia.org/ontology/>
+SELECT ?prop ?value
+WHERE{
+dbpedia:Politician ?prop ?value.
+?prop a rdf:Property.
+FILTER(?prop != rdf:type)
+}
+
+5. For each of these applicable properties, except for rdf:type, how many distinct values do they take globally for all those instances?
+PREFIX dbpedia: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?prop ?value
+WHERE{
+dbpedia:Politician ?prop ?value.
+?prop a rdf:Property.
+FILTER(?prop != rdf:type)
+}

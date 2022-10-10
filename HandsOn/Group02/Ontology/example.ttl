@@ -1,0 +1,60 @@
+ @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix b: <http://www.bocycleaccident/group2/ontology/#> .
+@base <http://www.bocycleaccident/group2/ontology/#> .
+
+<http://www.bocycleaccident/group2/ontology/#> rdf:type owl:Ontology ;
+			dc:creator ""group2"" ;
+			owl:versionInfo "0.0.1" ;
+			dc:title ""Status of Bicycle Accident"" ;
+			dc:description "Ontology code created by Chowlk" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+### b:hasDate
+b:hasDate rdf:type owl:ObjectProperty ;
+		rdfs:domain b:Location ;
+		rdfs:range b:Date ;
+		rdfs:label "has date" .
+
+### b:hasTypeOfAccident
+b:hasTypeOfAccident rdf:type owl:ObjectProperty ;
+		rdfs:domain b:Date ;
+		rdfs:label "has type of accident" .
+
+#################################################################
+#    Data Properties
+#################################################################
+
+#################################################################
+#    Classes
+#################################################################
+
+### b:Location
+b:Location rdf:type owl:Class ;
+	rdfs:label "Location" .
+
+### b:Date
+b:Date rdf:type owl:Class ;
+	rdfs:label "Date" .
+
+### b:TypeOfAccident
+b:TypeOfAccident rdf:type owl:Class ;
+	rdfs:label "Type Of Accident" .
+
+#################################################################
+#    Instances
+#################################################################
+
+#################################################################
+#    General Axioms
+#################################################################
+

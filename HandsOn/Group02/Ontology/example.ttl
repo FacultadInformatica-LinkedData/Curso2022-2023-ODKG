@@ -1,60 +1,27 @@
- @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix b: <http://www.bocycleaccident/group2/ontology/#> .
-@base <http://www.bocycleaccident/group2/ontology/#> .
+@prefix bicyacoc: <http://bicycleaccident.com/group2/ontology/class#> .
+@prefix bicyacop: <http://bicycleaccident.com/group2/ontology/property#> .
+@prefix ev: <https://motools.sourceforge.net/event/event.html#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
-<http://www.bocycleaccident/group2/ontology/#> rdf:type owl:Ontology ;
-			dc:creator ""group2"" ;
-			owl:versionInfo "0.0.1" ;
-			dc:title ""Status of Bicycle Accident"" ;
-			dc:description "Ontology code created by Chowlk" .
+bicyacr:2019S000036 a bicyacoc:Accident;
+    ev:term_time bicyacr:time02012019204500;
+	ev:term_place bicyacr:space2019S000036;
+	bicyacop:hasType "Colisión fronto-lateral";
+	ev:agent bicyacr:person2019S000036.
 
-#################################################################
-#    Object Properties
-#################################################################
+bicyacr:time02012019204500 a time:TemporalEntity;
+	time:hasBeginning bicyacr:02012019204500.
+	
+bicyacr:02012019204500 a time:Instant;
+	time:inXSDDate "2019-01-02T20:45:00Z".
 
-### b:hasDate
-b:hasDate rdf:type owl:ObjectProperty ;
-		rdfs:domain b:Location ;
-		rdfs:range b:Date ;
-		rdfs:label "has date" .
+bicyacr:space2019S000036 a geo:SpatialThing;
+	wgs84:lat 447978470;
+	wgs84:long 444591127;
+	bicyacop:address "AVDA. GRAN VIA DE HORTALEZA / GTA. LUIS ROSALES".
 
-### b:hasTypeOfAccident
-b:hasTypeOfAccident rdf:type owl:ObjectProperty ;
-		rdfs:domain b:Date ;
-		rdfs:label "has type of accident" .
-
-#################################################################
-#    Data Properties
-#################################################################
-
-#################################################################
-#    Classes
-#################################################################
-
-### b:Location
-b:Location rdf:type owl:Class ;
-	rdfs:label "Location" .
-
-### b:Date
-b:Date rdf:type owl:Class ;
-	rdfs:label "Date" .
-
-### b:TypeOfAccident
-b:TypeOfAccident rdf:type owl:Class ;
-	rdfs:label "Type Of Accident" .
-
-#################################################################
-#    Instances
-#################################################################
-
-#################################################################
-#    General Axioms
-#################################################################
-
+bicyacr:person2019S000036 a bicyacoc:Victim;
+	foaf:gender "Male";
+	bicyacop:isConductor True.

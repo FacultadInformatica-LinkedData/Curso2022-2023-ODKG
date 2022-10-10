@@ -11290,6 +11290,473 @@ body.plugin-sliding-panes-rotate-header.plugin-sliding-select-orientation-uprigh
 </tr>
 </tbody>
 </table>
+<h2>
+	Analysis performed over the data sources
+</h2>
+<h3>
+	centros_servicios_establecimientos_sanitarios.csv
+</h3>
+<p>
+	40,568 rows and 12 columns
+</p>
+<table border="1">
+	<thead>
+		<tr>
+			<td>
+				<strong>
+					 Column
+				</strong>
+			</td>
+			<td>
+				<strong>
+					 Type
+				</strong>
+			</td>
+			<td>
+				<strong>
+					 Comments/Range (rounded)
+				</strong>
+			</td>
+			<td>
+				<strong>
+					 Problems
+				</strong>
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				centro_nro_registro
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (14,714 choices)
+			</td>
+		</tr>
+		<tr>
+			<td>
+				centro_tipo
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (24 choices)
+			</td>
+		</tr>
+		<tr>
+			<td>
+				dependecia_funcional
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (14 choices)
+			</td>
+			<td>
+				1,057 blanks
+			</td>
+		</tr>
+		<tr>
+			<td>
+				dependecia_patrimonial
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (12 choices)
+			</td>
+			<td>
+				1,049 blanks
+			</td>
+		</tr>
+		<tr>
+			<td>
+				oferta_asistecial
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (104 choices)
+			</td>
+		</tr>
+		<tr>
+			<td>
+				municipio_nombre
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (178 choices)
+			</td>
+			<td>
+				73 blanks
+			</td>
+		</tr>
+		<tr>
+			<td>
+				direccion_vial_tipo
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (26 choices)
+			</td>
+			<td>
+				73 blanks
+			</td>
+		</tr>
+		<tr>
+			<td>
+				direccion_vial_nro
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (1011 choices)
+			</td>
+			<td>
+				<p>
+					82 blanks
+				</p>
+				<p>
+					same value but different spelling:
+					<br />
+					- "1 BIS", "1-BIS"
+					<br />
+					- "S/N", "S/n", "s/n", "SN"...
+					<br />
+					-...
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				direccion_informacion_adicional
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (3446 choices)
+			</td>
+			<td>
+				<p>
+					15,613 blanks
+				</p>
+				same value but different spelling:
+				<br />
+				- "SOTANO", "S&Oacute;TANO", "S&oacute;tano"...
+				<br />
+				-...
+			</td>
+		</tr>
+		<tr>
+			<td>
+				direccion_codigo_postal
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (299 choices)
+			</td>
+			<td>
+				130 blanks
+			</td>
+		</tr>
+		<tr>
+			<td>
+				localizacion_coordenada_x
+			</td>
+			<td>
+				Decimal
+			</td>
+			<td>
+				-100,000 &mdash; 4,700,000
+			</td>
+			<td>
+				437 blanks
+			</td>
+		</tr>
+		<tr>
+			<td>
+				localizacion_coordenada_y
+			</td>
+			<td>
+				Decimal
+			</td>
+			<td>
+				-100,000 &mdash; 4,600,000
+			</td>
+			<td>
+				437 blanks
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	We can see that our dataset has blanks in several columns, but also some problems according to the homogeneity of the values. Because of different spellings for the same actual value, it creates different values in the column and therefore mislead the analysis (wrong value for "count")
+</p>
+<p>
+	N.B: We decided to consider direccion_codigo_postal as a String and not a decimal because it reprensents a code and not a numerical value that can imply calculation. It is here a qualitative variable, not a quantitative one.
+</p>
+<h3>
+	desfibriladores_externos_fuera_ambito_sanitario.csv
+</h3>
+<p>
+	8475 rows and 15 columns
+</p>
+<table border="1">
+	<thead>
+		<tr>
+			<td>
+				<strong>
+					 Column
+				</strong>
+			</td>
+			<td>
+				<strong>
+					 Type
+				</strong>
+			</td>
+			<td>
+				<strong>
+					 Comments/Range (rounded)
+				</strong>
+			</td>
+			<td>
+				<strong>
+					 Problems
+				</strong>
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				tipo_establecimiento
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (11 choices)
+			</td>
+			<td>
+				2,678 "Otros"
+			</td>
+		</tr>
+		<tr>
+			<td>
+				tipo_titularidad
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (2 choices), binary variable
+			</td>
+		</tr>
+		<tr>
+			<td>
+				municipio_codigo
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (120 choices)
+			</td>
+			<td>
+				1,277 blanks
+			</td>
+		</tr>
+		<tr>
+			<td>
+				municipio_nombre
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (120 choices)
+			</td>
+			<td>
+				1,277 blanks
+			</td>
+		</tr>
+		<tr>
+			<td>
+				direccion_via_codigo
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (27 choices)
+			</td>
+			<td>
+				1,277 blanks
+			</td>
+		</tr>
+		<tr>
+			<td>
+				direccion_via_nombre
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (4,057choices)
+			</td>
+			<td>
+				20 blanks
+			</td>
+		</tr>
+		<tr>
+			<td>
+				direccion_portal_numero
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (436 choices)
+			</td>
+			<td>
+				1,415 blanks
+			</td>
+		</tr>
+		<tr>
+			<td>
+				direccion_piso
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (96 choices)
+			</td>
+			<td>
+				7,199 blanks, spelling differences for same value
+			</td>
+		</tr>
+		<tr>
+			<td>
+				direccion_puerta
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (54 choices)
+			</td>
+			<td>
+				8,370 blanks, spelling differences for same value
+			</td>
+		</tr>
+		<tr>
+			<td>
+				direccion_codigo_postal
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (251 choices)
+			</td>
+			<td>
+				1,535 blanks, "110" and "2028" mistakes??
+			</td>
+		</tr>
+		<tr>
+			<td>
+				direccion_ubicacion
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (5,781 choices)
+			</td>
+			<td>
+				587 blanks, spelling differences for same value
+			</td>
+		</tr>
+		<tr>
+			<td>
+				direccion_coordenada_x
+			</td>
+			<td>
+				Decimal
+			</td>
+			<td>
+				0 &mdash; 41,000,000
+			</td>
+			<td>
+				only positive values for coordinates??
+			</td>
+		</tr>
+		<tr>
+			<td>
+				direccion_coordenada_y
+			</td>
+			<td>
+				Decimal
+			</td>
+			<td>
+				0 &mdash; 4,600,000
+			</td>
+			<td>
+				only positive values for coordinates??
+			</td>
+		</tr>
+		<tr>
+			<td>
+				horario_acceso
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (1,456 choices)
+			</td>
+			<td>
+				4,428 blanks, a lot of different formats
+			</td>
+		</tr>
+		<tr>
+			<td>
+				codigo_dea
+			</td>
+			<td>
+				String
+			</td>
+			<td>
+				Not unique (8,474 choices)
+			</td>
+			<td>
+				Almost unique value but 2022-1255 is present twice. Error? -&gt; to check
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	We can see that our dataset has blanks in several columns, but also some problems according to the homogeneity of the values. Because of different spellings or formats for the same actual value, it creates different values in the column and therefore mislead the analysis (wrong value for "count").
+</p>
+<p>
+	N.B: We decided to consider municipio_codigo, direccion_codigo_postal and codigo_dea as a String and not decimal because it reprensents a code and not a numerical value that can imply calculation. They are here qualitative variables, not quantitative ones.
+</p>
 <h2 data-heading="Licensing analysis">Licensing analysis</h2>
 <p>Both our datasets are published and owned by [https://www.comunidad.madrid/](Comunidad de Madrid) and are published under the [https://creativecommons.org/licenses/by/4.0/legalcode.es](Creative Commons 4.0 Attribution) Open Data license.<br>
 Since there is no reason for us to restrict access to our Adapted Dataset, which will be fully reproducible by starting from the same datasets we are using, our intention is to apply the <strong>same licensing</strong> to our version of the data.</p>

@@ -1,0 +1,89 @@
+ @prefix bicyacoc: <http://bicycleaccident/group2/ontology/class#> .
+@prefix byciacoc: <http://www.owl-ontologies.com/byciacoc#> .
+@prefix byciacop: <http://www.owl-ontologies.com/byciacop#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ev: <https://motools.sourceforge.net/event/event.html#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf1: <http://www.owl-ontologies.com/rdf#> .
+@prefix rdfs1: <http://www.owl-ontologies.com/rdfs#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+bicyacoc: dc:creator "Group 2" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "Status of bicycle accident" ;
+    rdf1:type owl:Ontology ;
+    owl:versionInfo "0.0.1" .
+
+byciacop:hasType rdf1:type owl:ObjectProperty ;
+    rdfs1:domain bicyacoc:Accident ;
+    rdfs1:label "has type" ;
+    rdfs1:range rdf1:XMLLiteral .
+
+byciacop:isConductor rdf1:type owl:ObjectProperty ;
+    rdfs1:domain byciacoc:Victim ;
+    rdfs1:label "is conductor" .
+
+rdfs1:label rdf1:type owl:ObjectProperty ;
+    rdfs1:label "label" ;
+    rdfs1:range rdf1:XMLLiteral .
+
+xsd:boolean rdf1:type owl:Class ;
+    rdfs1:label "boolean" .
+
+geo:lat rdf1:type owl:ObjectProperty ;
+    rdfs1:domain geo:SpatialThing ;
+    rdfs1:label "lat" ;
+    rdfs1:range xsd:float .
+
+geo:long rdf1:type owl:ObjectProperty ;
+    rdfs1:domain geo:SpatialThing ;
+    rdfs1:label "long" ;
+    rdfs1:range xsd:float .
+
+foaf:gender rdf1:type owl:ObjectProperty ;
+    rdfs1:domain byciacoc:Victim ;
+    rdfs1:label "gender" ;
+    rdfs1:range rdf1:XMLLiteral .
+
+ev:agent rdf1:type owl:ObjectProperty ;
+    rdfs1:domain bicyacoc:Accident ;
+    rdfs1:label "agent" ;
+    rdfs1:range byciacoc:Victim .
+
+ev:term_place rdf1:type owl:ObjectProperty ;
+    rdfs1:label "term_place" ;
+    rdfs1:range geo:SpatialThing .
+
+ev:term_time rdf1:type owl:ObjectProperty ;
+    rdfs1:label "term_time" ;
+    rdfs1:range time:TemporalEntity .
+
+time:TemporalEntity rdf1:type owl:Class ;
+    rdfs1:label "Temporal Entity" .
+
+foaf:agent rdf1:type owl:Class ;
+    rdfs1:label "agent" .
+
+ev:Event rdf1:type owl:Class ;
+    rdfs1:label "Event" .
+
+bicyacoc:Accident rdf1:type owl:Class ;
+    rdfs1:label "Accident" ;
+    rdfs1:subClassOf ev:Event .
+
+xsd:float rdf1:type owl:Class ;
+    rdfs1:label "float" .
+
+byciacoc:Victim rdf1:type owl:Class ;
+    rdfs1:label "Victim" ;
+    rdfs1:subClassOf foaf:agent .
+
+rdf1:XMLLiteral rdf1:type owl:Class ;
+    rdfs1:label "X M L Literal" .
+
+geo:SpatialThing rdf1:type owl:Class ;
+    rdfs1:label "Spatial Thing" .
+

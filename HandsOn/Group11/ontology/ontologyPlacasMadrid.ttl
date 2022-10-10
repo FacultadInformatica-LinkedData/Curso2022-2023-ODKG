@@ -7,6 +7,10 @@
 ns: a owl:Ontology ;
     dc:description "Ontology code created by Chowlk" .
 
+#######################
+# Datatype Properties #
+#######################
+
 ns:Direccion a owl:DatatypeProperty ;
     rdfs:label "direccion" ;
     rdfs:domain ns:Ubicacion ;
@@ -21,14 +25,6 @@ ns:Longitud a owl:DatatypeProperty ;
     rdfs:label "longitud" ;
     rdfs:domain ns:Ubicacion ;
     rdfs:range xsd:string .
-
-ns:Lugar a owl:Class ;
-    rdfs:label "Lugar" ;
-    rdfs:subClassOf ns:Entidad .
-
-ns:Persona a owl:Class ;
-    rdfs:label "Persona" ;
-    rdfs:subClassOf ns:Entidad .
 
 ns:descripcion a owl:DatatypeProperty ;
     rdfs:label "descripcion" ;
@@ -59,6 +55,15 @@ ns:palabraClave a owl:DatatypeProperty ;
     rdfs:label "palabra clave" ;
     rdfs:domain ns:Placa ;
     rdfs:range xsd:string .
+
+ns:url a owl:DatatypeProperty ;
+    rdfs:label "url" ;
+    rdfs:domain ns:Url ;
+    rdfs:range xsd:string .
+
+###################
+# Object Property #
+###################
 
 ns:representa a owl:ObjectProperty ;
     rdfs:label "representa" ;
@@ -105,10 +110,17 @@ ns:tieneWeb a owl:ObjectProperty ;
     rdfs:domain ns:Placa ;
     rdfs:range ns:Web .
 
-ns:url a owl:DatatypeProperty ;
-    rdfs:label "url" ;
-    rdfs:domain ns:Url ;
-    rdfs:range xsd:string .
+###########
+# Classes #
+###########
+
+ns:Lugar a owl:Class ;
+    rdfs:label "Lugar" ;
+    rdfs:subClassOf ns:Entidad .
+
+ns:Persona a owl:Class ;
+    rdfs:label "Persona" ;
+    rdfs:subClassOf ns:Entidad .
 
 ns:Contribuidor a owl:Class ;
     rdfs:label "Contribuidor" .

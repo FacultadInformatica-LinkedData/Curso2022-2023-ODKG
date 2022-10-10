@@ -11,42 +11,52 @@ bs: a owl:Ontology ;
     dc:description "Ontology code created by Chowlk" .
 
 ### Properties ###
+
+### http://smartbikes.org/ontology/bikeStation#availableBikes
 bs:availableBikes a owl:DatatypeProperty ;
     rdfs:label "available bikes" ;
     rdfs:domain bs:BikeStation ;
     rdfs:range xsd:nonNegativeInteger .
 
+### http://smartbikes.org/ontology/bikeStation#availableElectricalBikes
 bs:availableElectricalBikes a owl:DatatypeProperty ;
     rdfs:label "available electrical bikes" ;
     rdfs:domain bs:BikeStation ;
     rdfs:range xsd:nonNegativeInteger .
 
+### http://smartbikes.org/ontology/bikeStation#availableMechanicalBikes
 bs:availableMechanicalBikes a owl:DatatypeProperty ;
     rdfs:label "available mechanical bikes" ;
     rdfs:domain bs:BikeStation ;
     rdfs:range xsd:nonNegativeInteger .
 
+### http://smartbikes.org/ontology/bikeStation#availableParkingSpots
 bs:availableParkingSpots a owl:DatatypeProperty ;
     rdfs:label "available parking spots" ;
     rdfs:domain bs:BikeStation ;
     rdfs:range xsd:nonNegativeInteger .
 
+### http://smartbikes.org/ontology/bikeStation#inUse
 bs:inUse a owl:DatatypeProperty ;
     rdfs:label "in use" ;
     rdfs:domain bs:BikeStation ;
     rdfs:range xsd:boolean .
 
+### http://smartbikes.org/ontology/bikeStation#paymentTerminalAvailable
 bs:paymentTerminalAvailable a owl:DatatypeProperty ;
     rdfs:label "payment terminal available" ;
     rdfs:domain bs:BikeStation ;
     rdfs:range xsd:boolean .
 
+### http://smartbikes.org/ontology/bikeStation#returnOfVeilbPossible
 bs:returnOfVeilbPossible a owl:DatatypeProperty ;
     rdfs:label "return of veilb possible" ;
     rdfs:domain bs:BikeStation ;
     rdfs:range xsd:boolean .
 
 ### Class ###
+
+### http://smartbikes.org/ontology/bikeStation#BikeStation
 bs:BikeStation a owl:Class ;
     rdfs:label "Bike Station" ;
     rdfs:subClassOf schema:CivicStructure .

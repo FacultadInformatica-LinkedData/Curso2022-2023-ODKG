@@ -1,0 +1,44 @@
+@base <http://smartbikes.org/resources/> .
+@prefix bs: <http://smartbikes.org/ontology/bikeStation#> .
+@prefix dbo: <https://dbpedia.org/ontology/> .
+@prefix dbr: http://dbpedia.org/resource/ .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix paw: <http://purl.org/pav/> .
+@prefix schema: <https://schema.org/> .
+
+### http://smartbikes.org/resources/BikeStation/9020
+
+:BikeStation/9020 a bs:BikeStation;
+	dbo:identifier 9020;
+	dbo:name "Toudouze - Clauzel";
+	bs:inUse "true"^^xsd:boolean;
+	dbo:capacity 21;
+	bs:availableParkingSpots 19;
+	bs:availableBikes 1;
+	bs:availableElectricalBikes 1;
+	bs:availableMechanicalBikes 0;
+	bs:paymentTerminalAvailable "true"^^xsd:boolean;
+	bs:returnOfVeilbPossible "true"^^xsd:boolean;
+	paw:lastUpdateOn "2022-10-05T09:58:36+02:00"^^xsd:dateTime;
+	schema:latitude 48.87929591733507;
+	schema:longitude 2.3373600840568547;
+	dbo:locatedInArea dbr:Paris.
+	
+### http://smartbikes.org/resources/BikeStation/9020
+
+:BikeStation/16107 a bs:BikeStation;
+	dbo:identifier 16107;
+	dbo:name "Benjamin Godard - Victor Hugo";
+	bs:inUse "true"^^xsd:boolean;
+	dbo:capacity 35;
+	bs:availableParkingSpots 8;
+	bs:availableBikes 26;
+	bs:availableElectricalBikes 15;
+	bs:availableMechanicalBikes 11;
+	bs:paymentTerminalAvailable "true"^^xsd:boolean;
+	bs:returnOfVeilbPossible "true"^^xsd:boolean;
+	paw:lastUpdateOn "2022-10-05T09:59:42+02:00"^^xsd:dateTime;
+	schema:latitude 48.865983;
+	schema:longitude 2.275725;
+	dbo:locatedInArea dbr:Paris.

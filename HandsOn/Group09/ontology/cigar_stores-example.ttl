@@ -1,0 +1,18 @@
+@prefix : <http://pt-recharge-points.org/> .
+@prefix p: <http://pt-recharge-points.org/ontology> .
+@prefix pl: <http://pt-recharge-points.org/location> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://pt-recharge-points.org/ontology> .
+
+p:1 :hasPointOfSaleID "FB_039B56"^^xsd:string;
+	:hasAddress "CL LA FUENTE, 4"^^xsd:string;
+	:hasPostalCode "28864"^^xsd:integer;
+	:hasLocation pl:1;
+	:hasMunicipality "Ajalvir"^^xsd:string;
+	:hasProvincia "MADRID"^^xsd:string.
+
+pl:1 :hasLatitude "40.53527"^^xsd:real;
+	:hasLongitude "-3.4814"^^xsd:real.

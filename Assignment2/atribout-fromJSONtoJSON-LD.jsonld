@@ -1,0 +1,73 @@
+{
+    "@context" :{
+        "xsd":"http://www.w3.org/2001/XMLSchema#",
+        "ont": "http://www.oeg-upm.net/ontology#",
+        "predicate":  "http://www.oeg-upm.net/predicate#",
+        "city":  "http://www.oeg-upm.net/city#",
+        "university": "http://www.oeg-upm.net/university#",
+        "subject":  "http://www.oeg-upm.net/subject#",
+        "people":"http://www.ontologies.org/ontologies/People#"
+    },
+    "@graph": [
+        {
+            "@id": "person:AntoineTribout",
+            "@type": "ont:student",
+            "predicate:fullName" : {
+                "@value": "Antoine Tribout",
+                "@type": "xsd:string"
+            },
+            "predicate:hometown" : {
+                "@id": "city:Menton",
+                "@type": "ont:city"
+            },
+            "predicate:age" : {
+                "@value": 22,
+                "@type": "xsd:integer"
+            },
+            "predicate:almaMater" : {
+                "@id": "university:ENSEEIHT",
+                "@type": "ont:university"
+            },
+            "predicate:motherName" : {
+                "@value": "Peggy",
+                "@type": "xsd:string"
+            },
+            "predicate:fatherName" : {
+                "@value": "Christophe",
+                "@type": "xsd:string"
+            },
+            "predicate:subjects" :[
+                {
+                    "@id":"subject:ODKG",
+                    "@type": "ont:subject",
+                    "predicate:subjectName" : {
+                        "@value": "Open Data and Knowledge Graphs",
+                        "@type": "xsd:string"
+                    },
+                    "predicate:subjectTeachers" : [
+                        {
+                            "@id": "person:OscarCorcho",
+                            "@type": "ont:teacher",
+                            "predicate:fullName" : {
+                                "@value": "Oscar Corcho",
+                                "@type": "xsd:string"
+                            }
+                        },
+                        {
+                            "@id": "person:DanielGarijoVerdejo",
+                            "@type": "ont:teacher",
+                            "predicate:fullName" : {
+                                "@value": "Daniel Garijo Verdejo",
+                                "@type": "xsd:string"
+                            }
+                        }
+                    ],
+                    "predicate:subjectDescription" : {
+                        "@value": "During this course you will learn about the main foundations for Knowledge Graphs, including the W3C\nrecommendations that are applicable in this area (RDF, RDF Schema, SPARQL, OWL, CSV on the Web) and\nmethodologies for the generation and publication of Knowledge Graphs from multiple heterogeneous data sources\nand formats, using Linked Data technologies. You will also learn about how to create shared agreed vocabularies\nand ontologies that can give support to Knowledge Graph generation and publication, and will understand how\nthese principles and approaches have been applied to several domains. You will work on a practical hands-on\nexercise that will be the basis for your participation in hackatons and other similar events",     
+                        "@type": "xsd:string"
+                    }
+                }
+            ]
+        }
+    ]
+}

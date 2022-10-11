@@ -1,0 +1,99 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix nsont: <https://www.healthfinder.io/group08/resource/ontology/> .
+@prefix nsdata: <https://www.healthfinder.io/group08/resource/resource/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.healthfinder.io/group08/ontology> rdf:type owl:Ontology .
+
+geo: a owl:Ontology ;
+    dc:creator "Alejandro Macari",
+        "Andrea Pisani",
+        "Anne-Fleur Kerhousse",
+        "Ariel Ratzonel",
+        "Natalia Bagnoli" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "HealthFinder Ontology" ;
+    owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+geo:latitude a owl:DatatypeProperty ;
+    rdfs:label "latitude" .
+    rdfs:domain ns:Address ;
+    rdfs:range xsd:String .
+
+geo:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:domain ns:Establishment ;
+    rdfs:range ns:Address .
+
+geo:longitude a owl:DatatypeProperty ;
+    rdfs:label "longitude" .
+    rdfs:domain ns:Address ;
+    rdfs:range xsd:String .
+
+nsont:belongTo a owl:ObjectProperty ;
+    rdfs:label "belong to" ;
+    rdfs:domain ns:Address ;
+    rdfs:range ns:Municipality .
+
+nsont:isIn a owl:ObjectProperty ;
+    rdfs:label "is in" ;
+    rdfs:domain ns:Clinic,
+        ns:Defibrillator ;
+    rdfs:range ns:Establishment .
+
+#################################################################
+#    Data properties
+#################################################################
+
+nsdata:openingHours a owl:DatatypeProperty ;
+    rdfs:label "opening hours" .
+    rdfs:domain nsdata:Establishment ;
+    rdfs:range xsd:String .
+
+nsdata:ownership a owl:DatatypeProperty ;
+    rdfs:label "ownership" .
+    rdfs:domain nsdata:Establishment ;
+    rdfs:range xsd:String .
+
+nsdata:specialization a owl:DatatypeProperty ;
+    rdfs:label "specialization" .
+    rdfs:domain nsdata:Clinic ;
+    rdfs:range xsd:String .
+
+nsdata:typology a owl:DatatypeProperty ;
+    rdfs:label "typology" .
+    rdfs:domain nsdata:Establishment ;
+    rdfs:range xsd:String .
+
+nsdata:typologyOfClinic a owl:DatatypeProperty ;
+    rdfs:label "typology of clinic" .
+    rdfs:domain nsdata:Clinic ;
+    rdfs:range xsd:String .
+
+#################################################################
+#    Classes
+#################################################################
+
+nsdata:Clinic a owl:Class ;
+    rdfs:label "Clinic" .
+
+nsdata:Defibrillator a owl:Class ;
+    rdfs:label "Defibrillator" .
+
+nsdata:Municipality a owl:Class ;
+    rdfs:label "Municipality" .
+
+nsdata:Address a owl:Class ;
+    rdfs:label "Address" .
+
+nsdata:Establishment a owl:Class ;
+    rdfs:label "Establishment" .
+

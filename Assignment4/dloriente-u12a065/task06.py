@@ -85,7 +85,7 @@ for r in g.query(q64):
 
 # TO DO
 g.add((ns.UPM, RDF.type, ns.University))
-g.add((ns.JohnSmith, vcard.work, ns.UPM))
+g.add((ns.JohnSmith, ns.works, ns.UPM))
 
 # Visualize the results: where does John Smith works?
 #for s, p, o in g:

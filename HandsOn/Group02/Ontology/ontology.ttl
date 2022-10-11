@@ -1,0 +1,104 @@
+ @prefix bicyacoc: <http://bicycleaccident.com/group2/ontology/class#> .
+@prefix bicyacop: <http://bicycleaccident.com/group2/ontology/property#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ev: <https://motools.sourceforge.net/event/event.html#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+bicyacoc: a owl:Ontology ;
+    dc:creator "Group 2" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "Status of bicycle accident" ;
+    owl:versionInfo "0.0.1" .
+
+bicyacop:address a owl:ObjectProperty ;
+    rdfs:label "address" ;
+    rdfs:range rdf:XMLLiteral .
+
+byciacop:hasType a owl:ObjectProperty ;
+    rdfs:label "has type" ;
+    rdfs:domain bicyacoc:Accident ;
+    rdfs:range rdf:XMLLiteral .
+
+byciacop:isConductor a owl:ObjectProperty ;
+    rdfs:label "is conductor" ;
+    rdfs:domain byciacoc:Victim .
+
+xsd:boolean a owl:Class ;
+    rdfs:label "boolean" .
+
+wgs84:lat a owl:ObjectProperty ;
+    rdfs:label "lat" ;
+    rdfs:domain wgs84:SpatialThing ;
+    rdfs:range xsd:float .
+
+wgs84:long a owl:ObjectProperty ;
+    rdfs:label "long" ;
+    rdfs:domain wgs84:SpatialThing ;
+    rdfs:range xsd:float .
+
+time:hasBeginning a owl:ObjectProperty ;
+    rdfs:label "has beginning" ;
+    rdfs:domain time:TemporalEntity ;
+    rdfs:range time:Instant .
+
+time:inXSDDate a owl:ObjectProperty ;
+    rdfs:label "in x s d date" ;
+    rdfs:domain time:Instant ;
+    rdfs:range xsd:timeDate .
+
+foaf:gender a owl:ObjectProperty ;
+    rdfs:label "gender" ;
+    rdfs:domain byciacoc:Victim ;
+    rdfs:range rdf:XMLLiteral .
+
+ev:agent a owl:ObjectProperty ;
+    rdfs:label "agent" ;
+    rdfs:domain bicyacoc:Accident ;
+    rdfs:range byciacoc:Victim .
+
+ev:term_place a owl:ObjectProperty ;
+    rdfs:label "term_place" ;
+    rdfs:range wgs84:SpatialThing .
+
+ev:term_time a owl:ObjectProperty ;
+    rdfs:label "term_time" ;
+    rdfs:range time:TemporalEntity .
+
+xsd:timeDate a owl:Class ;
+    rdfs:label "time Date" .
+
+foaf:agent a owl:Class ;
+    rdfs:label "agent" .
+
+ev:Event a owl:Class ;
+    rdfs:label "Event" .
+
+bicyacoc:Accident a owl:Class ;
+    rdfs:label "Accident" ;
+    rdfs:subClassOf ev:Event .
+
+xsd:float a owl:Class ;
+    rdfs:label "float" .
+
+time:Instant a owl:Class ;
+    rdfs:label "Instant" .
+
+time:TemporalEntity a owl:Class ;
+    rdfs:label "Temporal Entity" .
+
+byciacoc:Victim a owl:Class ;
+    rdfs:label "Victim" ;
+    rdfs:subClassOf foaf:agent .
+
+rdf:XMLLiteral a owl:Class ;
+    rdfs:label "X M L Literal" .
+
+wgs84:SpatialThing a owl:Class ;
+    rdfs:label "Spatial Thing" .
+

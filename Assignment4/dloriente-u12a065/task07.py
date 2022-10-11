@@ -64,7 +64,7 @@ print("\n7.2 List all individuals of 'Person' with SPARQL:")
 q72 = prepareQuery('''
   SELECT DISTINCT ?Sub ?Person
   WHERE { 
-    {?Person RDFS:subClassOf ns:Person. 
+    {?Person RDFS:subClassOf* ns:Person. 
     ?Sub RDF:type ?Person.} 
     UNION 
     {?Sub RDF:type ns:Person.}
@@ -103,15 +103,14 @@ for s,p,o in g73:
 # With SPARQL
 print("\n7.3 List all individuals of 'Person' and all their properties including their class with SPARQL:")
 q73 = prepareQuery('''
-  CONSTRUCT {
-    ?Sub ?p ?o .
-  }
+  SELECT DISTINCT ?Sub ?p ?o 
   WHERE {
-    {?Person RDFS:subClassOf ns:Person. 
-    ?Sub RDF:type ?Person.} 
+    {?Person RDFS:subClassOf* ns:Person. 
+    ?Sub RDF:type ?Person. 
+    ?Sub ?p ?o .}
     UNION 
-    {?Sub RDF:type ns:Person.}
-    ?Sub ?p ?o .
+    {?Sub RDF:type ns:Person. 
+    ?Sub ?p ?o .}
   }
    ''',
   initNs = { "ns" : "http://somewhere#" , "RDF" : RDF, "RDFS" : RDFS}

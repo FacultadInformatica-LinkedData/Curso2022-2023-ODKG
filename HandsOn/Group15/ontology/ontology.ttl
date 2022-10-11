@@ -7,7 +7,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix : <http://busstopalcobendas.odkg.es/group15/ontology/> .
-@prefix base: <http://busstopalcobendas.odkg.es/group15/ontology/gr15#> .
+@prefix base: <http://busstopalcobendas.odkg.es/group15/ontology/gr15#>> .
 @prefix http: <http://www.owl-ontologies.com/http#> .
 @base <http://busstopalcobendas.odkg.es/group15/ontology/> .
 
@@ -21,12 +21,9 @@
 #    Object Properties
 #################################################################
 
-### http://vocab.ciudadesabiertas.es/def/transporte/autobus#Zona
-http://vocab.ciudadesabiertas.es/def/transporte/autobus#Zona rdf:type owl:ObjectProperty ;
-		rdfs:label "//vocab.ciudadesabiertas.es/def/transporte/autobus# zona" .
-
 ### base:hasAddress
 base:hasAddress rdf:type owl:ObjectProperty ;
+		rdfs:domain base:BusStop ;
 		rdfs:label "has address" .
 
 #################################################################
@@ -77,15 +74,21 @@ base:stop_timezone rdf:type owl:DatatypeProperty ;
 
 ### base:zone_id
 base:zone_id rdf:type owl:DatatypeProperty ;
-		rdfs:domain base:Zone ;
+		rdfs:domain base:BusStop ;
 		rdfs:range xsd:string ;
 		rdfs:label "zone_id" .
 
-### base:street_desc
-base:street_desc rdf:type owl:DatatypeProperty ;
+### base:street_name
+base:street_name rdf:type owl:DatatypeProperty ;
 		rdfs:domain base:Address ;
 		rdfs:range xsd:string ;
-		rdfs:label "street_desc" .
+		rdfs:label "street_name" .
+
+### base:street_number
+base:street_number rdf:type owl:DatatypeProperty ;
+		rdfs:domain base:Address ;
+		rdfs:range xsd:integer ;
+		rdfs:label "street_number" .
 
 #################################################################
 #    Classes
@@ -96,18 +99,9 @@ base:BusStop rdf:type owl:Class ;
 	rdfs:label "Bus Stop" ;
 	rdfs:subClassOf http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada .
 
-### base:Zone
-base:Zone rdf:type owl:Class ;
-	rdfs:label "Zone" ;
-	rdfs:subClassOf http://w3id.org/transmodel/commons#Zone .
-
 ### http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada
 http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada rdf:type owl:Class ;
 	rdfs:label "//vocab.ciudadesabiertas.es/def/transporte/autobus# Parada" .
-
-### http://w3id.org/transmodel/commons#Zone
-http://w3id.org/transmodel/commons#Zone rdf:type owl:Class ;
-	rdfs:label "//w3id.org/transmodel/commons# Zone" .
 
 ### base:Address
 base:Address rdf:type owl:Class ;

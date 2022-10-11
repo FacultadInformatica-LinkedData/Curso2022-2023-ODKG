@@ -1,0 +1,36 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix properties: <https://www.asociadrid.es/property#> .
+@prefix classes: <https://www.asociadrid.es/class#> .
+
+
+<https://www.asociadrid.es/resources/CollaborativeEntities/12303> a classes:Federations ;
+    properties:id "12303"^^xsd:integer ;
+    properties:name "Asociación de Vecinos de Tetuán"^^xsd:string ;
+    properties:register_date: "10/10/2020"^^xsd:date ;
+    properties:category "Vecinales"^^xsd:string ;
+    properties:area: "DISTRITO"^^xsd:string
+    properties:num_affiliates "500"^^xsd:integer ;
+    properties:CIF: "G79986493"^^xsd:string ;
+    properties:hasAnAdress <https://www.asociadrid.es/resources/Address/1>
+    properties:hasAnEmail <https://www.asociadrid.es/resources/Email/1>
+    properties:hasAPhone <https://www.asociadrid.es/resources/CommunicationalToken/1>
+
+<https://www.asociadrid.es/resources/Address/1> a classes:Address ;
+    properties:completeAdress "Calle Bravo Murillo 230, 1ºA"^^xsd:string ;
+    properties:zipcode 28039
+    properties:belongsTo <https://www.asociadrid.es/resources/Subdistrict/1>
+
+<https://www.asociadrid.es/resources/Subdistrict/Valdeacederas> a classes:Subdistrict ;
+    properties:belongsTo <https://www.asociadrid.es/resources/District/Tetuan>
+    rdfs:label "Valdeacederas"
+
+<https://www.asociadrid.es/resources/District/Tetuan> a classes:District ;
+    rdfs:label "Tetuan"
+
+<https://www.asociadrid.es/resources/Email/1> a classes:Email ;
+    rdfs:label "asociacionvecinostetuan@gmail.com"
+
+<https://www.asociadrid.es/resources/Phone/1> a classes:Phone ;
+    rdfs:label "91333221"

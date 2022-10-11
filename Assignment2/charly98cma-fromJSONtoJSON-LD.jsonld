@@ -1,0 +1,45 @@
+{
+    "@context": {
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "student": "http://example.org/schemas/student",
+        "person": "student:person",
+        "fullName": "student:fullName",
+        "homewtown": "student:homewtown",
+        "age": "student:age",
+        "parents": "student:parents",
+        "subjects": "student:subjects"
+    },
+    "@id": "student:carlosmiguel",
+    "@type": "person",
+    "fullName": "Carlos Miguel Alonso",
+    "hometown": "Madrid",
+    "age": "23",
+    "parents": {
+        "student:mother": "Manoli",
+        "student:father": "Carlos"
+    },
+    "subjects": [
+        {
+            "subjects:subjectName": "Desarrollo de Aplicaciones Móviles",
+            "subjects:teachers": [
+                "Raul Alonso Calvo"
+            ],
+            "subjects:description": "Esta asignatura está enfocada para introducir los conceptos fundamentales de la programación para dispositivos móviles."
+        },
+        {
+            "subjects:subjectName": "Big Data",
+            "subjects:teachers": [
+                "Antonio Latorre De La Fuente"
+            ],
+            "subjects:description": "This course will allow the student to gain the fundamentals for the analysis of large volumes of data."
+        },
+        {
+            "subjects:subjectName": "Open Data and Knowledge Graphs",
+            "subjects:teachers": [
+                "Oscar Corcho Garcia",
+                "Raul Garcia Castro"
+            ],
+            "subject:description": "During this course the student will learn about the mai foundations for Knowledge Graphs, including the W3C recommendations that are applicable in this area."
+        }
+    ]
+}

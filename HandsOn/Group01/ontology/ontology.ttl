@@ -11,14 +11,41 @@ ns: a owl:Ontology ;
 
 ns:belongs_to a owl:ObjectProperty ;
     rdfs:label "belongs_to" ;
-    rdfs:domain ns:city,
-        ns:health_area ;
-    rdfs:range ns:city,
-        ns:province .
+    rdfs:domain ns:place,
+    rdfs:range ns:place.
+  
+ns:hasName a owl:ObjectProperty ;
+    rdfs:label "hasName" ;
+    rdfs:domain ns:center,
+    rdfs:range xsd:string.
+
+ns:hasName a owl:ObjectProperty ;
+    rdfs:label "hasPhoneNumber" ;
+    rdfs:domain ns:center,
+    rdfs:range xsd:string.
+
+ns:hasStreet a owl:ObjectProperty ;
+    rdfs:label "hasStreet" ;
+    rdfs:domain ns:center,
+    rdfs:range xsd:string.
+
+ns:hasLat a owl:ObjectProperty ;
+    rdfs:label "hasLat" ;
+    rdfs:domain ns:center,
+    rdfs:range xsd:string.
+
+ns:hasLong a owl:ObjectProperty ;
+    rdfs:label "hasLong" ;
+    rdfs:domain ns:center,
+    rdfs:range xsd:string.
 
 ns:Company a owl:Class ;
     rdfs:label "company" ;
     rdfs:subClassOf ns:entity .
+
+ns:Place a owl:Class ;
+    rdfs:label "place" ;
+    
 
 ns:is_in a owl:ObjectProperty ;
     rdfs:label "is_in" ;
@@ -35,16 +62,20 @@ ns:Public_institution a owl:Class ;
     rdfs:subClassOf ns:entity .
 
 ns:Province a owl:Class ;
-    rdfs:label "province" .
+    rdfs:label "province" ;
+    rdfs:subClassOf ns:place .
+
 
 ns:Center a owl:Class ;
     rdfs:label "center" .
 
 ns:City a owl:Class ;
-    rdfs:label "city" .
+    rdfs:label "city" ;
+    rdfs:subClassOf ns:place .
 
 ns:Gealth_area a owl:Class ;
-    rdfs:label "health_area" .
+    rdfs:label "health_area";
+    rdfs:subClassOf ns:place .
 
 ns:Entity a owl:Class ;
     rdfs:label "entity" .

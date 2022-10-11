@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis</title>
+</head>
+<body>
+<h1 style="color: #5a6edc;">ANALYSIS</h1>
+<h2 style="color: #b91e1e;">Data characteristics and schema </h2>
+	
+<table border="1" class="default">
+
+  <tr>
+    <th>Field name CSV</th>
+    <th>Field name(XML - Dublin Core Q)</th>
+    <th>Description</th>
+	<th>Comments</th>
+  </tr>
+  
+  <tr>
+    <td>ID</td>
+    <td>dc:identifier</td>
+    <td>ID identifing each line in the dataset</td>
+	<td>This column was created by us. We will use it to identify each plaque in the dataset. 
+	This ID has ben taken from the URL identifier. In this url there is one ID parameter. </td>
+  </tr>
+  
+  <tr>
+    <td>Titulo</td>
+    <td>dc:title</td>
+    <td>Title on the plaque</td>
+	<td>It is NOT unique. There are repeated values. <br>There are NO NULL values.<br> 
+	For example Benito Perez Galdos has 3 different plates in different locations.</td>
+  </tr>
+
+    <tr>
+    <td>Fecha</td>
+    <td>dc:coverage.temporal </td>
+    <td>Year of placement</td>
+	<td>It is not unique. There are no null values. There are many plates placed in the same year.<br> <br>
+	Range: 1990 - 2022</td>
+  </tr>
+  
+   <tr>
+    <td>Fecha de colocacion</td>
+    <td>dc:coverage.temporal.inicio</td>
+    <td>Date of placement. dd/mm/yyyy</td>
+	<td>It is not unique.There are no null values.<br> There are many plates placed in the same year. There are 79 different values. <br> <br> 
+	Range: 01/01/1990 - 09/03/2022</td>
+  </tr>
+  
+  <tr>
+    <td>Lugar</td>
+    <td>dc:coverage.spatial</td>
+    <td>City </td>
+	<td>It is unique for all records with the value Madrid since they are the commemorative plates just from Madrid.</td>
+  </tr>
+  
+  <tr>
+    <td>Direccion</td>
+    <td>dc:coverage.spatial</td>
+    <td>Street where the plaque is located</td>
+	<td>It is not unique. There are several plaques placed at the same address. There are no null values.<br>
+	For example the plaque of Teatro Apolo and the plaque of Lope de Vega (both are at 45 Alcalá street). </td>
+  </tr>
+  
+  <tr>
+    <td>Distrito</td>
+    <td>dc:coverage.spatial</td>
+    <td>District</td>
+	<td>There are no unique values. It is not null. There are 18 different values. The district with more plaques is Centro.<br><br>
+ERROR: There is an error in the data. We can see plaques in these different district Moncloa-Aravaca, Mocloa-Aravaca and Moncloa-Ravaca appear. 
+The 3 refer to the same district but the have been written differntly. To fix it we should replace all 3 for the same value: Moncloa-Aravaca.</td>
+  </tr>
+  
+    <tr>
+    <td>Latitud</td>
+    <td>dc:coverage.spatial</td>
+    <td>Latitude in an ETRS89 reference system.</td>
+	<td>It is not unique. There are no null values.<br><br> Range: 4.38 - 40.47</td>
+  </tr>
+  
+    <tr>
+    <td>Longitud</td>
+    <td>dc:coverage.spatial</td>
+    <td>Longitude in an ETRS89 reference system.</td>
+	<td>It is not unique. There are no null values.<br><br> Range: (-3.75) - (-3.64)</td>
+  </tr>
+  
+  <tr>
+    <td>Palabras clave</td>
+    <td>dc:description</td>
+    <td>Key words about the historical character mentioned in the plaque</td>
+	<td>It is not unique. There is no null value. The most repeated keywords are writers and madrid plaques.</td>
+  </tr>
+  
+    <tr>
+    <td>Comentario</td>
+    <td>dc:description</td>
+    <td>Text on the plaque</td>
+	<td>It is unique. Each plate has its own text. </td>
+  </tr>
+  
+    <tr>
+    <td>AportadoPor</td>
+    <td>dc:contributor</td>
+    <td>Service providing the data</td>
+	<td>Its unique for all lineas in the dataset: www.memoriademadrid.es</td>
+  </tr>
+  
+    <tr>
+    <td>URL</td>
+    <td>dc:identifier</td>
+    <td>Resource URL</td>
+	<td>It is unique because it is the resource identifier. The url is differentiated by an ID of each resource. <br>
+The url is form a search engine to which some query parameters are passed.</td>
+  </tr>
+  
+    <tr>
+    <td>Editado</td>
+    <td>dc:publisher</td>
+    <td>Resource Editor</td>
+	<td>Unique value: Biblioteca Digital memoriademadrid (Ayuntamiento de Madrid)</td>
+  </tr>
+  
+    <tr>
+    <td>Disponible</td>
+    <td>dc:date.available</td>
+    <td>Date of publication of the resource</td>
+	<td>It is not unique. On 08/29/2013 they put most of the resources (302 lines registered that day). <br>
+	From that date they have been updating the lines.</td>
+  </tr>
+  
+      <tr>
+    <td>Type</td>
+    <td>dc:type</td>
+    <td>File type</td>
+	<td>It is a single IMAGE value for all records. In the url of each record, the image of the plate appears. <br>
+	ERROR: There is an error one of the lines that has the value TEXT. 
+	However, it should be an IMAGE because the format indicated in the next column indicates that it is an image.jpeg.</td>
+	  </tr>
+  
+      <tr>
+    <td>Format</td>
+    <td>dc:format</td>
+    <td>Mime types (standard way of sending data over the Internet)</td>
+	<td>All lines have the same value: image.jpeg</td>
+  </tr>
+  
+      <tr>
+    <td>Language</td>
+    <td>dc:language</td>
+    <td>Language</td>
+	<td>All lines have the same value: spa (SPANISH)</td>
+  </tr>
+  
+      <tr>
+    <td>Rights</td>
+    <td>dc:rights</td>
+    <td>Rights of use</td>
+	<td>Same value for all records. Creative Commons</td>
+  </tr>
+  
+      <tr>
+    <td>Rightsholder</td>
+    <td>dc:rightsholder</td>
+    <td>Rights management organization</td>
+	<td>Same value for all records: Biblioteca Digital memoriademadrid</td>
+  </tr>
+  
+</table>
+
+<h2 style="color: #b91e1e;">Analyse Licensing of the Data Source</h2>
+<h3 style="color: #2e6c80;"><em> License: CREATIVE COMMONS - Attribution-NonCommercial 2.5 Spain (CC BY-NC 2.5 ES)</em></h3>
+   <p>
+    <strong><em>Authorization for reuse and non-exclusive transfer of intellectual property rights <br></em></strong>
+
+	<li>Share - copy and redistribute the material in any medium or format<br></li>
+	<li>Adapt - remix, transform and create from the material<br><br></li>
+		
+		These general conditions allow the reuse of the documents and data subject to them for non-commercial purposes. <br>
+		Reuse is understood as the use of documents by natural or legal persons, for non-commercial purposes, provided that such use does not constitute a public administrative activity. <br><br>
+		For example, authorized reuse includes activities such as copying, dissemination, modification, adaptation, extraction, 
+		rearrangement and combination of information.<br><br>
+
+	<strong><em>General conditions for reuse<br><br> </em></strong>
+
+		The following general conditions apply to the reuse of the documents subject to them:<br>
+
+		<li>It is forbidden to distort the meaning of the information.<br><br></li>
+
+		<li>The source of the documents subject to reuse must be cited. You must properly acknowledge authorship, 
+		provide a link to the license, and indicate if changes have been made.
+		This citation may be made as follows: "Origin of the data: Madrid City Council"<br><br></li>
+
+		<li>The date of the last update of the documents subject to reuse must be mentioned, as long as it was included in the 
+		original document.<br><br></li>
+
+		<li>No indication, insinuation or suggestion that the Madrid City Council participates, sponsors or supports the reuse 
+		of the information may be made.<br><br></li>
+
+		<li>Metadata on the date of update and applicable reuse conditions must be retained, not altered or deleted, in the document made available 
+		for reuse.<br><br></li>
+
+		<li>In case of information anonymized for personal data protection or other reasons, it is expressly prohibited 
+		to re-identify individuals from this data and other possible past, current or future data and information sources.<br><br></li>
+	
+	<strong><em>Exclusion of liability<br><br></em></strong>
+	
+		The use of the data sets shall be made by the persons and/or companies reusing the data at their own risk, 
+		and they alone shall be liable to third parties for any damages arising from their use of the data sets.<br><br>
+	
+    </p>
+
+<h2 style="color: #b91e1e;">Define Resource Naming Strategy.</h2>
+
+   <p>
+    <li><strong>Domain:</strong> http://placasdemadrid.linkeddata.es/ <br><br></li>
+	<li><strong>Path:</strong> placas-madrid<br><br></li>
+	<li><strong>Ontology:</strong>  ontology/<br><br></li>
+	<li><strong>Data:</strong> resource/<br><br></li>
+	<li><strong>Class:</strong> PlacasMadrid#Placas<br><br></li>
+	<li><strong>Property:</strong> PlacasMadrid#Distrito<br><br></li>
+	<li><strong>Individual:</strong> Placas/{ID}<br><br></li>
+	
+    </p>
+
+</body>
+</html>

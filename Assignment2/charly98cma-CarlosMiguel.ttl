@@ -1,0 +1,13 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://example.org/#> .
+
+:Class01 :includes :Sensor029 , :Computer101 .
+
+:Sensor029 :hasMeasurement :Measurement8401 .
+
+:Computer101 :hasOwner :User10A .
+
+:Measurement8401 :atTime "2010-06-12T12:00:12"^^xsd:dateTime ;
+                 :hasTemperature "29"^^xsd:integer .
+
+:User10A :hasName "Pedro"^^xsd:string .

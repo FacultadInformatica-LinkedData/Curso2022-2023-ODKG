@@ -497,5 +497,116 @@
       }
     ],
     "description": "Mass edit cells in column hospitalizado"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehículo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Bicicleta"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0"
+      }
+    ],
+    "description": "Mass edit cells in column tipo_vehículo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehículo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Bicicleta EPAC (pedaleo asistido)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column tipo_vehículo"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "tipo_vehículo",
+    "newColumnName": "bicycle_is_electronic",
+    "description": "Rename column tipo_vehículo to bicycle_is_electronic"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Se desconoce"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NULL"
+      }
+    ],
+    "description": "Mass edit cells in column estado_meteorológico"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "positiva_droga",
+    "description": "Remove column positiva_droga"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "positiva_alcohol",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0"
+      }
+    ],
+    "description": "Mass edit cells in column positiva_alcohol"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "positiva_alcohol",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column positiva_alcohol"
   }
 ]

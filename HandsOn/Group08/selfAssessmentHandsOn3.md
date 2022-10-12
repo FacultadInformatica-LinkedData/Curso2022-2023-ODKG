@@ -22,4 +22,4 @@
 - [x] Is related to a column in the CSV file
 
 ## Comments on the self-assessment
-_(If required)_
+Sill didn't reconciliate ontology names with dataset columns' names, but the correspondence is there.

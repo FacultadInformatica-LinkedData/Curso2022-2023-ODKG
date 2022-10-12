@@ -31,12 +31,6 @@ geo:location rdf:type owl:ObjectProperty ;
 		rdfs:range https://www.healthfinder.io/group08/resource/Address/Calle_de_Monasterio_de_Las_Huelgas_15 ;
 		rdfs:label "location" .
 
-### ns:belongTo
-ns:belongTo rdf:type owl:ObjectProperty ;
-		rdfs:domain https://www.healthfinder.io/group08/resource/Address/Calle_de_Monasterio_de_Las_Huelgas_15 ;
-		rdfs:range https://www.healthfinder.io/group08/resource/Municipality/Madrid ;
-		rdfs:label "belong to" .
-
 ### ns:isIn
 ns:isIn rdf:type owl:ObjectProperty ;
 		rdfs:domain https://www.healthfinder.io/group08/resource/Defibrillator/4 ;
@@ -48,12 +42,6 @@ geo:location rdf:type owl:ObjectProperty ;
 		rdfs:domain https://www.healthfinder.io/group08/resource/Establishment ;
 		rdfs:range https://www.healthfinder.io/group08/resource/Address/M-15_Pozuelo_61 ;
 		rdfs:label "location" .
-
-### ns:belongTo
-ns:belongTo rdf:type owl:ObjectProperty ;
-		rdfs:domain https://www.healthfinder.io/group08/resource/Address/M-15_Pozuelo_61 ;
-		rdfs:range https://www.healthfinder.io/group08/resource/Municipality/Majadahonda ;
-		rdfs:label "belong to" .
 
 ### ns:isIn
 ns:isIn rdf:type owl:ObjectProperty ;
@@ -72,10 +60,6 @@ ns:isIn rdf:type owl:ObjectProperty ;
 ### https://www.healthfinder.io/group08/resource/Establishment
 https://www.healthfinder.io/group08/resource/Establishment rdf:type owl:Class ;
 	rdfs:label "//www.healthfinder.io/group08/resource/ Establishment" .
-
-### https://www.healthfinder.io/group08/resource/Municipality/Madrid
-https://www.healthfinder.io/group08/resource/Municipality/Madrid rdf:type owl:Class ;
-	rdfs:label "//www.healthfinder.io/group08/resource/ Municipality/ Madrid" .
 
 ### https://www.healthfinder.io/group08/resource/Address/Calle_de_Monasterio_de_Las_Huelgas_15
 https://www.healthfinder.io/group08/resource/Address/Calle_de_Monasterio_de_Las_Huelgas_15 rdf:type owl:Class ;

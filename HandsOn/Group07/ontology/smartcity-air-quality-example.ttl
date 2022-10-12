@@ -1,0 +1,26 @@
+@prefix : http://smartcity.airquality.es/airquality . 
+@prefix Municipality: http://smartcity.airquality.es/airquality/municipality .
+@prefix Station: http://smartcity.airquality.es/airquality/station .
+@prefix Magnitude: http://smartcity.airquality.es/airquality/magnitude .
+@prefix xsd: http://www.w3.org/2001/XMLSchema#.
+@prefix onto: http://smartcity.airquality.es/airquality/ontology/ont#
+
+
+
+:municipality7 a onto:Municipality;
+	onto:hasName Madrid^^xsd:string .
+
+:station4 a onto:Station;
+    onto:isLocatedIn municipality7;
+	onto:latitude -37.122.567^^xsd:real;
+	onto:longitude 404.238.823^^xsd:real;
+    onto:hasMeasurement magnitude9 .
+
+:magnitude9 a onto:Magnitude;
+    onto:hasCode 08^^xsd:integer;
+	onto:hasName NO2^^xsd:string;
+	onto:hasunitofMeasurement 0.2^^xsd:real;
+	onto:atTime 2022-04-01T11:15:30.000+0200^^xsd:dateTime .
+
+
+

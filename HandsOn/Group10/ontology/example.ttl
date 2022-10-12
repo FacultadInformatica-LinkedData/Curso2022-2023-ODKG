@@ -1,0 +1,97 @@
+@prefix : <http://www.group10.org/pl/ontology/ParkingLotsMadrid#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.group10.org/pl/ontology/ParkingLotsMadrid#> .
+
+
+###  http://www.group10.org/pl/resource/ParkingMeter/PM1
+<http://www.group10.org/pl/resource/ParkingMeter/PM1> rdf:type :ParkingMeter ;
+                                                               :hasStreet <http://www.group10.org/pl/resource/Street/S1> ;
+										   :hasDistrict <http://www.group10.org/pl/resource/District/D1> ;
+										   :hasNeighborhood <http://www.group10.org/pl/resource/Neighborhood/N1> ;
+									         :blockId "1"^^xsd:string ;
+									         :parkingMeterId "301110056"^^xsd:string ;
+										   :hasLocation <http://www.group10.org/pl/resource/ParkingMeterLocation/L1> .
+
+
+###  http://www.group10.org/pl/resource/ParkingMeter/PM2
+<http://www.group10.org/pl/resource/ParkingMeter/PM2> rdf:type :ParkingMeter ;
+                                                               :hasStreet <http://www.group10.org/pl/resource/Street/S2> ;
+										   :hasDistrict <http://www.group10.org/pl/resource/District/D1> ;
+										   :hasNeighborhood <http://www.group10.org/pl/resource/Neighborhood/N1> ;
+									         :blockId "14"^^xsd:string ;
+									         :parkingMeterId "301110042"^^xsd:string ;
+										   :hasLocation <http://www.group10.org/pl/resource/ParkingMeterLocation/L2> .
+
+
+###  http://www.group10.org/pl/resource/ParkingMeterTicket/PMT1
+<http://www.group10.org/pl/resource/ParkingMeterTicket/PM2> rdf:type :ParkingMeterTicket ;
+                                                               :startDateTime "2022-06-16T17:01:54Z"^^xsd:dateTime ;
+										   :endDateTime "2022-06-16T21:00:54Z"^^xsd:dateTime ;
+										   :hasParkingMeter <http://www.group10.org/pl/resource/ParkingMeter/PM1> .
+
+###  http://www.group10.org/pl/resource/ParkingMeterTicket/PMT2
+<http://www.group10.org/pl/resource/ParkingMeterTicket/PM2> rdf:type :ParkingMeterTicket ;
+                                                               :startDateTime ",2022-06-09T10:26:59Z"^^xsd:dateTime ;
+										   :endDateTime "2022-06-09T11:01:59Z"^^xsd:dateTime ;
+										   :hasParkingMeter <http://www.group10.org/pl/resource/ParkingMeter/PM1> .
+
+###  http://www.group10.org/pl/resource/ParkingMeterTicket/PMT3
+<http://www.group10.org/pl/resource/ParkingMeterTicket/PMT3> rdf:type :ParkingMeterTicket ;
+                                                               :startDateTime ",2022-06-09T10:26:59Z"^^xsd:dateTime ;
+										   :endDateTime "2022-05-24T15:38:38Z"^^xsd:dateTime ;
+										   :hasParkingMeter <http://www.group10.org/pl/resource/ParkingMeter/PM2> .
+
+
+###  http://www.group10.org/pl/resource/ParkingArea/PA1
+<http://www.group10.org/pl/resource/ParkingArea/PA1> rdf:type :ParkingArea ;
+										   :hasStreet <http://www.group10.org/pl/resource/Street/S3>
+                                                               :hasDistrict <http://www.group10.org/pl/resource/District/D1> ;
+										   :hasNeighborhood <http://www.group10.org/pl/resource/District/N1> ;
+										   :blockId "1"^^xsd:string ;
+										   :color "Verde"^^xsd:string;
+										   :parkingSpaces "3"^^xsd:integer;
+										   :hasLocation <http://www.group10.org/pl/resource/ParkingMeterLocation/L3> .
+
+
+###  http://www.group10.org/pl/resource/District/D1
+<http://www.group10.org/pl/resource/District/D1> rdf:type :District ;
+										   :hasDistrictNumber "01"^^xsd:string ;
+										    rdfs:label "Centro" .
+
+###  http://www.group10.org/pl/resource/Neighborhood/N1
+<http://www.group10.org/pl/resource/Neighborhood/N1> rdf:type :Neighborhood;
+										   :hasNeighborhoodNumber "01-01"^^xsd:string ;
+										    rdfs:label "Palacio" ;
+										   :hasDistrict <http://www.group10.org/pl/resource/District/D1> .
+
+###  http://www.group10.org/pl/resource/Street/S1
+<http://www.group10.org/pl/resource/Street/S1> rdf:type :Street;
+										    rdfs:label "Calle de las Aguas" .
+
+###  http://www.group10.org/pl/resource/Street/S2
+<http://www.group10.org/pl/resource/Street/S2> rdf:type :Street;
+										    rdfs:label "Calle del Almendro" .
+
+###  http://www.group10.org/pl/resource/Street/S3
+<http://www.group10.org/pl/resource/Street/S3> rdf:type :Street;
+										    rdfs:label "Calle del Alamillo" .
+
+###  http://www.group10.org/pl/resource/Location/L1
+<http://www.group10.org/pl/resource/Location/L1> rdf:type :Location;
+										    :hasLongitude "439608,1908"^^xsd:decimal ;
+										    :hasLatitude "4473550,028"^^xsd:decimal .
+
+###  http://www.group10.org/pl/resource/Location/L2
+<http://www.group10.org/pl/resource/Location/L2> rdf:type :Location;
+										    :hasLongitude "439757,571"^^xsd:decimal ;
+										    :hasLatitude "4473794,518"^^xsd:decimal .
+
+###  http://www.group10.org/pl/resource/Location/L3
+<http://www.group10.org/pl/resource/Location/L3> rdf:type :Location;
+										    :hasLongitude "439587,76"^^xsd:decimal ;
+										    :hasLatitude "4473916,82"^^xsd:decimal .
+

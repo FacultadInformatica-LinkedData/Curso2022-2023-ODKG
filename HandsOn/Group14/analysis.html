@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Requirements</title>
+</head>
+<body>
+<h1>License</h1>
+<h2>License analysis</h2>
+<p>
+    The current license of the dataset is described here : <a href="https://opendatacommons.org/licenses/odbl/">opendatacommons.org/licenses/odbl/</a>
+    To use the dataset we have to :
+    a. Do so only under the terms of this License or another license permitted under Section 4.4;
+
+    b. Include a copy of this License (or, as applicable, a license permitted under Section 4.4) or its Uniform Resource Identifier (URI) with the Database or Derivative Database, including both in the Database or Derivative Database and in any relevant documentation; and
+
+    c. Keep intact any copyright or Database Right notices and notices that refer to this License.
+
+    d. If it is not possible to put the required notices in a particular file due to its structure, then You must include the notices in a location (such as a relevant directory) where users would be likely to look for it.
+    So our possibilities are :
+    i. This License;
+
+    ii. A later version of this License similar in spirit to this License; or
+
+    iii. A compatible license.
+</p>
+
+<h2>Our choice</h2>
+
+<p>Because we want to let the possibility link these data with the bike state data and other urban facilities (cross transportation for example) we decided to keep the opendata commons license</p>
+
+<h1>Data analysis</h1>
+<p>There is an analysis for each type of data</p>
+
+<h2>ID</h2>
+<p>the format is ...</p>
+
+<h2>Identifiant station</h2>
+<p>Meaning : station id
+    The format is numbers which are uniques. For one unique value the id is a label "31024_relai". The station id 31024 exist so this one is just a relay.
+    For all others values, the number goes from 1000 to 93000. Most of them are subsequent but there are a lot of disparity.
+    The better way to use it can be a key and rename the problematic one with a floating value or with a sub type
+</p>
+
+<h2>Nom station</h2>
+<p>Meaning : station id
+    The format is a string. This is a label. Two of them have the same label but there are not the same they just have the name of the street, but they are not in the same city.
+    We can use them as label by including the city to don't mix them
+</p>
+
+<h2>Station en fonctionnement</h2>
+<p>Meaning : operational station
+    The format is boolean (OUI=True). All values are true for the dataset.
+</p>
+
+<h2>Capacité de la station</h2>
+<p>Meaning : station capacity
+    This data is an integer that goes from 0 to 75.
+    13 data have the value 0 that all correspond to not working station (+ the "relai"). Because this data will not be useful, we will remove them.
+    So, the effective range is from 7 to 75 but because the application will work with an API in a real time context we will consider a range from 0 to 512.
+</p>
+
+<h2>Nombre de bornettes libres</h2>
+<p>Meaning : number of free place
+    This data is an integer that goes from 0 to 68.
+    Surprisingly, we see that number of free place+number_of_available_bike != capacity in some case.
+    They might be a corruption on the data or damage to the station.
+    Because the application will work with an API in a real time context we will consider a range from 0 to 512.
+</p>
+
+<h2>Nombre total vélos disponibles</h2>
+<p>Meaning : number of available bikes
+    This data is an integer that goes from 0 to 67.
+    We see that number of free number_of_mechanical_bike+number_of_electric_bike = number_of_available_bike in every case which is coherent.
+    The distribution is logarithmic (most of the station have few bike and only some of them have a lot of bikes).
+    Because the application will work with an API in a real time context we will consider a range from 0 to 512.
+</p>
+
+<h2>Vélos mécaniques dipsonibles</h2>
+<p>Meaning : number of mechanical bikes available
+    This data is an integer that goes from 0 to 55.
+    The distribution is logarithmic (most of the station have few bike and only some of them have a lot of bikes).
+    Because the application will work with an API in a real time context we will consider a range from 0 to 512.
+</p>
+
+<h2>Vélos électriques diponibles</h2>
+<p>Meaning : number of electric bikes available
+    This data is an integer that goes from 0 to 34.
+    The distribution is logarithmic (most of the station have few bike and only some of them have a lot of bikes).
+    Because the application will work with an API in a real time context we will consider a range from 0 to 512.
+</p>
+
+<h2>Borne de paiement disponibles</h2>
+<p>Meaning : paying station available
+    This data is a boolean.
+    There are 1406 true and 35 false. Among the false there are data that will already be ignored (because of others data) but not only
+    We will keep the false and display them as no paying station and display a message "take your phone and install the app to pay)
+</p>
+
+
+<h2>retour vélib possibles</h2>
+<p>Meaning : bike deposit available
+    This data is a boolean.
+    There are 1406 true and 35 false. The false are also those with no paying station available
+    Most of them will be discarded them because this station seem to present anomalies (no bike = ghost station, not working)
+    For the 17 that seem normals, to be sure we need to send someone or wait customer's feedback.
+</p>
+<h2>Actualisation de la donnée</h2>
+<p>Meaning : data updating
+    These are date-time values. There are 165 unique values the others are duplicate.
+    The precision is in second. 20 of them are prior to september 2022, and they will be ignored by the application but include in the dataset as outdated value (or missing stations)
+</p>
+<h2>coordonnées géographiques</h2>
+<p>Meaning : geo point
+    There are double floating value indicating the position they have different precision.
+    At least 8 digits. At most 15 digits.
+    There are all different.
+</p>
+<h2>Nom communes équipées</h2>
+<p>Meaning : city name
+    This are city name. There are 61 different values. There are the real name without mistakes.
+    Most of them are Paris (993 iterations among the 1441 values)
+</p>
+<h2>Code INSEE communes équipées</h2>
+<p>Meaning : ???
+    Empty data. Will be ignored
+</p>
+<h1>Resources naming strategies</h1>
+<p>The main resource is the station. The starting URI is http://smartbikes.org/ontology/bikeStation for ontologies and http://smartbikes.org/resource/bikeStation/stationId# .
+    All properties will be after the hash because (except for the statistique analyse not implemented yet) all data can be useful to prompt while requesting one of a specific station.
+</p>
+</body>
+</html>

@@ -4,6 +4,7 @@
 @prefix xml: <http://www.w3.org/xml/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .   
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix saref: <https://saref.etsi.org/core/v3.1.1/> .
 @base <http://smartcity.airquality.es/airquality/ontology/ont> .
 
 
@@ -18,19 +19,10 @@
 #################################################################
 
 
-
-###  http://smartcity.airquality.es/airquality/ontology/ont#isLocatedIn
-:isLocatedIn rdf:type owl:ObjectProperty ;
-        rdfs:domain :Station ;
-        rdfs:range :Municipality .
-
-
-
-###  http://smartcity.airquality.es/airquality/ontology/ont#hasMeasurement
+###  http://smartcity.airquality.es/airquality/ontology/ont#makesMeasurement
 saref:makesMeasurement rdf:type owl:ObjectProperty ;
                 rdfs:domain :Station ;
                 rdfs:range :Magnitude .
-
 
 
 
@@ -111,7 +103,7 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 
 
 ###  http://smartcity.airquality.es/airquality/ontology/ont#Station
-:Station rdf:type owl:Class .
+:Station saref:Device owl:SubClassOf .
 
 
 

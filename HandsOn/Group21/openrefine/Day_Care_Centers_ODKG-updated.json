@@ -1,0 +1,297 @@
+[
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "guessCellType": true,
+    "removeOriginalColumn": false,
+    "mode": "separator",
+    "separator": "'",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column NOMBRE by separator"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NOMBRE 3",
+    "description": "Remove column NOMBRE 3"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE 2",
+    "expression": "value.replace(\" \",\"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOMBRE 2 using expression value.replace(\" \",\"_\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE 2",
+    "newColumnName": "CENTRO-DIA",
+    "description": "Rename column NOMBRE 2 to CENTRO-DIA"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE-VIA",
+    "expression": "grel:value + ','",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOMBRE-VIA using expression grel:value + ','"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM",
+    "expression": "grel:value + ','",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NUM using expression grel:value + ','"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NOMBRE-VIA",
+    "expression": "join ([coalesce(cells['CLASE-VIAL'].value,''),coalesce(cells['NOMBRE-VIA'].value,''),coalesce(cells['NUM'].value,''),coalesce(cells['CODIGO-POSTAL'].value,''),coalesce(cells['LOCALIDAD'].value,'')],' ')",
+    "onError": "keep-original",
+    "newColumnName": "DIRECCION",
+    "columnInsertIndex": 12,
+    "description": "Create column DIRECCION at index 12 based on column NOMBRE-VIA using expression join ([coalesce(cells['CLASE-VIAL'].value,''),coalesce(cells['NOMBRE-VIA'].value,''),coalesce(cells['NUM'].value,''),coalesce(cells['CODIGO-POSTAL'].value,''),coalesce(cells['LOCALIDAD'].value,'')],' ')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "PK",
+      "NOMBRE",
+      "NOMBRE 1",
+      "CENTRO-DIA",
+      "DESCRIPCION-ENTIDAD",
+      "HORARIO",
+      "EQUIPAMIENTO",
+      "TRANSPORTE",
+      "DESCRIPCION",
+      "ACCESIBILIDAD",
+      "CONTENT-URL",
+      "DIRECCION",
+      "TIPO-NUM",
+      "PLANTA",
+      "PUERTA",
+      "ESCALERAS",
+      "ORIENTACION",
+      "PROVINCIA",
+      "COD-BARRIO",
+      "BARRIO",
+      "COD-DISTRITO",
+      "DISTRITO",
+      "COORDENADA-X",
+      "COORDENADA-Y",
+      "LATITUD",
+      "LONGITUD",
+      "TELEFONO",
+      "FAX",
+      "EMAIL",
+      "TIPO",
+      "Column"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TIPO-NUM",
+    "description": "Remove column TIPO-NUM"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PLANTA",
+    "description": "Remove column PLANTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PUERTA",
+    "description": "Remove column PUERTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ESCALERAS",
+    "description": "Remove column ESCALERAS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ORIENTACION",
+    "description": "Remove column ORIENTACION"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PROVINCIA",
+    "description": "Remove column PROVINCIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ACCESIBILIDAD",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SI"
+      }
+    ],
+    "description": "Mass edit cells in column ACCESIBILIDAD"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ACCESIBILIDAD",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "0"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NO"
+      }
+    ],
+    "description": "Mass edit cells in column ACCESIBILIDAD"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TRANSPORTE",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "Bus:",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column TRANSPORTE by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TRANSPORTE 2",
+    "expression": "grel:'Bus: '+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TRANSPORTE 2 using expression grel:'Bus: '+value"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TRANSPORTE 1",
+    "newColumnName": "METRO",
+    "description": "Rename column TRANSPORTE 1 to METRO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TRANSPORTE 2",
+    "newColumnName": "BUS",
+    "description": "Rename column TRANSPORTE 2 to BUS"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE 1",
+    "newColumnName": "TIPO-CENTRO",
+    "description": "Rename column NOMBRE 1 to TIPO-CENTRO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NOMBRE",
+    "description": "Remove column NOMBRE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DESCRIPCION-ENTIDAD",
+    "description": "Remove column DESCRIPCION-ENTIDAD"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FAX",
+    "description": "Remove column FAX"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "EMAIL",
+    "description": "Remove column EMAIL"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column",
+    "description": "Remove column Column"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value.replace(\"8,15\",\"8:15\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column HORARIO using expression value.replace(\"8,15\",\"8:15\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value.replace(\" \",\"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column BARRIO using expression value.replace(\" \",\"_\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value.replace(\" \",\"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRITO using expression value.replace(\" \",\"_\")"
+  }
+]

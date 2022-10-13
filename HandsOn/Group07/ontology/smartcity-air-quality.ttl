@@ -1,0 +1,120 @@
+@prefix : <http://smartcity.airquality.es/airquality/ontology/ont#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/xml/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .   
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://smartcity.airquality.es/airquality/ontology/ont> .
+
+
+
+<http://smartcity.airquality.es/airquality/ontology/ont> rdf:type owl:Ontology .
+
+
+
+
+#################################################################
+#    Object Properties  
+#################################################################
+
+
+
+###  http://smartcity.airquality.es/airquality/ontology/ont#isLocatedIn
+:isLocatedIn rdf:type owl:ObjectProperty ;
+        rdfs:domain :Station ;
+        rdfs:range :Municipality .
+
+
+
+###  http://smartcity.airquality.es/airquality/ontology/ont#hasMeasurement
+:hasMeasurement rdf:type owl:ObjectProperty ;
+                rdfs:domain :Station ;
+                rdfs:range :Magnitude .
+
+
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+
+
+###  http://smartcity.airquality.es/airquality/ontology/ont#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Municipality ;
+        rdfs:range xsd:string .
+
+
+
+
+
+###  http://smartcity.airquality.es/airquality/ontology/ont#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Station ;
+        rdfs:range xsd:string .
+
+
+
+
+###  http://smartcity.airquality.es/airquality/ontology/ont#latitude
+:latitude rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Station ;
+        rdfs:range xsd:real .
+
+
+
+
+###  http://smartcity.airquality.es/airquality/ontology/ont#longitude
+:longitude rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Station ;
+        rdfs:range xsd:real .
+
+
+
+
+###  http://smartcity.airquality.es/airquality/ontology/ont#hasCode
+:hasCode rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Magnitude ;
+        rdfs:range xsd:integer .
+
+
+
+###  http://smartcity.airquality.es/airquality/ontology/ont#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Magnitude ;
+                 rdfs:range xsd:string .
+
+
+
+###  http://smartcity.airquality.es/airquality/ontology/ont#hasunitofMeasurement
+:hasunitofMeasurement rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Magnitude ;
+                 rdfs:range xsd:real .
+                                
+###  http://smartcity.airquality.es/airquality/ontology/ont#atTime
+:atTime rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Magnitude ;
+                rdfs:range xsd:dateTime  .
+
+
+
+#################################################################
+#    Classes
+#################################################################
+
+
+
+###  http://smartcity.airquality.es/airquality/ontology/ont#Municipality
+:Municipality rdf:type owl:Class .
+
+
+
+
+###  http://smartcity.airquality.es/airquality/ontology/ont#Station
+:Station rdf:type owl:Class .
+
+
+
+###  http://smartcity.airquality.es/airquality/ontology/ont#Magnitude
+:Magnitude rdf:type owl:Class .

@@ -475,8 +475,8 @@
   {
     "op": "core/column-rename",
     "oldColumnName": "tipo_lesividad",
-    "newColumnName": "hospitalizado",
-    "description": "Rename column tipo_lesividad to hospitalizado"
+    "newColumnName": "hospitalized",
+    "description": "Rename column tipo_lesividad to hospitalized"
   },
   {
     "op": "core/mass-edit",
@@ -484,7 +484,7 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "hospitalizado",
+    "columnName": "hospitalized",
     "expression": "value",
     "edits": [
       {
@@ -496,7 +496,7 @@
         "to": "1"
       }
     ],
-    "description": "Mass edit cells in column hospitalizado"
+    "description": "Mass edit cells in column hospitalized"
   },
   {
     "op": "core/mass-edit",

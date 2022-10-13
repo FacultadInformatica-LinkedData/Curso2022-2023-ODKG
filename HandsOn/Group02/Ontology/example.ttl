@@ -1,0 +1,27 @@
+@prefix bicyacoc: <http://bicycleaccident.com/group2/ontology/class#> .
+@prefix bicyacop: <http://bicycleaccident.com/group2/ontology/property#> .
+@prefix ev: <https://motools.sourceforge.net/event/event.html#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+bicyacr:2019S000036 a bicyacoc:Accident;
+    ev:term_time bicyacr:time02012019204500;
+	ev:term_place bicyacr:space2019S000036;
+	bicyacop:hasType "Colisión fronto-lateral";
+	ev:agent bicyacr:person2019S000036.
+
+bicyacr:time02012019204500 a time:TemporalEntity;
+	time:hasBeginning bicyacr:02012019204500.
+	
+bicyacr:02012019204500 a time:Instant;
+	time:inXSDDate "2019-01-02T20:45:00Z".
+
+bicyacr:space2019S000036 a geo:SpatialThing;
+	wgs84:lat 447978470;
+	wgs84:long 444591127;
+	bicyacop:address "AVDA. GRAN VIA DE HORTALEZA / GTA. LUIS ROSALES".
+
+bicyacr:person2019S000036 a bicyacoc:Victim;
+	foaf:gender "Male";
+	bicyacop:isConductor True.

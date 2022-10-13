@@ -1,0 +1,90 @@
+@prefix : <http://pt-recharge-points.org/> .
+@prefix p: <http://pt-recharge-points.org/ontology> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://pt-recharge-points.org/ontology> .
+
+base: a owl:Ontology ;
+    dc:creator "Group09" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "Points of sale of the Public Transport  Pass (Cigar Stores)" ;
+    owl:versionInfo "0.0.1" .
+
+#Classes
+
+:CigarStore a owl:Class ;
+    rdfs:label "Cigar Store" .
+
+:Address a owl:Class ;
+    rdfs:label "Address" .
+
+:Location a owl:Class ;
+    rdfs:label "Location".
+
+:Latitude a owl:Class ;
+    rdfs:label "Latitude" ;
+    rdfs:subClassOf :Location.
+
+:Longitude a owl:Class ;
+    rdfs:label "Longitude" ;
+    rdfs:subClassOf :Location.
+
+:Municipality a owl:Class ;
+    rdfs:label "Municipality" .
+
+:PointOfSaleID a owl:Class ;
+    rdfs:label "Point Of Sale ID" .
+
+:PostalCode a owl:Class ;
+    rdfs:label "Postal Code" .
+
+:Province a owl:Class ;
+    rdfs:label "Province" .
+
+
+#Object Properties
+
+p:hasMunicipality a owl:ObjectProperty ;
+    rdfs:label "has municipality" ;
+    rdfs:domain :CigarStore ;
+    rdfs:range :Municipality.
+
+p:hasProvincia a owl:ObjectProperty ;
+    rdfs:label "has province" ;
+    rdfs:domain :CigarStore;
+    rdfs:range :Province
+
+p:hasLocation a owl:ObjectProperty ;
+    rdfs:label "has location" .
+    rdfs:domain :CigarStore ;
+    rdfs:range :Location .
+
+
+#Datatype properties
+
+p:hasLatitude a owl:DatatypeProperty ;
+    rdfs:label "has latitude" ;
+    rdfs:domain :Location ;
+    rdfs:range xsd:real.
+
+p:hasLongitude a owl:DatatypeProperty ;
+    rdfs:label "has longitude" .
+    rdfs:domain :Location ;
+    rdfs:range xsd:real.
+
+p:hasAddress a owl:DatatypeProperty ;
+    rdfs:label "has address" ;
+    rdfs:domain :CigarStore ;
+    rdfs:range xsd:string .
+
+p:hasPointOfSaleID a owl:DatatypeProperty ;
+    rdfs:label "has point of sale id" ;
+    rdfs:domain :CigarStore ;
+    rdfs:range xsd:string.
+
+p:hasPostalCode a owl:DatatypeProperty ;
+    rdfs:label "has postal code" ;
+    rdfs:domain :CigarStore ;
+    rdfs:range xsd:string.

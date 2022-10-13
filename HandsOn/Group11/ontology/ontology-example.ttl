@@ -1,0 +1,188 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://www.owl-ontologies.com/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns: a owl:Ontology .
+
+#######################
+# Datatype Properties #
+#######################
+
+# Ubicacion
+
+ns:Direccion a owl:DatatypeProperty ;
+    rdfs:label "direccion" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:string .
+
+ns:Latitud a owl:DatatypeProperty ;
+    rdfs:label "latitud" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:string .
+
+ns:Longitud a owl:DatatypeProperty ;
+    rdfs:label "longitud" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:string .
+
+# Placa
+
+ns:descripcion a owl:DatatypeProperty ;
+    rdfs:label "descripcion" ;
+    rdfs:domain ns:Placa ;
+    rdfs:range xsd:string .
+
+ns:fecha a owl:DatatypeProperty ;
+    rdfs:label "fecha" ;
+    rdfs:domain ns:Placa ;
+    rdfs:range xsd:date .
+
+ns:idioma a owl:DatatypeProperty ;
+    rdfs:label "idioma" ;
+    rdfs:domain ns:Placa ;
+    rdfs:range xsd:string .
+
+ns:nombre a owl:DatatypeProperty ;
+    rdfs:label "nombre" ;
+    rdfs:domain ns:Placa ;
+    rdfs:range xsd:string .
+
+ns:palabraClave a owl:DatatypeProperty ;
+    rdfs:label "palabra clave" ;
+    rdfs:domain ns:Placa ;
+    rdfs:range xsd:string .
+
+# Imagen
+
+ns:formato a owl:DatatypeProperty ;
+    rdfs:label "formato" ;
+    rdfs:domain ns:Imagen ;
+    rdfs:range xsd:string .
+
+# Url
+
+ns:url a owl:DatatypeProperty ;
+    rdfs:label "url" ;
+    rdfs:domain ns:Url ;
+    rdfs:range xsd:string .
+
+###################
+# Object Property #
+###################
+
+# Ubicacion
+
+ns:tieneUbicacion a owl:ObjectProperty ;
+    rdfs:label "tiene ubicacion" ;
+    rdfs:domain ns:Distrito ;
+    rdfs:range ns:Ubicacion .
+
+# Placa
+
+ns:representa a owl:ObjectProperty ;
+    rdfs:label "representa" ;
+    rdfs:domain ns:Placa .
+
+ns:tieneCiudad a owl:ObjectProperty ;
+    rdfs:label "tiene ciudad" ;
+    rdfs:domain ns:Placa ;
+    rdfs:range ns:Ciudad .
+
+ns:tieneImagen a owl:ObjectProperty ;
+    rdfs:label "tiene imagen" ;
+    rdfs:domain ns:Placa ;
+    rdfs:range ns:Imagen .
+
+ns:tieneTitularDerechos a owl:ObjectProperty ;
+    rdfs:label "tiene titular derechos" ;
+    rdfs:domain ns:Placa ;
+    rdfs:range ns:TitularDerechos .
+
+ns:tieneWeb a owl:ObjectProperty ;
+    rdfs:label "tiene web" ;
+    rdfs:domain ns:Placa ;
+    rdfs:range ns:Web .
+
+# Imagen
+
+ns:tieneUrl a owl:ObjectProperty ;
+    rdfs:label "tiene url" ;
+    rdfs:domain ns:Imagen,
+        ns:Web ;
+    rdfs:range ns:Url .
+
+# Web
+
+ns:tieneContribuidor a owl:ObjectProperty ;
+    rdfs:label "tiene contribuidor" ;
+    rdfs:domain ns:Web ;
+    rdfs:range ns:Contribuidor .
+
+# Ciudad
+
+ns:tieneDistrito a owl:ObjectProperty ;
+    rdfs:label "tiene distrito" ;
+    rdfs:domain ns:Ciudad ;
+    rdfs:range ns:Distrito .
+
+#############
+# Instances #
+#############
+
+ns:placaejemplo rdfs:type ns:Placa ;
+    ns:nombre "Juan Gómez de Mora"^^xsd:string ;
+    ns:fecha "1990"^^xsd:date ;
+    ns:palabraclave "Placas de Madrid.Arquitectos.Ingenieros.Personaje del Siglo XVII"^^xsd:string ;
+    ns:idioma "spa"^^xsd:string ;
+    ns:descripcion "Entorno a este lugar estuvo La Casa de las Matemáticas, donde vivió de 1614 a 1648 JUAN GÓMEZ DE MORA, Arquitecto Real y Mestro Mayor de la Villa de Madrid. Juan Gómez de Mora nació el 26 de Marzo de 1586. Su padre, pintor de Cámara de Felipe II, le introdujo en los ambientes artísticos y su infancia transcurrió entre Madrid y El Escorial, los focos de mayor importancia artística de la época. Estudió matemáticas y arquitectura, y fue Maestro de Obras y Aposentador de Palacio a las ordenes del Rey Felipe III. Se suceden grandes proyectos: el Real Monasterio de San Gil, el Real Monasterio de la Encarnación, la transformación de la Real Casa del Tesoro, la modernización del Alcázar, la Capilla Real de Atocha. En 1615 Juan Gómez de Mora es nombrado Maestro Mayor de Obras de la Villa de Madrid y compagina sus tareas municipales con obras como el Palacio del Duque de Uceda o el Convento de los Capuchinos de El Pardo o el envío de proyectos a América para la Catedral de México y la de Puebla de los Ángeles. En 1617 modifica el trazado de la Plaza de la Cebada, Felipe III le encarga las trazas del Panteón de Reyes de San Lorenzo de El Escorial y el Ayuntamiento de Madrid la Plaza Mayor. Con Felipe IV y el Conde Duque de Olivares pierde protagonismo en la Corte, pero no deja de realizar numerosas obras: arquitecturas efímeras para la canonización de San Isidro, y hacia 1629 comienza dos de sus grandes obras: la Casa Consistorial y la Cárcel de Corte de Madrid. El incendio de la Plaza Mayor de Madrid en 1631 le da una nueva oportunidad para demostrar su valía, y más tarde se ocupa de las trazas del templo de San Antonio de los Portugueses, las portadas del Palacio del Pardo, las trazas para la Capilla de San Isidro y, en la década siguiente, las trazas de la Casa Real de la Zarzuela y la reforma de la Torre de la Parada por mandato de Felipe IV. Ya maduro, Felipe IV le encarga las obras de los Colegios Reales de Santa Isabel y del Loreto. Realiza la Casa del Marqués de Leganés en la Corte y atiende la continuación de las obras de los Sitios Reales. Después de una prolífica carrera muere en Madrid el 22 de Febrero de 1648."^^xsd:string ;
+    ns:representa :placaejemploRepresenta ;
+    ns:tieneCiudad :placaejemploCiudad ;
+    ns:tieneImagen :placaejemploImagen ;
+    ns:tieneTitularDerechos :placaejemploTitular ;
+    ns:tieneWeb :placaejemploWeb ;
+
+
+ns:placaejemploRepresenta rdfs:type ns:Entidad ;
+    ns:nombre ""^^xsd:string .
+
+
+:placaejemploCiudad rdfs:type ns:Ciudad ;
+    ns:nombre "Madrid"^^xsd:string ;
+    ns:tieneDistrito :placaejemploDistrito .
+
+
+ns:placaejemploImagen rdfs:type ns:Imagen ;
+    ns:formato "image/jpeg"^^xsd:string ;
+    ns:tieneUrl :placaejemploUrl .
+
+
+ns:placaejemploUrl rdfs:type ns:Url ;
+    ns:url "http://www.memoriademadrid.es/buscador.php?accion=VerFicha&id=57985"^^xsd:string .
+
+
+ns:placaejemploTitular rdfs:type ns:TitularDerechos ;
+    ns:nombre "Biblioteca Digital memoriademadrid"^^xsd:string .
+
+
+ns:placaejemploWeb rdfs:type ns:Web ;
+    ns:url "http://www.memoriademadrid.es/buscador.php?accion=VerFicha&id=57985"^^xsd:string ;
+    ns:tieneContribuidor :placaejemploContribuidor ;
+    ns:tieneUrl :placaejemploUrl .
+
+
+ns:placaejemploDistrito rdfs:type ns:Distrito ;
+    ns:nombre "Centro"^^xsd:string ;
+    ns:tieneUbicacion :placaejemplosUbicacion .
+
+
+ns:placaejemplosUbicacion rdfs_type ns:Ubicacion ;
+    ns:Latitud "40.417515"^^xsd:string ;
+    ns:Longitud "-3.711791"^^xsd:string ;
+    ns:Direccion "C/ de Lepanto, 6"^^xsd:string .
+
+
+ns:placaejemploContribuidor rdfs:type ns:Contribuidor ;
+    ns:nombre "www.memoriademadrid.es"^^xsd:string ;
+    ns:url "http://www.memoriademadrid.es/buscador.php?accion=VerFicha&id=57985"^^xsd:url

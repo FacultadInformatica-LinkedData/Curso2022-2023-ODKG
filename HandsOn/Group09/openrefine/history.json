@@ -1,0 +1,610 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "OBJECTID",
+    "description": "Remove column OBJECTID"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Municipio",
+          "expression": "value",
+          "columnName": "Municipio",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Álamo, El"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "El Álamo"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Municipio",
+          "columnName": "Municipio",
+          "query": ",",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Berrueco, El"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "El Berrueco"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Municipio",
+          "columnName": "Municipio",
+          "query": ",",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Boalo, El"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "El Boalo"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Municipio",
+          "columnName": "Municipio",
+          "query": ",",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Cabrera, La"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "La Cabrera"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Municipio",
+          "columnName": "Municipio",
+          "query": ",",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Casar de Escalona, El"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "El Casar de Escalona"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Municipio",
+          "columnName": "Municipio",
+          "query": ",",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Casar, El"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "El Casar"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Municipio",
+          "columnName": "Municipio",
+          "query": ",",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Escorial, El"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "El Escorial"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Municipio",
+          "columnName": "Municipio",
+          "query": ",",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Molar, El"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "El Molar"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Municipio",
+          "columnName": "Municipio",
+          "query": ",",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Molinos, Los"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Los Molinos"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Municipio",
+          "columnName": "Municipio",
+          "query": ",",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Puebla de Almoradiel, La"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "La Puebla de Almoradiel"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Municipio",
+          "columnName": "Municipio",
+          "query": ",",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Puebla de Montalbán, La"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "La Puebla de Montalbán"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Municipio",
+          "columnName": "Municipio",
+          "query": ",",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pueblanueva, La"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "La Pueblanueva"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Municipio",
+          "columnName": "Municipio",
+          "query": ",",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Rozas de Madrid, Las"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Las Rozas de Madrid"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Municipio",
+          "columnName": "Municipio",
+          "query": ",",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Santos de la Humosa, Los"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Los Santos de la Humosa"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Municipio",
+          "columnName": "Municipio",
+          "query": ",",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Torre de Esteban Hambrán, La"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "La Torre de Esteban Hambrán"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Municipio",
+          "columnName": "Municipio",
+          "query": ",",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Vellón, El"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "El Vellón"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Municipio",
+          "columnName": "Municipio",
+          "query": ",",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ventas de Retamosa, Las"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Las Ventas de Retamosa"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Municipio",
+          "columnName": "Municipio",
+          "query": ",",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Viso de San Juan, El"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "El Viso de San Juan"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "﻿X",
+    "expression": "grel:value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ﻿X using expression grel:value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Y",
+    "expression": "grel:value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Y using expression grel:value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Latitud",
+    "expression": "grel:value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Latitud using expression grel:value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Longitud",
+    "expression": "grel:value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Longitud using expression grel:value.toNumber()"
+  }
+]

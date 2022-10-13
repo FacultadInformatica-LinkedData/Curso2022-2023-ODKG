@@ -2,38 +2,55 @@
 
 ## Checklist ##
 
-**The "selfAssesmentHandsOn3.md" file:**
+**The "selfAssesmentHandsOn2.md" file:**
 
 - [X] Includes the checklist of all tasks to develop.
 
-**Analysis of data at Open Refine:**
+**The "analysis.html" file:**
 
-- [ ] Import data into OpenRefine
-- [ ] Analyse and clean data 
-    - [ ] Analysis performed in the previous class, but can be updated with new findings
-    - [ ] Fix the data to remove errors 
-    - [ ] Transform the data to facilitate RDF generatio
+- [X]  The analyses performed over the data source
+- [X] The licensing of the data source and the potential license
+- [X] The resource naming strategy defined
 
-**Json file:**
-- [ ] Creates Open Refine directory
-- [ ] Creates a JSON file with the operations performed over the data for fixing and transforming them
+**Resource naming strategy:**
+- [X] Uses a domain that is not the one given by default in Protégé
+- [X] Uses different paths for ontology resources (i.e., classes and properties) and individuals
+- [X] Ensures that the paths for individuals of different classes are not the same
+- [X] Defines property URIs independently of class URIs
 
-**The "CSV" file:**
+**The "OWL" file:**
 
-- [ ] Creates a CSV file with the updated versions of the datasets
-- [ ] Meets resources requirements
-    - [ ] Has a unique identifier in a column (not an auto-increased integer)
-    - [ ] Is related to a class in the ontology
-- [ ] Meet class requirements:
-    - [ ] Is related to a resource described in the CSV file
-- [ ] Meet column requirements:
-    - [ ] Is trimmed
-    - [ ] Is properly encoded (e.g., dates, booleans)
-    - [ ] Is related to a property in the ontology
-- [ ] Property ontology requirements:
-    - [ ] Is related to a column in the CSV file
+- [X] Creation of ontology directory.
+- [X] Ontology depeloment using ttl extension.
+- [X] Follows resource naming strategy.
 
+**--------- Detailed Task list -------------**
+- [X] Uses the .ttl extension
+- [X] Is serialized in the Turtle format
+- [X] Follows the resource naming strategy
+- [X] Contains at least one class
+- [X] Contains at least one object property (where the value of the property is a resource)
+- [X] Contains at least one datatype property (where the value of the property is a string literal, usually typed)
+- [X] Defines the domain of all the properties (the origin of the property)
+- [X] Defines the range of all the properties (the destination of the property)
+- [X] Defines all class names starting with a capital letter
+- [X] Defines all property names starting with a non-capital letter
+- [X] Does not mix labels in different languages (e.g., Spanish and English)
+- [X] Does not define multiple domains or multiple ranges in properties
+- [X] Contains at least one class that will be used to link to other entities
+
+
+**The "RDF" file:**
+
+- [X] Sample instantiation of the ontology.
+- [X] Follows resource naming strategy.
+
+**--------- Detailed Task list -------------**
+- [X] Uses the .ttl extension
+- [X] Is serialized in the Turtle format
+- [X] Follows the resource naming strategy
+- [X] Does not include the definition of ontology terms
 
 ## Comments on self-assessment ##
 
-No comments already
+ No comments already

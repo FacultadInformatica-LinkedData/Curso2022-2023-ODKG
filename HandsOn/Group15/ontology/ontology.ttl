@@ -87,7 +87,7 @@ base:street_name rdf:type owl:DatatypeProperty ;
 ### base:street_number
 base:street_number rdf:type owl:DatatypeProperty ;
 		rdfs:domain base:Address ;
-		rdfs:range xsd:integer ;
+		rdfs:range xsd:string ;
 		rdfs:label "street_number" .
 
 #################################################################

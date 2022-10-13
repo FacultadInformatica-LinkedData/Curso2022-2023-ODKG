@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "student": "http://www.tarea2b.es/student/",
+    "full_name":"student:full_name",
+    "hometown":"student:hometown",
+    "age":"student:age",
+    "Alma_mater":"student:Alma_mater",
+    "parents":"student:parents",
+    "mother":"parents:mother",
+    "father":"parents:father",
+    "subjects":"http://www.tarea2b.es/subjects",
+    "teachers":"http://www.tarea2b.es/teachers",
+    "atributes":"http://www.tarea2b.es/atributes",
+    "name":"atributes:name",
+    "description":"atributes:description"
+  },
+  "full_name":"Julio Pino Martinez",
+  "hometown":"Madrid",
+  "age":26,
+  "Alma_mater":"UPM",
+  "parents":{
+    "mother":{
+      "name":"Mercedes"
+    },
+    "father":{
+      "name":"Julio"
+    }
+  },
+  "subjects":[
+    {
+      "name":"Open Data and Knowledge Graphs",
+      "teachers":["Oscar Corcho Garcia", "Daniel Garijo Verdejo","Raul Garcia Castro"],
+      "description":"The objective of this course is to gain theoretical and practical knowledge about the methodological and technological foundations of the generation and publication of vocabularies and data on the Web of Linked Data, as well as knowledge graphs."
+    },
+    {
+      "name":"Big Data",
+      "teachers":["Antonio LaTorre", "Jesús Montes"],
+      "description":"This course will allow the student to gain the fundamentals for the analysis of large volumes of data. With an eminently practical approach, the technologies and fundamentals necessary to successfully accomplish the whole data analysis process will be presented in the context of Big Data, from the raw data to the models derived from them."
+    },
+    {
+      "name":"Cloud Computing And Big Data Ecosystems Design",
+      "teachers":["Marta Patiño Martinez"],
+      "description":"This course presents architectures for scalable distributed systems and data management systems: mapreduce,bigtable, data streaming, persistent queues"
+    }
+  ]
+}

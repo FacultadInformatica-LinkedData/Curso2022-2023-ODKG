@@ -1,0 +1,154 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "location_type",
+    "description": "Remove column location_type"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "parent_station",
+    "description": "Remove column parent_station"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "wheelchair_boarding",
+    "description": "Remove column wheelchair_boarding"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "street_number",
+          "expression": "value",
+          "columnName": "street_number",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "stop_desc",
+    "expression": "grel:value.find(/(?i)(?<= )\\d+.*| s(?:\\/)?n/)[0]",
+    "onError": "set-to-blank",
+    "newColumnName": "street_number",
+    "columnInsertIndex": 4,
+    "description": "Create column street_number at index 4 based on column stop_desc using expression grel:value.find(/(?i)(?<= )\\d+.*| s(?:\\/)?n/)[0]"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street_number",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " S/N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " SN"
+      }
+    ],
+    "description": "Mass edit cells in column street_number"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street_number",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " sn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " SN"
+      }
+    ],
+    "description": "Mass edit cells in column street_number"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street_number",
+    "expression": "grel:value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column street_number using expression grel:value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "stop_desc",
+    "expression": "grel:value.replace(/(?i)(?<= )\\d+.*| s(?:\\/)?n/,\"\").trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column stop_desc using expression grel:value.replace(/(?i)(?<= )\\d+.*| s(?:\\/)?n/,\"\").trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "stop_desc",
+    "expression": "grel:value.replace(/ {2,}/, \" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column stop_desc using expression grel:value.replace(/ {2,}/, \" \")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "stop_desc",
+    "newColumnName": "street_name",
+    "description": "Rename column stop_desc to street_name"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "stop_lat",
+    "expression": "grel:value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column stop_lat using expression grel:value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "stop_lon",
+    "expression": "grel:value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column stop_lon using expression grel:value.toNumber()"
+  }
+]

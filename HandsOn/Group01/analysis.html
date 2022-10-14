@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+<body>
+
+<h1>Dataset analysis</h1>
+
+<h2>Data analysis and schema</h2>
+<table>
+    <tr>
+      <th>Column</th>
+      <th>Type</th>
+      <th>Comments / Range (Rounded)</th>
+      <th>Problems</th>
+    </tr>
+    <tr>
+      <td>Provincia</td>
+      <td>String</td>
+      <td>Not unique, values = [Castellón, Valencia, Alicante]</td>
+      <td></td>
+    </tr>
+    <tr>
+        <td>Area_de_salud</td>
+        <td>String</td>
+        <td>Not unique, linkeable</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Nombre</td>
+        <td>String</td>
+        <td>Unique</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Domicilio</td>
+        <td>String</td>
+        <td>Unique</td>
+        <td>Not standarized</td>
+      </tr>
+      <tr>
+        <td>Telefono</td>
+        <td>String</td>
+        <td>Unique, Emtpy values, they start with 96</td>
+        <td>Type String, some of them have spaces in between</td>
+      </tr>
+      <tr>
+        <td>Gestionado_por</td>
+        <td>String</td>
+        <td>Not unique, linkeable</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Ciudad</td>
+        <td>String</td>
+        <td>Not unique, linkeable</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Ubicación</td>
+        <td>String</td>
+        <td>Unique, 2 coordinates</td>
+        <td></td>
+      </tr>
+</table>
+
+
+<h2>Licensing</h2>
+
+<p>The publisher of the dataset is the Provincial Council of Castelló/Castellón.</p>
+<p>The data was published with a
+   <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a> which means that we can:</p>
+<ul>
+   <li><b>Share:</b> copy and redistribute the material in any medium or format</li>
+   <li><b>Adapt:</b> remix, transform, and build upon the material</li>
+</ul>
+<p>as long as we comply with the following conditions:</p>
+<ul>
+  <li><b>Attribution:</b> give credit provinding a link to the license and indicating if we changes were made to the dataset.</li>
+  <li><b>No additional restrictions:</b> we don't apply any legal or technological measures that restrict others anything the license allows to do.</li>
+</ul>
+<p>The license we should use for the dataset generated should be of the same kind:<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.</p>
+
+
+
+<h2>Resource name strategy</h2>
+
+        <p>Domain: http://www.dialysisComunidadValenciana.es/</p>
+        <p>Path: http://www.dialysisComunidadValenciana.es/dialysisCV</p>
+        <p>Data: http://www.dialysisComunidadValenciana.es/dialysisCV/resource</p>
+        <p>Ontology: http://www.dialysisComunidadValenciana.es/dialysisCV/ontology</p>
+
+	<p> Classes: http://www.dialysisComunidadValenciana.es/dialysisCV/ontology/ontologyName#className . </p>
+        <p> Properties: http://www.dialysisComunidadValenciana.es/dialysisCV/ontology/ontologyName#propertyName . </p>
+        <p> Individual: http://www.dialysisComunidadValenciana.es/dialysisCV/resource/className/identifier. </p>
+</body>
+</html>

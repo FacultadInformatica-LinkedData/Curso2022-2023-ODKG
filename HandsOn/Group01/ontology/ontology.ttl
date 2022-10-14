@@ -1,0 +1,51 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://www.dialysisComunidadValenciana.es/dialysisCV/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns: a owl:Ontology ;
+    dc:creator "Group01" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "Dialisis centers" ;
+    owl:versionInfo "1.0" .
+
+ns:belongs_to a owl:ObjectProperty ;
+    rdfs:label "belongs_to" ;
+    rdfs:domain ns:city,
+        ns:health_area ;
+    rdfs:range ns:city,
+        ns:province .
+
+ns:Company a owl:Class ;
+    rdfs:label "company" ;
+    rdfs:subClassOf ns:entity .
+
+ns:is_in a owl:ObjectProperty ;
+    rdfs:label "is_in" ;
+    rdfs:domain ns:center ;
+    rdfs:range ns:health_area .
+
+ns:managed_by a owl:ObjectProperty ;
+    rdfs:label "managed_by" ;
+    rdfs:domain ns:center ;
+    rdfs:range ns:entity .
+
+ns:Public_institution a owl:Class ;
+    rdfs:label "public_institution" ;
+    rdfs:subClassOf ns:entity .
+
+ns:Province a owl:Class ;
+    rdfs:label "province" .
+
+ns:Center a owl:Class ;
+    rdfs:label "center" .
+
+ns:City a owl:Class ;
+    rdfs:label "city" .
+
+ns:Gealth_area a owl:Class ;
+    rdfs:label "health_area" .
+
+ns:Entity a owl:Class ;
+    rdfs:label "entity" .
+

@@ -1,0 +1,610 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "gis_x",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column gis_x using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "gis_x",
+    "expression": "value.replace(\",\",\".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column gis_x using expression value.replace(\",\",\".\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "gis_y",
+    "expression": "value.replace(\",\",\".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column gis_y using expression value.replace(\",\",\".\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "gis_x",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column gis_x using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "gis_y",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column gis_y using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "calle",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column calle using expression value.toString()"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column distrito by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito 1",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column distrito 1 using expression value.toString()"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "barrio",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column barrio by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito 1",
+    "expression": "value.replace(/^[1-9]$/,\"0$0\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column distrito 1 using expression value.replace(/^[1-9]$/,\"0$0\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "distrito 1",
+    "newColumnName": "codigo_distrito",
+    "description": "Rename column distrito 1 to codigo_distrito"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "distrito 2",
+    "newColumnName": "distrito",
+    "description": "Rename column distrito 2 to distrito"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "barrio 1",
+    "newColumnName": "codigo_barrio",
+    "description": "Rename column barrio 1 to codigo_barrio"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "barrio 2",
+    "newColumnName": "barrio",
+    "description": "Rename column barrio 2 to barrio"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "calle",
+    "expression": "value.replace(/^([A-Z ]+), ([A-Z]+), ([A-Z ]+)$/,\"^$2 $3 $1\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column calle using expression value.replace(/^([A-Z ]+), ([A-Z]+), ([A-Z ]+)$/,\"^$2 $3 $1\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "calle",
+    "expression": "value.replace(\"^\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column calle using expression value.replace(\"^\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "calle",
+    "expression": "value.replace(/^([A-Z ]+), ([A-Z]+)$/,\"^$2 $1\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column calle using expression value.replace(/^([A-Z ]+), ([A-Z]+)$/,\"^$2 $1\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "calle",
+    "expression": "value.replace(\"^\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column calle using expression value.replace(\"^\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "calle",
+    "expression": "value.replace(\"^([A-ZÑ ]+), ([A-ZÑ]+), ([A-ZÑ ]+)$\",\"^$2 $3 $1\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column calle using expression value.replace(\"^([A-ZÑ ]+), ([A-ZÑ]+), ([A-ZÑ ]+)$\",\"^$2 $3 $1\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "calle",
+    "expression": "value.replace(/^([^,]+), ([^,]+), ([^,]+)$/,\"^$2 $3 $1\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column calle using expression value.replace(/^([^,]+), ([^,]+), ([^,]+)$/,\"^$2 $3 $1\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "calle",
+    "expression": "value.replace(\"^\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column calle using expression value.replace(\"^\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "calle",
+    "expression": "value.replace(/^([^, ]+), ([^,]+)$/,\"^$2 $1\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column calle using expression value.replace(/^([^, ]+), ([^,]+)$/,\"^$2 $1\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "calle",
+    "expression": "value.replace(\"^\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column calle using expression value.replace(\"^\",\"\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "num_finca",
+          "expression": "value",
+          "columnName": "num_finca",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "12:00 AM",
+                "l": "12:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "num_finca",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "12:00 AM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "12"
+      }
+    ],
+    "description": "Mass edit cells in column num_finca"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "num_finca",
+          "expression": "value",
+          "columnName": "num_finca",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "11:00 AM",
+                "l": "11:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "num_finca",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "11:00 AM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "11"
+      }
+    ],
+    "description": "Mass edit cells in column num_finca"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "num_finca",
+          "expression": "value",
+          "columnName": "num_finca",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "10:00 AM",
+                "l": "10:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "num_finca",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "10:00 AM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "10"
+      }
+    ],
+    "description": "Mass edit cells in column num_finca"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "num_finca",
+          "expression": "value",
+          "columnName": "num_finca",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "1:00 AM",
+                "l": "1:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "num_finca",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1:00 AM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column num_finca"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_finca",
+    "expression": "value.replace(/(:00 AM)$/,\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column num_finca using expression value.replace(/(:00 AM)$/,\"\")"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "num_finca",
+          "expression": "value",
+          "columnName": "num_finca",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "S/N",
+                "l": "S/N"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "color",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column color by separator"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "color 1",
+    "description": "Remove column color 1"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "bateria_linea",
+    "description": "Remove column bateria_linea"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "color 2",
+    "newColumnName": "color",
+    "description": "Rename column color 2 to color"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_plazas",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column num_plazas using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "gis_x",
+    "expression": "grel:\"http://www.group10.org/pl/resource/ParkingArea/PA\"+row.index",
+    "onError": "set-to-blank",
+    "newColumnName": "identificador",
+    "columnInsertIndex": 1,
+    "description": "Create column identificador at index 1 based on column gis_x using expression grel:\"http://www.group10.org/pl/resource/ParkingArea/PA\"+row.index"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "identificador",
+      "gis_x",
+      "gis_y",
+      "codigo_distrito",
+      "distrito",
+      "codigo_barrio",
+      "barrio",
+      "calle",
+      "num_finca",
+      "color",
+      "num_plazas"
+    ],
+    "description": "Reorder columns"
+  }
+{
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "codigo_distrito",
+    "expression": "grel:\"http://www.group10.org/pl/resource/District/D\"+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column codigo_distrito using expression grel:\"http://www.group10.org/pl/resource/District/D\"+value"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "distrito",
+    "description": "Remove column distrito"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "codigo_barrio",
+    "expression": "grel:\"http://www.group10.org/pl/resource/Neighborhood/N\"+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column codigo_barrio using expression grel:\"http://www.group10.org/pl/resource/Neighborhood/N\"+value"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "barrio",
+    "description": "Remove column barrio"
+  }
+  {
+    "op": "core/column-removal",
+    "columnName": "gis_x",
+    "description": "Remove column gis_x"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "gis_y",
+    "description": "Remove column gis_y"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "codigo_barrio",
+    "newColumnName": "barrio",
+    "description": "Rename column codigo_barrio to barrio"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "codigo_distrito",
+    "newColumnName": "distrito",
+    "description": "Rename column codigo_distrito to distrito"
+  }
+]

@@ -7,21 +7,6 @@
 ns: a owl:Ontology ;
     dc:description "Ontology code created by Chowlk" .
 
-ns:Direccion a owl:DatatypeProperty ;
-    rdfs:label "direccion" ;
-    rdfs:domain ns:Ubicacion ;
-    rdfs:range xsd:string .
-
-ns:Latitud a owl:DatatypeProperty ;
-    rdfs:label "latitud" ;
-    rdfs:domain ns:Ubicacion ;
-    rdfs:range xsd:string .
-
-ns:Longitud a owl:DatatypeProperty ;
-    rdfs:label "longitud" ;
-    rdfs:domain ns:Ubicacion ;
-    rdfs:range xsd:string .
-
 ns:Lugar a owl:Class ;
     rdfs:label "Lugar" ;
     rdfs:subClassOf ns:Entidad .
@@ -30,9 +15,28 @@ ns:Persona a owl:Class ;
     rdfs:label "Persona" ;
     rdfs:subClassOf ns:Entidad .
 
+ns:contribuidor a owl:DatatypeProperty ;
+    rdfs:label "contribuidor" ;
+    rdfs:domain ns:Web ;
+    rdfs:range xsd:string .
+
 ns:descripcion a owl:DatatypeProperty ;
     rdfs:label "descripcion" ;
     rdfs:domain ns:Placa ;
+    rdfs:range xsd:string .
+
+ns:direccion a owl:DatatypeProperty ;
+    rdfs:label "direccion" ;
+    rdfs:range xsd:string .
+
+ns:distritoID a owl:DatatypeProperty ;
+    rdfs:label "distrito i d" ;
+    rdfs:domain ns:Distrito ;
+    rdfs:range xsd:string .
+
+ns:entidadID a owl:DatatypeProperty ;
+    rdfs:label "entidad i d" ;
+    rdfs:domain ns:Entidad ;
     rdfs:range xsd:string .
 
 ns:fecha a owl:DatatypeProperty ;
@@ -40,9 +44,9 @@ ns:fecha a owl:DatatypeProperty ;
     rdfs:domain ns:Placa ;
     rdfs:range xsd:date .
 
-ns:formato a owl:DatatypeProperty ;
-    rdfs:label "formato" ;
-    rdfs:domain ns:Imagen ;
+ns:geoID a owl:DatatypeProperty ;
+    rdfs:label "geo i d" ;
+    rdfs:domain ns:Ubicacion ;
     rdfs:range xsd:string .
 
 ns:id a owl:DatatypeProperty ;
@@ -55,13 +59,23 @@ ns:idioma a owl:DatatypeProperty ;
     rdfs:domain ns:Placa ;
     rdfs:range xsd:string .
 
+ns:latitud a owl:DatatypeProperty ;
+    rdfs:label "latitud" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:float .
+
+ns:longitud a owl:DatatypeProperty ;
+    rdfs:label "longitud" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:float .
+
 ns:nombre a owl:DatatypeProperty ;
     rdfs:label "nombre" ;
     rdfs:domain ns:Placa ;
     rdfs:range xsd:string .
 
-ns:palabraClave a owl:DatatypeProperty ;
-    rdfs:label "palabra clave" ;
+ns:palabrasClave a owl:DatatypeProperty ;
+    rdfs:label "palabras clave" ;
     rdfs:domain ns:Placa ;
     rdfs:range xsd:string .
 
@@ -69,30 +83,10 @@ ns:representa a owl:ObjectProperty ;
     rdfs:label "representa" ;
     rdfs:domain ns:Placa .
 
-ns:tieneCiudad a owl:ObjectProperty ;
-    rdfs:label "tiene ciudad" ;
-    rdfs:domain ns:Placa ;
-    rdfs:range ns:Ciudad .
-
-ns:tieneContribuidor a owl:ObjectProperty ;
-    rdfs:label "tiene contribuidor" ;
-    rdfs:domain ns:Web ;
-    rdfs:range ns:Contribuidor .
-
 ns:tieneDistrito a owl:ObjectProperty ;
     rdfs:label "tiene distrito" ;
     rdfs:domain ns:Placa ;
     rdfs:range ns:Distrito .
-
-ns:tieneImagen a owl:ObjectProperty ;
-    rdfs:label "tiene imagen" ;
-    rdfs:domain ns:Placa ;
-    rdfs:range ns:Imagen .
-
-ns:tieneTitularDerechos a owl:ObjectProperty ;
-    rdfs:label "tiene titular derechos" ;
-    rdfs:domain ns:Placa ;
-    rdfs:range ns:TitularDerechos .
 
 ns:tieneUbicacion a owl:ObjectProperty ;
     rdfs:label "tiene ubicacion" ;
@@ -104,34 +98,32 @@ ns:tieneWeb a owl:ObjectProperty ;
     rdfs:domain ns:Placa ;
     rdfs:range ns:Web .
 
-ns:url a owl:DatatypeProperty ;
-    rdfs:label "url" ;
-    rdfs:domain ns:Contribuidor ;
+ns:titularDerechos a owl:DatatypeProperty ;
+    rdfs:label "titular derechos" ;
+    rdfs:domain ns:Placa ;
     rdfs:range xsd:string .
 
-ns:Ciudad a owl:Class ;
-    rdfs:label "Ciudad" .
+ns:url a owl:DatatypeProperty ;
+    rdfs:label "url" ;
+    rdfs:domain ns:Web ;
+    rdfs:range xsd:string .
+
+ns:webID a owl:DatatypeProperty ;
+    rdfs:label "web i d" ;
+    rdfs:domain ns:Web ;
+    rdfs:range xsd:string .
 
 ns:Distrito a owl:Class ;
     rdfs:label "Distrito" .
 
-ns:TitularDerechos a owl:Class ;
-    rdfs:label "Titular Derechos" .
-
-ns:Contribuidor a owl:Class ;
-    rdfs:label "Contribuidor" .
-
 ns:Entidad a owl:Class ;
     rdfs:label "Entidad" .
 
-ns:Imagen a owl:Class ;
-    rdfs:label "Imagen" .
+ns:Ubicacion a owl:Class ;
+    rdfs:label "Ubicacion" .
 
 ns:Web a owl:Class ;
     rdfs:label "Web" .
-
-ns:Ubicacion a owl:Class ;
-    rdfs:label "Ubicacion" .
 
 ns:Placa a owl:Class ;
     rdfs:label "Placa" .

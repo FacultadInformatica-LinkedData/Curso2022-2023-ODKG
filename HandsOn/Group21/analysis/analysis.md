@@ -59,3 +59,29 @@ Open Data is a global initiative linked to the Open Government policies, which i
 **Local level**
 
 - [Ordenanza de Transparencia de la Ciudad de Madrid, de 27 de julio de 2016](https://sede.madrid.es/FrameWork/generacionPDF/ANM2016_108.pdf?idNormativa=3eabe8e52c796510VgnVCM1000001d4a900aRCRD&nombreFichero=ANM2016_108&cacheKey=163)
+
+### Resource Naming Strategy (RNS)
+
+**Base domain**
+
+https://miciudadamiga.madrid/
+
+**Path**
+
+map/
+
+**Ontological Term Path**
+
+https://miciudadamiga.madrid/map/\[ontologyName\]#\[className\]
+
+*Example*
+
+https://miciudadamiga.madrid/map/ontology#Centro_de_Dia
+
+**Individuals Path**
+
+https://miciudadamiga.madrid/map/\[resource\]/\[resourceName\]
+
+*Example*
+
+https://miciudadamiga.madrid/map/resource/Bus

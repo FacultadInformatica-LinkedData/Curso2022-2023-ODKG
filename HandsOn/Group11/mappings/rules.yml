@@ -14,15 +14,15 @@ prefixes:
 mappings:
  triplesmap1:
   sources:
-   - [Placas-memoriademadrid-updated.csv~csv]
+   - [/content/sample_data/Placas-memoriademadrid-updated.csv~csv]
   s: http://placasdemadrid.linkeddata.es/placas-madrid/data/Placa/$(ID)
   po:
       - [a, ns:Placa]
-      - [ns:nombre,$(Titulo)]
-      - [ns:fecha,$(Fecha de Colocación)xsd:date]
-      - [ns:plabraClave,$(Palabrasclave)]
+      - [ns:nombre,$(nombre)]
+      - [ns:fecha,$(fecha_de_colocacion)xsd:date]
+      - [ns:palabraClave,$(palabrasclave)]
       - [ns:idioma,$(language)]
-      - [ns:descripcion,$(Comentario)]
+      - [ns:descripcion,$(comentario)]
       - [ns:titularDerechos,$(rightsholder)]
       - [ns:direccion,$(direccion)]
       - [ns:tieneDistrito, http://placasdemadrid.linkeddata.es/placas-madrid/data/Distrito/$(distritoID)~iri]
@@ -32,7 +32,7 @@ mappings:
 
  triplesmap2:
    sources:
-   - [Placas-memoriademadrid-updated.csv~csv]
+   - [/content/sample_data/Placas-memoriademadrid-updated.csv~csv]
    s: http://placasdemadrid.linkeddata.es/placas-madrid/data/Distrito/$(distritoID)
    po:
       - [a, ns:Distrito]
@@ -40,24 +40,24 @@ mappings:
 
  triplesmap3:
    sources:
-   - [Placas-memoriademadrid-updated.csv~csv]
+   - [/content/sample_data/Placas-memoriademadrid-updated.csv~csv]
    s: http://placasdemadrid.linkeddata.es/placas-madrid/data/Entidad/$(entidadID)
    po:
       - [a, ns:Entidad]
-      - [ns:nombre,$(Titulo)]
+      - [ns:nombre,$(nombre)]
 
  triplesmap4:
    sources:
-   - [Placas-memoriademadrid-updated.csv~csv]
+   - [/content/sample_data/Placas-memoriademadrid-updated.csv~csv]
    s: http://placasdemadrid.linkeddata.es/placas-madrid/data/Web/$(webID)
    po:
       - [a, ns:Web]  
-      - [ns:url,$(Url)]
-      - [ns:contribuidor,$(Aportadopor)]
+      - [ns:url,$(url)]
+      - [ns:contribuidor,$(aportadopor)]
 
  triplesmap5:
    sources:
-   - [Placas-memoriademadrid-updated.csv~csv]
+   - [/content/sample_data/Placas-memoriademadrid-updated.csv~csv]
    s: http://placasdemadrid.linkeddata.es/placas-madrid/data/Ubicacion/$(geoID)
    po:
       - [a, ns:Ubicacion]

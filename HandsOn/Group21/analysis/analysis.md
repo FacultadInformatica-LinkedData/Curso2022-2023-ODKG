@@ -8,6 +8,8 @@ The topic of the selected datasets are describe next:
 * [200761-0-parques-jardines.csv](https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=7dda6a49c7105510VgnVCM2000001f4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default): Elderly homes and supervised apartments in the city of Madrid.
 * [300048-0-ancianos-residencias-apartamento.csv](https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=dc758935dde13410VgnVCM2000000c205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default): Main municipal parks and gardens in the city of Madrid.
 
+[The data schema in UML can be located in this link.](./analysis/dataset_schema.jpg)
+
 ### Exploratory Data Analysis (EDA)
 The exploratory data analysis can be found in the `analysis` folder. The notebook `analysis.ipynb` gathers the necessary code for creating the reports regarding the data types and ranges for each variable. From this analysis we can extract some conclusions as expressed next:
 

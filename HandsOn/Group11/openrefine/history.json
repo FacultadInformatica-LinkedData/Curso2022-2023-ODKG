@@ -706,5 +706,79 @@
     "columnName": "geoID",
     "index": 9,
     "description": "Move column geoID to position 9"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion",
+    "expression": "grel:value.replace(\"\\n\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion using expression grel:value.replace(\"\\n\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comentario",
+    "expression": "grel:value.replace(\"\\n\",\" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Comentario using expression grel:value.replace(\"\\n\",\" \")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿Titulo",
+    "newColumnName": "nombre",
+    "description": "Rename column ﻿Titulo to nombre"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Fecha de Colocación",
+    "newColumnName": "fecha_de_colocacion",
+    "description": "Rename column Fecha de Colocación to fecha_de_colocacion"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Comentario",
+    "newColumnName": "comentario",
+    "description": "Rename column Comentario to comentario"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Palabrasclave",
+    "newColumnName": "palabrasclave",
+    "description": "Rename column Palabrasclave to palabrasclave"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Aportadopor",
+    "newColumnName": "aportadopor",
+    "description": "Rename column Aportadopor to aportadopor"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Url",
+    "newColumnName": "url",
+    "description": "Rename column Url to url"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Editado",
+    "newColumnName": "editado",
+    "description": "Rename column Editado to editado"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Disponible",
+    "newColumnName": "disponible",
+    "description": "Rename column Disponible to disponible"
   }
 ]

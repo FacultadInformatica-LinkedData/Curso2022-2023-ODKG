@@ -4,8 +4,8 @@
 
 **Every RDF file:**
 
-- [ ] Uses the .nt extension
-- [ ] Is serialized in the NTriples format
+- [X] Uses the .nt extension
+- [X] Is serialized in the NTriples format
 - [X] Follows the resource naming strategy
 - [X] Uses class and property URIs that are the same as those used in the ontology
 

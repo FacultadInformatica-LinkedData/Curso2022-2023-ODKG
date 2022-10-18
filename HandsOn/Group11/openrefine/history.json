@@ -1,0 +1,492 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "﻿Titulo",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ﻿Titulo using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "fecha",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column fecha using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Fecha de Colocación",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Fecha de Colocación using expression value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "lugar",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column lugar using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column distrito using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "latitud",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column latitud using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "longitud",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column longitud using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Disponible",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Disponible using expression value.toDate()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Centro\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Centro"
+      }
+    ],
+    "description": "Mass edit cells in column distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Centro, Arganzuela\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Arganzuela\n"
+      }
+    ],
+    "description": "Mass edit cells in column distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Arganzuela\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Arganzuela"
+      }
+    ],
+    "description": "Mass edit cells in column distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Centro, Justicia\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Centro"
+      }
+    ],
+    "description": "Mass edit cells in column distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Mocloa-Aravaca"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moncloa-Aravaca"
+      }
+    ],
+    "description": "Mass edit cells in column distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Moncloa- ravaca\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moncloa-Aravaca"
+      }
+    ],
+    "description": "Mass edit cells in column distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Moncloa-Aravaca\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moncloa-Aravaca"
+      }
+    ],
+    "description": "Mass edit cells in column distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Moncloa\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moncloa-Aravaca"
+      }
+    ],
+    "description": "Mass edit cells in column distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Chamartín\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chamartín"
+      }
+    ],
+    "description": "Mass edit cells in column distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Chamberí\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chamberí"
+      }
+    ],
+    "description": "Mass edit cells in column distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Latina\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Latina"
+      }
+    ],
+    "description": "Mass edit cells in column distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Moratalaz\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moratalaz"
+      }
+    ],
+    "description": "Mass edit cells in column distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Puente de Vallecas\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Puente de Vallecas"
+      }
+    ],
+    "description": "Mass edit cells in column distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Retiro\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Retiro"
+      }
+    ],
+    "description": "Mass edit cells in column distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Carabanchel\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Carabanchel"
+      }
+    ],
+    "description": "Mass edit cells in column distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Salamanca\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Salamanca"
+      }
+    ],
+    "description": "Mass edit cells in column distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tetuán\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tetuán"
+      }
+    ],
+    "description": "Mass edit cells in column distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "type",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "TEXT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IMAGE"
+      }
+    ],
+    "description": "Mass edit cells in column type"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Url",
+    "expression": "grel:substring(value,lastIndexOf(value,\"=\")+1,value.size)",
+    "onError": "set-to-blank",
+    "newColumnName": "ID",
+    "columnInsertIndex": 12,
+    "description": "Create column ID at index 12 based on column Url using expression grel:substring(value,lastIndexOf(value,\"=\")+1,value.size)"
+  }
+]

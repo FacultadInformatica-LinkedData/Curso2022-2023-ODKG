@@ -53,4 +53,4 @@
 
 ## Comments on self-assessment ##
 
-Diagram uploaded 
+ No comments already

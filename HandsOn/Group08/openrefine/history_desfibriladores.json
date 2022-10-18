@@ -1,0 +1,499 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio_codigo",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column municipio_codigo using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_codigo_postal",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_codigo_postal using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_coordenada_x",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_coordenada_x using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_coordenada_y",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_coordenada_y using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "horario_acceso",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column horario_acceso using expression value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "horario_acceso",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column horario_acceso using expression value.toString()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "municipio_codigo",
+    "description": "Remove column municipio_codigo"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_via_codigo",
+    "expression": "join ([coalesce(cells['direccion_via_codigo'].value,''),coalesce(cells['direccion_via_nombre'].value,''),coalesce(cells['direccion_portal_numero'].value,'')],' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_via_codigo using expression join ([coalesce(cells['direccion_via_codigo'].value,''),coalesce(cells['direccion_via_nombre'].value,''),coalesce(cells['direccion_portal_numero'].value,'')],' ')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "direccion_via_nombre",
+    "description": "Remove column direccion_via_nombre"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "direccion_portal_numero",
+    "description": "Remove column direccion_portal_numero"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "direccion_piso",
+    "description": "Remove column direccion_piso"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "direccion_puerta",
+    "description": "Remove column direccion_puerta"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_via_codigo",
+    "expression": "join ([coalesce(cells['direccion_via_codigo'].value,''),coalesce(cells['direccion_codigo_postal'].value,'')],', ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_via_codigo using expression join ([coalesce(cells['direccion_via_codigo'].value,''),coalesce(cells['direccion_codigo_postal'].value,'')],', ')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "direccion_codigo_postal",
+    "description": "Remove column direccion_codigo_postal"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_via_codigo",
+    "expression": "join ([coalesce(cells['direccion_via_codigo'].value,''),coalesce(cells['municipio_nombre'].value,'')],', ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_via_codigo using expression join ([coalesce(cells['direccion_via_codigo'].value,''),coalesce(cells['municipio_nombre'].value,'')],', ')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "municipio_nombre",
+    "description": "Remove column municipio_nombre"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_via_codigo",
+    "expression": "grel:value.replace(', ,',', ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_via_codigo using expression grel:value.replace(', ,',', ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_via_codigo",
+    "expression": "grel:value.replace(/,\\s,\\s$/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_via_codigo using expression grel:value.replace(/,\\s,\\s$/, \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_via_codigo",
+    "expression": "grel:value.replace(/\\s,\\s$/,\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_via_codigo using expression grel:value.replace(/\\s,\\s$/,\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_via_codigo",
+    "expression": "grel:value.replace(/\\s?,\\s+$/,\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_via_codigo using expression grel:value.replace(/\\s?,\\s+$/,\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_coordenada_x",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_coordenada_x using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_coordenada_x",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_coordenada_x using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_coordenada_x",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_coordenada_x using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_coordenada_x",
+    "expression": "jython:return \"-\"+value[0]+\".\"+value[1:]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_coordenada_x using expression jython:return \"-\"+value[0]+\".\"+value[1:]"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_coordenada_y",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_coordenada_y using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_coordenada_y",
+    "expression": "jython:return value[0:2]+\".\"+value[3:]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_coordenada_y using expression jython:return value[0:2]+\".\"+value[3:]"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_coordenada_y",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_coordenada_y using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_coordenada_x",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_coordenada_x using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "tipo_titularidad",
+    "newColumnName": "pùblica",
+    "description": "Rename column tipo_titularidad to pùblica"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "pùblica",
+    "expression": "jython:if \"blica\" in value:\n    return 1\nelse:\n    return 0",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column pùblica using expression jython:if \"blica\" in value:\n    return 1\nelse:\n    return 0"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_establecimiento",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column tipo_establecimiento using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "pùblica",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column pùblica using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_via_codigo",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_via_codigo using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_ubicacion",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_ubicacion using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_ubicacion",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_ubicacion using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_coordenada_x",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_coordenada_x using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_coordenada_y",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_coordenada_y using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "horario_acceso",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column horario_acceso using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "codigo_dea",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column codigo_dea using expression value.trim()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "direccion_via_codigo",
+    "newColumnName": "direccion",
+    "description": "Rename column direccion_via_codigo to direccion"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "codigo_dea",
+          "expression": "value",
+          "columnName": "codigo_dea",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2022-1255",
+                "l": "2022-1255"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Starred Rows",
+          "expression": "row.starred",
+          "columnName": "",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  }
+]

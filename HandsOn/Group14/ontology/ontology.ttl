@@ -12,7 +12,7 @@ bs: a owl:Ontology ;
 
 ### Reused ObjectProperty from another ontology ###
 
- dbo:locatedInArea a owl:FunctionalProperty.
+dbo:locatedInArea a owl:FunctionalProperty.
 
 ### Properties ###
 
@@ -60,7 +60,7 @@ bs:returnOfVeilbPossible a owl:DatatypeProperty ;
 
 ### Reused properties from other ontologies ###
 
-dbo:capasity a owl:DatatypeProperty.
+dbo:capacity a owl:DatatypeProperty.
 dbo:locatedInArea a owl:FunctionalProperty.
 paw:lastUpdateOn a owl:DatatypeProperty.
 schema:id a owl:DatatypeProperty.

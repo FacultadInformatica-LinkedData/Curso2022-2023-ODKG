@@ -1,0 +1,412 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "province",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q162620",
+        "name": "province of Spain"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column province to type Q162620"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q515",
+        "name": "city"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column city to type Q515"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2074737",
+        "name": "municipality of Spain"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column city to type Q2074737"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "similarValue": "ALFAFAR",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1648851",
+      "name": "Alfafar",
+      "types": [
+        "Q2074737"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Alfafar (Q1648851) for cells containing \"ALFAFAR\" in column city"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "similarValue": "PUERTO SAGUNTO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28492293",
+      "name": "Puerto de Sagunto",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Puerto de Sagunto (Q28492293) for cells containing \"PUERTO SAGUNTO\" in column city"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "similarValue": "PUERTO SAGUNTO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28492293",
+      "name": "Puerto de Sagunto",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Puerto de Sagunto (Q28492293) for cells containing \"PUERTO SAGUNTO\" in column city"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "similarValue": "CASTELLÓ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q15092",
+      "name": "Castelló de la Plana",
+      "types": [
+        "Q2074737",
+        "Q515",
+        "Q1549591"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Castelló de la Plana (Q15092) for cells containing \"CASTELLÓ\" in column city"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "similarValue": "TORRENT",
+    "judgment": "matched",
+    "match": {
+      "id": "Q161945",
+      "name": "Torrent",
+      "types": [
+        "Q2074737",
+        "Q515"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Torrent (Q161945) for cells containing \"TORRENT\" in column city"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "similarValue": "ORIHUELA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q487786",
+      "name": "Orihuela",
+      "types": [
+        "Q2074737"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Orihuela (Q487786) for cells containing \"ORIHUELA\" in column city"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "similarValue": "PUERTO SAGUNTO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q47497",
+      "name": "Port de Sagunt",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Port de Sagunt (Q47497) for cells containing \"PUERTO SAGUNTO\" in column city"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q4830453",
+        "name": "business"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column entity to type Q4830453"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "BBRAUN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q644835",
+      "name": "B. Braun",
+      "types": [
+        "Q4830453"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Match item B. Braun (Q644835) for cells containing \"BBRAUN\" in column entity"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "CLÍNICA VISTAHERMOSA GRUPO HLA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q87761418",
+      "name": "Clínica Vistahermosa Grupo Hla",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Clínica Vistahermosa Grupo Hla (Q87761418) for cells containing \"CLÍNICA VISTAHERMOSA GRUPO HLA\" in column entity"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "GENERALITAT VALENCIANA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2477285",
+      "name": "Generalitat Valenciana",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Generalitat Valenciana (Q2477285) for cells containing \"GENERALITAT VALENCIANA\" in column entity"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "SEGURIDAD SOCIAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2878592",
+      "name": "Social Security in Spain",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Social Security in Spain (Q2878592) for cells containing \"SEGURIDAD SOCIAL\" in column entity"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "CENTRO MÉDICO SALUS BALEARES",
+    "description": "Clear recon data for cells containing \"CENTRO MÉDICO SALUS BALEARES\" in column entity"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "TORREVIEJA SALUD UTE LEY 18/82",
+    "description": "Clear recon data for cells containing \"TORREVIEJA SALUD UTE LEY 18/82\" in column entity"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "RIVERA SALUD",
+    "description": "Clear recon data for cells containing \"RIVERA SALUD\" in column entity"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "CASA DE REPOSO Y SANATORIO PPTO. SOCORRO SA",
+    "description": "Clear recon data for cells containing \"CASA DE REPOSO Y SANATORIO PPTO. SOCORRO SA\" in column entity"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "ELCHE CREVILLENTE SALUD",
+    "description": "Clear recon data for cells containing \"ELCHE CREVILLENTE SALUD\" in column entity"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "VITHAS ALICANTE, SL",
+    "description": "Clear recon data for cells containing \"VITHAS ALICANTE, SL\" in column entity"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "province",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "Province URI",
+    "columnInsertIndex": 1,
+    "description": "Create column Province URI at index 1 based on column province using expression grel:\"https://www.wikidata.org/wiki/\" + cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "entity",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "Entity URI",
+    "columnInsertIndex": 7,
+    "description": "Create column Entity URI at index 7 based on column entity using expression grel:\"https://www.wikidata.org/wiki/\" + cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "city",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "City URI",
+    "columnInsertIndex": 10,
+    "description": "Create column City URI at index 10 based on column city using expression grel:\"https://www.wikidata.org/wiki/\" + cell.recon.match.id"
+  }
+]

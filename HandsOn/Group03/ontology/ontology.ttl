@@ -5,8 +5,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ont:accesibilityComment a owl:DatatypeProperty ;
-    rdfs:label "accesibility comment" ;
+ont:accessibilityComment a owl:DatatypeProperty ;
+    rdfs:label "accessibility comment" ;
     rdfs:domain ont:School ;
     rdfs:range xsd:string .
 
@@ -80,20 +80,20 @@ ont:greenZonesProximity a owl:DatatypeProperty ;
     rdfs:domain ont:School ;
     rdfs:range xsd:string .
 
-ont:hasAccesibility a owl:ObjectProperty ;
-    rdfs:label "has accesibility" ;
+ont:hasAccessibility a owl:ObjectProperty ;
+    rdfs:label "has accessibility" ;
     rdfs:domain ont:SchoolGround ;
-    rdfs:range ont:Accesibility .
-
-ont:hasAddress a owl:ObjectProperty ;
-    rdfs:label "has address" ;
-    rdfs:domain ont:SchoolGround ;
-    rdfs:range ont:Localization .
+    rdfs:range ont:Accessibility .
 
 ont:hasContact a owl:ObjectProperty ;
     rdfs:label "has contact" ;
     rdfs:domain ont:School ;
     rdfs:range ont:Contact .
+
+ont:hasLocallization a owl:ObjectProperty ;
+    rdfs:label "has locallization" ;
+    rdfs:domain ont:SchoolGround ;
+    rdfs:range ont:Localization .
 
 ont:hasSchoolGround a owl:ObjectProperty ;
     rdfs:label "has school ground" ;
@@ -200,13 +200,13 @@ ont:titularity a owl:DatatypeProperty ;
     rdfs:domain ont:School ;
     rdfs:range xsd:string .
 
-ont:typeAccesibility a owl:DatatypeProperty ;
-    rdfs:label "type accesibility" ;
+ont:typeAccessibility a owl:DatatypeProperty ;
+    rdfs:label "type accessibility" ;
     rdfs:domain ont:School ;
     rdfs:range xsd:int .
 
-ont:wcAccesibles a owl:DatatypeProperty ;
-    rdfs:label "wc accesibles" ;
+ont:wcAccessibles a owl:DatatypeProperty ;
+    rdfs:label "wc accessibles" ;
     rdfs:domain ont:School ;
     rdfs:range xsd:string .
 
@@ -226,8 +226,8 @@ data: a owl:Ontology ;
     dc:title "Template Ontology" ;
     owl:versionInfo "0.0.1" .
 
-ont:Accesibility a owl:Class ;
-    rdfs:label "Accesibility" .
+ont:Accessibility a owl:Class ;
+    rdfs:label "Accessibility" .
 
 ont:Localization a owl:Class ;
     rdfs:label "Localization" .

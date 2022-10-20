@@ -42,7 +42,7 @@
 
 ###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#blockId
 :blockId rdf:type owl:DataProperty ;
-           rdfs:range xsd:integer .
+           rdfs:range xsd:string .
 
 ###  http://www.group10.org/pl/ontology/ParkingLotsMadrid#parkingMeterId
 :parkingMeterId rdf:type owl:DataProperty ;

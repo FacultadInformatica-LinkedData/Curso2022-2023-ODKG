@@ -1,0 +1,625 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "localizacion",
+          "columnName": "localizacion",
+          "query": "[1-9]",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "numero",
+    "expression": "grel:1",
+    "onError": "set-to-blank",
+    "newColumnName": "déjà loca",
+    "columnInsertIndex": 5,
+    "description": "Create column déjà loca at index 5 based on column numero using expression grel:1"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "déjà loca",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column déjà loca using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "déjà loca",
+    "expression": "grel:if(value==null,0,value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column déjà loca using expression grel:if(value==null,0,value)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "déjà loca",
+          "columnName": "déjà loca",
+          "query": "0",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "localizacion",
+    "expression": "join ([coalesce(cells['localizacion'].value,'0')],',')",
+    "onError": "keep-original",
+    "newColumnName": "adress",
+    "columnInsertIndex": 4,
+    "description": "Create column adress at index 4 based on column localizacion using expression join ([coalesce(cells['localizacion'].value,'0')],',')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "adress",
+    "description": "Remove column adress"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "déjà loca",
+          "columnName": "déjà loca",
+          "query": "0",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "localizacion",
+    "expression": "join ([coalesce(cells['localizacion'].value,''),coalesce(cells['numero'].value,'')],', ')",
+    "onError": "keep-original",
+    "newColumnName": "adress",
+    "columnInsertIndex": 4,
+    "description": "Create column adress at index 4 based on column localizacion using expression join ([coalesce(cells['localizacion'].value,''),coalesce(cells['numero'].value,'')],', ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "déjà loca",
+          "columnName": "déjà loca",
+          "query": "1",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "text",
+          "name": "adress",
+          "columnName": "adress",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "adress",
+    "expression": "join ([coalesce(cells['adress'].value,''),coalesce(cells['localizacion'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column adress using expression join ([coalesce(cells['adress'].value,''),coalesce(cells['localizacion'].value,'')],'')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "localizacion",
+    "description": "Remove column localizacion"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "numero",
+    "description": "Remove column numero"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "déjà loca",
+    "description": "Remove column déjà loca"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "déjà loca",
+          "columnName": "déjà loca",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "text",
+          "name": "adress",
+          "columnName": "adress",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "cod_distrito",
+    "expression": "join ([coalesce(cells['cod_distrito'].value,'')],'  ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column cod_distrito using expression join ([coalesce(cells['cod_distrito'].value,'')],'  ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "déjà loca",
+          "columnName": "déjà loca",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "text",
+          "name": "adress",
+          "columnName": "adress",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "cod_distrito",
+    "expression": "join ([coalesce(cells['cod_distrito'].value,''),coalesce(cells['distrito'].value,'')],'  ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column cod_distrito using expression join ([coalesce(cells['cod_distrito'].value,''),coalesce(cells['distrito'].value,'')],'  ')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "num_expediente",
+      "fecha",
+      "hora",
+      "adress",
+      "cod_distrito",
+      "tipo_accidente",
+      "estado_meteorológico",
+      "tipo_vehículo",
+      "tipo_persona",
+      "rango_edad",
+      "sexo",
+      "cod_lesividad",
+      "tipo_lesividad",
+      "coordenada_x_utm",
+      "coordenada_y_utm",
+      "positiva_alcohol",
+      "positiva_droga"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "cod_lesividad",
+    "description": "Remove column cod_lesividad"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "cod_distrito",
+    "newColumnName": "distrito",
+    "description": "Rename column cod_distrito to distrito"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "fecha",
+    "expression": "grel:value[6,10]+\"-\"+value[3,5]+\"-\"+value[0,2]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column fecha using expression grel:value[6,10]+\"-\"+value[3,5]+\"-\"+value[0,2]"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "fecha",
+    "expression": "join ([coalesce(cells['fecha'].value,'')],'T')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column fecha using expression join ([coalesce(cells['fecha'].value,'')],'T')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "num_expediente",
+      "fecha",
+      "hora",
+      "adress",
+      "distrito",
+      "tipo_accidente",
+      "estado_meteorológico",
+      "tipo_vehículo",
+      "tipo_persona",
+      "rango_edad",
+      "sexo",
+      "tipo_lesividad",
+      "coordenada_x_utm",
+      "coordenada_y_utm",
+      "positiva_alcohol",
+      "positiva_droga"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "fecha",
+    "expression": "join ([coalesce(cells['fecha'].value,''),coalesce(cells['hora'].value,'')],'T')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column fecha using expression join ([coalesce(cells['fecha'].value,''),coalesce(cells['hora'].value,'')],'T')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "num_expediente",
+      "fecha",
+      "adress",
+      "distrito",
+      "tipo_accidente",
+      "estado_meteorológico",
+      "tipo_vehículo",
+      "tipo_persona",
+      "rango_edad",
+      "sexo",
+      "tipo_lesividad",
+      "coordenada_x_utm",
+      "coordenada_y_utm",
+      "positiva_alcohol",
+      "positiva_droga"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "fecha",
+    "newColumnName": "dateTime",
+    "description": "Rename column fecha to dateTime"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_lesividad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Asistencia sanitaria inmediata en centro de salud o mutua"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column tipo_lesividad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_lesividad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Asistencia sanitaria sólo en el lugar del accidente"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0"
+      }
+    ],
+    "description": "Mass edit cells in column tipo_lesividad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_lesividad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Atención en urgencias sin posterior ingreso"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0"
+      }
+    ],
+    "description": "Mass edit cells in column tipo_lesividad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_lesividad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ingreso inferior o igual a 24 horas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column tipo_lesividad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_lesividad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ingreso superior a 24 horas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column tipo_lesividad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_lesividad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sin asistencia sanitaria"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0"
+      }
+    ],
+    "description": "Mass edit cells in column tipo_lesividad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_lesividad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Asistencia sanitaria ambulatoria con posterioridad"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column tipo_lesividad"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "tipo_lesividad",
+    "newColumnName": "hospitalized",
+    "description": "Rename column tipo_lesividad to hospitalized"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hospitalized",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Fallecido 24 horas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column hospitalized"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehículo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Bicicleta"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0"
+      }
+    ],
+    "description": "Mass edit cells in column tipo_vehículo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehículo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Bicicleta EPAC (pedaleo asistido)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column tipo_vehículo"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "tipo_vehículo",
+    "newColumnName": "bicycle_is_electronic",
+    "description": "Rename column tipo_vehículo to bicycle_is_electronic"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Se desconoce"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NULL"
+      }
+    ],
+    "description": "Mass edit cells in column estado_meteorológico"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "positiva_droga",
+    "description": "Remove column positiva_droga"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "positiva_alcohol",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0"
+      }
+    ],
+    "description": "Mass edit cells in column positiva_alcohol"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "positiva_alcohol",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column positiva_alcohol"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "dateTime",
+    "expression": "grel:value+'+02:00'",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column dateTime using expression grel:value+'+02:00'"
+  }
+]

@@ -2,6 +2,8 @@
 @prefix ns: <http://www.dialysisComunidadValenciana.es/dialysisCV/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
 
 ns: a owl:Ontology ;
     dc:creator "Group01" ;
@@ -11,32 +13,32 @@ ns: a owl:Ontology ;
 
 ns:belongs_to a owl:ObjectProperty ;
     rdfs:label "belongs_to" ;
-    rdfs:domain ns:place,
+    rdfs:domain ns:place ;
     rdfs:range ns:place.
   
 ns:has_name a owl:ObjectProperty ;
     rdfs:label "has_name" ;
-    rdfs:domain ns:center,
+    rdfs:domain ns:center ;
     rdfs:range xsd:string.
 
 ns:has_phoneNumber a owl:ObjectProperty ;
     rdfs:label "has_phoneNumber" ;
-    rdfs:domain ns:center,
+    rdfs:domain ns:center ;
     rdfs:range xsd:string.
 
 ns:has_adress a owl:ObjectProperty ;
     rdfs:label "has_adress" ;
-    rdfs:domain ns:center,
+    rdfs:domain ns:center ;
     rdfs:range xsd:string.
 
 ns:has_lat a owl:ObjectProperty ;
     rdfs:label "has_lat" ;
-    rdfs:domain ns:center,
+    rdfs:domain ns:center ;
     rdfs:range xsd:float.
 
 ns:has_long a owl:ObjectProperty ;
     rdfs:label "has_long" ;
-    rdfs:domain ns:center,
+    rdfs:domain ns:center ;
     rdfs:range xsd:float.
 
 ns:Company a owl:Class ;
@@ -44,7 +46,7 @@ ns:Company a owl:Class ;
     rdfs:subClassOf ns:entity .
 
 ns:Place a owl:Class ;
-    rdfs:label "place" ;
+    rdfs:label "place" .
     
 
 ns:is_in a owl:ObjectProperty ;

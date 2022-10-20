@@ -1,0 +1,23 @@
+PREFIX ns: <http://placasdemadrid.linkeddata.es/placas-madrid/ontology/> .
+
+#Listar todos los distritos del dataset
+
+SELECT ?Subject WHERE { 
+  ?Subject ?Predicate ns:Distrito . 
+}
+
+#Listar todas las placas con el nombre de Benito Pérez Galdós
+
+SELECT ?Placa WHERE {
+  ?Placa ?Predicate ns:Placa .
+  ?Placa ns:nombre 'Benito Pérez Galdós'
+}
+
+#Listar todas los nombres de las placas que están en Moncloa-Aravaca
+
+SELECT ?Nombre WHERE {
+  ?Placa ?Predicate ns:Placa .
+  ?Placa ns:tieneDistrito ?Distrito .
+  ?Distrito ns:nombre 'Moncloa-Aravaca' .
+  ?Placa ns:nombre ?Nombre
+  }

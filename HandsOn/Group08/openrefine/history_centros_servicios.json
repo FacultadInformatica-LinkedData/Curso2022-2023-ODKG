@@ -2719,5 +2719,49 @@
     "op": "core/column-removal",
     "columnName": "centro_nro_registro",
     "description": "Remove column centro_nro_registro"
+  },
+  [
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "id",
+    "newColumnName": "Clinic",
+    "description": "Rename column id to Clinic"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "centro_tipo",
+    "newColumnName": "typologyOfClinic",
+    "description": "Rename column centro_tipo to typologyOfClinic"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "direccion",
+    "newColumnName": "Address",
+    "description": "Rename column direccion to Address"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "localizacion_coordenada_x",
+    "newColumnName": "longitude",
+    "description": "Rename column localizacion_coordenada_x to longitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "localizacion_coordenada_y",
+    "newColumnName": "latitude",
+    "description": "Rename column localizacion_coordenada_y to latitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "oferta_asistecial",
+    "newColumnName": "specialization",
+    "description": "Rename column oferta_asistecial to specialization"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Address",
+    "newColumnName": "addressName",
+    "description": "Rename column Address to addressName"
   }
+]
 ]

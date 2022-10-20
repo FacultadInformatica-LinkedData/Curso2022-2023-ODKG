@@ -495,5 +495,59 @@
       "mode": "row-based"
     },
     "description": "Remove rows"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "direccion_coordenada_x",
+    "newColumnName": "longitude",
+    "description": "Rename column direccion_coordenada_x to longitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "direccion_coordenada_y",
+    "newColumnName": "latitude",
+    "description": "Rename column direccion_coordenada_y to latitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "horario_acceso",
+    "newColumnName": "openingHours",
+    "description": "Rename column horario_acceso to openingHours"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "pùblica",
+    "newColumnName": "publicOwnership",
+    "description": "Rename column pùblica to publicOwnership"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "direccion",
+    "newColumnName": "addressName",
+    "description": "Rename column direccion to addressName"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "direccion_ubicacion",
+    "newColumnName": "Establishment",
+    "description": "Rename column direccion_ubicacion to Establishment"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "tipo_establecimiento",
+    "newColumnName": "typology",
+    "description": "Rename column tipo_establecimiento to typology"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "codigo_dea",
+    "newColumnName": "Defibrillator",
+    "description": "Rename column codigo_dea to Defibrillator"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "Defibrillator",
+    "index": 0,
+    "description": "Move column Defibrillator to position 0"
   }
 ]

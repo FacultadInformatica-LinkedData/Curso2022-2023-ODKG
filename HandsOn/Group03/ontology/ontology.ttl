@@ -1,4 +1,4 @@
-@prefix data: <http://smartcity.linkeddata.es/schoolfinder/resource> .
+ @prefix data: <http://smartcity.linkeddata.es/schoolfinder/resource> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix ont: <http://smartcity.linkeddata.es/schoolfinder/ontology> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -13,17 +13,12 @@ ont:hasAccesibility a owl:ObjectProperty ;
 ont:hasAddress a owl:ObjectProperty ;
     rdfs:label "has address" ;
     rdfs:domain data:SchoolGround ;
-    rdfs:range data:Address .
+    rdfs:range data:Localization .
 
 ont:hasContact a owl:ObjectProperty ;
     rdfs:label "has contact" ;
     rdfs:domain data:School ;
     rdfs:range data:Contact .
-
-ont:hasLocalization a owl:ObjectProperty ;
-    rdfs:label "has localization" ;
-    rdfs:domain data:SchoolGround ;
-    rdfs:range data:Localization .
 
 ont:hasSchoolGround a owl:ObjectProperty ;
     rdfs:label "has school ground" ;
@@ -41,13 +36,13 @@ data: a owl:Ontology ;
     dc:title "Template Ontology" ;
     owl:versionInfo "0.0.1" .
 
-data:accesibility a owl:DatatypeProperty ;
-    rdfs:label "accesibility" ;
+data:accesibilityComment a owl:DatatypeProperty ;
+    rdfs:label "accesibility comment" ;
     rdfs:domain data:School ;
-    rdfs:range xsd:int .
+    rdfs:range xsd:string .
 
-data:accesibility2 a owl:DatatypeProperty ;
-    rdfs:label "accesibility2" ;
+data:address a owl:DatatypeProperty ;
+    rdfs:label "address" ;
     rdfs:domain data:School ;
     rdfs:range xsd:string .
 
@@ -136,20 +131,10 @@ data:name a owl:DatatypeProperty ;
     rdfs:domain data:School ;
     rdfs:range xsd:string .
 
-data:nameStreet a owl:DatatypeProperty ;
-    rdfs:label "name street" ;
-    rdfs:domain data:School ;
-    rdfs:range xsd:string .
-
 data:neighborhood a owl:DatatypeProperty ;
     rdfs:label "neighborhood" ;
     rdfs:domain data:School ;
     rdfs:range xsd:string .
-
-data:num a owl:DatatypeProperty ;
-    rdfs:label "num" ;
-    rdfs:domain data:School ;
-    rdfs:range xsd:int .
 
 data:observations a owl:DatatypeProperty ;
     rdfs:label "observations" ;
@@ -191,11 +176,6 @@ data:renfe a owl:DatatypeProperty ;
     rdfs:domain data:School ;
     rdfs:range xsd:string .
 
-data:roadClass a owl:DatatypeProperty ;
-    rdfs:label "road class" ;
-    rdfs:domain data:School ;
-    rdfs:range xsd:string .
-
 data:schedule a owl:DatatypeProperty ;
     rdfs:label "schedule" ;
     rdfs:domain data:School ;
@@ -226,6 +206,11 @@ data:titularity a owl:DatatypeProperty ;
     rdfs:domain data:School ;
     rdfs:range xsd:string .
 
+data:typeAccesibility a owl:DatatypeProperty ;
+    rdfs:label "type accesibility" ;
+    rdfs:domain data:School ;
+    rdfs:range xsd:int .
+
 data:wcAccesibles a owl:DatatypeProperty ;
     rdfs:label "wc accesibles" ;
     rdfs:domain data:School ;
@@ -244,20 +229,17 @@ data:yardNumber a owl:DatatypeProperty ;
 data:Accesibility a owl:Class ;
     rdfs:label "Accesibility" .
 
-data:Address a owl:Class ;
-    rdfs:label "Address" .
-
 data:Localization a owl:Class ;
     rdfs:label "Localization" .
 
 data:Schoolyard a owl:Class ;
     rdfs:label "Schoolyard" .
 
-data:Contact a owl:Class ;
-    rdfs:label "Contact" .
-
 data:SchoolGround a owl:Class ;
     rdfs:label "School Ground" .
+
+data:Contact a owl:Class ;
+    rdfs:label "Contact" .
 
 data:School a owl:Class ;
     rdfs:label "School" .

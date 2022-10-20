@@ -14,30 +14,30 @@ ns:belongs_to a owl:ObjectProperty ;
     rdfs:domain ns:place,
     rdfs:range ns:place.
   
-ns:hasName a owl:ObjectProperty ;
-    rdfs:label "hasName" ;
+ns:has_name a owl:ObjectProperty ;
+    rdfs:label "has_name" ;
     rdfs:domain ns:center,
     rdfs:range xsd:string.
 
-ns:hasName a owl:ObjectProperty ;
-    rdfs:label "hasPhoneNumber" ;
+ns:has_phoneNumber a owl:ObjectProperty ;
+    rdfs:label "has_phoneNumber" ;
     rdfs:domain ns:center,
     rdfs:range xsd:string.
 
-ns:hasStreet a owl:ObjectProperty ;
-    rdfs:label "hasStreet" ;
+ns:has_adress a owl:ObjectProperty ;
+    rdfs:label "has_adress" ;
     rdfs:domain ns:center,
     rdfs:range xsd:string.
 
-ns:hasLat a owl:ObjectProperty ;
-    rdfs:label "hasLat" ;
+ns:has_lat a owl:ObjectProperty ;
+    rdfs:label "has_lat" ;
     rdfs:domain ns:center,
-    rdfs:range xsd:string.
+    rdfs:range xsd:float.
 
-ns:hasLong a owl:ObjectProperty ;
-    rdfs:label "hasLong" ;
+ns:has_long a owl:ObjectProperty ;
+    rdfs:label "has_long" ;
     rdfs:domain ns:center,
-    rdfs:range xsd:string.
+    rdfs:range xsd:float.
 
 ns:Company a owl:Class ;
     rdfs:label "company" ;
@@ -73,7 +73,7 @@ ns:City a owl:Class ;
     rdfs:label "city" ;
     rdfs:subClassOf ns:place .
 
-ns:Gealth_area a owl:Class ;
+ns:Health_area a owl:Class ;
     rdfs:label "health_area";
     rdfs:subClassOf ns:place .
 

@@ -1,0 +1,60 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  dc: http://purl.org/dc/elements/1.1/
+  geo: http://www.w3.org/2003/01/geo/wgs84_pos#
+  nsont: https://www.healthfinder.io/group08/resource/ontology/
+  nsdata: https://www.healthfinder.io/group08/resource/resource/
+  owl: http://www.w3.org/2002/07/owl#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  
+mappings:
+  defribillatormap:
+    sources:
+      - [desfibriladores-externos-fuera-ambito-sanitario-update.csv~csv]
+    s: https://www.healthfinder.io/group08/ontology/$(Defibrillator)
+    po:
+      - [a, ns:Defibrillator]
+      - p: ns:isIn
+        o:
+          mapping: establishmentmap
+ 
+  establishmentmap:
+    sources:
+      - [desfibriladores-externos-fuera-ambito-sanitario-update.csv~csv]
+    s: https://www.healthfinder.io/group08/ontology/$(Establishment)
+    po:
+      - [a, ns:Establishment]
+      - [ns:ownership,$(publicOwnership) ,xsd:boolean]
+      - [ns:tipology,$(tipologyOfEstablishment) ,xsd:string]
+      - [ns:openingHours,$(openingHours) ,xsd:string]
+      - p: geo:location
+        o:
+          mapping: addressmap
+          
+  clinicmap:
+    sources:
+      - [centros-servicios-establecimientos-sanitarios-update.csv~csv]
+    s: https://www.healthfinder.io/group08/ontology/$(Clinic)
+    po:
+      - [a, ns:Clinic]
+      - [ns:tipologyOfClinic ,$(tipologyOfClinic) ,xsd:string]
+      - [ns:specialization ,$(specialization) ,xsd:string]
+      - p: ns:isIn
+        o:
+          mapping: establishmentmap
+         
+  addressmap:
+    sources:
+      - [desfibriladores-externos-fuera-ambito-sanitario-update.csv~csv]
+    s: https://www.healthfinder.io/group08/ontology/$(addressName) - $(latitude)
+    po:
+      - [a, s:Address]
+      - [ns:addressName ,$(addressName) ,xsd:string]
+      - [geo:longitude ,$(longitude) ,xsd:float]
+      - [geo:latitude ,$(latitude) ,xsd:float]
+ 
+
+  

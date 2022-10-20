@@ -90,7 +90,7 @@ ont:hasContact a owl:ObjectProperty ;
     rdfs:domain ont:School ;
     rdfs:range ont:Contact .
 
-ont:hasLocallization a owl:ObjectProperty ;
+ont:haslocalization a owl:ObjectProperty ;
     rdfs:label "has locallization" ;
     rdfs:domain ont:SchoolGround ;
     rdfs:range ont:Localization .

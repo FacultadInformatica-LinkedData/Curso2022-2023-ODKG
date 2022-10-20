@@ -16,8 +16,8 @@ mappings:
     s: http://www.dialysisComunidadValenciana.es/resource/center/$(id_center)
     po:
       - [a, vocab:Center]
-      - [vocab:hasName,$(center),xsd:string]
-      - [vocab:hasTelephone,$(phone_number),xsd:string]
+      - [foaf:name,$(center),xsd:string]
+      - [foaf:phone,$(phone_number),xsd:string]
       - [vocab:hasAddress,$(address),xsd:string]
       - [vocab:is_in,vocab:$(health_area)]
       - [vocab:managed_by,vocab:$(entity)]
@@ -49,6 +49,7 @@ mappings:
     po:
       - [a, vocab:City]
       - [vocab:belongs_to,vocab:$(province)]
+      - [vocab:hasName,$(city),xsd:string]
       - [owl:sameAs,$(city_uri)]
 
   entity:

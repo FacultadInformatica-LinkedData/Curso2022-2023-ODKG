@@ -1,0 +1,65 @@
+prefixes:
+    rr: http://www.w3.org/ns/r2rml#
+    foaf: http://xmlns.com/foaf/0.1/
+    xsd: http://www.w3.org/2001/XMLSchema#
+    rdfs: http://www.w3.org/2000/01/rdf-schema#
+    rev: http://purl.org/stuff/rev#
+    schema: http://schema.org/
+    dct: http://purl.org/dc/terms/
+    rml: http://semweb.mmlab.be/ns/rml#
+    ql: http://semweb.mmlab.be/ns/ql#
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    ns: http://placasdemadrid.linkeddata.es/placas-madrid/ontology/
+  
+mappings:
+ triplesmap1:
+  sources:
+   - [/content/sample_data/Placas-memoriademadrid-updated.csv~csv]
+  s: http://placasdemadrid.linkeddata.es/placas-madrid/data/Placa/$(ID)
+  po:
+      - [a, ns:Placa]
+      - [ns:nombre,$(nombre)]
+      - [ns:fecha,$(fecha_de_colocacion)xsd:date]
+      - [ns:palabraClave,$(palabrasclave)]
+      - [ns:idioma,$(language)]
+      - [ns:descripcion,$(comentario)]
+      - [ns:titularDerechos,$(rightsholder)]
+      - [ns:direccion,$(direccion)]
+      - [ns:tieneDistrito, http://placasdemadrid.linkeddata.es/placas-madrid/data/Distrito/$(distritoID)~iri]
+      - [ns:representa, http://placasdemadrid.linkeddata.es/placas-madrid/data/Entidad/$(entidadID)~iri]
+      - [ns:tieneWeb, http://placasdemadrid.linkeddata.es/placas-madrid/data/Web/$(webID)~iri]
+      - [ns:tieneUbicacion, http://placasdemadrid.linkeddata.es/placas-madrid/data/Ubicacion/$(geoID)~iri]
+
+ triplesmap2:
+   sources:
+   - [/content/sample_data/Placas-memoriademadrid-updated.csv~csv]
+   s: http://placasdemadrid.linkeddata.es/placas-madrid/data/Distrito/$(distritoID)
+   po:
+      - [a, ns:Distrito]
+      - [ns:nombre,$(distrito)]
+
+ triplesmap3:
+   sources:
+   - [/content/sample_data/Placas-memoriademadrid-updated.csv~csv]
+   s: http://placasdemadrid.linkeddata.es/placas-madrid/data/Entidad/$(entidadID)
+   po:
+      - [a, ns:Entidad]
+      - [ns:nombre,$(nombre)]
+
+ triplesmap4:
+   sources:
+   - [/content/sample_data/Placas-memoriademadrid-updated.csv~csv]
+   s: http://placasdemadrid.linkeddata.es/placas-madrid/data/Web/$(webID)
+   po:
+      - [a, ns:Web]  
+      - [ns:url,$(url)]
+      - [ns:contribuidor,$(aportadopor)]
+
+ triplesmap5:
+   sources:
+   - [/content/sample_data/Placas-memoriademadrid-updated.csv~csv]
+   s: http://placasdemadrid.linkeddata.es/placas-madrid/data/Ubicacion/$(geoID)
+   po:
+      - [a, ns:Ubicacion]
+      - [ns:latitud,$(latitud)xsd:float]  
+      - [ns:longitud,$(longitud)xsd:float]

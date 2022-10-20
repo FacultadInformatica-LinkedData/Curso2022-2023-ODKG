@@ -254,19 +254,19 @@ map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_center_000, map:
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
 map:s_000 rdf:type rr:SubjectMap ;
-	rr:template "http://www.dialysisComunidadValenciana.es/resource/center/{id_center}" .
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/center/{center_id}" .
 
 map:s_001 rdf:type rr:SubjectMap ;
-	rr:template "http://www.dialysisComunidadValenciana.es/resource/health_area/{id_health_area}" .
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/health_area/{health_area_id}" .
 
 map:s_002 rdf:type rr:SubjectMap ;
 	rr:template "http://www.dialysisComunidadValenciana.es/resource/province/{province}" .
 
 map:s_003 rdf:type rr:SubjectMap ;
-	rr:template "http://www.dialysisComunidadValenciana.es/resource/province/{city}" .
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/city/{city}" .
 
 map:s_004 rdf:type rr:SubjectMap ;
-	rr:template "http://www.dialysisComunidadValenciana.es/resource/province/{entity}" .
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/entity/{entity}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
 	rml:source "../csv/relacion-de-centros-de-dialisis-csv-updated.csv" ;
@@ -285,6 +285,6 @@ map:source_003 rml:referenceFormulation ql:CSV ;
 	rdf:type rml:LogicalSource .
 
 map:source_004 rml:referenceFormulation ql:CSV ;
-	rml:source "/data/datos_HO5.csv" ;
+	rml:source "../csv/relacion-de-centros-de-dialisis-csv-updated.csv" ;
 	rdf:type rml:LogicalSource .
 

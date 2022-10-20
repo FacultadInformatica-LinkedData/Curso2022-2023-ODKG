@@ -4,7 +4,6 @@
 @prefix xml: <http://www.w3.org/xml/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .   
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix saref: <https://saref.etsi.org/core/v3.1.1/> .
 @base <http://smartcity.airquality.es/airquality/ontology/ont> .
 
 
@@ -19,10 +18,19 @@
 #################################################################
 
 
-###  http://smartcity.airquality.es/airquality/ontology/ont#makesMeasurement
-saref:makesMeasurement rdf:type owl:ObjectProperty ;
+
+###  http://smartcity.airquality.es/airquality/ontology/ont#isLocatedIn
+:isLocatedIn rdf:type owl:ObjectProperty ;
+        rdfs:domain :Station ;
+        rdfs:range :Municipality .
+
+
+
+###  http://smartcity.airquality.es/airquality/ontology/ont#hasMeasurement
+:hasMeasurement rdf:type owl:ObjectProperty ;
                 rdfs:domain :Station ;
                 rdfs:range :Magnitude .
+
 
 
 
@@ -33,7 +41,7 @@ saref:makesMeasurement rdf:type owl:ObjectProperty ;
 
 
 ###  http://smartcity.airquality.es/airquality/ontology/ont#hasName
-rdfs:label rdf:type owl:DatatypeProperty ;
+:hasName rdf:type owl:DatatypeProperty ;
         rdfs:domain :Municipality ;
         rdfs:range xsd:string .
 
@@ -42,7 +50,7 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 
 
 ###  http://smartcity.airquality.es/airquality/ontology/ont#hasName
-rdfs:label rdf:type owl:DatatypeProperty ;
+:hasName rdf:type owl:DatatypeProperty ;
         rdfs:domain :Station ;
         rdfs:range xsd:string .
 
@@ -73,7 +81,7 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 
 
 ###  http://smartcity.airquality.es/airquality/ontology/ont#hasName
-rdfs:label rdf:type owl:DatatypeProperty ;
+:hasName rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Magnitude ;
                  rdfs:range xsd:string .
 
@@ -87,7 +95,7 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 ###  http://smartcity.airquality.es/airquality/ontology/ont#atTime
 :atTime rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Magnitude ;
-                rdfs:range xsd:date  .
+                rdfs:range xsd:dateTime  .
 
 
 
@@ -102,8 +110,9 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 
 
 
+
 ###  http://smartcity.airquality.es/airquality/ontology/ont#Station
-:Station saref:Device owl:SubClassOf .
+:Station rdf:type owl:Class .
 
 
 

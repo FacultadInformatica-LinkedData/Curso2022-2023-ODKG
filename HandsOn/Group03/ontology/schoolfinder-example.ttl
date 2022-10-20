@@ -39,7 +39,7 @@ contact:contact176850 rdfs:type ont:Contact ;
 schoolGround:schoolGround176850 rdfs:type ont:SchoolGround ;
 					ont:hasAddress data:address176850;
 					ont:hasLocalization data:localization176850;
-					ont:hasAccesibility data:accessibility176850;
+					ont:hasAccessibility data:accessibility176850;
 					ont:hasSchoolYard data:schoolYard176850.
 
 localization:localization176850 rdfs:type ont:Localization ;
@@ -63,7 +63,7 @@ accessibility:accessibility176850 rdfs:type ont:Accesibility ;
 schoolyard:schoolyard176850 rdfs:type ont:SchoolYard ;
 					ont:yardCategory "I"^^xsd:string;
 					ont:yardNumber "5"^^xsd:string;
-					ont:wcAccesibles "NO"^^xsd:string;
+					ont:wcAccessibles "NO"^^xsd:string;
 					ont:shade "SI"^^xsd:string;
 					ont:surface "3868,71 + 1384,25"^^xsd:string;
 					ont:furnitures "Porterias,canasta"^^xsd:string;

@@ -58,4 +58,4 @@
 
 ## Comments on self-assessment ##
 
-No comments already
+Previous updates made as some typo errors found

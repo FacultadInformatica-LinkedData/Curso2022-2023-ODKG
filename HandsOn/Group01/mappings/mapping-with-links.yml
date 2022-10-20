@@ -1,0 +1,61 @@
+prefixes:
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  vocab: http://www.dialysisComunidadValenciana.es/
+  wiki: https://www.wikidata.org/wiki/
+  esadm: http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#
+  geo: http://www.w3.org/2003/01/geo/wgs84_pos#
+  ontology: http://www.geonames.org/ontology#
+  owl: http://www.w3.org/2002/07/owl#
+
+mappings:
+  center:
+    sources:
+      - [../csv/relacion-de-centros-de-dialisis-csv-updated.csv~csv]
+    s: http://www.dialysisComunidadValenciana.es/resource/center/$(id_center)
+    po:
+      - [a, vocab:Center]
+      - [vocab:hasName,$(center),xsd:string]
+      - [vocab:hasTelephone,$(phone_number),xsd:string]
+      - [vocab:hasAddress,$(address),xsd:string]
+      - [vocab:is_in,vocab:$(health_area)]
+      - [vocab:managed_by,vocab:$(entity)]
+      - [geo:long, $(longitude), xsd:float]
+      - [geo:lat, $(latitude), xsd:float]
+
+  health_area:
+    sources:
+      - [../csv/relacion-de-centros-de-dialisis-csv-updated.csv~csv]
+    s: http://www.dialysisComunidadValenciana.es/resource/health_area/$(id_health_area)
+    po:
+      - [a, vocab:Health_Area]
+      - [vocab:hasName,$(health_area),xsd:string]
+      - [vocab:belongs_to,vocab:$(province)]
+
+  province:
+    sources:
+      - [../csv/relacion-de-centros-de-dialisis-csv-updated.csv~csv]
+    s: http://www.dialysisComunidadValenciana.es/resource/province/$(province)
+    po:
+      - [a, vocab:province]
+      - [vocab:hasName,$(province),xsd:string]
+      - [owl:sameAs,$(province_uri)]
+  
+  city:
+    sources:
+      - [../csv/relacion-de-centros-de-dialisis-csv-updated.csv~csv]
+    s: http://www.dialysisComunidadValenciana.es/resource/province/$(city)
+    po:
+      - [a, vocab:City]
+      - [vocab:belongs_to,vocab:$(province)]
+      - [owl:sameAs,$(city_uri)]
+
+  entity:
+    sources:
+      - [/data/datos_HO5.csv~csv]
+    s: http://www.dialysisComunidadValenciana.es/resource/province/$(entity)
+    po:
+      - [a, vocab:Entity]
+      - [vocab:hasName,$(entity),xsd:string]
+      - [owl:sameAs,$(entity_uri)]

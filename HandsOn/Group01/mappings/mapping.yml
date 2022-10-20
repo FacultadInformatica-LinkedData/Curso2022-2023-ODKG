@@ -55,4 +55,4 @@ mappings:
     s: http://www.dialysisComunidadValenciana.es/resource/entity/$(entity)
     po:
       - [a, ns:Entity]
-      - [ns:hasName,$(entity),xsd:string]
+      - [foaf:name,$(entity),xsd:string]

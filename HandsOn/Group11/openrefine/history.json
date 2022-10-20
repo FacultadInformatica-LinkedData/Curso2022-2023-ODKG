@@ -488,5 +488,297 @@
     "newColumnName": "ID",
     "columnInsertIndex": 12,
     "description": "Create column ID at index 12 based on column Url using expression grel:substring(value,lastIndexOf(value,\"=\")+1,value.size)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "﻿Titulo",
+    "expression": "grel:value.replace(\"\\\"\",\"\").replace(\" \",\"_\")",
+    "onError": "set-to-blank",
+    "newColumnName": "entidadID",
+    "columnInsertIndex": 1,
+    "description": "Create column entidadID at index 1 based on column ﻿Titulo using expression grel:value.replace(\"\\\"\",\"\").replace(\" \",\"_\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entidadID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Carolina_Prokófiev_(Lina_Codina)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Carolina_Prokófiev"
+      }
+    ],
+    "description": "Mass edit cells in column entidadID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entidadID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Laboratorio_de_Investigaciones_Biológicas_(Cajal)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Laboratorio_de_Investigaciones_Biológicas"
+      }
+    ],
+    "description": "Mass edit cells in column entidadID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entidadID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Santa_María_Micaela_(Madre_Sacramento)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Santa_María_Micaela"
+      }
+    ],
+    "description": "Mass edit cells in column entidadID"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "distrito",
+    "expression": "grel:value.replace(\" \",\"_\")",
+    "onError": "set-to-blank",
+    "newColumnName": "distritoID",
+    "columnInsertIndex": 7,
+    "description": "Create column distritoID at index 7 based on column distrito using expression grel:value.replace(\" \",\"_\")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ID",
+    "expression": "grel:\"WEB_\"+value",
+    "onError": "set-to-blank",
+    "newColumnName": "webID",
+    "columnInsertIndex": 15,
+    "description": "Create column webID at index 15 based on column ID using expression grel:\"WEB_\"+value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ID",
+    "expression": "grel:\"IMG_\"+value",
+    "onError": "set-to-blank",
+    "newColumnName": "imageID",
+    "columnInsertIndex": 15,
+    "description": "Create column imageID at index 15 based on column ID using expression grel:\"IMG_\"+value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "latitud",
+    "expression": "grel:\"GEO_\"+value.substring(3,value)",
+    "onError": "set-to-blank",
+    "newColumnName": "geoID",
+    "columnInsertIndex": 9,
+    "description": "Create column geoID at index 9 based on column latitud using expression grel:\"GEO_\"+value.substring(3,value)"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "imageID",
+    "index": 17,
+    "description": "Move column imageID to position 17"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "imageID",
+    "index": 18,
+    "description": "Move column imageID to position 18"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "imageID",
+    "index": 19,
+    "description": "Move column imageID to position 19"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "webID",
+    "index": 15,
+    "description": "Move column webID to position 15"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "ID",
+    "index": 0,
+    "description": "Move column ID to position 0"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "geoID",
+    "newColumnName": "geo_ID",
+    "description": "Rename column geoID to geo_ID"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "geoID",
+          "expression": "value",
+          "columnName": "geoID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "GEO_435402",
+                "l": "GEO_435402"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "geo_ID",
+    "expression": "join ([coalesce(cells['geo_ID'].value,''),coalesce(cells['longitud'].value,'')],'')",
+    "onError": "keep-original",
+    "newColumnName": "geoID",
+    "columnInsertIndex": 11,
+    "description": "Create column geoID at index 11 based on column geo_ID using expression join ([coalesce(cells['geo_ID'].value,''),coalesce(cells['longitud'].value,'')],'')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "geoID",
+    "expression": "grel:value.replace(\"-3.\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column geoID using expression grel:value.replace(\"-3.\",\"\")"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "geo_ID",
+    "description": "Remove column geo_ID"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "geoID",
+    "index": 9,
+    "description": "Move column geoID to position 9"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion",
+    "expression": "grel:value.replace(\"\\n\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion using expression grel:value.replace(\"\\n\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Comentario",
+    "expression": "grel:value.replace(\"\\n\",\" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Comentario using expression grel:value.replace(\"\\n\",\" \")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿Titulo",
+    "newColumnName": "nombre",
+    "description": "Rename column ﻿Titulo to nombre"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Fecha de Colocación",
+    "newColumnName": "fecha_de_colocacion",
+    "description": "Rename column Fecha de Colocación to fecha_de_colocacion"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Comentario",
+    "newColumnName": "comentario",
+    "description": "Rename column Comentario to comentario"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Palabrasclave",
+    "newColumnName": "palabrasclave",
+    "description": "Rename column Palabrasclave to palabrasclave"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Aportadopor",
+    "newColumnName": "aportadopor",
+    "description": "Rename column Aportadopor to aportadopor"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Url",
+    "newColumnName": "url",
+    "description": "Rename column Url to url"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Editado",
+    "newColumnName": "editado",
+    "description": "Rename column Editado to editado"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Disponible",
+    "newColumnName": "disponible",
+    "description": "Rename column Disponible to disponible"
   }
 ]

@@ -6,6 +6,7 @@
 @prefix map: <http://mapping.example.com/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix vocab: <http://www.dialysisComunidadValenciana.es/> .
 @prefix wiki: <https://www.wikidata.org/wiki/> .
 @prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
@@ -21,13 +22,13 @@ map:map_center_000 rml:logicalSource map:source_000 ;
 map:map_city_000 rml:logicalSource map:source_003 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "city" ;
-	rr:predicateObjectMap map:pom_013, map:pom_014 ;
+	rr:predicateObjectMap map:pom_013, map:pom_014, map:pom_015 ;
 	rr:subjectMap map:s_003 .
 
 map:map_entity_000 rml:logicalSource map:source_004 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "entity" ;
-	rr:predicateObjectMap map:pom_015, map:pom_016 ;
+	rr:predicateObjectMap map:pom_016, map:pom_017 ;
 	rr:subjectMap map:s_004 .
 
 map:map_health_area_000 rml:logicalSource map:source_001 ;
@@ -105,15 +106,20 @@ map:om_013 rdf:type rr:ObjectMap ;
 	rr:constant "http://www.dialysisComunidadValenciana.es/City" ;
 	rr:termType rr:IRI .
 
-map:om_014 rdf:type rr:ObjectMap ;
-	rr:template "http://www.dialysisComunidadValenciana.es/{province}" ;
+map:om_014 rml:reference "city" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
 map:om_015 rdf:type rr:ObjectMap ;
+	rr:template "http://www.dialysisComunidadValenciana.es/{province}" ;
+	rr:termType rr:Literal .
+
+map:om_016 rdf:type rr:ObjectMap ;
 	rr:constant "http://www.dialysisComunidadValenciana.es/Entity" ;
 	rr:termType rr:IRI .
 
-map:om_016 rml:reference "entity" ;
+map:om_017 rml:reference "entity" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
@@ -122,10 +128,10 @@ map:pm_000 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_001 rdf:type rr:PredicateMap ;
-	rr:constant vocab:hasName .
+	rr:constant foaf:name .
 
 map:pm_002 rdf:type rr:PredicateMap ;
-	rr:constant vocab:hasTelephone .
+	rr:constant foaf:phone .
 
 map:pm_003 rdf:type rr:PredicateMap ;
 	rr:constant vocab:hasAddress .
@@ -161,12 +167,15 @@ map:pm_013 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_014 rdf:type rr:PredicateMap ;
-	rr:constant vocab:belongs_to .
+	rr:constant vocab:hasName .
 
 map:pm_015 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant vocab:belongs_to .
 
 map:pm_016 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_017 rdf:type rr:PredicateMap ;
 	rr:constant vocab:hasName .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
@@ -236,6 +245,10 @@ map:pom_015 rdf:type rr:PredicateObjectMap ;
 map:pom_016 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_016 ;
 	rr:predicateMap map:pm_016 .
+
+map:pom_017 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_017 ;
+	rr:predicateMap map:pm_017 .
 
 map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_center_000, map:map_city_000, map:map_entity_000, map:map_health_area_000, map:map_province_000 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .

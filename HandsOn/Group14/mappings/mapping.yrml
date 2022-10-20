@@ -1,30 +1,37 @@
-mappings:
-    TriplesMap1:
-        sources:
-            - [/csv/velib-disponibilite-en-temps-reel-updated.csv~csv]
-        s: http://smartbikes.org/resource/bikeStation/$(Identifiant station)
-        po:
-            - [a, bs:BikeStation]
-            - [bs:inUse ,$(Station en fonctionnement)]
-            - [dbo:capacity ,$(Capacité de la station)]
-            - [bs:availableParkingSpots ,$(Nombre bornettes libres)]
-            - [bs:availableBikes ,$(Nombre total vélos disponibles)]
-            - [bs:availableElectricalBikes ,$(Vélos électriques disponibles)]
-            - [bs:paymentTerminalAvailable ,$(Borne de paiement disponible)]
-            - [paw:lastUpdateOn ,$(Actualisation de la donnée)]
-            - [bs:returnOfVeilbPossible ,$(Retour vélib possible)]
-            - [bs:availableMechanicalBikes, $(Vélos mécaniques disponibles)]
-            - [schema:id, $(Identifiant station)]
-            - p: geo:Coordinate
-              o:
-                -mapping : TriplesMapCoordinate
+prefixes:
+  bs: <http://smartbikes.org/ontology/bikeStation#>
+  dbo: <http://dbpedia.org/ontology/>
+  paw: <http://purl.org/pav/>
+  schema: <https://schema.org/>
+  geo : <http://dbpedia.org/ontology/geo#>
 
-        - [dbo:locatedInArea, $(Nom communes équipées)]
-    TriplesMapCoordinate:
-        sources:
-            - [/csv/velib-disponibilite-en-temps-reel-updated.csv~csv]
-        s: http://smartbikes.org/resource/coordinate/$(Coordonnées géographiques 1)_$(Coordonnées géographiques é)
-        po:
-            - [a, geo:Coordinate)
-            - [schema:latitude, $(Coordonnées géographiques 1)]
-            - [schema:longitude, $(Coordonnées géographiques 2)]
+mappings:
+  station:
+    sources:
+      - ['velib-disponibilite-en-temps-reel-updated.csv~csv']
+    s: http://smartbikes.org/resource/bikeStation/$(Identifiant station)
+    po:
+      - [a, bs:BikeStation]
+      - [bs:inUse ,$(Station en fonctionnement)]
+      - [dbo:capacity ,$(Capacité de la station)]
+      - [bs:availableParkingSpots ,$(Nombre bornettes libres)]
+      - [bs:availableBikes ,$(Nombre total vélos disponibles)]
+      - [bs:availableElectricalBikes ,$(Vélos électriques disponibles)]
+      - [bs:paymentTerminalAvailable ,$(Borne de paiement disponible)]
+      - [paw:lastUpdateOn ,$(Actualisation de la donnée)]
+      - [bs:returnOfVeilbPossible ,$(Retour vélib possible)]
+      - [bs:availableMechanicalBikes, $(Vélos mécaniques disponibles)]
+      - [schema:id, $(Identifiant station)]
+      - [dbo:locatedInArea, $(Nom communes équipées)]
+      - p: geo:coordinate
+        o:
+         - mapping : coordinate
+
+  coordinate:
+    sources:
+      - ['velib-disponibilite-en-temps-reel-updated.csv~csv']
+    s: http://smartbikes.org/resource/coordinate/$(Coordonnées géographiques 1)_$(Coordonnées géographiques é)
+    po:
+      - [a, geo:coordinate]
+      - [schema:latitude, $(Coordonnées géographiques 1)]
+      - [schema:longitude, $(Coordonnées géographiques 2)]

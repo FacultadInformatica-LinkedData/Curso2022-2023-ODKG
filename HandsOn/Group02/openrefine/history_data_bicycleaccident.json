@@ -666,5 +666,225 @@
     "oldColumnName": "num_expediente",
     "newColumnName": "idPerson",
     "description": "Rename column num_expediente to idPerson"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sexo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Mujer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Woman"
+      }
+    ],
+    "description": "Mass edit cells in column sexo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sexo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Hombre"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Man"
+      }
+    ],
+    "description": "Mass edit cells in column sexo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sexo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Desconocido"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Unknown"
+      }
+    ],
+    "description": "Mass edit cells in column sexo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_persona",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Conductor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Driver"
+      }
+    ],
+    "description": "Mass edit cells in column tipo_persona"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_persona",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pasajero"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Passenger"
+      }
+    ],
+    "description": "Mass edit cells in column tipo_persona"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_persona",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Peatón"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pedestrian"
+      }
+    ],
+    "description": "Mass edit cells in column tipo_persona"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Despejado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Clear"
+      }
+    ],
+    "description": "Mass edit cells in column estado_meteorológico"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Granizando"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hail"
+      }
+    ],
+    "description": "Mass edit cells in column estado_meteorológico"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Lluvia débil"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Light rain"
+      }
+    ],
+    "description": "Mass edit cells in column estado_meteorológico"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "LLuvia intensa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Intense rain"
+      }
+    ],
+    "description": "Mass edit cells in column estado_meteorológico"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Nublado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cloudy"
+      }
+    ],
+    "description": "Mass edit cells in column estado_meteorológico"
   }
 ]

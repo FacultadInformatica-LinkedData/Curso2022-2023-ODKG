@@ -1,0 +1,15 @@
+submission,first_name,last_name,country,affiliation,person,corresponding?
+1,Pepe,D,France,Aff1,79,yes
+2,John,J,Romania,Aff2,80,no
+2,Jane,B,Romania,Aff3,81,no
+2,Angela,P,Romania,Aff3,82,yes
+3,Flora,C,Romania,Aff3,83,yes
+3,Lorelei,B,Romania,Aff4,84,yes
+3,Martin,D,Romania,Aff4,85,no
+4,Silvia,G,India,Aff5,86,yes
+5,Riza,P,Switzerland,Aff6,72,yes
+5,David,D,Denmark,Aff7,89,yes
+5,Andrea,B,Switzerland,Aff8,90,yes
+6,Mona,J,Poland,Aff9,91,yes
+6,Vlad,H,Poland,Aff10,92,yes
+6,Zed,P,Canada,Aff11,93,no

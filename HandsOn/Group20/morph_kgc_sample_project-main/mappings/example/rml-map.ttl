@@ -1,0 +1,143 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+  <#kcap_paper>
+  rml:logicalSource [
+    rml:source "./data/example/accepted_paper_topics.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://w3id.org/example/i/Paper_{ID}";
+    rr:class schema:ScholarlyArticle
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:keywords;
+    rr:objectMap [
+      rml:reference "TOPIC"
+    ]
+  ];
+
+rr:predicateObjectMap [
+        rr:predicate schema:author;
+        rr:objectMap [
+            rr:parentTriplesMap <#kcap_author>;
+            rr:joinCondition [
+                rr:child "ID";
+                rr:parent "submission";
+            ];
+        ];
+    ];
+
+rr:predicateObjectMap [
+      rr:predicate schema:hasPart;
+      rr:objectMap [
+          rr:parentTriplesMap <#kcap_resource>;
+          rr:joinCondition [
+              rr:child "ID";
+              rr:parent "submission";
+          ];
+      ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:name;
+    rr:objectMap [
+      rml:reference "TITLE"
+    ]
+  ].
+
+# Second RML map (second source)
+
+  <#kcap_author>
+  rml:logicalSource [
+    rml:source "./data/example/author.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+
+  rr:subjectMap [
+    rr:template "https://w3id.org/example/i/Author_{person}";
+    rr:class schema:Person
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:givenName;
+    rr:objectMap [
+      rml:reference "first_name"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:familyName;
+    rr:objectMap [
+      rml:reference "last_name"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:affiliation;
+    rr:objectMap [
+      rml:reference "affiliation"
+    ]
+  ];
+
+
+  rr:predicateObjectMap [
+    rr:predicate schema:nationality;
+    rr:objectMap [
+      rml:reference "country"
+    ]
+  ].
+
+
+#third RML map (third source)
+<#kcap_resource>
+  rml:logicalSource [
+    rml:source "./data/example/resources_clean.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+
+  rr:subjectMap [
+    rr:template "https://w3id.org/example/i/{type}_{submission}_{field}";
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [
+      rr:template "https://schema.org/{type}";
+      rr:termType rr:IRI;
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:name;
+    rr:objectMap [
+      rml:reference "name"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:description;
+    rr:objectMap [
+      rml:reference "description"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:license;
+    rr:objectMap [
+      rml:reference "license"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:url;
+    rr:objectMap [
+      rml:reference "value"
+    ]
+  ]
+  .

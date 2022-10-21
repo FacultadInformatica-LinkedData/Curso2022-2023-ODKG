@@ -18,8 +18,8 @@ mappings:
       - [rdfs:label,$(center),xsd:string]
       - [ns:hasPhone,$(phone_number),xsd:string]
       - [ns:hasAddress,$(address),xsd:string]
-      - [gn:locatedIn,ns:$(health_area_id)]
-      - [ns:managed_by,ns:$(entity_id)]
+      - [gn:locatedIn,ns:resource/health_area/$(health_area_id)]
+      - [ns:managed_by,ns:resource/entity/$(entity_id)]
       - [geo:long, $(longitude), xsd:float]
       - [geo:lat, $(latitude), xsd:float]
 
@@ -30,7 +30,7 @@ mappings:
     po:
       - [a, ns:Health_Area]
       - [rdfs:label,$(health_area),xsd:string]
-      - [gn:locatedIn,ns:$(city_id)]
+      - [gn:locatedIn,ns:resource/city/$(city_id)]
 
   province:
     sources:
@@ -48,7 +48,7 @@ mappings:
     po:
       - [a, ns:City]
       - [rdfs:label,$(city),xsd:string]
-      - [gn:locatedIn,ns:$(province_id)]
+      - [gn:locatedIn,ns:resource/province/$(province_id)]
       - [owl:sameAs,$(city_uri)]
 
   entity:

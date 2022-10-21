@@ -4,10 +4,10 @@
 
 **Every RDF file:**
 
-- [ ] Uses the .nt extension
-- [ ] Is serialized in the NTriples format
-- [ ] Follows the resource naming strategy
-- [ ] Uses class and property URIs that are the same as those used in the ontology
+- [✓] Uses the .nt extension
+- [✓] Is serialized in the NTriples format
+- [✓] Follows the resource naming strategy
+- [✓] Uses class and property URIs that are the same as those used in the ontology
 
 **Every URI in the RDF files:**
 
@@ -17,15 +17,15 @@
 
 **Every individual in the RDF files:**
 
-- [ ] Has a label with the name of the individual
-- [ ] Has a type
+- [✓] Has a label with the name of the individual
+- [✓] Has a type
 
 **Every value in the RDF files:**
 
-- [ ] Is trimmed
-- [ ] Is properly encoded (e.g., dates, booleans)
-- [ ] Includes its datatype
-- [ ] Uses the correct datatype (e.g., values of 0-1 may be booleans and not integers, not every string made of numbers is a number)
+- [✓] Is trimmed
+- [✓] Is properly encoded (e.g., dates, booleans)
+- [✓] Includes its datatype
+- [✓] Uses the correct datatype (e.g., values of 0-1 may be booleans and not integers, not every string made of numbers is a number)
 
 ## Comments on the self-assessment
 _(If required)_

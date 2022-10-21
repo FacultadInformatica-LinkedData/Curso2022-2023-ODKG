@@ -6,12 +6,10 @@
 @prefix map: <http://mapping.example.com/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix vocab: <http://www.dialysisComunidadValenciana.es/> .
+@prefix ns: <http://www.dialysisComunidadValenciana.es/> .
 @prefix wiki: <https://www.wikidata.org/wiki/> .
-@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix ontology: <http://www.geonames.org/ontology#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
 
 map:map_center_000 rml:logicalSource map:source_000 ;
 	rdf:type rr:TriplesMap ;
@@ -63,11 +61,11 @@ map:om_003 rml:reference "address" ;
 	rr:termType rr:Literal .
 
 map:om_004 rdf:type rr:ObjectMap ;
-	rr:template "http://www.dialysisComunidadValenciana.es/{health_area}" ;
+	rr:template "http://www.dialysisComunidadValenciana.es/{health_area_id}" ;
 	rr:termType rr:Literal .
 
 map:om_005 rdf:type rr:ObjectMap ;
-	rr:template "http://www.dialysisComunidadValenciana.es/{entity}" ;
+	rr:template "http://www.dialysisComunidadValenciana.es/{entity_id}" ;
 	rr:termType rr:Literal .
 
 map:om_006 rml:reference "longitude" ;
@@ -90,11 +88,11 @@ map:om_009 rml:reference "health_area" ;
 	rr:termType rr:Literal .
 
 map:om_010 rdf:type rr:ObjectMap ;
-	rr:template "http://www.dialysisComunidadValenciana.es/{province}" ;
+	rr:template "http://www.dialysisComunidadValenciana.es/{city_id}" ;
 	rr:termType rr:Literal .
 
 map:om_011 rdf:type rr:ObjectMap ;
-	rr:constant "http://www.dialysisComunidadValenciana.es/province" ;
+	rr:constant "http://www.dialysisComunidadValenciana.es/Province" ;
 	rr:termType rr:IRI .
 
 map:om_012 rml:reference "province" ;
@@ -112,7 +110,7 @@ map:om_014 rml:reference "city" ;
 	rr:termType rr:Literal .
 
 map:om_015 rdf:type rr:ObjectMap ;
-	rr:template "http://www.dialysisComunidadValenciana.es/{province}" ;
+	rr:template "http://www.dialysisComunidadValenciana.es/{province_id}" ;
 	rr:termType rr:Literal .
 
 map:om_016 rdf:type rr:ObjectMap ;
@@ -128,19 +126,19 @@ map:pm_000 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_001 rdf:type rr:PredicateMap ;
-	rr:constant foaf:name .
+	rr:constant rdfs:label .
 
 map:pm_002 rdf:type rr:PredicateMap ;
-	rr:constant foaf:phone .
+	rr:constant ns:hasPhone .
 
 map:pm_003 rdf:type rr:PredicateMap ;
-	rr:constant vocab:hasAddress .
+	rr:constant ns:hasAddress .
 
 map:pm_004 rdf:type rr:PredicateMap ;
-	rr:constant vocab:is_in .
+	rr:constant ns:is_in .
 
 map:pm_005 rdf:type rr:PredicateMap ;
-	rr:constant vocab:managed_by .
+	rr:constant ns:managed_by .
 
 map:pm_006 rdf:type rr:PredicateMap ;
 	rr:constant geo:long .
@@ -152,31 +150,31 @@ map:pm_008 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_009 rdf:type rr:PredicateMap ;
-	rr:constant vocab:hasName .
+	rr:constant rdfs:label .
 
 map:pm_010 rdf:type rr:PredicateMap ;
-	rr:constant vocab:belongs_to .
+	rr:constant ns:part_of .
 
 map:pm_011 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_012 rdf:type rr:PredicateMap ;
-	rr:constant vocab:hasName .
+	rr:constant rdfs:label .
 
 map:pm_013 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_014 rdf:type rr:PredicateMap ;
-	rr:constant vocab:hasName .
+	rr:constant rdfs:label .
 
 map:pm_015 rdf:type rr:PredicateMap ;
-	rr:constant vocab:belongs_to .
+	rr:constant ns:belongs_to .
 
 map:pm_016 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_017 rdf:type rr:PredicateMap ;
-	rr:constant vocab:hasName .
+	rr:constant rdfs:label .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_000 ;
@@ -260,31 +258,31 @@ map:s_001 rdf:type rr:SubjectMap ;
 	rr:template "http://www.dialysisComunidadValenciana.es/resource/health_area/{health_area_id}" .
 
 map:s_002 rdf:type rr:SubjectMap ;
-	rr:template "http://www.dialysisComunidadValenciana.es/resource/province/{province}" .
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/province/{province_id}" .
 
 map:s_003 rdf:type rr:SubjectMap ;
-	rr:template "http://www.dialysisComunidadValenciana.es/resource/city/{city}" .
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/city/{city_id}" .
 
 map:s_004 rdf:type rr:SubjectMap ;
-	rr:template "http://www.dialysisComunidadValenciana.es/resource/entity/{entity}" .
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/entity/{entity_id}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
-	rml:source "../csv/relacion-de-centros-de-dialisis-csv-updated.csv" ;
+	rml:source "./relacion-de-centros-de-dialisis-csv-updated.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_001 rml:referenceFormulation ql:CSV ;
-	rml:source "../csv/relacion-de-centros-de-dialisis-csv-updated.csv" ;
+	rml:source "./relacion-de-centros-de-dialisis-csv-updated.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_002 rml:referenceFormulation ql:CSV ;
-	rml:source "../csv/relacion-de-centros-de-dialisis-csv-updated.csv" ;
+	rml:source "./relacion-de-centros-de-dialisis-csv-updated.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_003 rml:referenceFormulation ql:CSV ;
-	rml:source "../csv/relacion-de-centros-de-dialisis-csv-updated.csv" ;
+	rml:source "./relacion-de-centros-de-dialisis-csv-updated.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_004 rml:referenceFormulation ql:CSV ;
-	rml:source "../csv/relacion-de-centros-de-dialisis-csv-updated.csv" ;
+	rml:source "./relacion-de-centros-de-dialisis-csv-updated.csv" ;
 	rdf:type rml:LogicalSource .
 

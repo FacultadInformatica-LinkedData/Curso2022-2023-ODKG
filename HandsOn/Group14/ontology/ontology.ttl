@@ -10,7 +10,6 @@
 bs: a owl:Ontology ;
     dc:description "Ontology code created by Chowlk" .
 
-
 ### Properties ###
 
 ### http://smartbikes.org/ontology/bikeStation#availableBikes
@@ -50,8 +49,8 @@ bs:paymentTerminalAvailable a owl:DatatypeProperty ;
     rdfs:range xsd:boolean .
 
 ### http://smartbikes.org/ontology/bikeStation#returnOfVeilbPossible
-bs:returnOfVeilbPossible a owl:DatatypeProperty ;
-    rdfs:label "return of veilb possible" ;
+bs:returnOfVelibPossible a owl:DatatypeProperty ;
+    rdfs:label "return of velib possible" ;
     rdfs:domain bs:BikeStation ;
     rdfs:range xsd:boolean .
 

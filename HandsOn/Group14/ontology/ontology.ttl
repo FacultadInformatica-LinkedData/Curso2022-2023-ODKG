@@ -1,21 +1,14 @@
 @prefix bs: <http://smartbikes.org/ontology/bikeStation#> .
-@prefix dbo: <https://dbpedia.org/ontology/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix paw: <http://purl.org/pav/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
+@prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 bs: a owl:Ontology ;
     dc:description "Ontology code created by Chowlk" .
-
-### Reused ObjectProperty from another ontology ###
-
-dbo:locatedInArea a owl:FunctionalProperty.
-schema:geo a owl:DatatypeProperty,
-        owl:FunctionalProperty,
-        owl:ObjectProperty.
 
 
 ### Properties ###
@@ -68,11 +61,6 @@ dbo:capacity a owl:DatatypeProperty.
 dbo:locatedInArea a owl:FunctionalProperty.
 paw:lastUpdateOn a owl:DatatypeProperty.
 schema:id a owl:DatatypeProperty.
-schema:geo a owl:DatatypeProperty,
-        owl:FunctionalProperty,
-        owl:ObjectProperty.
-schema:latitude a owl:DatatypeProperty.
-schema:longitude a owl:DatatypeProperty.
 schema:name a owl:DatatypeProperty.
 
 ### Class ###

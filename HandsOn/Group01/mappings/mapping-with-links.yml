@@ -12,7 +12,7 @@ mappings:
   center:
     sources:
       - [./relacion-de-centros-de-dialisis-csv-updated-linked.csv~csv]
-    s: http://www.dialysisComunidadValenciana.es/resource/center/$(center_id)
+    s: ns:resource/center/$(center_id)
     po:
       - [a, ns:Center]
       - [rdfs:label,$(center),xsd:string]
@@ -26,7 +26,7 @@ mappings:
   health_area:
     sources:
       - [./relacion-de-centros-de-dialisis-csv-updated-linked.csv~csv]
-    s: http://www.dialysisComunidadValenciana.es/resource/health_area/$(health_area_id)
+    s: ns:resource/health_area/$(health_area_id)
     po:
       - [a, ns:Health_Area]
       - [rdfs:label,$(health_area),xsd:string]
@@ -35,7 +35,7 @@ mappings:
   province:
     sources:
       - [./relacion-de-centros-de-dialisis-csv-updated-linked.csv~csv]
-    s: http://www.dialysisComunidadValenciana.es/resource/province/$(province_id)
+    s: ns:resource/province/$(province_id)
     po:
       - [a, ns:Province]
       - [rdfs:label,$(province),xsd:string]
@@ -44,7 +44,7 @@ mappings:
   city:
     sources:
       - [./relacion-de-centros-de-dialisis-csv-updated-linked.csv~csv]
-    s: http://www.dialysisComunidadValenciana.es/resource/city/$(city_id)
+    s: ns:resource/city/$(city_id)
     po:
       - [a, ns:City]
       - [rdfs:label,$(city),xsd:string]
@@ -54,7 +54,7 @@ mappings:
   entity:
     sources:
       - [./relacion-de-centros-de-dialisis-csv-updated-linked.csv~csv]
-    s: http://www.dialysisComunidadValenciana.es/resource/entity/$(entity_id)
+    s: ns:resource/entity/$(entity_id)
     po:
       - [a, ns:Entity]
       - [rdfs:label,$(entity),xsd:string]

@@ -9,7 +9,7 @@
 @prefix ns: <http://www.dialysisComunidadValenciana.es/> .
 @prefix wiki: <https://www.wikidata.org/wiki/> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
 
 map:map_center_000 rml:logicalSource map:source_000 ;
 	rdf:type rr:TriplesMap ;
@@ -135,7 +135,7 @@ map:pm_003 rdf:type rr:PredicateMap ;
 	rr:constant ns:hasAddress .
 
 map:pm_004 rdf:type rr:PredicateMap ;
-	rr:constant ns:is_in .
+	rr:constant gn:locatedIn .
 
 map:pm_005 rdf:type rr:PredicateMap ;
 	rr:constant ns:managed_by .
@@ -153,7 +153,7 @@ map:pm_009 rdf:type rr:PredicateMap ;
 	rr:constant rdfs:label .
 
 map:pm_010 rdf:type rr:PredicateMap ;
-	rr:constant ns:part_of .
+	rr:constant gn:locatedIn .
 
 map:pm_011 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
@@ -168,7 +168,7 @@ map:pm_014 rdf:type rr:PredicateMap ;
 	rr:constant rdfs:label .
 
 map:pm_015 rdf:type rr:PredicateMap ;
-	rr:constant ns:belongs_to .
+	rr:constant gn:locatedIn .
 
 map:pm_016 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .

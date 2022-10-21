@@ -1,0 +1,277 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "COORD, X",
+    "description": "Remove column COORD, X"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COORD, Y",
+    "description": "Remove column COORD, Y"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "FUENCARRAL - EL PARDO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FUENCARRAL-EL PARDO"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "MONCLOA-ARAVACA     "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MONCLOA-ARAVACA"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PUENTE VALLECAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PUENTE DE VALLECAS"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "SALAMANCA           "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SALAMANCA"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "SAN BLAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SAN BLAS-CANILLEJAS"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "SAN BLAS-CANILLEJAS "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SAN BLAS-CANILLEJAS"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "VILLA VALLECAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VILLA DE VALLECAS"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "VILLA DE VALLECAS   "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VILLA DE VALLECAS"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE",
+    "newColumnName": "COMPLEMENTO DE DIRECCION",
+    "description": "Rename column NOMBRE to COMPLEMENTO DE DIRECCION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "FUENTE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FOUNTAIN"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ASEOS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RESTROOM"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TIPO",
+    "newColumnName": "TYPE",
+    "description": "Rename column TIPO to TYPE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "LATITUD",
+    "newColumnName": "LATITUDE",
+    "description": "Rename column LATITUD to LATITUDE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "LONGITUD",
+    "newColumnName": "LONGITUDE",
+    "description": "Rename column LONGITUD to LONGITUDE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "COMPLEMENTO DE DIRECCION",
+    "newColumnName": "ALTERNATIVE ADDRESS",
+    "description": "Rename column COMPLEMENTO DE DIRECCION to ALTERNATIVE ADDRESS"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DIRECCION",
+    "newColumnName": "ADDRESS",
+    "description": "Rename column DIRECCION to ADDRESS"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DISTRITO",
+    "newColumnName": "DISTRICT",
+    "description": "Rename column DISTRITO to DISTRICT"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CODIGO J.M.",
+    "newColumnName": "DISTRICT CODE",
+    "description": "Rename column CODIGO J.M. to DISTRICT CODE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CODIGO",
+    "newColumnName": "CODE",
+    "description": "Rename column CODIGO to CODE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CODE",
+    "newColumnName": "ID",
+    "description": "Rename column CODE to ID"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ALTERNATIVE ADDRESS",
+    "description": "Remove column ALTERNATIVE ADDRESS"
+  }
+]

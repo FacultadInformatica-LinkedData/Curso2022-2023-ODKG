@@ -1,0 +1,597 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "gis_x",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column gis_x using expression value.toNumber()"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "fecha_baja",
+          "columnName": "fecha_baja",
+          "query": "^\\d+",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "fecha_alta",
+    "description": "Remove column fecha_alta"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "fecha_baja",
+    "description": "Remove column fecha_baja"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_finca",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column num_finca using expression value.toString()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "num_finca",
+          "expression": "value",
+          "columnName": "num_finca",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "9:00 AM",
+                "l": "9:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "num_finca",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "9:00 AM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "9"
+      }
+    ],
+    "description": "Mass edit cells in column num_finca"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "num_finca",
+          "expression": "value",
+          "columnName": "num_finca",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "7:00 AM",
+                "l": "7:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "num_finca",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "7:00 AM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "7"
+      }
+    ],
+    "description": "Mass edit cells in column num_finca"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "num_finca",
+          "expression": "value",
+          "columnName": "num_finca",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "6:00 AM",
+                "l": "6:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "num_finca",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "6:00 AM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "6"
+      }
+    ],
+    "description": "Mass edit cells in column num_finca"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "num_finca",
+          "expression": "value",
+          "columnName": "num_finca",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "5:00 AM",
+                "l": "5:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "num_finca",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "5:00 AM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5"
+      }
+    ],
+    "description": "Mass edit cells in column num_finca"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "num_finca",
+          "expression": "value",
+          "columnName": "num_finca",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "4:00 AM",
+                "l": "4:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "num_finca",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "4:00 AM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4"
+      }
+    ],
+    "description": "Mass edit cells in column num_finca"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_finca",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "3:00 AM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3"
+      }
+    ],
+    "description": "Mass edit cells in column num_finca"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_finca",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2:00 AM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2"
+      }
+    ],
+    "description": "Mass edit cells in column num_finca"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_finca",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "12:00 AM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "12"
+      }
+    ],
+    "description": "Mass edit cells in column num_finca"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_finca",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1:00 AM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column num_finca"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "num_finca",
+          "expression": "value",
+          "columnName": "num_finca",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "S/N",
+                "l": "S/N"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_finca",
+    "expression": "value.replace(/^FRENTE /,\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column num_finca using expression value.replace(/^FRENTE /,\"\")"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "barrio",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column barrio by separator"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column distrito by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito 1",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column distrito 1 using expression value.toString()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "distrito 2",
+    "description": "Remove column distrito 2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "barrio 2",
+    "description": "Remove column barrio 2"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito 1",
+    "expression": "value.replace(/^\\d$/,\"^0$1$\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column distrito 1 using expression value.replace(/^\\d$/,\"^0$1$\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito 1",
+    "expression": "value.replace(/^\\d$/,\"^0$0\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column distrito 1 using expression value.replace(/^\\d$/,\"^0$0\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito 1",
+    "expression": "value.replace(\"^\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column distrito 1 using expression value.replace(\"^\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "calle",
+    "expression": "value.replace(/^([^,]+), ([^,]+), ([^,]+)$/,\"^$2 $3 $1\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column calle using expression value.replace(/^([^,]+), ([^,]+), ([^,]+)$/,\"^$2 $3 $1\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "calle",
+    "expression": "value.replace(\"^\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column calle using expression value.replace(\"^\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "calle",
+    "expression": "value.replace(/^([^,]+), ([^,]+)$/,\"^$2 $1\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column calle using expression value.replace(/^([^,]+), ([^,]+)$/,\"^$2 $1\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "calle",
+    "expression": "value.replace(\"^\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column calle using expression value.replace(\"^\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "calle",
+    "expression": "value.replace(\"¥\",\"Ñ\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column calle using expression value.replace(\"¥\",\"Ñ\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito 1",
+    "expression": "grel:\"http://www.group10.org/pl/resource/District/D\"+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column distrito 1 using expression grel:\"http://www.group10.org/pl/resource/District/D\"+value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "barrio 1",
+    "expression": "grel:\"http://www.group10.org/pl/resource/Neighborhood/N\"+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column barrio 1 using expression grel:\"http://www.group10.org/pl/resource/Neighborhood/N\"+value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "matricula",
+    "expression": "grel:\"http://www.group10.org/pl/resource/ParkingMeter/PM\"+value",
+    "onError": "set-to-blank",
+    "newColumnName": "identificador",
+    "columnInsertIndex": 7,
+    "description": "Create column identificador at index 7 based on column matricula using expression grel:\"http://www.group10.org/pl/resource/ParkingMeter/PM\"+value"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "identificador",
+      "matricula",
+      "gis_x",
+      "gis_y",
+      "distrito 1",
+      "barrio 1",
+      "calle",
+      "num_finca"
+    ],
+    "description": "Reorder columns"
+  }
+  {
+    "op": "core/column-removal",
+    "columnName": "gis_x",
+    "description": "Remove column gis_x"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "gis_y",
+    "description": "Remove column gis_y"
+  }
+]

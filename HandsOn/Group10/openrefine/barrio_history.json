@@ -1,0 +1,152 @@
+[
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "barrio",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column barrio by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "barrio 2",
+    "newColumnName": "Nombre",
+    "description": "Rename column barrio 2 to Nombre"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "barrio 1",
+    "newColumnName": "Codigo",
+    "description": "Rename column barrio 1 to Codigo"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Codigo",
+    "expression": "grel:\"http://www.group10.org/pl/resource/Neighborhood/N\"+value",
+    "onError": "set-to-blank",
+    "newColumnName": "Identificador",
+    "columnInsertIndex": 2,
+    "description": "Create column Identificador at index 2 based on column Codigo using expression grel:\"http://www.group10.org/pl/resource/Neighborhood/N\"+value"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column",
+    "description": "Remove column Column"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Codigo",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "distrito",
+    "columnInsertIndex": 1,
+    "description": "Create column distrito at index 1 based on column Codigo using expression grel:value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value.replace(/^(\\d+)(-\\d+)$/,\"^$1\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column distrito using expression value.replace(/^(\\d+)(-\\d+)$/,\"^$1\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value.replace(\"^\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column distrito using expression value.replace(\"^\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value.replace(/^\\d+$/,\"^http://www.group10.org/pl/resource/District/D$0\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column distrito using expression value.replace(/^\\d+$/,\"^http://www.group10.org/pl/resource/District/D$0\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value.replace(\"^\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column distrito using expression value.replace(\"^\",\"\")"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "Identificador",
+      "Nombre",
+      "Codigo",
+      "distrito"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre",
+    "description": "Blank down cells in column Nombre"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Nombre",
+          "expression": "value",
+          "columnName": "Nombre",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  }
+]

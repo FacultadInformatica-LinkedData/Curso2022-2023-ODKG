@@ -6,11 +6,12 @@ prefixes:
   wiki: https://www.wikidata.org/wiki/
   geo: http://www.w3.org/2003/01/geo/wgs84_pos#
   gn: http://www.geonames.org/ontology#
+  owl: http://www.w3.org/2002/07/owl#
 
 mappings:
   center:
     sources:
-      - [./relacion-de-centros-de-dialisis-csv-updated.csv~csv]
+      - [./relacion-de-centros-de-dialisis-csv-updated-linked.csv~csv]
     s: http://www.dialysisComunidadValenciana.es/resource/center/$(center_id)
     po:
       - [a, ns:Center]
@@ -24,7 +25,7 @@ mappings:
 
   health_area:
     sources:
-      - [./relacion-de-centros-de-dialisis-csv-updated.csv~csv]
+      - [./relacion-de-centros-de-dialisis-csv-updated-linked.csv~csv]
     s: http://www.dialysisComunidadValenciana.es/resource/health_area/$(health_area_id)
     po:
       - [a, ns:Health_Area]
@@ -33,25 +34,28 @@ mappings:
 
   province:
     sources:
-      - [./relacion-de-centros-de-dialisis-csv-updated.csv~csv]
+      - [./relacion-de-centros-de-dialisis-csv-updated-linked.csv~csv]
     s: http://www.dialysisComunidadValenciana.es/resource/province/$(province_id)
     po:
       - [a, ns:Province]
       - [rdfs:label,$(province),xsd:string]
+      - [owl:sameAs,$(province_uri)]
   
   city:
     sources:
-      - [./relacion-de-centros-de-dialisis-csv-updated.csv~csv]
+      - [./relacion-de-centros-de-dialisis-csv-updated-linked.csv~csv]
     s: http://www.dialysisComunidadValenciana.es/resource/city/$(city_id)
     po:
       - [a, ns:City]
       - [rdfs:label,$(city),xsd:string]
       - [gn:locatedIn,ns:$(province_id)]
+      - [owl:sameAs,$(city_uri)]
 
   entity:
     sources:
-      - [./relacion-de-centros-de-dialisis-csv-updated.csv~csv]
+      - [./relacion-de-centros-de-dialisis-csv-updated-linked.csv~csv]
     s: http://www.dialysisComunidadValenciana.es/resource/entity/$(entity_id)
     po:
       - [a, ns:Entity]
       - [rdfs:label,$(entity),xsd:string]
+      - [owl:sameAs,$(entity_uri)]

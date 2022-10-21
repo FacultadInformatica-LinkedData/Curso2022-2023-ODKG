@@ -1,4 +1,4 @@
-PREFIX ns1: <http://www.group10.org/pl/ontology/ParkingLotsMadrid#> .
+PREFIX ns1: <http://www.group10.org/pl/ontology/ParkingLotsMadrid#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 # All districts

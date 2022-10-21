@@ -2,6 +2,7 @@
 @prefix gn: <http://www.geonames.org/ontology#> .
 @prefix map: <http://mapping.example.com/> .
 @prefix ns: <http://www.dialysisComunidadValenciana.es/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -24,7 +25,7 @@
   ns:hasAddress "Avda. Corazon de Jesus, 157";
   ns:hasPhone "964663333";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/b_braun";
-  rdfs:label "BBraun VALL D'UIXï¿½";
+  rdfs:label "BBraun VALL D'UIXÒ";
   geo:lat "39.822809154000026"^^xsd:float;
   geo:long "-0.22122234399995402"^^xsd:float .
 
@@ -46,7 +47,7 @@
 
 <http://www.dialysisComunidadValenciana.es/resource/center/casas_reposo_y_sanatorio_ppto_socorro>
   a ns:Center;
-  ns:hasAddress "C/ Vicent Andrï¿½s Estellï¿½s, 3";
+  ns:hasAddress "C/ Vicent Andrés Estellés, 3";
   ns:hasPhone "965201100";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/casa_de_reposo_y_sanatorio_ppto_socorro_sa";
   rdfs:label "CASAS REPOSO Y SANATORIO PPTO. SOCORRO";
@@ -58,25 +59,25 @@
   ns:hasAddress "C/ Profesora Ana Rojo, 1";
   ns:hasPhone "961801811";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/diaverum";
-  rdfs:label "CLï¿½NICA DIAVERUM ALFAFAR";
+  rdfs:label "CLÍNICA DIAVERUM ALFAFAR";
   geo:lat "39.41751001400007"^^xsd:float;
   geo:long "-0.38313997899996305"^^xsd:float .
 
 <http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_alicante>
   a ns:Center;
-  ns:hasAddress "C/ Prociï¿½n, 3";
+  ns:hasAddress "C/ Proción, 3";
   ns:hasPhone "627427220";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/diaverum";
-  rdfs:label "CLï¿½NICA DIAVERUM ALICANTE";
+  rdfs:label "CLÍNICA DIAVERUM ALICANTE";
   geo:lat "38.34516355000005"^^xsd:float;
   geo:long "-0.507742138999958"^^xsd:float .
 
 <http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_burjassot>
   a ns:Center;
-  ns:hasAddress "C/ Sï¿½quia de Montcada, s/n";
+  ns:hasAddress "C/ Sèquia de Montcada, s/n";
   ns:hasPhone "963160586";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/diaverum";
-  rdfs:label "CLï¿½NICA DIAVERUM BURJASSOT";
+  rdfs:label "CLÍNICA DIAVERUM BURJASSOT";
   geo:lat "39.503047550000076"^^xsd:float;
   geo:long "-0.40671514699994304"^^xsd:float .
 
@@ -85,7 +86,7 @@
   ns:hasAddress "C/ Puig, 10";
   ns:hasPhone "964233773";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/diaverum";
-  rdfs:label "CLï¿½NICA DIAVERUM CASTELLï¿½";
+  rdfs:label "CLÍNICA DIAVERUM CASTELLÓ";
   geo:lat "39.992099996000036"^^xsd:float;
   geo:long "-0.03252002399995"^^xsd:float .
 
@@ -94,7 +95,7 @@
   ns:hasAddress "C/ Luis Vives, 20";
   ns:hasPhone "960905207";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/diaverum";
-  rdfs:label "CLï¿½NICA DIAVERUM CATARROJA";
+  rdfs:label "CLÍNICA DIAVERUM CATARROJA";
   geo:lat "39.401840004000064"^^xsd:float;
   geo:long "-0.39917003399995105"^^xsd:float .
 
@@ -103,7 +104,7 @@
   ns:hasAddress "Avda. De Jubalcoi, 36";
   ns:hasPhone "966901336";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/diaverum";
-  rdfs:label "CLï¿½NICA DIAVERUM ELCHE";
+  rdfs:label "CLÍNICA DIAVERUM ELCHE";
   geo:lat "38.27868201100006"^^xsd:float;
   geo:long "-0.675735929999973"^^xsd:float .
 
@@ -112,7 +113,7 @@
   ns:hasAddress "C/. Reina Violante, s/n (Esq. Padre Barranco, 42)";
   ns:hasPhone "960905123";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/diaverum";
-  rdfs:label "CLï¿½NICA DIAVERUM GAMAPAL";
+  rdfs:label "CLÍNICA DIAVERUM GAMAPAL";
   geo:lat "39.48764005700008"^^xsd:float;
   geo:long "-0.40356994599994706"^^xsd:float .
 
@@ -121,7 +122,7 @@
   ns:hasAddress "C/ Jaume II, 51-55";
   ns:hasPhone "960901184";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/diaverum";
-  rdfs:label "CLï¿½NICA DIAVERUM GANDï¿½A";
+  rdfs:label "CLÍNICA DIAVERUM GANDÍA";
   geo:lat "38.97523000800004"^^xsd:float;
   geo:long "-0.181829966999941"^^xsd:float .
 
@@ -130,7 +131,7 @@
   ns:hasAddress "C/ Ausias March, 20";
   ns:hasPhone "960905162";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/diaverum";
-  rdfs:label "CLï¿½NICA DIAVERUM LLï¿½RIA";
+  rdfs:label "CLÍNICA DIAVERUM LLÍRIA";
   geo:lat "39.63063000200003"^^xsd:float;
   geo:long "-0.600239988999931"^^xsd:float .
 
@@ -139,25 +140,25 @@
   ns:hasAddress "C/ Primero de Mayo, 16 bajo.";
   ns:hasPhone "963570012";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/diaverum";
-  rdfs:label "CLï¿½NICA DIAVERUM NEFROCLUB";
+  rdfs:label "CLÍNICA DIAVERUM NEFROCLUB";
   geo:lat "39.449020019000045"^^xsd:float;
   geo:long "-0.38753000099995905"^^xsd:float .
 
 <http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_orihuela>
   a ns:Center;
-  ns:hasAddress "C/ Temï¿½stocles Almagro, 26-30";
+  ns:hasAddress "C/ Temístocles Almagro, 26-30";
   ns:hasPhone "966901510";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/diaverum";
-  rdfs:label "CLï¿½NICA DIAVERUM ORIHUELA";
+  rdfs:label "CLÍNICA DIAVERUM ORIHUELA";
   geo:lat "38.08113445300006"^^xsd:float;
   geo:long "-0.939842712999961"^^xsd:float .
 
 <http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_oropesa>
   a ns:Center;
-  ns:hasAddress "C/ Josï¿½ Ribera Forner, 94-96";
+  ns:hasAddress "C/ José Ribera Forner, 94-96";
   ns:hasPhone "964313387";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/diaverum";
-  rdfs:label "CLï¿½NICA DIAVERUM OROPESA";
+  rdfs:label "CLÍNICA DIAVERUM OROPESA";
   geo:lat "40.099539985000035"^^xsd:float;
   geo:long "0.134770023000044"^^xsd:float .
 
@@ -166,7 +167,7 @@
   ns:hasAddress "C/ Vicente Cardona, 22";
   ns:hasPhone "960905150";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/diaverum";
-  rdfs:label "CLï¿½NICA DIAVERUM PATERNA";
+  rdfs:label "CLÍNICA DIAVERUM PATERNA";
   geo:lat "39.49954001200007"^^xsd:float;
   geo:long "-0.44215997699996"^^xsd:float .
 
@@ -175,25 +176,25 @@
   ns:hasAddress "C/ Urani, 27";
   ns:hasPhone "961801690";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/diaverum";
-  rdfs:label "CLï¿½NICA DIAVERUM PUERTO SAGUNTO";
+  rdfs:label "CLÍNICA DIAVERUM PUERTO SAGUNTO";
   geo:lat "39.668620014000055"^^xsd:float;
   geo:long "-0.217539975999955"^^xsd:float .
 
 <http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_torrent>
   a ns:Center;
-  ns:hasAddress "C/ Mï¿½sic Josï¿½ Ortï¿½ Soriano, 25";
+  ns:hasAddress "C/ Músic José Ortí Soriano, 25";
   ns:hasPhone "";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/diaverum";
-  rdfs:label "CLï¿½NICA DIAVERUM TORRENT";
+  rdfs:label "CLÍNICA DIAVERUM TORRENT";
   geo:lat "39.439770002000046"^^xsd:float;
   geo:long "-0.45715000499995906"^^xsd:float .
 
 <http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_valencia>
   a ns:Center;
-  ns:hasAddress "C/ Alcï¿½sser, 54";
+  ns:hasAddress "C/ Alcàsser, 54";
   ns:hasPhone "";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/diaverum";
-  rdfs:label "CLï¿½NICA DIAVERUM VALENCIA";
+  rdfs:label "CLÍNICA DIAVERUM VALENCIA";
   geo:lat "39.47184000100003"^^xsd:float;
   geo:long "-0.41070001199994904"^^xsd:float .
 
@@ -202,7 +203,7 @@
   ns:hasAddress "C/ San Blas, 47 - C/ Ruiz Picasso, 35";
   ns:hasPhone "964401144";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/diaverum";
-  rdfs:label "CLï¿½NICA DIAVERUM VINARï¿½S";
+  rdfs:label "CLÍNICA DIAVERUM VINARÒS";
   geo:lat "40.46628001600004"^^xsd:float;
   geo:long "0.46827002500003806"^^xsd:float .
 
@@ -211,7 +212,7 @@
   ns:hasAddress "C/ Dels Corretgers, 68";
   ns:hasPhone "";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/diaverum";
-  rdfs:label "CLï¿½NICA DIAVERUM XIRIVELLA";
+  rdfs:label "CLÍNICA DIAVERUM XIRIVELLA";
   geo:lat "39.45415166400005"^^xsd:float;
   geo:long "-0.43512652399994"^^xsd:float .
 
@@ -220,7 +221,7 @@
   ns:hasAddress "Avda. Denia, 103";
   ns:hasPhone "965268000";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/clinica_vistahermosa_grupo_hla";
-  rdfs:label "CLï¿½NICA VISTAHERMOSA GRUPO HLA";
+  rdfs:label "CLÍNICA VISTAHERMOSA GRUPO HLA";
   geo:lat "38.36285998000005"^^xsd:float;
   geo:long "-0.46312998999997"^^xsd:float .
 
@@ -228,12 +229,12 @@
   ns:hasAddress "Avda. Alfonso Puchades, 8";
   ns:hasPhone "965853850";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/centro_medico_salus_baleares";
-  rdfs:label "H CLï¿½NICA BENIDORM";
+  rdfs:label "H CLÍNICA BENIDORM";
   geo:lat "38.54268542800003"^^xsd:float;
   geo:long "-0.12703859599997702"^^xsd:float .
 
 <http://www.dialysisComunidadValenciana.es/resource/center/h_general> a ns:Center;
-  ns:hasAddress "Avda. Benicï¿½ssim, s/n", "C/ Pintor Baeza s/n";
+  ns:hasAddress "Avda. Benicàssim, s/n", "C/ Pintor Baeza s/n";
   ns:hasPhone "964725223", "965938493/95";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/generalitat_valenciana",
     "http://www.dialysisComunidadValenciana.es/social_security_in_spain";
@@ -259,7 +260,7 @@
 
 <http://www.dialysisComunidadValenciana.es/resource/center/h_general_universitario_elda>
   a ns:Center;
-  ns:hasAddress "Crtra. Sax ï¿½ La Torreta, s/n";
+  ns:hasAddress "Crtra. Sax – La Torreta, s/n";
   ns:hasPhone "966989071";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/generalitat_valenciana";
   rdfs:label "H GENERAL UNIVERSITARIO ELDA";
@@ -298,7 +299,7 @@
   ns:hasAddress "C/ Tonico Sansano Mora, 14";
   ns:hasPhone "966679800";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/elche_crevillente_salud";
-  rdfs:label "H UNIVERSITARIO VINALOPï¿½";
+  rdfs:label "H UNIVERSITARIO VINALOPÓ";
   geo:lat "38.25508728800003"^^xsd:float;
   geo:long "-0.714308237999944"^^xsd:float .
 
@@ -307,7 +308,7 @@
   ns:hasAddress "C/ Caramanxel. s/n";
   ns:hasPhone "965537454";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/generalitat_valenciana";
-  rdfs:label "H VIRGEN DE LOS Lï¿½RIOS";
+  rdfs:label "H VIRGEN DE LOS LÍRIOS";
   geo:lat "38.70549626300004"^^xsd:float;
   geo:long "-0.471557185999927"^^xsd:float .
 
@@ -329,7 +330,7 @@
 
 <http://www.dialysisComunidadValenciana.es/resource/center/vithas_h_perpetuo_internacional>
   a ns:Center;
-  ns:hasAddress "Plaza Doctor Gï¿½mez Ulla, 15";
+  ns:hasAddress "Plaza Doctor Gómez Ulla, 15";
   ns:hasPhone "965201100";
   ns:managed_by "http://www.dialysisComunidadValenciana.es/vithas_alicante_sl";
   rdfs:label "VITHAS H PERPETUO INTERNACIONAL";
@@ -338,154 +339,194 @@
 
 <http://www.dialysisComunidadValenciana.es/resource/city/alfafar> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/valencia";
-  rdfs:label "Alfafar" .
+  rdfs:label "Alfafar";
+  owl:sameAs "https://www.wikidata.org/wiki/Q1648851" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/alicante> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/alicante";
-  rdfs:label "Alicante" .
+  rdfs:label "Alicante";
+  owl:sameAs "https://www.wikidata.org/wiki/Q11959" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/benidorm> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/alicante";
-  rdfs:label "Benidorm" .
+  rdfs:label "Benidorm";
+  owl:sameAs "https://www.wikidata.org/wiki/Q487981" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/burjassot> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/valencia";
-  rdfs:label "Burjassot" .
+  rdfs:label "Burjassot";
+  owl:sameAs "https://www.wikidata.org/wiki/Q55688" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/castello_de_la_plana> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/castellon";
-  rdfs:label "Castellï¿½ de la Plana" .
+  rdfs:label "Castelló de la Plana";
+  owl:sameAs "https://www.wikidata.org/wiki/Q15092" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/catarroja> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/valencia";
-  rdfs:label "Catarroja" .
+  rdfs:label "Catarroja";
+  owl:sameAs "https://www.wikidata.org/wiki/Q1771131" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/denia> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/alicante";
-  rdfs:label "Dï¿½nia" .
+  rdfs:label "Dénia";
+  owl:sameAs "https://www.wikidata.org/wiki/Q646725" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/elche> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/alicante";
-  rdfs:label "Elche" .
+  rdfs:label "Elche";
+  owl:sameAs "https://www.wikidata.org/wiki/Q10509" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/elda> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/alicante";
-  rdfs:label "Elda" .
+  rdfs:label "Elda";
+  owl:sameAs "https://www.wikidata.org/wiki/Q608985" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/gandia> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/valencia";
-  rdfs:label "Gandia" .
+  rdfs:label "Gandia";
+  owl:sameAs "https://www.wikidata.org/wiki/Q33532" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/la_vall_d_uixo> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/castellon";
-  rdfs:label "La Vall d'Uixï¿½" .
+  rdfs:label "La Vall d'Uixó";
+  owl:sameAs "https://www.wikidata.org/wiki/Q1637512" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/la_vila_joiosa> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/alicante";
-  rdfs:label "La Vila Joiosa" .
+  rdfs:label "La Vila Joiosa";
+  owl:sameAs "https://www.wikidata.org/wiki/Q935589" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/lliria> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/valencia";
-  rdfs:label "Llï¿½ria" .
+  rdfs:label "Llíria";
+  owl:sameAs "https://www.wikidata.org/wiki/Q23067" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/masamagrell> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/valencia";
-  rdfs:label "Masamagrell" .
+  rdfs:label "Masamagrell";
+  owl:sameAs "https://www.wikidata.org/wiki/Q1313044" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/orihuela> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/alicante";
-  rdfs:label "Orihuela" .
+  rdfs:label "Orihuela";
+  owl:sameAs "https://www.wikidata.org/wiki/Q487786" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/oropesa_del_mar> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/castellon";
-  rdfs:label "Oropesa del Mar" .
+  rdfs:label "Oropesa del Mar";
+  owl:sameAs "https://www.wikidata.org/wiki/Q1596349" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/paterna> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/valencia";
-  rdfs:label "Paterna" .
+  rdfs:label "Paterna";
+  owl:sameAs "https://www.wikidata.org/wiki/Q23042" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/port_de_sagunt> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/valencia";
-  rdfs:label "Port de Sagunt" .
+  rdfs:label "Port de Sagunt";
+  owl:sameAs "https://www.wikidata.org/wiki/Q47497" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/requena> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/valencia";
-  rdfs:label "Requena" .
+  rdfs:label "Requena";
+  owl:sameAs "https://www.wikidata.org/wiki/Q302099" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/san_vicente_del_raspeig>
   a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/alicante";
-  rdfs:label "San Vicente del Raspeig" .
+  rdfs:label "San Vicente del Raspeig";
+  owl:sameAs "https://www.wikidata.org/wiki/Q491667" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/torrent> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/valencia";
-  rdfs:label "Torrent" .
+  rdfs:label "Torrent";
+  owl:sameAs "https://www.wikidata.org/wiki/Q161945" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/torrevieja> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/alicante";
-  rdfs:label "Torrevieja" .
+  rdfs:label "Torrevieja";
+  owl:sameAs "https://www.wikidata.org/wiki/Q221749" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/valencia> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/valencia";
-  rdfs:label "Valencia" .
+  rdfs:label "Valencia";
+  owl:sameAs "https://www.wikidata.org/wiki/Q8818" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/vila_real> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/castellon";
-  rdfs:label "Vila-real" .
+  rdfs:label "Vila-real";
+  owl:sameAs "https://www.wikidata.org/wiki/Q12292" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/vinaros> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/castellon";
-  rdfs:label "Vinarï¿½s" .
+  rdfs:label "Vinaròs";
+  owl:sameAs "https://www.wikidata.org/wiki/Q917888" .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/xirivella> a ns:City;
   gn:locatedIn "http://www.dialysisComunidadValenciana.es/valencia";
-  rdfs:label "Xirivella" .
+  rdfs:label "Xirivella";
+  owl:sameAs "https://www.wikidata.org/wiki/Q13725" .
 
 <http://www.dialysisComunidadValenciana.es/resource/entity/b_braun> a ns:Entity;
-  rdfs:label "B. Braun" .
+  rdfs:label "B. Braun";
+  owl:sameAs "https://www.wikidata.org/wiki/Q644835" .
 
 <http://www.dialysisComunidadValenciana.es/resource/entity/casa_de_reposo_y_sanatorio_ppto_socorro_sa>
   a ns:Entity;
-  rdfs:label "CASA DE REPOSO Y SANATORIO PPTO. SOCORRO SA" .
+  rdfs:label "CASA DE REPOSO Y SANATORIO PPTO. SOCORRO SA";
+  owl:sameAs "" .
 
 <http://www.dialysisComunidadValenciana.es/resource/entity/centro_medico_salus_baleares>
   a ns:Entity;
-  rdfs:label "CENTRO Mï¿½DICO SALUS BALEARES" .
+  rdfs:label "CENTRO MÉDICO SALUS BALEARES";
+  owl:sameAs "" .
 
 <http://www.dialysisComunidadValenciana.es/resource/entity/clinica_vistahermosa_grupo_hla>
   a ns:Entity;
-  rdfs:label "Clï¿½nica Vistahermosa Grupo Hla" .
+  rdfs:label "Clínica Vistahermosa Grupo Hla";
+  owl:sameAs "https://www.wikidata.org/wiki/Q87761418" .
 
 <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum> a ns:Entity;
-  rdfs:label "Diaverum" .
+  rdfs:label "Diaverum";
+  owl:sameAs "https://www.wikidata.org/wiki/Q18588976" .
 
 <http://www.dialysisComunidadValenciana.es/resource/entity/elche_crevillente_salud>
   a ns:Entity;
-  rdfs:label "ELCHE CREVILLENTE SALUD" .
+  rdfs:label "ELCHE CREVILLENTE SALUD";
+  owl:sameAs "" .
 
 <http://www.dialysisComunidadValenciana.es/resource/entity/generalitat_valenciana>
   a ns:Entity;
-  rdfs:label "Generalitat Valenciana" .
+  rdfs:label "Generalitat Valenciana";
+  owl:sameAs "https://www.wikidata.org/wiki/Q2477285" .
 
 <http://www.dialysisComunidadValenciana.es/resource/entity/rivera_salud> a ns:Entity;
-  rdfs:label "RIVERA SALUD" .
+  rdfs:label "RIVERA SALUD";
+  owl:sameAs "" .
 
 <http://www.dialysisComunidadValenciana.es/resource/entity/social_security_in_spain>
   a ns:Entity;
-  rdfs:label "Social Security in Spain" .
+  rdfs:label "Social Security in Spain";
+  owl:sameAs "https://www.wikidata.org/wiki/Q2878592" .
 
 <http://www.dialysisComunidadValenciana.es/resource/entity/torrevieja_salud_ute_ley_18_82>
   a ns:Entity;
-  rdfs:label "TORREVIEJA SALUD UTE LEY 18/82" .
+  rdfs:label "TORREVIEJA SALUD UTE LEY 18/82";
+  owl:sameAs "" .
 
 <http://www.dialysisComunidadValenciana.es/resource/entity/vithas_alicante_sl> a ns:Entity;
-  rdfs:label "VITHAS ALICANTE, SL" .
+  rdfs:label "VITHAS ALICANTE, SL";
+  owl:sameAs "" .
 
 <http://www.dialysisComunidadValenciana.es/resource/province/alicante> a ns:Province;
-  rdfs:label "Alicante" .
+  rdfs:label "Alicante";
+  owl:sameAs "https://www.wikidata.org/wiki/Q54936" .
 
 <http://www.dialysisComunidadValenciana.es/resource/province/castellon> a ns:Province;
-  rdfs:label "Castellï¿½n" .
+  rdfs:label "Castellón";
+  owl:sameAs "https://www.wikidata.org/wiki/Q54942" .
 
 <http://www.dialysisComunidadValenciana.es/resource/province/valencia> a ns:Province;
-  rdfs:label "Valencia" .
+  rdfs:label "Valencia";
+  owl:sameAs "https://www.wikidata.org/wiki/Q54939" .

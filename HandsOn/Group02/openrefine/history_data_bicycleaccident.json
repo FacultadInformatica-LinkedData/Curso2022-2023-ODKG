@@ -621,5 +621,50 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column dateTime using expression grel:value+'+02:00'"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "dateTime",
+    "expression": "grel:value[0,4]+value[5,7]+value[8,10]+value[11,13]+value[14,16]+value[17,19]",
+    "onError": "set-to-blank",
+    "newColumnName": "idDateTime",
+    "columnInsertIndex": 2,
+    "description": "Create column idDateTime at index 2 based on column dateTime using expression grel:value[0,4]+value[5,7]+value[8,10]+value[11,13]+value[14,16]+value[17,19]"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "distrito",
+    "expression": "grel:if(value.len==1,value[0],value[0,2])",
+    "onError": "set-to-blank",
+    "newColumnName": "idDistrict",
+    "columnInsertIndex": 5,
+    "description": "Create column idDistrict at index 5 based on column distrito using expression grel:if(value.len==1,value[0],value[0,2])"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "idDateTime",
+    "expression": "join ([coalesce(cells['idDateTime'].value,''),coalesce(cells['idDistrict'].value,'')],'')",
+    "onError": "keep-original",
+    "newColumnName": "idAccident",
+    "columnInsertIndex": 3,
+    "description": "Create column idAccident at index 3 based on column idDateTime using expression join ([coalesce(cells['idDateTime'].value,''),coalesce(cells['idDistrict'].value,'')],'')"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "num_expediente",
+    "newColumnName": "idPerson",
+    "description": "Rename column num_expediente to idPerson"
   }
 ]

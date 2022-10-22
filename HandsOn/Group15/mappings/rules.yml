@@ -1,0 +1,38 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  base: http://busstopalcobendas.odkg.es/group15/ontology/
+
+mappings:
+  triplesmap1:
+    sources:
+      - [stopsautobus-updated.csv~csv]
+    s: http://busstopalcobendas.odkg.es/group15/ontology/busstop/$(stop_id)
+    po:
+      - [a, base:BusStop]
+      - [base:stop_id,$(stop_id)]
+      - [base:stop_code,$(stop_code)]
+      - [base:stop_name,$(stop_name)]
+      - [base:stop_lat,$(stop_lat)]
+      - [base:stop_lon,$(stop_lon)]
+      - [base:stop_url,$(stop_url)]
+      - [base:stop_timezone,$(stop_timezone)]
+      - [base:zone_id,$(zone_id)]
+      - [base:hasAddress,http://busstopalcobendas.odkg.es/group15/ontology/address/$(street_name)_$(street_number)~iri]
+
+  triplesmap2:
+    sources:
+      - [stopsautobus-updated.csv~csv]
+    s: http://busstopalcobendas.odkg.es/group15/ontology/address/$(street_name)_$(street_number)
+    po:
+      - [a, base:Address]
+      - [base:street_name,$(street_name)]
+      - [base:street_number,$(street_number)]

@@ -1,0 +1,49 @@
+PREFIX ns1: <http://www.group10.org/pl/ontology/ParkingLotsMadrid#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# All districts
+SELECT ?name ?number WHERE { 
+    ?district a ns1:District. 
+    ?district rdfs:label ?name.
+}
+
+# All neighborhoods
+SELECT ?name WHERE { 
+    ?neighborhood a ns1:Neighborhood. 
+    ?neighborhood rdfs:label ?name.
+}
+
+# All streets 
+SELECT ?name WHERE { 
+    ?street a ns1:street. 
+    ?street rdfs:label ?name
+}
+
+# All locations
+SELECT ?location ?latitude ?longitude WHERE { 
+    ?location a ns1:Location.
+    ?location ns1:hasLatitude ?latitude.
+    ?location ns1:hasLongitude ?longitude
+}
+
+
+# First 5 tickets
+SELECT ?pmeterTicket ?startTime ?endTime WHERE { 
+    ?pmeterTicket a ns1:ParkingMeterTicket.
+    ?pmeterTicket ns1:startDateTime ?startTime.
+    ?pmeterTicket ns1:endDatetime ?endTime
+}
+ORDER BY ?startTime
+LIMIT 5
+
+# All parking meters and their block ID
+SELECT ?pmeter ?block ?name WHERE { 
+    ?pmeter a ns1:ParkingMeter. 
+    ?pmeter ns1:blockId ?block.
+}
+
+# All parking areas and their color
+SELECT DISTINCT ?parking ?color WHERE { 
+    ?parking a ns1:ParkingArea. 
+    ?parking ns1:color ?color.
+}

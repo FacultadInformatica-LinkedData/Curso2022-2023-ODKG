@@ -20,6 +20,9 @@ mappings:
       - [a, nsdata:Clinic]
       - [nsont:typologyOfClinic ,$(typologyOfClinic) ,xsd:string]
       - [nsont:specialization ,$(specialization) ,xsd:string]
+      - p: geo:location
+        o:
+          mapping:addressmap
          
   addressmap:
     sources:

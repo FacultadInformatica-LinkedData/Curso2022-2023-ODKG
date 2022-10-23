@@ -26,8 +26,9 @@ ORDER BY DESC(?center_count)
 # Get all the public transportation access to the Day Center for the Elderly
 # "José Villareal"
 SELECT ?transport_access
+SELECT ?transport_access
 WHERE {{
-    <http://miciudadamiga.madrid/map/ontology/Jos%C3%A9_Villareal> <http://miciudadamiga.madrid/map/ontology/metroAccess> ?transport_access
+    <http://miciudadamiga.madrid/map/resource/Jos%C3%A9_Villareal> <http://miciudadamiga.madrid/map/ontology#metroAccess> ?transport_access
 } UNION {
-    <http://miciudadamiga.madrid/map/ontology/Jos%C3%A9_Villareal> <http://miciudadamiga.madrid/map/ontology/busAccess> ?transport_access
+    <http://miciudadamiga.madrid/map/resource/Jos%C3%A9_Villareal> <http://miciudadamiga.madrid/map/ontology#busAccess> ?transport_access
 }}

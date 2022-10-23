@@ -17,34 +17,6 @@ mappings:
     s: https://www.healthfinder.io/group08/ontology/$(Defibrillator)
     po:
       - [a, nsdata:Defibrillator]
-      - p: nsont:isIn
-        o:
-          mapping: establishmentmap
- 
-  establishmentmap:
-    sources:
-      - [desfibriladores-externos-fuera-ambito-sanitario-update.csv~csv]
-    s: https://www.healthfinder.io/group08/ontology/$(Establishment)
-    po:
-      - [a, nsdata:Establishment]
-      - [nsont:ownership,$(publicOwnership) ,xsd:boolean]
-      - [nsont:typology,$(typologyOfEstablishment) ,xsd:string]
-      - [nsont:openingHours,$(openingHours) ,xsd:string]
-      - p: geo:location
-        o:
-          mapping: addressmap
-          
-  clinicmap:
-    sources:
-      - [centros-servicios-establecimientos-sanitarios-update.csv~csv]
-    s: https://www.healthfinder.io/group08/ontology/$(Clinic)
-    po:
-      - [a, nsdata:Clinic]
-      - [nsont:typologyOfClinic ,$(typologyOfClinic) ,xsd:string]
-      - [nsont:specialization ,$(specialization) ,xsd:string]
-      - p: nsont:isIn
-        o:
-          mapping: establishmentmap
          
   addressmap:
     sources:
@@ -55,6 +27,3 @@ mappings:
       - [nsont:addressName ,$(addressName) ,xsd:string]
       - [geo:longitude ,$(longitude) ,xsd:float]
       - [geo:latitude ,$(latitude) ,xsd:float]
- 
-
-  

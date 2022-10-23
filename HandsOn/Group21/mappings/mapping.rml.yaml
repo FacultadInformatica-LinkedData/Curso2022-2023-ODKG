@@ -1,5 +1,6 @@
 prefixes:
- ns: "http://miciudadamiga.madrid/map/ontology/"
+ ns: "http://miciudadamiga.madrid/map/ontology#"
+ nsr: "http://miciudadamiga.madrid/map/resource/"
  v: "http://www.w3.org/2006/vcard/ns#"
  loc: "http://purl.org/ctic/infraestructuras/localizacion#"
  org: "http://purl.org/ctic/infraestructuras/organizacion#"
@@ -12,10 +13,10 @@ mappings:
  centro_dia:
     sources:
       - ['data.csv~csv']
-    s: ns:$(CENTRO-DIA)
+    s: nsr:$(CENTRO-DIA)
     po:
       - [a, https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosDiaMayores]
-      - [v:fn, ns:/Centro-Dia/$(CENTRO-DIA), xsd:string]
+      - [v:fn, nsr:/Centro-Dia/$(CENTRO-DIA), xsd:string]
       - [org:horario, $(HORARIO), xsd:string]
       - [org:servicios, $(EQUIPAMIENTO), xsd:string]
       - [org:accesibilidad, $(ACCESIBILIDAD), xsd:boolean]

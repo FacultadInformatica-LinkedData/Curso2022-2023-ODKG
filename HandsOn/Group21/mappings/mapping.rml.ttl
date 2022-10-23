@@ -10,7 +10,8 @@
 @prefix rml: <http://semweb.mmlab.be/ns/rml#>.
 @prefix ql: <http://semweb.mmlab.be/ns/ql#>.
 @prefix : <http://mapping.example.com/>.
-@prefix ns: <http://miciudadamiga.madrid/map/ontology/>.
+@prefix ns: <http://miciudadamiga.madrid/map/ontology#>.
+@prefix nsr: <http://miciudadamiga.madrid/map/resource/>.
 @prefix v: <http://www.w3.org/2006/vcard/ns#>.
 @prefix loc: <http://purl.org/ctic/infraestructuras/localizacion#>.
 @prefix org: <http://purl.org/ctic/infraestructuras/organizacion#>.
@@ -29,7 +30,7 @@
     rdfs:label "centro_dia".
 :s_000 a rr:SubjectMap.
 :map_centro_dia_000 rr:subjectMap :s_000.
-:s_000 rr:template "http://miciudadamiga.madrid/map/ontology/{CENTRO-DIA}".
+:s_000 rr:template "http://miciudadamiga.madrid/map/resource/{CENTRO-DIA}".
 :pom_000 a rr:PredicateObjectMap.
 :map_centro_dia_000 rr:predicateObjectMap :pom_000.
 :pm_000 a rr:PredicateMap.
@@ -46,7 +47,7 @@
 :pm_001 rr:constant v:fn.
 :pom_001 rr:objectMap :om_001.
 :om_001 a rr:ObjectMap;
-    rr:template "http://miciudadamiga.madrid/map/ontology//Centro-Dia/{CENTRO-DIA}";
+    rr:template "http://miciudadamiga.madrid/map/resource//Centro-Dia/{CENTRO-DIA}";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 :pom_002 a rr:PredicateObjectMap.

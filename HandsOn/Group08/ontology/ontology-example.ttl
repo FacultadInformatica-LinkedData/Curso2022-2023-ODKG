@@ -22,27 +22,16 @@
 
 ### geo:location
 geo:location rdf:type owl:ObjectProperty ;
-		rdfs:domain https://www.healthfinder.io/group08/resource/Establishment ;
+		rdfs:domain https://www.healthfinder.io/group08/resource/Defibrillator/4 ;
 		rdfs:range https://www.healthfinder.io/group08/resource/Address/Calle_de_Monasterio_de_Las_Huelgas_15 ;
 		rdfs:label "location" .
 
-### ns:isIn
-nsont:isIn rdf:type owl:ObjectProperty ;
-		rdfs:domain https://www.healthfinder.io/group08/resource/Defibrillator/4 ;
-		rdfs:range https://www.healthfinder.io/group08/resource/Establishment ;
-		rdfs:label "is in" .
 
 ### geo:location
 geo:location rdf:type owl:ObjectProperty ;
-		rdfs:domain https://www.healthfinder.io/group08/resource/Establishment ;
+		rdfs:domain https://www.healthfinder.io/group08/resource/Clinic/4 ;
 		rdfs:range https://www.healthfinder.io/group08/resource/Address/M-15_Pozuelo_61 ;
 		rdfs:label "location" .
-
-### ns:isIn
-nsont:isIn rdf:type owl:ObjectProperty ;
-		rdfs:domain https://www.healthfinder.io/group08/resource/Clinic/4 ;
-		rdfs:range https://www.healthfinder.io/group08/resource/Establishment ;
-		rdfs:label "is in" .
 
 #################################################################
 #    Data Properties
@@ -52,9 +41,6 @@ nsont:isIn rdf:type owl:ObjectProperty ;
 #    Classes
 #################################################################
 
-### https://www.healthfinder.io/group08/resource/Establishment
-https://www.healthfinder.io/group08/resource/Establishment rdf:type owl:Class ;
-	rdfs:label "//www.healthfinder.io/group08/resource/Establishment" .
 
 ### https://www.healthfinder.io/group08/resource/Address/Calle_de_Monasterio_de_Las_Huelgas_15
 https://www.healthfinder.io/group08/resource/Address/Calle_de_Monasterio_de_Las_Huelgas_15 rdf:type owl:Class ;
@@ -68,17 +54,9 @@ https://www.healthfinder.io/group08/resource/Defibrillator/4 rdf:type owl:Class 
 https://www.healthfinder.io/group08/resource/Clinic/4 rdf:type owl:Class ;
 	rdfs:label "//www.healthfinder.io/group08/resource/Clinic/4" .
 
-### https://www.healthfinder.io/group08/resource/Establishment
-https://www.healthfinder.io/group08/resource/Establishment rdf:type owl:Class ;
-	rdfs:label "//www.healthfinder.io/group08/resource/Establishment" .
-
 ### https://www.healthfinder.io/group08/resource/Address/M-15_Pozuelo_61
 https://www.healthfinder.io/group08/resource/Address/M-15_Pozuelo_61 rdf:type owl:Class ;
 	rdfs:label "//www.healthfinder.io/group08/resource/Address/M-15_ Pozuelo_61" .
-
-### https://www.healthfinder.io/group08/resource/Municipality/Majadahonda
-https://www.healthfinder.io/group08/resource/Municipality/Majadahonda rdf:type owl:Class ;
-	rdfs:label "//www.healthfinder.io/group08/resource/Municipality/Majadahonda" .
 
 #################################################################
 #    Instances

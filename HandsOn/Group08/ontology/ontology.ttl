@@ -26,46 +26,31 @@ geo: a owl:Ontology ;
 geo:latitude a owl:DatatypeProperty ;
     rdfs:label "latitude" .
     rdfs:domain nsdata:Address ;
-    rdfs:range xsd:String .
+    rdfs:range xsd:float .
 
-geo:location a owl:ObjectProperty ;
+nsont:location a owl:ObjectProperty ;
     rdfs:label "location" ;
-    rdfs:domain nsdata:Establishment ;
-    rdfs:range ns:Address .
+    rdfs:domain nsdata:Address ;
+    rdfs:range xsd:String .
 
 geo:longitude a owl:DatatypeProperty ;
     rdfs:label "longitude" .
     rdfs:domain nsdata:Address ;
-    rdfs:range xsd:String .
+    rdfs:range xsd:float .
 
-nsont:isIn a owl:ObjectProperty ;
-    rdfs:label "is in" ;
+geo:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
     rdfs:domain nsdata:Clinic,
         nsdata:Defibrillator ;
-    rdfs:range nsdata:Establishment .
+    rdfs:range nsdata:Address .
 
 #################################################################
 #    Data properties
 #################################################################
 
-nsdata:openingHours a owl:DatatypeProperty ;
-    rdfs:label "opening hours" .
-    rdfs:domain nsdata:Establishment ;
-    rdfs:range xsd:String .
-
-nsdata:ownership a owl:DatatypeProperty ;
-    rdfs:label "ownership" .
-    rdfs:domain nsdata:Establishment ;
-    rdfs:range xsd:String .
-
 nsdata:specialization a owl:DatatypeProperty ;
     rdfs:label "specialization" .
     rdfs:domain nsdata:Clinic ;
-    rdfs:range xsd:String .
-
-nsdata:typology a owl:DatatypeProperty ;
-    rdfs:label "typology" .
-    rdfs:domain nsdata:Establishment ;
     rdfs:range xsd:String .
 
 nsdata:typologyOfClinic a owl:DatatypeProperty ;
@@ -85,7 +70,4 @@ nsdata:Defibrillator a owl:Class ;
 
 nsdata:Address a owl:Class ;
     rdfs:label "Address" .
-
-nsdata:Establishment a owl:Class ;
-    rdfs:label "Establishment" .
 

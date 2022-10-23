@@ -549,5 +549,191 @@
     "columnName": "Defibrillator",
     "index": 0,
     "description": "Move column Defibrillator to position 0"
+  },
+  [
+  {
+    "op": "core/column-removal",
+    "columnName": "typology",
+    "description": "Remove column typology"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "publicOwnership",
+    "description": "Remove column publicOwnership"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Establishment",
+    "description": "Remove column Establishment"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "openingHours",
+    "description": "Remove column openingHours"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "longitude",
+          "columnName": "longitude",
+          "query": "[09]\\.",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "longitude",
+    "expression": "jython:return float(str(value)[0:3] + str(value)[3:4] + str(value)[5:])",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column longitude using expression jython:return float(str(value)[0:3] + str(value)[3:4] + str(value)[5:])"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "latitude",
+          "columnName": "latitude",
+          "query": "\\.\\.",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "latitude",
+    "expression": "jython:return - float(str(value)[0:2] + str(value)[3:])",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column latitude using expression jython:return - float(str(value)[0:2] + str(value)[3:])"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "latitude",
+          "columnName": "latitude",
+          "query": "-",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "longitude",
+    "expression": "jython:return - value*10",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column longitude using expression jython:return - value*10"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "latitude",
+          "columnName": "latitude",
+          "query": "-",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "longitude",
+    "expression": "jython:return str(cells[\"latitude\"].value) + \" \" + str(value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column longitude using expression jython:return str(cells[\"latitude\"].value) + \" \" + str(value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "latitude",
+          "columnName": "latitude",
+          "query": "-",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "latitude",
+    "expression": "jython:return float(cells[\"longitude\"].value.split()[1])",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column latitude using expression jython:return float(cells[\"longitude\"].value.split()[1])"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "longitude",
+          "columnName": "longitude",
+          "query": " ",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "longitude",
+    "expression": "jython:return float(value.split()[0])",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column longitude using expression jython:return float(value.split()[0])"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "longitude",
+    "expression": "jython:return float(value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column longitude using expression jython:return float(value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "latitude",
+    "expression": "jython:return float(value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column latitude using expression jython:return float(value)"
   }
+]
 ]

@@ -177,206 +177,106 @@
 <http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/REJAS> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "REJAS".
 <http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/JUSTICIA> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "JUSTICIA".
 <http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/VISTA_ALEGRE> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "VISTA_ALEGRE".
-<http://miciudadamiga.madrid/map/ontology/Asispa_Virgen_de_%C3%81frica> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/SAN_PASCUAL
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Doctor_Espina> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/OPAÑEL
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Pamplona> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/BELLAS_VISTAS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Reina_Sof%C3%ADa> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CUATRO_CAMINOS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Nicanor_Barroso> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/FONTARRON
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Gertrudis_de_la_Fuente_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/LOS_CARMENES
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Almorox_F%C3%ADsico> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/VALDEZARZA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Mora_de_Rubielos> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CANILLEJAS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/DomusVi_Maestranza> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PACíFICO
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Quavitae_Centro> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/UNIVERSIDAD
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Albertia_Moratalaz> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PAVONES
-mapping".
-<http://miciudadamiga.madrid/map/ontology/ViveD%C3%ADa> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PRADOLONGO
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Casa_de_las_Flores> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/GAZTAMBIDE
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Geriacen> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/VALVERDE
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Jazm%C3%ADn> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/COSTILLARES
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Sanivida_Puente_de_Vallecas> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/NUMANCIA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/La_Guindalera> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/GUINDALERA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Sanivida_Arganzuela> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/LEGAZPI
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Valleluz_II> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ALMENDRALES
-mapping".
-<http://miciudadamiga.madrid/map/ontology/La_Remonta> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/VALDEACEDERAS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Doctor_Salgado_Alba> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/SAN_ISIDRO
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Teresa_de_Calcuta> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ALAMEDA_DE_OSUNA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Sanivida_Chamber%C3%AD> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/TRAFALGAR
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Montserrat_Caball%C3%A9> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CORRALEJOS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Pe%C3%B1agrande> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PEÑA_GRANDE
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Moratalaz> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/MEDIA_LEGUA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Tr%C3%A9bol> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/SAN_ANDRÉS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/San_Francisco> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/JUSTICIA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Juan_Pablo_II> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/NUEVA_ESPAÑA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Muguet> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/BUENAVISTA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Casino_de_la_Reina> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/EMBAJADORES
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Parque_Querol> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/APOSTOL_SANTIAGO
-mapping".
-<http://miciudadamiga.madrid/map/ontology/San_Vicente_de_Pa%C3%BAl> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/OPAÑEL
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Jos%C3%A9_Manuel_Bringas> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ORCASITAS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Le%C3%B1eros_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/BELLAS_VISTAS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Villa_de_Vallecas> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CASCO_H.VALLECAS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/DomusVi_Albufera> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/SAN_DIEGO
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Francisco_de_Goya> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/BUENAVISTA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Luis_Peidr%C3%B3> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ADELFAS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Asispa_Nueva_Edad> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/SAN_PASCUAL
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Stima_Aluche> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ALUCHE
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Los_Nogales_Hortaleza> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PINAR_DEL_REY
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Loyola_de_Palacio> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/SAN_FERMIN
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Carmen_Conde> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/EMBAJADORES
-mapping".
-<http://miciudadamiga.madrid/map/ontology/El_Pardo_F%C3%ADsico> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/EL_PARDO
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Le%C3%B1eros_F%C3%ADsico> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/BELLAS_VISTAS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Esfinge_F%C3%ADsico> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CANILLEJAS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Vic%C3%A1lvaro> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CASCO_H.VICALVARO
-mapping".
-<http://miciudadamiga.madrid/map/ontology/DomusVi_Chamart%C3%ADn> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PROSPERIDAD
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Mar%C3%ADa_Teresa_Le%C3%B3n> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ALMAGRO
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Fray_Luis_de_Le%C3%B3n> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/VALVERDE
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Carmen_Laforet> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/COSTILLARES
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Ciudad_Pegaso_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/REJAS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Salus_Mayores_Chamart%C3%ADn> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/HISPANOAMERICA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Orcasur> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ORCASUR
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Vocal_Vecino_Justo_Sierra> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/LA_PAZ
-mapping".
-<http://miciudadamiga.madrid/map/ontology/F%C3%A1tima_de_Madrid_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/NUMANCIA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Entrev%C3%ADas> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ENTREVIAS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Gallur> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/LOS_CARMENES
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Florencia> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PAVONES
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Sanivida_Ciudad_Lineal> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PUEBLO_NUEVO
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Pablo_Casals_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/AMPOSTA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Margarita_Retuerto> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/GUINDALERA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Almorox_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/VALDEZARZA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Ciudad_Pegaso_F%C3%ADsicos> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/REJAS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/F%C3%A1tima_de_Madrid_F%C3%ADsico> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/NUMANCIA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Pablo_Neruda> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PALOMERAS_SURESTE
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Proade> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/COMILLAS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Esfinge_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CANILLEJAS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Miguel_Delibes_F%C3%ADsico> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/LOS_ROSALES
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Edad_Dorada> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/EMBAJADORES
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Isaac_Rabin> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/VINATEROS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Santa_Engracia> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/RIOS_ROSAS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/El_Bosque> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/FUENTE_DEL_BERRO
-mapping".
-<http://miciudadamiga.madrid/map/ontology/San_Luciano> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/LOS_ANGELES
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Sanivida_Salamanca> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/GUINDALERA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Nuestros_Abuelos> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PUERTA_BONITA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Los_Nogales_Santa_Eugenia> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/SANTA_EUGENIA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Jos%C3%A9_Villareal> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CHOPERA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Canal_de_Panam%C3%A1> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/SAN_PASCUAL
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Castillo_de_Ucl%C3%A9s> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/SIMANCAS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Valleluz_I> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ALMENDRALES
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Retiro> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ESTRELLA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/El_Pardo_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/EL_PARDO
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Casa_de_Campo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CASA_DE_CAMPO
-mapping".
-<http://miciudadamiga.madrid/map/ontology/La_Magdalena> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/VISTA_ALEGRE
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Sanivida_Latina> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/LAS_ÁGUILAS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Arganzuela> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PALOS_DE_MOGUER
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Pablo_Casals_F%C3%ADsico> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/AMPOSTA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/San_Crisp%C3%ADn> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PUERTA_DEL_ANGEL
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Casablanca> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/EL_PLANTIO
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Gertrudis_de_la_Fuente_F%C3%ADsico> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/LOS_CARMENES
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Ascao> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PUEBLO_NUEVO
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Acuario> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CASCO_H.BARAJAS
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Aurora_Villa_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/OPAÑEL
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Rosaleda> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PUERTA_BONITA
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Centro_Madrid> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ALUCHE
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Aurora_Villa_F%C3%ADsico> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/OPAÑEL
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Miguel_Delibes_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/LOS_ROSALES
-mapping".
-<http://miciudadamiga.madrid/map/ontology/Concepci%C3%B3n_Arenal> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CANILLAS
-mapping".
+<http://miciudadamiga.madrid/map/ontology/Asispa_Virgen_de_%C3%81frica> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/SAN_PASCUAL".
+<http://miciudadamiga.madrid/map/ontology/Doctor_Espina> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/OPAÑEL".
+<http://miciudadamiga.madrid/map/ontology/Pamplona> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/BELLAS_VISTAS".
+<http://miciudadamiga.madrid/map/ontology/Reina_Sof%C3%ADa> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CUATRO_CAMINOS".
+<http://miciudadamiga.madrid/map/ontology/Nicanor_Barroso> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/FONTARRON".
+<http://miciudadamiga.madrid/map/ontology/Gertrudis_de_la_Fuente_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/LOS_CARMENES".
+<http://miciudadamiga.madrid/map/ontology/Almorox_F%C3%ADsico> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/VALDEZARZA".
+<http://miciudadamiga.madrid/map/ontology/Mora_de_Rubielos> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CANILLEJAS".
+<http://miciudadamiga.madrid/map/ontology/DomusVi_Maestranza> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PACíFICO".
+<http://miciudadamiga.madrid/map/ontology/Quavitae_Centro> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/UNIVERSIDAD".
+<http://miciudadamiga.madrid/map/ontology/Albertia_Moratalaz> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PAVONES".
+<http://miciudadamiga.madrid/map/ontology/ViveD%C3%ADa> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PRADOLONGO".
+<http://miciudadamiga.madrid/map/ontology/Casa_de_las_Flores> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/GAZTAMBIDE".
+<http://miciudadamiga.madrid/map/ontology/Geriacen> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/VALVERDE".
+<http://miciudadamiga.madrid/map/ontology/Jazm%C3%ADn> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/COSTILLARES".
+<http://miciudadamiga.madrid/map/ontology/Sanivida_Puente_de_Vallecas> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/NUMANCIA".
+<http://miciudadamiga.madrid/map/ontology/La_Guindalera> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/GUINDALERA".
+<http://miciudadamiga.madrid/map/ontology/Sanivida_Arganzuela> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/LEGAZPI".
+<http://miciudadamiga.madrid/map/ontology/Valleluz_II> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ALMENDRALES".
+<http://miciudadamiga.madrid/map/ontology/La_Remonta> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/VALDEACEDERAS".
+<http://miciudadamiga.madrid/map/ontology/Doctor_Salgado_Alba> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/SAN_ISIDRO".
+<http://miciudadamiga.madrid/map/ontology/Teresa_de_Calcuta> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ALAMEDA_DE_OSUNA".
+<http://miciudadamiga.madrid/map/ontology/Sanivida_Chamber%C3%AD> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/TRAFALGAR".
+<http://miciudadamiga.madrid/map/ontology/Montserrat_Caball%C3%A9> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CORRALEJOS".
+<http://miciudadamiga.madrid/map/ontology/Pe%C3%B1agrande> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PEÑA_GRANDE".
+<http://miciudadamiga.madrid/map/ontology/Moratalaz> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/MEDIA_LEGUA".
+<http://miciudadamiga.madrid/map/ontology/Tr%C3%A9bol> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/SAN_ANDRÉS".
+<http://miciudadamiga.madrid/map/ontology/San_Francisco> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/JUSTICIA".
+<http://miciudadamiga.madrid/map/ontology/Juan_Pablo_II> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/NUEVA_ESPAÑA".
+<http://miciudadamiga.madrid/map/ontology/Muguet> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/BUENAVISTA".
+<http://miciudadamiga.madrid/map/ontology/Casino_de_la_Reina> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/EMBAJADORES".
+<http://miciudadamiga.madrid/map/ontology/Parque_Querol> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/APOSTOL_SANTIAGO".
+<http://miciudadamiga.madrid/map/ontology/San_Vicente_de_Pa%C3%BAl> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/OPAÑEL".
+<http://miciudadamiga.madrid/map/ontology/Jos%C3%A9_Manuel_Bringas> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ORCASITAS".
+<http://miciudadamiga.madrid/map/ontology/Le%C3%B1eros_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/BELLAS_VISTAS".
+<http://miciudadamiga.madrid/map/ontology/Villa_de_Vallecas> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CASCO_H.VALLECAS".
+<http://miciudadamiga.madrid/map/ontology/DomusVi_Albufera> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/SAN_DIEGO".
+<http://miciudadamiga.madrid/map/ontology/Francisco_de_Goya> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/BUENAVISTA".
+<http://miciudadamiga.madrid/map/ontology/Luis_Peidr%C3%B3> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ADELFAS".
+<http://miciudadamiga.madrid/map/ontology/Asispa_Nueva_Edad> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/SAN_PASCUAL".
+<http://miciudadamiga.madrid/map/ontology/Stima_Aluche> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ALUCHE".
+<http://miciudadamiga.madrid/map/ontology/Los_Nogales_Hortaleza> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PINAR_DEL_REY".
+<http://miciudadamiga.madrid/map/ontology/Loyola_de_Palacio> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/SAN_FERMIN".
+<http://miciudadamiga.madrid/map/ontology/Carmen_Conde> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/EMBAJADORES".
+<http://miciudadamiga.madrid/map/ontology/El_Pardo_F%C3%ADsico> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/EL_PARDO".
+<http://miciudadamiga.madrid/map/ontology/Le%C3%B1eros_F%C3%ADsico> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/BELLAS_VISTAS".
+<http://miciudadamiga.madrid/map/ontology/Esfinge_F%C3%ADsico> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CANILLEJAS".
+<http://miciudadamiga.madrid/map/ontology/Vic%C3%A1lvaro> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CASCO_H.VICALVARO".
+<http://miciudadamiga.madrid/map/ontology/DomusVi_Chamart%C3%ADn> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PROSPERIDAD".
+<http://miciudadamiga.madrid/map/ontology/Mar%C3%ADa_Teresa_Le%C3%B3n> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ALMAGRO".
+<http://miciudadamiga.madrid/map/ontology/Fray_Luis_de_Le%C3%B3n> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/VALVERDE".
+<http://miciudadamiga.madrid/map/ontology/Carmen_Laforet> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/COSTILLARES".
+<http://miciudadamiga.madrid/map/ontology/Ciudad_Pegaso_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/REJAS".
+<http://miciudadamiga.madrid/map/ontology/Salus_Mayores_Chamart%C3%ADn> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/HISPANOAMERICA".
+<http://miciudadamiga.madrid/map/ontology/Orcasur> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ORCASUR".
+<http://miciudadamiga.madrid/map/ontology/Vocal_Vecino_Justo_Sierra> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/LA_PAZ".
+<http://miciudadamiga.madrid/map/ontology/F%C3%A1tima_de_Madrid_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/NUMANCIA".
+<http://miciudadamiga.madrid/map/ontology/Entrev%C3%ADas> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ENTREVIAS".
+<http://miciudadamiga.madrid/map/ontology/Gallur> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/LOS_CARMENES".
+<http://miciudadamiga.madrid/map/ontology/Florencia> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PAVONES".
+<http://miciudadamiga.madrid/map/ontology/Sanivida_Ciudad_Lineal> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PUEBLO_NUEVO".
+<http://miciudadamiga.madrid/map/ontology/Pablo_Casals_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/AMPOSTA".
+<http://miciudadamiga.madrid/map/ontology/Margarita_Retuerto> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/GUINDALERA".
+<http://miciudadamiga.madrid/map/ontology/Almorox_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/VALDEZARZA".
+<http://miciudadamiga.madrid/map/ontology/Ciudad_Pegaso_F%C3%ADsicos> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/REJAS".
+<http://miciudadamiga.madrid/map/ontology/F%C3%A1tima_de_Madrid_F%C3%ADsico> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/NUMANCIA".
+<http://miciudadamiga.madrid/map/ontology/Pablo_Neruda> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PALOMERAS_SURESTE".
+<http://miciudadamiga.madrid/map/ontology/Proade> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/COMILLAS".
+<http://miciudadamiga.madrid/map/ontology/Esfinge_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CANILLEJAS".
+<http://miciudadamiga.madrid/map/ontology/Miguel_Delibes_F%C3%ADsico> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/LOS_ROSALES".
+<http://miciudadamiga.madrid/map/ontology/Edad_Dorada> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/EMBAJADORES".
+<http://miciudadamiga.madrid/map/ontology/Isaac_Rabin> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/VINATEROS".
+<http://miciudadamiga.madrid/map/ontology/Santa_Engracia> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/RIOS_ROSAS".
+<http://miciudadamiga.madrid/map/ontology/El_Bosque> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/FUENTE_DEL_BERRO".
+<http://miciudadamiga.madrid/map/ontology/San_Luciano> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/LOS_ANGELES".
+<http://miciudadamiga.madrid/map/ontology/Sanivida_Salamanca> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/GUINDALERA".
+<http://miciudadamiga.madrid/map/ontology/Nuestros_Abuelos> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PUERTA_BONITA".
+<http://miciudadamiga.madrid/map/ontology/Los_Nogales_Santa_Eugenia> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/SANTA_EUGENIA".
+<http://miciudadamiga.madrid/map/ontology/Jos%C3%A9_Villareal> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CHOPERA".
+<http://miciudadamiga.madrid/map/ontology/Canal_de_Panam%C3%A1> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/SAN_PASCUAL".
+<http://miciudadamiga.madrid/map/ontology/Castillo_de_Ucl%C3%A9s> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/SIMANCAS".
+<http://miciudadamiga.madrid/map/ontology/Valleluz_I> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ALMENDRALES".
+<http://miciudadamiga.madrid/map/ontology/Retiro> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ESTRELLA".
+<http://miciudadamiga.madrid/map/ontology/El_Pardo_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/EL_PARDO".
+<http://miciudadamiga.madrid/map/ontology/Casa_de_Campo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CASA_DE_CAMPO".
+<http://miciudadamiga.madrid/map/ontology/La_Magdalena> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/VISTA_ALEGRE".
+<http://miciudadamiga.madrid/map/ontology/Sanivida_Latina> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/LAS_ÁGUILAS".
+<http://miciudadamiga.madrid/map/ontology/Arganzuela> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PALOS_DE_MOGUER".
+<http://miciudadamiga.madrid/map/ontology/Pablo_Casals_F%C3%ADsico> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/AMPOSTA".
+<http://miciudadamiga.madrid/map/ontology/San_Crisp%C3%ADn> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PUERTA_DEL_ANGEL".
+<http://miciudadamiga.madrid/map/ontology/Casablanca> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/EL_PLANTIO".
+<http://miciudadamiga.madrid/map/ontology/Gertrudis_de_la_Fuente_F%C3%ADsico> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/LOS_CARMENES".
+<http://miciudadamiga.madrid/map/ontology/Ascao> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PUEBLO_NUEVO".
+<http://miciudadamiga.madrid/map/ontology/Acuario> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CASCO_H.BARAJAS".
+<http://miciudadamiga.madrid/map/ontology/Aurora_Villa_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/OPAÑEL".
+<http://miciudadamiga.madrid/map/ontology/Rosaleda> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/PUERTA_BONITA".
+<http://miciudadamiga.madrid/map/ontology/Centro_Madrid> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/ALUCHE".
+<http://miciudadamiga.madrid/map/ontology/Aurora_Villa_F%C3%ADsico> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/OPAÑEL".
+<http://miciudadamiga.madrid/map/ontology/Miguel_Delibes_Cognitivo> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/LOS_ROSALES".
+<http://miciudadamiga.madrid/map/ontology/Concepci%C3%B3n_Arenal> <http://miciudadamiga.madrid/map/ontology/belongsToMadridNeighbourhood> "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/CANILLAS".
 <http://miciudadamiga.madrid/map/ontology/Francisco_de_Goya> <http://purl.org/ctic/infraestructuras/organizacion#horario> "De 8:15 a 18 horas de Lunes a Viernes.".
 <http://miciudadamiga.madrid/map/ontology/DomusVi_Chamart%C3%ADn> <http://purl.org/ctic/infraestructuras/organizacion#horario> "De 8:15 a 18 horas de Lunes a Viernes.".
 <http://miciudadamiga.madrid/map/ontology/Sanivida_Puente_de_Vallecas> <http://purl.org/ctic/infraestructuras/organizacion#horario> "De 8:15 a 18 horas de lunes a viernes.".

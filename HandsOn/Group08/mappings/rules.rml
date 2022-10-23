@@ -38,14 +38,14 @@ map:map_establishmentmap_000 rml:logicalSource map:source_001 ;
 	rr:subjectMap map:s_001 .
 
 map:om_000 rdf:type rr:ObjectMap ;
-	rr:constant "ns:Defibrillator" ;
+	rr:constant "https://www.healthfinder.io/group08/resource/resource/Defibrillator" ;
 	rr:termType rr:IRI .
 
 map:om_001 rdf:type rr:ObjectMap ;
 	rr:parentTriplesMap map:map_establishmentmap_000 .
 
 map:om_002 rdf:type rr:ObjectMap ;
-	rr:constant "ns:Establishment" ;
+	rr:constant "https://www.healthfinder.io/group08/resource/resource/Establishment" ;
 	rr:termType rr:IRI .
 
 map:om_003 rml:reference "publicOwnership" ;
@@ -67,10 +67,10 @@ map:om_006 rdf:type rr:ObjectMap ;
 	rr:parentTriplesMap map:map_addressmap_000 .
 
 map:om_007 rdf:type rr:ObjectMap ;
-	rr:constant "ns:Clinic" ;
+	rr:constant "https://www.healthfinder.io/group08/resource/resource/Clinic" ;
 	rr:termType rr:IRI .
 
-map:om_008 rml:reference "tipologyOfClinic" ;
+map:om_008 rml:reference "typologyOfClinic" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
@@ -106,19 +106,19 @@ map:pm_000 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_001 rdf:type rr:PredicateMap ;
-	rr:constant <ns:isIn> .
+	rr:constant nsont:isIn .
 
 map:pm_002 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_003 rdf:type rr:PredicateMap ;
-	rr:constant <ns:ownership> .
+	rr:constant nsont:ownership .
 
 map:pm_004 rdf:type rr:PredicateMap ;
-	rr:constant <ns:tipology> .
+	rr:constant nsont:typology .
 
 map:pm_005 rdf:type rr:PredicateMap ;
-	rr:constant <ns:openingHours> .
+	rr:constant nsont:openingHours .
 
 map:pm_006 rdf:type rr:PredicateMap ;
 	rr:constant geo:location .
@@ -127,19 +127,19 @@ map:pm_007 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_008 rdf:type rr:PredicateMap ;
-	rr:constant <ns:tipologyOfClinic> .
+	rr:constant nsont:typologyOfClinic .
 
 map:pm_009 rdf:type rr:PredicateMap ;
-	rr:constant <ns:specialization> .
+	rr:constant nsont:specialization .
 
 map:pm_010 rdf:type rr:PredicateMap ;
-	rr:constant <ns:isIn> .
+	rr:constant nsont:isIn .
 
 map:pm_011 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_012 rdf:type rr:PredicateMap ;
-	rr:constant <ns:addressName> .
+	rr:constant nsont:addressName .
 
 map:pm_013 rdf:type rr:PredicateMap ;
 	rr:constant geo:longitude .

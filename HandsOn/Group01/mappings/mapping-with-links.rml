@@ -62,11 +62,11 @@ map:om_003 rml:reference "address" ;
 	rr:termType rr:Literal .
 
 map:om_004 rdf:type rr:ObjectMap ;
-	rr:template "http://www.dialysisComunidadValenciana.es/{health_area_id}" ;
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/health_area/{health_area_id}" ;
 	rr:termType rr:Literal .
 
 map:om_005 rdf:type rr:ObjectMap ;
-	rr:template "http://www.dialysisComunidadValenciana.es/{entity_id}" ;
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/entity/{entity_id}" ;
 	rr:termType rr:Literal .
 
 map:om_006 rml:reference "longitude" ;
@@ -89,7 +89,7 @@ map:om_009 rml:reference "health_area" ;
 	rr:termType rr:Literal .
 
 map:om_010 rdf:type rr:ObjectMap ;
-	rr:template "http://www.dialysisComunidadValenciana.es/{city_id}" ;
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/city/{city_id}" ;
 	rr:termType rr:Literal .
 
 map:om_011 rdf:type rr:ObjectMap ;
@@ -115,7 +115,7 @@ map:om_015 rml:reference "city" ;
 	rr:termType rr:Literal .
 
 map:om_016 rdf:type rr:ObjectMap ;
-	rr:template "http://www.dialysisComunidadValenciana.es/{province_id}" ;
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/province/{province_id}" ;
 	rr:termType rr:Literal .
 
 map:om_017 rml:reference "city_uri" ;

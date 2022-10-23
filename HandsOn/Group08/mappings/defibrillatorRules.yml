@@ -17,6 +17,9 @@ mappings:
     s: https://www.healthfinder.io/group08/ontology/$(Defibrillator)
     po:
       - [a, nsdata:Defibrillator]
+      - p: geo:location
+        o:
+          mapping:addressmap
          
   addressmap:
     sources:

@@ -28,7 +28,7 @@ mappings:
     po:
       - [a, nsdata:Establishment]
       - [nsont:ownership,$(publicOwnership) ,xsd:boolean]
-      - [nsont:typology,$(tipologyOfEstablishment) ,xsd:string]
+      - [nsont:typology,$(typologyOfEstablishment) ,xsd:string]
       - [nsont:openingHours,$(openingHours) ,xsd:string]
       - p: geo:location
         o:

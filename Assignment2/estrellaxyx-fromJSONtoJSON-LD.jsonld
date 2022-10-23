@@ -1,0 +1,170 @@
+{
+    "@context":{
+        "base":"http://www.example.org/",
+        "people":"http://www.ontologies.org/ontologies/People#",
+        "hometown":"base:hometown",
+        "fullName":"base:fullName",
+        "age":"base:age",
+        "almaMater":"base:almaMater",
+        "father":"base:father",
+        "mother":"base:mother",
+        "subjects":"base:subjects",
+        "subjectName":"base:subjectName",
+        "parentsName":"base:parentsName",
+        "teachers":"base:teachers",
+        "student":"base:student",
+        "briefDescription":"base:briefDescription"
+    },
+    "@id":"base:YuxiaoXiong",
+	"@type": "people:student",
+    "fullName": "Yuxiao Xiong",
+    "hometown": "Wuhan",
+    "age": "23",
+    "almaMater": "Universidad Politecnica de Madrid",
+    "parentsName": {
+        "father": "Xueyuan Xiong",
+        "mother": "Yubin Wu"
+    },
+    "subjects": [
+        {
+            "subjectName": "Big Data",
+            "teachers": [
+                {
+                    "@id":"base:AntonioLaTorre",
+                    "@type": "people:teacher",
+                    "fullName": "Antonio LaTorre"
+                }, 
+                {
+                    "@id":"base:JesusMontes",
+                    "@type":"people:teacher",
+                    "fullName": "Jesús Montes"
+                }
+            ],
+            "briefIntroduction": "This course will allow the student to gain the fundamentals for the analysis of large volumes of data. With an eminently practical approach, the technologies and fundamentals necessary to successfully accomplish the whole data analysis process will be presented in the context of Big Data, from the raw data to the models derived from them."
+
+        },
+        {
+            "subjectName": "Data Visualization",
+            "teachers": [
+                {
+                    "@id":"base:PabloTohariaRabasco",
+                    "@type":"people:teacher",
+                    "fullName": "Pablo Toharia Rabasco"
+                },
+                {
+                    "@id":"base:AntonioLaTorre",
+                    "@type":"people:teacher",
+                    "fullName": "Antonio LaTorre"
+                }
+            ],
+            "briefIntroduction": "This course will allow the student to gain the fundamentals for the visualization of all kinds of information. With an eminently practical approach, the technologies and fundamentals necessary to create successful information visualization tools will be presented."
+        },
+        {
+            "subjectName": "Deep Learning",
+            "teachers": [
+                {
+                    "@id":"base:MartinMolina",
+                    "@type":"people:teacher",
+                    "fullName": "Martin Molina"
+                },
+                {
+                    "@id":"base:LuisBaumela",
+                    "@type":"people:teacher",
+                    "fullName": "Luis Baumela"
+                },
+                {
+                    "@id":"base:DanielManrique",
+                    "@type":"people:teacher",
+                    "fullName": "Daniel Manrique"
+                }
+            ],
+            "briefIntroduction": "This course presents a theoretical and practical view of deep learning. It is assumed that students are familiar with the basic foundations of neural networks (e.g., shallow artificial neural networks and backpropagation algorithm). The course describes general methods to train deep neural networks (e.g., optimization algorithms, regularization methods, normalization methods, etc.) and presents neural models for specific domains (e.g., computer vision and other application domains) together with software tools to train neural networks."
+        },
+        {
+            "subjectName":"Intelligent Systems",
+            "teachers": [
+                {
+                    "@id":"base:MartinMolina",
+                    "@type":"people:teacher",
+                    "fullName": "Martin Molina"
+                },
+                {
+                    "@id":"base:AsuncionDeMariaGomezPerez",
+                    "@type":"people:teacher",
+                    "fullName": "Asuncion De Maria Gomez Perez"
+                },
+                {
+                    "@id":"base:MCarmenSuarezDeFigueroaBaonza",
+                    "@type":"people:teacher",
+                    "fullName": "M. Carmen Suarez De Figueroa Baonza"
+                }
+            ],
+            "briefIntroduction": "This course starts with a general characterization of intelligent systems with an overview of the main approaches and basic concepts related to knowledge representation and reasoning. Then, the course presents AI methods that are applicable to the design and construction of intelligent systems. The course describes the foundations of artificial neural networks, which have been used with great success, for example, in problems related to perception or classification. Next, the course presents methods for building ontologies that are useful, for example, for symbolic knowledge representation and knowledge integration. Finally, the course explains natural language processing methods that are useful to facilitate a more effective human-machine interaction."
+        },
+        {
+            "subjectName": "Introduction to Research Methodology",
+            "teachers": [
+                {
+                    "@id":"base:OscarCorchoGarcia",
+                    "@type":"people:teacher",
+                    "fullName": "Oscar Corcho Garcia"
+                }
+            ],
+            "briefIntroduction": "This seminar is focused on providing students with sufficient information and orientation about the most usual methods, techniques and systems used in scientific research."
+        },
+        {
+            "subjectName": "Machine Learning",
+            "teachers": [
+                {
+                    "@id":"base:PedroLarrañagaMúgica",
+                    "@type":"people:teacher",
+                    "fullName": "Pedro Larrañaga Múgica"
+                },
+                {
+                    "@id":"base:ConchaBielzaLozoya",
+                    "@type":"people:teacher",
+                    "fullName": "Concha Bielza Lozoya"
+                }
+            ],
+            "briefIntroduction": "El Aprendizaje Automático transforma los datos en conocimiento y proporciona sistemas de propósito general que se adaptan a las circunstancias. Esta asignatura expone varios métodos para resolver problemas de clasificación supervisada, no supervisada, y relaciones entre las variables del sistema."
+        },
+        {
+            "subjectName": "Open Data and Knowledge Graphs",
+            "teachers": [
+                {
+                    "@id":"base:OscarCorchoGarcia",
+                    "@type":"people:teacher",
+                    "fullName": "Oscar Corcho Garcia"
+                },
+                {
+                    "@id":"base:RaulGarciaCastro",
+                    "@type":"people:teacher",
+                    "fullName": "Raul Garcia Castro"
+                },
+                {
+                    "@id":"base:DanielGarijoVerdejo",
+                    "@type":"people:teacher",
+                    "fullName": "Daniel Garijo Verdejo"
+                }
+            ],
+            "briefIntroduction": "During this course you will learn about the main foundations for Knowledge Graphs, including the W3C recommendations that are applicable in this area (RDF, RDF Schema, SPARQL, OWL, CSV on the Web) and methodologies for the generation and publication of Knowledge Graphs from multiple heterogeneous data sources and formats, using Linked Data technologies. You will also learn about how to create shared agreed vocabularies and ontologies that can give support to Knowledge Graph generation and publication, and will understand how these principles and approaches have been applied to several domains. You will work on a practical hands-on exercise that will be the basis for your participation in hackatons and other similar events."
+        },
+        {
+            "subjectName": "Time Series Data Mining",
+            "teachers": [
+                {
+                    "@id":"base:JuanPedroCaraca-ValenteHernandez",
+                    "@type":"people:teacher",
+                    "fullName": "Juan Pedro Caraca-Valente Hernandez"
+                },
+                {
+                    "@id":"base:AuroraPerezPerez",
+                    "@type":"people:teacher",
+                    "fullName": "Aurora Perez Perez"
+                }
+            ],
+            "briefIntroduction": "In this course all the stages of the Knowledge Discovery process will be reviewed, focusing on time series, and the most important techniques for each stage will be listed. Emphasis will be placed on techniques for data cleaning and preprocessing that, despite their importance, are often forgotten."
+        }
+
+    ]
+}

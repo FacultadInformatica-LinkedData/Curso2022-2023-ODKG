@@ -5,6 +5,7 @@ prefixes:
   xsd: "http://www.w3.org/2001/XMLSchema#"
   rdfs: "http://www.w3.org/2000/01/rdf-schema#"
   vocab: "http://smartcity.airquality.es/airquality/"
+  saref: "https://saref.etsi.org/core/v3.1.1/"
 
 mappings:
   municipalityMap:
@@ -13,7 +14,7 @@ mappings:
     s: http://smartcity.airquality.es/airquality/municipality/$(MunicipalityName)
     po:
       - [a, vocab:Municipality]
-      - [vocab:hasName, $(MunicipalityName), xsd:string]
+      - [vocab:hasMunicipalityName, $(MunicipalityName), xsd:string]
 
   stationMap:
     sources:
@@ -21,15 +22,14 @@ mappings:
     s: http://smartcity.airquality.es/airquality/station/$(Station)
     po:
       - [a, vocab:Station]
-      - [vocab:hasName, $(StationName), xsd:string]
+      - [vocab:hasStationName, $(StationName), xsd:string]
       - [vocab:latitude, $(Latitude), xsd:real]
       - [vocab:longitude, $(Longitude), xsd:real]
-      - [vocab:hasCode, $(CodeofStation), xsd:integer]
 
       - p: vocab:isLocatedIn
         o:
           - mapping: municipalityMap
-      - p: vocab:makesMeasurement
+      - p: saref:makesMeasurement
         o:
           - mapping: magnitudeMap
 
@@ -39,8 +39,7 @@ mappings:
     s: http://smartcity.airquality.es/airquality/magnitude/$(Code)
     po:
       - [a, vocab:Magnitude]
-      - [vocab:hasCode, $(Code), xsd:integer]
-      - [vocab:hasName, $(MagnitudeName), xsd:string]
-      - [vocab:hasunitofMeasurement, $(UnitOfMeasure), xsd:string]
-      - [vocab:atTime, $(Time), xsd:date]
-      - [vocab:Measurement, $(Measurement), xsd:integer]
+      - [vocab:hasMagnitudeName, $(MagnitudeName), xsd:string]
+      - [vocab:isMeasureIn, $(UnitOfMeasure), xsd:string]
+      - [saref:hasTimestamp, $(Time), xsd:date]
+      - [saref:hasValue, $(Measurement), xsd:integer]

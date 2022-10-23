@@ -9,11 +9,12 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix vocab: <http://smartcity.airquality.es/airquality/> .
+@prefix saref: <https://saref.etsi.org/core/v3.1.1/> .
 
 map:map_magnitudeMap_000 rml:logicalSource map:source_002 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "magnitudeMap" ;
-	rr:predicateObjectMap map:pom_009, map:pom_010, map:pom_011, map:pom_012, map:pom_013, map:pom_014 ;
+	rr:predicateObjectMap map:pom_008, map:pom_009, map:pom_010, map:pom_011, map:pom_012 ;
 	rr:subjectMap map:s_002 .
 
 map:map_municipalityMap_000 rml:logicalSource map:source_000 ;
@@ -25,7 +26,7 @@ map:map_municipalityMap_000 rml:logicalSource map:source_000 ;
 map:map_stationMap_000 rml:logicalSource map:source_001 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "stationMap" ;
-	rr:predicateObjectMap map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007, map:pom_008 ;
+	rr:predicateObjectMap map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007 ;
 	rr:subjectMap map:s_001 .
 
 map:om_000 rdf:type rr:ObjectMap ;
@@ -56,42 +57,32 @@ map:om_005 rml:reference "Longitude" ;
 	rr:datatype xsd:real ;
 	rr:termType rr:Literal .
 
-map:om_006 rml:reference "CodeofStation" ;
-	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:integer ;
-	rr:termType rr:Literal .
-
-map:om_007 rdf:type rr:ObjectMap ;
+map:om_006 rdf:type rr:ObjectMap ;
 	rr:parentTriplesMap map:map_municipalityMap_000 .
 
-map:om_008 rdf:type rr:ObjectMap ;
+map:om_007 rdf:type rr:ObjectMap ;
 	rr:parentTriplesMap map:map_magnitudeMap_000 .
 
-map:om_009 rdf:type rr:ObjectMap ;
+map:om_008 rdf:type rr:ObjectMap ;
 	rr:constant "http://smartcity.airquality.es/airquality/Magnitude" ;
 	rr:termType rr:IRI .
 
-map:om_010 rml:reference "Code" ;
-	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:integer ;
-	rr:termType rr:Literal .
-
-map:om_011 rml:reference "MagnitudeName" ;
+map:om_009 rml:reference "MagnitudeName" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_012 rml:reference "UnitOfMeasure" ;
+map:om_010 rml:reference "UnitOfMeasure" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_013 rml:reference "Time" ;
+map:om_011 rml:reference "Time" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:date ;
 	rr:termType rr:Literal .
 
-map:om_014 rml:reference "Measurement" ;
+map:om_012 rml:reference "Measurement" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:integer ;
 	rr:termType rr:Literal .
@@ -100,13 +91,13 @@ map:pm_000 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_001 rdf:type rr:PredicateMap ;
-	rr:constant vocab:hasName .
+	rr:constant vocab:hasMunicipalityName .
 
 map:pm_002 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_003 rdf:type rr:PredicateMap ;
-	rr:constant vocab:hasName .
+	rr:constant vocab:hasStationName .
 
 map:pm_004 rdf:type rr:PredicateMap ;
 	rr:constant vocab:latitude .
@@ -115,31 +106,25 @@ map:pm_005 rdf:type rr:PredicateMap ;
 	rr:constant vocab:longitude .
 
 map:pm_006 rdf:type rr:PredicateMap ;
-	rr:constant vocab:hasCode .
-
-map:pm_007 rdf:type rr:PredicateMap ;
 	rr:constant vocab:isLocatedIn .
 
-map:pm_008 rdf:type rr:PredicateMap ;
-	rr:constant vocab:makesMeasurement .
+map:pm_007 rdf:type rr:PredicateMap ;
+	rr:constant saref:makesMeasurement .
 
-map:pm_009 rdf:type rr:PredicateMap ;
+map:pm_008 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
+map:pm_009 rdf:type rr:PredicateMap ;
+	rr:constant vocab:hasMagnitudeName .
+
 map:pm_010 rdf:type rr:PredicateMap ;
-	rr:constant vocab:hasCode .
+	rr:constant vocab:isMeasureIn .
 
 map:pm_011 rdf:type rr:PredicateMap ;
-	rr:constant vocab:hasName .
+	rr:constant saref:hasTimestamp .
 
 map:pm_012 rdf:type rr:PredicateMap ;
-	rr:constant vocab:hasunitofMeasurement .
-
-map:pm_013 rdf:type rr:PredicateMap ;
-	rr:constant vocab:atTime .
-
-map:pm_014 rdf:type rr:PredicateMap ;
-	rr:constant vocab:Measurement .
+	rr:constant saref:hasValue .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_000 ;
@@ -193,14 +178,6 @@ map:pom_012 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_012 ;
 	rr:predicateMap map:pm_012 .
 
-map:pom_013 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_013 ;
-	rr:predicateMap map:pm_013 .
-
-map:pom_014 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_014 ;
-	rr:predicateMap map:pm_014 .
-
 map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_magnitudeMap_000, map:map_municipalityMap_000, map:map_stationMap_000 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
@@ -224,3 +201,4 @@ map:source_001 rml:referenceFormulation ql:CSV ;
 map:source_002 rml:referenceFormulation ql:CSV ;
 	rml:source "datos202112-updated.csv" ;
 	rdf:type rml:LogicalSource .
+

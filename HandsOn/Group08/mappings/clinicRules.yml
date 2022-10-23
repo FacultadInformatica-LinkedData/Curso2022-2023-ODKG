@@ -30,6 +30,6 @@ mappings:
     s: https://www.healthfinder.io/group08/ontology/$(addressName)-$(latitude)-$(longitude)
     po:
       - [a, s:Address]
-      - [nsont:addressName ,$(addressName) ,xsd:string]
+      - [nsont:location ,$(addressName) ,xsd:string]
       - [geo:longitude ,$(longitude) ,xsd:float]
       - [geo:latitude ,$(latitude) ,xsd:float]

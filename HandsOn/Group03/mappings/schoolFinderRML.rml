@@ -84,11 +84,11 @@ map:om_009 rml:reference "otherUses" ;
 
 map:om_010 rdf:type rr:ObjectMap ;
 	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/contact/{pk}" ;
-	rr:termType rr:Literal .
+	rr:termType rr:IRI .
 
 map:om_011 rdf:type rr:ObjectMap ;
 	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/schoolGround/{pk}" ;
-	rr:termType rr:Literal .
+	rr:termType rr:IRI .
 
 map:om_012 rdf:type rr:ObjectMap ;
 	rr:constant "http://smartcity.linkeddata.es/schoolfinder/ontology/Contact" ;
@@ -228,15 +228,15 @@ map:om_045 rdf:type rr:ObjectMap ;
 
 map:om_046 rdf:type rr:ObjectMap ;
 	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/schoolyard/{pk}" ;
-	rr:termType rr:Literal .
+	rr:termType rr:IRI .
 
 map:om_047 rdf:type rr:ObjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/accesability/{pk}" ;
-	rr:termType rr:Literal .
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/accessibility/{pk}" ;
+	rr:termType rr:IRI .
 
 map:om_048 rdf:type rr:ObjectMap ;
 	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/localization/{pk}" ;
-	rr:termType rr:Literal .
+	rr:termType rr:IRI .
 
 map:pm_000 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
@@ -380,7 +380,7 @@ map:pm_046 rdf:type rr:PredicateMap ;
 	rr:constant ont:hasSchoolyard .
 
 map:pm_047 rdf:type rr:PredicateMap ;
-	rr:constant ont:hasAccesability .
+	rr:constant ont:hasAccessibility .
 
 map:pm_048 rdf:type rr:PredicateMap ;
 	rr:constant ont:hasLocalization .
@@ -594,35 +594,35 @@ map:s_002 rdf:type rr:SubjectMap ;
 	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/localization/{pk}" .
 
 map:s_003 rdf:type rr:SubjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/accesibility/{pk}" .
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/accessibility/{pk}" .
 
 map:s_004 rdf:type rr:SubjectMap ;
 	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/schoolyard/{pk}" .
 
 map:s_005 rdf:type rr:SubjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/schoolground/{pk}" .
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/schoolGround/{pk}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
-	rml:source "Estudio_Patios_Escolares2022-updated.csv" ;
+	rml:source "/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updated.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_001 rml:referenceFormulation ql:CSV ;
-	rml:source "Estudio_Patios_Escolares2022-updated.csv" ;
+	rml:source "/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updated.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_002 rml:referenceFormulation ql:CSV ;
-	rml:source "Estudio_Patios_Escolares2022-updated.csv" ;
+	rml:source "/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updated.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_003 rml:referenceFormulation ql:CSV ;
-	rml:source "Estudio_Patios_Escolares2022-updated.csv" ;
+	rml:source "/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updated.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_004 rml:referenceFormulation ql:CSV ;
-	rml:source "Estudio_Patios_Escolares2022-updated.csv" ;
+	rml:source "/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updated.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_005 rml:referenceFormulation ql:CSV ;
-	rml:source "Estudio_Patios_Escolares2022-updated.csv" ;
+	rml:source "/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updated.csv" ;
 	rdf:type rml:LogicalSource .
 

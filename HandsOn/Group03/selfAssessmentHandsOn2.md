@@ -1,4 +1,4 @@
-# Hands-on assignment 1 - Self assessment #
+# Hands-on assignment 2 - Self assessment #
 
 ## Checklist ##
 
@@ -53,4 +53,4 @@
 
 ## Comments on self-assessment ##
 
-Diagram uploaded 
+ No comments already

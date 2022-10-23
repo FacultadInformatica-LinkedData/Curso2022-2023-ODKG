@@ -38,11 +38,6 @@ geo:longitude a owl:DatatypeProperty ;
     rdfs:domain ns:Address ;
     rdfs:range xsd:String .
 
-nsont:belongTo a owl:ObjectProperty ;
-    rdfs:label "belong to" ;
-    rdfs:domain ns:Address ;
-    rdfs:range ns:Municipality .
-
 nsont:isIn a owl:ObjectProperty ;
     rdfs:label "is in" ;
     rdfs:domain ns:Clinic,
@@ -87,9 +82,6 @@ nsdata:Clinic a owl:Class ;
 
 nsdata:Defibrillator a owl:Class ;
     rdfs:label "Defibrillator" .
-
-nsdata:Municipality a owl:Class ;
-    rdfs:label "Municipality" .
 
 nsdata:Address a owl:Class ;
     rdfs:label "Address" .

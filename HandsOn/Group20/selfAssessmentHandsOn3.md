@@ -23,9 +23,15 @@
 
 ## Comments on the self-assessment
 
-As the fourth .csv files we are working with refers to different subclasses  of a main subclass (CollaborativeEntities) and their structures are almost the same, we have performed an homogeneization task in order to merge them and get a single .csv file, called merged_entities.csv. This new .csv file includes a label who identifies to which subclass of CollaborativeEntities instances below. In next assignments, we will try to take advantage to this new dataset, using instead the separated cleanised datasets if we find more comfortable to transform data to RDF standards at this way. Once done this, we have loaded the merged dataset in openrefine and have performed some checks and another round of cleaning tasks above that, resulting in a new file (merged-entities-updated.csv).
+As the fourth .csv files we are working with refers to different subclasses  of a main subclass (CollaborativeEntities) and their structures are almost the same, we have performed an homogeneization task in order to merge them and get a single .csv file, called merged_entities.csv. This new .csv file includes a label who identifies to which subclass of CollaborativeEntities instances below. In next assignments, we will try to take advantage to this new dataset, using instead the separated cleanised datasets if we find more comfortable to transform data to RDF standards at this way. 
 
-Using the google API services, we've achieved to obtain precise geographical information about latitudes and longitudes related to each adress we have.
+Using the google API services, we've achieved to obtain precise geographical information about latitudes and longitudes related to each adress we have. To reach that aim, we had to create a google cloud platform facturation account. With the $300 of free credit we have been able to request that data without problem.  We have used the following GREL expression.
+
+'https://maps.googleapis.com/maps/api/geocode/json?' + 
+'sensor=false&' + 
+'key=[key_value]' +
+'address=' + escape(value,'url')
+
 
 As identifiers for entities defined in Madrid City Council datasets were auto-incremental integers, we have applied a hash md5 function to them, in order to prevent it. 
 

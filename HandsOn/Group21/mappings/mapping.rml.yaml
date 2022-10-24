@@ -1,74 +1,85 @@
 prefixes:
- mcao: "http://miciudadamiga.madrid/map/ontology#"
- mcar: "http://miciudadamiga.madrid/map/resource/"
+ ns: "http://miciudadamiga.madrid/map/ontology#"
+ nsr: "http://miciudadamiga.madrid/map/resource/"
  v: "http://www.w3.org/2006/vcard/ns#"
  loc: "http://purl.org/ctic/infraestructuras/localizacion#"
  org: "http://purl.org/ctic/infraestructuras/organizacion#"
  dbr: "http://dbpedia.org/resource/"
+ cart: "http://purl.org/net/cartCoord#"
+ metro: "http://www.miciudadamiga.madrid/map/resource/ParadaMetro/"
+ bus: "http://www.miciudadamiga.madrid/map/resource/LineaBus/"
  
 mappings:
-
-  barrio:
+ centro_dia:
     sources:
       - ['data.csv~csv']
-    s: dbr:List_of_neighborhoods_of_Madrid/$(BARRIO)
-    po:
-      - [mcao:hasNameBarrio, $(BARRIO), xsd:string] 
-      - [mcao:hasCodeBarrio, $(COD-BARRIO), xsd:string]
-
-  distrito:
-    sources:
-      - ['data.csv~csv']
-    s: dbr:List_of_neighborhoods_of_Madrid/$(DISTRITO)
-    po:
-      - [mcao:hasNameDistrito, $(DISTRITO), xsd:string] 
-      - [mcao:hasCodeDistrito, $(COD-DISTRITO), xsd:string]
-
-centro_dia:
-    sources:
-      - ['data.csv~csv']
-    s: mca:$(CENTRO-DIA)
+    s: nsr:$(CENTRO-DIA)
     po:
       - [a, https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosDiaMayores]
-      - [v:fn, mcao:/Centro-Dia/$(CENTRO-DIA), xsd:string]
+      - [v:fn, nsr:/Centro-Dia/$(CENTRO-DIA), xsd:string]
       - [org:horario, $(HORARIO), xsd:string]
       - [org:servicios, $(EQUIPAMIENTO), xsd:string]
       - [org:accesibilidad, $(ACCESIBILIDAD), xsd:boolean]
       - [v:street-address, $(DIRECCION), xsd:string]
-      - [geo:long, $(LONGITUD), xsd:double]
-      - [geo:lat, $(LATITUD), xsd:double]
+      - [loc:long, $(LONGITUD), xsd:double]
+      - [loc:lat, $(LATITUD), xsd:double]
+      - [cart:ycoord, $(COORDENADA-X), xsd:double]
+      - [cart:ycoord, $(COORDENADA-Y), xsd:double]
       - [v:tel, $(TELEFONO), xsd:string]
-      - [mcao:content_url, $(CONTENT-URL), xsd:anyURI]
+      - [ns:metroAccess, $(METRO), metro:SubwayStop]
+      - [ns:busAccess, $(BUS), bus:BusStop]
+      - [ns:content_url, $(CONTENT-URL), xsd:anyURI]
       - [loc:distrito, $(DISTRITO), xsd:string]
-      - p: mcao:locatedIn
-        o:
-      - mapping: distrito
-          condition:
-            function: equal
-            - [ str1, $(DISTRITO) ]
-            - [ str2, $(DISTRITO) ]
+      - p: ns:belongsToMadridNeighbourhood
+        o: dbr:List_of_neighborhoods_of_Madrid/$(BARRIO)
+            mapping: distrito
+            condition:
+                function: equal
+                parameters:
+                    - [ str1, $(DISTRITO) ]
+                    - [ str2, $(DISTRITO) ]
       - [loc:distrito, $(COD-DISTRITO), xsd:integer]
-      - p: mcao:locatedIn
-        o:
-      - mapping: distrito
-          condition:
-            function: equal
-            - [ str1, $(COD-DISTRITO) ]
-            - [ str2, $(COD-DISTRITO) ]
+      - p: ns:belongsToMadridNeighbourhood
+        o: dbr:List_of_neighborhoods_of_Madrid/$(BARRIO)
+            mapping: distrito
+            condition:
+                function: equal
+                parameters:
+                    - [ str1, $(COD-DISTRITO) ]
+                    - [ str2, $(COD-DISTRITO) ]
             - [loc:barrio, $(BARRIO), xsd:string]
-      - p: mcao:locatedIn
-        o:
-      - mapping: barrio
-          condition:
-            function: equal
-            - [ str1, $(BARRIO) ]
-            - [ str2, $(BARRIO) ]
+      - p: ns:belongsToMadridNeighbourhood
+        o: dbr:List_of_neighborhoods_of_Madrid/$(BARRIO)
+            mapping: barrio
+            condition:
+                function: equal
+                parameters:
+                    - [ str1, $(BARRIO) ]
+                    - [ str2, $(BARRIO) ]
       - [loc:barrio, $(COD-BARRIO), xsd:integer]
-      - p: mcao:locatedIn
-        o:
-      - mapping: barrio
-          condition:
-            function: equal
-            - [ str1, $(COD-BARRIO) ]
-            - [ str2, $(COD-BARRIO) ]
+      - p: ns:belongsToMadridNeighbourhood
+        o: dbr:List_of_neighborhoods_of_Madrid/$(BARRIO)
+            mapping: barrio
+            condition:
+                function: equal
+                parameters:
+                    - [ str1, $(COD-BARRIO) ]
+                    - [ str2, $(COD-BARRIO) ]
+ barrio:
+    sources:
+      - ['data.csv~csv']
+    s: dbr:List_of_neighborhoods_of_Madrid/$(BARRIO)
+    po:
+      - [ns:belongsToMadridNeighbourhood, $(BARRIO), xsd:string] 
+      - [ns:belongsToMadridNeighbourhood, $(COD-BARRIO), xsd:string]
+
+ distrito:
+    sources:
+      - ['data.csv~csv']
+    s: dbr:List_of_neighborhoods_of_Madrid/$(DISTRITO)
+    po:
+      - [ns:belongsToMadridNeighbourhood, $(DISTRITO), xsd:string] 
+      - [ns:belongsToMadridNeighbourhood, $(COD-DISTRITO), xsd:string]
+
+
     

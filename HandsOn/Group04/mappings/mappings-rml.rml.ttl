@@ -1,0 +1,283 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix map: <http://mapping.example.com/> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rev: <http://purl.org/stuff/rev#> .
+@prefix v: <http://rdf.data-vocabulary.org/#> .
+@prefix schema: <http://schema.org/> .
+@prefix gtfs: <http://vocab.gtfs.org/terms#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pp: <http://www.urbanElementsMadrid.es/ontology/ont#> .
+@prefix pi: <http://www.urbanElementsMadrid.es/resource/> .
+
+map:jc_000 rr:child "ADDRESS" ;
+	rr:parent "ADDRESS" .
+
+map:jc_001 rr:child "DISTRICT CODE" ;
+	rr:parent "DISTRICT CODE" .
+
+map:jc_002 rr:child "ADDRESS" ;
+	rr:parent "ADDRESS" .
+
+map:jc_003 rr:child "DISTRICT CODE" ;
+	rr:parent "DISTRICT" .
+
+map:map_Address_000 rml:logicalSource map:source_003 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "Address" ;
+	rr:predicateObjectMap map:pom_015, map:pom_016 ;
+	rr:subjectMap map:s_003 .
+
+map:map_District_000 rml:logicalSource map:source_002 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "District" ;
+	rr:predicateObjectMap map:pom_012, map:pom_013, map:pom_014 ;
+	rr:subjectMap map:s_002 .
+
+map:map_Fountain_000 rml:logicalSource map:source_000 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "Fountain" ;
+	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005 ;
+	rr:subjectMap map:s_000 .
+
+map:map_Restroom_000 rml:logicalSource map:source_001 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "Restroom" ;
+	rr:predicateObjectMap map:pom_006, map:pom_007, map:pom_008, map:pom_009, map:pom_010, map:pom_011 ;
+	rr:subjectMap map:s_001 .
+
+map:om_000 rdf:type rr:ObjectMap ;
+	rr:constant "http://www.urbanElementsMadrid.es/resource/Fountain" ;
+	rr:termType rr:IRI .
+
+map:om_001 rml:reference "ID" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_002 rml:reference "LATITUDE" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:real ;
+	rr:termType rr:Literal .
+
+map:om_003 rml:reference "LONGITUDE" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:real ;
+	rr:termType rr:Literal .
+
+map:om_004 rdf:type rr:ObjectMap ;
+	rr:joinCondition map:jc_000 ;
+	rr:parentTriplesMap map:map_Address_000 .
+
+map:om_005 rdf:type rr:ObjectMap ;
+	rr:joinCondition map:jc_001 ;
+	rr:parentTriplesMap map:map_District_000 .
+
+map:om_006 rdf:type rr:ObjectMap ;
+	rr:constant "http://www.urbanElementsMadrid.es/resource/Restroom" ;
+	rr:termType rr:IRI .
+
+map:om_007 rml:reference "ID" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_008 rml:reference "LATITUDE" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:real ;
+	rr:termType rr:Literal .
+
+map:om_009 rml:reference "LONGITUDE" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:real ;
+	rr:termType rr:Literal .
+
+map:om_010 rdf:type rr:ObjectMap ;
+	rr:joinCondition map:jc_002 ;
+	rr:parentTriplesMap map:map_Address_000 .
+
+map:om_011 rdf:type rr:ObjectMap ;
+	rr:joinCondition map:jc_003 ;
+	rr:parentTriplesMap map:map_District_000 .
+
+map:om_012 rdf:type rr:ObjectMap ;
+	rr:constant "http://www.urbanElementsMadrid.es/resource/District" ;
+	rr:termType rr:IRI .
+
+map:om_013 rml:reference "DISTRICT CODE" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:float ;
+	rr:termType rr:Literal .
+
+map:om_014 rml:reference "DISTRICT" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_015 rdf:type rr:ObjectMap ;
+	rr:constant "http://www.urbanElementsMadrid.es/resource/Addresss" ;
+	rr:termType rr:IRI .
+
+map:om_016 rml:reference "ADDRESS" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:pm_000 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_001 rdf:type rr:PredicateMap ;
+	rr:constant pp:hasId .
+
+map:pm_002 rdf:type rr:PredicateMap ;
+	rr:constant pp:latitude .
+
+map:pm_003 rdf:type rr:PredicateMap ;
+	rr:constant pp:longitude .
+
+map:pm_004 rdf:type rr:PredicateMap ;
+	rr:constant pp:hasAddress .
+
+map:pm_005 rdf:type rr:PredicateMap ;
+	rr:constant pp:hasDistrict .
+
+map:pm_006 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_007 rdf:type rr:PredicateMap ;
+	rr:constant pp:hasId .
+
+map:pm_008 rdf:type rr:PredicateMap ;
+	rr:constant pp:latitude .
+
+map:pm_009 rdf:type rr:PredicateMap ;
+	rr:constant pp:longitude .
+
+map:pm_010 rdf:type rr:PredicateMap ;
+	rr:constant pp:hasAddress .
+
+map:pm_011 rdf:type rr:PredicateMap ;
+	rr:constant pp:hasDistrict .
+
+map:pm_012 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_013 rdf:type rr:PredicateMap ;
+	rr:constant pp:hasCode .
+
+map:pm_014 rdf:type rr:PredicateMap ;
+	rr:constant pp:hasName .
+
+map:pm_015 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_016 rdf:type rr:PredicateMap ;
+	rr:constant pp:isLocated .
+
+map:pom_000 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_000 ;
+	rr:predicateMap map:pm_000 .
+
+map:pom_001 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_001 ;
+	rr:predicateMap map:pm_001 .
+
+map:pom_002 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_002 ;
+	rr:predicateMap map:pm_002 .
+
+map:pom_003 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_003 ;
+	rr:predicateMap map:pm_003 .
+
+map:pom_004 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_004 ;
+	rr:predicateMap map:pm_004 .
+
+map:pom_005 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_005 ;
+	rr:predicateMap map:pm_005 .
+
+map:pom_006 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_006 ;
+	rr:predicateMap map:pm_006 .
+
+map:pom_007 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_007 ;
+	rr:predicateMap map:pm_007 .
+
+map:pom_008 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_008 ;
+	rr:predicateMap map:pm_008 .
+
+map:pom_009 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_009 ;
+	rr:predicateMap map:pm_009 .
+
+map:pom_010 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_010 ;
+	rr:predicateMap map:pm_010 .
+
+map:pom_011 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_011 ;
+	rr:predicateMap map:pm_011 .
+
+map:pom_012 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_012 ;
+	rr:predicateMap map:pm_012 .
+
+map:pom_013 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_013 ;
+	rr:predicateMap map:pm_013 .
+
+map:pom_014 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_014 ;
+	rr:predicateMap map:pm_014 .
+
+map:pom_015 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_015 ;
+	rr:predicateMap map:pm_015 .
+
+map:pom_016 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_016 ;
+	rr:predicateMap map:pm_016 .
+
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_Address_000, map:map_District_000, map:map_Fountain_000, map:map_Restroom_000 ;
+	rdf:type <http://rdfs.org/ns/void#Dataset> .
+
+map:s_000 rdf:type rr:SubjectMap ;
+	rr:template "http://www.urbanElementsMadrid.es/resource/Fountain/{ID}" .
+
+map:s_001 rdf:type rr:SubjectMap ;
+	rr:template "http://www.urbanElementsMadrid.es/resource/Restroom/{ID}" .
+
+map:s_002 rdf:type rr:SubjectMap ;
+	rr:template "http://www.urbanElementsMadrid.es/resource/District/{DISTRICT CODE}" .
+
+map:s_003 rdf:type rr:SubjectMap ;
+	rr:template "http://www.urbanElementsMadrid.es/resource/ADDRESS/{ADDRESS}" .
+
+map:source_000 rml:referenceFormulation ql:CSV ;
+	rml:source "dataset_fountains.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_001 rml:referenceFormulation ql:CSV ;
+	rml:source "dataset_restrooms.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_002 rml:referenceFormulation ql:CSV ;
+	rml:source "dataset_fountains.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_003 rml:referenceFormulation ql:CSV ;
+	rml:source "Dataset_completo-updated.csv" ;
+	rdf:type rml:LogicalSource .
+

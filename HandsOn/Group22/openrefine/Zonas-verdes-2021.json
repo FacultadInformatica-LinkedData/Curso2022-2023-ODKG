@@ -1,0 +1,956 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Solar",
+    "expression": "jython:return value.replace(\"m2\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Solar using expression jython:return value.replace(\"m2\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Solar",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Solar using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Número de archivo",
+    "expression": "jython:return value.replace(\".\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Número de archivo using expression jython:return value.replace(\".\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Número de archivo",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Número de archivo using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Subepígrafe",
+    "description": "Remove column Subepígrafe"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Solar",
+    "newColumnName": "Solar_m2",
+    "description": "Rename column Solar to Solar_m2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Naturaleza del inmueble",
+    "description": "Remove column Naturaleza del inmueble"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Número de archivo",
+    "newColumnName": "archive_number",
+    "description": "Rename column Número de archivo to archive_number"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Situación Destino",
+    "newColumnName": "location",
+    "description": "Rename column Situación Destino to location"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Apartado",
+    "newColumnName": "green_zone",
+    "description": "Rename column Apartado to green_zone"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Distrito",
+    "newColumnName": "district",
+    "description": "Rename column Distrito to district"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Destino",
+    "newColumnName": "destinatation",
+    "description": "Rename column Destino to destinatation"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Solar_m2",
+    "newColumnName": "solar_m2",
+    "description": "Rename column Solar_m2 to solar_m2"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "green_zone",
+          "expression": "value",
+          "columnName": "green_zone",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "PARQUES Y JARDINES                                                                                  ",
+                "l": "PARQUES Y JARDINES                                                                                  "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "green_zone",
+    "expression": "jython:return 1",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column green_zone using expression jython:return 1"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "green_zone",
+          "expression": "value",
+          "columnName": "green_zone",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ZONAS FORESTALES                                                                                    ",
+                "l": "ZONAS FORESTALES                                                                                    "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "green_zone",
+    "expression": "jython:return 2",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column green_zone using expression jython:return 2"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "green_zone",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column green_zone using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "green_zone",
+    "expression": "jython:return 'http://www.group22.org/gz/resource/GreenZone/G'+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column green_zone using expression jython:return 'http://www.group22.org/gz/resource/GreenZone/G'+value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ARGANZUELA                                                  ",
+                "l": "ARGANZUELA                                                  "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 2",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 2"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "BARAJAS                                                     ",
+                "l": "BARAJAS                                                     "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 21",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 21"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CARABANCHEL                                                 ",
+                "l": "CARABANCHEL                                                 "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 11",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 11"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CENTRO                                                      ",
+                "l": "CENTRO                                                      "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 1",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 1"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CHAMARTÍN                                                   ",
+                "l": "CHAMARTÍN                                                   "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 5",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 5"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CHAMBERÍ                                                    ",
+                "l": "CHAMBERÍ                                                    "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 7",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 7"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CIUDAD LINEAL                                               ",
+                "l": "CIUDAD LINEAL                                               "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 15",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 15"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "FUENCARRAL-EL PARDO                                         ",
+                "l": "FUENCARRAL-EL PARDO                                         "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 8",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 8"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "HORTALEZA                                                   ",
+                "l": "HORTALEZA                                                   "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 16",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 16"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "LATINA                                                      ",
+                "l": "LATINA                                                      "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 10",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 10"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "MONCLOA-ARAVACA                                             ",
+                "l": "MONCLOA-ARAVACA                                             "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 9",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 9"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "MORATALAZ                                                   ",
+                "l": "MORATALAZ                                                   "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 14",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 14"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "PUENTE DE VALLECAS                                          ",
+                "l": "PUENTE DE VALLECAS                                          "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 13",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 13"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "RETIRO                                                      ",
+                "l": "RETIRO                                                      "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 3",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 3"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SALAMANCA                                                   ",
+                "l": "SALAMANCA                                                   "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 4",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 4"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SAN BLAS-CANILLEJAS                                         ",
+                "l": "SAN BLAS-CANILLEJAS                                         "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 20",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 20"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "TETUÁN                                                      ",
+                "l": "TETUÁN                                                      "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 6",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 6"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "USERA                                                       ",
+                "l": "USERA                                                       "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 12",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 12"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "VICÁLVARO                                                   ",
+                "l": "VICÁLVARO                                                   "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 19",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 19"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "VILLA DE VALLECAS                                           ",
+                "l": "VILLA DE VALLECAS                                           "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 18",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 18"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "VILLAVERDE                                                  ",
+                "l": "VILLAVERDE                                                  "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 17",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 17"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "jython:return 'http://www.group22.org/gz/resource/District/D'+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression jython:return 'http://www.group22.org/gz/resource/District/D'+value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "archive_number",
+    "expression": "jython:return value",
+    "onError": "set-to-blank",
+    "newColumnName": "identifier",
+    "columnInsertIndex": 3,
+    "description": "Create column identifier at index 3 based on column archive_number using expression jython:return value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "identifier",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column identifier using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "identifier",
+    "expression": "jython:return 'http://www.group22.org/gz/resource/GreenZones/'+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column identifier using expression jython:return 'http://www.group22.org/gz/resource/GreenZones/'+value"
+  }
+]

@@ -1,5 +1,6 @@
 @prefix bs: <http://smartbikes.org/ontology/bikeStation#> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix wiki: https://www.wikidata.org/wiki/Q484170#
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix paw: <http://purl.org/pav/> .
@@ -54,10 +55,14 @@ bs:returnOfVelibPossible a owl:DatatypeProperty ;
     rdfs:domain bs:BikeStation ;
     rdfs:range xsd:boolean .
 
+### http://smartbikes.org/ontology/bikeStation#locatedInArea
+bs:locatedInArea a owl:FunctionalProperty;
+    rdfs:label "commune located in are";
+    rdfs:domain bs:BikeStation;
+
 ### Reused properties from other ontologies ###
 
 dbo:capacity a owl:DatatypeProperty.
-dbo:locatedInArea a owl:FunctionalProperty.
 paw:lastUpdateOn a owl:DatatypeProperty.
 schema:id a owl:DatatypeProperty.
 schema:name a owl:DatatypeProperty.
@@ -69,6 +74,6 @@ bs:BikeStation a owl:Class ;
 
 ### Reused classes from other ontologies ###
 
-dbo:Municipality a owl:Class.
+wiki:Q484170 a owl:Class
 schema:CivicStructure a owl:Class.
 schema:GeoCoordinate a owl:Class.

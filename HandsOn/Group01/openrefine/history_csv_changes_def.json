@@ -1,0 +1,724 @@
+[
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ubicacion",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ", ",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column ubicacion by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ubicacion 1",
+    "newColumnName": "Lat",
+    "description": "Rename column ubicacion 1 to Lat"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Lat",
+    "newColumnName": "latitude",
+    "description": "Rename column Lat to latitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ubicacion 2",
+    "newColumnName": "longitude",
+    "description": "Rename column ubicacion 2 to longitude"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "telefono",
+    "expression": "jython:if value:\n return value.replace(\" \",\"\").split(\"(\")[0]",
+    "onError": "set-to-blank",
+    "newColumnName": "phone_number",
+    "columnInsertIndex": 5,
+    "description": "Create column phone_number at index 5 based on column telefono using expression jython:if value:\n return value.replace(\" \",\"\").split(\"(\")[0]"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "telefono",
+    "description": "Remove column telefono"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "gestionado_por",
+    "expression": "jython:instituciones = [\"SEGURIDAD SOCIAL\", \"GENERALITAT VALENCIANA\"]\nif value in instituciones:\n return False\nelse:\n return True",
+    "onError": "set-to-blank",
+    "newColumnName": "is_company",
+    "columnInsertIndex": 6,
+    "description": "Create column is_company at index 6 based on column gestionado_por using expression jython:instituciones = [\"SEGURIDAD SOCIAL\", \"GENERALITAT VALENCIANA\"]\nif value in instituciones:\n return False\nelse:\n return True"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "provincia",
+    "newColumnName": "province",
+    "description": "Rename column provincia to province"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "area_de_salud",
+    "newColumnName": "health_area",
+    "description": "Rename column area_de_salud to health_area"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "nombre",
+    "newColumnName": "center",
+    "description": "Rename column nombre to center"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "domicilio",
+    "newColumnName": "address",
+    "description": "Rename column domicilio to address"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "gestionado_por",
+    "newColumnName": "entity",
+    "description": "Rename column gestionado_por to entity"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ciudad",
+    "newColumnName": "city",
+    "description": "Rename column ciudad to city"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "is_company",
+    "description": "Remove column is_company"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "province",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q162620",
+        "name": "province of Spain"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column province to type Q162620"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q515",
+        "name": "city"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column city to type Q515"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2074737",
+        "name": "municipality of Spain"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column city to type Q2074737"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "similarValue": "ALFAFAR",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1648851",
+      "name": "Alfafar",
+      "types": [
+        "Q2074737"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Alfafar (Q1648851) for cells containing \"ALFAFAR\" in column city"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "similarValue": "PUERTO SAGUNTO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28492293",
+      "name": "Puerto de Sagunto",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Puerto de Sagunto (Q28492293) for cells containing \"PUERTO SAGUNTO\" in column city"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "similarValue": "PUERTO SAGUNTO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28492293",
+      "name": "Puerto de Sagunto",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Puerto de Sagunto (Q28492293) for cells containing \"PUERTO SAGUNTO\" in column city"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "similarValue": "CASTELLÓ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q15092",
+      "name": "Castelló de la Plana",
+      "types": [
+        "Q2074737",
+        "Q515",
+        "Q1549591"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Castelló de la Plana (Q15092) for cells containing \"CASTELLÓ\" in column city"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "similarValue": "TORRENT",
+    "judgment": "matched",
+    "match": {
+      "id": "Q161945",
+      "name": "Torrent",
+      "types": [
+        "Q2074737",
+        "Q515"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Torrent (Q161945) for cells containing \"TORRENT\" in column city"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "similarValue": "ORIHUELA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q487786",
+      "name": "Orihuela",
+      "types": [
+        "Q2074737"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Orihuela (Q487786) for cells containing \"ORIHUELA\" in column city"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "similarValue": "PUERTO SAGUNTO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q47497",
+      "name": "Port de Sagunt",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Port de Sagunt (Q47497) for cells containing \"PUERTO SAGUNTO\" in column city"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q4830453",
+        "name": "business"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column entity to type Q4830453"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "BBRAUN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q644835",
+      "name": "B. Braun",
+      "types": [
+        "Q4830453"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Match item B. Braun (Q644835) for cells containing \"BBRAUN\" in column entity"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "CLÍNICA VISTAHERMOSA GRUPO HLA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q87761418",
+      "name": "Clínica Vistahermosa Grupo Hla",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Clínica Vistahermosa Grupo Hla (Q87761418) for cells containing \"CLÍNICA VISTAHERMOSA GRUPO HLA\" in column entity"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "GENERALITAT VALENCIANA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2477285",
+      "name": "Generalitat Valenciana",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Generalitat Valenciana (Q2477285) for cells containing \"GENERALITAT VALENCIANA\" in column entity"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "SEGURIDAD SOCIAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2878592",
+      "name": "Social Security in Spain",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Social Security in Spain (Q2878592) for cells containing \"SEGURIDAD SOCIAL\" in column entity"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "CENTRO MÉDICO SALUS BALEARES",
+    "description": "Clear recon data for cells containing \"CENTRO MÉDICO SALUS BALEARES\" in column entity"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "TORREVIEJA SALUD UTE LEY 18/82",
+    "description": "Clear recon data for cells containing \"TORREVIEJA SALUD UTE LEY 18/82\" in column entity"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "RIVERA SALUD",
+    "description": "Clear recon data for cells containing \"RIVERA SALUD\" in column entity"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "CASA DE REPOSO Y SANATORIO PPTO. SOCORRO SA",
+    "description": "Clear recon data for cells containing \"CASA DE REPOSO Y SANATORIO PPTO. SOCORRO SA\" in column entity"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "ELCHE CREVILLENTE SALUD",
+    "description": "Clear recon data for cells containing \"ELCHE CREVILLENTE SALUD\" in column entity"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "entity",
+    "similarValue": "VITHAS ALICANTE, SL",
+    "description": "Clear recon data for cells containing \"VITHAS ALICANTE, SL\" in column entity"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "province",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "Province URI",
+    "columnInsertIndex": 1,
+    "description": "Create column Province URI at index 1 based on column province using expression grel:\"https://www.wikidata.org/wiki/\" + cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "entity",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "Entity URI",
+    "columnInsertIndex": 7,
+    "description": "Create column Entity URI at index 7 based on column entity using expression grel:\"https://www.wikidata.org/wiki/\" + cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "city",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "City URI",
+    "columnInsertIndex": 10,
+    "description": "Create column City URI at index 10 based on column city using expression grel:\"https://www.wikidata.org/wiki/\" + cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "center",
+    "expression": "jython:char_to_replace = {\" \":\"_\", \"-\":\"_\", \".\":\"\"}\nnew_value = value.lower()\n\nfor old, new in char_to_replace.items():\n  new_value = new_value.replace(old, new)\n\nreturn new_value",
+    "onError": "set-to-blank",
+    "newColumnName": "center id",
+    "columnInsertIndex": 3,
+    "description": "Create column center id at index 3 based on column center using expression jython:char_to_replace = {\" \":\"_\", \"-\":\"_\", \".\":\"\"}\nnew_value = value.lower()\n\nfor old, new in char_to_replace.items():\n  new_value = new_value.replace(old, new)\n\nreturn new_value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "health_area",
+    "expression": "grel:value.replace(\".\",\"\").replace(\" \",\"_\").replace(\"–\",\"_\").replace(\"í\",\"i\").replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"ó\",\"o\").replace(\"ú\",\"u\").replace(\"à\",\"a\").replace(\"è\",\"e\").replace(\"ò\",\"o\")",
+    "onError": "set-to-blank",
+    "newColumnName": "health_area_id",
+    "columnInsertIndex": 2,
+    "description": "Create column health_area_id at index 2 based on column health_area using expression grel:value.replace(\".\",\"\").replace(\" \",\"_\").replace(\"–\",\"_\").replace(\"í\",\"i\").replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"ó\",\"o\").replace(\"ú\",\"u\").replace(\"à\",\"a\").replace(\"è\",\"e\").replace(\"ò\",\"o\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "center id",
+    "newColumnName": "center_id",
+    "description": "Rename column center id to center_id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "health_area_id",
+    "expression": "grel:value.toLowercase()",
+    "onError": "set-to-blank",
+    "newColumnName": "health_area_id2",
+    "columnInsertIndex": 3,
+    "description": "Create column health_area_id2 at index 3 based on column health_area_id using expression grel:value.toLowercase()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "health_area_id",
+    "description": "Remove column health_area_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "health_area_id2",
+    "newColumnName": "health_area_id",
+    "description": "Rename column health_area_id2 to health_area_id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "province",
+    "expression": "grel:value.toLowercase().replace(\"ó\", \"o\")",
+    "onError": "set-to-blank",
+    "newColumnName": "province_id",
+    "columnInsertIndex": 1,
+    "description": "Create column province_id at index 1 based on column province using expression grel:value.toLowercase().replace(\"ó\", \"o\")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "entity",
+    "expression": "grel:value.toLowercase().replace(\" \", \"_\").replace(\"é\",\"e\").replace(\"ó\", \"o\").replace(\"í\",\"i\").replace(\"/\", \"_\").replace(\".\",\"\").replace(\",\", \"\")",
+    "onError": "set-to-blank",
+    "newColumnName": "entity_id",
+    "columnInsertIndex": 9,
+    "description": "Create column entity_id at index 9 based on column entity using expression grel:value.toLowercase().replace(\" \", \"_\").replace(\"é\",\"e\").replace(\"ó\", \"o\").replace(\"í\",\"i\").replace(\"/\", \"_\").replace(\".\",\"\").replace(\",\", \"\")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "city",
+    "expression": "grel:value.toLowercase().replace(\" \", \"_\").replace(\"é\",\"e\").replace(\"ó\", \"o\").replace(\"í\",\"i\").replace(\"/\", \"_\").replace(\".\",\"\").replace(\",\", \"\").replace(\"-\",\"_\").replace(\"ò\",\"o\")",
+    "onError": "set-to-blank",
+    "newColumnName": "city_id",
+    "columnInsertIndex": 11,
+    "description": "Create column city_id at index 11 based on column city using expression grel:value.toLowercase().replace(\" \", \"_\").replace(\"é\",\"e\").replace(\"ó\", \"o\").replace(\"í\",\"i\").replace(\"/\", \"_\").replace(\".\",\"\").replace(\",\", \"\").replace(\"-\",\"_\").replace(\"ò\",\"o\")"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "city",
+    "index": 11,
+    "description": "Move column city to position 11"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "province",
+    "expression": "jython:valuenew = value.split(\" \")\nreturn valuenew[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column province using expression jython:valuenew = value.split(\" \")\nreturn valuenew[0]"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "province_id",
+    "expression": "jython:valuenew = value.split(\" \") \nreturn valuenew[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column province_id using expression jython:valuenew = value.split(\" \") \nreturn valuenew[0]"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Province URI",
+    "newColumnName": "Province_URI",
+    "description": "Rename column Province URI to Province_URI"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Province_URI",
+    "newColumnName": "province_URI",
+    "description": "Rename column Province_URI to province_URI"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "City URI",
+    "newColumnName": "city_uri",
+    "description": "Rename column City URI to city_uri"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Entity URI",
+    "newColumnName": "entity_uti",
+    "description": "Rename column Entity URI to entity_uti"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "entity_uti",
+    "newColumnName": "entity_uri",
+    "description": "Rename column entity_uti to entity_uri"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "province_URI",
+    "newColumnName": "province_uri",
+    "description": "Rename column province_URI to province_uri"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "entity_uri",
+    "index": 12,
+    "description": "Move column entity_uri to position 12"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "entity_uri",
+    "index": 11,
+    "description": "Move column entity_uri to position 11"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "city_uri",
+    "index": 14,
+    "description": "Move column city_uri to position 14"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "center_id",
+    "expression": "grel:value.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\").replace(\"à\",\"a\").replace(\"è\",\"e\").replace(\"ò\",\"o\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column center_id using expression grel:value.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\").replace(\"à\",\"a\").replace(\"è\",\"e\").replace(\"ò\",\"o\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "health_area_id",
+    "expression": "grel:value.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\").replace(\"à\",\"a\").replace(\"è\",\"e\").replace(\"ò\",\"o\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column health_area_id using expression grel:value.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\").replace(\"à\",\"a\").replace(\"è\",\"e\").replace(\"ò\",\"o\")"
+  }
+]

@@ -1,0 +1,188 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix map: <http://mapping.example.com/> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rev: <http://purl.org/stuff/rev#> .
+@prefix v: <http://rdf.data-vocabulary.org/#> .
+@prefix schema: <http://schema.org/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix base: <http://busstopalcobendas.odkg.es/group15/ontology/> .
+
+map:map_triplesmap1_000 rml:logicalSource map:source_000 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "triplesmap1" ;
+	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007, map:pom_008, map:pom_009 ;
+	rr:subjectMap map:s_000 .
+
+map:map_triplesmap2_000 rml:logicalSource map:source_001 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "triplesmap2" ;
+	rr:predicateObjectMap map:pom_010, map:pom_011, map:pom_012 ;
+	rr:subjectMap map:s_001 .
+
+map:om_000 rdf:type rr:ObjectMap ;
+	rr:constant "http://busstopalcobendas.odkg.es/group15/ontology/BusStop" ;
+	rr:termType rr:IRI .
+
+map:om_001 rml:reference "stop_id" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_002 rml:reference "stop_code" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_003 rml:reference "stop_name" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_004 rml:reference "stop_lat" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_005 rml:reference "stop_lon" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_006 rml:reference "stop_url" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_007 rml:reference "stop_timezone" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_008 rml:reference "zone_id" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_009 rdf:type rr:ObjectMap ;
+	rr:template "http://busstopalcobendas.odkg.es/group15/ontology/address/{street_name}_{street_number}" ;
+	rr:termType rr:IRI .
+
+map:om_010 rdf:type rr:ObjectMap ;
+	rr:constant "http://busstopalcobendas.odkg.es/group15/ontology/Address" ;
+	rr:termType rr:IRI .
+
+map:om_011 rml:reference "street_name" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_012 rml:reference "street_number" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:pm_000 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_001 rdf:type rr:PredicateMap ;
+	rr:constant base:stop_id .
+
+map:pm_002 rdf:type rr:PredicateMap ;
+	rr:constant base:stop_code .
+
+map:pm_003 rdf:type rr:PredicateMap ;
+	rr:constant base:stop_name .
+
+map:pm_004 rdf:type rr:PredicateMap ;
+	rr:constant base:stop_lat .
+
+map:pm_005 rdf:type rr:PredicateMap ;
+	rr:constant base:stop_lon .
+
+map:pm_006 rdf:type rr:PredicateMap ;
+	rr:constant base:stop_url .
+
+map:pm_007 rdf:type rr:PredicateMap ;
+	rr:constant base:stop_timezone .
+
+map:pm_008 rdf:type rr:PredicateMap ;
+	rr:constant base:zone_id .
+
+map:pm_009 rdf:type rr:PredicateMap ;
+	rr:constant base:hasAddress .
+
+map:pm_010 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_011 rdf:type rr:PredicateMap ;
+	rr:constant base:street_name .
+
+map:pm_012 rdf:type rr:PredicateMap ;
+	rr:constant base:street_number .
+
+map:pom_000 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_000 ;
+	rr:predicateMap map:pm_000 .
+
+map:pom_001 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_001 ;
+	rr:predicateMap map:pm_001 .
+
+map:pom_002 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_002 ;
+	rr:predicateMap map:pm_002 .
+
+map:pom_003 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_003 ;
+	rr:predicateMap map:pm_003 .
+
+map:pom_004 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_004 ;
+	rr:predicateMap map:pm_004 .
+
+map:pom_005 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_005 ;
+	rr:predicateMap map:pm_005 .
+
+map:pom_006 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_006 ;
+	rr:predicateMap map:pm_006 .
+
+map:pom_007 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_007 ;
+	rr:predicateMap map:pm_007 .
+
+map:pom_008 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_008 ;
+	rr:predicateMap map:pm_008 .
+
+map:pom_009 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_009 ;
+	rr:predicateMap map:pm_009 .
+
+map:pom_010 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_010 ;
+	rr:predicateMap map:pm_010 .
+
+map:pom_011 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_011 ;
+	rr:predicateMap map:pm_011 .
+
+map:pom_012 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_012 ;
+	rr:predicateMap map:pm_012 .
+
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_triplesmap1_000, map:map_triplesmap2_000 ;
+	rdf:type <http://rdfs.org/ns/void#Dataset> .
+
+map:s_000 rdf:type rr:SubjectMap ;
+	rr:template "http://busstopalcobendas.odkg.es/group15/ontology/busstop/{stop_id}" .
+
+map:s_001 rdf:type rr:SubjectMap ;
+	rr:template "http://busstopalcobendas.odkg.es/group15/ontology/address/{street_name}_{street_number}" .
+
+map:source_000 rml:referenceFormulation ql:CSV ;
+	rml:source "stopsautobus-updated.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_001 rml:referenceFormulation ql:CSV ;
+	rml:source "stopsautobus-updated.csv" ;
+	rdf:type rml:LogicalSource .
+

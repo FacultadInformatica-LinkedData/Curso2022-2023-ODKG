@@ -1,36 +1,83 @@
+@base <https://www.asociadrid.es> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix properties: <https://www.asociadrid.es/property#> .
-@prefix classes: <https://www.asociadrid.es/class#> .
+@prefix property: <https://www.asociadrid.es/ontology/property#> .
+@prefix class: <https://www.asociadrid.es/ontology/class#> .
 
 
-<https://www.asociadrid.es/resources/CollaborativeEntities/12303> a classes:Federations ;
-    properties:id "12303"^^xsd:integer ;
-    properties:name "Asociación de Vecinos de Tetuán"^^xsd:string ;
-    properties:register_date: "10/10/2020"^^xsd:date ;
-    properties:category "Vecinales"^^xsd:string ;
-    properties:area: "DISTRITO"^^xsd:string
-    properties:num_affiliates "500"^^xsd:integer ;
-    properties:CIF: "G79986493"^^xsd:string ;
-    properties:hasAnAdress <https://www.asociadrid.es/resources/Address/1>
-    properties:hasAnEmail <https://www.asociadrid.es/resources/Email/1>
-    properties:hasAPhone <https://www.asociadrid.es/resources/CommunicationalToken/1>
+<https://www.asociadrid.es/resources/CollaborativeEntities/Federation/12303> a class:Federation ;
+    property:id "12303"^^xsd:integer ;
+    property:name "Federación de asociaciones de Vecinos de Tetuán";
+    property:register_date: "10/10/2008"^^xsd:date;
+    property:category "Vecinales";
+    property:area: "DISTRITO";
+    property:num_affiliates: "500"^^xsd:integer;
+    property:asoc_affiliated: "13"^^xsd:integer;
+    property:cif: "G79986493";
+    property:hasAnAdress <https://www.asociadrid.es/resources/Address/1>;
+    property:hasAnEmail <https://www.asociadrid.es/resources/Email/1>;
+    property:hasAPhone <https://www.asociadrid.es/resources/Phone/1>;
+    property:hasAWebsite <https://www.asociadrid.es/resources/Website/1>.
 
-<https://www.asociadrid.es/resources/Address/1> a classes:Address ;
-    properties:completeAdress "Calle Bravo Murillo 230, 1ºA"^^xsd:string ;
-    properties:zipcode 28039
-    properties:belongsTo <https://www.asociadrid.es/resources/Subdistrict/1>
+<https://www.asociadrid.es/resources/CollaborativeEntities/Asociacion/978> a class:Association ;
+    property:id "975"^^xsd:integer ;
+    property:name "Asociacion de Vecinos Paseo de la Direccion";
+    property:register_date: "21/09/2016"^^xsd:date;
+    property:category "Vecinales";
+    property:area: "DISTRITO";
+    property:num_affiliates: "45"^^xsd:integer;
+    property:cif: "G1998533";
+    property:hasAnAdress <https://www.asociadrid.es/resources/Address/2>;
+    property:hasAnEmail <https://www.asociadrid.es/resources/Email/2>;
+    property:hasAPhone <https://www.asociadrid.es/resources/Phone/2>;
+    property:hasAWebsite <https://www.asociadrid.es/resources/Website/2>;
+    property:belongsTo <https://www.asociadrid.es/resources/CollaborativeEntities/Federation/12303>.
 
-<https://www.asociadrid.es/resources/Subdistrict/Valdeacederas> a classes:Subdistrict ;
-    properties:belongsTo <https://www.asociadrid.es/resources/District/Tetuan>
-    rdfs:label "Valdeacederas"
+<https://www.asociadrid.es/resources/Address/1> a class:Address ;
+    property:completeAdress "Calle Bravo Murillo 230, 1ºA";
+    property:zipcode "28039"^^xsd:integer;
+    property:belongsToSubdistrict <https://www.asociadrid.es/resources/District/Subdistrict/Valdeacederas>;
+    property:latitude "40.462430"^^xsd:float;
+    property:longitude "-3.697396"^^xsd:float.
 
-<https://www.asociadrid.es/resources/District/Tetuan> a classes:District ;
-    rdfs:label "Tetuan"
+<https://www.asociadrid.es/resources/Address/2> a class:Address ;
+    property:completeAdress "Paseo de la Direccion 107, BAJO";
+    property:zipcode "28039"^^xsd:integer;
+    property:belongsToSubdistrict <https://www.asociadrid.es/resources/District/Subdistrict/Berruguete>;
+    property:latitude "40.462297"^^xsd:float;
+    property:longitude "-3.706180"^^xsd:float.
 
-<https://www.asociadrid.es/resources/Email/1> a classes:Email ;
-    rdfs:label "asociacionvecinostetuan@gmail.com"
+<https://www.asociadrid.es/resources/Email/1> a class:Email ;
+    rdfs:label "asociacionvecinostetuan@gmail.com".
 
-<https://www.asociadrid.es/resources/Phone/1> a classes:Phone ;
-    rdfs:label "91333221"
+<https://www.asociadrid.es/resources/Email/2> a class:Email ;
+    rdfs:label "asociacionvecinosdireccion@gmail.com".
+
+<https://www.asociadrid.es/resources/Phone/1> a class:Phone ;
+    rdfs:label "91333221".
+
+<https://www.asociadrid.es/resources/Phone/2> a class:Phone ;
+    rdfs:label "91591229".
+
+<https://www.asociadrid.es/resources/Website/1> a class:Website ;
+    rdfs:label "http://www.fedtetuan.es".
+
+<https://www.asociadrid.es/resources/Website/2> a class:Website ;
+    rdfs:label "http://www.asocberrug.es".
+
+<https://www.asociadrid.es/resources/Website/2> a class:Website ;
+    rdfs:label "91591229".
+
+<https://www.asociadrid.es/resources/District/Subdistrict/Valdeacederas> a class:Subdistrict ;
+    property:belongsToDistrict <https://www.asociadrid.es/resources/District/Tetuan>;
+    property:subdistrict_label "Valdeacederas".
+
+<https://www.asociadrid.es/resources/District/Subdistrict/Berruguete> a class:Subdistrict ;
+    property:belongsToDistrict <https://www.asociadrid.es/resources/District/Tetuan>;
+    property:subdistrict_label "Berruguete".
+
+<https://www.asociadrid.es/resources/District/Tetuan> a class:District ;
+    property:district_label "Tetuan".

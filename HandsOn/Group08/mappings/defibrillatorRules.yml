@@ -17,6 +17,7 @@ mappings:
     s: https://www.healthfinder.io/group08/resource/Defibrillator/$(Defibrillator)
     po:
       - [a, nsont:Defibrillator]
+      - [rdf:label, $(Defibrillator)]
       - p: geo:location
         o:
           - mapping: addressmap

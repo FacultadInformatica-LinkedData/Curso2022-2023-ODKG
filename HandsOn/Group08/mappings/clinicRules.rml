@@ -16,47 +16,41 @@
 map:map_addressmap_000 rml:logicalSource map:source_001 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "addressmap" ;
-	rr:predicateObjectMap map:pom_004, map:pom_005, map:pom_006, map:pom_007 ;
+	rr:predicateObjectMap map:pom_003, map:pom_004, map:pom_005, map:pom_006 ;
 	rr:subjectMap map:s_001 .
 
-map:map_clinicmap_000 rml:logicalSource map:source_000 ;
+map:map_defribillatormap_000 rml:logicalSource map:source_000 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "clinicmap" ;
-	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003 ;
+	rdfs:label "defribillatormap" ;
+	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002 ;
 	rr:subjectMap map:s_000 .
 
 map:om_000 rdf:type rr:ObjectMap ;
-	rr:constant "https://www.healthfinder.io/group08/ontology/ontology#Clinic" ;
+	rr:constant "https://www.healthfinder.io/group08/ontology/ontology#Defibrillator" ;
 	rr:termType rr:IRI .
 
-map:om_001 rml:reference "typologyOfClinic" ;
+map:om_001 rml:reference "Defibrillator" ;
 	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_002 rml:reference "specialization" ;
-	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:string ;
-	rr:termType rr:Literal .
-
-map:om_003 rdf:type rr:ObjectMap ;
+map:om_002 rdf:type rr:ObjectMap ;
 	rr:parentTriplesMap map:map_addressmap_000 .
 
-map:om_004 rdf:type rr:ObjectMap ;
+map:om_003 rdf:type rr:ObjectMap ;
 	rr:constant "https://www.healthfinder.io/group08/ontology/ontology#Address" ;
 	rr:termType rr:IRI .
 
-map:om_005 rml:reference "addressName" ;
+map:om_004 rml:reference "addressName" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_006 rml:reference "longitude" ;
+map:om_005 rml:reference "longitude" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:float ;
 	rr:termType rr:Literal .
 
-map:om_007 rml:reference "latitude" ;
+map:om_006 rml:reference "latitude" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:float ;
 	rr:termType rr:Literal .
@@ -65,24 +59,21 @@ map:pm_000 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_001 rdf:type rr:PredicateMap ;
-	rr:constant nsont:typologyOfClinic .
+	rr:constant rdf:label .
 
 map:pm_002 rdf:type rr:PredicateMap ;
-	rr:constant nsont:specialization .
-
-map:pm_003 rdf:type rr:PredicateMap ;
 	rr:constant geo:location .
 
-map:pm_004 rdf:type rr:PredicateMap ;
+map:pm_003 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-map:pm_005 rdf:type rr:PredicateMap ;
+map:pm_004 rdf:type rr:PredicateMap ;
 	rr:constant nsont:location .
 
-map:pm_006 rdf:type rr:PredicateMap ;
+map:pm_005 rdf:type rr:PredicateMap ;
 	rr:constant geo:longitude .
 
-map:pm_007 rdf:type rr:PredicateMap ;
+map:pm_006 rdf:type rr:PredicateMap ;
 	rr:constant geo:latitude .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
@@ -113,23 +104,19 @@ map:pom_006 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_006 ;
 	rr:predicateMap map:pm_006 .
 
-map:pom_007 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_007 ;
-	rr:predicateMap map:pm_007 .
-
-map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_addressmap_000, map:map_clinicmap_000 ;
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_addressmap_000, map:map_defribillatormap_000 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
 map:s_000 rdf:type rr:SubjectMap ;
-	rr:template "https://www.healthfinder.io/group08/resource/Clinic/{Clinic}" .
+	rr:template "https://www.healthfinder.io/group08/resource/Defibrillator/{Defibrillator}" .
 
 map:s_001 rdf:type rr:SubjectMap ;
 	rr:template "https://www.healthfinder.io/group08/resource/Address/{addressName}-{latitude}-{longitude}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
-	rml:source "centros-servicios-establecimientos-sanitarios-update.csv" ;
+	rml:source "desfibriladores-externos-fuera-ambito-sanitario-update.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_001 rml:referenceFormulation ql:CSV ;
-	rml:source "centros-servicios-establecimientos-sanitarios-update.csv" ;
+	rml:source "desfibriladores-externos-fuera-ambito-sanitario-update.csv" ;
 	rdf:type rml:LogicalSource .

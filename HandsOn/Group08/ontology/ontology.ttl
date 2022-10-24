@@ -48,26 +48,26 @@ geo:location a owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-nsdata:specialization a owl:DatatypeProperty ;
+nsont:specialization a owl:DatatypeProperty ;
     rdfs:label "specialization" .
-    rdfs:domain nsdata:Clinic ;
+    rdfs:domain nsont:Clinic ;
     rdfs:range xsd:String .
 
-nsdata:typologyOfClinic a owl:DatatypeProperty ;
+nsont:typologyOfClinic a owl:DatatypeProperty ;
     rdfs:label "typology of clinic" .
-    rdfs:domain nsdata:Clinic ;
+    rdfs:domain nsont:Clinic ;
     rdfs:range xsd:String .
 
 #################################################################
 #    Classes
 #################################################################
 
-nsdata:Clinic a owl:Class ;
+nsont:Clinic a owl:Class ;
     rdfs:label "Clinic" .
 
-nsdata:Defibrillator a owl:Class ;
+nsont:Defibrillator a owl:Class ;
     rdfs:label "Defibrillator" .
 
-nsdata:Address a owl:Class ;
+nsont:Address a owl:Class ;
     rdfs:label "Address" .
 

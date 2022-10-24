@@ -22,7 +22,7 @@ mappings:
       - [nsont:specialization ,$(specialization) ,xsd:string]
       - p: geo:location
         o:
-          mapping:addressmap
+          - mapping: addressmap
          
   addressmap:
     sources:

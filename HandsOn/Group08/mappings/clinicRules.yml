@@ -18,6 +18,7 @@ mappings:
     s: https://www.healthfinder.io/group08/resource/Clinic/$(Clinic)
     po:
       - [a, nsont:Clinic]
+      - [rdf:label, $(Clinic)]
       - [nsont:typologyOfClinic ,$(typologyOfClinic) ,xsd:string]
       - [nsont:specialization ,$(specialization) ,xsd:string]
       - p: geo:location

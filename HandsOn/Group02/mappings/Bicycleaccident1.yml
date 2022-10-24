@@ -14,18 +14,39 @@ mappings:
   TriplesMap1:
     sources:
       - [AccidentesBicicletas_2019_2022_updated.csv~csv]
-    s: bicyacr:/Accident/$(idAccident)
+    s: bicyacr:Accident/$(idAccident)
     po:
       - [a, bicyacoc:BicycleAccident]
-      - [ev:agent, bicyacr:Victim/$(idPerson)]
-      - [ev:term_time, bicyacr:Time/$(idDateTime)]
-      - [byciacop:hasType, $(accident_type)]
-      - p: byciacop:bicycleIsElectronic
+      - p: bicyacop:bicycleIsElectronic
         o: 
             value: $(bicycle_is_electronic)
             datatype: xsd:boolean
-      - [ev:term_place, bicyacr:Place/$(streetID)]
-      - [byciacop:duringWeather, $(weather_status)]
+      - p: ev:agent
+        o:
+            mapping: TriplesMap2
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(idAccident), s]
+                    - [str2, Victim/$(idPerson), o]
+      - p: ev:term_time
+        o:
+            mapping: TriplesMap3
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(idAccident), s]
+                    - [str2, Time/$(idDateTime), o]
+      - p: ev:term_place
+        o:
+            mapping: TriplesMap4
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(idAccident), s]
+                    - [str2, Place/$(streetID), o]
+      - [bicyacop:hasType, $(accident_type)]
+      - [bicyacop:duringWeather, $(weather_status)]
       
   TriplesMap2:
     sources:
@@ -33,14 +54,14 @@ mappings:
     s: bicyacr:Victim/$(idPerson)
     po:
       - [a, bicyacoc:Victim]
-      - [byciacop:ageRange, $(age_range)]
+      - [bicyacop:ageRange, $(age_range)]
       - [foaf:gender, $(sex)]
-      - [byciacop:travelType, $(person_type)]
-      - p: byciacop:wasHospitalized
+      - [bicyacop:travelType, $(person_type)]
+      - p: bicyacop:wasHospitalized
         o:
             value: $(hospitalized)
             datatype: xsd:boolean
-      - p: byciacop:alcoholUse
+      - p: bicyacop:alcoholUse
         o:
             value: $(positive_alcohol)
             datatype: xsd:boolean
@@ -63,6 +84,4 @@ mappings:
     po:
       - [a, bicyacoc:SpatialThingUTM]
       - [rdfs:label, $(street)]
-      - [byciacop:isDistrict, $(district)]
-      
-
+      - [bicyacop:isDistrict, $(district)]

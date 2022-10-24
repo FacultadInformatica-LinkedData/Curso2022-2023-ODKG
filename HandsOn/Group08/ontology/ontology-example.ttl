@@ -1,7 +1,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix nsont: <https://www.healthfinder.io/group08/resource/ontology/> .
-@prefix nsdata: <https://www.healthfinder.io/group08/resource/resource/> .
+@prefix nsont: <https://www.healthfinder.io/group08/ontology#> .
+@prefix nsdata: <https://www.healthfinder.io/group08/resource/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -43,19 +43,19 @@ geo:location rdf:type owl:ObjectProperty ;
 
 
 ### https://www.healthfinder.io/group08/resource/Address/Calle_de_Monasterio_de_Las_Huelgas_15
-https://www.healthfinder.io/group08/resource/Address/Calle_de_Monasterio_de_Las_Huelgas_15 rdf:type owl:Class ;
+<https://www.healthfinder.io/group08/resource/Address/Calle_de_Monasterio_de_Las_Huelgas_15> rdf:type nsont:Address ;
 	rdfs:label "//www.healthfinder.io/group08/resource/Address/Calle_de_Monasterio_de_Las_Huelgas_15" .
 
 ### https://www.healthfinder.io/group08/resource/Defibrillator/4
-https://www.healthfinder.io/group08/resource/Defibrillator/4 rdf:type owl:Class ;
+<https://www.healthfinder.io/group08/resource/Defibrillator/4> rdf:type nsont:Defibrillator ;
 	rdfs:label "//www.healthfinder.io/group08/resource/Defibrillator/4" .
 
 ### https://www.healthfinder.io/group08/resource/Clinic/4
-https://www.healthfinder.io/group08/resource/Clinic/4 rdf:type owl:Class ;
+<https://www.healthfinder.io/group08/resource/Clinic/4> rdf:type nsont:Clinic ;
 	rdfs:label "//www.healthfinder.io/group08/resource/Clinic/4" .
 
 ### https://www.healthfinder.io/group08/resource/Address/M-15_Pozuelo_61
-https://www.healthfinder.io/group08/resource/Address/M-15_Pozuelo_61 rdf:type owl:Class ;
+<https://www.healthfinder.io/group08/resource/Address/M-15_Pozuelo_61> rdf:type nsont:Address ;
 	rdfs:label "//www.healthfinder.io/group08/resource/Address/M-15_ Pozuelo_61" .
 
 #################################################################

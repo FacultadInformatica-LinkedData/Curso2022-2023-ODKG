@@ -30,8 +30,7 @@ map:om_000 rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
 map:om_001 rdf:type rr:ObjectMap ;
-	rr:constant "mapping:addressmap" ;
-	rr:termType rr:Literal .
+	rr:parentTriplesMap map:map_addressmap_000 .
 
 map:om_002 rdf:type rr:ObjectMap ;
 	rr:constant "https://www.healthfinder.io/group08/ontology/ontology#Address" ;
@@ -110,4 +109,3 @@ map:source_000 rml:referenceFormulation ql:CSV ;
 map:source_001 rml:referenceFormulation ql:CSV ;
 	rml:source "desfibriladores-externos-fuera-ambito-sanitario-update.csv" ;
 	rdf:type rml:LogicalSource .
-

@@ -22,8 +22,6 @@ WHERE
   ?x a ?Class
 }
 
-# See all the properties of the ontology divided by the type of property
-
 #See the number of clinics per each specialization
 
 SELECT DISTINCT ?spec (COUNT(*) as ?quantity)

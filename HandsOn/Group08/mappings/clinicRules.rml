@@ -40,8 +40,7 @@ map:om_002 rml:reference "specialization" ;
 	rr:termType rr:Literal .
 
 map:om_003 rdf:type rr:ObjectMap ;
-	rr:constant "mapping:addressmap" ;
-	rr:termType rr:Literal .
+	rr:parentTriplesMap map:map_addressmap_000 .
 
 map:om_004 rdf:type rr:ObjectMap ;
 	rr:constant "https://www.healthfinder.io/group08/ontology/ontology#Address" ;

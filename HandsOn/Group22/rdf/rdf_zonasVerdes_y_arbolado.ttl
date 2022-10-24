@@ -10,17 +10,17 @@
   rr:parent "identifier" .
 
 <http://mapping.example.com/jc_001> rr:parent "identifier", "location" .
-<http://mapping.example.com/jc_002> rr:parent "destination", "identifier" .
+<http://mapping.example.com/jc_002> rr:parent "destinatation","identifier" .
 <http://mapping.example.com/jc_003> rr:parent "identifier", "location" .
 <http://mapping.example.com/jc_004>
   rr:child "species" ;
   rr:parent "identifier" .
 
 <http://mapping.example.com/jc_005> rr:parent "identifier", "species" .
-<http://mapping.example.com/map_destination_000>
+<http://mapping.example.com/map_destinatation_000>
   ns0:logicalSource <http://mapping.example.com/source_005> ;
   a rr:TriplesMap ;
-  rdfs:label "destination" ;
+  rdfs:label "destinatation" ;
   rr:predicateObjectMap <http://mapping.example.com/pom_020>, <http://mapping.example.com/pom_021>, <http://mapping.example.com/pom_022> ;
   rr:subjectMap <http://mapping.example.com/s_005> .
 
@@ -96,7 +96,7 @@
 <http://mapping.example.com/om_005>
   a rr:ObjectMap ;
   rr:joinCondition <http://mapping.example.com/jc_002> ;
-  rr:parentTriplesMap <http://mapping.example.com/map_destination_000> .
+  rr:parentTriplesMap <http://mapping.example.com/map_destinatation_000> .
 
 <http://mapping.example.com/om_006>
   a rr:ObjectMap ;
@@ -145,12 +145,12 @@
   rr:termType rr:IRI .
 
 <http://mapping.example.com/om_015>
-  ns0:reference "specie_code" ;
+  ns0:reference "species_code" ;
   a rr:ObjectMap ;
   rr:termType rr:Literal .
 
 <http://mapping.example.com/om_016>
-  ns0:reference "specie_name" ;
+  ns0:reference "species_name" ;
   a rr:ObjectMap ;
   rr:termType rr:Literal .
 
@@ -171,16 +171,16 @@
 
 <http://mapping.example.com/om_020>
   a rr:ObjectMap ;
-  rr:constant "http://www.odkg.group22.org/gz/ontology/MadridGreenZones#Destination" ;
+  rr:constant "http://www.odkg.group22.org/gz/ontology/MadridGreenZones#destinatation" ;
   rr:termType rr:IRI .
 
 <http://mapping.example.com/om_021>
-  ns0:reference "destination_code" ;
+  ns0:reference "destinatation_code" ;
   a rr:ObjectMap ;
   rr:termType rr:Literal .
 
 <http://mapping.example.com/om_022>
-  ns0:reference "destination_name" ;
+  ns0:reference "destinatation_name" ;
   a rr:ObjectMap ;
   rr:termType rr:Literal .
 
@@ -221,7 +221,7 @@
 
 <http://mapping.example.com/pm_005>
   a rr:PredicateMap ;
-  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#hasDestination> .
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#hasdestinatation> .
 
 <http://mapping.example.com/pm_006>
   a rr:PredicateMap ;
@@ -285,11 +285,11 @@
 
 <http://mapping.example.com/pm_021>
   a rr:PredicateMap ;
-  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#destinationCode> .
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#destinatationCode> .
 
 <http://mapping.example.com/pm_022>
   a rr:PredicateMap ;
-  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#destinationName> .
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#destinatationName> .
 
 <http://mapping.example.com/pm_023>
   a rr:PredicateMap ;
@@ -434,7 +434,7 @@
   rr:predicateMap <http://mapping.example.com/pm_025> .
 
 <http://mapping.example.com/rules_000>
-  void:exampleResource <http://mapping.example.com/map_destination_000>, <http://mapping.example.com/map_district_000>, <http://mapping.example.com/map_greenzone_000>, <http://mapping.example.com/map_location_000>, <http://mapping.example.com/map_species_000>, <http://mapping.example.com/map_type_000>, <http://mapping.example.com/map_woodland_000> ;
+  void:exampleResource <http://mapping.example.com/map_destinatation_000>, <http://mapping.example.com/map_district_000>, <http://mapping.example.com/map_greenzone_000>, <http://mapping.example.com/map_location_000>, <http://mapping.example.com/map_species_000>, <http://mapping.example.com/map_type_000>, <http://mapping.example.com/map_woodland_000> ;
   a void:Dataset .
 
 <http://mapping.example.com/s_000>
@@ -467,35 +467,35 @@
 
 <http://mapping.example.com/source_000>
   ns0:referenceFormulation <http://semweb.mmlab.be/ns/ql#CSV> ;
-  ns0:source "Zonas_verdes_2021-updated.ccs" ;
+  ns0:source "/content/drive/MyDrive/OpenData/Zonas-verdes-2021-updated.csv" ;
   a ns0:LogicalSource .
 
 <http://mapping.example.com/source_001>
   ns0:referenceFormulation <http://semweb.mmlab.be/ns/ql#CSV> ;
-  ns0:source "ArboladoZonasVerdesDistritosCalles-2021-updated.csv" ;
+  ns0:source "/content/drive/MyDrive/OpenData/ArboladoZonasVerdesDistritosCalles-2021-updated.csv" ;
   a ns0:LogicalSource .
 
 <http://mapping.example.com/source_002>
   ns0:referenceFormulation <http://semweb.mmlab.be/ns/ql#CSV> ;
-  ns0:source "District.csv" ;
+  ns0:source "/content/drive/MyDrive/OpenData/District.csv" ;
   a ns0:LogicalSource .
 
 <http://mapping.example.com/source_003>
   ns0:referenceFormulation <http://semweb.mmlab.be/ns/ql#CSV> ;
-  ns0:source "Species.csv" ;
+  ns0:source "/content/drive/MyDrive/OpenData/Species.csv" ;
   a ns0:LogicalSource .
 
 <http://mapping.example.com/source_004>
   ns0:referenceFormulation <http://semweb.mmlab.be/ns/ql#CSV> ;
-  ns0:source "Location.csv" ;
+  ns0:source "/content/drive/MyDrive/OpenData/Location.csv" ;
   a ns0:LogicalSource .
 
 <http://mapping.example.com/source_005>
   ns0:referenceFormulation <http://semweb.mmlab.be/ns/ql#CSV> ;
-  ns0:source "destination.csv" ;
+  ns0:source "/content/drive/MyDrive/OpenData/Destinatation.csv" ;
   a ns0:LogicalSource .
 
 <http://mapping.example.com/source_006>
   ns0:referenceFormulation <http://semweb.mmlab.be/ns/ql#CSV> ;
-  ns0:source "type.csv" ;
+  ns0:source "/content/drive/MyDrive/OpenData/Type.csv" ;
   a ns0:LogicalSource .

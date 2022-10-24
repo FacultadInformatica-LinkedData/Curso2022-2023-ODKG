@@ -1,7 +1,14 @@
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX schema: <http://schema.org/>
+PREFIX bs: <http://smartbikes.org/ontology/bikeStation#>
+PREFIX wdt: <https://www.wikidata.org/wiki/>
+
+SELECT DISTINCT ?commune WHERE {
+   ?station bs:locatedInArea ?commune.
+}
+
 SELECT ?station ?capa ?name WHERE {
-  ?station dbo:locatedInArea "Boulogne-Billancourt".
-  ?station dbo:capacity ?capa.
-  ?station schema:name ?name
-  }
+   ?station bs:locatedInArea wdt:Q90.
+   ?station dbo:capacity ?capa.
+   ?station schema:name ?name.
+}

@@ -1,0 +1,110 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocab: <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vocab: a owl:Ontology .
+
+vocab:blockId a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+vocab:archiveNumber a owl:DatatypeProperty ;
+    rdfs:label "archive number" ;
+    rdfs:domain vocab:GreenZone ;
+    rdfs:range xsd:integer .
+
+vocab:woodlandId a owl:DatatypeProperty ;
+    rdfs:domain :Woodland ;
+    rdfs:range xsd:string .
+
+vocab:hasDestinationCode a owl:DatatypeProperty ;
+    rdfs:label "destination code" .
+
+vocab:hasDestinationName a owl:DatatypeProperty ;
+    rdfs:label "destination name" .
+
+vocab:hasDistrictCode a owl:DatatypeProperty ;
+    rdfs:label "district code" .
+
+vocab:hasDistrictName a owl:DatatypeProperty ;
+    rdfs:label "district name" .
+
+vocab:locationCode a owl:DatatypeProperty ;
+    rdfs:label "location code" .
+
+vocab:hasLocationName a owl:DatatypeProperty ;
+    rdfs:label "location name" .
+
+vocab:hasTypeCode a owl:DatatypeProperty ;
+    rdfs:label "type code" .
+
+vocab:hasTypeName a owl:DatatypeProperty ;
+    rdfs:label "type name" .
+
+vocab:hasDestination a owl:ObjectProperty ;
+    rdfs:label "has destination" ;
+    rdfs:domain vocab:GreenZone ;
+    rdfs:range vocab:Destination .
+
+vocab:hasDistrict a owl:ObjectProperty ;
+    rdfs:label "has district" ;
+    rdfs:domain vocab:GreenZone ;
+    rdfs:range vocab:District .
+
+vocab:hasLocation a owl:ObjectProperty ;
+    rdfs:label "has location" ;
+    rdfs:domain vocab:GreenZone ;
+    rdfs:range vocab:Location .
+
+vocab:hasSpecies a owl:ObjectProperty ;
+    rdfs:label "has species" ;
+    rdfs:domain vocab:Woodland ;
+    rdfs:range vocab:Species .
+
+vocab:hasType a owl:ObjectProperty ;
+    rdfs:label "has type" ;
+    rdfs:domain vocab:GreenZone ;
+    rdfs:range vocab:Type .
+
+vocab:hasWoodland a owl:ObjectProperty ;
+    rdfs:label "hasWoodland" ;
+    rdfs:domain vocab:District ;
+    rdfs:range vocab:Woodland .
+
+vocab:solar a owl:DatatypeProperty ;
+    rdfs:label "solar" ;
+    rdfs:domain vocab:GreenZone ;
+    rdfs:range xsd:decimal .
+
+vocab:hasSpeciesCode a owl:DatatypeProperty ;
+    rdfs:label "species code" .
+
+vocab:hasSpeciesName a owl:DatatypeProperty ;
+    rdfs:label "species name" .
+
+vocab:unitsSpecies a owl:DatatypeProperty ;
+    rdfs:label "units species" ;
+    rdfs:domain vocab:Woodland ;
+    rdfs:range xsd:integer .
+
+vocab:Destination a owl:Class ;
+    rdfs:label "Destination" .
+
+vocab:Location a owl:Class ;
+    rdfs:label "Location" .
+
+vocab:Species a owl:Class ;
+    rdfs:label "Species" .
+
+vocab:Type a owl:Class ;
+    rdfs:label "Type" .
+
+vocab:District a owl:Class ;
+    rdfs:label "District" .
+
+vocab:Woodland a owl:Class ;
+    rdfs:label "Woodland" .
+
+vocab:GreenZone a owl:Class ;
+    rdfs:label "Green Zone" .

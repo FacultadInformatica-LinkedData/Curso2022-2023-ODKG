@@ -1,0 +1,7 @@
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX schema: <http://schema.org/>
+SELECT ?station ?capa ?name WHERE {
+  ?station dbo:locatedInArea "Boulogne-Billancourt".
+  ?station dbo:capacity ?capa.
+  ?station schema:name ?name
+  }

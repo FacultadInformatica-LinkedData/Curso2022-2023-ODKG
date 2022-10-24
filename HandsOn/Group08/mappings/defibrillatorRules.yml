@@ -19,7 +19,7 @@ mappings:
       - [a, nsont:Defibrillator]
       - p: geo:location
         o:
-          mapping:addressmap
+          - mapping: addressmap
          
   addressmap:
     sources:

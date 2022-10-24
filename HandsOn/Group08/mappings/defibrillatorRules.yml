@@ -3,8 +3,8 @@ prefixes:
   foaf: http://xmlns.com/foaf/0.1/
   dc: http://purl.org/dc/elements/1.1/
   geo: http://www.w3.org/2003/01/geo/wgs84_pos#
-  nsont: https://www.healthfinder.io/group08/resource/ontology/
-  nsdata: https://www.healthfinder.io/group08/resource/resource/
+  nsont: https://www.healthfinder.io/group08/ontology/ontology#
+  nsdata: https://www.healthfinder.io/group08/resource/
   owl: http://www.w3.org/2002/07/owl#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
@@ -14,9 +14,9 @@ mappings:
   defribillatormap:
     sources:
       - [desfibriladores-externos-fuera-ambito-sanitario-update.csv~csv]
-    s: https://www.healthfinder.io/group08/ontology/$(Defibrillator)
+    s: https://www.healthfinder.io/group08/resource/Defibrillator/$(Defibrillator)
     po:
-      - [a, nsdata:Defibrillator]
+      - [a, nsont:Defibrillator]
       - p: geo:location
         o:
           mapping:addressmap
@@ -24,9 +24,9 @@ mappings:
   addressmap:
     sources:
       - [desfibriladores-externos-fuera-ambito-sanitario-update.csv~csv]
-    s: https://www.healthfinder.io/group08/ontology/$(addressName)-$(latitude)-$(longitude)
+    s: https://www.healthfinder.io/group08/resource/Address/$(addressName)-$(latitude)-$(longitude)
     po:
-      - [a, s:Address]
+      - [a, nsont:Address]
       - [nsont:location ,$(addressName) ,xsd:string]
       - [geo:longitude ,$(longitude) ,xsd:float]
       - [geo:latitude ,$(latitude) ,xsd:float]

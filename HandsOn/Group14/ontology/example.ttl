@@ -7,11 +7,15 @@
 @prefix paw: <http://purl.org/pav/> .
 @prefix schema: <https://schema.org/> .
 
-schema:GeoCoordinate/48.87929591733507_2.3373600840568547 a schema:GeoCoordinate;
+### http://smartbikes.org/resources/Coordinate/48.87929591733507_2.3373600840568547
+
+:Coordinate/48.87929591733507_2.3373600840568547 a schema:GeoCoordinate;
 	schema:latitude 48.87929591733507;
 	schema:longitude 2.3373600840568547;
 
-schema:GeoCoordinate/48.865983_2.275725 a schema:GeoCoordinate;
+### http://smartbikes.org/resources/Coordinate/48.865983_2.275725
+
+:Coordinate/48.865983_2.275725 a schema:GeoCoordinate;
 	schema:latitude 48.865983;
 	schema:longitude 2.275725;
 
@@ -29,7 +33,7 @@ schema:GeoCoordinate/48.865983_2.275725 a schema:GeoCoordinate;
 	bs:paymentTerminalAvailable "true"^^xsd:boolean;
 	bs:returnOfVeilbPossible "true"^^xsd:boolean;
 	paw:lastUpdateOn "2022-10-05T09:58:36+02:00"^^xsd:dateTime;
-	schema:geo schema:GeoCoordinate/48.87929591733507_2.3373600840568547;
+	schema:geo :Coordinate/48.87929591733507_2.3373600840568547;
 	bs:locatedInArea wdi:Q90;
 
 ### http://smartbikes.org/resources/BikeStation/9020
@@ -46,5 +50,5 @@ schema:GeoCoordinate/48.865983_2.275725 a schema:GeoCoordinate;
 	bs:paymentTerminalAvailable "true"^^xsd:boolean;
 	bs:returnOfVeilbPossible "true"^^xsd:boolean;
 	paw:lastUpdateOn "2022-10-05T09:59:42+02:00"^^xsd:dateTime;
-	schema:geo schema:GeoCoordinate/48.865983_2.275725;
+	schema:geo :Coordinate/48.865983_2.275725;
 	bs:locatedInArea wdi:Q90;

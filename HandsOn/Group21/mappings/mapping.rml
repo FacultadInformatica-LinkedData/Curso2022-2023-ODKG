@@ -1,0 +1,92 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix map: <http://mapping.example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix org: <http://purl.org/ctic/infraestructuras/organizacion#> .
+@prefix v: <http://www.w3.org/2006/vcard/ns#> .
+@prefix mcao: <http://miciudadamiga.madrid/map/ontology#> .
+@prefix mcar: <http://miciudadamiga.madrid/map/resource/> .
+@prefix loc: <http://purl.org/ctic/infraestructuras/localizacion#> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+
+map:map_barrio_000 rml:logicalSource map:source_000 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "barrio" ;
+	rr:predicateObjectMap map:pom_000, map:pom_001 ;
+	rr:subjectMap map:s_000 .
+
+map:map_distrito_000 rml:logicalSource map:source_001 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "distrito" ;
+	rr:predicateObjectMap map:pom_002, map:pom_003 ;
+	rr:subjectMap map:s_001 .
+
+map:om_000 rml:reference "BARRIO" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_001 rml:reference "COD-BARRIO" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_002 rml:reference "DISTRITO" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_003 rml:reference "COD-DISTRITO" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:pm_000 rdf:type rr:PredicateMap ;
+	rr:constant mcao:hasNameBarrio .
+
+map:pm_001 rdf:type rr:PredicateMap ;
+	rr:constant mcao:hasCodeBarrio .
+
+map:pm_002 rdf:type rr:PredicateMap ;
+	rr:constant mcao:hasNameDistrito .
+
+map:pm_003 rdf:type rr:PredicateMap ;
+	rr:constant mcao:hasCodeDistrito .
+
+map:pom_000 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_000 ;
+	rr:predicateMap map:pm_000 .
+
+map:pom_001 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_001 ;
+	rr:predicateMap map:pm_001 .
+
+map:pom_002 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_002 ;
+	rr:predicateMap map:pm_002 .
+
+map:pom_003 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_003 ;
+	rr:predicateMap map:pm_003 .
+
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_barrio_000, map:map_distrito_000 ;
+	rdf:type <http://rdfs.org/ns/void#Dataset> .
+
+map:s_000 rdf:type rr:SubjectMap ;
+	rr:template "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/{BARRIO}" .
+
+map:s_001 rdf:type rr:SubjectMap ;
+	rr:template "http://dbpedia.org/resource/List_of_neighborhoods_of_Madrid/{DISTRITO}" .
+
+map:source_000 rml:referenceFormulation ql:CSV ;
+	rml:source "data.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_001 rml:referenceFormulation ql:CSV ;
+	rml:source "data.csv" ;
+	rdf:type rml:LogicalSource .
+

@@ -1,0 +1,583 @@
+@base <https://www.asociadrid.es> .
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix transit: <http://vocab.org/transit/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix vocab: <http://example.org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix colab: <https://www.asociadrid.es/class#> .
+@prefix schema: <https://schema.org/>.
+@prefix property: <https://www.asociadrid.es/ontology/property#> .
+@prefix class: <https://www.asociadrid.es/ontology/class#> .
+
+#Mappings for district,  subdistrict and address
+
+<#TriplesMap1> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/merged-files.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "https://www.asociadrid.es/resource/District/{district}";
+    rr:class class:District;
+  ];
+   rr:predicateObjectMap [
+    rr:predicate property:district_label;
+    rr:objectMap [
+      rml:reference "district"
+    ]
+  ]
+.
+
+<#TriplesMap2> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/merged-files.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "https://www.asociadrid.es/resource/Subdistrict/{subdistrict}";
+    rr:class class:Subdistrict;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:property:belongsToDistrict;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap1>
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:subdistrict_label;
+    rr:objectMap [
+      rml:reference "subdistrict"
+    ]
+  ]
+.
+
+<#TriplesMap3> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/merged-files.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "https://www.asociadrid.es/resource/Address/{id}";
+    rr:class class:Address;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:complete_address;
+    rr:objectMap [
+      rml:reference "address"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:detail;
+    rr:objectMap [
+      rml:reference "detail"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:latitude;
+    rr:objectMap [
+      rml:reference "latitude";
+      rr:datatype xsd:double 
+    ];
+    
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:longitude;
+    rr:objectMap [
+      rml:reference "longitude";
+      rr:datatype xsd:double 
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:zipcode;
+    rr:objectMap [
+      rml:reference "zip_code"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:belongsToSubdistrict;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap2>
+    ]
+  ]
+.
+
+#Mappings for phones, emails and websites
+
+<#TriplesMap4> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/merged-files.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "https://www.asociadrid.es/resource/Phone/{phone}";
+    rr:class class:Phone;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "phone"
+    ]
+  ]
+  .
+
+<#TriplesMap5> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/merged-files.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "https://www.asociadrid.es/resource/Website/{website}";;
+    rr:class class:Website;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "website"
+    ]
+  ]
+.
+
+<#TriplesMap6> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/merged-files.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "https://www.asociadrid.es/resource/Email/{email}";
+    rr:class class:Email;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "email"
+    ]
+  ]
+.
+
+#Mappings for CollaborativeEntities
+
+<#TriplesMap7> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/transformed_files/collectives-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "https://www.asociadrid.es/resource/CollaborativeEntity/Collective/{name}";
+    rr:class class:Collective;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:id;
+    rr:objectMap [
+      rml:reference "id"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:name;
+    rr:objectMap [
+      rml:reference "name"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:register_date;
+    rr:objectMap [
+      rml:reference "register_date";
+      rr:datatype xsd:date 
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:num_affiliates;
+    rr:objectMap [
+      rml:reference "num_affiliates";
+      rr:datatype xsd:integer 
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:category;
+    rr:objectMap [
+      rml:reference "category"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:area;
+    rr:objectMap [
+      rml:reference "geographical_scope"
+    ]
+  ];
+   rr:predicateObjectMap [
+    rr:predicate property:hasAnAddress;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap3>;
+      rr:joinCondition [
+                rr:child "id";
+                rr:parent "id";
+            ];
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:hasAPhone;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap4>;
+      rr:joinCondition [
+                rr:child "id";
+                rr:parent "id";
+            ];
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:hasAWebsite;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap5>;
+      rr:joinCondition [
+                rr:child "id";
+                rr:parent "id";
+            ];
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:hasAnEmail;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap6>;
+      rr:joinCondition [
+                rr:child "id";
+                rr:parent "id";
+            ];
+    ]
+  ]
+.
+
+<#TriplesMap8> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/transformed_files/foundations-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "https://www.asociadrid.es/resource/CollaborativeEntity/Foundation/{name}";
+    rr:class class:Foundation;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:id;
+    rr:objectMap [
+      rml:reference "id"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:name;
+    rr:objectMap [
+      rml:reference "name"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:register_date;
+    rr:objectMap [
+      rml:reference "register_date";
+      rr:datatype xsd:date 
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:cif;
+    rr:objectMap [
+      rml:reference "tax_code"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:num_affiliates;
+    rr:objectMap [
+      rml:reference "num_affiliates";
+      rr:datatype xsd:integer 
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:category;
+    rr:objectMap [
+      rml:reference "category"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:area;
+    rr:objectMap [
+      rml:reference "geographical_scope"
+    ]
+  ];
+   rr:predicateObjectMap [
+    rr:predicate property:hasAnAddress;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap3>;
+      rr:joinCondition [
+                rr:child "id";
+                rr:parent "id";
+            ];
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:hasAPhone;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap4>;
+      rr:joinCondition [
+                rr:child "id";
+                rr:parent "id";
+            ];
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:hasAWebsite;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap5>;
+      rr:joinCondition [
+                rr:child "id";
+                rr:parent "id";
+            ];
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:hasAnEmail;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap6>;
+      rr:joinCondition [
+                rr:child "id";
+                rr:parent "id";
+            ];
+    ]
+  ]
+.
+
+<#TriplesMap9> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/transformed_files/federations-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "https://www.asociadrid.es/resource/CollaborativeEntity/Federation/{name}";
+    rr:class class:Federation;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:id;
+    rr:objectMap [
+      rml:reference "id"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:name;
+    rr:objectMap [
+      rml:reference "name"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:register_date;
+    rr:objectMap [
+      rml:reference "register_date";
+      rr:datatype xsd:date 
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:cif;
+    rr:objectMap [
+      rml:reference "tax_code"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:num_affiliates;
+    rr:objectMap [
+      rml:reference "num_affiliates";
+      rr:datatype xsd:integer 
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:asoc_madrid;
+    rr:objectMap [
+      rml:reference "asoc_affiliated";
+      rr:datatype xsd:integer 
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:category;
+    rr:objectMap [
+      rml:reference "category"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:area;
+    rr:objectMap [
+      rml:reference "geographical_scope"
+    ]
+  ];
+   rr:predicateObjectMap [
+    rr:predicate property:hasAnAddress;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap3>;
+      rr:joinCondition [
+                rr:child "id";
+                rr:parent "id";
+            ];
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:hasAPhone;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap4>;
+      rr:joinCondition [
+                rr:child "id";
+                rr:parent "id";
+            ];
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:hasAWebsite;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap5>;
+      rr:joinCondition [
+                rr:child "id";
+                rr:parent "id";
+            ];
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:hasAnEmail;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap6>;
+      rr:joinCondition [
+                rr:child "id";
+                rr:parent "id";
+            ];
+    ]
+  ]
+.
+
+<#TriplesMap10> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/transformed_files/associations-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "https://www.asociadrid.es/resource/CollaborativeEntity/Association/{name}";
+    rr:class class:Association;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:id;
+    rr:objectMap [
+      rml:reference "id"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:name;
+    rr:objectMap [
+      rml:reference "name"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:register_date;
+    rr:objectMap [
+      rml:reference "register_date";
+      rr:datatype xsd:date 
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:cif;
+    rr:objectMap [
+      rml:reference "tax_code"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:num_affiliates;
+    rr:objectMap [
+      rml:reference "num_affiliates";
+      rr:datatype xsd:integer 
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:category;
+    rr:objectMap [
+      rml:reference "category"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:area;
+    rr:objectMap [
+      rml:reference "geographical_scope"
+    ]
+  ];
+   rr:predicateObjectMap [
+    rr:predicate property:hasAnAddress;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap3>;
+      rr:joinCondition [
+                rr:child "id";
+                rr:parent "id";
+            ];
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:hasAPhone;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap4>;
+      rr:joinCondition [
+                rr:child "id";
+                rr:parent "id";
+            ];
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:hasAWebsite;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap5>;
+      rr:joinCondition [
+                rr:child "id";
+                rr:parent "id";
+            ];
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:hasAnEmail;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap6>;
+      rr:joinCondition [
+                rr:child "id";
+                rr:parent "id";
+            ];
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:affiliatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap9>;
+      rr:joinCondition [
+                rr:child "belongs_to_id1";
+                rr:parent "id";
+            ];
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:affiliatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap9>;
+      rr:joinCondition [
+                rr:child "belongs_to_id2";
+                rr:parent "id";
+            ];
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:affiliatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap9>;
+      rr:joinCondition [
+                rr:child "belongs_to_id3";
+                rr:parent "id";
+            ];
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate property:affiliatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap9>;
+      rr:joinCondition [
+                rr:child "belongs_to_id4";
+                rr:parent "id";
+            ];
+    ]
+  ]
+.

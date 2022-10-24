@@ -1,0 +1,83 @@
+refixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  vocab: http://www.group10.org/pl/ontology/ParkingLotsMadrid#
+  
+mappings:
+  triplesmap1:
+    sources:
+      - [Barrio.csv~csv]
+    s: $(Identificador)
+    po:
+      - [a, vocab:Neighborhood]
+      - [rdfs:label, $(Nombre)]
+      - [vocab:hasNeighborhoodNumber, $(Codigo)]
+      - [vocab:hasDistrict, $(distrito)]
+
+  triplesmap2:
+    sources:
+      - [Street.csv~csv]
+    s: $(Identificador)
+    po:
+      - [a, vocab:street]
+      - [rdfs:label, $(nombre)]
+
+  triplesmap3:
+    sources:
+      - [Districts.csv~csv]
+    s: $(Identificador)
+    po:
+      - [a, vocab:District]
+      - [rdfs:label, $(Distrito)]
+      - [vocab:hasDistrictNumber, $(Codigo)]
+
+  triplesmap4:
+    sources:
+      - [Locations.csv~csv]
+    s: $(identificador)
+    po:
+      - [a, vocab:Location]
+      - [vocab:hasLongitude, $(gis_x)]
+      - [vocab:hasLatitude, $(gis_y)]
+
+  triplesmap5:
+    sources:
+      - [calles.SER-2022_updated.csv~csv]
+    s: $(identificador)
+    po:
+      - [a, vocab:ParkingArea]
+      - [vocab:hasStreet, $(calle)]
+      - [vocab:hasDistrict, $(distrito)]
+      - [vocab:hasNeighborhood, $(barrio)]
+      - [vocab:blockId, $(num_finca)]
+      - [vocab:color, $(color)]
+      - [vocab:parkingSpaces, $(num_plazas)]
+  triplesmap6:
+    sources:
+      - [parquimetros_updated.csv~csv]
+    s: $(identificador)
+    po:
+      - [a, vocab:ParkingMeter]
+      - [vocab:hasStreet, $(calle)]
+      - [vocab:hasDistrict, $(distrito)]
+      - [vocab:hasNeighborhood, $(barrio)]
+      - [vocab:blockId, $(num_finca)]
+      - [vocab:parkingMeterId, $(matricula)]
+      - [vocab:hasLocation, $(location)]
+  triplesmap7:
+    sources:
+      - [tickets-parquimetro-2022-subset_updated.csv~csv]
+    s: $(identificador)
+    po:
+      - [a, vocab:ParkingMeterTicket]
+      - [vocab:startDateTime, $(fecha_inicio)]
+      - [vocab:endDatetime, $(fecha_fin)]
+      - [vocab:hasParkingMeter, $(parquimetro)]

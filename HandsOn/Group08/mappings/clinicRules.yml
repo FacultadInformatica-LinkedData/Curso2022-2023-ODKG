@@ -15,7 +15,7 @@ mappings:
   clinicmap:
     sources:
       - [centros-servicios-establecimientos-sanitarios-update.csv~csv]
-    s: https://www.healthfinder.io/group08/ontology/ontology#$(Clinic)
+    s: https://www.healthfinder.io/group08/resource/Clinic/$(Clinic)
     po:
       - [a, nsdata:Clinic]
       - [nsont:typologyOfClinic ,$(typologyOfClinic) ,xsd:string]
@@ -27,9 +27,9 @@ mappings:
   addressmap:
     sources:
       - [centros-servicios-establecimientos-sanitarios-update.csv~csv]
-    s: https://www.healthfinder.io/group08/ontology/ontology#$(addressName)-$(latitude)-$(longitude)
+    s: https://www.healthfinder.io/group08/resource/Address/$(addressName)-$(latitude)-$(longitude)
     po:
-      - [a, s:Address]
+      - [a, nsont:Address]
       - [nsont:location ,$(addressName) ,xsd:string]
       - [geo:longitude ,$(longitude) ,xsd:float]
       - [geo:latitude ,$(latitude) ,xsd:float]

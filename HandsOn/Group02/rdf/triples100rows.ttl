@@ -1,0 +1,2301 @@
+@prefix ns0: <https://motools.sourceforge.net/event/event.html#> .
+@prefix ns1: <byciacop:> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902071850005%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S009106" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PRINCIPEDEVERGARA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190207185000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902068%3A5%3A0%2B8%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S008448" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/AVDALLANOCASTELLANO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/201902068:5:0+" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Hitting a person" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019011222450010>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S002594" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/POLIGALUCHE" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190112224500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Crash against fixed obstacle" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901291626001%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S013729" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PASEORECOLETOS" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190129162600" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Light rain" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901111600001%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S003283" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/GRANVIA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190111160000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902288%3A5%3A0%2B21>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S013863" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/GTASINTRA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/201902288:5:0+" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019011213000010>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S002704" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/SANCHIDRIAN" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190112130000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Scope" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901011400004%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S000659" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/CASTELLO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190101140000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Scope" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902111613004%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S009957" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/SERRANO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190211161300" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Scope" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901262135004%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S006032" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/MARIADEMOLINA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190126213500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Scope" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901041710005%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S000306" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PRADILLO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190104171000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901081303008%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S001738" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/MONASTERIODEARLANZA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190108130300" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019012116500016>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S004939" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/SANENRIQUEDEOSSO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190121165000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901031030009%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S000045" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/CTRADEHESADELAVILLA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190103103000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019011213030018>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S003364" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/AVDAENSANCHEDEVALLECAS" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190112130300" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902131425004%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S010360" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/CONDEDEPEÑALVER" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190213142500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Scope" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019022010300013>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S013666" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/MANCHA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190220103000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901161520007%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S003749" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PLAZACONDEDELVALLEDESUCHIL" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190116152000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902079%3A5%3A0%2B5%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S009001" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PRADILLO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/201902079:5:0+" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Crash against fixed obstacle" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901102030002%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S002882" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PASEOJUANANTONIOVALLEJO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190110203000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901176%3A0%3A0%2B3%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S003662" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/DOCEDEOCTUBRE" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/201901176:0:0+" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Crash against fixed obstacle" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019010413350014>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S000641" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/CAÑONDELRIOLOBOS" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190104133500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019021317300016>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S010852" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/SILVANO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190213173000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Hitting a person" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902142000007%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S010849" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/SANTAENGRACIA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190214200000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Hitting a person" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902119%3A5%3A0%2B7%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S010289" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/MIGUELANGEL" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/201902119:5:0+" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902101345005%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S009715" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PRINCIPEDEVERGARA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190210134500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902232115009%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S013090" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PLAZAESPAÑA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190223211500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Scope" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902031700009%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S008637" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/ALTAMIRANO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190203170000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901191110008%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S004582" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/CTRAELPARDOAFUENCARRAL" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190119111000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901241115006%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S005036" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/BRAVOMURILLO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190124111500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Hitting a person" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901271615001%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S006501" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/ALCALA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190127161500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Hitting a person" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902061025004%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S008489" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/JUANBRAVO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190206102500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Frontal collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902111415004%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S009942" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/ALCALA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190211141500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Scope" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902011330003%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S007855" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/DOCTORESQUERDO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190201133000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Scope" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902020%3A3%3A0%2B4%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S007753" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/MARIADEMOLINA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/201902020:3:0+" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019010914500011>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S001943" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/ANTONIODELEYVA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190109145000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019010220450016>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S000036" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/AVDAGRANVIADEHORTALEZA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190102204500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901171615005%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S004151" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/SERRANO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190117161500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Scope" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902141420003%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S010653" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PASEOINFANTAISABEL" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190214142000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902251650001%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S013570" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/ESPARTEROS" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190225165000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902151410003%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S010951" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/GTAANGELCAIDO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190215141000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019010312450018>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S000132" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/AVDASANTAEUGENIA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190103124500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Scope" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902122200001%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S010293" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PASEOPRADO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190212220000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Scope" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902061940005%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S008855" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/AGUSTINDEFOXA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190206194000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902101605003%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S009733" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PASEOREINACRISTINA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190210160500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902287%3A0%3A0%2B7%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S013888" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PASEOCASTELLANA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/201902287:0:0+" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901187%3A5%3A0%2B1%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S004769" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/GENOVA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/201901187:5:0+" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902011%3A0%3A0%2B7%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S008460" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/SANTAENGRACIA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/201902011:0:0+" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Light rain" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019011222150011>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S002591" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/AVDAPOBLADOS" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190112221500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Crash against fixed obstacle" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019012315380013>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S005062" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/AVDAALBUFERA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190123153800" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901259%3A2%3A0%2B3%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S005992" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/CALLEALFONSOXI" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/201901259:2:0+" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901141110001%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S002788" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/FLORA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190114111000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201903024%3A0%3A0%2B1%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S013972" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PASEOPRADO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/201903024:0:0+" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902141800003%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S010716" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/AVDAMENENDEZPELAYO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190214180000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019011813000019>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S005101" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/VILLABLANCA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190118130000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902082140001%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S009806" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/MESONDEPAREDES" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190208214000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902161710002%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S011335" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PASEOCHOPERA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190216171000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019021418000014>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S010855" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/AUTOVM40" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190214180000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Scope" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901071400008%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S000904" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/NUESTRASEÑORADEVALVERDE" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190107140000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901171950001%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S004601" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/ARENAL" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190117195000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901142245007%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S003463" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/MIGUELANGEL" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190114224500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902082230001%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S009731" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/ALCALA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190208223000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902071610007%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S009136" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/VALLEHERMOSO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190207161000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:hasType "Scope" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902207%3A5%3A0%2B1%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S012142" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/ATOCHA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/201902207:5:0+" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902061730004%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S008627" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/ALCALA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190206173000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Scope" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901082055002%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S002373" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PUERTODELACRUZVERDE" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190108205500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Hitting a person" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019012419580013>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S007634" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/AVDAALBUFERA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190124195800" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902271840007%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S013812" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PASEOGENERALMARTINEZCAMPOS" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190227184000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Scope" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902271025003%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S013751" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PASEOFERNANNUÑEZ" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190227102500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019011818050020>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S004271" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/AVDAFERMINASEVILLANO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190118180500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:hasType "Frontal collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019013011410011>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S006649" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/TOMASARUIZ" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190130114100" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Crash against fixed obstacle" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019021619550011>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S011338" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/JOAQUINTURINA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190216195500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902010%3A5%3A0%2B4%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S007891" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/FRANCISCOSANTOS" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/201902010:5:0+" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Light rain" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901281800002%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S006478" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/MENDEZALVARO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190128180000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901192110004%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S004528" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PLAZAINDEPENDENCIA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190119211000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Light rain" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901142020008%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S004134" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PASEOELPARDO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190114202000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902231035002%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S013198" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/PARROCOEUSEBIOCUENCA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190223103500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019011416300015>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S003277" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/SANTAGENOVEVA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190114163000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019010314300018>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S000133" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/FELIPEALVAREZ" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190103143000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:hasType "Scope" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019011222250011>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S006584" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/GENERALRICARDOS" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190112222500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019020211300013>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S010276" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/MARTINEZDELARIVA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190202113000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901091250001%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S001678" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/GRANVIA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190109125000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Scope" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019013013200011>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S006655" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/AVDACARABANCHELALTO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190130132000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Frontal collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902121905007%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S010365" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/GTAQUEVEDO" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190212190500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902161405001%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S011089" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/RONDADEVALENCIA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190216140500" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902061640001%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S009150" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/GRANVIA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190206164000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201903011300007%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S013999" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/MODESTOLAFUENTE" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190301130000" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Fall" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901254%3A0%3A0%2B1%20>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S010907" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/GRANVIA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/201901254:0:0+" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201902179%3A0%3A0%2B11>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S011128" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/AVDAPOBLADOS" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/201902179:0:0+" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Scope" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019021911570010>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S012186" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/IGLESIASEXTRAMUROS" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190219115700" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/201901169%3A0%3A0%2B15>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S003306" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/AVDADAROCA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/201901169:0:0+" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Frontal-lateral collision" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource//Accident/2019020211070012>
+  ns0:agent "http://bicycleaccident.com/group2/resource/Victim/2019S007920" ;
+  ns0:term_place "http://bicycleaccident.com/group2/resource/Place/MARCELOUSERA" ;
+  ns0:term_time "http://bicycleaccident.com/group2/resource/Time/20190202110700" ;
+  ns1:bicycleIsElectronic 0 ;
+  ns1:duringWeather "Clear" ;
+  ns1:hasType "Hitting a person" ;
+  a <http://bicycleaccident.com/group2/ontology/class#BicycleAccident> .
+
+<http://bicycleaccident.com/group2/resource/Place/POLIGALUCHE>
+  rdfs:label "POLIG. ALUCHE" ;
+  ns1:isDistrict "10  LATINA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/IGLESIASEXTRAMUROS>
+  rdfs:label "IGLESIAS EXTRAMUROS" ;
+  ns1:isDistrict "10  LATINA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/AVDAMENENDEZPELAYO>
+  rdfs:label "AVDA. MENENDEZ PELAYO" ;
+  ns1:isDistrict "3  RETIRO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/MARIADEMOLINA>
+  rdfs:label "MARIA DE MOLINA" ;
+  ns1:isDistrict "4  SALAMANCA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/MENDEZALVARO>
+  rdfs:label "MENDEZ ALVARO" ;
+  ns1:isDistrict "2  ARGANZUELA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/MODESTOLAFUENTE>
+  rdfs:label "MODESTO LAFUENTE" ;
+  ns1:isDistrict "7  CHAMBERÍ" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/PUERTODELACRUZVERDE>
+  rdfs:label "PUERTO DE LA CRUZ VERDE" ;
+  ns1:isDistrict "2  ARGANZUELA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/SERRANO>
+  rdfs:label "SERRANO" ;
+  ns1:isDistrict "5  CHAMARTÍN", "4  SALAMANCA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/TOMASARUIZ>
+  rdfs:label "TOMASA RUIZ" ;
+  ns1:isDistrict "11  CARABANCHEL" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/AUTOVM40>
+  rdfs:label "AUTOV. M-40" ;
+  ns1:isDistrict "14  MORATALAZ" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/GTAQUEVEDO>
+  rdfs:label "GTA. QUEVEDO" ;
+  ns1:isDistrict "7  CHAMBERÍ" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/AGUSTINDEFOXA>
+  rdfs:label "AGUSTIN DE FOXA" ;
+  ns1:isDistrict "5  CHAMARTÍN" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/AVDAALBUFERA>
+  rdfs:label "AVDA. ALBUFERA" ;
+  ns1:isDistrict "13  PUENTE DE VALLECAS" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/AVDALLANOCASTELLANO>
+  rdfs:label "AVDA. LLANO CASTELLANO" ;
+  ns1:isDistrict "8  FUENCARRAL-EL PARDO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/SANCHIDRIAN>
+  rdfs:label "SANCHIDRIAN" ;
+  ns1:isDistrict "10  LATINA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/DOCTORESQUERDO>
+  rdfs:label "DOCTOR ESQUERDO" ;
+  ns1:isDistrict "3  RETIRO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/AVDAPOBLADOS>
+  rdfs:label "AVDA. POBLADOS" ;
+  ns1:isDistrict "11  CARABANCHEL" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/SANENRIQUEDEOSSO>
+  rdfs:label "SAN ENRIQUE DE OSSO" ;
+  ns1:isDistrict "16  HORTALEZA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/PASEOGENERALMARTINEZCAMPOS>
+  rdfs:label "PASEO. GENERAL MARTINEZ CAMPOS" ;
+  ns1:isDistrict "7  CHAMBERÍ" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/PASEOELPARDO>
+  rdfs:label "PASEO. EL PARDO" ;
+  ns1:isDistrict "8  FUENCARRAL-EL PARDO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/AVDAFERMINASEVILLANO>
+  rdfs:label "AVDA. FERMINA SEVILLANO" ;
+  ns1:isDistrict "20  SAN BLAS-CANILLEJAS" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/MONASTERIODEARLANZA>
+  rdfs:label "MONASTERIO DE ARLANZA" ;
+  ns1:isDistrict "8  FUENCARRAL-EL PARDO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/CTRADEHESADELAVILLA>
+  rdfs:label "CTRA. DEHESA DE LA VILLA" ;
+  ns1:isDistrict "9  MONCLOA-ARAVACA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/SANTAGENOVEVA>
+  rdfs:label "SANTA GENOVEVA" ;
+  ns1:isDistrict "15  CIUDAD LINEAL" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/AVDAENSANCHEDEVALLECAS>
+  rdfs:label "AVDA. ENSANCHE DE VALLECAS" ;
+  ns1:isDistrict "18  VILLA DE VALLECAS" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/ALTAMIRANO>
+  rdfs:label "ALTAMIRANO" ;
+  ns1:isDistrict "9  MONCLOA-ARAVACA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/RONDADEVALENCIA>
+  rdfs:label "RONDA DE VALENCIA" ;
+  ns1:isDistrict "1  CENTRO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/PRINCIPEDEVERGARA>
+  rdfs:label "PRINCIPE DE VERGARA" ;
+  ns1:isDistrict "5  CHAMARTÍN" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/DOCEDEOCTUBRE>
+  rdfs:label "DOCE DE OCTUBRE" ;
+  ns1:isDistrict "3  RETIRO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/AVDADAROCA>
+  rdfs:label "AVDA. DAROCA" ;
+  ns1:isDistrict "15  CIUDAD LINEAL" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/GRANVIA>
+  rdfs:label "GRAN VIA" ;
+  ns1:isDistrict "1  CENTRO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/CTRAELPARDOAFUENCARRAL>
+  rdfs:label "CTRA. EL PARDO A FUENCARRAL" ;
+  ns1:isDistrict "8  FUENCARRAL-EL PARDO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/PRADILLO>
+  rdfs:label "PRADILLO" ;
+  ns1:isDistrict "5  CHAMARTÍN" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/PASEOFERNANNU%C3%91EZ>
+  rdfs:label "PASEO. FERNAN NUÑEZ" ;
+  ns1:isDistrict "3  RETIRO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/PASEORECOLETOS>
+  rdfs:label "PASEO. RECOLETOS" ;
+  ns1:isDistrict "1  CENTRO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/PLAZAESPA%C3%91A>
+  rdfs:label "PLAZA. ESPAÑA" ;
+  ns1:isDistrict "9  MONCLOA-ARAVACA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/GTASINTRA>
+  rdfs:label "GTA. SINTRA" ;
+  ns1:isDistrict "21  BARAJAS" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/BRAVOMURILLO>
+  rdfs:label "BRAVO MURILLO" ;
+  ns1:isDistrict "6  TETUÁN" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/FELIPEALVAREZ>
+  rdfs:label "FELIPE ALVAREZ" ;
+  ns1:isDistrict "18  VILLA DE VALLECAS" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/AVDASANTAEUGENIA>
+  rdfs:label "AVDA. SANTA EUGENIA" ;
+  ns1:isDistrict "18  VILLA DE VALLECAS" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/VALLEHERMOSO>
+  rdfs:label "VALLEHERMOSO" ;
+  ns1:isDistrict "7  CHAMBERÍ" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/PASEOINFANTAISABEL>
+  rdfs:label "PASEO. INFANTA ISABEL" ;
+  ns1:isDistrict "3  RETIRO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/ALCALA>
+  rdfs:label "ALCALA" ;
+  ns1:isDistrict "1  CENTRO", "4  SALAMANCA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/MANCHA>
+  rdfs:label "MANCHA" ;
+  ns1:isDistrict "13  PUENTE DE VALLECAS" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/JUANBRAVO>
+  rdfs:label "JUAN BRAVO" ;
+  ns1:isDistrict "4  SALAMANCA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/FLORA>
+  rdfs:label "FLORA" ;
+  ns1:isDistrict "1  CENTRO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/PASEOJUANANTONIOVALLEJO>
+  rdfs:label "PASEO. JUAN ANTONIO VALLEJO" ;
+  ns1:isDistrict "2  ARGANZUELA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/ARENAL>
+  rdfs:label "ARENAL" ;
+  ns1:isDistrict "1  CENTRO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/PASEOCHOPERA>
+  rdfs:label "PASEO. CHOPERA" ;
+  ns1:isDistrict "2  ARGANZUELA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/GTAANGELCAIDO>
+  rdfs:label "GTA. ANGEL CAIDO" ;
+  ns1:isDistrict "3  RETIRO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/VILLABLANCA>
+  rdfs:label "VILLABLANCA" ;
+  ns1:isDistrict "19  VICÁLVARO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/MARCELOUSERA>
+  rdfs:label "MARCELO USERA" ;
+  ns1:isDistrict "12  USERA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/AVDACARABANCHELALTO>
+  rdfs:label "AVDA. CARABANCHEL ALTO" ;
+  ns1:isDistrict "11  CARABANCHEL" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/FRANCISCOSANTOS>
+  rdfs:label "FRANCISCO SANTOS" ;
+  ns1:isDistrict "4  SALAMANCA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/PLAZACONDEDELVALLEDESUCHIL>
+  rdfs:label "PLAZA. CONDE DEL VALLE DE SUCHIL" ;
+  ns1:isDistrict "7  CHAMBERÍ" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/ATOCHA>
+  rdfs:label "ATOCHA" ;
+  ns1:isDistrict "1  CENTRO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/SILVANO>
+  rdfs:label "SILVANO" ;
+  ns1:isDistrict "16  HORTALEZA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/NUESTRASE%C3%91ORADEVALVERDE>
+  rdfs:label "NUESTRA SEÑORA DE VALVERDE" ;
+  ns1:isDistrict "8  FUENCARRAL-EL PARDO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/ANTONIODELEYVA>
+  rdfs:label "ANTONIO DE LEYVA" ;
+  ns1:isDistrict "11  CARABANCHEL" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/MESONDEPAREDES>
+  rdfs:label "MESON DE PAREDES" ;
+  ns1:isDistrict "1  CENTRO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/PASEOPRADO>
+  rdfs:label "PASEO. PRADO" ;
+  ns1:isDistrict "1  CENTRO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/GENERALRICARDOS>
+  rdfs:label "GENERAL RICARDOS" ;
+  ns1:isDistrict "11  CARABANCHEL" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/PASEOREINACRISTINA>
+  rdfs:label "PASEO. REINA CRISTINA" ;
+  ns1:isDistrict "3  RETIRO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/PLAZAINDEPENDENCIA>
+  rdfs:label "PLAZA. INDEPENDENCIA" ;
+  ns1:isDistrict "4  SALAMANCA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/SANTAENGRACIA>
+  rdfs:label "SANTA ENGRACIA" ;
+  ns1:isDistrict "7  CHAMBERÍ" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/CALLEALFONSOXI>
+  rdfs:label "CALLE ALFONSO XI" ;
+  ns1:isDistrict "3  RETIRO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/JOAQUINTURINA>
+  rdfs:label "JOAQUIN TURINA" ;
+  ns1:isDistrict "11  CARABANCHEL" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/MARTINEZDELARIVA>
+  rdfs:label "MARTINEZ DE LA RIVA" ;
+  ns1:isDistrict "13  PUENTE DE VALLECAS" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/MIGUELANGEL>
+  rdfs:label "MIGUEL ANGEL" ;
+  ns1:isDistrict "7  CHAMBERÍ" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/AVDAGRANVIADEHORTALEZA>
+  rdfs:label "AVDA. GRAN VIA DE HORTALEZA" ;
+  ns1:isDistrict "16  HORTALEZA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/GENOVA>
+  rdfs:label "GENOVA" ;
+  ns1:isDistrict "1  CENTRO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/CA%C3%91ONDELRIOLOBOS>
+  rdfs:label "CAÑON DEL RIO LOBOS" ;
+  ns1:isDistrict "14  MORATALAZ" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/PARROCOEUSEBIOCUENCA>
+  rdfs:label "PARROCO EUSEBIO CUENCA" ;
+  ns1:isDistrict "2  ARGANZUELA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/CONDEDEPE%C3%91ALVER>
+  rdfs:label "CONDE DE PEÑALVER" ;
+  ns1:isDistrict "4  SALAMANCA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/ESPARTEROS>
+  rdfs:label "ESPARTEROS" ;
+  ns1:isDistrict "1  CENTRO" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/PASEOCASTELLANA>
+  rdfs:label "PASEO. CASTELLANA" ;
+  ns1:isDistrict "7  CHAMBERÍ" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Place/CASTELLO>
+  rdfs:label "CASTELLO" ;
+  ns1:isDistrict "4  SALAMANCA" ;
+  a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
+
+<http://bicycleaccident.com/group2/resource/Time/20190214200000>
+  time:inXSDDateTimeStamp "2019-02-14T20:00:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190114202000>
+  time:inXSDDateTimeStamp "2019-01-14T20:20:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190211161300>
+  time:inXSDDateTimeStamp "2019-02-11T16:13:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190130114100>
+  time:inXSDDateTimeStamp "2019-01-30T11:41:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190211141500>
+  time:inXSDDateTimeStamp "2019-02-11T14:15:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/201903024%3A0%3A0%2B>
+  time:inXSDDateTimeStamp "2019-03-02T4:00:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/201902119%3A5%3A0%2B>
+  time:inXSDDateTimeStamp "2019-02-11T9:15:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190124195800>
+  time:inXSDDateTimeStamp "2019-01-24T19:58:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190112130300>
+  time:inXSDDateTimeStamp "2019-01-12T13:03:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190103103000>
+  time:inXSDDateTimeStamp "2019-01-03T10:30:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/201901176%3A0%3A0%2B>
+  time:inXSDDateTimeStamp "2019-01-17T6:00:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190206164000>
+  time:inXSDDateTimeStamp "2019-02-06T16:40:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190220103000>
+  time:inXSDDateTimeStamp "2019-02-20T10:30:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190202113000>
+  time:inXSDDateTimeStamp "2019-02-02T11:30:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190206102500>
+  time:inXSDDateTimeStamp "2019-02-06T10:25:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190207185000>
+  time:inXSDDateTimeStamp "2019-02-07T18:50:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/201902207%3A5%3A0%2B>
+  time:inXSDDateTimeStamp "2019-02-20T7:45:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190118130000>
+  time:inXSDDateTimeStamp "2019-01-18T13:00:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190128180000>
+  time:inXSDDateTimeStamp "2019-01-28T18:00:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190114163000>
+  time:inXSDDateTimeStamp "2019-01-14T16:30:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190216140500>
+  time:inXSDDateTimeStamp "2019-02-16T14:05:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/201902179%3A0%3A0%2B>
+  time:inXSDDateTimeStamp "2019-02-17T9:00:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190107140000>
+  time:inXSDDateTimeStamp "2019-01-07T14:00:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190108130300>
+  time:inXSDDateTimeStamp "2019-01-08T13:03:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/201902010%3A5%3A0%2B>
+  time:inXSDDateTimeStamp "2019-02-01T0:15:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190112222500>
+  time:inXSDDateTimeStamp "2019-01-12T22:25:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190227102500>
+  time:inXSDDateTimeStamp "2019-02-27T10:25:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190119111000>
+  time:inXSDDateTimeStamp "2019-01-19T11:10:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/201902288%3A5%3A0%2B>
+  time:inXSDDateTimeStamp "2019-02-28T8:45:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190111160000>
+  time:inXSDDateTimeStamp "2019-01-11T16:00:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190213142500>
+  time:inXSDDateTimeStamp "2019-02-13T14:25:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/201901187%3A5%3A0%2B>
+  time:inXSDDateTimeStamp "2019-01-18T7:55:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190206173000>
+  time:inXSDDateTimeStamp "2019-02-06T17:30:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190210134500>
+  time:inXSDDateTimeStamp "2019-02-10T13:45:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190203170000>
+  time:inXSDDateTimeStamp "2019-02-03T17:00:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190103143000>
+  time:inXSDDateTimeStamp "2019-01-03T14:30:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190104133500>
+  time:inXSDDateTimeStamp "2019-01-04T13:35:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190126213500>
+  time:inXSDDateTimeStamp "2019-01-26T21:35:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190112130000>
+  time:inXSDDateTimeStamp "2019-01-12T13:00:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/201901254%3A0%3A0%2B>
+  time:inXSDDateTimeStamp "2019-01-25T4:00:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190101140000>
+  time:inXSDDateTimeStamp "2019-01-01T14:00:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190206194000>
+  time:inXSDDateTimeStamp "2019-02-06T19:40:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190216195500>
+  time:inXSDDateTimeStamp "2019-02-16T19:55:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190223211500>
+  time:inXSDDateTimeStamp "2019-02-23T21:15:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190214180000>
+  time:inXSDDateTimeStamp "2019-02-14T18:00:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190214142000>
+  time:inXSDDateTimeStamp "2019-02-14T14:20:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/201902068%3A5%3A0%2B>
+  time:inXSDDateTimeStamp "2019-02-06T8:05:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/201902287%3A0%3A0%2B>
+  time:inXSDDateTimeStamp "2019-02-28T7:30:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190119211000>
+  time:inXSDDateTimeStamp "2019-01-19T21:10:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190109125000>
+  time:inXSDDateTimeStamp "2019-01-09T12:50:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/201902020%3A3%3A0%2B>
+  time:inXSDDateTimeStamp "2019-02-02T0:03:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190124111500>
+  time:inXSDDateTimeStamp "2019-01-24T11:15:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190112221500>
+  time:inXSDDateTimeStamp "2019-01-12T22:15:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190109145000>
+  time:inXSDDateTimeStamp "2019-01-09T14:50:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190130132000>
+  time:inXSDDateTimeStamp "2019-01-30T13:20:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190108205500>
+  time:inXSDDateTimeStamp "2019-01-08T20:55:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190208223000>
+  time:inXSDDateTimeStamp "2019-02-08T22:30:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190207161000>
+  time:inXSDDateTimeStamp "2019-02-07T16:10:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/201902011%3A0%3A0%2B>
+  time:inXSDDateTimeStamp "2019-02-01T1:40:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190216171000>
+  time:inXSDDateTimeStamp "2019-02-16T17:10:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190201133000>
+  time:inXSDDateTimeStamp "2019-02-01T13:30:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/201901259%3A2%3A0%2B>
+  time:inXSDDateTimeStamp "2019-01-25T9:12:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190219115700>
+  time:inXSDDateTimeStamp "2019-02-19T11:57:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190225165000>
+  time:inXSDDateTimeStamp "2019-02-25T16:50:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190117195000>
+  time:inXSDDateTimeStamp "2019-01-17T19:50:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190104171000>
+  time:inXSDDateTimeStamp "2019-01-04T17:10:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190118180500>
+  time:inXSDDateTimeStamp "2019-01-18T18:05:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190121165000>
+  time:inXSDDateTimeStamp "2019-01-21T16:50:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190103124500>
+  time:inXSDDateTimeStamp "2019-01-03T12:45:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190129162600>
+  time:inXSDDateTimeStamp "2019-01-29T16:26:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190127161500>
+  time:inXSDDateTimeStamp "2019-01-27T16:15:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190123153800>
+  time:inXSDDateTimeStamp "2019-01-23T15:38:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190227184000>
+  time:inXSDDateTimeStamp "2019-02-27T18:40:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190114111000>
+  time:inXSDDateTimeStamp "2019-01-14T11:10:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190114224500>
+  time:inXSDDateTimeStamp "2019-01-14T22:45:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190215141000>
+  time:inXSDDateTimeStamp "2019-02-15T14:10:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190202110700>
+  time:inXSDDateTimeStamp "2019-02-02T11:07:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190210160500>
+  time:inXSDDateTimeStamp "2019-02-10T16:05:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190110203000>
+  time:inXSDDateTimeStamp "2019-01-10T20:30:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190223103500>
+  time:inXSDDateTimeStamp "2019-02-23T10:35:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190117161500>
+  time:inXSDDateTimeStamp "2019-01-17T16:15:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190208214000>
+  time:inXSDDateTimeStamp "2019-02-08T21:40:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190112224500>
+  time:inXSDDateTimeStamp "2019-01-12T22:45:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190213173000>
+  time:inXSDDateTimeStamp "2019-02-13T17:30:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/201901169%3A0%3A0%2B>
+  time:inXSDDateTimeStamp "2019-01-16T9:00:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190116152000>
+  time:inXSDDateTimeStamp "2019-01-16T15:20:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/201902079%3A5%3A0%2B>
+  time:inXSDDateTimeStamp "2019-02-07T9:15:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190102204500>
+  time:inXSDDateTimeStamp "2019-01-02T20:45:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190212220000>
+  time:inXSDDateTimeStamp "2019-02-12T22:00:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190301130000>
+  time:inXSDDateTimeStamp "2019-03-01T13:00:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Time/20190212190500>
+  time:inXSDDateTimeStamp "2019-02-12T19:05:00+02:00"^^xsd:dateTimeStamp ;
+  a time:Instant .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S004601>
+  ns1:ageRange "21 - 24" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S002373>
+  ns1:ageRange "45 - 49", "35 - 39" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Pedestrian", "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S010653>
+  ns1:ageRange "21 - 24" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S007634>
+  ns1:ageRange "30 - 34" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S008855>
+  ns1:ageRange "30 - 34" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S003463>
+  ns1:ageRange "25 - 29" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S013090>
+  ns1:ageRange "21 - 24" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S009733>
+  ns1:ageRange "21 - 24" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S003749>
+  ns1:ageRange "55 - 59" ;
+  foaf:gender "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S004151>
+  ns1:ageRange "45 - 49" ;
+  foaf:gender "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S007753>
+  ns1:ageRange "35 - 39" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S013570>
+  ns1:ageRange "30 - 34" ;
+  foaf:gender "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S011335>
+  ns1:ageRange "35 - 39" ;
+  foaf:gender "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S013999>
+  ns1:ageRange "50 - 54" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S013863>
+  ns1:ageRange "45 - 49" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S013812>
+  ns1:ageRange "55 - 59" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S009136>
+  ns1:ageRange "30 - 34" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S003277>
+  ns1:ageRange "50 - 54" ;
+  foaf:gender "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S002591>
+  ns1:ageRange "25 - 29" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S006584>
+  ns1:ageRange "18 - 20" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S010852>
+  ns1:ageRange "45 - 49", "21 - 24" ;
+  foaf:gender "Man", "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Pedestrian", "Driver" ;
+  ns1:wasHospitalized 0, 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S006478>
+  ns1:ageRange "55 - 59" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S003306>
+  ns1:ageRange "35 - 39" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S011089>
+  ns1:ageRange "35 - 39" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S005062>
+  ns1:ageRange "65 - 69" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S000904>
+  ns1:ageRange "30 - 34" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S009106>
+  ns1:ageRange "35 - 39" ;
+  foaf:gender "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S009731>
+  ns1:ageRange "50 - 54" ;
+  foaf:gender "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S000659>
+  ns1:ageRange "25 - 29" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S009715>
+  ns1:ageRange "21 - 24" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S006649>
+  ns1:ageRange "30 - 34" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S004582>
+  ns1:ageRange "30 - 34" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S010289>
+  ns1:ageRange "25 - 29" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S001943>
+  ns1:ageRange "30 - 34" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S003662>
+  ns1:ageRange "18 - 20" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S012142>
+  ns1:ageRange "15 - 17" ;
+  foaf:gender "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S008637>
+  ns1:ageRange "45 - 49" ;
+  foaf:gender "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S002594>
+  ns1:ageRange "25 - 29" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S010855>
+  ns1:ageRange "50 - 54" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S009806>
+  ns1:ageRange "25 - 29" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S003364>
+  ns1:ageRange "15 - 17" ;
+  foaf:gender "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S004939>
+  ns1:ageRange "10 - 14" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S010360>
+  ns1:ageRange "55 - 59" ;
+  foaf:gender "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S000132>
+  ns1:ageRange "18 - 20", "21 - 24" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S006501>
+  ns1:ageRange "25 - 29" ;
+  foaf:gender "Man", "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver", "Pedestrian" ;
+  ns1:wasHospitalized 1, 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S007855>
+  ns1:ageRange "35 - 39" ;
+  foaf:gender "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S008460>
+  ns1:ageRange "21 - 24" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S008489>
+  ns1:ageRange "50 - 54" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S010849>
+  ns1:ageRange "25 - 29" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver", "Pedestrian" ;
+  ns1:wasHospitalized 1, 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S011128>
+  ns1:ageRange "35 - 39" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S007920>
+  ns1:ageRange "70 - 74", "50 - 54" ;
+  foaf:gender "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver", "Pedestrian" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S010276>
+  ns1:ageRange "40 - 44" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S013729>
+  ns1:ageRange "45 - 49" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S004134>
+  ns1:ageRange "40 - 44" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S000306>
+  ns1:ageRange "30 - 34" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S005101>
+  ns1:ageRange "60 - 64" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S008627>
+  ns1:ageRange "40 - 44" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S010293>
+  ns1:ageRange "25 - 29" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S013198>
+  ns1:ageRange "40 - 44" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S005036>
+  ns1:ageRange "55 - 59" ;
+  foaf:gender "Man", "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Pedestrian", "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S000133>
+  ns1:ageRange "15 - 17" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S011338>
+  ns1:ageRange "45 - 49" ;
+  foaf:gender "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S009150>
+  ns1:ageRange "35 - 39" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S009957>
+  ns1:ageRange "35 - 39" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S000641>
+  ns1:ageRange "65 - 69" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S010907>
+  ns1:ageRange "21 - 24" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S000036>
+  ns1:ageRange "70 - 74" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S006655>
+  ns1:ageRange "10 - 14" ;
+  foaf:gender "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S012186>
+  ns1:ageRange "50 - 54" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S001738>
+  ns1:ageRange "25 - 29" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S010951>
+  ns1:ageRange "45 - 49" ;
+  foaf:gender "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S001678>
+  ns1:ageRange "15 - 17" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S002882>
+  ns1:ageRange "50 - 54" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S005992>
+  ns1:ageRange "35 - 39" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S010716>
+  ns1:ageRange "35 - 39" ;
+  foaf:gender "Woman" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S004769>
+  ns1:ageRange "50 - 54" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S007891>
+  ns1:ageRange "45 - 49" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S004528>
+  ns1:ageRange "25 - 29" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S013888>
+  ns1:ageRange "18 - 20" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S003283>
+  ns1:ageRange "25 - 29" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S009001>
+  ns1:ageRange "35 - 39" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S013666>
+  ns1:ageRange "25 - 29" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S008448>
+  ns1:ageRange "45 - 49", "15 - 17" ;
+  foaf:gender "Woman", "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Pedestrian", "Driver" ;
+  ns1:wasHospitalized 1, 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S004271>
+  ns1:ageRange "45 - 49" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 1 ;
+  ns1:travelType "Driver" ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S002788>
+  ns1:ageRange "40 - 44" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S010365>
+  ns1:ageRange "30 - 34" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S006032>
+  ns1:ageRange "25 - 29" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S013972>
+  ns1:ageRange "50 - 54" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 1 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S002704>
+  ns1:ageRange "45 - 49" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S000045>
+  ns1:ageRange "15 - 17" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S013751>
+  ns1:ageRange "50 - 54" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 1 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .
+
+<http://bicycleaccident.com/group2/resource/Victim/2019S009942>
+  ns1:ageRange "25 - 29" ;
+  foaf:gender "Man" ;
+  ns1:alcoholUse 0 ;
+  ns1:travelType "Driver" ;
+  ns1:wasHospitalized 0 ;
+  a <http://bicycleaccident.com/group2/ontology/class#Victim> .

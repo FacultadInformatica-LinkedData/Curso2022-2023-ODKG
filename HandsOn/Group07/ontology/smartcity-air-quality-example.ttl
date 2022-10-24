@@ -4,23 +4,25 @@
 @prefix Magnitude: http://smartcity.airquality.es/airquality/magnitude .
 @prefix xsd: http://www.w3.org/2001/XMLSchema#.
 @prefix onto: http://smartcity.airquality.es/airquality/ontology/ont#
-
+@prefix saref:<https://saref.etsi.org/core/v3.1.1/>
 
 
 :municipality7 a onto:Municipality;
-	onto:hasName Madrid^^xsd:string .
+	onto:hasMunicipalityName Madrid^^xsd:string .
 
 :station4 a onto:Station;
+	onto:hasStationName Puerta España^^xsd:string;
     onto:isLocatedIn municipality7;
 	onto:latitude -37.122.567^^xsd:real;
 	onto:longitude 404.238.823^^xsd:real;
-    onto:hasMeasurement magnitude9 .
+    saref:hasMeasurement magnitude9 .
+	
 
 :magnitude9 a onto:Magnitude;
-    onto:hasCode 08^^xsd:integer;
-	onto:hasName NO2^^xsd:string;
-	onto:hasunitofMeasurement 0.2^^xsd:real;
-	onto:atTime 2022-04-01T11:15:30.000+0200^^xsd:dateTime .
-
+	onto:hasMagnitudeName NO2^^xsd:string;
+	onto:isMeasureIn ug/m2^^xsd:string;
+	saref:hasTimestamp 2022-04-01T11:15:30.000+0200^^xsd:dateTime;
+	saref:hasValue 10.0^^xsd:real .
+	
 
 

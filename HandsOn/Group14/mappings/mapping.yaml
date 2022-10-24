@@ -21,7 +21,7 @@ mappings:
       - [bs:returnOfVeilbPossible ,$(Retour vélib possible)]
       - [bs:availableMechanicalBikes, $(Vélos mécaniques disponibles)]
       - [schema:id, $(Identifiant station)]
-      - [property:locatedInArea, ($same_as_wikidata_communes)~iri]
+      - [bs:locatedInArea, ($same_as_wikidata_communes)~iri]
       - p: coordinate
 
   coordinate:

@@ -17,7 +17,7 @@ mappings:
       - [centros-servicios-establecimientos-sanitarios-update.csv~csv]
     s: https://www.healthfinder.io/group08/resource/Clinic/$(Clinic)
     po:
-      - [a, nsdata:Clinic]
+      - [a, nsont:Clinic]
       - [nsont:typologyOfClinic ,$(typologyOfClinic) ,xsd:string]
       - [nsont:specialization ,$(specialization) ,xsd:string]
       - p: geo:location

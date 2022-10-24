@@ -1,0 +1,68 @@
+prefixes:
+  bicyacoc: http://bicycleaccident.com/group2/ontology/class#
+  bicyacop: http://bicycleaccident.com/group2/ontology/property#
+  bicyacr: http://bicycleaccident.com/group2/resource/
+  ev: https://motools.sourceforge.net/event/event.html#
+  time: http://www.w3.org/2006/time#
+  wgs84: http://www.w3.org/2003/01/geo/wgs84_pos#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  
+mappings:
+  TriplesMap1:
+    sources:
+      - [AccidentesBicicletas_2019_2022_updated.csv~csv]
+    s: bicyacr:/Accident/$(idAccident)
+    po:
+      - [a, bicyacoc:BicycleAccident]
+      - [ev:agent, bicyacr:Victim/$(idPerson)]
+      - [ev:term_time, bicyacr:Time/$(idDateTime)]
+      - [byciacop:hasType, $(accident_type)]
+      - p: byciacop:bicycleIsElectronic
+        o: 
+            value: $(bicycle_is_electronic)
+            datatype: xsd:boolean
+      - [ev:term_place, bicyacr:Place/$(streetID)]
+      - [byciacop:duringWeather, $(weather_status)]
+      
+  TriplesMap2:
+    sources:
+      - [AccidentesBicicletas_2019_2022_updated.csv~csv]
+    s: bicyacr:Victim/$(idPerson)
+    po:
+      - [a, bicyacoc:Victim]
+      - [byciacop:ageRange, $(age_range)]
+      - [foaf:gender, $(sex)]
+      - [byciacop:travelType, $(person_type)]
+      - p: byciacop:wasHospitalized
+        o:
+            value: $(hospitalized)
+            datatype: xsd:boolean
+      - p: byciacop:alcoholUse
+        o:
+            value: $(positive_alcohol)
+            datatype: xsd:boolean
+
+  TriplesMap3 :
+    sources:
+      - [AccidentesBicicletas_2019_2022_updated.csv~csv]
+    s: bicyacr:Time/$(idDateTime)
+    po:
+      - [a, time:Instant]
+      - p: time:inXSDDateTimeStamp
+        o:
+            value: $(dateTime)
+            datatype: xsd:dateTimeStamp
+
+  TriplesMap4 :
+    sources :
+      - [AccidentesBicicletas_2019_2022_updated.csv~csv]
+    s: bicyacr:Place/$(streetID)
+    po:
+      - [a, bicyacoc:SpatialThingUTM]
+      - [rdfs:label, $(street)]
+      - [byciacop:isDistrict, $(district)]
+      
+

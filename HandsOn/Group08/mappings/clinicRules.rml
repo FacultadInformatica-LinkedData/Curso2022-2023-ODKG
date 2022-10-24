@@ -26,7 +26,7 @@ map:map_clinicmap_000 rml:logicalSource map:source_000 ;
 	rr:subjectMap map:s_000 .
 
 map:om_000 rdf:type rr:ObjectMap ;
-	rr:constant "https://www.healthfinder.io/group08/resource/Clinic" ;
+	rr:constant "https://www.healthfinder.io/group08/ontology/ontology#Clinic" ;
 	rr:termType rr:IRI .
 
 map:om_001 rml:reference "typologyOfClinic" ;

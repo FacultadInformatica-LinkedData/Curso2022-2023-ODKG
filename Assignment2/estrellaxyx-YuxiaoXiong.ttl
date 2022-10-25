@@ -1,0 +1,16 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix base: <http://example.org/#> .
+
+
+base:Class01 base:includes base:Sensor029 ;
+             base:includes base:Computer101 .
+
+base:Sensor029 base:hasMeasurement base:Measurement8401 .
+
+base:Measurement8401 base:hasTemperature 29; 
+                     base:atTime "2010-06-12T12:00:12"^^xsd:datetime .
+
+base:Computer101 base:hasOwner base:User10A . 
+
+base:User10A base:hasName "Pedro" . 
+

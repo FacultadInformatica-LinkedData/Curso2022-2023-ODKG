@@ -26,4 +26,4 @@
 
 ## Comments on self-assessment ##
 
-No comments already
+First query does not make use of owl:sameAs link as is a query for checking changes made, but the rest of the queries make use of it (Requested at least 1 query).

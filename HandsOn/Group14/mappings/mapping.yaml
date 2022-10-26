@@ -24,7 +24,7 @@ mappings:
       - [bs:locatedInArea, $(same_as_wikidata_communes)~iri]
       - p: schema:geo
         o:
-          mappings: coordinate
+          mapping: coordinate
 
   coordinate:
     sources:

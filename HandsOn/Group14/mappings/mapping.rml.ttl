@@ -218,9 +218,9 @@ map:s_001 rdf:type rr:SubjectMap ;
 	rr:template "http://smartbikes.org/resource/coordinate/{Coordonnées géographiques 1}_{Coordonnées géographiques 2}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
-	rml:source "velib-disponibilite-en-temps-reel.csv" ;
+	rml:source "./csv/velib-disponibilite-en-temps-reel-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_001 rml:referenceFormulation ql:CSV ;
-	rml:source "velib-disponibilite-en-temps-reel.csv" ;
+	rml:source "./csv/velib-disponibilite-en-temps-reel-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .

@@ -13,13 +13,13 @@
 map:map_coordinate_000 rml:logicalSource map:source_001 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "coordinate" ;
-	rr:predicateObjectMap map:pom_013, map:pom_014, map:pom_015 ;
+	rr:predicateObjectMap map:pom_014, map:pom_015, map:pom_016 ;
 	rr:subjectMap map:s_001 .
 
 map:map_station_000 rml:logicalSource map:source_000 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "station" ;
-	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007, map:pom_008, map:pom_009, map:pom_010, map:pom_011, map:pom_012 ;
+	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007, map:pom_008, map:pom_009, map:pom_010, map:pom_011, map:pom_012, map:pom_013 ;
 	rr:subjectMap map:s_000 .
 
 map:om_000 rdf:type rr:ObjectMap ;
@@ -70,19 +70,22 @@ map:om_011 rml:reference "Identifiant station" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
-map:om_012 rml:reference "Nom communes équipées" ;
+map:om_012 rml:reference "same_as_wikidata_communes" ;
 	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
+	rr:termType rr:IRI .
 
 map:om_013 rdf:type rr:ObjectMap ;
+	rr:parentTriplesMap map:map_coordinate_000 .
+
+map:om_014 rdf:type rr:ObjectMap ;
 	rr:constant "http://schema.org/GeoCoordinates" ;
 	rr:termType rr:IRI .
 
-map:om_014 rml:reference "Coordonnées géographiques 1" ;
+map:om_015 rml:reference "Coordonnées géographiques 1" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
-map:om_015 rml:reference "Coordonnées géographiques 2" ;
+map:om_016 rml:reference "Coordonnées géographiques 2" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
@@ -123,15 +126,18 @@ map:pm_011 rdf:type rr:PredicateMap ;
 	rr:constant schema:id .
 
 map:pm_012 rdf:type rr:PredicateMap ;
-	rr:constant dbo:locatedInArea .
+	rr:constant bs:locatedInArea .
 
 map:pm_013 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant schema:geo .
 
 map:pm_014 rdf:type rr:PredicateMap ;
-	rr:constant schema:latitude .
+	rr:constant rdf:type .
 
 map:pm_015 rdf:type rr:PredicateMap ;
+	rr:constant schema:latitude .
+
+map:pm_016 rdf:type rr:PredicateMap ;
 	rr:constant schema:longitude .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
@@ -198,6 +204,10 @@ map:pom_015 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_015 ;
 	rr:predicateMap map:pm_015 .
 
+map:pom_016 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_016 ;
+	rr:predicateMap map:pm_016 .
+
 map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_coordinate_000, map:map_station_000 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
@@ -208,10 +218,9 @@ map:s_001 rdf:type rr:SubjectMap ;
 	rr:template "http://smartbikes.org/resource/coordinate/{Coordonnées géographiques 1}_{Coordonnées géographiques 2}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
-	rml:source "velib-disponibilite-en-temps-reel-updated.csv" ;
+	rml:source "velib-disponibilite-en-temps-reel.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_001 rml:referenceFormulation ql:CSV ;
-	rml:source "velib-disponibilite-en-temps-reel-updated.csv" ;
+	rml:source "velib-disponibilite-en-temps-reel.csv" ;
 	rdf:type rml:LogicalSource .
-

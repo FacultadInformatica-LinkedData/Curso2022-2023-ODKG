@@ -1,0 +1,674 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "Code",
+    "description": "Remove column Code"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Station",
+    "description": "Remove column Station"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Municipality",
+    "description": "Remove column Municipality"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CodeofStation",
+    "description": "Remove column CodeofStation"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MunicipalityName",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2074737",
+        "name": "municipality of Spain"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column MunicipalityName to type Q2074737"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MunicipalityName",
+    "similarValue": "Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2807",
+      "name": "Madrid",
+      "types": [
+        "Q2074737",
+        "Q515",
+        "Q1549591",
+        "Q1637706",
+        "Q5119",
+        "Q486972",
+        "Q51929311"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Madrid (Q2807) for cells containing \"Madrid\" in column MunicipalityName"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UnitOfMeasure",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q47574",
+        "name": "unit of measurement"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column UnitOfMeasure to type Q47574"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UnitOfMeasure",
+    "similarValue": "microgramos/metro cúbico ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q106623548",
+      "name": "microgram per cubic metre",
+      "types": [
+        "Q47574",
+        "Q61610698"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Match item microgram per cubic metre (Q106623548) for cells containing \"microgramos/metro cúbico \" in column UnitOfMeasure"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MagnitudeName",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q11173",
+        "name": "chemical compound"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column MagnitudeName to type Q11173"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MagnitudeName",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q113681859",
+        "name": "chemical entity class"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column MagnitudeName to type Q113681859"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "MunicipalityName",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_municipality",
+    "columnInsertIndex": 1,
+    "description": "Create column same_as_wikidata_municipality at index 1 based on column MunicipalityName using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "UnitOfMeasure",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_unit_of_measure",
+    "columnInsertIndex": 3,
+    "description": "Create column same_as_wikidata_unit_of_measure at index 3 based on column UnitOfMeasure using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "MagnitudeName",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_magnitude",
+    "columnInsertIndex": 5,
+    "description": "Create column same_as_wikidata_magnitude at index 5 based on column MagnitudeName using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "StationName",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column StationName to type Q79007"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "StationName: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "StationName",
+          "from": 25,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "StationName",
+    "similarValue": "Escuelas Aguirre",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5397501",
+      "name": "Escuelas Aguirre",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Escuelas Aguirre (Q5397501) for cells containing \"Escuelas Aguirre\" in column StationName"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "StationName: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "StationName",
+          "from": 25,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "StationName",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Escuelas Aguirre"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Escuelas Aguirre"
+      }
+    ],
+    "description": "Mass edit cells in column StationName"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "StationName: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "StationName",
+          "from": 25,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "StationName",
+    "similarValue": "Escuelas Aguirre",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5397501",
+      "name": "Escuelas Aguirre",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Escuelas Aguirre (Q5397501) for cells containing \"Escuelas Aguirre\" in column StationName"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "StationName: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "StationName",
+          "from": 25,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "StationName",
+          "expression": "value",
+          "columnName": "StationName",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Urb. Embajada",
+                "l": "Urb. Embajada"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "StationName",
+    "similarValue": "Urb. Embajada",
+    "description": "Clear recon data for cells containing \"Urb. Embajada\" in column StationName"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "StationName: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "StationName",
+          "from": 25,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "StationName",
+          "expression": "value",
+          "columnName": "StationName",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Sanchinarro",
+                "l": "Sanchinarro"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "StationName",
+    "similarValue": "Sanchinarro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3076623",
+      "name": "Sanchinarro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Sanchinarro (Q3076623) for cells containing \"Sanchinarro\" in column StationName"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "StationName: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "StationName",
+          "from": 25,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "StationName",
+          "expression": "value",
+          "columnName": "StationName",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Plaza Elíptica",
+                "l": "Plaza Elíptica"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "StationName",
+    "similarValue": "Plaza Elíptica",
+    "judgment": "matched",
+    "match": {
+      "id": "Q782113",
+      "name": "Plaza Elíptica",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Plaza Elíptica (Q782113) for cells containing \"Plaza Elíptica\" in column StationName"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "StationName: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "StationName",
+          "from": 25,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "StationName",
+          "expression": "value",
+          "columnName": "StationName",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Parque del Retiro",
+                "l": "Parque del Retiro"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "StationName",
+    "similarValue": "Parque del Retiro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q7139699",
+      "name": "Parque del Retiro (Ponce)",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Parque del Retiro (Ponce) (Q7139699) for cells containing \"Parque del Retiro\" in column StationName"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "StationName: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "StationName",
+          "from": 25,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "StationName",
+          "expression": "value",
+          "columnName": "StationName",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Farolillo",
+                "l": "Farolillo"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "StationName",
+    "similarValue": "Farolillo",
+    "description": "Clear recon data for cells containing \"Farolillo\" in column StationName"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "StationName: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "StationName",
+          "from": 25,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "StationName",
+          "expression": "value",
+          "columnName": "StationName",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Ensanche de Vallecas",
+                "l": "Ensanche de Vallecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "StationName",
+    "similarValue": "Ensanche de Vallecas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3847485",
+      "name": "Ensanche de Vallecas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ensanche de Vallecas (Q3847485) for cells containing \"Ensanche de Vallecas\" in column StationName"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "StationName: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "StationName",
+          "from": 25,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "StationName",
+          "expression": "value",
+          "columnName": "StationName",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Barrio del Pilar",
+                "l": "Barrio del Pilar"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "StationName",
+    "similarValue": "Barrio del Pilar",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2463533",
+      "name": "Barrio del Pilar",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Barrio del Pilar (Q2463533) for cells containing \"Barrio del Pilar\" in column StationName"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "StationName",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_wikidata_station_street",
+    "columnInsertIndex": 9,
+    "description": "Create column same_wikidata_station_street at index 9 based on column StationName using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]

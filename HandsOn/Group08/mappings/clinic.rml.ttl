@@ -19,6 +19,12 @@ map:map_addressmap_000 rml:logicalSource map:source_001 ;
 	rr:predicateObjectMap map:pom_005, map:pom_006, map:pom_007, map:pom_008, map:pom_009 ;
 	rr:subjectMap map:s_001 .
 
+map:map_citymap_000 rml:logicalSource map:source_002 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "citymap" ;
+	rr:predicateObjectMap map:pom_010, map:pom_011 ;
+	rr:subjectMap map:s_002 .
+
 map:map_clinicmap_000 rml:logicalSource map:source_000 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "clinicmap" ;
@@ -69,6 +75,14 @@ map:om_009 rml:reference "latitude" ;
 	rr:datatype xsd:float ;
 	rr:termType rr:Literal .
 
+map:om_010 rdf:type rr:ObjectMap ;
+	rr:constant "https://www.healthfinder.io/group08/ontology/ontology#City" ;
+	rr:termType rr:IRI .
+
+map:om_011 rml:reference "city" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
 map:pm_000 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
@@ -98,6 +112,12 @@ map:pm_008 rdf:type rr:PredicateMap ;
 
 map:pm_009 rdf:type rr:PredicateMap ;
 	rr:constant geo:latitude .
+
+map:pm_010 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_011 rdf:type rr:PredicateMap ;
+	rr:constant rdfs:label .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_000 ;
@@ -139,7 +159,15 @@ map:pom_009 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_009 ;
 	rr:predicateMap map:pm_009 .
 
-map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_addressmap_000, map:map_clinicmap_000 ;
+map:pom_010 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_010 ;
+	rr:predicateMap map:pm_010 .
+
+map:pom_011 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_011 ;
+	rr:predicateMap map:pm_011 .
+
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_addressmap_000, map:map_citymap_000, map:map_clinicmap_000 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
 map:s_000 rdf:type rr:SubjectMap ;
@@ -148,6 +176,9 @@ map:s_000 rdf:type rr:SubjectMap ;
 map:s_001 rdf:type rr:SubjectMap ;
 	rr:template "https://www.healthfinder.io/group08/resource/Address/{addressName}-{latitude}-{longitude}" .
 
+map:s_002 rdf:type rr:SubjectMap ;
+	rr:template "https://www.healthfinder.io/group08/resource/City/{city}" .
+
 map:source_000 rml:referenceFormulation ql:CSV ;
 	rml:source "centros-servicios-establecimientos-sanitarios-update.csv" ;
 	rdf:type rml:LogicalSource .
@@ -155,3 +186,8 @@ map:source_000 rml:referenceFormulation ql:CSV ;
 map:source_001 rml:referenceFormulation ql:CSV ;
 	rml:source "centros-servicios-establecimientos-sanitarios-update.csv" ;
 	rdf:type rml:LogicalSource .
+
+map:source_002 rml:referenceFormulation ql:CSV ;
+	rml:source "centros-servicios-establecimientos-sanitarios-update.csv" ;
+	rdf:type rml:LogicalSource .
+

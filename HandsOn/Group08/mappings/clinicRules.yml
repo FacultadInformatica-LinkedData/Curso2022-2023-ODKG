@@ -18,7 +18,7 @@ mappings:
     s: https://www.healthfinder.io/group08/resource/Clinic/$(Clinic)
     po:
       - [a, nsont:Clinic]
-      - [rdf:label, $(Clinic)]
+      - [rdfs:label, "Clinic"]
       - [nsont:typologyOfClinic ,$(typologyOfClinic) ,xsd:string]
       - [nsont:specialization ,$(specialization) ,xsd:string]
       - p: geo:location
@@ -31,6 +31,7 @@ mappings:
     s: https://www.healthfinder.io/group08/resource/Address/$(addressName)-$(latitude)-$(longitude)
     po:
       - [a, nsont:Address]
+      - [rdfs:label, "Address"]
       - [nsont:location ,$(addressName) ,xsd:string]
       - [geo:longitude ,$(longitude) ,xsd:float]
       - [geo:latitude ,$(latitude) ,xsd:float]

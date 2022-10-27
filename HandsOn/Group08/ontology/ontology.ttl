@@ -44,7 +44,7 @@ geo:location a owl:ObjectProperty ;
         nsdata:Defibrillator ;
     rdfs:range nsdata:Address .
 
-geo:location a owl:ObjectProperty ;
+nsont:isIn a owl:ObjectProperty ;
     rdfs:label "isIn" ;
     rdfs:domain nsdata:Address ;
     rdfs:range nsdata:City .

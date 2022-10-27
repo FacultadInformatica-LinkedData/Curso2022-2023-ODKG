@@ -5744,4 +5744,9 @@
     "columnInsertIndex": 6,
     "description": "Create column cityWikidata at index 6 based on column city using expression grel:\"https://wikidata.org/entity\"+cell.recon.match.id"
   }
+  {
+    "op": "core/column-removal",
+    "columnName": "specializationWikidata",
+    "description": "Remove column specializationWikidata"
+  }
 ]

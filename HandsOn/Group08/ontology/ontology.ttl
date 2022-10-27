@@ -41,12 +41,12 @@ geo:longitude a owl:DatatypeProperty ;
 geo:location a owl:ObjectProperty ;
     rdfs:label "location" ;
     rdfs:domain nsont:Clinic,
-        nsdata:Defibrillator ;
-    rdfs:range nsdata:Address .
+        nsont:Defibrillator ;
+    rdfs:range nsont:Address .
 
 nsont:isIn a owl:ObjectProperty ;
     rdfs:label "isIn" ;
-    rdfs:domain nsdata:Address ;
+    rdfs:domain nsont:Address ;
     rdfs:range nsont:City .
 
 #################################################################

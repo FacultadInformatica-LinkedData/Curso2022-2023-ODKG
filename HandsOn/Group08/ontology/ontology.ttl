@@ -56,12 +56,12 @@ nsont:isIn a owl:ObjectProperty ;
 nsont:specialization a owl:DatatypeProperty ;
     rdfs:label "specialization" .
     rdfs:domain nsont:Clinic ;
-    rdfs:range xsd:String .
+    rdfs:range xsd:string .
 
 nsont:typologyOfClinic a owl:DatatypeProperty ;
     rdfs:label "typology of clinic" .
     rdfs:domain nsont:Clinic ;
-    rdfs:range xsd:String .
+    rdfs:range xsd:string .
 
 #################################################################
 #    Classes

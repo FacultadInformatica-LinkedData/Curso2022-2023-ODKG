@@ -35,4 +35,5 @@ mappings:
     po:
       - [a, base:Address]
       - [base:street_name,$(street_name)]
+      - [owl:sameAs, $(same_as_wikidata_street)~iri]
       - [base:street_number,$(street_number)]

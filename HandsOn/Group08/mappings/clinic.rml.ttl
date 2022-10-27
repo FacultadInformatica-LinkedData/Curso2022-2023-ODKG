@@ -16,7 +16,7 @@
 map:map_addressmap_000 rml:logicalSource map:source_001 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "addressmap" ;
-	rr:predicateObjectMap map:pom_005, map:pom_006, map:pom_007, map:pom_008 ;
+	rr:predicateObjectMap map:pom_005, map:pom_006, map:pom_007, map:pom_008, map:pom_009 ;
 	rr:subjectMap map:s_001 .
 
 map:map_clinicmap_000 rml:logicalSource map:source_000 ;
@@ -52,15 +52,19 @@ map:om_005 rdf:type rr:ObjectMap ;
 
 map:om_006 rml:reference "addressName" ;
 	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_007 rml:reference "addressName" ;
+	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_007 rml:reference "longitude" ;
+map:om_008 rml:reference "longitude" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:float ;
 	rr:termType rr:Literal .
 
-map:om_008 rml:reference "latitude" ;
+map:om_009 rml:reference "latitude" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:float ;
 	rr:termType rr:Literal .
@@ -69,7 +73,7 @@ map:pm_000 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_001 rdf:type rr:PredicateMap ;
-	rr:constant rdf:label .
+	rr:constant rdfs:label .
 
 map:pm_002 rdf:type rr:PredicateMap ;
 	rr:constant nsont:typologyOfClinic .
@@ -84,12 +88,15 @@ map:pm_005 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_006 rdf:type rr:PredicateMap ;
-	rr:constant nsont:location .
+	rr:constant rdfs:label .
 
 map:pm_007 rdf:type rr:PredicateMap ;
-	rr:constant geo:longitude .
+	rr:constant nsont:location .
 
 map:pm_008 rdf:type rr:PredicateMap ;
+	rr:constant geo:longitude .
+
+map:pm_009 rdf:type rr:PredicateMap ;
 	rr:constant geo:latitude .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
@@ -127,6 +134,10 @@ map:pom_007 rdf:type rr:PredicateObjectMap ;
 map:pom_008 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_008 ;
 	rr:predicateMap map:pm_008 .
+
+map:pom_009 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_009 ;
+	rr:predicateMap map:pm_009 .
 
 map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_addressmap_000, map:map_clinicmap_000 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .

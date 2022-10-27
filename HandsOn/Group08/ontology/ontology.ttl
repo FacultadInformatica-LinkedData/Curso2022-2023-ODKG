@@ -28,10 +28,10 @@ geo:latitude a owl:DatatypeProperty ;
     rdfs:domain nsdata:Address ;
     rdfs:range xsd:float .
 
-nsont:location a owl:ObjectProperty ;
+nsont:location a owl:DatatypeProperty ;
     rdfs:label "location" ;
     rdfs:domain nsdata:Address ;
-    rdfs:range xsd:String .
+    rdfs:range xsd:string .
 
 geo:longitude a owl:DatatypeProperty ;
     rdfs:label "longitude" .
@@ -43,6 +43,11 @@ geo:location a owl:ObjectProperty ;
     rdfs:domain nsdata:Clinic,
         nsdata:Defibrillator ;
     rdfs:range nsdata:Address .
+
+geo:location a owl:ObjectProperty ;
+    rdfs:label "isIn" ;
+    rdfs:domain nsdata:Address ;
+    rdfs:range nsdata:City .
 
 #################################################################
 #    Data properties
@@ -71,3 +76,5 @@ nsont:Defibrillator a owl:Class ;
 nsont:Address a owl:Class ;
     rdfs:label "Address" .
 
+nsont:City a owl:Class ;
+    rdfs:label "City" .

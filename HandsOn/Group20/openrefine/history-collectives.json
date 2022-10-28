@@ -1,0 +1,1818 @@
+[
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Num  Inscripción",
+    "newColumnName": "Id",
+    "description": "Rename column Num  Inscripción to Id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Cod_Postal",
+    "newColumnName": "ZipCode",
+    "description": "Rename column Cod_Postal to ZipCode"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Categoria",
+    "newColumnName": "Category",
+    "description": "Rename column Categoria to Category"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Primer_Tlfn",
+    "newColumnName": "Phone Number",
+    "description": "Rename column Primer_Tlfn to Phone Number"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Ambito",
+    "newColumnName": "Geographical Scope",
+    "description": "Rename column Ambito to Geographical Scope"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Fecha_Registro",
+    "newColumnName": "Register Date",
+    "description": "Rename column Fecha_Registro to Register Date"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Num_Personas",
+    "newColumnName": "Num_affiliates",
+    "description": "Rename column Num_Personas to Num_affiliates"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Barrio",
+    "newColumnName": "Subdistrict",
+    "description": "Rename column Barrio to Subdistrict"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Aproximacion",
+    "newColumnName": "Detail",
+    "description": "Rename column Aproximacion to Detail"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Denominacion",
+    "newColumnName": "name",
+    "description": "Rename column Denominacion to name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Id",
+    "newColumnName": "id",
+    "description": "Rename column Id to id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Detail",
+    "newColumnName": "detail",
+    "description": "Rename column Detail to detail"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ZipCode",
+    "newColumnName": "zip_code",
+    "description": "Rename column ZipCode to zip_code"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Subdistrict",
+    "newColumnName": "subdistrict",
+    "description": "Rename column Subdistrict to subdistrict"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Register Date",
+    "newColumnName": "register_date",
+    "description": "Rename column Register Date to register_date"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Phone Number",
+    "newColumnName": "phone_number",
+    "description": "Rename column Phone Number to phone_number"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Email",
+    "newColumnName": "email",
+    "description": "Rename column Email to email"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Internet",
+    "newColumnName": "internet",
+    "description": "Rename column Internet to internet"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Category",
+    "newColumnName": "category",
+    "description": "Rename column Category to category"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Geographical Scope",
+    "newColumnName": "geographical_scope",
+    "description": "Rename column Geographical Scope to geographical_scope"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Num_affiliates",
+    "newColumnName": "num_affiliates",
+    "description": "Rename column Num_affiliates to num_affiliates"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Poblacion",
+    "newColumnName": "city´",
+    "description": "Rename column Poblacion to city´"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "city´",
+    "newColumnName": "city",
+    "description": "Rename column city´ to city"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "id",
+    "expression": "grel:value.md5()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column id using expression grel:value.md5()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Tipo_Via",
+    "expression": "join ([coalesce(cells['Tipo_Via'].value,''),coalesce(cells['Calle'].value,'')],' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Tipo_Via using expression join ([coalesce(cells['Tipo_Via'].value,''),coalesce(cells['Calle'].value,'')],' ')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Calle",
+    "description": "Remove column Calle"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Tipo_Via",
+    "expression": "join ([coalesce(cells['Tipo_Via'].value,''),coalesce(cells['Numero'].value,'')],',')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Tipo_Via using expression join ([coalesce(cells['Tipo_Via'].value,''),coalesce(cells['Numero'].value,'')],',')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Numero",
+    "description": "Remove column Numero"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Tipo_Via",
+    "newColumnName": "address",
+    "description": "Rename column Tipo_Via to address"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "phone_number",
+    "expression": "grel:if(isBlank(value.trim()), \"unknown\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column phone_number using expression grel:if(isBlank(value.trim()), \"unknown\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "internet",
+    "expression": "grel:if(isBlank(value.trim()), \"unknown\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column internet using expression grel:if(isBlank(value.trim()), \"unknown\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "geographical_scope",
+    "expression": "grel:if(isBlank(value.trim()), \"unknown\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column geographical_scope using expression grel:if(isBlank(value.trim()), \"unknown\", value)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "subdistrict",
+    "expression": "grel:\"\"",
+    "onError": "set-to-blank",
+    "newColumnName": "DISTRICT",
+    "columnInsertIndex": 7,
+    "description": "Create column DISTRICT at index 7 based on column subdistrict using expression grel:\"\""
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DISTRICT",
+    "newColumnName": "district",
+    "description": "Rename column DISTRICT to district"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "subdistrict",
+          "expression": "value",
+          "columnName": "subdistrict",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ALMAGRO",
+                "l": "ALMAGRO"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "CHAMBERI"
+      }
+    ],
+    "description": "Mass edit cells in column district"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "subdistrict",
+          "expression": "value",
+          "columnName": "subdistrict",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CASCO H.VICALVARO",
+                "l": "CASCO H.VICALVARO"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "VICALVARO"
+      }
+    ],
+    "description": "Mass edit cells in column district"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column name using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "address",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column address using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "detail",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column detail using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "zip_code",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column zip_code using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column city using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subdistrict using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "register_date",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column register_date using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "phone_number",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column phone_number using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "email",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column email using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "internet",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column internet using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "category",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column category using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "geographical_scope",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column geographical_scope using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_affiliates",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column num_affiliates using expression value.trim()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "subdistrict",
+          "expression": "value",
+          "columnName": "subdistrict",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CASTELLANA",
+                "l": "CASTELLANA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "SALAMANCA"
+      }
+    ],
+    "description": "Mass edit cells in column district"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "subdistrict",
+          "expression": "value",
+          "columnName": "subdistrict",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ESTRELLA",
+                "l": "ESTRELLA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "RETIRO"
+      }
+    ],
+    "description": "Mass edit cells in column district"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "subdistrict",
+          "expression": "value",
+          "columnName": "subdistrict",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "JUSTICIA",
+                "l": "JUSTICIA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "CENTRO"
+      }
+    ],
+    "description": "Mass edit cells in column district"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "subdistrict",
+          "expression": "value",
+          "columnName": "subdistrict",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "PALOMERAS BAJAS",
+                "l": "PALOMERAS BAJAS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "PUENTE DE VALLECAS"
+      }
+    ],
+    "description": "Mass edit cells in column district"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "subdistrict",
+          "expression": "value",
+          "columnName": "subdistrict",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SAN DIEGO",
+                "l": "SAN DIEGO"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "PUENTE DE VALLECAS"
+      }
+    ],
+    "description": "Mass edit cells in column district"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "subdistrict",
+          "expression": "value",
+          "columnName": "subdistrict",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "VALDEBERNARDO",
+                "l": "VALDEBERNARDO"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "VICALVARO"
+      }
+    ],
+    "description": "Mass edit cells in column district"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "subdistrict",
+          "expression": "value",
+          "columnName": "subdistrict",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "VALVERDE",
+                "l": "VALVERDE"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "FUENCARRAL-EL PARDO"
+      }
+    ],
+    "description": "Mass edit cells in column district"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "register_date",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column register_date using expression value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_affiliates",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column num_affiliates using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "id",
+    "expression": "grel:\"COLLECTIVE\"",
+    "onError": "set-to-blank",
+    "newColumnName": "type",
+    "columnInsertIndex": 1,
+    "description": "Create column type at index 1 based on column id using expression grel:\"COLLECTIVE\""
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "phone_number",
+    "newColumnName": "phone",
+    "description": "Rename column phone_number to phone"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "internet",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column internet using expression value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "email",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column email using expression value.toLowercase()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "internet",
+    "expression": "grel:if(cells[\"internet\"].value[0,4]!=\"http\",if(cells[\"internet\"].value==\"unknown\",\"unknown\",\"http://\"+value),value)",
+    "onError": "set-to-blank",
+    "newColumnName": "internet2",
+    "columnInsertIndex": 13,
+    "description": "Create column internet2 at index 13 based on column internet using expression grel:if(cells[\"internet\"].value[0,4]!=\"http\",if(cells[\"internet\"].value==\"unknown\",\"unknown\",\"http://\"+value),value)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "internet",
+    "description": "Remove column internet"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "internet2",
+    "newColumnName": "internet",
+    "description": "Rename column internet2 to internet"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "address",
+    "expression": "grel:cells[\"address\"].value +\" ,\"+cells[\"zip_code\"].value+\", MADRID, COMUNIDAD DE MADRID, ESPAÑA\"",
+    "onError": "set-to-blank",
+    "newColumnName": "complete address",
+    "columnInsertIndex": 4,
+    "description": "Create column complete address at index 4 based on column address using expression grel:cells[\"address\"].value +\" ,\"+cells[\"zip_code\"].value+\", MADRID, COMUNIDAD DE MADRID, ESPAÑA\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "complete address",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column complete address using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/column-addition-by-fetching-urls",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "complete address",
+    "urlExpression": "grel:'https://maps.googleapis.com/maps/api/geocode/json?' + \n'sensor=false&' + \n'key=AIzaSyBv_F2I2_6igMxMoUzRg7wIi9ZtfopFQkg&' +\n'address=' + escape(value,'url')",
+    "onError": "set-to-blank",
+    "newColumnName": "jsoncoord",
+    "columnInsertIndex": 5,
+    "delay": 5000,
+    "cacheResponses": true,
+    "httpHeadersJson": [
+      {
+        "name": "authorization",
+        "value": ""
+      },
+      {
+        "name": "user-agent",
+        "value": "OpenRefine 3.6.2 [579a6f7]"
+      },
+      {
+        "name": "accept",
+        "value": "*/*"
+      }
+    ],
+    "description": "Create column jsoncoord at index 5 by fetching URLs based on column complete address using expression grel:'https://maps.googleapis.com/maps/api/geocode/json?' + \n'sensor=false&' + \n'key=AIzaSyBv_F2I2_6igMxMoUzRg7wIi9ZtfopFQkg&' +\n'address=' + escape(value,'url')"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "jsoncoord",
+    "expression": "grel:value.parseJson().results[0].geometry.location.lat",
+    "onError": "set-to-blank",
+    "newColumnName": "latitude",
+    "columnInsertIndex": 6,
+    "description": "Create column latitude at index 6 based on column jsoncoord using expression grel:value.parseJson().results[0].geometry.location.lat"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "jsoncoord",
+    "expression": "grel:value.parseJson().results[0].geometry.location.lng",
+    "onError": "set-to-blank",
+    "newColumnName": "longitude",
+    "columnInsertIndex": 6,
+    "description": "Create column longitude at index 6 based on column jsoncoord using expression grel:value.parseJson().results[0].geometry.location.lng"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "longitude",
+    "index": 7,
+    "description": "Move column longitude to position 7"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "jsoncoord",
+    "description": "Remove column jsoncoord"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "complete address",
+    "description": "Remove column complete address"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "subdistrict",
+    "index": 10,
+    "description": "Move column subdistrict to position 10"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "zip_code",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column zip_code using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "internet",
+    "newColumnName": "website",
+    "description": "Rename column internet to website"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "num_affiliates",
+    "expression": "grel:\"\"",
+    "onError": "set-to-blank",
+    "newColumnName": "assoc_affiliated",
+    "columnInsertIndex": 18,
+    "description": "Create column assoc_affiliated at index 18 based on column num_affiliates using expression grel:\"\""
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "assoc_affiliated",
+    "expression": "grel:\"\"",
+    "onError": "set-to-blank",
+    "newColumnName": "belong_to",
+    "columnInsertIndex": 19,
+    "description": "Create column belong_to at index 19 based on column assoc_affiliated using expression grel:\"\""
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "belong_to",
+    "newColumnName": "belongs_to",
+    "description": "Rename column belong_to to belongs_to"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "subdistrict",
+    "expression": "grel:\"\"",
+    "onError": "set-to-blank",
+    "newColumnName": "tax_code",
+    "columnInsertIndex": 11,
+    "description": "Create column tax_code at index 11 based on column subdistrict using expression grel:\"\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "latitude",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column latitude using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column name using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "address",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column address using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "id",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column id using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "zip_code",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column zip_code using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "detail",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column detail using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "type",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column type using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "longitude",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column longitude using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column city using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subdistrict using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tax_code",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column tax_code using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "register_date",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column register_date using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "phone",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column phone using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "email",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column email using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "website",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column website using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "category",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column category using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "assoc_affiliated",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column assoc_affiliated using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_affiliates",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column num_affiliates using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "belongs_to",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column belongs_to using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "geographical_scope",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column geographical_scope using expression value.trim()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "detail",
+          "expression": "value",
+          "columnName": "detail",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "detail",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "unknown"
+      }
+    ],
+    "description": "Mass edit cells in column detail"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tax_code",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "unknown"
+      }
+    ],
+    "description": "Mass edit cells in column tax_code"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "email",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column email using expression value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "website",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column website using expression value.toLowercase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "num_affiliates",
+          "expression": "value",
+          "columnName": "num_affiliates",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "num_affiliates",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "unknown"
+      }
+    ],
+    "description": "Mass edit cells in column num_affiliates"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "num_affiliates",
+          "expression": "value",
+          "columnName": "num_affiliates",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 0,
+                "l": "0"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "num_affiliates",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column num_affiliates using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "type",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column type using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column name using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "address",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column address using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "detail",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "unknown"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column detail"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "detail",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column detail using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "MADRID"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Madrid"
+      }
+    ],
+    "description": "Mass edit cells in column city"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subdistrict using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tax_code",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "unknown"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column tax_code"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "phone",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "unknown"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column phone"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "website",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "unknown"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column website"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "category",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column category using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "geographical_scope",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column geographical_scope using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "geographical_scope",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Unknown"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column geographical_scope"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_affiliates",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "unknown"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column num_affiliates"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Fuencarral-el Pardo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fuencarral-El Pardo"
+      }
+    ],
+    "description": "Mass edit cells in column district"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Blas-canillejas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "San Blas-Canillejas"
+      }
+    ],
+    "description": "Mass edit cells in column district"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Moncloa-aravaca"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moncloa-Aravaca"
+      }
+    ],
+    "description": "Mass edit cells in column district"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "belongs_to",
+    "newColumnName": "belongs_to_id1",
+    "description": "Rename column belongs_to to belongs_to_id1"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "belongs_to_id1",
+    "expression": "grel:\"\"",
+    "onError": "set-to-blank",
+    "newColumnName": "belongs_to_id2",
+    "columnInsertIndex": 21,
+    "description": "Create column belongs_to_id2 at index 21 based on column belongs_to_id1 using expression grel:\"\""
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "belongs_to_id2",
+    "newColumnName": "belongs_to_id3",
+    "description": "Rename column belongs_to_id2 to belongs_to_id3"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "belongs_to_id3",
+    "newColumnName": "belongs_to_id2",
+    "description": "Rename column belongs_to_id3 to belongs_to_id2"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "belongs_to_id2",
+    "expression": "grel:\"\"",
+    "onError": "set-to-blank",
+    "newColumnName": "belongs_to_id3",
+    "columnInsertIndex": 22,
+    "description": "Create column belongs_to_id3 at index 22 based on column belongs_to_id2 using expression grel:\"\""
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "belongs_to_id3",
+    "expression": "grel:\"\"",
+    "onError": "set-to-blank",
+    "newColumnName": "belongs_to_id4",
+    "columnInsertIndex": 23,
+    "description": "Create column belongs_to_id4 at index 23 based on column belongs_to_id3 using expression grel:\"\""
+  }
+]

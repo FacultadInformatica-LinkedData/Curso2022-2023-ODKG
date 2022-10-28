@@ -1,0 +1,3519 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Aproximacion using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Razon_Social",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Razon_Social using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Num_Inscripcion",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Num_Inscripcion using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Numero",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Numero using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Tipo_Via",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Tipo_Via using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Calle",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Calle using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Poblacion",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Poblacion using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Cod_Postal",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Cod_Postal using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CIF",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CIF using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Fecha_Registro",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Fecha_Registro using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Primer_Tlfn",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Primer_Tlfn using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Email",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Email using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Internet",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Internet using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Distrito using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Barrio using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Ambito",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Ambito using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Categoria",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Categoria using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Num_Socios",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Num_Socios using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NumInscripcion_Fed_Vinculada",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NumInscripcion_Fed_Vinculada using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RazonSocial_Fed_Vinculada",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column RazonSocial_Fed_Vinculada using expression value.trim()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Num_Inscripcion",
+    "expression": "grel:value.md5()",
+    "onError": "set-to-blank",
+    "newColumnName": "id",
+    "columnInsertIndex": 1,
+    "description": "Create column id at index 1 based on column Num_Inscripcion using expression grel:value.md5()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Num_Inscripcion",
+    "description": "Remove column Num_Inscripcion"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NumInscripcion_Fed_Vinculada",
+    "expression": "grel:value.md5()",
+    "onError": "set-to-blank",
+    "newColumnName": "belongs_to_id",
+    "columnInsertIndex": 19,
+    "description": "Create column belongs_to_id at index 19 based on column NumInscripcion_Fed_Vinculada using expression grel:value.md5()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RazonSocial_Fed_Vinculada",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column RazonSocial_Fed_Vinculada using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "belongs_to_id",
+    "expression": "grel:'[{\"id\":\"'+value+'\",\"name\":'",
+    "onError": "set-to-blank",
+    "newColumnName": "transitive1",
+    "columnInsertIndex": 20,
+    "description": "Create column transitive1 at index 20 based on column belongs_to_id using expression grel:'[{\"id\":\"'+value+'\",\"name\":'"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "RazonSocial_Fed_Vinculada",
+    "expression": "grel:'\"'+value+'\"}]'",
+    "onError": "set-to-blank",
+    "newColumnName": "transitive2",
+    "columnInsertIndex": 22,
+    "description": "Create column transitive2 at index 22 based on column RazonSocial_Fed_Vinculada using expression grel:'\"'+value+'\"}]'"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "transitive1",
+    "expression": "join ([coalesce(cells['transitive1'].value,''),coalesce(cells['transitive2'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column transitive1 using expression join ([coalesce(cells['transitive1'].value,''),coalesce(cells['transitive2'].value,'')],'')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "transitive2",
+    "description": "Remove column transitive2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "RazonSocial_Fed_Vinculada",
+    "description": "Remove column RazonSocial_Fed_Vinculada"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "id",
+          "expression": "grel:facetCount(value, \"value\", \"id\")",
+          "columnName": "id",
+          "from": 3.62,
+          "to": 4.02,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "Starred Rows",
+          "expression": "row.starred",
+          "columnName": "",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "id",
+          "expression": "grel:facetCount(value, \"value\", \"id\")",
+          "columnName": "id",
+          "from": 2.6799999999999997,
+          "to": 3.02,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "transitive1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "[{\"id\":\"d254c8a084d4545bd80577481aa03076\",\"name\":\"Federacion Madrileña De Escultismo (f.M.E.)\"}]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "[{\"id\":\"d254c8a084d4545bd80577481aa03076\",\"name\":\"Federacion Madrileña De Escultismo (f.M.E.)\"},{\"id\":\"c0f168ce8900fa56e57789e2a2f2c9d0\",\"name\":\"Federacion Catolica  De Asociaciones De Padres De Familia Y Padres De Alumnos De Madrid - Fecapa\"}]"
+      }
+    ],
+    "description": "Mass edit cells in column transitive1"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "id",
+          "expression": "grel:facetCount(value, \"value\", \"id\")",
+          "columnName": "id",
+          "from": 2.6799999999999997,
+          "to": 3.02,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "Starred Rows",
+          "expression": "row.starred",
+          "columnName": "",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "id",
+          "expression": "grel:facetCount(value, \"value\", \"id\")",
+          "columnName": "id",
+          "from": 1.77,
+          "to": 2.01,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "Starred Rows",
+          "expression": "row.starred",
+          "columnName": "",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "belongs_to_id",
+    "newColumnName": "belongs_to_id1",
+    "description": "Rename column belongs_to_id to belongs_to_id1"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "belongs_to_id1",
+    "index": 20,
+    "description": "Move column belongs_to_id1 to position 20"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "transitive1",
+    "expression": "grel:value.parseJson()[1].id",
+    "onError": "set-to-blank",
+    "newColumnName": "belongs_to_id2",
+    "columnInsertIndex": 20,
+    "description": "Create column belongs_to_id2 at index 20 based on column transitive1 using expression grel:value.parseJson()[1].id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "transitive1",
+    "expression": "grel:value.parseJson()[2].id",
+    "onError": "set-to-blank",
+    "newColumnName": "belongs_to_id3",
+    "columnInsertIndex": 20,
+    "description": "Create column belongs_to_id3 at index 20 based on column transitive1 using expression grel:value.parseJson()[2].id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "transitive1",
+    "expression": "grel:value.parseJson()[3].id",
+    "onError": "set-to-blank",
+    "newColumnName": "blongs_to_id4",
+    "columnInsertIndex": 20,
+    "description": "Create column blongs_to_id4 at index 20 based on column transitive1 using expression grel:value.parseJson()[3].id"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "id",
+      "Razon_Social",
+      "Tipo_Via",
+      "Calle",
+      "Numero",
+      "Aproximacion",
+      "Cod_Postal",
+      "Poblacion",
+      "CIF",
+      "Fecha_Registro",
+      "Primer_Tlfn",
+      "Email",
+      "Internet",
+      "Distrito",
+      "Barrio",
+      "Categoria",
+      "Ambito",
+      "Num_Socios",
+      "NumInscripcion_Fed_Vinculada",
+      "transitive1",
+      "belongs_to_id1",
+      "belongs_to_id2",
+      "belongs_to_id3",
+      "blongs_to_id4"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "transitive1",
+    "description": "Remove column transitive1"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NumInscripcion_Fed_Vinculada",
+    "description": "Remove column NumInscripcion_Fed_Vinculada"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Internet",
+    "expression": "grel:if(cells[\"Internet\"].value[0,4]!=\"http\",\"http://\"+value,value)",
+    "onError": "set-to-blank",
+    "newColumnName": "website",
+    "columnInsertIndex": 13,
+    "description": "Create column website at index 13 based on column Internet using expression grel:if(cells[\"Internet\"].value[0,4]!=\"http\",\"http://\"+value,value)"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "website",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "http://"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column website"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "website",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "http:// gnosisespaña.es"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "http://gnosisespaña.es"
+      }
+    ],
+    "description": "Mass edit cells in column website"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "website",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "http:// www.aecevae.com"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "http://www.aecevae.com"
+      }
+    ],
+    "description": "Mass edit cells in column website"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "website",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "http:// www.afaep.org"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "http://www.afaep.org"
+      }
+    ],
+    "description": "Mass edit cells in column website"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "website",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "http:///WWW.ENLAVAPIES.COM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "http:///WWW.ENLAVAPIES.COM"
+      }
+    ],
+    "description": "Mass edit cells in column website"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "website",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column website using expression value.toLowercase()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Internet",
+    "description": "Remove column Internet"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Email",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Email using expression value.toLowercase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Num_Socios",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "0"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Num_Socios"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Num_Socios",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Num_Socios using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Distrito",
+    "newColumnName": "district",
+    "description": "Rename column Distrito to district"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Barrio",
+    "newColumnName": "subdistrict",
+    "description": "Rename column Barrio to subdistrict"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subdistrict using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Tipo_Via",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Tipo_Via using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Calle",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Calle using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Tipo_Via",
+    "expression": "grel:value+\" \"+ cells[\"Calle\"].value+\", \"+cells[\"Numero\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "complete_address",
+    "columnInsertIndex": 3,
+    "description": "Create column complete_address at index 3 based on column Tipo_Via using expression grel:value+\" \"+ cells[\"Calle\"].value+\", \"+cells[\"Numero\"].value"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Tipo_Via",
+    "description": "Remove column Tipo_Via"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Calle",
+          "expression": "value",
+          "columnName": "Calle",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "-",
+                "l": "-"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Calle",
+          "expression": "value",
+          "columnName": "Calle",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Calle",
+    "description": "Remove column Calle"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Numero",
+    "description": "Remove column Numero"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Moncloa-aravaca"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moncloa-Aravaca"
+      }
+    ],
+    "description": "Mass edit cells in column district"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Fuencarral-el Pardo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fuencarral-El Pardo"
+      }
+    ],
+    "description": "Mass edit cells in column district"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Blas-canillejas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "San Blas-Canillejas"
+      }
+    ],
+    "description": "Mass edit cells in column district"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Barajas",
+                "l": "Barajas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Universidad"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Casco H.Barajas"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Barajas",
+                "l": "Barajas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "Casco H.Barajas"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Peña Grande"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Peñagrande"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Hortaleza",
+                "l": "Hortaleza"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pinar del Rey"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pinar Del Rey"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Puente Vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Puente De Vallecas"
+      }
+    ],
+    "description": "Mass edit cells in column district"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "district",
+          "expression": "value",
+          "columnName": "district",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Retiro",
+                "l": "Retiro"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Los Jeronimos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jeronimos"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Razon_Social",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Razon_Social using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Poblacion",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Poblacion using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1º D",
+          "1º  - D",
+          "1º - D",
+          "1º- D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º D"
+      },
+      {
+        "from": [
+          "4º - C",
+          "4º C",
+          "4º c"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4º  C"
+      },
+      {
+        "from": [
+          "LOCAL",
+          "local",
+          "(LOCAL)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LOCAL"
+      },
+      {
+        "from": [
+          "PISO 2º LETRA A",
+          "PISO 2º- LETRA A",
+          "PISO 2º. LETRA A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º A"
+      },
+      {
+        "from": [
+          "1º A",
+          "1º - A",
+          "1º  A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º A"
+      },
+      {
+        "from": [
+          "3º A",
+          "3º - A",
+          "3º- A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3º A"
+      },
+      {
+        "from": [
+          "PLANTA 2ª. PUERTA D",
+          "2ª PLANTA. PUERTA D",
+          "PLANTA 2ª PUERTA D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º D"
+      },
+      {
+        "from": [
+          "BJ.",
+          "BJ",
+          "bj."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAJO"
+      },
+      {
+        "from": [
+          "PARROQUIA",
+          "(PARROQUIA)",
+          "(parroquia)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PARROQUIA"
+      },
+      {
+        "from": [
+          "PLANTA 4ª -PUERTA A",
+          "PLANTA 4ª- PUERTA A",
+          "PLANTA 4ª. PUERTA A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4º A"
+      },
+      {
+        "from": [
+          "2-A",
+          "2A",
+          "2ª"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º A"
+      },
+      {
+        "from": [
+          "BAJO LOCAL",
+          "LOCAL BAJO",
+          "BAJO. LOCAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAJO"
+      },
+      {
+        "from": [
+          "4º B",
+          "4º - B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4º B"
+      },
+      {
+        "from": [
+          "4º A",
+          "4º - A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4º A"
+      },
+      {
+        "from": [
+          "4º D",
+          "4º - D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4º D"
+      },
+      {
+        "from": [
+          "BJ DCHA",
+          "BJ. DCHA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAJO DCHA"
+      },
+      {
+        "from": [
+          "PLANTA 4 - PUERTA  2",
+          "PLANTA 4. PUERTA 2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4º - 2"
+      },
+      {
+        "from": [
+          "4º IZQ",
+          "4º IZQ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4º IZQ"
+      },
+      {
+        "from": [
+          "POST.",
+          "POST"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "POST"
+      },
+      {
+        "from": [
+          "3º IZQ",
+          "3º IZQ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3º IZQ"
+      },
+      {
+        "from": [
+          "2º DCHA",
+          "2º DCHA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º DCHA"
+      },
+      {
+        "from": [
+          "PISO 6º. PUERTA C",
+          "PISO 6º. PUERTA C."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "6º C"
+      },
+      {
+        "from": [
+          "2º 2",
+          "2º - 2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º - 2"
+      },
+      {
+        "from": [
+          "PISO 4º. LETRA D",
+          "PISO 4º LETRA D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4º D"
+      },
+      {
+        "from": [
+          "4º - 2",
+          "4º 2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4º - 2"
+      },
+      {
+        "from": [
+          "2ºA",
+          "2º-A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º A"
+      },
+      {
+        "from": [
+          "2ºB",
+          "2º-B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º B"
+      },
+      {
+        "from": [
+          "3º DCHA",
+          "3º DCHA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3º DCHA"
+      },
+      {
+        "from": [
+          "4º IZDA.",
+          "4º IZDA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4º IZDA"
+      },
+      {
+        "from": [
+          "2ª PLANTA",
+          "PLANTA 2ª"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2ª PLANTA"
+      },
+      {
+        "from": [
+          "PISO 1.º",
+          "PISO 1º"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1ª PLANTA"
+      },
+      {
+        "from": [
+          "BAJO LOCAL 1",
+          "LOCAL BAJO 1"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAJO LOCAL 1"
+      },
+      {
+        "from": [
+          "COLEGIO",
+          "(COLEGIO)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COLEGIO"
+      },
+      {
+        "from": [
+          "1º IZDA",
+          "1º IZDA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º IZDA"
+      },
+      {
+        "from": [
+          "1º 3",
+          "1º -3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º - 3"
+      },
+      {
+        "from": [
+          "PLANTA 4ª. PUERTA B",
+          "PLANTA 4ª PUERTA B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4º B"
+      },
+      {
+        "from": [
+          "PLANTA BAJA. PUERTA B",
+          "PLANTA BAJA PUERTA B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAJO B"
+      },
+      {
+        "from": [
+          "3º PLANTA",
+          "3º planta"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3ª PLANTA"
+      },
+      {
+        "from": [
+          "5º IZQDA",
+          "5º IZQDA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5º IZQDA"
+      },
+      {
+        "from": [
+          "1º E",
+          "1º- E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º E"
+      },
+      {
+        "from": [
+          "1º C",
+          "1º - C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º C"
+      },
+      {
+        "from": [
+          "1º B",
+          "1º - B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º B"
+      },
+      {
+        "from": [
+          "BAJO IZQ.",
+          "BAJO IZQ"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAJO IZQ"
+      },
+      {
+        "from": [
+          "BAJO IZDA.",
+          "BAJO IZDA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAJO IZQ"
+      },
+      {
+        "from": [
+          "3º C",
+          "3º - C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3º C"
+      },
+      {
+        "from": [
+          "3º D",
+          "3º - D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3º D"
+      },
+      {
+        "from": [
+          "PLANTA BAJA. PUERTA D",
+          "PLANTA BAJA PUERTA D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAJO D"
+      },
+      {
+        "from": [
+          "1º EXTERIOR IZQ.",
+          "EXTERIOR 1º IZQ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º EXT IZQ."
+      },
+      {
+        "from": [
+          "POSTERIOR",
+          "(POSTERIOR)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "POSTERIOR"
+      },
+      {
+        "from": [
+          "5º DCHA",
+          "5º DCHA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5º DCHA"
+      },
+      {
+        "from": [
+          "7º-B",
+          "7ºB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "7º B"
+      },
+      {
+        "from": [
+          "5º B",
+          "5º - B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5º B"
+      },
+      {
+        "from": [
+          "5º D",
+          "5º - D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5º D"
+      },
+      {
+        "from": [
+          "(LOCAL IZDA.)",
+          "LOCAL IZDA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LOCAL IZQ"
+      },
+      {
+        "from": [
+          "BJ. IZDA.",
+          "bj. Izda."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAJO IZQ"
+      },
+      {
+        "from": [
+          "5ºA",
+          "5º-A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5º A"
+      },
+      {
+        "from": [
+          "PLANTA BAJA. PUERTA A",
+          "PLANTA BAJA PUERTA A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAJO A"
+      },
+      {
+        "from": [
+          "LOCAL POSTERIOR",
+          "Posterior. Local"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LOCAL POSTERIOR"
+      },
+      {
+        "from": [
+          "3º-A",
+          "3ºA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3º A"
+      },
+      {
+        "from": [
+          "7º D",
+          "7º -D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "7º D"
+      },
+      {
+        "from": [
+          "3º-C",
+          "3ºC"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3º C"
+      },
+      {
+        "from": [
+          "3ºD",
+          "3º-D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3º D"
+      },
+      {
+        "from": [
+          "3º IZDA.",
+          "3º IZDA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3º IZQ"
+      },
+      {
+        "from": [
+          "1º DCHA",
+          "1º DCHA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º DCHA"
+      },
+      {
+        "from": [
+          "1º IZQ",
+          "1º IZQ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º IZQ"
+      },
+      {
+        "from": [
+          "1.º DERECHA",
+          "1º DERECHA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1.º DER"
+      },
+      {
+        "from": [
+          "1ºA",
+          "1º-A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º A"
+      },
+      {
+        "from": [
+          "1º-C",
+          "1ºC"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º C"
+      },
+      {
+        "from": [
+          "1ºD",
+          "1º-D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º D"
+      },
+      {
+        "from": [
+          "1º-F",
+          "1ºF"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º F"
+      },
+      {
+        "from": [
+          "4º DCHA",
+          "4º DCHA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4º DCHA"
+      },
+      {
+        "from": [
+          "BAJO",
+          "bajo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAJO"
+      },
+      {
+        "from": [
+          "9º - E",
+          "9º E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "9º E"
+      },
+      {
+        "from": [
+          "LOCAL POST.",
+          "POST - LOCAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LOCAL POST"
+      },
+      {
+        "from": [
+          "14",
+          "-14"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "14"
+      },
+      {
+        "from": [
+          "2º IZQ",
+          "2º IZQ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º IZQ"
+      },
+      {
+        "from": [
+          "LOCAL 6",
+          "Local 6"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LOCAL 6"
+      },
+      {
+        "from": [
+          "S/N",
+          "s/n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      },
+      {
+        "from": [
+          "BJ C",
+          "BJ. C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAJO C"
+      },
+      {
+        "from": [
+          "B LOCAL",
+          "LOCAL B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAJO LOCAL"
+      },
+      {
+        "from": [
+          "PLANTA 3ª",
+          "3ª PLANTA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3ª PLANTA"
+      },
+      {
+        "from": [
+          "1º IZQDA",
+          "1º IZQDA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º IZQ"
+      },
+      {
+        "from": [
+          "1º EXT. DCHA",
+          "1º EXT. DCHA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º EXT. DCHA"
+      },
+      {
+        "from": [
+          "PLANTA 3ª. PUERTA C",
+          "PLANTA 3ª PUERTA C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3º C"
+      },
+      {
+        "from": [
+          "2º B",
+          "2º - B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º B"
+      },
+      {
+        "from": [
+          "BJ POST",
+          "BJ. POST."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAJO POST"
+      },
+      {
+        "from": [
+          "2º D",
+          "2º - D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º D"
+      },
+      {
+        "from": [
+          "2º E",
+          "2º- E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º E"
+      },
+      {
+        "from": [
+          "BAJO DCHA",
+          "BAJO DCHA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAJO DCHA"
+      },
+      {
+        "from": [
+          "(CAMPO DE FUTBOL)",
+          "CAMPO DE FUTBOL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CAMPO DE FUTBOL"
+      },
+      {
+        "from": [
+          "BAJO INTERIOR DERECHA",
+          "BAJO INTERIOR. DERECHA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAJO INTERIOR DERECHA"
+      },
+      {
+        "from": [
+          "PISO 3º. PUERTA C",
+          "PISO 3º PUERTA C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3º C"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "BAJO POST",
+          "POST. BAJO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAJO POST"
+      },
+      {
+        "from": [
+          "LOCAL IZQ",
+          "LOCAL IZQ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LOCAL IZQ"
+      },
+      {
+        "from": [
+          "PLANTA 1ª",
+          "1ª PLANTA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1ª PLANTA"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 1ª. PUERTA 108"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º - 108"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 1ª. PUERTA 3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º - 3"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 1ª. PUERTA A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º A"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 1ª. PUERTA C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º C"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 1ª. PUERTA D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º D"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 1º- PUERTA A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º A"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 1º- PUERTA IZQUIERDA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1º IZQ"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 2. PUERTA 1"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º - 1"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 2. PUERTA P"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º P"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 2ª PUERTA C"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º C"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 2ª. PUERTA 10"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º - 10"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 2ª. PUERTA 4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º - 4"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 2ª. PUERTA A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º A"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 2ª. PUERTA B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º B"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 2ª. PUERTA F"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2º F"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 3. PUERTA A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3º A"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 3. PUERTA P"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3º P"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 3ª. PUERTA B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3º B"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 3ª. PUERTA D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3º D"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 4ª. PUERTA 1"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4º - 1"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 4ª. PUERTA 5"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4º - 5"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 4ª. PUERTA DCHA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4º DCHA"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 4ª. PUERTA E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4º E"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 5. PUERTA A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5º A"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 5. PUERTA IZQDA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5º IZQ"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 5ª. PUERTA B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5º B"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 5ª. PUERTA D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5º D"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 5ª. PUERTA DERECHA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5º DCHA"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 6ª. PUERTA B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "6º B"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 7 - PUERTA D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "7º D"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 7ª. PUERTA A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "7º A"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 7ª. PUERTA B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "7º B"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLANTA 9ª - PUERTA B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "9º B"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PRIMERA PLANTA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1ª PLANTA"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Aproximacion",
+          "columnName": "Aproximacion",
+          "query": "PLANTA",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Aproximacion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "4ª PLANTA",
+          "PLANTA 4ª"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4ª PLANTA"
+      }
+    ],
+    "description": "Mass edit cells in column Aproximacion"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Poblacion",
+          "expression": "value",
+          "columnName": "Poblacion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Lleida",
+                "l": "Lleida"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Poblacion",
+          "expression": "value",
+          "columnName": "Poblacion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Paiporta",
+                "l": "Paiporta"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Poblacion",
+          "expression": "value",
+          "columnName": "Poblacion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Getafe",
+                "l": "Getafe"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Poblacion",
+          "expression": "value",
+          "columnName": "Poblacion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Alcobendas",
+                "l": "Alcobendas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Fecha_Registro",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Fecha_Registro using expression value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Categoria",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Categoria using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Ambito",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Ambito using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Razon_Social",
+    "newColumnName": "name",
+    "description": "Rename column Razon_Social to name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "complete_address",
+    "newColumnName": "address",
+    "description": "Rename column complete_address to address"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Aproximacion",
+    "newColumnName": "detail",
+    "description": "Rename column Aproximacion to detail"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Cod_Postal",
+    "newColumnName": "zip_code",
+    "description": "Rename column Cod_Postal to zip_code"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "address",
+    "expression": "grel:value+\", \"+cells[\"zip_code\"].value + \", Madrid, Comunidad de Madrid, España\"",
+    "onError": "set-to-blank",
+    "newColumnName": "coordaddress",
+    "columnInsertIndex": 3,
+    "description": "Create column coordaddress at index 3 based on column address using expression grel:value+\", \"+cells[\"zip_code\"].value + \", Madrid, Comunidad de Madrid, España\""
+  },
+  {
+    "op": "core/column-addition-by-fetching-urls",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "coordaddress",
+    "urlExpression": "grel:'https://maps.googleapis.com/maps/api/geocode/json?' + \n'sensor=false&' + \n'key=AIzaSyBv_F2I2_6igMxMoUzRg7wIi9ZtfopFQkg&' +\n'address=' + escape(value,'url')",
+    "onError": "set-to-blank",
+    "newColumnName": "geo_data",
+    "columnInsertIndex": 4,
+    "delay": 5000,
+    "cacheResponses": true,
+    "httpHeadersJson": [
+      {
+        "name": "authorization",
+        "value": ""
+      },
+      {
+        "name": "user-agent",
+        "value": "OpenRefine 3.6.2 [579a6f7]"
+      },
+      {
+        "name": "accept",
+        "value": "*/*"
+      }
+    ],
+    "description": "Create column geo_data at index 4 by fetching URLs based on column coordaddress using expression grel:'https://maps.googleapis.com/maps/api/geocode/json?' + \n'sensor=false&' + \n'key=AIzaSyBv_F2I2_6igMxMoUzRg7wIi9ZtfopFQkg&' +\n'address=' + escape(value,'url')"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "geo_data",
+    "expression": "grel:value.parseJson().results[0].geometry.location.lng",
+    "onError": "set-to-blank",
+    "newColumnName": "longitude",
+    "columnInsertIndex": 5,
+    "description": "Create column longitude at index 5 based on column geo_data using expression grel:value.parseJson().results[0].geometry.location.lng"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "geo_data",
+    "expression": "grel:value.parseJson().results[0].geometry.location.lat",
+    "onError": "set-to-blank",
+    "newColumnName": "latitude",
+    "columnInsertIndex": 5,
+    "description": "Create column latitude at index 5 based on column geo_data using expression grel:value.parseJson().results[0].geometry.location.lat"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "geo_data",
+    "description": "Remove column geo_data"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "coordaddress",
+    "description": "Remove column coordaddress"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Poblacion",
+    "newColumnName": "city",
+    "description": "Rename column Poblacion to city"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CIF",
+    "newColumnName": "tax_code",
+    "description": "Rename column CIF to tax_code"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Fecha_Registro",
+    "newColumnName": "register_date",
+    "description": "Rename column Fecha_Registro to register_date"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Primer_Tlfn",
+    "newColumnName": "phone",
+    "description": "Rename column Primer_Tlfn to phone"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Email",
+    "newColumnName": "email",
+    "description": "Rename column Email to email"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Categoria",
+    "newColumnName": "category",
+    "description": "Rename column Categoria to category"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Ambito",
+    "newColumnName": "geographical_scope",
+    "description": "Rename column Ambito to geographical_scope"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Num_Socios",
+    "newColumnName": "num_affiliates",
+    "description": "Rename column Num_Socios to num_affiliates"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "num_affiliates",
+    "expression": "grel:\"\"",
+    "onError": "set-to-blank",
+    "newColumnName": "asoc_affiliated",
+    "columnInsertIndex": 18,
+    "description": "Create column asoc_affiliated at index 18 based on column num_affiliates using expression grel:\"\""
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "id",
+      "name",
+      "address",
+      "latitude",
+      "longitude",
+      "detail",
+      "zip_code",
+      "city",
+      "district",
+      "subdistrict",
+      "tax_code",
+      "register_date",
+      "phone",
+      "email",
+      "website",
+      "category",
+      "geographical_scope",
+      "num_affiliates",
+      "asoc_affiliated",
+      "belongs_to_id1",
+      "belongs_to_id2",
+      "belongs_to_id3",
+      "blongs_to_id4"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "id",
+    "expression": "grel:\"ASSOCIATION\"",
+    "onError": "set-to-blank",
+    "newColumnName": "type",
+    "columnInsertIndex": 1,
+    "description": "Create column type at index 1 based on column id using expression grel:\"ASSOCIATION\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "type",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column type using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "blongs_to_id4",
+    "newColumnName": "belongs_to_id4",
+    "description": "Rename column blongs_to_id4 to belongs_to_id4"
+  }
+]

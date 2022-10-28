@@ -1,0 +1,36 @@
+prefixes:
+  bs: "http://smartbikes.org/ontology/bikeStation#"
+  dbo: "http://dbpedia.org/ontology/"
+  paw: "http://purl.org/pav/"
+
+mappings:
+  station:
+    sources:
+      - ['velib-disponibilite-en-temps-reel-updated.csv~csv']
+    s: http://smartbikes.org/resource/bikeStation/$(Identifiant station)
+    po:
+      - [a, bs:BikeStation]
+      - [schema:name ,$(Nom station)]
+      - [bs:inUse ,$(Station en fonctionnement)]
+      - [dbo:capacity ,$(Capacité de la station)]
+      - [bs:availableParkingSpots ,$(Nombre bornettes libres)]
+      - [bs:availableBikes ,$(Nombre total vélos disponibles)]
+      - [bs:availableElectricalBikes ,$(Vélos électriques disponibles)]
+      - [bs:paymentTerminalAvailable ,$(Borne de paiement disponible)]
+      - [paw:lastUpdateOn ,$(Actualisation de la donnée)]
+      - [bs:returnOfVeilbPossible ,$(Retour vélib possible)]
+      - [bs:availableMechanicalBikes, $(Vélos mécaniques disponibles)]
+      - [schema:id, $(Identifiant station)]
+      - [bs:locatedInArea, $(same_as_wikidata_communes)~iri]
+      - p: schema:geo
+        o:
+          mappings: coordinate
+
+  coordinate:
+    sources:
+      - ['velib-disponibilite-en-temps-reel-updated.csv~csv']
+    s: http://smartbikes.org/resource/coordinate/$(Coordonnées géographiques 1)_$(Coordonnées géographiques 2)
+    po:
+      - [a, schema:GeoCoordinates]
+      - [schema:latitude, $(Coordonnées géographiques 1)]
+      - [schema:longitude, $(Coordonnées géographiques 2)]

@@ -4,7 +4,7 @@
     <body>
         <h2>Datasets Licenses and Rightsholder</h2>
 		
-            <h3>Federaciones:</h3>
+            <h3>Federaciones_202209.csv:</h3>
                 <p>Link: https://datos.madrid.es/sites/v/index.jsp?vgnextoid=b6f3532315dd3410VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD</p>
                 <p>Dataset definition</p>
                     <ul>
@@ -24,7 +24,7 @@
                         <li>Publisher: Madrid City Council open data portal</li>
                     </ul>
 
-            <h3>Fundaciones:</h3>
+            <h3>Fundaciones_202209.csv:</h3>
                 <p>Link: https://datos.madrid.es/sites/v/index.jsp?vgnextoid=ef4bcfc2d84a5610VgnVCM1000001d4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD</p>
                 <p>Dataset definition</p>
                     <ul>
@@ -44,7 +44,7 @@
                         <li>Publisher: Madrid City Council open data portal</li>
                     </ul>
 
-            <h3>Colectivos:</h3>
+            <h3>Colectivos_202209.csv:</h3>
                 <p>Link: https://datos.madrid.es/sites/v/index.jsp?vgnextoid=983de3811af52710VgnVCM1000001d4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD</p>
                 <p>Dataset definition</p>
                     <ul>
@@ -64,7 +64,7 @@
                         <li>Publisher: Madrid City Council open data portal</li>
                     </ul>
         
-            <h3>Asociaciones:</h3>
+            <h3>Asociaciones_202209.csv:</h3>
                 <p>Link: https://datos.madrid.es/sites/v/index.jsp?vgnextoid=5628ae43b6d85410VgnVCM100000333a5a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD</p>
                 <p>Dataset definition</p>
                     <ul>
@@ -84,7 +84,7 @@
                         <li>Publisher: Madrid City Council open data portal</li>
                     </ul>
 
-            <h3>License requirements to be applied at our app (defined by Madrid City Council license):</h3>
+            <h3>License requirements to be applied in our app (defined by Madrid City Council license):</h3>
                 <ul>
                     <li>It is forbidden to distort the meaning of the information.</li>
                     <li>The source of the documents subject to reuse must be stated</li>
@@ -99,7 +99,7 @@
 
         <h2>Dataset variable analysis</h2>
         
-        <h3>Shared variables ("asociaciones", "federaciones", "colectivos" and "fundaciones") </h3>
+        <h3>Shared variables by "Asociaciones_202209.csv", "Federaciones_202209.csv", "Colectivos_202209.csv" and "Fundaciones_202209.csv") </h3>
             <p>"Num. Inscripción" </p> 
                 <ul>
                     <li>Description: The entity id</li>
@@ -207,7 +207,7 @@
                     <li>Comment: Discrete set of options (one for each of 21 different districts in Madrid</li>
                     <li>Comment(2): Not unique values</li>
                     <li>Comment(3): Some missing values</li>
-                    <li>Comment(4): Although District isn't present in 3 of 4 dataset, the variable "Barrio" allows to obtain that information for all instances</li>
+                    <li>Comment(4): Although District isn't present in 3 of 4 dataset, the variable "Barrio" allows to obtain that information for all instances (all are completely included in a single district)</li>
                 </ul> 
             <p>"Num. socios"</p> 
                 <ul>
@@ -273,11 +273,13 @@
         <h2>Resource Naming Strategy</h2>
             <ul>
                 <li>Domain: https://www.asociadrid.es</li>
-                <li>Ontology path: https://www.asociadrid.es/ontology</li>
+                <li>Ontology path: https://www.asociadrid.es/ontology/</li>
                 <li>Classes: https://www.asociadrid.es/ontology/class#[className]</li>
                 <li>Properties: https://www.asociadrid.es/ontology/property#[propertyName]</li>
-                <li>Individual path: https://www.asociadrid.es/resource</li>
-                <li>Instances: https://www.asociadrid.es/resource/[className]/[identifier]</li>        
+                <li>Individual path: https://www.asociadrid.es/resource/</li>
+                <li>Instances: https://www.asociadrid.es/resource/[className]/[identifier]</li>
+                <li>Instances  belonging to a subClass: https://www.asociadrid.es/resources/[parentClassName]/[subClassName]/[identifier]</li>
+        
             </ul>
             
 

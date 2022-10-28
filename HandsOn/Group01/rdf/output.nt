@@ -1,0 +1,486 @@
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_burjassot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_burjassot> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA DIAVERUM BURJASSOT"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_burjassot> <http://www.dialysisComunidadValenciana.es/hasPhone> "963160586"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_burjassot> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Sèquia de Montcada, s/n"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_burjassot> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_arnau-lliria>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_burjassot> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_burjassot> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.40671514699994304"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_burjassot> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "39.503047550000076"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_paterna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_paterna> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA DIAVERUM PATERNA"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_paterna> <http://www.dialysisComunidadValenciana.es/hasPhone> "960905150"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_paterna> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Vicente Cardona, 22"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_paterna> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_arnau-lliria>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_paterna> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_paterna> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.44215997699996"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_paterna> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "39.49954001200007"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_lliria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_lliria> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA DIAVERUM LLÍRIA"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_lliria> <http://www.dialysisComunidadValenciana.es/hasPhone> "960905162"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_lliria> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Ausias March, 20"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_lliria> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_arnau-lliria>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_lliria> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_lliria> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.600239988999931"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_lliria> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "39.63063000200003"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_vila_real> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_vila_real> <http://www.w3.org/2000/01/rdf-schema#label> "BBraun VILA-REAL"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_vila_real> <http://www.dialysisComunidadValenciana.es/hasPhone> "964917120"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_vila_real> <http://www.dialysisComunidadValenciana.es/hasAddress> "Avda. Italia"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_vila_real> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_la_plana>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_vila_real> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/bbraun>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_vila_real> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.10961125599993601"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_vila_real> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "39.93642596500007"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_vistahermosa_grupo_hla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_vistahermosa_grupo_hla> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA VISTAHERMOSA GRUPO HLA"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_vistahermosa_grupo_hla> <http://www.dialysisComunidadValenciana.es/hasPhone> "965268000"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_vistahermosa_grupo_hla> <http://www.dialysisComunidadValenciana.es/hasAddress> "Avda. Denia, 103"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_vistahermosa_grupo_hla> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/alicante>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_vistahermosa_grupo_hla> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/clinica_vistahermosa_grupo_hla>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_vistahermosa_grupo_hla> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.46312998999997"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_vistahermosa_grupo_hla> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "38.36285998000005"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_alicante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_alicante> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA DIAVERUM ALICANTE"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_alicante> <http://www.dialysisComunidadValenciana.es/hasPhone> "627427220"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_alicante> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Proción, 3"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_alicante> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/alicante>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_alicante> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_alicante> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.507742138999958"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_alicante> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "38.34516355000005"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_elche> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_elche> <http://www.w3.org/2000/01/rdf-schema#label> "H GENERAL ELCHE"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_elche> <http://www.dialysisComunidadValenciana.es/hasPhone> "966616928"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_elche> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Almazara, 11"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_elche> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_elche>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_elche> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/generalitat_valenciana>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_elche> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.6885269479999461"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_elche> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "38.25972733100008"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_universitario_torrevieja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_universitario_torrevieja> <http://www.w3.org/2000/01/rdf-schema#label> "H UNIVERSITARIO TORREVIEJA"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_universitario_torrevieja> <http://www.dialysisComunidadValenciana.es/hasPhone> "965721349"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_universitario_torrevieja> <http://www.dialysisComunidadValenciana.es/hasAddress> "Carretera CV 95, s/n"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_universitario_torrevieja> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_torrevieja>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_universitario_torrevieja> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/torrevieja_salud_ute_ley_18_82>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_universitario_torrevieja> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.713539686999979"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_universitario_torrevieja> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "37.96197587800003"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_alfafar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_alfafar> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA DIAVERUM ALFAFAR"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_alfafar> <http://www.dialysisComunidadValenciana.es/hasPhone> "961801811"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_alfafar> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Profesora Ana Rojo, 1"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_alfafar> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_dr_peset>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_alfafar> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_alfafar> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.38313997899996305"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_alfafar> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "39.41751001400007"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_gamapal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_gamapal> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA DIAVERUM GAMAPAL"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_gamapal> <http://www.dialysisComunidadValenciana.es/hasPhone> "960905123"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_gamapal> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/. Reina Violante, s/n (Esq. Padre Barranco, 42)"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_gamapal> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_la_fe>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_gamapal> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_gamapal> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.40356994599994706"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_gamapal> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "39.48764005700008"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_puerto_sagunto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_puerto_sagunto> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA DIAVERUM PUERTO SAGUNTO"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_puerto_sagunto> <http://www.dialysisComunidadValenciana.es/hasPhone> "961801690"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_puerto_sagunto> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Urani, 27"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_puerto_sagunto> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_sagunto>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_puerto_sagunto> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_puerto_sagunto> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.217539975999955"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_puerto_sagunto> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "39.668620014000055"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_valnefron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_valnefron> <http://www.w3.org/2000/01/rdf-schema#label> "Bbraun VALNEFRON"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_valnefron> <http://www.dialysisComunidadValenciana.es/hasPhone> "963613908"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_valnefron> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Serpis, 8"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_valnefron> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_clinico>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_valnefron> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/bbraun>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_valnefron> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.34932997999993604"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_valnefron> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "39.476070013000026"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_massamagrell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_massamagrell> <http://www.w3.org/2000/01/rdf-schema#label> "BBraun MASSAMAGRELL"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_massamagrell> <http://www.dialysisComunidadValenciana.es/hasPhone> "964917230"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_massamagrell> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ San Miguel, 6"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_massamagrell> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_clinico>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_massamagrell> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/bbraun>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_massamagrell> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.33342003799992803"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_massamagrell> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "39.567399984000076"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_xirivella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_xirivella> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA DIAVERUM XIRIVELLA"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_xirivella> <http://www.dialysisComunidadValenciana.es/hasPhone> ""^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_xirivella> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Dels Corretgers, 68"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_xirivella> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_general>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_xirivella> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_xirivella> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.43512652399994"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_xirivella> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "39.45415166400005"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_valencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_valencia> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA DIAVERUM VALENCIA"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_valencia> <http://www.dialysisComunidadValenciana.es/hasPhone> ""^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_valencia> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Alcàsser, 54"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_valencia> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_general>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_valencia> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_valencia> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.41070001199994904"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_valencia> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "39.47184000100003"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_vinaros> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_vinaros> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA DIAVERUM VINARÒS"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_vinaros> <http://www.dialysisComunidadValenciana.es/hasPhone> "964401144"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_vinaros> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ San Blas, 47 - C/ Ruiz Picasso, 35"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_vinaros> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_vinaros>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_vinaros> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_vinaros> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "0.46827002500003806"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_vinaros> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.46628001600004"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_oropesa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_oropesa> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA DIAVERUM OROPESA"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_oropesa> <http://www.dialysisComunidadValenciana.es/hasPhone> "964313387"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_oropesa> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ José Ribera Forner, 94-96"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_oropesa> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/hgucs>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_oropesa> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_oropesa> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "0.134770023000044"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_oropesa> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.099539985000035"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general> <http://www.w3.org/2000/01/rdf-schema#label> "H. GENERAL"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general> <http://www.dialysisComunidadValenciana.es/hasPhone> "964725223"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general> <http://www.dialysisComunidadValenciana.es/hasAddress> "Avda. Benicàssim, s/n"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/hgucs>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/seguridad_social>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.038761793999924"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "39.99798212300004"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_castello> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_castello> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA DIAVERUM CASTELLÓ"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_castello> <http://www.dialysisComunidadValenciana.es/hasPhone> "964233773"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_castello> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Puig, 10"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_castello> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/hgucs>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_castello> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_castello> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.03252002399995"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_castello> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "39.992099996000036"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_vall_d_uixo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_vall_d_uixo> <http://www.w3.org/2000/01/rdf-schema#label> "BBraun VALL D'UIXÒ"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_vall_d_uixo> <http://www.dialysisComunidadValenciana.es/hasPhone> "964663333"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_vall_d_uixo> <http://www.dialysisComunidadValenciana.es/hasAddress> "Avda. Corazon de Jesus, 157"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_vall_d_uixo> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_la_plana>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_vall_d_uixo> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/bbraun>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_vall_d_uixo> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.22122234399995402"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/bbraun_vall_d_uixo> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "39.822809154000026"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_marina_salud_denia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_marina_salud_denia> <http://www.w3.org/2000/01/rdf-schema#label> "H MARINA SALUD DENIA"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_marina_salud_denia> <http://www.dialysisComunidadValenciana.es/hasPhone> "966429000"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_marina_salud_denia> <http://www.dialysisComunidadValenciana.es/hasAddress> "Avda. Marina Alta, s/n"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_marina_salud_denia> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_denia>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_marina_salud_denia> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/generalitat_valenciana>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_marina_salud_denia> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "0.051997731000028004"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_marina_salud_denia> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "38.807360121000045"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_virgen_de_los_lirios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_virgen_de_los_lirios> <http://www.w3.org/2000/01/rdf-schema#label> "H VIRGEN DE LOS LÍRIOS"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_virgen_de_los_lirios> <http://www.dialysisComunidadValenciana.es/hasPhone> "965537454"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_virgen_de_los_lirios> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Caramanxel. s/n"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_virgen_de_los_lirios> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_alcoi>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_virgen_de_los_lirios> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/generalitat_valenciana>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_virgen_de_los_lirios> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.471557185999927"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_virgen_de_los_lirios> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "38.70549626300004"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/nefrosol_salud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/nefrosol_salud> <http://www.w3.org/2000/01/rdf-schema#label> "NEFROSOL SALUD"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/nefrosol_salud> <http://www.dialysisComunidadValenciana.es/hasPhone> "626429193"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/nefrosol_salud> <http://www.dialysisComunidadValenciana.es/hasAddress> "Avda. La Goleta, 17"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/nefrosol_salud> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_san_juan>.
+<http://www.dialysisComunidadValenciana.es/resource/center/nefrosol_salud> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/rivera_salud>.
+<http://www.dialysisComunidadValenciana.es/resource/center/nefrosol_salud> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.42308997399993503"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/nefrosol_salud> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "38.362780017000034"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_clinica_benidorm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_clinica_benidorm> <http://www.w3.org/2000/01/rdf-schema#label> "H CLÍNICA BENIDORM"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_clinica_benidorm> <http://www.dialysisComunidadValenciana.es/hasPhone> "965853850"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_clinica_benidorm> <http://www.dialysisComunidadValenciana.es/hasAddress> "Avda. Alfonso Puchades, 8"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_clinica_benidorm> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_marina_baixa>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_clinica_benidorm> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/centro_medico_salus_baleares>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_clinica_benidorm> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.12703859599997702"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_clinica_benidorm> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "38.54268542800003"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_elche> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_elche> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA DIAVERUM ELCHE"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_elche> <http://www.dialysisComunidadValenciana.es/hasPhone> "966901336"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_elche> <http://www.dialysisComunidadValenciana.es/hasAddress> "Avda. De Jubalcoi, 36"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_elche> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_elche>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_elche> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_elche> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.675735929999973"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_elche> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "38.27868201100006"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/casas_reposo_y_sanatorio_ppto_socorro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/casas_reposo_y_sanatorio_ppto_socorro> <http://www.w3.org/2000/01/rdf-schema#label> "CASAS REPOSO Y SANATORIO PPTO. SOCORRO"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/casas_reposo_y_sanatorio_ppto_socorro> <http://www.dialysisComunidadValenciana.es/hasPhone> "965201100"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/casas_reposo_y_sanatorio_ppto_socorro> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Vicent Andrés Estellés, 3"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/casas_reposo_y_sanatorio_ppto_socorro> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_elche>.
+<http://www.dialysisComunidadValenciana.es/resource/center/casas_reposo_y_sanatorio_ppto_socorro> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/casa_de_reposo_y_sanatorio_ppto_socorro_sa>.
+<http://www.dialysisComunidadValenciana.es/resource/center/casas_reposo_y_sanatorio_ppto_socorro> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.6801271089999541"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/casas_reposo_y_sanatorio_ppto_socorro> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "38.271208014000024"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_universitario_elda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_universitario_elda> <http://www.w3.org/2000/01/rdf-schema#label> "H GENERAL UNIVERSITARIO ELDA"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_universitario_elda> <http://www.dialysisComunidadValenciana.es/hasPhone> "966989071"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_universitario_elda> <http://www.dialysisComunidadValenciana.es/hasAddress> "Crtra. Sax – La Torreta, s/n"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_universitario_elda> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_elda>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_universitario_elda> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/generalitat_valenciana>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_universitario_elda> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.7995384869999491"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_universitario_elda> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "38.493563460000075"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_nefroclub> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_nefroclub> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA DIAVERUM NEFROCLUB"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_nefroclub> <http://www.dialysisComunidadValenciana.es/hasPhone> "963570012"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_nefroclub> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Primero de Mayo, 16 bajo."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_nefroclub> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_dr_peset>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_nefroclub> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_nefroclub> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.38753000099995905"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_nefroclub> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "39.449020019000045"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_catarroja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_catarroja> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA DIAVERUM CATARROJA"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_catarroja> <http://www.dialysisComunidadValenciana.es/hasPhone> "960905207"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_catarroja> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Luis Vives, 20"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_catarroja> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_la_fe>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_catarroja> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_catarroja> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.39917003399995105"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_catarroja> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "39.401840004000064"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_gandia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_gandia> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA DIAVERUM GANDÍA"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_gandia> <http://www.dialysisComunidadValenciana.es/hasPhone> "960901184"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_gandia> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Jaume II, 51-55"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_gandia> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_gandia>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_gandia> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_gandia> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.181829966999941"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_gandia> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "38.97523000800004"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/requena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/requena> <http://www.w3.org/2000/01/rdf-schema#label> "REQUENA"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/requena> <http://www.dialysisComunidadValenciana.es/hasPhone> "962304352"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/requena> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Casablanca, s/n"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/requena> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_requena>.
+<http://www.dialysisComunidadValenciana.es/resource/center/requena> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/requena> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-1.091087921999928"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/requena> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "39.485803658000066"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_torrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_torrent> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA DIAVERUM TORRENT"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_torrent> <http://www.dialysisComunidadValenciana.es/hasPhone> ""^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_torrent> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Músic José Ortí Soriano, 25"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_torrent> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_general>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_torrent> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_torrent> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.45715000499995906"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_torrent> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "39.439770002000046"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general> <http://www.dialysisComunidadValenciana.es/hasPhone> "965938493/95"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Pintor Baeza s/n"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/h_general>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/generalitat_valenciana>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.485540446999948"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "38.35959468800007"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/vithas_h_perpetuo_internacional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/vithas_h_perpetuo_internacional> <http://www.w3.org/2000/01/rdf-schema#label> "VITHAS H PERPETUO INTERNACIONAL"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/vithas_h_perpetuo_internacional> <http://www.dialysisComunidadValenciana.es/hasPhone> "965201100"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/vithas_h_perpetuo_internacional> <http://www.dialysisComunidadValenciana.es/hasAddress> "Plaza Doctor Gómez Ulla, 15"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/vithas_h_perpetuo_internacional> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/alicante>.
+<http://www.dialysisComunidadValenciana.es/resource/center/vithas_h_perpetuo_internacional> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/vithas_alicante_sl>.
+<http://www.dialysisComunidadValenciana.es/resource/center/vithas_h_perpetuo_internacional> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.47648998899995804"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/vithas_h_perpetuo_internacional> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "38.35289000000006"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_universitario_vinalopo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_universitario_vinalopo> <http://www.w3.org/2000/01/rdf-schema#label> "H UNIVERSITARIO VINALOPÓ"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_universitario_vinalopo> <http://www.dialysisComunidadValenciana.es/hasPhone> "966679800"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_universitario_vinalopo> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Tonico Sansano Mora, 14"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_universitario_vinalopo> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_elche___crevillente>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_universitario_vinalopo> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/elche_crevillente_salud>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_universitario_vinalopo> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.714308237999944"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_universitario_vinalopo> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "38.25508728800003"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_alicante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_alicante> <http://www.w3.org/2000/01/rdf-schema#label> "H. GENERAL ALICANTE"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_alicante> <http://www.dialysisComunidadValenciana.es/hasPhone> "965357657"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_alicante> <http://www.dialysisComunidadValenciana.es/hasAddress> "Avda. Sevilla, 5"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_alicante> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_alicante>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_alicante> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_alicante> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.514100007999957"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_alicante> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "38.39190000600007"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_marina_baixa_villajoyosa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_marina_baixa_villajoyosa> <http://www.w3.org/2000/01/rdf-schema#label> "H MARINA BAIXA VILLAJOYOSA"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_marina_baixa_villajoyosa> <http://www.dialysisComunidadValenciana.es/hasPhone> "966859800"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_marina_baixa_villajoyosa> <http://www.dialysisComunidadValenciana.es/hasAddress> "Avda. Alcalde En Jaume Botella Mayor, 7"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_marina_baixa_villajoyosa> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_marina_baixa>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_marina_baixa_villajoyosa> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/generalitat_valenciana>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_marina_baixa_villajoyosa> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.19795644299995202"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/h_marina_baixa_villajoyosa> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "38.52411170500005"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_orihuela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Center>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_orihuela> <http://www.w3.org/2000/01/rdf-schema#label> "CLÍNICA DIAVERUM ORIHUELA"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_orihuela> <http://www.dialysisComunidadValenciana.es/hasPhone> "966901510"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_orihuela> <http://www.dialysisComunidadValenciana.es/hasAddress> "C/ Temístocles Almagro, 26-30"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_orihuela> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_orihuela>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_orihuela> <http://www.dialysisComunidadValenciana.es/managed_by> <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_orihuela> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-0.939842712999961"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_orihuela> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "38.08113445300006"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.dialysisComunidadValenciana.es/resource/city/burjassot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/burjassot> <http://www.w3.org/2000/01/rdf-schema#label> "Burjassot"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/burjassot> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/valencia>.
+<http://www.dialysisComunidadValenciana.es/resource/city/paterna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/paterna> <http://www.w3.org/2000/01/rdf-schema#label> "Paterna"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/paterna> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/valencia>.
+<http://www.dialysisComunidadValenciana.es/resource/city/lliria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/lliria> <http://www.w3.org/2000/01/rdf-schema#label> "Llíria"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/lliria> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/valencia>.
+<http://www.dialysisComunidadValenciana.es/resource/city/vila_real> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/vila_real> <http://www.w3.org/2000/01/rdf-schema#label> "Vila-real"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/vila_real> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/castellon>.
+<http://www.dialysisComunidadValenciana.es/resource/city/alicante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/alicante> <http://www.w3.org/2000/01/rdf-schema#label> "Alicante"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/alicante> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/alicante>.
+<http://www.dialysisComunidadValenciana.es/resource/city/elche> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/elche> <http://www.w3.org/2000/01/rdf-schema#label> "Elche"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/elche> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/alicante>.
+<http://www.dialysisComunidadValenciana.es/resource/city/torrevieja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/torrevieja> <http://www.w3.org/2000/01/rdf-schema#label> "Torrevieja"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/torrevieja> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/alicante>.
+<http://www.dialysisComunidadValenciana.es/resource/city/alfafar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/alfafar> <http://www.w3.org/2000/01/rdf-schema#label> "Alfafar"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/alfafar> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/valencia>.
+<http://www.dialysisComunidadValenciana.es/resource/city/valencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/valencia> <http://www.w3.org/2000/01/rdf-schema#label> "Valencia"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/valencia> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/valencia>.
+<http://www.dialysisComunidadValenciana.es/resource/city/puerto_sagunto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/puerto_sagunto> <http://www.w3.org/2000/01/rdf-schema#label> "Port de Sagunt"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/puerto_sagunto> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/valencia>.
+<http://www.dialysisComunidadValenciana.es/resource/city/massamagrell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/massamagrell> <http://www.w3.org/2000/01/rdf-schema#label> "Masamagrell"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/massamagrell> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/valencia>.
+<http://www.dialysisComunidadValenciana.es/resource/city/xirivella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/xirivella> <http://www.w3.org/2000/01/rdf-schema#label> "Xirivella"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/xirivella> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/valencia>.
+<http://www.dialysisComunidadValenciana.es/resource/city/vinaros> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/vinaros> <http://www.w3.org/2000/01/rdf-schema#label> "Vinaròs"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/vinaros> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/castellon>.
+<http://www.dialysisComunidadValenciana.es/resource/city/oropesa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/oropesa> <http://www.w3.org/2000/01/rdf-schema#label> "Oropesa del Mar"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/oropesa> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/castellon>.
+<http://www.dialysisComunidadValenciana.es/resource/city/castello> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/castello> <http://www.w3.org/2000/01/rdf-schema#label> "Castelló de la Plana"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/castello> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/castellon>.
+<http://www.dialysisComunidadValenciana.es/resource/city/la_vall_d_uixo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/la_vall_d_uixo> <http://www.w3.org/2000/01/rdf-schema#label> "La Vall d'Uixó"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/la_vall_d_uixo> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/castellon>.
+<http://www.dialysisComunidadValenciana.es/resource/city/denia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/denia> <http://www.w3.org/2000/01/rdf-schema#label> "Dénia"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/denia> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/alicante>.
+<http://www.dialysisComunidadValenciana.es/resource/city/benidorm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/benidorm> <http://www.w3.org/2000/01/rdf-schema#label> "Benidorm"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/benidorm> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/alicante>.
+<http://www.dialysisComunidadValenciana.es/resource/city/elda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/elda> <http://www.w3.org/2000/01/rdf-schema#label> "Elda"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/elda> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/alicante>.
+<http://www.dialysisComunidadValenciana.es/resource/city/catarroja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/catarroja> <http://www.w3.org/2000/01/rdf-schema#label> "Catarroja"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/catarroja> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/valencia>.
+<http://www.dialysisComunidadValenciana.es/resource/city/gandia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/gandia> <http://www.w3.org/2000/01/rdf-schema#label> "Gandia"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/gandia> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/valencia>.
+<http://www.dialysisComunidadValenciana.es/resource/city/requena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/requena> <http://www.w3.org/2000/01/rdf-schema#label> "Requena"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/requena> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/valencia>.
+<http://www.dialysisComunidadValenciana.es/resource/city/torrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/torrent> <http://www.w3.org/2000/01/rdf-schema#label> "Torrent"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/torrent> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/valencia>.
+<http://www.dialysisComunidadValenciana.es/resource/city/sant_vicent_del_raspeig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/sant_vicent_del_raspeig> <http://www.w3.org/2000/01/rdf-schema#label> "San Vicente del Raspeig"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/sant_vicent_del_raspeig> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/alicante>.
+<http://www.dialysisComunidadValenciana.es/resource/city/villajoyosa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/villajoyosa> <http://www.w3.org/2000/01/rdf-schema#label> "La Vila Joiosa"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/villajoyosa> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/alicante>.
+<http://www.dialysisComunidadValenciana.es/resource/city/orihuela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/City>.
+<http://www.dialysisComunidadValenciana.es/resource/city/orihuela> <http://www.w3.org/2000/01/rdf-schema#label> "Orihuela"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/city/orihuela> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/province/alicante>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/diaverum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Entity>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/diaverum> <http://www.w3.org/2000/01/rdf-schema#label> "Diaverum"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/bbraun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Entity>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/bbraun> <http://www.w3.org/2000/01/rdf-schema#label> "B. Braun"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/clinica_vistahermosa_grupo_hla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Entity>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/clinica_vistahermosa_grupo_hla> <http://www.w3.org/2000/01/rdf-schema#label> "Clínica Vistahermosa Grupo Hla"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/generalitat_valenciana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Entity>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/generalitat_valenciana> <http://www.w3.org/2000/01/rdf-schema#label> "Generalitat Valenciana"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/torrevieja_salud_ute_ley_18_82> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Entity>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/torrevieja_salud_ute_ley_18_82> <http://www.w3.org/2000/01/rdf-schema#label> "TORREVIEJA SALUD UTE LEY 18/82"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/seguridad_social> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Entity>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/seguridad_social> <http://www.w3.org/2000/01/rdf-schema#label> "Social Security in Spain"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/rivera_salud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Entity>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/rivera_salud> <http://www.w3.org/2000/01/rdf-schema#label> "RIVERA SALUD"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/centro_medico_salus_baleares> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Entity>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/centro_medico_salus_baleares> <http://www.w3.org/2000/01/rdf-schema#label> "CENTRO MÉDICO SALUS BALEARES"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/casa_de_reposo_y_sanatorio_ppto_socorro_sa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Entity>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/casa_de_reposo_y_sanatorio_ppto_socorro_sa> <http://www.w3.org/2000/01/rdf-schema#label> "CASA DE REPOSO Y SANATORIO PPTO. SOCORRO SA"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/vithas_alicante_sl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Entity>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/vithas_alicante_sl> <http://www.w3.org/2000/01/rdf-schema#label> "VITHAS ALICANTE, SL"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/elche_crevillente_salud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Entity>.
+<http://www.dialysisComunidadValenciana.es/resource/entity/elche_crevillente_salud> <http://www.w3.org/2000/01/rdf-schema#label> "ELCHE CREVILLENTE SALUD"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_arnau-lliria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_arnau-lliria> <http://www.w3.org/2000/01/rdf-schema#label> "H. Arnau-Lliria"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_arnau-lliria> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/burjassot>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_arnau-lliria> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/paterna>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_arnau-lliria> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/lliria>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_la_plana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_la_plana> <http://www.w3.org/2000/01/rdf-schema#label> "H La Plana"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_la_plana> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/vila_real>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/alicante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/alicante> <http://www.w3.org/2000/01/rdf-schema#label> "Alicante"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/alicante> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/alicante>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_elche> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_elche> <http://www.w3.org/2000/01/rdf-schema#label> "Dpto. Salud Elche"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_elche> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/elche>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_torrevieja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_torrevieja> <http://www.w3.org/2000/01/rdf-schema#label> "Dpto. Salud Torrevieja"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_torrevieja> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/torrevieja>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_dr_peset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_dr_peset> <http://www.w3.org/2000/01/rdf-schema#label> "H. Dr. Peset"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_dr_peset> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/alfafar>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_la_fe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_la_fe> <http://www.w3.org/2000/01/rdf-schema#label> "H. La Fe"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_la_fe> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/valencia>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_sagunto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_sagunto> <http://www.w3.org/2000/01/rdf-schema#label> "H. Sagunto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_sagunto> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/puerto_sagunto>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_clinico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_clinico> <http://www.w3.org/2000/01/rdf-schema#label> "H. Clínico"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_clinico> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/valencia>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_clinico> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/massamagrell>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_general> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_general> <http://www.w3.org/2000/01/rdf-schema#label> "H. General"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_general> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/xirivella>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_general> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/valencia>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_vinaros> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_vinaros> <http://www.w3.org/2000/01/rdf-schema#label> "H. Vinaròs"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_vinaros> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/vinaros>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/hgucs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/hgucs> <http://www.w3.org/2000/01/rdf-schema#label> "HGUCS"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/hgucs> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/oropesa>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/hgucs> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/castello>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_la_plana> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/la_vall_d_uixo>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_denia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_denia> <http://www.w3.org/2000/01/rdf-schema#label> "Dpto. Salud Denia"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_denia> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/denia>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_alcoi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_alcoi> <http://www.w3.org/2000/01/rdf-schema#label> "Dpto. Salud Alcoi"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_alcoi> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/alicante>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_san_juan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_san_juan> <http://www.w3.org/2000/01/rdf-schema#label> "Dpto. Salud San Juan"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_san_juan> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/alicante>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_marina_baixa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_marina_baixa> <http://www.w3.org/2000/01/rdf-schema#label> "Dpto. Salud Marina Baixa"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_marina_baixa> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/benidorm>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_elda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_elda> <http://www.w3.org/2000/01/rdf-schema#label> "Dpto. Salud Elda"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_elda> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/elda>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_dr_peset> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/valencia>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_la_fe> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/catarroja>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_gandia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_gandia> <http://www.w3.org/2000/01/rdf-schema#label> "H. Gandía"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_gandia> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/gandia>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_requena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_requena> <http://www.w3.org/2000/01/rdf-schema#label> "H. Requena"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_requena> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/requena>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_general> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/torrent>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_general> <http://www.w3.org/2000/01/rdf-schema#label> "H General"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_general> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/alicante>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_elche___crevillente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_elche___crevillente> <http://www.w3.org/2000/01/rdf-schema#label> "Dpto. Salud Elche – Crevillente"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_elche___crevillente> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/elche>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_alicante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_alicante> <http://www.w3.org/2000/01/rdf-schema#label> "Dpto. Salud Alicante"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_alicante> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/sant_vicent_del_raspeig>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_marina_baixa> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/villajoyosa>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_orihuela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_orihuela> <http://www.w3.org/2000/01/rdf-schema#label> "Dpto. Salud Orihuela"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_orihuela> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/orihuela>.
+<http://www.dialysisComunidadValenciana.es/resource/province/valencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Province>.
+<http://www.dialysisComunidadValenciana.es/resource/province/valencia> <http://www.w3.org/2000/01/rdf-schema#label> "VALENCIA"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/province/castellon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Province>.
+<http://www.dialysisComunidadValenciana.es/resource/province/castellon> <http://www.w3.org/2000/01/rdf-schema#label> "CASTELLÓN"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/province/alicante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Province>.
+<http://www.dialysisComunidadValenciana.es/resource/province/alicante> <http://www.w3.org/2000/01/rdf-schema#label> "ALICANTE"^^<http://www.w3.org/2001/XMLSchema#string>.

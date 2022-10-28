@@ -1,0 +1,501 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ns0: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://mapping.example.com/jc_000>
+  rr:child "district" ;
+  rr:parent "identifier" .
+
+<http://mapping.example.com/jc_001> rr:parent "identifier", "location" .
+<http://mapping.example.com/jc_002> rr:parent "destinatation","identifier" .
+<http://mapping.example.com/jc_003> rr:parent "identifier", "location" .
+<http://mapping.example.com/jc_004>
+  rr:child "species" ;
+  rr:parent "identifier" .
+
+<http://mapping.example.com/jc_005> rr:parent "identifier", "species" .
+<http://mapping.example.com/map_destinatation_000>
+  ns0:logicalSource <http://mapping.example.com/source_005> ;
+  a rr:TriplesMap ;
+  rdfs:label "destinatation" ;
+  rr:predicateObjectMap <http://mapping.example.com/pom_020>, <http://mapping.example.com/pom_021>, <http://mapping.example.com/pom_022> ;
+  rr:subjectMap <http://mapping.example.com/s_005> .
+
+<http://mapping.example.com/map_district_000>
+  ns0:logicalSource <http://mapping.example.com/source_002> ;
+  a rr:TriplesMap ;
+  rdfs:label "district" ;
+  rr:predicateObjectMap <http://mapping.example.com/pom_010>, <http://mapping.example.com/pom_011>, <http://mapping.example.com/pom_012>, <http://mapping.example.com/pom_013> ;
+  rr:subjectMap <http://mapping.example.com/s_002> .
+
+<http://mapping.example.com/map_greenzone_000>
+  ns0:logicalSource <http://mapping.example.com/source_000> ;
+  a rr:TriplesMap ;
+  rdfs:label "greenzone" ;
+  rr:predicateObjectMap <http://mapping.example.com/pom_000>, <http://mapping.example.com/pom_001>, <http://mapping.example.com/pom_002>, <http://mapping.example.com/pom_003>, <http://mapping.example.com/pom_004>, <http://mapping.example.com/pom_005>, <http://mapping.example.com/pom_006> ;
+  rr:subjectMap <http://mapping.example.com/s_000> .
+
+<http://mapping.example.com/map_location_000>
+  ns0:logicalSource <http://mapping.example.com/source_004> ;
+  a rr:TriplesMap ;
+  rdfs:label "location" ;
+  rr:predicateObjectMap <http://mapping.example.com/pom_017>, <http://mapping.example.com/pom_018>, <http://mapping.example.com/pom_019> ;
+  rr:subjectMap <http://mapping.example.com/s_004> .
+
+<http://mapping.example.com/map_species_000>
+  ns0:logicalSource <http://mapping.example.com/source_003> ;
+  a rr:TriplesMap ;
+  rdfs:label "species" ;
+  rr:predicateObjectMap <http://mapping.example.com/pom_014>, <http://mapping.example.com/pom_015>, <http://mapping.example.com/pom_016> ;
+  rr:subjectMap <http://mapping.example.com/s_003> .
+
+<http://mapping.example.com/map_type_000>
+  ns0:logicalSource <http://mapping.example.com/source_006> ;
+  a rr:TriplesMap ;
+  rdfs:label "type" ;
+  rr:predicateObjectMap <http://mapping.example.com/pom_023>, <http://mapping.example.com/pom_024>, <http://mapping.example.com/pom_025> ;
+  rr:subjectMap <http://mapping.example.com/s_006> .
+
+<http://mapping.example.com/map_woodland_000>
+  ns0:logicalSource <http://mapping.example.com/source_001> ;
+  a rr:TriplesMap ;
+  rdfs:label "woodland" ;
+  rr:predicateObjectMap <http://mapping.example.com/pom_007>, <http://mapping.example.com/pom_008>, <http://mapping.example.com/pom_009> ;
+  rr:subjectMap <http://mapping.example.com/s_001> .
+
+<http://mapping.example.com/om_000>
+  a rr:ObjectMap ;
+  rr:constant "http://www.odkg.group22.org/gz/ontology/MadridGreenZones#greenZone" ;
+  rr:termType rr:IRI .
+
+<http://mapping.example.com/om_001>
+  ns0:reference "archive_number" ;
+  a rr:ObjectMap ;
+  rr:datatype <xds:integer> ;
+  rr:termType rr:Literal .
+
+<http://mapping.example.com/om_002>
+  ns0:reference "solar" ;
+  a rr:ObjectMap ;
+  rr:datatype <xds:float> ;
+  rr:termType rr:Literal .
+
+<http://mapping.example.com/om_003>
+  a rr:ObjectMap ;
+  rr:joinCondition <http://mapping.example.com/jc_000> ;
+  rr:parentTriplesMap <http://mapping.example.com/map_district_000> .
+
+<http://mapping.example.com/om_004>
+  a rr:ObjectMap ;
+  rr:joinCondition <http://mapping.example.com/jc_001> ;
+  rr:parentTriplesMap <http://mapping.example.com/map_location_000> .
+
+<http://mapping.example.com/om_005>
+  a rr:ObjectMap ;
+  rr:joinCondition <http://mapping.example.com/jc_002> ;
+  rr:parentTriplesMap <http://mapping.example.com/map_destinatation_000> .
+
+<http://mapping.example.com/om_006>
+  a rr:ObjectMap ;
+  rr:joinCondition <http://mapping.example.com/jc_003> ;
+  rr:parentTriplesMap <http://mapping.example.com/map_type_000> .
+
+<http://mapping.example.com/om_007>
+  a rr:ObjectMap ;
+  rr:constant "http://www.odkg.group22.org/gz/ontology/MadridGreenZones#Woodland" ;
+  rr:termType rr:IRI .
+
+<http://mapping.example.com/om_008>
+  ns0:reference "units_species" ;
+  a rr:ObjectMap ;
+  rr:datatype xsd:integer ;
+  rr:termType rr:Literal .
+
+<http://mapping.example.com/om_009>
+  a rr:ObjectMap ;
+  rr:joinCondition <http://mapping.example.com/jc_004> ;
+  rr:parentTriplesMap <http://mapping.example.com/map_species_000> .
+
+<http://mapping.example.com/om_010>
+  a rr:ObjectMap ;
+  rr:constant "http://www.odkg.group22.org/gz/ontology/MadridGreenZones#District" ;
+  rr:termType rr:IRI .
+
+<http://mapping.example.com/om_011>
+  ns0:reference "district_code" ;
+  a rr:ObjectMap ;
+  rr:termType rr:Literal .
+
+<http://mapping.example.com/om_012>
+  ns0:reference "district_name" ;
+  a rr:ObjectMap ;
+  rr:termType rr:Literal .
+
+<http://mapping.example.com/om_013>
+  a rr:ObjectMap ;
+  rr:joinCondition <http://mapping.example.com/jc_005> ;
+  rr:parentTriplesMap <http://mapping.example.com/map_woodland_000> .
+
+<http://mapping.example.com/om_014>
+  a rr:ObjectMap ;
+  rr:constant "http://www.odkg.group22.org/gz/ontology/MadridGreenZones#Species" ;
+  rr:termType rr:IRI .
+
+<http://mapping.example.com/om_015>
+  ns0:reference "species_code" ;
+  a rr:ObjectMap ;
+  rr:termType rr:Literal .
+
+<http://mapping.example.com/om_016>
+  ns0:reference "species_name" ;
+  a rr:ObjectMap ;
+  rr:termType rr:Literal .
+
+<http://mapping.example.com/om_017>
+  a rr:ObjectMap ;
+  rr:constant "http://www.odkg.group22.org/gz/ontology/MadridGreenZones#Species" ;
+  rr:termType rr:IRI .
+
+<http://mapping.example.com/om_018>
+  ns0:reference "location_code" ;
+  a rr:ObjectMap ;
+  rr:termType rr:Literal .
+
+<http://mapping.example.com/om_019>
+  ns0:reference "location_name" ;
+  a rr:ObjectMap ;
+  rr:termType rr:Literal .
+
+<http://mapping.example.com/om_020>
+  a rr:ObjectMap ;
+  rr:constant "http://www.odkg.group22.org/gz/ontology/MadridGreenZones#destinatation" ;
+  rr:termType rr:IRI .
+
+<http://mapping.example.com/om_021>
+  ns0:reference "destinatation_code" ;
+  a rr:ObjectMap ;
+  rr:termType rr:Literal .
+
+<http://mapping.example.com/om_022>
+  ns0:reference "destinatation_name" ;
+  a rr:ObjectMap ;
+  rr:termType rr:Literal .
+
+<http://mapping.example.com/om_023>
+  a rr:ObjectMap ;
+  rr:constant "http://www.odkg.group22.org/gz/ontology/MadridGreenZones#Type" ;
+  rr:termType rr:IRI .
+
+<http://mapping.example.com/om_024>
+  ns0:reference "type_code" ;
+  a rr:ObjectMap ;
+  rr:termType rr:Literal .
+
+<http://mapping.example.com/om_025>
+  ns0:reference "type_name" ;
+  a rr:ObjectMap ;
+  rr:termType rr:Literal .
+
+<http://mapping.example.com/pm_000>
+  a rr:PredicateMap ;
+  rr:constant rdf:type .
+
+<http://mapping.example.com/pm_001>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#archiveNumber> .
+
+<http://mapping.example.com/pm_002>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#solar> .
+
+<http://mapping.example.com/pm_003>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#hasDistrict> .
+
+<http://mapping.example.com/pm_004>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#hasLocation> .
+
+<http://mapping.example.com/pm_005>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#hasdestinatation> .
+
+<http://mapping.example.com/pm_006>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#hasType> .
+
+<http://mapping.example.com/pm_007>
+  a rr:PredicateMap ;
+  rr:constant rdf:type .
+
+<http://mapping.example.com/pm_008>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#unitSpecies> .
+
+<http://mapping.example.com/pm_009>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#hasSpecies> .
+
+<http://mapping.example.com/pm_010>
+  a rr:PredicateMap ;
+  rr:constant rdf:type .
+
+<http://mapping.example.com/pm_011>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#districtCode> .
+
+<http://mapping.example.com/pm_012>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#districtName> .
+
+<http://mapping.example.com/pm_013>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#hasWoodland> .
+
+<http://mapping.example.com/pm_014>
+  a rr:PredicateMap ;
+  rr:constant rdf:type .
+
+<http://mapping.example.com/pm_015>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#speciesCode> .
+
+<http://mapping.example.com/pm_016>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#speciesName> .
+
+<http://mapping.example.com/pm_017>
+  a rr:PredicateMap ;
+  rr:constant rdf:type .
+
+<http://mapping.example.com/pm_018>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#locationCode> .
+
+<http://mapping.example.com/pm_019>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#locationName> .
+
+<http://mapping.example.com/pm_020>
+  a rr:PredicateMap ;
+  rr:constant rdf:type .
+
+<http://mapping.example.com/pm_021>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#destinatationCode> .
+
+<http://mapping.example.com/pm_022>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#destinatationName> .
+
+<http://mapping.example.com/pm_023>
+  a rr:PredicateMap ;
+  rr:constant rdf:type .
+
+<http://mapping.example.com/pm_024>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#typeCode> .
+
+<http://mapping.example.com/pm_025>
+  a rr:PredicateMap ;
+  rr:constant <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#type_name> .
+
+<http://mapping.example.com/pom_000>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_000> ;
+  rr:predicateMap <http://mapping.example.com/pm_000> .
+
+<http://mapping.example.com/pom_001>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_001> ;
+  rr:predicateMap <http://mapping.example.com/pm_001> .
+
+<http://mapping.example.com/pom_002>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_002> ;
+  rr:predicateMap <http://mapping.example.com/pm_002> .
+
+<http://mapping.example.com/pom_003>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_003> ;
+  rr:predicateMap <http://mapping.example.com/pm_003> .
+
+<http://mapping.example.com/pom_004>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_004> ;
+  rr:predicateMap <http://mapping.example.com/pm_004> .
+
+<http://mapping.example.com/pom_005>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_005> ;
+  rr:predicateMap <http://mapping.example.com/pm_005> .
+
+<http://mapping.example.com/pom_006>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_006> ;
+  rr:predicateMap <http://mapping.example.com/pm_006> .
+
+<http://mapping.example.com/pom_007>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_007> ;
+  rr:predicateMap <http://mapping.example.com/pm_007> .
+
+<http://mapping.example.com/pom_008>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_008> ;
+  rr:predicateMap <http://mapping.example.com/pm_008> .
+
+<http://mapping.example.com/pom_009>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_009> ;
+  rr:predicateMap <http://mapping.example.com/pm_009> .
+
+<http://mapping.example.com/pom_010>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_010> ;
+  rr:predicateMap <http://mapping.example.com/pm_010> .
+
+<http://mapping.example.com/pom_011>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_011> ;
+  rr:predicateMap <http://mapping.example.com/pm_011> .
+
+<http://mapping.example.com/pom_012>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_012> ;
+  rr:predicateMap <http://mapping.example.com/pm_012> .
+
+<http://mapping.example.com/pom_013>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_013> ;
+  rr:predicateMap <http://mapping.example.com/pm_013> .
+
+<http://mapping.example.com/pom_014>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_014> ;
+  rr:predicateMap <http://mapping.example.com/pm_014> .
+
+<http://mapping.example.com/pom_015>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_015> ;
+  rr:predicateMap <http://mapping.example.com/pm_015> .
+
+<http://mapping.example.com/pom_016>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_016> ;
+  rr:predicateMap <http://mapping.example.com/pm_016> .
+
+<http://mapping.example.com/pom_017>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_017> ;
+  rr:predicateMap <http://mapping.example.com/pm_017> .
+
+<http://mapping.example.com/pom_018>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_018> ;
+  rr:predicateMap <http://mapping.example.com/pm_018> .
+
+<http://mapping.example.com/pom_019>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_019> ;
+  rr:predicateMap <http://mapping.example.com/pm_019> .
+
+<http://mapping.example.com/pom_020>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_020> ;
+  rr:predicateMap <http://mapping.example.com/pm_020> .
+
+<http://mapping.example.com/pom_021>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_021> ;
+  rr:predicateMap <http://mapping.example.com/pm_021> .
+
+<http://mapping.example.com/pom_022>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_022> ;
+  rr:predicateMap <http://mapping.example.com/pm_022> .
+
+<http://mapping.example.com/pom_023>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_023> ;
+  rr:predicateMap <http://mapping.example.com/pm_023> .
+
+<http://mapping.example.com/pom_024>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_024> ;
+  rr:predicateMap <http://mapping.example.com/pm_024> .
+
+<http://mapping.example.com/pom_025>
+  a rr:PredicateObjectMap ;
+  rr:objectMap <http://mapping.example.com/om_025> ;
+  rr:predicateMap <http://mapping.example.com/pm_025> .
+
+<http://mapping.example.com/rules_000>
+  void:exampleResource <http://mapping.example.com/map_destinatation_000>, <http://mapping.example.com/map_district_000>, <http://mapping.example.com/map_greenzone_000>, <http://mapping.example.com/map_location_000>, <http://mapping.example.com/map_species_000>, <http://mapping.example.com/map_type_000>, <http://mapping.example.com/map_woodland_000> ;
+  a void:Dataset .
+
+<http://mapping.example.com/s_000>
+  ns0:reference "identifier" ;
+  a rr:SubjectMap .
+
+<http://mapping.example.com/s_001>
+  ns0:reference "identifier" ;
+  a rr:SubjectMap .
+
+<http://mapping.example.com/s_002>
+  ns0:reference "identifier" ;
+  a rr:SubjectMap .
+
+<http://mapping.example.com/s_003>
+  ns0:reference "identifier" ;
+  a rr:SubjectMap .
+
+<http://mapping.example.com/s_004>
+  ns0:reference "identifier" ;
+  a rr:SubjectMap .
+
+<http://mapping.example.com/s_005>
+  ns0:reference "identifier" ;
+  a rr:SubjectMap .
+
+<http://mapping.example.com/s_006>
+  ns0:reference "identifier" ;
+  a rr:SubjectMap .
+
+<http://mapping.example.com/source_000>
+  ns0:referenceFormulation <http://semweb.mmlab.be/ns/ql#CSV> ;
+  ns0:source "/content/drive/MyDrive/OpenData/Zonas-verdes-2021-updated.csv" ;
+  a ns0:LogicalSource .
+
+<http://mapping.example.com/source_001>
+  ns0:referenceFormulation <http://semweb.mmlab.be/ns/ql#CSV> ;
+  ns0:source "/content/drive/MyDrive/OpenData/ArboladoZonasVerdesDistritosCalles-2021-updated.csv" ;
+  a ns0:LogicalSource .
+
+<http://mapping.example.com/source_002>
+  ns0:referenceFormulation <http://semweb.mmlab.be/ns/ql#CSV> ;
+  ns0:source "/content/drive/MyDrive/OpenData/District.csv" ;
+  a ns0:LogicalSource .
+
+<http://mapping.example.com/source_003>
+  ns0:referenceFormulation <http://semweb.mmlab.be/ns/ql#CSV> ;
+  ns0:source "/content/drive/MyDrive/OpenData/Species.csv" ;
+  a ns0:LogicalSource .
+
+<http://mapping.example.com/source_004>
+  ns0:referenceFormulation <http://semweb.mmlab.be/ns/ql#CSV> ;
+  ns0:source "/content/drive/MyDrive/OpenData/Location.csv" ;
+  a ns0:LogicalSource .
+
+<http://mapping.example.com/source_005>
+  ns0:referenceFormulation <http://semweb.mmlab.be/ns/ql#CSV> ;
+  ns0:source "/content/drive/MyDrive/OpenData/Destinatation.csv" ;
+  a ns0:LogicalSource .
+
+<http://mapping.example.com/source_006>
+  ns0:referenceFormulation <http://semweb.mmlab.be/ns/ql#CSV> ;
+  ns0:source "/content/drive/MyDrive/OpenData/Type.csv" ;
+  a ns0:LogicalSource .

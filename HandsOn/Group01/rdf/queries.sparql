@@ -1,0 +1,58 @@
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+PREFIX gn: <http://www.geonames.org/ontology#> .
+PREFIX ns: <http://www.dialysisComunidadValenciana.es/> .
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# QUERY 1: Get all the centers with their phone and address
+select distinct ?center ?phone ?address where {
+    ?center a ns:Center.
+    ?center ns:hasPhone ?phone.
+    ?center ns:hasAddress ?address
+}
+order by ?center
+
+
+# QUERY 2: Given my health area, what are my dialysis centers with phone number and address?
+# Ex: health_area = Alicante
+select distinct ?center ?phone ?address where {
+    ?area a ns:Health_Area.
+    ?area rdfs:label "Alicante".
+    ?center a ns:Center.
+    ?center gn:locatedIn ?area.
+    ?center ns:hasPhone ?phone.
+    ?center ns:hasAddress ?address
+}
+order by ?center
+
+# QUERY 3: Who runs my dialysis center?
+select distinct ?runner ?center where {
+    ?x a ns:Entity.
+    ?x rdfs:label ?runner.
+    ?y ns:managed_by ?x.
+    ?y rdfs:label ?center.
+}
+order by ?center
+
+
+# QUERY 4: What health area is the center in?
+select ?center ?health_area where {
+    ?x a ns:Center.
+    ?x rdfs:label ?center.
+    ?x gn:locatedIn ?y.
+    ?y rdfs:label ?health_area.
+}
+order by ?center
+
+
+# QUERY 5: In which provinces does the entity work on?
+select ?entity ?province where {
+    ?x a ns:Entity.
+    ?x rdfs:label ?entity.
+    ?center ns:managed_by ?x.
+    ?center gn:locatedIn ?health.
+    ?health gn:locatedIn ?city.
+    ?city gn:locatedIn ?y.
+    ?y rdfs:label ?province.
+}
+order by ?entity

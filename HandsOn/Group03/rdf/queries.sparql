@@ -1,0 +1,36 @@
+PREFIX ont: <http://smartcity.linkeddata.es/schoolfinder/ontology/>
+
+
+SELECT ?s ?c WHERE {
+	?s a ont:School .
+	?s ont:hasContact ?c .
+	?c ont:phone "913 324 348"
+ }
+
+SELECT ?s ?n WHERE {
+	?s a ont:School .
+	?s ont:hasSchoolGround ?sc .
+	?sc ont:hasLocalization ?l .
+	?l ont:district "Hortaleza" .
+	?s ont:name ?n
+ }
+
+ SELECT ?s ?n ?url WHERE {
+	?s a ont:School .
+	?s ont:hasSchoolGround ?sc .
+	?sc ont:hasLocalization ?l .
+	?l ont:district "Hortaleza" .
+	?s ont:name ?n .
+	?s ont:hasContact ?c .
+	?c ont:contentURL ?url
+ }
+
+SELECT ?s ?b ?m ?r WHERE {
+	?s a ont:School .
+	?s ont:hasSchoolGround ?sc .
+	?sc ont:hasAccessibility ?a .
+	?a ont:bus ?b .
+	?a ont:metro ?m .
+	?a ont:renfe ?r .
+	?s ont:name "Colegio público santa maría"  
+ }

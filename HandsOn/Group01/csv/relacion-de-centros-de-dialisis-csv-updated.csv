@@ -1,39 +1,39 @@
-province,health_area,center,address,phone_number,entity,is_company,city,latitude,longitude
-VALENCIA,H. Arnau-Lliria,CLÍNICA DIAVERUM BURJASSOT,"C/ Sèquia de Montcada, s/n",963160586,DIAVERUM,1,BURJASSOT,39.503047550000076,-0.40671514699994304
-VALENCIA,H. Arnau-Lliria,CLÍNICA DIAVERUM PATERNA,"C/ Vicente Cardona, 22",960905150,DIAVERUM,1,PATERNA,39.49954001200007,-0.44215997699996
-VALENCIA,H. Arnau-Lliria,CLÍNICA DIAVERUM LLÍRIA,"C/ Ausias March, 20",960905162,DIAVERUM,1,LLÍRIA,39.63063000200003,-0.600239988999931
-CASTELLÓN,H La Plana,BBraun VILA-REAL,Avda. Italia,964917120,BBRAUN,1,VILA-REAL,39.93642596500007,-0.10961125599993601
-ALICANTE,Alicante,CLÍNICA VISTAHERMOSA GRUPO HLA,"Avda. Denia, 103",965268000,CLÍNICA VISTAHERMOSA GRUPO HLA,1,ALICANTE,38.36285998000005,-0.46312998999997
-ALICANTE,Alicante,CLÍNICA DIAVERUM ALICANTE,"C/ Proción, 3",627427220,DIAVERUM,1,ALICANTE,38.34516355000005,-0.507742138999958
-ALICANTE,Dpto. Salud Elche,H GENERAL ELCHE,"C/ Almazara, 11",966616928,GENERALITAT VALENCIANA,0,ELCHE,38.25972733100008,-0.6885269479999461
-ALICANTE,Dpto. Salud Torrevieja,H UNIVERSITARIO TORREVIEJA,"Carretera CV 95, s/n",965721349,TORREVIEJA SALUD UTE LEY 18/82,1,TORREVIEJA,37.96197587800003,-0.713539686999979
-VALENCIA,H. Dr. Peset,CLÍNICA DIAVERUM ALFAFAR,"C/ Profesora Ana Rojo, 1",961801811,DIAVERUM,1,ALFAFAR,39.41751001400007,-0.38313997899996305
-VALENCIA,H. La Fe,CLÍNICA DIAVERUM GAMAPAL,"C/. Reina Violante, s/n (Esq. Padre Barranco, 42)",960905123,DIAVERUM,1,VALENCIA,39.48764005700008,-0.40356994599994706
-VALENCIA,H. Sagunto,CLÍNICA DIAVERUM PUERTO SAGUNTO,"C/ Urani, 27",961801690,DIAVERUM,1,PUERTO SAGUNTO,39.668620014000055,-0.217539975999955
-VALENCIA,H. Clínico,Bbraun VALNEFRON,"C/ Serpis, 8",963613908,BBRAUN,1,VALENCIA,39.476070013000026,-0.34932997999993604
-VALENCIA,H. Clínico,BBraun MASSAMAGRELL,"C/ San Miguel, 6",964917230,BBRAUN,1,MASSAMAGRELL,39.567399984000076,-0.33342003799992803
-VALENCIA,H. General,CLÍNICA DIAVERUM XIRIVELLA,"C/ Dels Corretgers, 68",,DIAVERUM,1,XIRIVELLA,39.45415166400005,-0.43512652399994
-VALENCIA,H. General,CLÍNICA DIAVERUM VALENCIA,"C/ Alcàsser, 54",,DIAVERUM,1,VALENCIA,39.47184000100003,-0.41070001199994904
-CASTELLÓN,H. Vinaròs,CLÍNICA DIAVERUM VINARÒS,"C/ San Blas, 47 - C/ Ruiz Picasso, 35",964401144,DIAVERUM,1,VINARÒS,40.46628001600004,0.46827002500003806
-CASTELLÓN,HGUCS,CLÍNICA DIAVERUM OROPESA,"C/ José Ribera Forner, 94-96",964313387,DIAVERUM,1,OROPESA,40.099539985000035,0.134770023000044
-CASTELLÓN,HGUCS,H. GENERAL,"Avda. Benicàssim, s/n",964725223,SEGURIDAD SOCIAL,0,CASTELLÓ,39.99798212300004,-0.038761793999924
-CASTELLÓN,HGUCS,CLÍNICA DIAVERUM CASTELLÓ,"C/ Puig, 10",964233773,DIAVERUM,1,CASTELLÓ,39.992099996000036,-0.03252002399995
-CASTELLÓN,H La Plana,BBraun VALL D'UIXÒ,"Avda. Corazon de Jesus, 157",964663333,BBRAUN,1,VALL D’UIXÒ,39.822809154000026,-0.22122234399995402
-ALICANTE,Dpto. Salud Denia,H MARINA SALUD DENIA,"Avda. Marina Alta, s/n",966429000,GENERALITAT VALENCIANA,0,DENIA,38.807360121000045,0.051997731000028004
-ALICANTE,Dpto. Salud Alcoi,H VIRGEN DE LOS LÍRIOS,C/ Caramanxel. s/n,965537454,GENERALITAT VALENCIANA,0,ALICANTE,38.70549626300004,-0.471557185999927
-ALICANTE,Dpto. Salud San Juan,NEFROSOL SALUD,"Avda. La Goleta, 17",626429193,RIVERA SALUD,1,ALICANTE,38.362780017000034,-0.42308997399993503
-ALICANTE,Dpto. Salud Marina Baixa,H CLÍNICA BENIDORM,"Avda. Alfonso Puchades, 8",965853850,CENTRO MÉDICO SALUS BALEARES,1,BENIDORM,38.54268542800003,-0.12703859599997702
-ALICANTE,Dpto. Salud Elche,CLÍNICA DIAVERUM ELCHE,"Avda. De Jubalcoi, 36",966901336,DIAVERUM,1,ELCHE,38.27868201100006,-0.675735929999973
-ALICANTE,Dpto. Salud Elche,CASAS REPOSO Y SANATORIO PPTO. SOCORRO,"C/ Vicent Andrés Estellés, 3",965201100,CASA DE REPOSO Y SANATORIO PPTO. SOCORRO SA,1,ELCHE,38.271208014000024,-0.6801271089999541
-ALICANTE,Dpto. Salud Elda,H GENERAL UNIVERSITARIO ELDA,"Crtra. Sax – La Torreta, s/n",966989071,GENERALITAT VALENCIANA,0,ELDA,38.493563460000075,-0.7995384869999491
-VALENCIA,H. Dr. Peset,CLÍNICA DIAVERUM NEFROCLUB,"C/ Primero de Mayo, 16 bajo.",963570012,DIAVERUM,1,VALENCIA,39.449020019000045,-0.38753000099995905
-VALENCIA,H. La Fe,CLÍNICA DIAVERUM CATARROJA,"C/ Luis Vives, 20",960905207,DIAVERUM,1,CATARROJA,39.401840004000064,-0.39917003399995105
-VALENCIA,H. Gandía,CLÍNICA DIAVERUM GANDÍA,"C/ Jaume II, 51-55",960901184,DIAVERUM,1,GANDÍA,38.97523000800004,-0.181829966999941
-VALENCIA,H. Requena,REQUENA,"C/ Casablanca, s/n",962304352,DIAVERUM,1,REQUENA,39.485803658000066,-1.091087921999928
-VALENCIA,H. General,CLÍNICA DIAVERUM TORRENT,"C/ Músic José Ortí Soriano, 25",,DIAVERUM,1,TORRENT,39.439770002000046,-0.45715000499995906
-ALICANTE,H General,H. GENERAL,C/ Pintor Baeza s/n,965938493/95,GENERALITAT VALENCIANA,0,ALICANTE,38.35959468800007,-0.485540446999948
-ALICANTE,Alicante,VITHAS H PERPETUO INTERNACIONAL,"Plaza Doctor Gómez Ulla, 15",965201100,"VITHAS ALICANTE, SL",1,ALICANTE,38.35289000000006,-0.47648998899995804
-ALICANTE,Dpto. Salud Elche – Crevillente,H UNIVERSITARIO VINALOPÓ,"C/ Tonico Sansano Mora, 14",966679800,ELCHE CREVILLENTE SALUD,1,ELCHE,38.25508728800003,-0.714308237999944
-ALICANTE,Dpto. Salud Alicante,H. GENERAL ALICANTE,"Avda. Sevilla, 5",965357657,DIAVERUM,1,SANT VICENT DEL RASPEIG,38.39190000600007,-0.514100007999957
-ALICANTE,Dpto. Salud Marina Baixa,H MARINA BAIXA VILLAJOYOSA,"Avda. Alcalde En Jaume Botella Mayor, 7",966859800,GENERALITAT VALENCIANA,0,VILLAJOYOSA,38.52411170500005,-0.19795644299995202
-ALICANTE,Dpto. Salud Orihuela,CLÍNICA DIAVERUM ORIHUELA,"C/ Temístocles Almagro, 26-30",966901510,DIAVERUM,1,ORIHUELA,38.08113445300006,-0.939842712999961
+province,province_id,health_area,health_area_id,center_id,center,address,phone_number,entity_id,entity,city,city_id,latitude,longitude
+VALENCIA,valencia,H. Arnau-Lliria,h_arnau-lliria,clinica_diaverum_burjassot,CLÍNICA DIAVERUM BURJASSOT,"C/ Sèquia de Montcada, s/n",963160586,diaverum,Diaverum,Burjassot,burjassot,39.503047550000076,-0.40671514699994304
+VALENCIA,valencia,H. Arnau-Lliria,h_arnau-lliria,clinica_diaverum_paterna,CLÍNICA DIAVERUM PATERNA,"C/ Vicente Cardona, 22",960905150,diaverum,Diaverum,Paterna,paterna,39.49954001200007,-0.44215997699996
+VALENCIA,valencia,H. Arnau-Lliria,h_arnau-lliria,clinica_diaverum_lliria,CLÍNICA DIAVERUM LLÍRIA,"C/ Ausias March, 20",960905162,diaverum,Diaverum,Llíria,lliria,39.63063000200003,-0.600239988999931
+CASTELLÓN,castellon,H La Plana,h_la_plana,bbraun_vila_real,BBraun VILA-REAL,Avda. Italia,964917120,bbraun,B. Braun,Vila-real,vila_real,39.93642596500007,-0.10961125599993601
+ALICANTE,alicante,Alicante,alicante,clinica_vistahermosa_grupo_hla,CLÍNICA VISTAHERMOSA GRUPO HLA,"Avda. Denia, 103",965268000,clinica_vistahermosa_grupo_hla,Clínica Vistahermosa Grupo Hla,Alicante,alicante,38.36285998000005,-0.46312998999997
+ALICANTE,alicante,Alicante,alicante,clinica_diaverum_alicante,CLÍNICA DIAVERUM ALICANTE,"C/ Proción, 3",627427220,diaverum,Diaverum,Alicante,alicante,38.34516355000005,-0.507742138999958
+ALICANTE,alicante,Dpto. Salud Elche,dpto_salud_elche,h_general_elche,H GENERAL ELCHE,"C/ Almazara, 11",966616928,generalitat_valenciana,Generalitat Valenciana,Elche,elche,38.25972733100008,-0.6885269479999461
+ALICANTE,alicante,Dpto. Salud Torrevieja,dpto_salud_torrevieja,h_universitario_torrevieja,H UNIVERSITARIO TORREVIEJA,"Carretera CV 95, s/n",965721349,torrevieja_salud_ute_ley_18_82,TORREVIEJA SALUD UTE LEY 18/82,Torrevieja,torrevieja,37.96197587800003,-0.713539686999979
+VALENCIA,valencia,H. Dr. Peset,h_dr_peset,clinica_diaverum_alfafar,CLÍNICA DIAVERUM ALFAFAR,"C/ Profesora Ana Rojo, 1",961801811,diaverum,Diaverum,Alfafar,alfafar,39.41751001400007,-0.38313997899996305
+VALENCIA,valencia,H. La Fe,h_la_fe,clinica_diaverum_gamapal,CLÍNICA DIAVERUM GAMAPAL,"C/. Reina Violante, s/n (Esq. Padre Barranco, 42)",960905123,diaverum,Diaverum,Valencia,valencia,39.48764005700008,-0.40356994599994706
+VALENCIA,valencia,H. Sagunto,h_sagunto,clinica_diaverum_puerto_sagunto,CLÍNICA DIAVERUM PUERTO SAGUNTO,"C/ Urani, 27",961801690,diaverum,Diaverum,Port de Sagunt,puerto_sagunto,39.668620014000055,-0.217539975999955
+VALENCIA,valencia,H. Clínico,h_clinico,bbraun_valnefron,Bbraun VALNEFRON,"C/ Serpis, 8",963613908,bbraun,B. Braun,Valencia,valencia,39.476070013000026,-0.34932997999993604
+VALENCIA,valencia,H. Clínico,h_clinico,bbraun_massamagrell,BBraun MASSAMAGRELL,"C/ San Miguel, 6",964917230,bbraun,B. Braun,Masamagrell,massamagrell,39.567399984000076,-0.33342003799992803
+VALENCIA,valencia,H. General,h_general,clinica_diaverum_xirivella,CLÍNICA DIAVERUM XIRIVELLA,"C/ Dels Corretgers, 68",,diaverum,Diaverum,Xirivella,xirivella,39.45415166400005,-0.43512652399994
+VALENCIA,valencia,H. General,h_general,clinica_diaverum_valencia,CLÍNICA DIAVERUM VALENCIA,"C/ Alcàsser, 54",,diaverum,Diaverum,Valencia,valencia,39.47184000100003,-0.41070001199994904
+CASTELLÓN,castellon,H. Vinaròs,h_vinaros,clinica_diaverum_vinaros,CLÍNICA DIAVERUM VINARÒS,"C/ San Blas, 47 - C/ Ruiz Picasso, 35",964401144,diaverum,Diaverum,Vinaròs,vinaros,40.46628001600004,0.46827002500003806
+CASTELLÓN,castellon,HGUCS,hgucs,clinica_diaverum_oropesa,CLÍNICA DIAVERUM OROPESA,"C/ José Ribera Forner, 94-96",964313387,diaverum,Diaverum,Oropesa del Mar,oropesa,40.099539985000035,0.134770023000044
+CASTELLÓN,castellon,HGUCS,hgucs,h_general,H. GENERAL,"Avda. Benicàssim, s/n",964725223,seguridad_social,Social Security in Spain,Castelló de la Plana,castello,39.99798212300004,-0.038761793999924
+CASTELLÓN,castellon,HGUCS,hgucs,clinica_diaverum_castello,CLÍNICA DIAVERUM CASTELLÓ,"C/ Puig, 10",964233773,diaverum,Diaverum,Castelló de la Plana,castello,39.992099996000036,-0.03252002399995
+CASTELLÓN,castellon,H La Plana,h_la_plana,bbraun_vall_d_uixo,BBraun VALL D'UIXÒ,"Avda. Corazon de Jesus, 157",964663333,bbraun,B. Braun,La Vall d'Uixó,la_vall_d_uixo,39.822809154000026,-0.22122234399995402
+ALICANTE,alicante,Dpto. Salud Denia,dpto_salud_denia,h_marina_salud_denia,H MARINA SALUD DENIA,"Avda. Marina Alta, s/n",966429000,generalitat_valenciana,Generalitat Valenciana,Dénia,denia,38.807360121000045,0.051997731000028004
+ALICANTE,alicante,Dpto. Salud Alcoi,dpto_salud_alcoi,h_virgen_de_los_lirios,H VIRGEN DE LOS LÍRIOS,C/ Caramanxel. s/n,965537454,generalitat_valenciana,Generalitat Valenciana,Alicante,alicante,38.70549626300004,-0.471557185999927
+ALICANTE,alicante,Dpto. Salud San Juan,dpto_salud_san_juan,nefrosol_salud,NEFROSOL SALUD,"Avda. La Goleta, 17",626429193,rivera_salud,RIVERA SALUD,Alicante,alicante,38.362780017000034,-0.42308997399993503
+ALICANTE,alicante,Dpto. Salud Marina Baixa,dpto_salud_marina_baixa,h_clinica_benidorm,H CLÍNICA BENIDORM,"Avda. Alfonso Puchades, 8",965853850,centro_medico_salus_baleares,CENTRO MÉDICO SALUS BALEARES,Benidorm,benidorm,38.54268542800003,-0.12703859599997702
+ALICANTE,alicante,Dpto. Salud Elche,dpto_salud_elche,clinica_diaverum_elche,CLÍNICA DIAVERUM ELCHE,"Avda. De Jubalcoi, 36",966901336,diaverum,Diaverum,Elche,elche,38.27868201100006,-0.675735929999973
+ALICANTE,alicante,Dpto. Salud Elche,dpto_salud_elche,casas_reposo_y_sanatorio_ppto_socorro,CASAS REPOSO Y SANATORIO PPTO. SOCORRO,"C/ Vicent Andrés Estellés, 3",965201100,casa_de_reposo_y_sanatorio_ppto_socorro_sa,CASA DE REPOSO Y SANATORIO PPTO. SOCORRO SA,Elche,elche,38.271208014000024,-0.6801271089999541
+ALICANTE,alicante,Dpto. Salud Elda,dpto_salud_elda,h_general_universitario_elda,H GENERAL UNIVERSITARIO ELDA,"Crtra. Sax – La Torreta, s/n",966989071,generalitat_valenciana,Generalitat Valenciana,Elda,elda,38.493563460000075,-0.7995384869999491
+VALENCIA,valencia,H. Dr. Peset,h_dr_peset,clinica_diaverum_nefroclub,CLÍNICA DIAVERUM NEFROCLUB,"C/ Primero de Mayo, 16 bajo.",963570012,diaverum,Diaverum,Valencia,valencia,39.449020019000045,-0.38753000099995905
+VALENCIA,valencia,H. La Fe,h_la_fe,clinica_diaverum_catarroja,CLÍNICA DIAVERUM CATARROJA,"C/ Luis Vives, 20",960905207,diaverum,Diaverum,Catarroja,catarroja,39.401840004000064,-0.39917003399995105
+VALENCIA,valencia,H. Gandía,h_gandia,clinica_diaverum_gandia,CLÍNICA DIAVERUM GANDÍA,"C/ Jaume II, 51-55",960901184,diaverum,Diaverum,Gandia,gandia,38.97523000800004,-0.181829966999941
+VALENCIA,valencia,H. Requena,h_requena,requena,REQUENA,"C/ Casablanca, s/n",962304352,diaverum,Diaverum,Requena,requena,39.485803658000066,-1.091087921999928
+VALENCIA,valencia,H. General,h_general,clinica_diaverum_torrent,CLÍNICA DIAVERUM TORRENT,"C/ Músic José Ortí Soriano, 25",,diaverum,Diaverum,Torrent,torrent,39.439770002000046,-0.45715000499995906
+ALICANTE,alicante,H General,h_general,h_general,H. GENERAL,C/ Pintor Baeza s/n,965938493/95,generalitat_valenciana,Generalitat Valenciana,Alicante,alicante,38.35959468800007,-0.485540446999948
+ALICANTE,alicante,Alicante,alicante,vithas_h_perpetuo_internacional,VITHAS H PERPETUO INTERNACIONAL,"Plaza Doctor Gómez Ulla, 15",965201100,vithas_alicante_sl,"VITHAS ALICANTE, SL",Alicante,alicante,38.35289000000006,-0.47648998899995804
+ALICANTE,alicante,Dpto. Salud Elche – Crevillente,dpto_salud_elche___crevillente,h_universitario_vinalopo,H UNIVERSITARIO VINALOPÓ,"C/ Tonico Sansano Mora, 14",966679800,elche_crevillente_salud,ELCHE CREVILLENTE SALUD,Elche,elche,38.25508728800003,-0.714308237999944
+ALICANTE,alicante,Dpto. Salud Alicante,dpto_salud_alicante,h_general_alicante,H. GENERAL ALICANTE,"Avda. Sevilla, 5",965357657,diaverum,Diaverum,San Vicente del Raspeig,sant_vicent_del_raspeig,38.39190000600007,-0.514100007999957
+ALICANTE,alicante,Dpto. Salud Marina Baixa,dpto_salud_marina_baixa,h_marina_baixa_villajoyosa,H MARINA BAIXA VILLAJOYOSA,"Avda. Alcalde En Jaume Botella Mayor, 7",966859800,generalitat_valenciana,Generalitat Valenciana,La Vila Joiosa,villajoyosa,38.52411170500005,-0.19795644299995202
+ALICANTE,alicante,Dpto. Salud Orihuela,dpto_salud_orihuela,clinica_diaverum_orihuela,CLÍNICA DIAVERUM ORIHUELA,"C/ Temístocles Almagro, 26-30",966901510,diaverum,Diaverum,Orihuela,orihuela,38.08113445300006,-0.939842712999961

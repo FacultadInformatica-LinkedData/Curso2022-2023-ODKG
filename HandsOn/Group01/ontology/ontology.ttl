@@ -1,51 +1,59 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+ @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
 @prefix ns: <http://www.dialysisComunidadValenciana.es/dialysisCV/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ns: a owl:Ontology ;
     dc:creator "Group01" ;
     dc:description "Ontology code created by Chowlk" ;
     dc:title "Dialisis centers" ;
-    owl:versionInfo "1.0" .
+    owl:versionInfo "0.0.1" .
 
-ns:belongs_to a owl:ObjectProperty ;
-    rdfs:label "belongs_to" ;
-    rdfs:domain ns:city,
-        ns:health_area ;
-    rdfs:range ns:city,
-        ns:province .
-
-ns:Company a owl:Class ;
-    rdfs:label "company" ;
-    rdfs:subClassOf ns:entity .
-
-ns:is_in a owl:ObjectProperty ;
-    rdfs:label "is_in" ;
-    rdfs:domain ns:center ;
-    rdfs:range ns:health_area .
-
-ns:managed_by a owl:ObjectProperty ;
-    rdfs:label "managed_by" ;
-    rdfs:domain ns:center ;
-    rdfs:range ns:entity .
-
-ns:Public_institution a owl:Class ;
-    rdfs:label "public_institution" ;
-    rdfs:subClassOf ns:entity .
-
-ns:Province a owl:Class ;
-    rdfs:label "province" .
-
-ns:Center a owl:Class ;
+ns:center a owl:Class ;
     rdfs:label "center" .
 
-ns:City a owl:Class ;
+ns:city a owl:Class ;
     rdfs:label "city" .
 
-ns:Gealth_area a owl:Class ;
+ns:entity a owl:Class ;
+    rdfs:label "entity" .
+
+ns:has_address a owl:DatatypeProperty ;
+    rdfs:label "has_address" ;
+    rdfs:range xsd:string .
+
+ns:has_phone a owl:DatatypeProperty ;
+    rdfs:label "has_phone" ;
+    rdfs:range xsd:string .
+
+ns:health_area a owl:Class ;
     rdfs:label "health_area" .
 
-ns:Entity a owl:Class ;
-    rdfs:label "entity" .
+ns:managed_by a owl:ObjectProperty ;
+    rdfs:label "managed_by" .
+
+ns:province a owl:Class ;
+    rdfs:label "province" .
+
+gn:locatedIn a owl:ObjectProperty ;
+    rdfs:label "located in" .
+
+gn:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:range xsd:string .
+
+rdfs:label a owl:DatatypeProperty ;
+    rdfs:label "label" ;
+    rdfs:range xsd:string .
+
+geo:lat a owl:DatatypeProperty ;
+    rdfs:label "lat" ;
+    rdfs:range xsd:float .
+
+geo:long a owl:DatatypeProperty ;
+    rdfs:label "long" ;
+    rdfs:range xsd:float .
 

@@ -1,0 +1,47 @@
+#Show all the properties that can be applied to instances of the created knowledge graph, except rdf:type and rdfs:label
+
+SELECT DISTINCT ?pr WHERE{
+?a ?pr ?b.
+FILTER(?pr!=rdf:type).
+FILTER(?pr!=rdfs:label)
+} 
+
+#Show all the addresses strings, with their zipcode, subdistrict and district where they are
+
+SELECT ?address ?zip_code ?subdistrict ?district WHERE {
+	?ac property:complete_address ?address.
+    ?ac property:zipcode ?zip_code.
+	?ac property:belongsToSubdistrict ?sd.
+	?sd property:subdistrict_label ?subdistrict.
+	?sd property:belongsToDistrict ?d.
+	?d property:district_label ?district}
+
+#Show all the associations based on Tetuan District with more than 40 affiliates
+SELECT ?name ?num WHERE{
+?as rdf:type class:Association.
+?as property:num_affiliates ?num.
+?as property:name ?name.
+?as property:hasAnAddress ?a.
+?a property:belongsToSubdistrict ?sd.
+?sd property:belongsToDistrict <https://www.asociadrid.es/resource/District/Tetuan>.
+FILTER(?num>40).    
+} 
+
+#Select all associations affiliated to "Federacion De La Comunidad De Madrid De Asociaciones De Padres Y Madres
+ Del Alumnado 'Francisco Giner De Los Rios'" located north of district "Centro", descendingly ordered by their number of
+affiliates
+
+SELECT DISTINCT ?as_name ?num WHERE{
+{SELECT (MAX (?val) AS ?max_lat) WHERE{
+?as property:belongsToSubdistrict ?sd.
+  ?sd property:belongsToDistrict <https://www.asociadrid.es/resource/District/Centro>.
+?as property:latitude ?val
+}}
+?as property:affiliatedTo <https://www.asociadrid.es/resource/CollaborativeEntity/Federation/Federacion%20De%20La%20Comunidad%20De%20Madrid%20De%20Asociaciones%20De%20Padres%20Y%20Madres%20Del%20Alumnado%20%22francisco%20Giner%20De%20Los%20Rios%22>.
+?as property:num_affiliates ?num.
+?as property:name ?as_name.
+?as property:hasAnAddress ?address.
+?address property:latitude ?latitude.
+FILTER(?latitude>?max_lat).
+  
+} ORDER BY DESC(?num)

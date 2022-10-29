@@ -1,0 +1,44 @@
+@prefix data: <http://www.group22.org/gz/ontology/MadridGreenZones#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ont: <http://www.odkg.group22.org/gz/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://www.group22.org/gz/ontology/MadridGreenZones#> .
+
+
+<http://www.group22.org/gz/resource/GreenZone/GZ1> rdf:type :GreenZone ;
+															:archiveNumber "300000"^^xsd:string ;
+															:blockId "1"^^xsd:string;
+															:hasDisctrict <http://www.group22.org/gz/resource/District/D1> ;
+															:hasType <http://www.group22.org/gz/resource/GreenZone/G1> ;
+															:hasLocation <http://www.group22.org/gz/resource/Location/L1> ;
+															:hasDestination <http://www.group22.org/gz/resource/Destinatation/DES1> ;
+															:hasSolar "5025,42"^^xsd:decimal .
+
+<http://www.group22.org/gz/resource/District/D1> rdf:type :District ;
+														  :hasDistrictCode "1"^^xsd:string ;
+														  :hasDistrictName "CENTRO"^^xsd:string ;
+														  :hasWoodland <http://www.group22.org/gz/resource/GreenZone/WL1> .
+
+<http://www.group22.org/gz/resource/GreenZone/WL1> rdf:type :Woodland ;
+															:woodlandId "D1S13"^^xsd:string ;
+															:blockId "1"^^xsd:string ;
+															:hasSpecies <http://www.group22.org/gz/resource/Specie/S13> ;	
+															:unitsSpecies "2528"^^xsd:integer .
+
+<http://www.group22.org/gz/resource/GreenZone/G1> rdf:type :Type ;
+														   :hasTypeCode "1"^^xsd:string ;
+														   :hasTtypeName "PARQUES Y JARDINES"^^xsd:string .
+
+<http://www.group22.org/gz/resource/Location/L1> rdf:type :Location ;
+														  :hasLocationCode "1"^^xsd:string ;
+														  :hasLocationName "CALLE DE BAILEN NUM 15"^^xsd:string .	
+
+<<http://www.group22.org/gz/resource/Destinatation/DES1> rdf:type :Destination ;
+														  		  :hasDestinationCode "1"^^xsd:string ;
+														  		  :hasDestinationName "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO."^^xsd:string .
+
+<http://www.group22.org/gz/resource/Specie/S13> rdf:typr :Species ;
+														 :hasSpeciesCode "13"^^xsd:string ;
+														 :hasSpeciesName "LIGUSTRUM JAPONICUM"^^xsd:string .

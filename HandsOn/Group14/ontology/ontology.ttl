@@ -1,18 +1,15 @@
 @prefix bs: <http://smartbikes.org/ontology/bikeStation#> .
-@prefix dbo: <https://dbpedia.org/ontology/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix wiki: https://www.wikidata.org/wiki/Q484170#
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix paw: <http://purl.org/pav/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
+@prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 bs: a owl:Ontology ;
     dc:description "Ontology code created by Chowlk" .
-
-### Reused ObjectProperty from another ontology ###
-
- dbo:locatedInArea a owl:FunctionalProperty.
 
 ### Properties ###
 
@@ -53,31 +50,30 @@ bs:paymentTerminalAvailable a owl:DatatypeProperty ;
     rdfs:range xsd:boolean .
 
 ### http://smartbikes.org/ontology/bikeStation#returnOfVeilbPossible
-bs:returnOfVeilbPossible a owl:DatatypeProperty ;
-    rdfs:label "return of veilb possible" ;
+bs:returnOfVelibPossible a owl:DatatypeProperty ;
+    rdfs:label "return of velib possible" ;
     rdfs:domain bs:BikeStation ;
     rdfs:range xsd:boolean .
 
+### http://smartbikes.org/ontology/bikeStation#locatedInArea
+bs:locatedInArea a owl:FunctionalProperty;
+    rdfs:label "commune located in are";
+    rdfs:domain bs:BikeStation;
+
 ### Reused properties from other ontologies ###
 
-dbo:capasity a owl:DatatypeProperty.
-dbo:locatedInArea a owl:FunctionalProperty.
+dbo:capacity a owl:DatatypeProperty.
 paw:lastUpdateOn a owl:DatatypeProperty.
 schema:id a owl:DatatypeProperty.
-schema:latitude a owl:DatatypeProperty.
-schema:longitude a owl:DatatypeProperty.
 schema:name a owl:DatatypeProperty.
 
-
 ### Class ###
-
-### http://smartbikes.org/ontology/bikeStation#BikeStation
 bs:BikeStation a owl:Class ;
     rdfs:label "Bike Station" ;
     rdfs:subClassOf schema:CivicStructure .
 
 ### Reused classes from other ontologies ###
 
-dbo:Municipality a owl:Class
-schema:CivicStructure a owl:Class
-
+wiki:Q484170 a owl:Class
+schema:CivicStructure a owl:Class.
+schema:GeoCoordinate a owl:Class.

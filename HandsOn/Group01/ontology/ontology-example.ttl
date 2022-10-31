@@ -1,0 +1,34 @@
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix ns: <http://www.dialysisComunidadValenciana.es/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Province
+<http://www.dialysisComunidadValenciana.es/resource/province/valencia> a ns:Province;
+  rdfs:label "Valencia" .
+
+# City
+<http://www.dialysisComunidadValenciana.es/resource/city/alfafar> a ns:City;
+  gn:locatedIn <http://www.dialysisComunidadValenciana.es/valencia>;
+  rdfs:label "Alfafar" .
+
+# Health_Area
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_dr_peset> a ns:Health_Area;
+  gn:locatedIn <http://www.dialysisComunidadValenciana.es/resource/city/alfafar>, <http://www.dialysisComunidadValenciana.es/resource/city/valencia>;
+  rdfs:label "H. Dr. Peset" .
+
+# Entity
+<http://www.dialysisComunidadValenciana.es/resource/entity/diaverum> a ns:Entity;
+  rdfs:label "Diaverum" .
+
+# Center
+<http://www.dialysisComunidadValenciana.es/resource/center/clinica_diaverum_alfafar>
+  a ns:Center;
+  ns:hasAddress "C/ Profesora Ana Rojo, 1";
+  ns:hasPhone "961801811";
+  ns:managed_by <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum>;
+  gn:locatedIn <http://www.dialysisComunidadValenciana.es/resource/health_area/h_dr_peset>;
+  rdfs:label "CLÍNICA DIAVERUM ALFAFAR";
+  geo:lat "39.41751001400007"^^xsd:float;
+  geo:long "-0.38313997899996305"^^xsd:float .

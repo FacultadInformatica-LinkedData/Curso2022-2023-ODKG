@@ -1,0 +1,73 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix nsont: <https://www.healthfinder.io/group08/ontology/ontology#> .
+@prefix nsdata: <https://www.healthfinder.io/group08/resource/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.healthfinder.io/group08/ontology> rdf:type owl:Ontology .
+
+geo: a owl:Ontology ;
+    dc:creator "Alejandro Macari",
+        "Andrea Pisani",
+        "Anne-Fleur Kerhousse",
+        "Ariel Ratzonel",
+        "Natalia Bagnoli" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "HealthFinder Ontology" ;
+    owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+geo:latitude a owl:DatatypeProperty ;
+    rdfs:label "latitude" .
+    rdfs:domain nsdata:Address ;
+    rdfs:range xsd:float .
+
+nsont:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:domain nsdata:Address ;
+    rdfs:range xsd:String .
+
+geo:longitude a owl:DatatypeProperty ;
+    rdfs:label "longitude" .
+    rdfs:domain nsdata:Address ;
+    rdfs:range xsd:float .
+
+geo:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:domain nsdata:Clinic,
+        nsdata:Defibrillator ;
+    rdfs:range nsdata:Address .
+
+#################################################################
+#    Data properties
+#################################################################
+
+nsont:specialization a owl:DatatypeProperty ;
+    rdfs:label "specialization" .
+    rdfs:domain nsont:Clinic ;
+    rdfs:range xsd:String .
+
+nsont:typologyOfClinic a owl:DatatypeProperty ;
+    rdfs:label "typology of clinic" .
+    rdfs:domain nsont:Clinic ;
+    rdfs:range xsd:String .
+
+#################################################################
+#    Classes
+#################################################################
+
+nsont:Clinic a owl:Class ;
+    rdfs:label "Clinic" .
+
+nsont:Defibrillator a owl:Class ;
+    rdfs:label "Defibrillator" .
+
+nsont:Address a owl:Class ;
+    rdfs:label "Address" .
+

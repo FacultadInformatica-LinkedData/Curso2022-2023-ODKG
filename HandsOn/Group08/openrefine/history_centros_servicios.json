@@ -1,0 +1,2767 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_codigo_postal",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_codigo_postal using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_vial_nro",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_vial_nro using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "centro_nro_registro",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column centro_nro_registro using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "centro_tipo",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column centro_tipo using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_vial_nro",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_vial_nro using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS0725",
+                "l": "CS0725"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 343314",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 343314"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 343314,
+                "l": "343314"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS0725",
+                "l": "CS0725"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4029657",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4029657"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS1171",
+                "l": "CS1171"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 3898616",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 3898616"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 3898616,
+                "l": "3898616"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS1171",
+                "l": "CS1171"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 40521076",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 40521076"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS1203",
+                "l": "CS1203"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 359249",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 359249"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 359249,
+                "l": "359249"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS1203",
+                "l": "CS1203"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4003535",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4003535"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS12723",
+                "l": "CS12723"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 339329",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 339329"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 339329,
+                "l": "339329"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS12723",
+                "l": "CS12723"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4048354",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4048354"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS12724",
+                "l": "CS12724"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 339330",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 339330"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 339330,
+                "l": "339330"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS12724",
+                "l": "CS12724"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4048358",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4048358"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS14222",
+                "l": "CS14222"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 353464",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 353464"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 353464,
+                "l": "353464"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS14222",
+                "l": "CS14222"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4045371",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4045371"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS3431",
+                "l": "CS3431"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 337602",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 337602"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 337602,
+                "l": "337602"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS3431",
+                "l": "CS3431"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4047228",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4047228"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS4504",
+                "l": "CS4504"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 339334",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 339334"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 339334,
+                "l": "339334"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS4504",
+                "l": "CS4504"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4048355",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4048355"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS3718",
+                "l": "CS3718"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 384668",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 384668"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 384668,
+                "l": "384668"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS3718",
+                "l": "CS3718"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4044285",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4044285"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS6158",
+                "l": "CS6158"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 378158",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 378158"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 378158,
+                "l": "378158"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS6158",
+                "l": "CS6158"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4039393",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4039393"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS7810",
+                "l": "CS7810"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 385924",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 385924"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 385924,
+                "l": "385924"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CS7810",
+                "l": "CS7810"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4044525",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4044525"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SL0224",
+                "l": "SL0224"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 372760",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 372760"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 372760,
+                "l": "372760"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SL0224",
+                "l": "SL0224"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4044862",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4044862"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SS0031",
+                "l": "SS0031"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 368249",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 368249"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 368249,
+                "l": "368249"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SS0031",
+                "l": "SS0031"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4050041",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4050041"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SS00546",
+                "l": "SS00546"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 387732",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 387732"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 387732,
+                "l": "387732"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SS00546",
+                "l": "SS00546"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4033558",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4033558"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SS00560",
+                "l": "SS00560"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 377009",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 377009"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 377009,
+                "l": "377009"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SS00560",
+                "l": "SS00560"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4023035",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4023035"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SS00599",
+                "l": "SS00599"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 371466",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 371466"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 371466,
+                "l": "371466"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SS00599",
+                "l": "SS00599"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4032446",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4032446"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SS0083",
+                "l": "SS0083"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 361620",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 361620"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 361620,
+                "l": "361620"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SS0083",
+                "l": "SS0083"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4046366",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4046366"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SS01124",
+                "l": "SS01124"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 362219",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 362219"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 362219,
+                "l": "362219"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SS01124",
+                "l": "SS01124"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4054212",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4054212"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SS01291",
+                "l": "SS01291"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 388908",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 388908"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 388908,
+                "l": "388908"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SS01291",
+                "l": "SS01291"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4032740",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4032740"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SS01519",
+                "l": "SS01519"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 375129",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 375129"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 375129,
+                "l": "375129"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SS01519",
+                "l": "SS01519"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4029644",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4029644"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SS01653",
+                "l": "SS01653"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 360979",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 360979"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 360979,
+                "l": "360979"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "centro_nro_registro",
+          "expression": "value",
+          "columnName": "centro_nro_registro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SS01653",
+                "l": "SS01653"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4002489",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4002489"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -109,
+                "l": "-109"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return 358736",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return 358736"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_y",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_y",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": -208,
+                "l": "-208"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return 4045347",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return 4045347"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "jython:return \"-\"+value[0]+\".\"+value[1:]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression jython:return \"-\"+value[0]+\".\"+value[1:]"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "jython:return value[0:2]+\".\"+value[2:]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression jython:return value[0:2]+\".\"+value[2:]"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression value.toNumber()"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "localizacion_coordenada_x",
+          "expression": "value",
+          "columnName": "localizacion_coordenada_x",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion_vial_tipo",
+    "expression": "join ([coalesce(cells['direccion_vial_tipo'].value,''),coalesce(cells['direccion_vial_nombre'].value,''),coalesce(cells['direccion_vial_nro'].value,'')],' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion_vial_tipo using expression join ([coalesce(cells['direccion_vial_tipo'].value,''),coalesce(cells['direccion_vial_nombre'].value,''),coalesce(cells['direccion_vial_nro'].value,'')],' ')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "direccion_vial_nombre",
+    "description": "Remove column direccion_vial_nombre"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "direccion_vial_nro",
+    "description": "Remove column direccion_vial_nro"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "direccion_vial_tipo",
+    "newColumnName": "direccion",
+    "description": "Rename column direccion_vial_tipo to direccion"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion",
+    "expression": "join ([coalesce(cells['direccion'].value,''),coalesce(cells['direccion_informacon_adicional'].value,''),coalesce(cells['direccion_codigo_postal'].value,'')],', ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion using expression join ([coalesce(cells['direccion'].value,''),coalesce(cells['direccion_informacon_adicional'].value,''),coalesce(cells['direccion_codigo_postal'].value,'')],', ')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "direccion_informacon_adicional",
+    "description": "Remove column direccion_informacon_adicional"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "direccion_codigo_postal",
+    "description": "Remove column direccion_codigo_postal"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion",
+    "expression": "join ([coalesce(cells['direccion'].value,''),coalesce(cells['municipio_nombre'].value,'')],', ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion using expression join ([coalesce(cells['direccion'].value,''),coalesce(cells['municipio_nombre'].value,'')],', ')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "municipio_nombre",
+    "description": "Remove column municipio_nombre"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion",
+    "expression": "grel:value.replace(', , ',', ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion using expression grel:value.replace(', , ',', ')"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "centro_nro_registro",
+    "expression": "grel:\"00000\"[0,5-row.index.length()]+row.index",
+    "onError": "set-to-blank",
+    "newColumnName": "id",
+    "columnInsertIndex": 1,
+    "description": "Create column id at index 1 based on column centro_nro_registro using expression grel:\"00000\"[0,5-row.index.length()]+row.index"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "id",
+      "centro_nro_registro",
+      "centro_tipo",
+      "dependecia_funcional",
+      "dependecia_patrimonial",
+      "oferta_asistecial",
+      "direccion",
+      "localizacion_coordenada_x",
+      "localizacion_coordenada_y"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "id",
+    "expression": "grel:md5(value)",
+    "onError": "set-to-blank",
+    "newColumnName": "id2",
+    "columnInsertIndex": 1,
+    "description": "Create column id2 at index 1 based on column id using expression grel:md5(value)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "id",
+    "description": "Remove column id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "id2",
+    "newColumnName": "id",
+    "description": "Rename column id2 to id"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "id",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column id using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "centro_nro_registro",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column centro_nro_registro using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "centro_tipo",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column centro_tipo using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "dependecia_funcional",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column dependecia_funcional using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "dependecia_patrimonial",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column dependecia_patrimonial using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "oferta_asistecial",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column oferta_asistecial using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "direccion",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column direccion using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_x",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_x using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion_coordenada_y",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column localizacion_coordenada_y using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "dependecia_funcional",
+    "expression": "join ([coalesce(cells['dependecia_funcional'].value,''),coalesce(cells['dependecia_patrimonial'].value,'')],', ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column dependecia_funcional using expression join ([coalesce(cells['dependecia_funcional'].value,''),coalesce(cells['dependecia_patrimonial'].value,'')],', ')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "dependecia_patrimonial",
+    "description": "Remove column dependecia_patrimonial"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "dependecia_funcional",
+    "newColumnName": "dependecia",
+    "description": "Rename column dependecia_funcional to dependecia"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "centro_nro_registro",
+    "description": "Remove column centro_nro_registro"
+  },
+  [
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "id",
+    "newColumnName": "Clinic",
+    "description": "Rename column id to Clinic"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "centro_tipo",
+    "newColumnName": "typologyOfClinic",
+    "description": "Rename column centro_tipo to typologyOfClinic"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "direccion",
+    "newColumnName": "Address",
+    "description": "Rename column direccion to Address"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "localizacion_coordenada_x",
+    "newColumnName": "longitude",
+    "description": "Rename column localizacion_coordenada_x to longitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "localizacion_coordenada_y",
+    "newColumnName": "latitude",
+    "description": "Rename column localizacion_coordenada_y to latitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "oferta_asistecial",
+    "newColumnName": "specialization",
+    "description": "Rename column oferta_asistecial to specialization"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Address",
+    "newColumnName": "addressName",
+    "description": "Rename column Address to addressName"
+  }
+]
+]

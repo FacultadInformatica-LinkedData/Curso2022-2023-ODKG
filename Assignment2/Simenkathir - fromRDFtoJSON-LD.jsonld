@@ -1,0 +1,51 @@
+{
+    "@context" :{
+        "": "<http://xmlns.com/foaf/0.1/>",
+        "xsd": ": <http://www.w3.org/2001/XMLSchema#>"
+    },
+
+    "@id": "Graph",
+    "@type": "Graph",
+    "Graph" :[
+        {
+            "@id": ":Class01",
+            ":includes": { [
+                {"@id": ":Sensor029"},
+                {"@id": "Computer101"}
+            ]
+        }
+        },
+        {
+            "@id": "Sensor029",
+            ":hasMeasurement": ":Measurement8401"
+
+        },
+
+        {
+            "@id": ":Measurement8401",
+            ":hasTemperature": {
+                "@value": "29",
+                "@type": "xsd:integer"
+            },
+            ":atTime" {
+                "@value": "2010-06-12T12:00:12",
+                "@type": "xsd:dateTim"
+            }
+
+
+        },
+
+        {
+            "@id": "Compute101",
+            ":hasOwner": ":User10A"
+        },
+
+        {
+            "@id": "User10A",
+            ":hasName": "Pedro"
+        }
+
+    ]
+    
+    
+}

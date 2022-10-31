@@ -1,0 +1,131 @@
+@base <https://www.asociadrid.es> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix property: <https://www.asociadrid.es/ontology/property#> .
+@prefix class: <https://www.asociadrid.es/ontology/class#> .
+
+
+# Datatype Properties
+
+
+property:name rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:CollaborativeEntitiy ;
+    rdfs:range xsd:string .
+
+property:cif rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:CollaborativeEntity ;
+    rdfs:range xsd:string .
+
+property:area rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:CollaborativeEntity ;
+    rdfs:range xsd:string .
+
+property:category rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:CollaborativeEntity ;
+    rdfs:range xsd:string .
+
+property:num_affiliates rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:CollaborativeEntity ;
+    rdfs:range xsd:integer .
+
+property:register_date rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:CollaborativeEntity ;
+    rdfs:range xsd:date .
+
+property:asoc_affiliated rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:Federation ;
+    rdfs:range xsd:integer .
+    
+property:complete_address rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:Address ;
+    rdfs:range xsd:string .
+
+property:latitude rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:Address ;
+    rdfs:range xsd:float .
+
+property:longitude rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:Address ;
+    rdfs:range xsd:float .
+
+property:zipcode rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:Address ;
+    rdfs:range xsd:integer .
+
+property:subdistrict_label rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:Subdistrict ;
+    rdfs:range xsd:string .
+
+property:district_label rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:District ;
+    rdfs:range xsd:string .
+
+
+# Object Properties
+
+property:belongsToSubdistrict rdf:type owl:ObjectProperty ;
+    rdfs:domain class:Address;
+    rdfs:range class:Subdistrict .
+
+property:belongsToDistrict rdf:type owl:ObjectProperty ;
+    rdfs:domain class:Subdistrict;
+    rdfs:range class:District .
+
+
+property:hasAPhone rdf:type owl:ObjectProperty ;
+    rdfs:domain class:CollaborativeEntity ;
+    rdfs:range class:Phone .
+
+property:hasAnAdress rdf:type owl:ObjectProperty ;
+    rdfs:domain class:CollaborativeEntity ;
+    rdfs:range class:Address .
+
+property:hasAnEmail rdf:type owl:ObjectProperty ;
+    rdfs:domain class:CollaborativeEntity ;
+    rdfs:range class:Email .
+
+property:hasAWebsite rdf:type owl:ObjectProperty ;
+    rdfs:domain class:CollaborativeEntity ;
+    rdfs:range class:Website .
+
+property:affiliatedTo rdf:type owl:ObjectProperty ;
+    rdfs:domain class:Association ;
+    rdfs:range class:Federation .
+
+
+# Classes
+
+class: a owl:Ontology ;
+    dc:description "Ontology code created by Chowlk" .
+
+class:CollaborativeEntity rdf:type owl:Class.
+
+class:Association rdf:type owl:Class;
+    rdfs:subClassOf class:CollaborativeEntitiy .
+
+class:Collective rdf:type owl:Class ;
+    rdfs:subClassOf class:CollaborativeEntity .
+
+class:Federation rdf:type owl:Class ;
+    rdfs:subClassOf class:CollaborativeEntity .
+
+class:Foundation rdf:type owl:Class ;
+    rdfs:subClassOf class:CollaborativeEntity .
+
+class:District rdf:type owl:Class .
+
+class:Subdistrict rdf:type owl:Class .
+
+class:Email rdf:type owl:Class ;
+    rdfs:label "Email" .
+
+class:Phone rdf:type owl:Class ;
+        rdfs:label "Phone" .
+
+class:Website rdf:type owl:Class ;
+        rdfs:label "Website" .
+
+class:Address rdf:type owl:Class.

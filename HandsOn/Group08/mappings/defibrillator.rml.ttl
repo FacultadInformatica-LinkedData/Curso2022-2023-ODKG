@@ -1,0 +1,122 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix map: <http://mapping.example.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix nsont: <https://www.healthfinder.io/group08/ontology/ontology#> .
+@prefix nsdata: <https://www.healthfinder.io/group08/resource/> .
+
+map:map_addressmap_000 rml:logicalSource map:source_001 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "addressmap" ;
+	rr:predicateObjectMap map:pom_003, map:pom_004, map:pom_005, map:pom_006 ;
+	rr:subjectMap map:s_001 .
+
+map:map_defribillatormap_000 rml:logicalSource map:source_000 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "defribillatormap" ;
+	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002 ;
+	rr:subjectMap map:s_000 .
+
+map:om_000 rdf:type rr:ObjectMap ;
+	rr:constant "https://www.healthfinder.io/group08/ontology/ontology#Defibrillator" ;
+	rr:termType rr:IRI .
+
+map:om_001 rml:reference "Defibrillator" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_002 rdf:type rr:ObjectMap ;
+	rr:parentTriplesMap map:map_addressmap_000 .
+
+map:om_003 rdf:type rr:ObjectMap ;
+	rr:constant "https://www.healthfinder.io/group08/ontology/ontology#Address" ;
+	rr:termType rr:IRI .
+
+map:om_004 rml:reference "addressName" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_005 rml:reference "longitude" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:float ;
+	rr:termType rr:Literal .
+
+map:om_006 rml:reference "latitude" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:float ;
+	rr:termType rr:Literal .
+
+map:pm_000 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_001 rdf:type rr:PredicateMap ;
+	rr:constant rdf:label .
+
+map:pm_002 rdf:type rr:PredicateMap ;
+	rr:constant geo:location .
+
+map:pm_003 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_004 rdf:type rr:PredicateMap ;
+	rr:constant nsont:location .
+
+map:pm_005 rdf:type rr:PredicateMap ;
+	rr:constant geo:longitude .
+
+map:pm_006 rdf:type rr:PredicateMap ;
+	rr:constant geo:latitude .
+
+map:pom_000 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_000 ;
+	rr:predicateMap map:pm_000 .
+
+map:pom_001 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_001 ;
+	rr:predicateMap map:pm_001 .
+
+map:pom_002 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_002 ;
+	rr:predicateMap map:pm_002 .
+
+map:pom_003 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_003 ;
+	rr:predicateMap map:pm_003 .
+
+map:pom_004 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_004 ;
+	rr:predicateMap map:pm_004 .
+
+map:pom_005 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_005 ;
+	rr:predicateMap map:pm_005 .
+
+map:pom_006 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_006 ;
+	rr:predicateMap map:pm_006 .
+
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_addressmap_000, map:map_defribillatormap_000 ;
+	rdf:type <http://rdfs.org/ns/void#Dataset> .
+
+map:s_000 rdf:type rr:SubjectMap ;
+	rr:template "https://www.healthfinder.io/group08/resource/Defibrillator/{Defibrillator}" .
+
+map:s_001 rdf:type rr:SubjectMap ;
+	rr:template "https://www.healthfinder.io/group08/resource/Address/{addressName}-{latitude}-{longitude}" .
+
+map:source_000 rml:referenceFormulation ql:CSV ;
+	rml:source "desfibriladores-externos-fuera-ambito-sanitario-update.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_001 rml:referenceFormulation ql:CSV ;
+	rml:source "desfibriladores-externos-fuera-ambito-sanitario-update.csv" ;
+	rdf:type rml:LogicalSource .

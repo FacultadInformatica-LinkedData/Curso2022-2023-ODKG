@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dataset Licenses Analysis</title>
+  <!--Descriptive Attributes-->
+  <meta
+  name="description"
+  content="An HTML document that includes: 
+  - The analyses performed over the data source
+  - The licensing of the data source and the potential license
+  - The resource naming strategy defined"
+  />
+  <meta name="keywords" content="DataSet, Licenses, HTML" />
+  <meta
+  name="author"
+  content="co-authored by luis Ortiz, Adrián Girón, Ignacio Francisco Blasco, Andrés González, Jose Ignacio Álvarez de Miranda"
+  />
+  <!--Technical Attributes-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <div class="container" id="listOfLicDiv">
+    <h2>Analysis of dataset:</h2>
+    <ul id="AnalysisList">
+      <li>Analyses performed over the data source:</li>
+      <div class="responseContainer">
+        <table class="tg">
+          <thead>
+            <tr>
+              <th class="tg-zlqz">Column</th>
+              <th class="tg-uked">Type</th>
+              <th class="tg-zlqz">Comments / Range (rounded)</th>
+              <th class="tg-6e8n">Problems</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-6e8n">PK</td>
+              <td class="tg-5w3z">Decimal</td>
+              <td class="tg-5w3z">[5075-11167184], Unique values</td>
+              <td class="tg-cjtp"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">NOMBRE</td>
+              <td class="tg-c4ww">String</td>
+              <td class="tg-c4ww">Unique values</td>
+              <td class="tg-61xu"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">DESCRIPCION-ENTIDAD</td>
+              <td class="tg-5w3z">float</td>
+              <td class="tg-5w3z">Empty values, NOT Unique</td>
+              <td class="tg-cjtp">practically empty</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">HORARIO</td>
+              <td class="tg-c4ww">float</td>
+              <td class="tg-c4ww">Empty values, NOT Unique</td>
+              <td class="tg-61xu">practically empty</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">EQUIPAMIENTO</td>
+              <td class="tg-5w3z">String</td>
+              <td class="tg-5w3z">Empty values, NOT Unique</td>
+              <td class="tg-cjtp">List of items</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">TRANSPORTE</td>
+              <td class="tg-c4ww">String</td>
+              <td class="tg-c4ww">Empty values, NOT Unique</td>
+              <td class="tg-61xu">List of list of items</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">DESCRIPCION</td>
+              <td class="tg-5w3z">String</td>
+              <td class="tg-5w3z">NOT Unique</td>
+              <td class="tg-cjtp"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">ACCESIBILIDAD</td>
+              <td class="tg-c4ww">Decimal</td>
+              <td class="tg-c4ww">[0-2], NOT Unique</td>
+              <td class="tg-61xu">Categorical</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">CONTENT-URL</td>
+              <td class="tg-5w3z">String</td>
+              <td class="tg-5w3z">Unique values</td>
+              <td class="tg-cjtp"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">NOMBRE-VIA</td>
+              <td class="tg-c4ww">String</td>
+              <td class="tg-c4ww">NOT Unique</td>
+              <td class="tg-61xu"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">CLASE-VIAL</td>
+              <td class="tg-5w3z">String</td>
+              <td class="tg-5w3z">NOT Unique</td>
+              <td class="tg-cjtp"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">TIPO-NUM</td>
+              <td class="tg-c4ww">String</td>
+              <td class="tg-c4ww">Empty values, NOT Unique</td>
+              <td class="tg-61xu">Categorical</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">NUM</td>
+              <td class="tg-5w3z">Decimal</td>
+              <td class="tg-5w3z">[1-332], NOT Unique</td>
+              <td class="tg-cjtp"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">PLANTA</td>
+              <td class="tg-c4ww">float64</td>
+              <td class="tg-c4ww">Empty, Unique values</td>
+              <td class="tg-61xu"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">PUERTA</td>
+              <td class="tg-5w3z">float64</td>
+              <td class="tg-5w3z">Empty, Unique values</td>
+              <td class="tg-cjtp"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">ESCALERAS</td>
+              <td class="tg-c4ww">float64</td>
+              <td class="tg-c4ww">Empty, Unique values</td>
+              <td class="tg-61xu"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">ORIENTACION</td>
+              <td class="tg-5w3z">float64</td>
+              <td class="tg-5w3z">Empty, Unique values</td>
+              <td class="tg-cjtp"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">LOCALIDAD</td>
+              <td class="tg-c4ww">String</td>
+              <td class="tg-c4ww">One value</td>
+              <td class="tg-61xu"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">PROVINCIA</td>
+              <td class="tg-5w3z">String</td>
+              <td class="tg-5w3z">One value</td>
+              <td class="tg-cjtp"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">CODIGO-POSTAL</td>
+              <td class="tg-c4ww">Decimal</td>
+              <td class="tg-c4ww">[28002-28055], NOT Unique</td>
+              <td class="tg-61xu"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">BARRIO</td>
+              <td class="tg-5w3z">String</td>
+              <td class="tg-5w3z">NOT Unique</td>
+              <td class="tg-cjtp"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">DISTRITO</td>
+              <td class="tg-c4ww">String</td>
+              <td class="tg-c4ww">NOT Unique</td>
+              <td class="tg-61xu"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">COORDENADA-X</td>
+              <td class="tg-5w3z">Decimal</td>
+              <td class="tg-5w3z">[433385-450528], NOT Unique</td>
+              <td class="tg-cjtp"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">COORDENADA-Y</td>
+              <td class="tg-c4ww">Decimal</td>
+              <td class="tg-c4ww">[4465897-4488102], NOT Unique</td>
+              <td class="tg-61xu"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">LATITUD</td>
+              <td class="tg-5w3z">String</td>
+              <td class="tg-5w3z">NOT Unique</td>
+              <td class="tg-cjtp"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">LONGITUD</td>
+              <td class="tg-c4ww">String</td>
+              <td class="tg-c4ww">NOT Unique</td>
+              <td class="tg-61xu"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">TELEFONO</td>
+              <td class="tg-5w3z">String</td>
+              <td class="tg-5w3z">Unique values</td>
+              <td class="tg-cjtp">1 or more contacts (Fax + other phone)</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">FAX</td>
+              <td class="tg-c4ww">String</td>
+              <td class="tg-c4ww">Empty values, NOT Unique</td>
+              <td class="tg-61xu"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">EMAIL</td>
+              <td class="tg-5w3z">float</td>
+              <td class="tg-5w3z">Empty values, NOT Unique</td>
+              <td class="tg-cjtp"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">TIPO</td>
+              <td class="tg-c4ww">String</td>
+              <td class="tg-c4ww">One value</td>
+              <td class="tg-61xu"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">TITULARIDAD</td>
+              <td class="tg-5w3z">String</td>
+              <td class="tg-5w3z">NOT Unique</td>
+              <td class="tg-cjtp"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">JORNADA
+              (días de apertura)</td>
+              <td class="tg-c4ww">String</td>
+              <td class="tg-c4ww">NOT Unique</td>
+              <td class="tg-61xu"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">HORARIO USO EDUCATIVO</td>
+              <td class="tg-5w3z">String</td>
+              <td class="tg-5w3z">NOT Unique</td>
+              <td class="tg-cjtp">timetable and textual annotations</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">USOS EXTRAESCOLARES CENTRO</td>
+              <td class="tg-c4ww">String</td>
+              <td class="tg-c4ww">Empty values, NOT Unique</td>
+              <td class="tg-61xu">timetable and textual annotations</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">OTROS USOS </td>
+              <td class="tg-5w3z">String</td>
+              <td class="tg-5w3z">Empty values, NOT Unique</td>
+              <td class="tg-cjtp">list of activities</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">CATEGORÍA PATIO</td>
+              <td class="tg-c4ww">String</td>
+              <td class="tg-c4ww">NOT Unique</td>
+              <td class="tg-61xu">categorical value</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">Nº PATIOS</td>
+              <td class="tg-5w3z">String</td>
+              <td class="tg-5w3z">Empty values, NOT Unique</td>
+              <td class="tg-cjtp">Undefined values '-', '?'</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">ACCESIBILIDAD2</td>
+              <td class="tg-c4ww">String</td>
+              <td class="tg-c4ww">NOT Unique</td>
+              <td class="tg-61xu">Boolean + textual annotation, Undefined values '-'</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">ACCESO DIRECTO
+              DESDE LA CALLE</td>
+              <td class="tg-5w3z">String</td>
+              <td class="tg-5w3z">NOT Unique</td>
+              <td class="tg-cjtp">Boolean + textual annotation</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">OTROS ACCESOS</td>
+              <td class="tg-c4ww">String</td>
+              <td class="tg-c4ww">Empty values, NOT Unique</td>
+              <td class="tg-61xu">Boolean or textual annotation</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">ASEOS ACCESIBLES DESDE PATIO</td>
+              <td class="tg-5w3z">String</td>
+              <td class="tg-5w3z">NOT Unique</td>
+              <td class="tg-cjtp">Boolean + textual annotation, Undefined values '-'</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">SOMBRA</td>
+              <td class="tg-c4ww">String</td>
+              <td class="tg-c4ww">NOT Unique</td>
+              <td class="tg-61xu">Boolean + textual annotation, Undefined values '-'</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">MOBILIARIO</td>
+              <td class="tg-5w3z">String</td>
+              <td class="tg-5w3z">NOT Unique</td>
+              <td class="tg-cjtp">List</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">SERVICIOS
+              Alumbrado, fuentes</td>
+              <td class="tg-c4ww">String</td>
+              <td class="tg-c4ww">NOT Unique</td>
+              <td class="tg-61xu">Boolean or textual annotation, Undefined values '-'</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">SUPERFICIE  PATIO (m²)</td>
+              <td class="tg-5w3z">String</td>
+              <td class="tg-5w3z">NOT Unique</td>
+              <td class="tg-cjtp">summation "123 + 456"</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">ESTADO DE CONSERVACIÓN DEL PATIO </td>
+              <td class="tg-c4ww">String</td>
+              <td class="tg-c4ww">Empty values, NOT Unique</td>
+              <td class="tg-61xu"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">PROXIMIDAD ZONAS VERDES</td>
+              <td class="tg-5w3z">float</td>
+              <td class="tg-5w3z">Empty values, NOT Unique</td>
+              <td class="tg-cjtp">Boolean or textual annotation</td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">PROXIMIDAD EQUIPAMIENTOS</td>
+              <td class="tg-c4ww">float</td>
+              <td class="tg-c4ww">Empty values, NOT Unique</td>
+              <td class="tg-61xu"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">OBSERVACIONES</td>
+              <td class="tg-5w3z">float</td>
+              <td class="tg-5w3z">Empty values, NOT Unique</td>
+              <td class="tg-cjtp"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">TRANSPORTE_BUS</td>
+              <td class="tg-c4ww">String</td>
+              <td class="tg-c4ww">Empty values, NOT Unique</td>
+              <td class="tg-61xu"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">TRANSPORTE_RENFE</td>
+              <td class="tg-5w3z">float</td>
+              <td class="tg-5w3z">Empty values, NOT Unique</td>
+              <td class="tg-cjtp"></td>
+            </tr>
+            <tr>
+              <td class="tg-6e8n">TRANSPORTE_METRO</td>
+              <td class="tg-c4ww">float</td>
+              <td class="tg-c4ww">Empty values, NOT Unique</td>
+              <td class="tg-61xu"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <li>Licensing of the data source and the potential license</li>
+      <div class="responseContainer">
+        <p><!--Who is the publisher and the rightsholder?-->
+          The responsible for the data set is the 
+        Directorate General of Territorial Coordination and Deconcentration, belonging to the Madrid City Council.</p>
+        <p><!--What is the license?-->
+          The license is CC by, which allows commercial and non-commercial use and reuse of the information under the following conditions.
+        </p>
+        <p><!--Which will be the license to be used for the generated dataset?-->
+          The license to be used for the generated dataset will be inherited from the original license of the dataset.
+          <ol>
+            <li>
+              It is forbidden to distort the meaning of the information.
+            </li>
+            <li>
+              The source of the documents to be reused must be cited. This citation may be made as follows: "Origin of the data: Community of Madrid and Madrid City Council.
+            </li>
+            <li>
+              The date of the last update of the documents subject to reuse must be mentioned, as long as it was included in the original document.
+            </li>
+            <li>
+              It may not be indicated, insinuated or suggested that the Community of Madrid and the Madrid City Council participate, sponsor or support the reuse that is carried out with the information.
+            </li>
+            <li>
+              Metadata on the date of update and applicable reuse conditions included, if any, in the document made available for reuse must be retained, not altered or deleted.
+            </li>
+            <li>
+              In case of information anonymized for personal data protection or other reasons, it is expressly prohibited to re-identify individuals from this data and other possible past, current or future data and information sources.
+            </li>
+          </ol>
+        </p>
+      </div>
+      <li>Resource naming strategy defined:</li>
+      <div class="responseContainer">
+        <table class="default">
+          <tbody style="background: rgba(128, 255, 0, 0.3); border: 1px solid rgba(100, 200, 0, 0.3);">
+
+            <tr>
+              <td rowspan="3" ALIGN=center>
+                <h2>Domain</h2>
+                <p>http://smartcity.linkeddata.es/</p>
+              </td>
+              <td rowspan="3"  ALIGN=center>
+                <h2>Path</h2>
+                <p>schoolfinder/</p>
+              </td>
+              <td rowspan="2" ALIGN=center>
+                <h2>Ontology</h2>
+                <p>ontology/</p>
+              </td>
+              <td rowspan="1" ALIGN=center>
+                <h2>Class</h2>
+                <p>[ontologyName]#[className]/</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td rowspan="1" ALIGN=center>
+                <h2>Property</h2>
+                <p>[ontologyName]#[propertyName]</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td rowspan="1" ALIGN=center>
+                <h2>Data</h2>
+                <p>resource/</p>
+              </td>
+              <td rowspan="1" ALIGN=center>
+                <h2>Individual</h2>
+                <p>[className]/[identifier]</p>
+              </td>
+            </tr>
+
+          </tbody>
+
+        </table>
+      </div>
+    </ul>
+  </div>
+</body>
+</html>
+<style>
+  body {
+    background-color: rgba(30, 203, 246, 0.192);
+    padding: 1rem 2rem 1rem 2rem;
+  }
+  h2 {
+    text-decoration: underline;
+  }
+  .tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  .tg td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+  .tg th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+  .tg .tg-cjtp {
+    background-color: #ecf4ff;
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top;
+  }
+  .tg .tg-c4ww {
+    background-color: #cbcefb;
+    border-color: inherit;
+    text-align: center;
+    vertical-align: top;
+  }
+  .tg .tg-zlqz {
+    background-color: #c0c0c0;
+    border-color: inherit;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+  }
+  .tg .tg-5w3z {
+    background-color: #ecf4ff;
+    border-color: inherit;
+    text-align: center;
+    vertical-align: top;
+  }
+  .tg .tg-uked {
+    background-color: #c0c0c0;
+    border-color: inherit;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+  }
+  .tg .tg-6e8n {
+    background-color: #c0c0c0;
+    border-color: inherit;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: top;
+  }
+  .tg .tg-61xu {
+    background-color: #cbcefb;
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  table {
+    margin: 1rem;
+  }
+  .li {
+    text-decoration: underline;
+  }
+</style>

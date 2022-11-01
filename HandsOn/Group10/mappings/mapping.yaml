@@ -14,34 +14,37 @@ refixes:
 mappings:
   triplesmap1:
     sources:
-      - [Barrio.csv~csv]
+      - [content/drive/MyDrive/OpenData/Barrio-with-links.csv~csv]
     s: $(Identificador)
     po:
       - [a, vocab:Neighborhood]
       - [rdfs:label, $(Nombre)]
       - [vocab:hasNeighborhoodNumber, $(Codigo)]
       - [vocab:hasDistrict, $(distrito)]
+      - [owl:sameAs, $(barrio_wikidata)~iri]
 
   triplesmap2:
     sources:
-      - [Street.csv~csv]
+      - [content/drive/MyDrive/OpenData/Street-with-links.csv~csv]
     s: $(Identificador)
     po:
       - [a, vocab:street]
       - [rdfs:label, $(nombre)]
+      - [owl:sameAs, $(wikidata_street)~iri]
 
   triplesmap3:
     sources:
-      - [Districts.csv~csv]
+      - [content/drive/MyDrive/OpenData/Districts-with-links.csv~csv]
     s: $(Identificador)
     po:
       - [a, vocab:District]
       - [rdfs:label, $(Distrito)]
       - [vocab:hasDistrictNumber, $(Codigo)]
+      - [owl:sameAs, $(distrito_wikidata)~iri]
 
   triplesmap4:
     sources:
-      - [Locations.csv~csv]
+      - [content/drive/MyDrive/OpenData/Locations.csv~csv]
     s: $(identificador)
     po:
       - [a, vocab:Location]
@@ -50,7 +53,7 @@ mappings:
 
   triplesmap5:
     sources:
-      - [calles.SER-2022_updated.csv~csv]
+      - [content/drive/MyDrive/OpenData/calles.SER-2022_updated.csv~csv]
     s: $(identificador)
     po:
       - [a, vocab:ParkingArea]
@@ -62,7 +65,7 @@ mappings:
       - [vocab:parkingSpaces, $(num_plazas)]
   triplesmap6:
     sources:
-      - [parquimetros_updated.csv~csv]
+      - [content/drive/MyDrive/OpenData/parquimetros_updated.csv~csv]
     s: $(identificador)
     po:
       - [a, vocab:ParkingMeter]
@@ -74,7 +77,7 @@ mappings:
       - [vocab:hasLocation, $(location)]
   triplesmap7:
     sources:
-      - [tickets-parquimetro-2022-subset_updated.csv~csv]
+      - [content/drive/MyDrive/OpenData/tickets-parquimetro-2022-subset_updated.csv~csv]
     s: $(identificador)
     po:
       - [a, vocab:ParkingMeterTicket]

@@ -1,8 +1,98 @@
 [
   {
-    "op": "core/column-removal",
-    "columnName": "Code INSEE communes équipées",
-    "description": "Remove column Code INSEE communes équipées"
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Actualisation de la donnée",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Actualisation de la donnée using expression value.toDate()"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "timerange",
+          "name": "Actualisation de la donnée",
+          "expression": "value",
+          "columnName": "Actualisation de la donnée",
+          "from": 1520582013000,
+          "to": 1662327123000,
+          "selectTime": true,
+          "selectNonTime": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Actualisation de la donnée",
+    "description": "Blank down cells in column Actualisation de la donnée"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Station en fonctionnement",
+    "expression": "grel:if(value==\"OUI\",true,false)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Station en fonctionnement using expression grel:if(value==\"OUI\",true,false)"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Capacité de la station",
+          "expression": "value",
+          "columnName": "Capacité de la station",
+          "from": 0,
+          "to": 4,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Borne de paiement disponible",
+    "expression": "grel:if(value==\"OUI\",true,false)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Borne de paiement disponible using expression grel:if(value==\"OUI\",true,false)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Retour vélib possible",
+    "expression": "grel:if(value==\"OUI\",true,false)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Retour vélib possible using expression grel:if(value==\"OUI\",true,false)"
   },
   {
     "op": "core/column-split",
@@ -20,417 +110,8 @@
     "description": "Split column Coordonnées géographiques by separator"
   },
   {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "Borne de paiement disponible",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [
-          "OUI"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "True"
-      }
-    ],
-    "description": "Mass edit cells in column Borne de paiement disponible"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [
-        {
-          "type": "list",
-          "name": "Borne de paiement disponible",
-          "expression": "value",
-          "columnName": "Borne de paiement disponible",
-          "invert": false,
-          "omitBlank": false,
-          "omitError": false,
-          "selection": [
-            {
-              "v": {
-                "v": "NON",
-                "l": "NON"
-              }
-            }
-          ],
-          "selectBlank": false,
-          "selectError": false
-        }
-      ],
-      "mode": "row-based"
-    },
-    "columnName": "Borne de paiement disponible",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [
-          "NON"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": false
-      }
-    ],
-    "description": "Mass edit cells in column Borne de paiement disponible"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [
-        {
-          "type": "list",
-          "name": "Borne de paiement disponible",
-          "expression": "value",
-          "columnName": "Borne de paiement disponible",
-          "invert": false,
-          "omitBlank": false,
-          "omitError": false,
-          "selection": [
-            {
-              "v": {
-                "v": false,
-                "l": "false"
-              }
-            }
-          ],
-          "selectBlank": false,
-          "selectError": false
-        }
-      ],
-      "mode": "row-based"
-    },
-    "columnName": "Borne de paiement disponible",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [
-          "false"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": false
-      }
-    ],
-    "description": "Mass edit cells in column Borne de paiement disponible"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [
-        {
-          "type": "list",
-          "name": "Borne de paiement disponible",
-          "expression": "value",
-          "columnName": "Borne de paiement disponible",
-          "invert": false,
-          "omitBlank": false,
-          "omitError": false,
-          "selection": [
-            {
-              "v": {
-                "v": "True",
-                "l": "True"
-              }
-            }
-          ],
-          "selectBlank": false,
-          "selectError": false
-        }
-      ],
-      "mode": "row-based"
-    },
-    "columnName": "Borne de paiement disponible",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [
-          "True"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": true
-      }
-    ],
-    "description": "Mass edit cells in column Borne de paiement disponible"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [
-        {
-          "type": "list",
-          "name": "Borne de paiement disponible",
-          "expression": "value",
-          "columnName": "Borne de paiement disponible",
-          "invert": false,
-          "omitBlank": false,
-          "omitError": false,
-          "selection": [
-            {
-              "v": {
-                "v": true,
-                "l": "true"
-              }
-            }
-          ],
-          "selectBlank": false,
-          "selectError": false
-        }
-      ],
-      "mode": "row-based"
-    },
-    "columnName": "Retour vélib possible",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [
-          "OUI"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": true
-      }
-    ],
-    "description": "Mass edit cells in column Retour vélib possible"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [
-        {
-          "type": "list",
-          "name": "Borne de paiement disponible",
-          "expression": "value",
-          "columnName": "Borne de paiement disponible",
-          "invert": false,
-          "omitBlank": false,
-          "omitError": false,
-          "selection": [
-            {
-              "v": {
-                "v": false,
-                "l": "false"
-              }
-            }
-          ],
-          "selectBlank": false,
-          "selectError": false
-        },
-        {
-          "type": "list",
-          "name": "Retour vélib possible",
-          "expression": "value",
-          "columnName": "Retour vélib possible",
-          "invert": false,
-          "omitBlank": false,
-          "omitError": false,
-          "selection": [
-            {
-              "v": {
-                "v": "OUI",
-                "l": "OUI"
-              }
-            }
-          ],
-          "selectBlank": false,
-          "selectError": false
-        }
-      ],
-      "mode": "row-based"
-    },
-    "columnName": "Retour vélib possible",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [
-          "OUI"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": true
-      }
-    ],
-    "description": "Mass edit cells in column Retour vélib possible"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [
-        {
-          "type": "list",
-          "name": "Retour vélib possible",
-          "expression": "value",
-          "columnName": "Retour vélib possible",
-          "invert": false,
-          "omitBlank": false,
-          "omitError": false,
-          "selection": [
-            {
-              "v": {
-                "v": "NON",
-                "l": "NON"
-              }
-            }
-          ],
-          "selectBlank": false,
-          "selectError": false
-        }
-      ],
-      "mode": "row-based"
-    },
-    "columnName": "Retour vélib possible",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [
-          "NON"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": false
-      }
-    ],
-    "description": "Mass edit cells in column Retour vélib possible"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "Actualisation de la donnée",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [
-          "2022-10-05T09:58:36+02:00"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "2022-10-05T09:58:36Z"
-      }
-    ],
-    "description": "Mass edit cells in column Actualisation de la donnée"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "Actualisation de la donnée",
-    "expression": "value.toDate()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column Actualisation de la donnée using expression value.toDate()"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "Station en fonctionnement",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [
-          "OUI"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": true
-      }
-    ],
-    "description": "Mass edit cells in column Station en fonctionnement"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [
-        {
-          "type": "list",
-          "name": "Station en fonctionnement",
-          "expression": "value",
-          "columnName": "Station en fonctionnement",
-          "invert": false,
-          "omitBlank": false,
-          "omitError": false,
-          "selection": [
-            {
-              "v": {
-                "v": "NON",
-                "l": "NON"
-              }
-            }
-          ],
-          "selectBlank": false,
-          "selectError": false
-        }
-      ],
-      "mode": "row-based"
-    },
-    "columnName": "Station en fonctionnement",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [
-          "NON"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": false
-      }
-    ],
-    "description": "Mass edit cells in column Station en fonctionnement"
-  },
-  {
-    "op": "core/row-removal",
-    "engineConfig": {
-      "facets": [
-        {
-          "type": "range",
-          "name": "Capacité de la station",
-          "expression": "value",
-          "columnName": "Capacité de la station",
-          "from": 0,
-          "to": 1,
-          "selectNumeric": true,
-          "selectNonNumeric": true,
-          "selectBlank": true,
-          "selectError": true
-        }
-      ],
-      "mode": "row-based"
-    },
-    "description": "Remove rows"
-  },
-  {
-    "op": "core/row-removal",
-    "engineConfig": {
-      "facets": [
-        {
-          "type": "timerange",
-          "name": "Actualisation de la donnée",
-          "expression": "value",
-          "columnName": "Actualisation de la donnée",
-          "from": 1526880629000,
-          "to": 1662334170000,
-          "selectTime": true,
-          "selectNonTime": true,
-          "selectBlank": true,
-          "selectError": true
-        }
-      ],
-      "mode": "row-based"
-    },
-    "description": "Remove rows"
+    "op": "core/column-removal",
+    "columnName": "Code INSEE communes équipées",
+    "description": "Remove column Code INSEE communes équipées"
   }
 ]

@@ -3,7 +3,7 @@
 @prefix contact: <data:contact/> .
 @prefix schoolGround: <data:schoolGround/> .
 @prefix localization: <data:localization/> .
-@prefix accesibility: <data:accesibility/> .
+@prefix accessibility: <data:accessibility/> .
 @prefix schoolyard: <data:schoolyard/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix ont: <http://smartcity.linkeddata.es/schoolfinder/ontology/> .
@@ -39,7 +39,7 @@ contact:contact176850 rdfs:type ont:Contact ;
 schoolGround:schoolGround176850 rdfs:type ont:SchoolGround ;
 					ont:hasAddress data:address176850;
 					ont:hasLocalization data:localization176850;
-					ont:hasAccesibility data:accesibility176850;
+					ont:hasAccessibility data:accessibility176850;
 					ont:hasSchoolYard data:schoolYard176850.
 
 localization:localization176850 rdfs:type ont:Localization ;
@@ -52,9 +52,9 @@ localization:localization176850 rdfs:type ont:Localization ;
 					ont:cordX "444807"^^xsd:string;
 					ont:cordY "4482402"^^xsd:string.
 
-accesibility:accesibility176850 rdfs:type ont:Accesibility ;
+accessibility:accessibility176850 rdfs:type ont:Accesibility ;
 					ont:typeAccesibility 0;
-					ont:accesibilityComment "SI"^^xsd:string;
+					ont:accessibilityComment "SI"^^xsd:string;
 					ont:directAccess "SI"^^xsd:string;
 					ont:bus "14,79,80"^^xsd:string;
 					ont:otherAccess "NO"^^xsd:string;
@@ -63,7 +63,7 @@ accesibility:accesibility176850 rdfs:type ont:Accesibility ;
 schoolyard:schoolyard176850 rdfs:type ont:SchoolYard ;
 					ont:yardCategory "I"^^xsd:string;
 					ont:yardNumber "5"^^xsd:string;
-					ont:wcAccesibles "NO"^^xsd:string;
+					ont:wcAccessibles "NO"^^xsd:string;
 					ont:shade "SI"^^xsd:string;
 					ont:surface "3868,71 + 1384,25"^^xsd:string;
 					ont:furnitures "Porterias,canasta"^^xsd:string;

@@ -1,0 +1,1447 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Nº_Distrito",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nº_Distrito using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Nº_Unidades 2021",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nº_Unidades 2021 using expression value.toNumber()"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE_ESPECIE",
+          "expression": "value",
+          "columnName": "NOMBRE_ESPECIE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Total",
+                "l": "Total"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "﻿Nombre_distrito",
+          "expression": "isNull(value)",
+          "columnName": "﻿Nombre_distrito",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "Nº_Distrito",
+    "description": "Fill down cells in column Nº_Distrito"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE_ESPECIE",
+          "expression": "value",
+          "columnName": "NOMBRE_ESPECIE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Total",
+                "l": "Total"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "﻿Nombre_distrito",
+          "expression": "isNull(value)",
+          "columnName": "﻿Nombre_distrito",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "﻿Nombre_distrito",
+    "description": "Fill down cells in column ﻿Nombre_distrito"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE_ESPECIE",
+          "expression": "value",
+          "columnName": "NOMBRE_ESPECIE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE_ESPECIE",
+          "expression": "value",
+          "columnName": "NOMBRE_ESPECIE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Total",
+                "l": "Total"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "﻿Nombre_distrito",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ﻿Nombre_distrito using expression value.toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "NOMBRE_ESPECIE",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOMBRE_ESPECIE using expression value.toUppercase()"
+  },
+  {
+    "op": "core/row-star",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "starred": false,
+    "description": "Unstar rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Nº_Distrito",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nº_Distrito using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Nº_Distrito",
+    "expression": "jython:return 'D'+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nº_Distrito using expression jython:return 'D'+value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Nº_Distrito",
+    "expression": "value.unescape('html')",
+    "onError": "keep-original",
+    "repeat": true,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nº_Distrito using expression value.unescape('html')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Nº_Distrito",
+    "expression": "value.unescape('html')",
+    "onError": "keep-original",
+    "repeat": true,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nº_Distrito using expression value.unescape('html')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Nº_Distrito",
+    "expression": "jython:return 'http://www.group22.org/gz/resource/District/'+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nº_Distrito using expression jython:return 'http://www.group22.org/gz/resource/District/'+value"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "﻿Nombre_distrito",
+    "description": "Remove column ﻿Nombre_distrito"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Nº_Distrito",
+    "newColumnName": "district_number",
+    "description": "Rename column Nº_Distrito to district_number"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE_ESPECIE",
+    "newColumnName": "specie_name",
+    "description": "Rename column NOMBRE_ESPECIE to specie_name"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ACER NEGUNDO",
+                "l": "ACER NEGUNDO"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 1",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 1"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ACER PSEUDOPLATANUS",
+                "l": "ACER PSEUDOPLATANUS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 2",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 2"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "AESCULUS HIPPOCASTANUM",
+                "l": "AESCULUS HIPPOCASTANUM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 3",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 3"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CATALPA BIGNONIOIDES",
+                "l": "CATALPA BIGNONIOIDES"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 4",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 4"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CEDRUS DEODARA",
+                "l": "CEDRUS DEODARA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 5",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 5"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CELTIS AUSTRALIS",
+                "l": "CELTIS AUSTRALIS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 6",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 6"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CERCIS SILIQUASTRUM",
+                "l": "CERCIS SILIQUASTRUM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 7",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 7"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CUPRESSUS ARIZONICA",
+                "l": "CUPRESSUS ARIZONICA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 8",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 8"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CUPRESSUS SEMPERVIRENS",
+                "l": "CUPRESSUS SEMPERVIRENS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 9",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 9"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CUPRESSUS X LEYLANDII",
+                "l": "CUPRESSUS X LEYLANDII"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 10",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 10"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "GLEDITSIA TRIACANTHOS",
+                "l": "GLEDITSIA TRIACANTHOS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 11",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 11"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "KOELREUTERIA PANICULATA",
+                "l": "KOELREUTERIA PANICULATA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 12",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 12"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "LIGUSTRUM JAPONICUM",
+                "l": "LIGUSTRUM JAPONICUM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 13",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 13"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "LIQUIDAMBAR STYRACIFLUA",
+                "l": "LIQUIDAMBAR STYRACIFLUA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 14",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 14"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "MELIA AZEDARACH",
+                "l": "MELIA AZEDARACH"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 15",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 15"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "MORUS ALBA",
+                "l": "MORUS ALBA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 16",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 16"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "OTROS",
+                "l": "OTROS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 17",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 17"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "PINUS HALEPENSIS",
+                "l": "PINUS HALEPENSIS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 18",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 18"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "PINUS PINEA",
+                "l": "PINUS PINEA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 19",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 19"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "PLATANUS ORIENTALIS",
+                "l": "PLATANUS ORIENTALIS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 20",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 20"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "PLATANUS X HISPANICA",
+                "l": "PLATANUS X HISPANICA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 22",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 22"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "POPULUS ALBA",
+                "l": "POPULUS ALBA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 22",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 22"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "POPULUS ALBA 'BOLLEANA'",
+                "l": "POPULUS ALBA 'BOLLEANA'"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 23",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 23"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "POPULUS X CANADENSIS",
+                "l": "POPULUS X CANADENSIS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 24",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 24"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "PRUNUS CERASIFERA",
+                "l": "PRUNUS CERASIFERA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 25",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 25"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "PRUNUS CERASIFERA  SUBSP. PISSARDII",
+                "l": "PRUNUS CERASIFERA  SUBSP. PISSARDII"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 27",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 27"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "PYRUS CALLERYANA",
+                "l": "PYRUS CALLERYANA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 26",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 26"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "PYRUS CALLERYANA 'CHANTICLEER'",
+                "l": "PYRUS CALLERYANA 'CHANTICLEER'"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 28",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 28"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ROBINIA PSEUDOACACIA",
+                "l": "ROBINIA PSEUDOACACIA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 30",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 30"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "STYPHNOLOBIUM JAPONICUM",
+                "l": "STYPHNOLOBIUM JAPONICUM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 29",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 29"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ULMUS MINOR",
+                "l": "ULMUS MINOR"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 31",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 31"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ULMUS PUMILA",
+                "l": "ULMUS PUMILA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 32",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 32"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "specie_name",
+          "expression": "value",
+          "columnName": "specie_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ULMUS SP",
+                "l": "ULMUS SP"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 33",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 33"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "specie_name",
+    "expression": "jython:return 'http://www.group22.org/gz/resource/Specie/S'+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column specie_name using expression jython:return 'http://www.group22.org/gz/resource/Specie/S'+value"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Nº_Unidades 2021",
+    "newColumnName": "unit_number",
+    "description": "Rename column Nº_Unidades 2021 to unit_number"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "district_number",
+    "expression": "jython:return value.split(\"/\")[-1]+ cells[\"specie_name\"].value.split(\"/\")[-1]",
+    "onError": "set-to-blank",
+    "newColumnName": "identifier",
+    "columnInsertIndex": 1,
+    "description": "Create column identifier at index 1 based on column district_number using expression jython:return value.split(\"/\")[-1]+ cells[\"specie_name\"].value.split(\"/\")[-1]"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "identifier",
+      "district_number",
+      "specie_name",
+      "unit_number"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "identifier",
+    "expression": "jython:return 'http://www.group22.org/gz/resource/GreenZone/'+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column identifier using expression jython:return 'http://www.group22.org/gz/resource/GreenZone/'+value"
+  }
+]

@@ -1,0 +1,20 @@
+PREFIX base: <http://busstopalcobendas.odkg.es/group15/ontology/> .
+
+# Lista todas las paradas en la zon B1
+SELECT ?Subject WHERE { 
+  ?Subject base:zone_id \'B1\'
+} 
+
+# Las paradas en la zona B1 yy su direccion
+SELECT ?Subject ?address WHERE { 
+  ?Subject base:zone_id \'B1\'.
+  ?Subject base:hasAddress ?address
+} 
+
+# Nombre de todas las paradas
+SELECT ?name WHERE { 
+  ?Subject base:stop_name ?name
+} 
+
+
+

@@ -1,0 +1,86 @@
+
+@prefix : <http://www.urbanElementsMadrid.es/resource/> .
+@prefix p: <http://www.urbanElementsMadrid.es/ontology/ont#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <https://www.urbanElementsMadrid.es/ontology/ont#> .
+
+<http://www.urbanElementsMadrid.es/ontology/ont#> a owl:Ontology .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+:Fountain a owl:Class ;
+    rdfs:label "Fountain" ;
+    rdfs:subClassOf :UrbanElement .
+
+:Restroom a owl:Class ;
+    rdfs:label "Restroom" ;
+    rdfs:subClassOf :UrbanElement .
+
+:Address a owl:Class ;
+    rdfs:label "Address" .
+
+:District a owl:Class ;
+    rdfs:label "District" .
+    
+
+:UrbanElement a owl:Class ;
+    rdfs:label "Urban Element" .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+p:hasAddress a owl:ObjectProperty ;
+    rdfs:label "has address" ;
+    rdfs:domain :UrbanElement ;
+    rdfs:range :Address .
+
+p:hasDistrict a owl:ObjectProperty ;
+    rdfs:label "has district" ;
+    rdfs:domain :UrbanElement ;
+    rdfs:range :District .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+p:hasId a owl:DatatypeProperty ;
+    rdfs:label "has id" ;
+    rdfs:domain :UrbanElement ;
+    rdfs:range xsd:string .
+
+p:hasName a owl:DatatypeProperty ;
+    rdfs:label "has name" ;
+    rdfs:domain :District ;
+    rdfs:range xsd:string .
+
+
+p:isLocated a owl:DatatypeProperty ;
+    rdfs:label "is located" ;
+    rdfs:domain :Address ;
+    rdfs:range xsd:string .
+
+p:latitude a owl:DatatypeProperty ;
+    rdfs:label "latitude" ;
+    rdfs:domain :UrbanElement ;
+    rdfs:range xsd:real .
+
+p:longitude a owl:DatatypeProperty ;
+    rdfs:label "longitude" ;
+    rdfs:domain :UrbanElement ;
+    rdfs:range xsd:real .
+
+p:hasCode a owl:DatatypeProperty ;
+    rdfs:label "has code" ;
+    rdfs:domain :District ;
+    rdfs:range xsd:string .
+
+

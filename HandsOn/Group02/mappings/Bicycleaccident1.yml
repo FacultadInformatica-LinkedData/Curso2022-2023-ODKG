@@ -1,0 +1,87 @@
+prefixes:
+  bicyacoc: http://bicycleaccident.com/group2/ontology/class#
+  bicyacop: http://bicycleaccident.com/group2/ontology/property#
+  bicyacr: http://bicycleaccident.com/group2/resource/
+  ev: https://motools.sourceforge.net/event/event.html#
+  time: http://www.w3.org/2006/time#
+  wgs84: http://www.w3.org/2003/01/geo/wgs84_pos#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  
+mappings:
+  TriplesMap1:
+    sources:
+      - [AccidentesBicicletas_2019_2022_updated.csv~csv]
+    s: bicyacr:Accident/$(idAccident)
+    po:
+      - [a, bicyacoc:BicycleAccident]
+      - p: bicyacop:bicycleIsElectronic
+        o: 
+            value: $(bicycle_is_electronic)
+            datatype: xsd:boolean
+      - p: ev:agent
+        o:
+            mapping: TriplesMap2
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(idAccident), s]
+                    - [str2, Victim/$(idPerson), o]
+      - p: ev:term_time
+        o:
+            mapping: TriplesMap3
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(idAccident), s]
+                    - [str2, Time/$(idDateTime), o]
+      - p: ev:term_place
+        o:
+            mapping: TriplesMap4
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(idAccident), s]
+                    - [str2, Place/$(streetID), o]
+      - [bicyacop:hasType, $(accident_type)]
+      - [bicyacop:duringWeather, $(weather_status)]
+      
+  TriplesMap2:
+    sources:
+      - [AccidentesBicicletas_2019_2022_updated.csv~csv]
+    s: bicyacr:Victim/$(idPerson)
+    po:
+      - [a, bicyacoc:Victim]
+      - [bicyacop:ageRange, $(age_range)]
+      - [foaf:gender, $(sex)]
+      - [bicyacop:travelType, $(person_type)]
+      - p: bicyacop:wasHospitalized
+        o:
+            value: $(hospitalized)
+            datatype: xsd:boolean
+      - p: bicyacop:alcoholUse
+        o:
+            value: $(positive_alcohol)
+            datatype: xsd:boolean
+
+  TriplesMap3 :
+    sources:
+      - [AccidentesBicicletas_2019_2022_updated.csv~csv]
+    s: bicyacr:Time/$(idDateTime)
+    po:
+      - [a, time:Instant]
+      - p: time:inXSDDateTimeStamp
+        o:
+            value: $(dateTime)
+            datatype: xsd:dateTimeStamp
+
+  TriplesMap4 :
+    sources :
+      - [AccidentesBicicletas_2019_2022_updated.csv~csv]
+    s: bicyacr:Place/$(streetID)
+    po:
+      - [a, bicyacoc:SpatialThingUTM]
+      - [rdfs:label, $(street)]
+      - [bicyacop:isDistrict, $(district)]

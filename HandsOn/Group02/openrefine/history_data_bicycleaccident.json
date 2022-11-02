@@ -342,7 +342,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Asistencia sanitaria inmediata en centro de salud o mutua"],
+        "from": [
+          "Asistencia sanitaria inmediata en centro de salud o mutua"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "1"
@@ -360,7 +362,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Asistencia sanitaria sólo en el lugar del accidente"],
+        "from": [
+          "Asistencia sanitaria sólo en el lugar del accidente"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "0"
@@ -378,7 +382,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Atención en urgencias sin posterior ingreso"],
+        "from": [
+          "Atención en urgencias sin posterior ingreso"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "0"
@@ -396,7 +402,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Ingreso inferior o igual a 24 horas"],
+        "from": [
+          "Ingreso inferior o igual a 24 horas"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "1"
@@ -414,7 +422,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Ingreso superior a 24 horas"],
+        "from": [
+          "Ingreso superior a 24 horas"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "1"
@@ -432,7 +442,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Sin asistencia sanitaria"],
+        "from": [
+          "Sin asistencia sanitaria"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "0"
@@ -450,7 +462,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Asistencia sanitaria ambulatoria con posterioridad"],
+        "from": [
+          "Asistencia sanitaria ambulatoria con posterioridad"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "1"
@@ -474,7 +488,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Fallecido 24 horas"],
+        "from": [
+          "Fallecido 24 horas"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "1"
@@ -492,7 +508,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Bicicleta"],
+        "from": [
+          "Bicicleta"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "0"
@@ -510,7 +528,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Bicicleta EPAC (pedaleo asistido)"],
+        "from": [
+          "Bicicleta EPAC (pedaleo asistido)"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "1"
@@ -534,7 +554,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Se desconoce"],
+        "from": [
+          "Se desconoce"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "NULL"
@@ -557,7 +579,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["N"],
+        "from": [
+          "N"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "0"
@@ -575,7 +599,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["S"],
+        "from": [
+          "S"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "1"
@@ -651,7 +677,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Mujer"],
+        "from": [
+          "Mujer"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Woman"
@@ -669,7 +697,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Hombre"],
+        "from": [
+          "Hombre"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Man"
@@ -687,7 +717,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Desconocido"],
+        "from": [
+          "Desconocido"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Unknown"
@@ -705,7 +737,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Conductor"],
+        "from": [
+          "Conductor"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Driver"
@@ -723,7 +757,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Pasajero"],
+        "from": [
+          "Pasajero"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Passenger"
@@ -741,7 +777,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Peatón"],
+        "from": [
+          "Peatón"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Pedestrian"
@@ -759,7 +797,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Despejado"],
+        "from": [
+          "Despejado"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Clear"
@@ -777,7 +817,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Granizando"],
+        "from": [
+          "Granizando"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Hail"
@@ -795,7 +837,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Lluvia débil"],
+        "from": [
+          "Lluvia débil"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Light rain"
@@ -813,7 +857,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["LLuvia intensa"],
+        "from": [
+          "LLuvia intensa"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Intense rain"
@@ -831,7 +877,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Nublado"],
+        "from": [
+          "Nublado"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Cloudy"
@@ -849,7 +897,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Alcance"],
+        "from": [
+          "Alcance"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Scope"
@@ -867,7 +917,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Atropello a animal"],
+        "from": [
+          "Atropello a animal"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Animal hit and run"
@@ -885,7 +937,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Atropello a persona"],
+        "from": [
+          "Atropello a persona"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Hitting a person"
@@ -903,7 +957,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Animal hit and run"],
+        "from": [
+          "Animal hit and run"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Hitting an animal"
@@ -921,7 +977,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Caída"],
+        "from": [
+          "Caída"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Fall"
@@ -939,7 +997,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Choque contra obstáculo fijo"],
+        "from": [
+          "Choque contra obstáculo fijo"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Crash against fixed obstacle"
@@ -957,7 +1017,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Colisión frontal"],
+        "from": [
+          "Colisión frontal"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Frontal collision"
@@ -975,7 +1037,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Colisión fronto-lateral"],
+        "from": [
+          "Colisión fronto-lateral"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Frontal-lateral collision"
@@ -993,7 +1057,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Colisión lateral"],
+        "from": [
+          "Colisión lateral"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Lateral collision"
@@ -1011,7 +1077,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Colisión múltiple"],
+        "from": [
+          "Colisión múltiple"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Multiple collision"
@@ -1029,7 +1097,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Otro"],
+        "from": [
+          "Otro"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Other"
@@ -1047,7 +1117,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Solo salida de la vía"],
+        "from": [
+          "Solo salida de la vía"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Track exit only"
@@ -1065,7 +1137,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Vuelco"],
+        "from": [
+          "Vuelco"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "Overturn"
@@ -1083,7 +1157,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["De 6 a 9 años"],
+        "from": [
+          "De 6 a 9 años"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "De 06 a 09 años"
@@ -1101,7 +1177,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Desconocido"],
+        "from": [
+          "Desconocido"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "De -- a -- años"
@@ -1119,7 +1197,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Más de 74 años"],
+        "from": [
+          "Más de 74 años"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "De 74 a +  años"
@@ -1137,7 +1217,9 @@
     "expression": "value",
     "edits": [
       {
-        "from": ["Menor de 5 años"],
+        "from": [
+          "Menor de 5 años"
+        ],
         "fromBlank": false,
         "fromError": false,
         "to": "De -  a 5 años"

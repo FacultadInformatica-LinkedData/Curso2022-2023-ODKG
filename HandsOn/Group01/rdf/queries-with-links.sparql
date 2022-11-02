@@ -1,0 +1,69 @@
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+PREFIX gn: <http://www.geonames.org/ontology#> .
+PREFIX ns: <http://www.dialysisComunidadValenciana.es/> .
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# QUERY 1: Get the link of all the entities
+select distinct ?entity ?link where {
+    ?x a ns:Entity.
+    ?x rdfs:label ?entity.
+    ?x owl:sameAs ?link
+}
+order by ?center
+
+
+# QUERY 2: Who runs the dialysis center? (with link)
+select distinct ?entity ?runner ?center_label ?runnerLink where {
+    ?entity a ns:Entity.
+    ?entity rdfs:label ?runner.
+    ?center ns:managed_by ?entity.
+    ?center rdfs:label ?center_label.
+	?entity owl:sameAs ?runnerLink.
+}
+
+
+# QUERY 3: In which provinces (with links) does the entity (with links) work on? 
+select distinct ?entity ?entityLink ?province ?provinceLink where {
+    ?x a ns:Entity.
+    ?x rdfs:label ?entity.
+	?x owl:sameAs ?entityLink.
+    ?center ns:managed_by ?x.
+    ?center gn:locatedIn ?health.
+    ?health gn:locatedIn ?city.
+    ?city gn:locatedIn ?y.
+    ?y rdfs:label ?province.
+	?y owl:sameAs ?provinceLink
+}
+order by ?entity
+
+# QUERY 4: Which centers are located in my city?
+# Ex: city = Paterna: <https://www.wikidata.org/wiki/Q23042> 
+select distinct ?center_label ?city_label where {
+    ?center a ns:Center.
+    ?center rdfs:label ?center_label.
+    ?center gn:locatedIn ?health_area.
+    ?health_area a ns:Health_Area.
+    ?health_area gn:locatedIn ?city.
+    ?city a ns:City.
+    ?city rdfs:label ?city_label.
+    ?city owl:sameAs <https://www.wikidata.org/wiki/Q23042> .
+}
+
+
+# QUERY 5: Which centers are managed by my entity and are in my city? (Given the Wikidata link)
+# Ex: city = Burjassot: <https://www.wikidata.org/wiki/Q55688>
+#     entity = Diaverum: <https://www.wikidata.org/wiki/Q18588976>
+select distinct ?center_label ?city_label where {
+    ?center a ns:Center.
+    ?center rdfs:label ?center_label.
+    ?center ns:managed_by ?entity.
+    ?entity a ns:Entity.
+    ?entity owl:sameAs <https://www.wikidata.org/wiki/Q18588976>.
+    ?center gn:locatedIn ?health_area.
+    ?health_area a ns:Health_Area.
+    ?health_area gn:locatedIn ?city.
+    ?city a ns:City.
+    ?city rdfs:label ?city_label.
+    ?city owl:sameAs <https://www.wikidata.org/wiki/Q55688> .
+}

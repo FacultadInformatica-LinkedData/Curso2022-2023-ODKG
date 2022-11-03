@@ -1,0 +1,66 @@
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix property: <https://www.asociadrid.es/ontology/property#> 
+prefix class: <https://www.asociadrid.es/ontology/class#> 
+prefix rr: <http://www.w3.org/ns/r2rml#>
+prefix rml: <http://semweb.mmlab.be/ns/rml#>
+
+#Select all URIs pointing to wikidata resources for streets/sqares.
+SELECT ?link  WHERE {
+?elem rdf:type class:Address.
+?elem property:streetResourceWikidata ?link
+}
+
+#Count the number of wikidata references to streets/sqares.
+SELECT (COUNT(?link) as ?count)  WHERE {
+?elem rdf:type class:Address.
+?elem property:streetResourceWikidata ?link
+}
+
+#Select all URIs pointing to wikidata resources for organizations.
+SELECT ?link  WHERE {
+{{?elem rdf:type class:Federation.}
+ UNION
+ {?elem rdf:type class:Foundation.}
+ UNION
+ {?elem rdf:type class:Collective.}
+ UNION
+ {?elem rdf:type class:Association.}}
+?elem owl:sameAs ?link
+}
+
+#Count the number of wikidata references to organizations.
+SELECT (COUNT(?link) as ?count)  WHERE {
+{{?elem rdf:type class:Federation.}
+ UNION
+ {?elem rdf:type class:Foundation.}
+ UNION
+ {?elem rdf:type class:Collective.}
+ UNION
+ {?elem rdf:type class:Association.}}
+?elem owl:sameAs ?link
+}
+
+#Select all URIs pointing to wikidata resources for districts and subdistricts.
+SELECT ?link  WHERE {
+?elem rdf:type class:District.
+?elem owl:sameAs ?link
+}
+
+SELECT ?link  WHERE {
+?elem rdf:type class:Subdistrict.
+?elem owl:sameAs ?link
+}
+
+#Count the number of wikidata references to districts and subdistricts.
+SELECT (COUNT(?link) as ?count)  WHERE {
+?elem rdf:type class:District.
+?elem owl:sameAs ?link
+}
+
+SELECT (COUNT(?link) as ?count)  WHERE {
+?elem rdf:type class:Subdistrict.
+?elem owl:sameAs ?link
+}

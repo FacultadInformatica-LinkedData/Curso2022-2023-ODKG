@@ -1,0 +1,62 @@
+# Show all the elements in the ontology, including the class each one belongs to:
+
+SELECT DISTINCT ?x ?y
+WHERE
+{
+	?x rdf:type ?y
+}
+
+# See all the classes of the ontology
+
+SELECT DISTINCT ?Class
+WHERE
+{
+  ?x a ?Class
+}
+
+# Count all the classes of the ontology
+
+SELECT (COUNT(DISTINCT ?Class) as ?c)
+WHERE
+{
+  ?x a ?Class
+}
+
+#See the number of clinics per each specialization
+
+SELECT DISTINCT ?spec (COUNT(*) as ?quantity)
+WHERE
+{
+   ?clinic nsont:specialization ?spec
+}GROUP BY ?spec
+
+# See coordinates of Defibrillator "2017-101" 
+
+SELECT ?lat ?long
+  WHERE
+  {
+    ?def a nsont:Defibrillator .
+    ?def rdf:label "2017-101" .
+    ?def geo:location ?loc .
+    ?loc geo:latitude ?lat .
+    ?loc geo:longitude ?long .
+  }
+
+
+# Show the possible properties of entities that belong to the class "Address"
+
+SELECT DISTINCT ?y
+WHERE
+{
+  ?x a nsont:Address .
+  ?x ?prop ?y
+}
+
+# Show all cardiology clinics
+
+SELECT ?x
+WHERE
+{
+  ?x a nsont:Clinic .
+  ?x nsont:specialization "Cardiología"
+}

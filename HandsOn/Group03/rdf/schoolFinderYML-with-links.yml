@@ -1,0 +1,149 @@
+Column,pk,name,equipment,teaching,typeAccessibility,contentURL,locality,same_as_wikidata_locality,province,same_as_wikidata_province,postalCode,neighborhood,same_as_wikidata_neighborhood,district,same_as_wikidata_district,coordX,coordY,phone,fax,email,titularity,laborDay,schedule,extraUses,otherUses,yardCategory,yardNumber,accessibilityComment,directAccess,otherAccess,wcAccessibles,shade,furniture,services,surface,conservationState,greenZonesProximity,facilitiesProximity,observations,bus,renfe,same_as_wikidata_renfe,metro,same_as_wikidata_metro,address
+0,176850,Colegio público adolfo suárez,"Comedor, horario ampliado, planes de mejora",Enseñanzas: segundo ciclo de e. infantil - primaria - educación secundaria obligatoria,0,Http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410vgnvcm100000171f5a0arcrd&vgnextoid=a9344b6faa61c010vgnvcm1000000b205a0arcrd,Madrid,https://wikidata.org/entity/Q2807,Community of Madrid,https://wikidata.org/entity/Q5756,28050,Valdefuentes,https://wikidata.org/entity/Q10388714,Hortaleza,https://wikidata.org/entity/Q1928529,444807,4482402,917 502 058 / 676 562 792,917 502 058,Nan,Ayuntamiento,Lunes-viernes continua,9:00-16:00,Actividades extraescolares 16:00-18:00,"Actividades extraescolares, días no lectivos, campamentos urbanos, talleres fin de semana",Iii,3,Si,Si (c/ infanta catalina micaela),-,No,Si (150m²),"Porterías, canastas, bancos",Alumbrado,"3868,71 + 1384,25 + 4474,92",Mejorable (elementos deteriorados),Nan,Nan,Nan, 174,NaN,https://wikidata.org/entity/Q858684,NaN,https://wikidata.org/entity/Q858684,Calle infanta catalina micaela 31
+1,4693138,Colegio público agustín rodriguez sahagún,"Horario ampliado, comedor, planes de mejora",Enseñanza: educacion infantil - primaria - enseñanza biling&amp;uuml;e,0,Http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410vgnvcm100000171f5a0arcrd&vgnextoid=706c615f4eb66110vgnvcm1000000b205a0arcrd,Madrid,https://wikidata.org/entity/Q2807,Community of Madrid,https://wikidata.org/entity/Q5756,28031,Casco Histórico de Vallecas,https://wikidata.org/entity/Q16544370,Villa de Vallecas,https://wikidata.org/entity/Q1947988,447178,4468793,913 324 348,914 941 475,Nan,Ayuntamiento,Lunes-viernes continua,9:00-16:00,Actividades extraescolares 16:00-20:00,-,Ii,2,Si,Si (c/ granja de san ildefonso),Av. villa de vallecas (directo a canchas),Si (en gimnasio),"Porches, arbolado","Porterías, canastas, columpios, bancos, ping pong, rocódromo, huerto.","Alumbrado, fuente","5748,56",Bueno,"Parque mundaire (450m), parque de las cataratas (550m), parque mundaire (650m)","Orichas stadium (300m), instalación deportiva miguel guillen (900m)",Nan, 142,NaN,https://wikidata.org/entity/Q858684,NaN,https://wikidata.org/entity/Q858684,Calle la granja de san ildefonso 17
+
+--------------------------------
+
+prefixes:
+    ont: http://smartcity.linkeddata.es/schoolfinder/ontology/
+    owl: http://www.w3.org/2002/07/owl#
+
+mappings:
+  School:
+    sources:
+      - [/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/school/$(pk)
+    po:
+      - [a, ont:School]
+      - [ont:pk, $(pk)]
+      - [ont:name, $(name)]
+      - [ont:teaching, $(teaching)]
+      - [ont:laborDay, $(laborDay)]
+      - [ont:schedule, $(schedule)]
+      - [ont:titularity, $(titularity)]
+      - [ont:observations, $(observations)]
+      - [ont:extraUses, $(extraUses)]
+      - [ont:otherUses, $(otherUses)]
+      - [ont:hasContact, http://smartcity.linkeddata.es/schoolfinder/resource/contact/$(pk)~iri]
+      - [ont:hasSchoolGround, http://smartcity.linkeddata.es/schoolfinder/resource/schoolGround/$(pk)~iri]
+
+  Contact:
+    sources:
+      - [/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/contact/$(pk)
+    po:
+      - [a, ont:Contact]
+      - [ont:contentURL, $(contentURL)]
+      - [ont:phone, $(phone)]
+      - [ont:fax, $(fax)]
+      - [ont:email, $(email)]
+
+  Localization:
+    sources:
+      - [/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/localization/$(pk)
+    po:
+      - [a, ont:Localization]
+      - [ont:address, $(address)]
+      - [ont:postalCode, $(postalCode)]
+      - [ont:coordX, $(coordX)]
+      - [ont:coordY, $(coordY)]
+      - [ont:hasLocality, http://smartcity.linkeddata.es/schoolfinder/resource/locality/$(pk)~iri]
+      - [ont:hasProvince, http://smartcity.linkeddata.es/schoolfinder/resource/province/$(pk)~iri]
+      - [ont:hasNeighborhood, http://smartcity.linkeddata.es/schoolfinder/resource/neighborhood/$(pk)~iri]
+      - [ont:hasDistrict, http://smartcity.linkeddata.es/schoolfinder/resource/district/$(pk)~iri]
+
+  Locality:
+    sources:
+      - [/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/locality/$(pk)
+    po:
+      - [a, ont:Locality]
+      - [ont:locality, $(locality)]
+      - [owl:sameAs, $(same_as_wikidata_locality)~iri]
+
+  Province:
+    sources:
+      - [/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/province/$(pk)
+    po:
+      - [a, ont:Province]
+      - [ont:province, $(province)]
+      - [owl:sameAs, $(same_as_wikidata_province)~iri]
+
+  Neighborhood:
+    sources:
+      - [/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/neighborhood/$(pk)
+    po:
+      - [a, ont:Neighborhood]
+      - [ont:neighborhood, $(neighborhood)]
+      - [owl:sameAs, $(same_as_wikidata_neighborhood)~iri]
+
+  District:
+    sources:
+      - [/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/district/$(pk)
+    po:
+      - [a, ont:district]
+      - [ont:district, $(district)]
+      - [owl:sameAs, $(same_as_wikidata_district)~iri]
+
+  Accessibility:
+    sources:
+      - [/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/accessibility/$(pk)
+    po:
+      - [a, ont:Accessibility]
+      - [ont:typeAccessibility, $(typeAccessibility)]
+      - [ont:accessibilityComment, $(accessibilityComment)]
+      - [ont:directAccess, $(directAccess)]
+      - [ont:bus, $(bus)]
+      - [ont:otherAccess, $(otherAccess)]
+      - [ont:greenZonesProximity, $(greenZonesProximity)]
+      - [ont:facilitiesProximity, $(facilitiesProximity)]
+      - [ont:hasRenfe, http://smartcity.linkeddata.es/schoolfinder/resource/renfe/$(pk)~iri]
+      - [ont:hasMetro, http://smartcity.linkeddata.es/schoolfinder/resource/metro/$(pk)~iri]
+
+  Renfe:
+    sources:
+      - [/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/renfe/$(pk)
+    po:
+      - [a, ont:Renfe]
+      - [ont:renfe, $(renfe)]
+      - [owl:sameAs, $(same_as_wikidata_renfe)~iri]
+
+  Metro:
+    sources:
+      - [/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/metro/$(pk)
+    po:
+      - [a, ont:Metro]
+      - [ont:metro, $(metro)]
+      - [owl:sameAs, $(same_as_wikidata_metro)~iri]
+
+  Schoolyard:
+    sources:
+      - [/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/schoolyard/$(pk)
+    po:
+      - [a, ont:Schoolyard]
+      - [ont:yardCategory, $(yardCategory)]
+      - [ont:yardNumber, $(yardNumber)]
+      - [ont:wcAccessibles, $(wcAccessibles)]
+      - [ont:shade, $(shade)]
+      - [ont:surface, $(surface)]
+      - [ont:furniture, $(furniture)]
+      - [ont:services, $(services)]
+      - [ont:conservationState, $(conservationState)]
+
+  SchoolGround:
+    sources:
+      - [/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/schoolGround/$(pk)
+    po:
+      - [a, ont:SchoolGround]
+      - [ont:hasSchoolyard, http://smartcity.linkeddata.es/schoolfinder/resource/schoolyard/$(pk)~iri]
+      - [ont:hasAccessibility, http://smartcity.linkeddata.es/schoolfinder/resource/accessibility/$(pk)~iri]
+      - [ont:hasLocalization, http://smartcity.linkeddata.es/schoolfinder/resource/localization/$(pk)~iri]

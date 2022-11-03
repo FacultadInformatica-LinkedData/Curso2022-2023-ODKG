@@ -1,0 +1,20 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "Column",
+    "description": "Remove column Column"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "identifier",
+      "archive_number",
+      "district",
+      "green_zone",
+      "location",
+      "destinatation",
+      "solar_m2"
+    ],
+    "description": "Reorder columns"
+  }
+]

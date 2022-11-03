@@ -1,0 +1,55 @@
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX schema: <http://schema.org/>
+PREFIX bs: <http://smartbikes.org/ontology/bikeStation#>
+PREFIX wdt: <https://www.wikidata.org/wiki/>
+
+SELECT DISTINCT ?commune WHERE {
+   ?station bs:locatedInArea ?commune.
+}
+
+SELECT ?station ?capa ?name WHERE {
+   ?station bs:locatedInArea wdt:Q90.
+   ?station dbo:capacity ?capa.
+   ?station schema:name ?name.
+}
+
+SELECT ?name ?coordinate WHERE {
+   ?station schema:id "9020".
+   ?station schema:geo ?coordinate.
+   ?station schema:name ?name.
+}
+
+SELECT ?name WHERE {
+   ?station dbo:capacity "21".
+   ?station schema:name ?name.
+}
+
+SELECT ?name ?available WHERE {
+   ?station bs:availableBikes ?available.
+   FILTER (?available > 0)
+   ?station schema:name ?name.
+}
+
+SELECT ?name ?available WHERE {
+   ?station bs:availableElectricalBikes ?available.
+   FILTER (?available > 0)
+   ?station schema:name ?name.
+}
+
+SELECT ?name ?available WHERE {
+   ?station bs:availableMechanicalBikes ?available.
+   FILTER (?available > 0)
+   ?station schema:name ?name.
+}
+
+SELECT ?name ?available WHERE {
+   ?station bs:availableParkingSpots ?available.
+   FILTER (?available > 0)
+   ?station schema:name ?name.
+}
+
+SELECT ?name ?capacity WHERE {
+   ?station dbo:capacity ?capacity.
+   ?station dbo:capacity "30".
+   ?station schema:name ?name.
+}

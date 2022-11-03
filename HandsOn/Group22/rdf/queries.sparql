@@ -1,0 +1,15 @@
+PREFIX ns: <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?distrito ?nombre WHERE { 
+    ?distrito a ns:District . 
+    ?distrito rdfs:label ?nombre.
+}
+SELECT ?parque ?nombre WHERE { 
+    ?parque a ns:GreenZone . 
+    ?parque rdfs:label ?nombre.
+}
+SELECT ?arboleda ?nombre WHERE { 
+    ?arboleda a ns:Woodland . 
+    ?arboleda rdfs:label ?nombre.
+}

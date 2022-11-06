@@ -1,0 +1,327 @@
+:root {
+    --main-color:#fef9f8;
+    --secondary-color:#797ded;
+    --primary-font-color:#0d0d0d;
+    --secondary-font-color:white;
+    --highlight-secondary-color:#00ff84;
+    --secondary-color-low:#6f73f384;
+    
+}
+
+body{min-height: 100vh;}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    align-items: center;
+} 
+/* ---------------------- HEADER ---------------------- */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0vh 5vw;
+    min-height: 55px;
+    color: var(--secondary-font-color);
+    background-color: var(--secondary-color);
+    flex-direction:row;
+}
+
+header>*{
+    display: flex;
+    height: 10vh;
+    color: var(--secondary-font-color);
+    background-color: var(--secondary-color);
+}
+
+#Logo>h1{
+    cursor:default;
+    color:var(--secondary-font-color);
+}
+#Logo:hover>h1{
+    color: var(--highlight-secondary-color);
+}
+nav>ul{
+    margin-block:0;
+    padding-inline: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+nav>ul>a{
+    color: inherit; 
+    text-decoration: none;
+}
+
+nav>ul>a>li{
+    height: 10vh;
+    margin-right: .5vw;
+    margin-left: .5vw;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    display: flex;
+}
+
+
+nav>ul>a>li:hover{
+    cursor: pointer;
+    color: var(--highlight-secondary-color);
+    background-color: var(--secondary-color-low);
+}
+/* ---------------------- END- HEADER ---------------------- */
+/* ---------------------- MAIN ---------------------- */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height:80vh;
+    background-color: var(--main-color);
+}
+
+.containerPage{
+    width: calc(100vw - (100vw - 100%));
+    min-height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.containerPage>*{
+    margin: 10px;
+}
+
+.pageTitle{
+    align-self: center;
+    padding-top: 5vh;
+}
+
+#InteractionContainer{
+    display: flex;
+    flex-direction: column;
+    
+}
+#QuickAccesButtonContainer{
+    align-self: center;
+    cursor:default;
+    min-width: 320px; 
+}
+#QuickAccesButtonContainer button{
+    min-height:40px;
+    min-width:50px;
+    height:5vh;
+    width:15vw;
+}
+
+#SchoolSearchForm{
+    min-width: 320px; 
+    height:15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#SchoolSearchForm input[type=text] {
+    padding: 2vh;
+    width: 50vw;
+    min-width: 320px;
+    font-size: 1.5em;
+    border: solid 1px  var(--highlight-secondary-color);
+}
+  
+#SchoolSearchForm button {
+    padding: 2vh 3vw;
+    background: var(--highlight-secondary-color);
+    font-size: 1.5em;
+    border: solid 1px  var(--highlight-secondary-color);
+    cursor: default;
+}
+#SchoolSearchForm button i{
+    color:var(--secondary-font-color);
+}
+  
+#SchoolSearchForm button:hover {
+    background: #03e277;
+}
+  
+/* ---------------------- END MAIN ---------------------- */
+/* ---------------------- FOOTER ---------------------- */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 55px;
+    color: var(--secondary-font-color);
+    background-color: var(--secondary-color);
+}
+
+
+
+
+/* ---------------------- FAQ ------------------ */
+#FAQListContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1900px;
+}
+
+.FaqItem{
+    width: 20vw;
+    min-width: 400px;
+    margin: 2vh 1vw;
+}
+.faqQuestion{
+    margin-bottom:1vh;
+}
+
+/* ---------------------- ABOUT US ------------------ */
+#InfoAboutUS{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#InfoAboutUS > *{
+    max-width: 50vw;
+}
+#home-AboutUSPage{
+    justify-content: space-between;
+}
+.social-container{
+    align-self: center;
+    cursor:default;
+    min-width: 320px; 
+}
+
+.social-container {
+min-width: 400px;
+margin: 1vh auto;
+text-align: center;
+}
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 1em;
+}
+.social-icons li {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1.2em;
+}
+.social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    transition: all 265ms ease-out;
+}
+.social-icons a {
+    display: inline-block;
+}
+.social-icons a:before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, #00b5f5, #002a8f);
+    transition: all 265ms ease-out;
+}
+.social-icons a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+}
+.social-icons a:hover i {
+    transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    color: #00b5f5;
+    background: -webkit-linear-gradient(45deg, #00b5f5, #002a8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+}
+.StudentList{
+    margin-left:35px;
+    margin-top:15px;
+}
+/* ---------------------- Privacy policy ------------------ */
+#PrivacPolicyContainer{
+    align-self: center;
+}
+.privacyPolicyItem{
+    margin:2vh 5vw;
+    max-width:900px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.privacyPolicyItem > * {
+    margin-top:1vh ;
+    margin-bottom:1vh ;
+}
+.privacyPolicyItem > ul, p{
+    align-self: start;
+}
+.privacyPolicyItem > ul, ol{
+    padding-left:3vw;
+}
+.privacyPolicyItem > ul > li >ul{
+    padding-left:3vw;
+}
+.list-inline{
+    align-self:start;
+}
+
+/* ---------------------- myschools ---------------------- */
+#SchoolListContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schoolItem{
+    display: flex;
+    align-items: center;
+    background-color:var(--secondary-font-color);
+    border: solid 1px var(--secondary-color);
+    border-radius:10px;
+    background-color:var(--secondary-font-color);
+    box-shadow: 0 24px 32px rgb(0 255 132/ 8%);
+    min-width: 450px;
+    width:35vw;
+    max-width:550px;
+}
+.cardFace{
+    justify-content:flex-start;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 1vh .4vw;
+}
+.schoolInfo{
+    margin-left: 15px;
+}
+.schoolItem:hover{
+    box-shadow: 0 24px 32px rgb(0 255 132/ 20%);
+    cursor: alias;
+}
+.back, .invisibleFront{
+    display:none;
+}
+
+.visibleBack{
+    display:flex;
+}
+

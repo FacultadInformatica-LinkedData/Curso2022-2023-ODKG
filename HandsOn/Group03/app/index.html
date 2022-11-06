@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Technical Attributes-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SchoolFinder</title>
+    <!--Descriptive Attributes-->
+    <meta
+    name="description"
+    content="Application that allow you to find madrid school information"
+    />
+    <meta name="author" content="Luis Ortiz Benito"/>
+    <meta name="keywords" content="LinkedData, OpenGraphs, SchoolFinder" />
+    <meta name="robots" content="index, follow">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+
+    <!-- <meta property="og:site_name" content="">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="">
+    <meta property="og:image" content="">
+
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content=""> -->
+</head>
+<body>
+  <header>
+    <div id="Logo">
+      <h1>SchoolFinder</h1>
+    </div>
+    
+    <nav id="headerMenu">
+      <ul>
+        <a href="/Index.html"><li>Explore</li></a>
+        <a href="/MySchools.html"><li>My Schools</li></a>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="containerPage" id="home-ExplorePage">
+      <h1 class="pageTitle">Explorer Tool</h1>
+      <div id="InteractionContainer">
+        <div id="QuickAccesButtonContainer">
+          <button>Select</button>
+          <button>Select</button>
+          <button>Select</button>
+          <button>Select</button>
+          <button>Select</button>
+        </div> 
+        <form action="/search" method="post" id="SchoolSearchForm">
+          <input type="text" placeholder="Enter a school name.."  name="schoolName" id="schoolNameSearchBox">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <nav id="footerMenu">
+      <ul>
+        <a href="/FAQ.html"><li>FAQ</li></a>
+        <a href="/AboutUs.html"><li>About us</li></a>
+        <a href="/PrivacyPolicy.html"><li>Privacy Policy</li></a>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>

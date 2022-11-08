@@ -315,8 +315,8 @@ text-align: center;
     padding: 1vh .4vw;
 }
 .schoolMap, .backMapInfo{
-    width:228px;
-    height:221px;
+    width:228px !important;
+    height:221px !important;
 }
 .schoolInfo{
     margin-left: 15px;

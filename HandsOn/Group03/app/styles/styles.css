@@ -104,6 +104,9 @@ main{
     
 }
 #QuickAccesButtonContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
     align-self: center;
     cursor:default;
     min-width: 320px; 
@@ -111,8 +114,11 @@ main{
 #QuickAccesButtonContainer button{
     min-height:40px;
     min-width:50px;
+    max-width:150px;
+
     height:5vh;
     width:15vw;
+    /* margin: 5px 20px; */
 }
 
 #SchoolSearchForm{

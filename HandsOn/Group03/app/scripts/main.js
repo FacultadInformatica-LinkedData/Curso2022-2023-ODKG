@@ -9,6 +9,7 @@ jQuery.fn.shake = function(interval,distance,times){
   }
   return jTarget.animate({ left: 0},interval);
 }
+
 $( document ).ready(function() {
     var savedSchools = [];
     $('#SchoolSearchForm').on('submit', (event) => {
@@ -17,6 +18,7 @@ $( document ).ready(function() {
         let schoolName = $('#schoolNameSearchBox').val(); //event.currentTarget[0].value;
         if(schoolName == null || schoolName == "" ) return null; 
         alert(schoolName);
+        $("#searchResults").show();
     });
     $('.schoolItem').on('click', flipItem);
 });

@@ -145,7 +145,10 @@ main{
 #SchoolSearchForm button:hover {
     background: #03e277;
 }
-  
+#searchResults{
+    display:none;
+    align-self: center;
+}
 /* ---------------------- END MAIN ---------------------- */
 /* ---------------------- FOOTER ---------------------- */
 footer{
@@ -299,9 +302,10 @@ text-align: center;
     border-radius:10px;
     background-color:var(--secondary-font-color);
     box-shadow: 0 24px 32px rgb(0 255 132/ 8%);
-    min-width: 450px;
+    min-width: 420px;
     width:35vw;
     max-width:550px;
+    margin-bottom: 40px;
 }
 .cardFace{
     justify-content:flex-start;
@@ -309,6 +313,10 @@ text-align: center;
     flex-direction: row;
     align-content: center;
     padding: 1vh .4vw;
+}
+.schoolMap, .backMapInfo{
+    width:228px;
+    height:221px;
 }
 .schoolInfo{
     margin-left: 15px;

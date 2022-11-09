@@ -1,6 +1,6 @@
 @prefix bs: <http://smartbikes.org/ontology/bikeStation#> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
-@prefix wiki: https://www.wikidata.org/wiki/Q484170#
+@prefix wiki: <http://www.wikidata.org/wiki/>.
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix paw: <http://purl.org/pav/> .

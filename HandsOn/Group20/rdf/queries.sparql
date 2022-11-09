@@ -1,3 +1,12 @@
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix property: <https://www.asociadrid.es/ontology/property#> 
+prefix class: <https://www.asociadrid.es/ontology/class#> 
+prefix rr: <http://www.w3.org/ns/r2rml#>
+prefix rml: <http://semweb.mmlab.be/ns/rml#>
+
 #Show all the properties that can be applied to instances of the created knowledge graph, except rdf:type and rdfs:label
 
 SELECT DISTINCT ?pr WHERE{

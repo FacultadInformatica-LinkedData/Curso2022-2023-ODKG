@@ -1,0 +1,16 @@
+select ?s where {
+    ?s owl:sameAs <https://www.wikidata.org/wiki/Q656196>
+}
+
+select ?o where {
+    <http://bicycleaccident.com/group2/resource/Place/Latina> owl:sameAs ?o
+}
+
+select ?s where {
+    ?s owl:sameAs <https://www.wikidata.org/wiki/Q794954> .
+    ?s owl:sameAs <https://www.wikidata.org/wiki/Q589403>
+}
+
+select ?p where {
+    <http://bicycleaccident.com/group2/resource/Place/Vic%C3%A1lvaro> ?p ?o
+}

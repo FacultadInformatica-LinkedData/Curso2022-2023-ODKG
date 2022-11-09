@@ -17,7 +17,7 @@ mappings:
     s: https://www.healthfinder.io/group08/resource/Defibrillator/$(Defibrillator)
     po:
       - [a, nsont:Defibrillator]
-      - [rdf:label, $(Defibrillator)]
+      - [rdfs:label, $(Defibrillator)]
       - p: geo:location
         o:
           - mapping: addressmap
@@ -28,6 +28,15 @@ mappings:
     s: https://www.healthfinder.io/group08/resource/Address/$(addressName)-$(latitude)-$(longitude)
     po:
       - [a, nsont:Address]
+      - [rdfs:label, $(addressName)]
       - [nsont:location ,$(addressName) ,xsd:string]
       - [geo:longitude ,$(longitude) ,xsd:float]
       - [geo:latitude ,$(latitude) ,xsd:float]
+  
+  citymap:
+    sources:
+      - [desfibriladores-externos-fuera-ambito-sanitario-update.csv~csv]
+    s: https://www.healthfinder.io/group08/resource/City/$(city)
+    po:
+      - [a, nsont:City]
+      - [rdfs:label, $(city)]

@@ -19,7 +19,7 @@ mappings:
   stationMap:
     sources:
       - ["datos202112-updated.csv~csv"]
-    s: http://smartcity.airquality.es/airquality/station/$(Station)
+    s: http://smartcity.airquality.es/airquality/station/$(StationName)
     po:
       - [a, vocab:Station]
       - [vocab:hasStationName, $(StationName), xsd:string]
@@ -36,7 +36,7 @@ mappings:
   magnitudeMap:
     sources:
       - ["datos202112-updated.csv~csv"]
-    s: http://smartcity.airquality.es/airquality/magnitude/$(Code)
+    s: http://smartcity.airquality.es/airquality/magnitude/$(MagnitudeName)
     po:
       - [a, vocab:Magnitude]
       - [vocab:hasMagnitudeName, $(MagnitudeName), xsd:string]

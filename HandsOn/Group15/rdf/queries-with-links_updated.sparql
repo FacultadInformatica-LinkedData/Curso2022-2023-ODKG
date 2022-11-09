@@ -1,0 +1,24 @@
+PREFIX base: <http://busstopalcobendas.odkg.es/group15/ontology/gr15#> .
+PREFIX owl: <http://www.w3.org/2002/07/owl#> .
+
+# Lista todas las paradas en la zona A
+SELECT ?Subject WHERE { 
+  ?Subject base:zone_id \'A\'.
+  ?Subject base:hasAddress ?address.
+  ?address owl:sameAs ?link.
+} 
+
+# Las paradas en la zona B1, su direccion y el link encontrado
+SELECT ?Subject ?address ?link WHERE { 
+  ?Subject base:zone_id \'B1\'.
+  ?Subject base:hasAddress ?address.
+  ?address owl:sameAs ?link
+} 
+
+
+# Link y stop_code de todas las paradas que estan linkeadas
+SELECT ?stop_code ?link WHERE { 
+    ?Subject base:hasAddress ?address.
+    ?address owl:sameAs ?link.
+    ?Subject base:stop_code ?stop_code
+  }

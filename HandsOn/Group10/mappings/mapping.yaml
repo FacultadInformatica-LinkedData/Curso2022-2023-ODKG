@@ -28,7 +28,7 @@ mappings:
       - [content/drive/MyDrive/OpenData/Street-with-links.csv~csv]
     s: $(Identificador)
     po:
-      - [a, vocab:street]
+      - [a, vocab:Street]
       - [rdfs:label, $(nombre)]
       - [owl:sameAs, $(wikidata_street)~iri]
 

@@ -1,0 +1,1641 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "street_name: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "street_name",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "street_name",
+    "expression": "grel:value.replace(/(?i)avda/,\"Avenida\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column street_name using expression grel:value.replace(/(?i)avda/,\"Avenida\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "street_name: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "street_name",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "street_name",
+    "expression": "grel:value.replace(/(?i)ctra/,\"Carretera\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column street_name using expression grel:value.replace(/(?i)ctra/,\"Carretera\")"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "street_name: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "street_name",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "street_name",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column street_name to type Q79007"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "street_name",
+    "expression": "grel:\"https://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_street",
+    "columnInsertIndex": 4,
+    "description": "Create column same_as_wikidata_street at index 4 based on column street_name using expression grel:\"https://www.wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "baseUri": "http://busstopalcobendas.odkg.es/group15/ontology/",
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "stop_id",
+          "expression": "\"busstop/\"+value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "hasAddress",
+              "curie": ":hasAddress",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "street_name",
+                "expression": "\"address/\"+value+\"_\"+cells.street_number.value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            }
+          ],
+          "rdfTypes": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "street_name",
+          "expression": "\"address/\"+value+\"_\"+cells.street_number.value",
+          "isRowNumberCell": false,
+          "links": [],
+          "rdfTypes": []
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "baseUri": "http://busstopalcobendas.odkg.es/group15/ontology/",
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "stop_id",
+          "expression": "\"busstop/\"+value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "stop_id",
+              "curie": ":stop_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_id",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_code",
+              "curie": ":stop_code",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_code",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_name",
+              "curie": ":stop_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "hasAddress",
+              "curie": ":hasAddress",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "street_name",
+                "expression": "\"address/\"+value+\"_\"+cells.street_number.value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "stop_lat",
+              "curie": ":stop_lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_lat",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_lon",
+              "curie": ":stop_lon",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_lon",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "zone_id",
+              "curie": ":zone_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "zone_id",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_url",
+              "curie": ":stop_url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_url",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_timezone",
+              "curie": ":stop_timezone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_timezone",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "street_name",
+          "expression": "\"address/\"+value+\"_\"+cells.street_number.value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "street_name",
+              "curie": ":street_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "street_name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "street_number",
+              "curie": ":street_number",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "street_number",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": []
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "base",
+          "uri": "http://busstopalcobendas.odkg.es/group15/ontology/"
+        }
+      ],
+      "baseUri": "http://busstopalcobendas.odkg.es/group15/ontology/",
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "stop_id",
+          "expression": "\"busstop/\"+value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "stop_id",
+              "curie": ":stop_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_id",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_code",
+              "curie": ":stop_code",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_code",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_name",
+              "curie": ":stop_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "hasAddress",
+              "curie": ":hasAddress",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "street_name",
+                "expression": "\"address/\"+value+\"_\"+cells.street_number.value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "stop_lat",
+              "curie": ":stop_lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_lat",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_lon",
+              "curie": ":stop_lon",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_lon",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "zone_id",
+              "curie": ":zone_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "zone_id",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_url",
+              "curie": ":stop_url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_url",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_timezone",
+              "curie": ":stop_timezone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_timezone",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "street_name",
+          "expression": "\"address/\"+value+\"_\"+cells.street_number.value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "street_name",
+              "curie": ":street_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "street_name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "street_number",
+              "curie": ":street_number",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "street_number",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": []
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "base",
+          "uri": "http://busstopalcobendas.odkg.es/group15/ontology/"
+        }
+      ],
+      "baseUri": "http://busstopalcobendas.odkg.es/group15/ontology/",
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "stop_id",
+          "expression": "\"busstop/\"+value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "stop_id",
+              "curie": ":stop_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_id",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_code",
+              "curie": ":stop_code",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_code",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_name",
+              "curie": ":stop_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "hasAddress",
+              "curie": ":hasAddress",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "street_name",
+                "expression": "\"address/\"+value+\"_\"+cells.street_number.value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "stop_lat",
+              "curie": ":stop_lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_lat",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_lon",
+              "curie": ":stop_lon",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_lon",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "zone_id",
+              "curie": ":zone_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "zone_id",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_url",
+              "curie": ":stop_url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_url",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_timezone",
+              "curie": ":stop_timezone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_timezone",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "street_name",
+          "expression": "\"address/\"+value+\"_\"+cells.street_number.value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "street_name",
+              "curie": ":street_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "street_name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "street_number",
+              "curie": ":street_number",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "street_number",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": []
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "base",
+          "uri": "http://busstopalcobendas.odkg.es/group15/ontology/"
+        }
+      ],
+      "baseUri": "http://busstopalcobendas.odkg.es/group15/ontology/",
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "stop_id",
+          "expression": "\"busstop/\"+value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "stop_id",
+              "curie": ":stop_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_id",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_code",
+              "curie": ":stop_code",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_code",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_name",
+              "curie": ":stop_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "hasAddress",
+              "curie": ":hasAddress",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "street_name",
+                "expression": "\"address/\"+value+\"_\"+cells.street_number.value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "stop_lat",
+              "curie": ":stop_lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_lat",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_lon",
+              "curie": ":stop_lon",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_lon",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "zone_id",
+              "curie": ":zone_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "zone_id",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_url",
+              "curie": ":stop_url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_url",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "stop_timezone",
+              "curie": ":stop_timezone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_timezone",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "street_name",
+          "expression": "\"address/\"+value+\"_\"+cells.street_number.value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "street_name",
+              "curie": ":street_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "street_name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "street_number",
+              "curie": ":street_number",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "street_number",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": []
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "base",
+          "uri": "http://busstopalcobendas.odkg.es/group15/ontology/"
+        }
+      ],
+      "baseUri": "http://busstopalcobendas.odkg.es/group15/ontology/",
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "stop_id",
+          "expression": "\"busstop/\"+value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_id",
+              "curie": "base:stop_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_id",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_code",
+              "curie": "base:stop_code",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_code",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_name",
+              "curie": "base:stop_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/hasAddress",
+              "curie": "base:hasAddress",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "street_name",
+                "expression": "\"address/\"+value+\"_\"+cells.street_number.value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_lat",
+              "curie": "base:stop_lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_lat",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_lon",
+              "curie": "base:stop_lon",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_lon",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/zone_id",
+              "curie": "base:zone_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "zone_id",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_url",
+              "curie": "base:stop_url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_url",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_timezone",
+              "curie": "base:stop_timezone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_timezone",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "street_name",
+          "expression": "\"address/\"+value+\"_\"+cells.street_number.value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/street_name",
+              "curie": "base:street_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "street_name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/street_number",
+              "curie": "base:street_number",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "street_number",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": []
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "base",
+          "uri": "http://busstopalcobendas.odkg.es/group15/ontology/"
+        }
+      ],
+      "baseUri": "http://busstopalcobendas.odkg.es/group15/ontology/",
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "stop_id",
+          "expression": "\"busstop/\"+value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_id",
+              "curie": "base:stop_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_id",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_code",
+              "curie": "base:stop_code",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_code",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_name",
+              "curie": "base:stop_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/hasAddress",
+              "curie": "base:hasAddress",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "street_name",
+                "expression": "\"address/\"+value+\"_\"+cells.street_number.value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_lat",
+              "curie": "base:stop_lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_lat",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_lon",
+              "curie": "base:stop_lon",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_lon",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/zone_id",
+              "curie": "base:zone_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "zone_id",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_url",
+              "curie": "base:stop_url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_url",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_timezone",
+              "curie": "base:stop_timezone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_timezone",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "street_name",
+          "expression": "\"address/\"+value+\"_\"+cells.street_number.value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/street_name",
+              "curie": "base:street_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "street_name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/street_number",
+              "curie": "base:street_number",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "street_number",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": []
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "base",
+          "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#"
+        }
+      ],
+      "baseUri": "http://busstopalcobendas.odkg.es/group15/resource/",
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "stop_id",
+          "expression": "\"busstop/\"+value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_id",
+              "curie": "base:stop_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_id",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_code",
+              "curie": "base:stop_code",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_code",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_name",
+              "curie": "base:stop_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/hasAddress",
+              "curie": "base:hasAddress",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "street_name",
+                "expression": "\"address/\"+value+\"_\"+cells.street_number.value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_lat",
+              "curie": "base:stop_lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_lat",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_lon",
+              "curie": "base:stop_lon",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_lon",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/zone_id",
+              "curie": "base:zone_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "zone_id",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_url",
+              "curie": "base:stop_url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_url",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/stop_timezone",
+              "curie": "base:stop_timezone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_timezone",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "street_name",
+          "expression": "\"address/\"+value+\"_\"+cells.street_number.value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/street_name",
+              "curie": "base:street_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "street_name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/street_number",
+              "curie": "base:street_number",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "street_number",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "same_as_wikidata_street",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": []
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "base",
+          "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#"
+        }
+      ],
+      "baseUri": "http://busstopalcobendas.odkg.es/group15/resource/",
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "stop_id",
+          "expression": "\"busstop/\"+value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#stop_id",
+              "curie": "base:stop_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_id",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#stop_code",
+              "curie": "base:stop_code",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_code",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#stop_name",
+              "curie": "base:stop_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#hasAddress",
+              "curie": "base:hasAddress",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "street_name",
+                "expression": "\"resource/address/\"+value+\"_\"+cells.street_number.value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#stop_lat",
+              "curie": "base:stop_lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_lat",
+                "expression": "value",
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#stop_lon",
+              "curie": "base:stop_lon",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_lon",
+                "expression": "value",
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#zone_id",
+              "curie": "base:zone_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "zone_id",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#stop_url",
+              "curie": "base:stop_url",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "stop_url",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#stop_timezone",
+              "curie": "base:stop_timezone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_timezone",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "street_name",
+          "expression": "\"resource/address/\"+value+\"_\"+cells.street_number.value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#street_name",
+              "curie": "base:street_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "street_name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#street_number",
+              "curie": "base:street_number",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "street_number",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "same_as_wikidata_street",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": []
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "base",
+          "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#"
+        }
+      ],
+      "baseUri": "http://busstopalcobendas.odkg.es/group15/resource/",
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "stop_id",
+          "expression": "\"busstop/\"+value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#stop_id",
+              "curie": "base:stop_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_id",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#stop_code",
+              "curie": "base:stop_code",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_code",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#stop_name",
+              "curie": "base:stop_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#hasAddress",
+              "curie": "base:hasAddress",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "street_name",
+                "expression": "\"resource/address/\"+value+\"_\"+cells.street_number.value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#stop_lat",
+              "curie": "base:stop_lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_lat",
+                "expression": "value",
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#stop_lon",
+              "curie": "base:stop_lon",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_lon",
+                "expression": "value",
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#zone_id",
+              "curie": "base:zone_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "zone_id",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#stop_url",
+              "curie": "base:stop_url",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "stop_url",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#stop_timezone",
+              "curie": "base:stop_timezone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "stop_timezone",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "columnName": "street_name",
+          "expression": "\"resource/address/\"+value+\"_\"+cells.street_number.value",
+          "isRowNumberCell": false,
+          "links": [
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#street_name",
+              "curie": "base:street_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "street_name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://busstopalcobendas.odkg.es/group15/ontology/gr15#street_number",
+              "curie": "base:street_number",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "street_number",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "same_as_wikidata_street",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": []
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  }
+]

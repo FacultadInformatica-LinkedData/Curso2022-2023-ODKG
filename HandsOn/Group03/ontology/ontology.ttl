@@ -269,6 +269,10 @@ schema:Place a owl:Class ;
 schema:PostalAddress a owl:Class ;
     rdfs:label "Postal Address" .
 
+ont:PostalAddress a owl:Class ;
+    rdfs:label "Postal Address";
+    rdfs:subClassOf schema:PostalAddress.
+
 ont:Schoolyard a owl:Class ;
     rdfs:label "Schoolyard" .
 

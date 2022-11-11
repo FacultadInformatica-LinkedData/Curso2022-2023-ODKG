@@ -1,0 +1,139 @@
+,pk,name,equipment,teaching,typeAccessibility,contentURL,locality,province,postalCode,neighborhood,district,coordX,coordY,phone,fax,email,titularity,laborDay,schedule,extraUses,otherUses,yardCategory,yardNumber,accessibilityComment,directAccess,otherAccess,wcAccessibles,shade,furniture,services,surface,conservationState,greenZonesProximity,facilitiesProximity,observations,bus,renfe,metro,address
+0,176850,Colegio público adolfo suárez,"Comedor, horario ampliado, planes de mejora",Enseñanzas: segundo ciclo de e. infantil - primaria - educación secundaria obligatoria,0,Http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410vgnvcm100000171f5a0arcrd&vgnextoid=a9344b6faa61c010vgnvcm1000000b205a0arcrd,Madrid,Madrid,28050,Valdefuentes,Hortaleza,444807,4482402,917 502 058 / 676 562 792,917 502 058,Nan,Ayuntamiento,Lunes-viernes continua,9:00-16:00,Actividades extraescolares 16:00-18:00,"Actividades extraescolares, días no lectivos, campamentos urbanos, talleres fin de semana",Iii,3,Si,Si (c/ infanta catalina micaela),-,No,Si (150m²),"Porterías, canastas, bancos",Alumbrado,"3868,71 + 1384,25 + 4474,92",Mejorable (elementos deteriorados),Nan,Nan,Nan, 174,Nan,Nan,Calle infanta catalina micaela 31
+1,4693138,Colegio público agustín rodriguez sahagún,"Horario ampliado, comedor, planes de mejora",Enseñanza: educacion infantil - primaria - enseñanza biling&amp;uuml;e,0,Http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410vgnvcm100000171f5a0arcrd&vgnextoid=706c615f4eb66110vgnvcm1000000b205a0arcrd,Madrid,Madrid,28031,Casco H.Vallecas,Villa De Vallecas,447178,4468793,913 324 348,914 941 475,Nan,Ayuntamiento,Lunes-viernes continua,9:00-16:00,Actividades extraescolares 16:00-20:00,-,Ii,2,Si,Si (c/ granja de san ildefonso),Av. villa de vallecas (directo a canchas),Si (en gimnasio),"Porches, arbolado","Porterías, canastas, columpios, bancos, ping pong, rocódromo, huerto.","Alumbrado, fuente","5748,56",Bueno,"Parque mundaire (450m), parque de las cataratas (550m), parque mundaire (650m)","Orichas stadium (300m), instalación deportiva miguel guillen (900m)",Nan, 142,Nan,Nan,Calle la granja de san ildefonso 17
+
+--------
+
+prefixes:
+  ont: http://smartcity.linkeddata.es/schoolfinder/ontology/
+	schema: https://schema.org/
+  owl: http://www.w3.org/2002/07/owl#
+
+mappings:
+  School:
+    sources:
+      - [Estudio_Patios_Escolares2022-updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/school/$(pk)
+    po:
+      - [a, ont:School]
+      - [ont:teaching, $(teaching)]
+      - [ont:laborDay, $(laborDay)]
+      - [ont:schedule, $(schedule)]
+      - [ont:titularity, $(titularity)]
+      - [ont:observations, $(observations)]
+      - [ont:extraUses, $(extraUses)]
+      - [ont:otherUses, $(otherUses)]
+	  
+      - [schema:identifier, $(identifier)]
+      - [schema:name, $(name)]
+	  
+      - [schema:telephone, $(telephone)]
+      - [schema:faxNumber, $(faxNumber)]
+      - [schema:email, $(email)]
+	  
+      - [schema:latitude, $(latitude)]
+      - [schema:longitude, $(longitude)]
+      - [schema:address, http://smartcity.linkeddata.es/schoolfinder/resource/postalAddress/$(pk)~iri]
+
+      - [ont:hasSchoolyard, http://smartcity.linkeddata.es/schoolfinder/resource/schoolyard/$(pk)~iri]
+      - [ont:hasAccessibility, http://smartcity.linkeddata.es/schoolfinder/resource/accessibility/$(pk)~iri]
+
+  PostalAddress:
+    sources:
+      - [Estudio_Patios_Escolares2022-updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/postalAddress/$(pk)
+    po:
+      - [a, ont:PostalAddress]
+      - [ont:streetAddress, $(streetAddress)]
+      - [ont:postalCode, $(postalCode)]
+      - [ont:hasLocality, http://smartcity.linkeddata.es/schoolfinder/resource/locality/$(pk)~iri]
+      - [ont:hasDistrict, http://smartcity.linkeddata.es/schoolfinder/resource/district/$(pk)~iri]
+      - [ont:hasProvince, http://smartcity.linkeddata.es/schoolfinder/resource/province/$(pk)~iri]
+      - [ont:hasNeighborhood, http://smartcity.linkeddata.es/schoolfinder/resource/neighborhood/$(pk)~iri]
+
+
+  Locality:
+    sources:
+      - [Estudio_Patios_Escolares2022-updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/locality/$(pk)
+    po:
+      - [a, ont:Locality]
+      - [ont:locality, $(locality)]
+      - [owl:sameAs, $(same_as_wikidata_locality)~iri]
+
+  District:
+    sources:
+      - [Estudio_Patios_Escolares2022-updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/district/$(pk)
+    po:
+      - [a, ont:District]
+      - [ont:district, $(district)]
+      - [owl:sameAs, $(same_as_wikidata_district)~iri]
+
+  Province:
+    sources:
+      - [Estudio_Patios_Escolares2022-updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/province/$(pk)
+    po:
+      - [a, ont:Province]
+      - [ont:province, $(province)]
+      - [owl:sameAs, $(same_as_wikidata_province)~iri]      
+
+  Neighborhood:
+    sources:
+      - [Estudio_Patios_Escolares2022-updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/neighborhood/$(pk)
+    po:
+      - [a, ont:Neighborhood]
+      - [ont:neighborhood, $(neighborhood)]
+      - [owl:sameAs, $(same_as_wikidata_neighborhood)~iri]
+
+  Accessibility:
+    sources:
+      - [Estudio_Patios_Escolares2022-updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/accessibility/$(pk)
+    po:
+      - [a, ont:Accessibility]
+      - [ont:typeAccessibility, $(typeAccessibility)]
+      - [ont:accessibilityComment, $(accessibilityComment)]
+      - [ont:directAccess, $(directAccess)]
+      - [ont:bus, $(bus)]
+      - [ont:otherAccess, $(otherAccess)]
+      - [ont:greenZonesProximity, $(greenZonesProximity)]
+      - [ont:facilitiesProximity, $(facilitiesProximity)]
+      - [ont:hasRenfe, http://smartcity.linkeddata.es/schoolfinder/resource/renfe/$(pk)~iri]
+      - [ont:hasMetro, http://smartcity.linkeddata.es/schoolfinder/resource/metro/$(pk)~iri]
+
+  Renfe:
+    sources:
+      - [Estudio_Patios_Escolares2022-updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/renfe/$(pk)
+    po:
+      - [a, ont:Renfe]
+      - [ont:renfe, $(renfe)]
+      - [owl:sameAs, $(same_as_wikidata_renfe)~iri]
+
+  Metro:
+    sources:
+      - [Estudio_Patios_Escolares2022-updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/metro/$(pk)
+    po:
+      - [a, ont:Metro]
+      - [ont:metro, $(metro)]
+      - [owl:sameAs, $(same_as_wikidata_metro)~iri]
+  Schoolyard:
+    sources:
+      - [Estudio_Patios_Escolares2022-updated.csv~csv]
+    s: http://smartcity.linkeddata.es/schoolfinder/resource/schoolyard/$(pk)
+    po:
+      - [a, ont:Schoolyard]
+      - [ont:yardCategory, $(yardCategory)]
+      - [ont:yardNumber, $(yardNumber)]
+      - [ont:wcAccessibles, $(wcAccessibles)]
+      - [ont:shade, $(shade)]
+      - [ont:surface, $(surface)]
+      - [ont:furniture, $(furniture)]
+      - [ont:services, $(services)]
+      - [ont:conservationState, $(conservationState)]
+
+	  

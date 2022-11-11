@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+    background-color: lightblue;
+    padding: 1rem;
+    color: gray;
+}
+
+.container-fluid {
+    margin-top: 2rem;
+}

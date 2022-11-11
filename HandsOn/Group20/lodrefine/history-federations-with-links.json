@@ -2328,5 +2328,138 @@
     "oldColumnName": "tr1",
     "newColumnName": "same_as_organization_wikidata",
     "description": "Rename column tr1 to same_as_organization_wikidata"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "name",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "timmed_name",
+    "columnInsertIndex": 3,
+    "description": "Create column timmed_name at index 3 based on column name using expression grel:value"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "timmed_name",
+    "newColumnName": "trimmed_name",
+    "description": "Rename column timmed_name to trimmed_name"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "trimmed_name",
+    "expression": "value.replace(\" \",\"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column trimmed_name using expression value.replace(\" \",\"_\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "trimmed_name",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column trimmed_name using expression value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "trimmed_name",
+    "expression": "value.replace(\"_-_\",\"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column trimmed_name using expression value.replace(\"_-_\",\"_\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "trimmed_name",
+    "expression": "value.replace(\".\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column trimmed_name using expression value.replace(\".\",\"\")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "register_date",
+    "expression": "grel:value[0,10]",
+    "onError": "set-to-blank",
+    "newColumnName": "register_date_alt_format",
+    "columnInsertIndex": 15,
+    "description": "Create column register_date_alt_format at index 15 based on column register_date using expression grel:value[0,10]"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "website",
+    "expression": "value.replace(\"///\",\"//\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column website using expression value.replace(\"///\",\"//\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "website",
+    "expression": "value.replace(\" \",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column website using expression value.replace(\" \",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "website",
+          "columnName": "website",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "website",
+    "expression": "value.replace(\"..\",\".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column website using expression value.replace(\"..\",\".\")"
   }
 ]

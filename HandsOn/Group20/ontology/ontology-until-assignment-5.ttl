@@ -1,0 +1,136 @@
+@base <https://www.asociadrid.es> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix property: <https://www.asociadrid.es/ontology/property/> .
+@prefix class: <https://www.asociadrid.es/ontology/class#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+
+
+# Datatype Properties
+
+property:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:CollaborativeEntitiy ;
+    rdfs:range xsd:string .
+
+property:name rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:CollaborativeEntitiy ;
+    rdfs:range xsd:string .
+
+property:cif rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:CollaborativeEntity ;
+    rdfs:range xsd:string .
+
+property:area rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:CollaborativeEntity ;
+    rdfs:range xsd:string .
+
+property:category rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:CollaborativeEntity ;
+    rdfs:range xsd:string .
+
+property:num_affiliates rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:CollaborativeEntity ;
+    rdfs:range xsd:integer .
+
+property:register_date rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:CollaborativeEntity ;
+    rdfs:range xsd:date .
+
+property:asoc_affiliated rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:Federation ;
+    rdfs:range xsd:integer .
+
+property:phone rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:CollaborativeEntity ;
+    rdfs:range xsd:string .  
+
+property:email rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:CollaborativeEntity ;
+    rdfs:range xsd:string .     
+       
+property:complete_address rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:Address ;
+    rdfs:range xsd:string .
+
+property:detail rdf:type owl:DatatypeProperty ;
+    rdfs:label "detail"@en ;
+    rdfs:domain class:Address ;
+    rdfs:range xsd:string .
+
+property:latitude rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:Address ;
+    rdfs:range xsd:double .
+
+property:longitude rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:Address ;
+    rdfs:range xsd:double .
+
+property:zipcode rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:Address ;
+    rdfs:range xsd:string .
+
+property:subdistrict_label rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:Subdistrict ;
+    rdfs:range xsd:string .
+
+property:district_label rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:District ;
+    rdfs:range xsd:string .
+
+property:website_uri rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:Website ;
+    rdfs:range xsd:anyURI.
+
+
+# Object Properties
+
+property:belongsToSubdistrict rdf:type owl:ObjectProperty ;
+    rdfs:domain class:Address;
+    rdfs:range class:Subdistrict .
+
+property:belongsToDistrict rdf:type owl:ObjectProperty ;
+    rdfs:domain class:Subdistrict;
+    rdfs:range class:District .
+
+property:hasAnAdress rdf:type owl:ObjectProperty ;
+    rdfs:domain class:CollaborativeEntity ;
+    rdfs:range class:Address .
+
+property:hasAWebsite rdf:type owl:ObjectProperty ;
+    rdfs:domain class:CollaborativeEntity ;
+    rdfs:range class:Website .
+
+property:affiliatedTo rdf:type owl:ObjectProperty ;
+    rdfs:domain class:Association ;
+    rdfs:range class:Federation .
+
+
+# Classes
+
+class: a owl:Ontology ;
+    dc:description "Ontology code created by Chowlk" .
+
+class:CollaborativeEntity rdf:type owl:Class.
+
+class:Association rdf:type owl:Class;
+    rdfs:subClassOf class:CollaborativeEntitiy .
+
+class:Collective rdf:type owl:Class ;
+    rdfs:subClassOf class:CollaborativeEntity .
+
+class:Federation rdf:type owl:Class ;
+    rdfs:subClassOf class:CollaborativeEntity .
+
+class:Foundation rdf:type owl:Class ;
+    rdfs:subClassOf class:CollaborativeEntity .
+
+class:Website rdf:type owl:Class .
+
+class:District rdf:type owl:Class .
+
+class:Subdistrict rdf:type owl:Class .
+
+class:Address rdf:type owl:Class.

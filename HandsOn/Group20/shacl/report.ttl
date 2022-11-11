@@ -1,0 +1,39 @@
+@prefix rr:    <http://www.w3.org/ns/r2rml#> .
+@prefix schema: <https://schema.org/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dasp:  <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix property: <https://www.asociadrid.es/ontology/property#> .
+@prefix class: <https://www.asociadrid.es/ontology/class#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://astrea.linkeddata.es/shapes#090b2643d03a0c4bdc7637e48bc45466>
+        <http://shacl-play.sparna.fr/ontology#targetMatched>
+                false .
+
+<https://astrea.linkeddata.es/shapes#f3939b954606e2d5db33c52a38ba255a>
+        <http://shacl-play.sparna.fr/ontology#targetMatched>
+                false .
+
+<https://astrea.linkeddata.es/shapes#7d31e878918619ad12be68dcc0363395>
+        <http://shacl-play.sparna.fr/ontology#targetMatched>
+                false .
+
+<https://astrea.linkeddata.es/shapes#20dbf5594df31c18d255f26622a5b899>
+        <http://shacl-play.sparna.fr/ontology#targetMatched>
+                false .
+
+<https://astrea.linkeddata.es/shapes#74ac90c9c816d92423aaedea3c4d9dd8>
+        <http://shacl-play.sparna.fr/ontology#targetMatched>
+                false .
+
+[ a            sh:ValidationReport ;
+  <http://shacl-play.sparna.fr/ontology#hasMatched>
+          true ;
+  sh:conforms  true
+] .

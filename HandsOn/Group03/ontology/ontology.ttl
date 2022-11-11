@@ -275,10 +275,12 @@ ont:Schoolyard a owl:Class ;
 ont:Accessibility a owl:Class ;
     rdfs:label "Accessibility" .
 
-ont:School a owl:Class ;
+schema:School a owl:Class ;
     rdfs:label "School" ;
-    rdfs:subClassOf ont:School,
-        schema:Organization,
+    rdfs:subClassOf schema:Organization,
 	schema:Thing,
         schema:Place .
 
+ont:School a owl:Class ;
+    rdfs:label "School" ;
+    rdfs:subClassOf schema:School.

@@ -20,10 +20,10 @@
 
 
 
-###  http://smartcity.airquality.es/airquality/ontology/ont#hasStation
+###  http://smartcity.airquality.es/airquality/ontology/ont#isLocatedIn
 :isLocatedIn rdf:type owl:ObjectProperty ;
-        rdfs:domain :Municipality ;
-        rdfs:range :Station .
+        rdfs:domain :Station ;
+        rdfs:range :Municipality .
 
 
 
@@ -43,13 +43,13 @@
 ###  http://smartcity.airquality.es/airquality/ontology/ont#latitude
 :latitude rdf:type owl:DatatypeProperty ;
         rdfs:domain :Station ;
-        rdfs:range xsd:real .
+        rdfs:range xsd:float .
 
 
 ###  http://smartcity.airquality.es/airquality/ontology/ont#longitude
 :longitude rdf:type owl:DatatypeProperty ;
         rdfs:domain :Station ;
-        rdfs:range xsd:real .
+        rdfs:range xsd:float .
 
 
 ###  http://smartcity.airquality.es/airquality/ontology/ont#hasStationName
@@ -81,9 +81,9 @@
 
 
 ###  http://smartcity.airquality.es/airquality/ontology/ont#Station
-:Station owl:SubClassOf saref:Device .
+:Station owl:subClassOf saref:Device .
 
 
 
 ###  http://smartcity.airquality.es/airquality/ontology/ont#Magnitude
-:Magnitude owl:SubClassOf saref:Measurement .
+:Magnitude owl:subClassOf saref:Measurement .

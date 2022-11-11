@@ -1,0 +1,33 @@
+# Get all properties used in the graph
+SELECT DISTINCT ?property
+WHERE {
+    ?subject ?property ?object
+}
+
+# Get all Day Center for the Elderly
+SELECT DISTINCT ?subject
+WHERE {
+    ?subject a <https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosDiaMayores>
+}
+
+# Get how many Day Center for the Elderly there are in each district
+# Because of some casting issues in the mapping, we need to filter the type of
+# the literal `district` to retrieve only strings (the other option is to get
+# the numeric code of the district)
+SELECT ?district (COUNT(DISTINCT ?center) AS ?center_count)
+WHERE {
+    ?center <http://purl.org/ctic/infraestructuras/localizacion#distrito> ?district.
+    ?center a <https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosDiaMayores>
+    FILTER(datatype(?district) = xsd:string)
+}
+GROUP BY ?district
+ORDER BY DESC(?center_count)
+
+# Get all the public transportation access to the Day Center for the Elderly
+# "José Villareal"
+SELECT ?transport_access
+WHERE {{
+    <http://miciudadamiga.madrid/map/resource/Jos%C3%A9_Villareal> <http://miciudadamiga.madrid/map/ontology#metroAccess> ?transport_access
+} UNION {
+    <http://miciudadamiga.madrid/map/resource/Jos%C3%A9_Villareal> <http://miciudadamiga.madrid/map/ontology#busAccess> ?transport_access
+}}

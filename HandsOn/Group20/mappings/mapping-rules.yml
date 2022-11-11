@@ -1,0 +1,165 @@
+prefixes:
+  base: https://www.asociadrid.es
+  rr: http://www.w3.org/ns/r2rml#
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  transit: http://vocab.org/transit/terms
+  xsd: http://www.w3.org/2001/XMLSchema#
+  wgs84_pos: http://www.w3.org/2003/01/geo/wgs84_pos#
+  vocab: http://example.org#
+  property: <https://www.asociadrid.es/ontology/property#
+  class: https://www.asociadrid.es/ontology/class#
+  schema: https://schema.org/
+
+mappings: 
+  triplesmap1:
+    sources:
+      - [/csv/merged-files.csv~csv]
+    s: https://www.asociadrid.es/resource/District)($district)
+    po:
+      - [rdf:type, class:District]
+      - [property:district_label,$(district)]
+  triplesmap2:
+    sources:
+      - [/csv/merged-files.csv~csv]
+    s: https://www.asociadrid.es/resource/District/($subdistrict)
+    po:
+      - [rdf:type, class:Subdistrict]
+      - [property:subdistrict_label,$(subdistrict)]
+      - [property:belongsToDistrict,http://asociadrid.es/resource/District/($district)~iri]
+  triplesmap3:
+    sources:
+      - [/csv/merged-files.csv~csv]
+    s: https://www.asociadrid.es/resource/Address/($id)
+    po:
+      - [rdf:type, class:Address]
+      - [property:complete_address,$(address)]
+      - [property:detail,$(detail)]
+      - [property:zipcode,$(zip_code)]
+      - [property:latitude,$(latitude)xsd:double]
+      - [property:longitude,$(longitude)xsd:double]
+      - [property:belongsToSubdistrict,http://asociadrid.es/resource/Subdistrict/($subdistrict)~iri]
+
+  triplesmap4:
+    sources:
+      - [/csv/merged-files.csv~csv]
+    s: https://www.asociadrid.es/resource/Phone)($phone)
+    po:
+      - [rdf:type, class:Phone]
+      - [property:phone,$(phone)]
+  triplesmap5:
+    sources:
+      - [/csv/merged-files.csv~csv]
+    s: https://www.asociadrid.es/resource/Website)($website)
+    po:
+      - [rdf:type, class:Website]
+      - [property:website,$(website)]
+  triplesmap6:
+    sources:
+      - [/csv/merged-files.csv~csv]
+    s: https://www.asociadrid.es/resource/Email)($email)
+    po:
+      - [rdf:type, class:Email]
+      - [property:email,$(email)]
+  triplesmap7:
+    sources:
+      - [/csv/transformed-files/collectives-updated.csv~csv]
+    s: https://www.asociadrid.es/resource/CollaborativeEntities/Collectives/($name)
+    po:
+      - [rdf:type, class:Collective]
+      - [property:name,$(name)]
+      - [property:id,$(id)]
+      - [property:category,$(category)]
+      - [property:area,$(geographical_scope)]
+      - [property:register_date,$(register_date)xsd:date]
+      - [property:num_affiliates,$(num_affiliates)xsd:integer]
+      - [property:cif,$(cif)]
+      - [property:hasAnAddress,http://asociadrid.es/resource/Address/($id)~iri]
+      - [property:hasAnEmail,http://asociadrid.es/resource/Email/($email)~iri]
+      - [property:hasAPhone,http://asociadrid.es/resource/Phone/($phone)~iri]
+      - [property:hasAWebsite,http://asociadrid.es/resource/Website/($website)~iri]
+  triplesmap8:
+    sources:
+      - [/csv/transformed-files/foundations-updated.csv~csv]
+    s: https://www.asociadrid.es/resource/CollaborativeEntities/Foundations/($name)
+    po:
+      - [rdf:type, class:Foundation]
+      - [property:name,$(name)]
+      - [property:id,$(id)]
+      - [property:category,$(category)]
+      - [property:area,$(geographical_scope)]
+      - [property:register_date,$(register_date)xsd:date]
+      - [property:num_affiliates,$(num_affiliates)xsd:integer]
+      - [property:cif,$(cif)]
+      - [property:hasAnAddress,http://asociadrid.es/resource/Address/($id)~iri]
+      - [property:hasAnEmail,http://asociadrid.es/resource/Email/($email)~iri]
+      - [property:hasAPhone,http://asociadrid.es/resource/Phone/($phone)~iri]
+      - [property:hasAWebsite,http://asociadrid.es/resource/Website/($website)~iri]
+  triplesmap9:
+    sources:
+      - [/csv/transformed-files/federations-updated.csv~csv]
+    s: https://www.asociadrid.es/resource/CollaborativeEntities/Federations/($name)
+    po:
+      - [rdf:type, class:Federation]
+      - [property:name,$(name)]
+      - [property:id,$(id)]
+      - [property:category,$(category)]
+      - [property:area,$(geographical_scope)]
+      - [property:register_date,$(register_date)xsd:date]
+      - [property:num_affiliates,$(num_affiliates)xsd:integer]
+      - [property:asoc_madrid,$(asoc_affiliated)xsd:integer]
+      - [property:cif,$(cif)]
+      - [property:hasAnAddress,http://asociadrid.es/resource/Address/($id)~iri]
+      - [property:hasAnEmail,http://asociadrid.es/resource/Email/($email)~iri]
+      - [property:hasAPhone,http://asociadrid.es/resource/Phone/($phone)~iri]
+      - [property:hasAWebsite,http://asociadrid.es/resource/Website/($website)~iri]
+  triplesmap10:
+    sources:
+      - [/csv/transformed-files/associations-updated.csv~csv]
+    s: https://www.asociadrid.es/resource/CollaborativeEntities/Associations/($name)
+    po:
+      - [rdf:type, class:Association]
+      - [property:name,$(name)]
+      - [property:id,$(id)]
+      - [property:category,$(category)]
+      - [property:area,$(geographical_scope)]
+      - [property:register_date,$(register_date)xsd:date]
+      - [property:num_affiliates,$(num_affiliates)xsd:integer]
+      - [property:cif,$(cif)]
+      - [property:hasAnAddress,http://asociadrid.es/resource/Address/($id)~iri]
+      - [property:hasAnEmail,http://asociadrid.es/resource/Email/($email)~iri]
+      - [property:hasAPhone,http://asociadrid.es/resource/Phone/($phone)~iri]
+      - [property:hasAWebsite,http://asociadrid.es/resource/Website/($website)~iri]
+      - p: prop:affiliatedTo
+        o:
+            mapping: triplesmap9
+            condition:
+             function: equal
+             parameters:
+              - [str1, $(belongs_to_id1)]
+              - [str2, $(id)]
+      - p: prop:affiliatedTo
+        o:
+            mapping: triplesmap9
+            condition:
+             function: equal
+             parameters:
+              - [str1, $(belongs_to_id2)]
+              - [str2, $(id)]
+      - p: prop:affiliatedTo
+        o:
+            mapping: triplesmap9
+            condition:
+             function: equal
+             parameters:
+              - [str1, $(belongs_to_id3)]
+              - [str2, $(id)]
+      - p: prop:affiliatedTo
+        o:
+            mapping: triplesmap9
+            condition:
+             function: equal
+             parameters:
+              - [str1, $(belongs_to_id4)]
+              - [str2, $(id)]
+

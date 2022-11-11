@@ -1,0 +1,288 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix map: <http://mapping.example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix ns: <http://www.dialysisComunidadValenciana.es/> .
+@prefix wiki: <https://www.wikidata.org/wiki/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+
+map:map_center_000 rml:logicalSource map:source_000 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "center" ;
+	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007 ;
+	rr:subjectMap map:s_000 .
+
+map:map_city_000 rml:logicalSource map:source_003 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "city" ;
+	rr:predicateObjectMap map:pom_013, map:pom_014, map:pom_015 ;
+	rr:subjectMap map:s_003 .
+
+map:map_entity_000 rml:logicalSource map:source_004 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "entity" ;
+	rr:predicateObjectMap map:pom_016, map:pom_017 ;
+	rr:subjectMap map:s_004 .
+
+map:map_health_area_000 rml:logicalSource map:source_001 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "health_area" ;
+	rr:predicateObjectMap map:pom_008, map:pom_009, map:pom_010 ;
+	rr:subjectMap map:s_001 .
+
+map:map_province_000 rml:logicalSource map:source_002 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "province" ;
+	rr:predicateObjectMap map:pom_011, map:pom_012 ;
+	rr:subjectMap map:s_002 .
+
+map:om_000 rdf:type rr:ObjectMap ;
+	rr:constant "http://www.dialysisComunidadValenciana.es/Center" ;
+	rr:termType rr:IRI .
+
+map:om_001 rml:reference "center" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_002 rml:reference "phone_number" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_003 rml:reference "address" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_004 rdf:type rr:ObjectMap ;
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/health_area/{health_area_id}" ;
+	rr:termType rr:IRI .
+
+map:om_005 rdf:type rr:ObjectMap ;
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/entity/{entity_id}" ;
+	rr:termType rr:IRI .
+
+map:om_006 rml:reference "longitude" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:float ;
+	rr:termType rr:Literal .
+
+map:om_007 rml:reference "latitude" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:float ;
+	rr:termType rr:Literal .
+
+map:om_008 rdf:type rr:ObjectMap ;
+	rr:constant "http://www.dialysisComunidadValenciana.es/Health_Area" ;
+	rr:termType rr:IRI .
+
+map:om_009 rml:reference "health_area" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_010 rdf:type rr:ObjectMap ;
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/city/{city_id}" ;
+	rr:termType rr:IRI .
+
+map:om_011 rdf:type rr:ObjectMap ;
+	rr:constant "http://www.dialysisComunidadValenciana.es/Province" ;
+	rr:termType rr:IRI .
+
+map:om_012 rml:reference "province" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_013 rdf:type rr:ObjectMap ;
+	rr:constant "http://www.dialysisComunidadValenciana.es/City" ;
+	rr:termType rr:IRI .
+
+map:om_014 rml:reference "city" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_015 rdf:type rr:ObjectMap ;
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/province/{province_id}" ;
+	rr:termType rr:IRI .
+
+map:om_016 rdf:type rr:ObjectMap ;
+	rr:constant "http://www.dialysisComunidadValenciana.es/Entity" ;
+	rr:termType rr:IRI .
+
+map:om_017 rml:reference "entity" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:pm_000 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_001 rdf:type rr:PredicateMap ;
+	rr:constant rdfs:label .
+
+map:pm_002 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasPhone .
+
+map:pm_003 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasAddress .
+
+map:pm_004 rdf:type rr:PredicateMap ;
+	rr:constant gn:locatedIn .
+
+map:pm_005 rdf:type rr:PredicateMap ;
+	rr:constant ns:managed_by .
+
+map:pm_006 rdf:type rr:PredicateMap ;
+	rr:constant geo:long .
+
+map:pm_007 rdf:type rr:PredicateMap ;
+	rr:constant geo:lat .
+
+map:pm_008 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_009 rdf:type rr:PredicateMap ;
+	rr:constant rdfs:label .
+
+map:pm_010 rdf:type rr:PredicateMap ;
+	rr:constant gn:locatedIn .
+
+map:pm_011 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_012 rdf:type rr:PredicateMap ;
+	rr:constant rdfs:label .
+
+map:pm_013 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_014 rdf:type rr:PredicateMap ;
+	rr:constant rdfs:label .
+
+map:pm_015 rdf:type rr:PredicateMap ;
+	rr:constant gn:locatedIn .
+
+map:pm_016 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_017 rdf:type rr:PredicateMap ;
+	rr:constant rdfs:label .
+
+map:pom_000 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_000 ;
+	rr:predicateMap map:pm_000 .
+
+map:pom_001 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_001 ;
+	rr:predicateMap map:pm_001 .
+
+map:pom_002 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_002 ;
+	rr:predicateMap map:pm_002 .
+
+map:pom_003 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_003 ;
+	rr:predicateMap map:pm_003 .
+
+map:pom_004 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_004 ;
+	rr:predicateMap map:pm_004 .
+
+map:pom_005 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_005 ;
+	rr:predicateMap map:pm_005 .
+
+map:pom_006 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_006 ;
+	rr:predicateMap map:pm_006 .
+
+map:pom_007 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_007 ;
+	rr:predicateMap map:pm_007 .
+
+map:pom_008 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_008 ;
+	rr:predicateMap map:pm_008 .
+
+map:pom_009 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_009 ;
+	rr:predicateMap map:pm_009 .
+
+map:pom_010 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_010 ;
+	rr:predicateMap map:pm_010 .
+
+map:pom_011 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_011 ;
+	rr:predicateMap map:pm_011 .
+
+map:pom_012 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_012 ;
+	rr:predicateMap map:pm_012 .
+
+map:pom_013 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_013 ;
+	rr:predicateMap map:pm_013 .
+
+map:pom_014 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_014 ;
+	rr:predicateMap map:pm_014 .
+
+map:pom_015 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_015 ;
+	rr:predicateMap map:pm_015 .
+
+map:pom_016 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_016 ;
+	rr:predicateMap map:pm_016 .
+
+map:pom_017 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_017 ;
+	rr:predicateMap map:pm_017 .
+
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_center_000, map:map_city_000, map:map_entity_000, map:map_health_area_000, map:map_province_000 ;
+	rdf:type <http://rdfs.org/ns/void#Dataset> .
+
+map:s_000 rdf:type rr:SubjectMap ;
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/center/{center_id}" .
+
+map:s_001 rdf:type rr:SubjectMap ;
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/health_area/{health_area_id}" .
+
+map:s_002 rdf:type rr:SubjectMap ;
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/province/{province_id}" .
+
+map:s_003 rdf:type rr:SubjectMap ;
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/city/{city_id}" .
+
+map:s_004 rdf:type rr:SubjectMap ;
+	rr:template "http://www.dialysisComunidadValenciana.es/resource/entity/{entity_id}" .
+
+map:source_000 rml:referenceFormulation ql:CSV ;
+	rml:source "./relacion-de-centros-de-dialisis-csv-updated.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_001 rml:referenceFormulation ql:CSV ;
+	rml:source "./relacion-de-centros-de-dialisis-csv-updated.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_002 rml:referenceFormulation ql:CSV ;
+	rml:source "./relacion-de-centros-de-dialisis-csv-updated.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_003 rml:referenceFormulation ql:CSV ;
+	rml:source "./relacion-de-centros-de-dialisis-csv-updated.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_004 rml:referenceFormulation ql:CSV ;
+	rml:source "./relacion-de-centros-de-dialisis-csv-updated.csv" ;
+	rdf:type rml:LogicalSource .
+

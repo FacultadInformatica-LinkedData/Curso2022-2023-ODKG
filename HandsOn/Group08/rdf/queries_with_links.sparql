@@ -1,0 +1,25 @@
+# Get the links with wikidata
+
+SELECT ?x ?wikiInfo
+WHERE {
+    ?x owl:sameAs ?wikiInfo .
+}
+
+# Get all the clinics located in Madrid
+
+SELECT ?clinics
+WHERE {
+    ?clinics geo:location ?address.
+    ?address nsont:isIn ?city.
+    ?city owl:sameAs <https://wikidata.org/entity/Q2807>
+}
+
+
+# Get all the defibrillator located in Arganda del Rey 
+
+SELECT ?defibrillator
+WHERE {
+    ?defibrillator geo:location ?address.
+    ?address nsont:isIn ?city.
+    ?city owl:sameAs <https://wikidata.org/entity/Q497692>
+}

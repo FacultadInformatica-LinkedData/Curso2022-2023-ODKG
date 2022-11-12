@@ -6,8 +6,6 @@ The topic of the selected datasets are describe next:
 
 * [200342-0-centros-dia.csv](https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=22bceca8a5a03410VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default): Municipal and subsidized day centers in the city of Madrid specialized in elderly care.
 
-[The data schema in UML can be located in this link.](./analysis/dataset_schema.jpg)
-
 ### Exploratory Data Analysis (EDA)
 The exploratory data analysis can be found in the `analysis` folder. The notebook `analysis.ipynb` gathers the necessary code for creating the reports regarding the data types and ranges for each variable. From this analysis we can extract some conclusions as expressed next:
 
@@ -61,27 +59,19 @@ Open Data is a global initiative linked to the Open Government policies, which i
 - [Ordenanza de Transparencia de la Ciudad de Madrid, de 27 de julio de 2016](https://sede.madrid.es/FrameWork/generacionPDF/ANM2016_108.pdf?idNormativa=3eabe8e52c796510VgnVCM1000001d4a900aRCRD&nombreFichero=ANM2016_108&cacheKey=163)
 
 ### Resource Naming Strategy (RNS)
+The Resource Naming Strategy follows the following rules:
 
-**Base domain**
+* Base domain: `https://miciudadamiga.madrid/`
+* Path: `map/`
+* Ontological Term Path: `https://miciudadamiga.madrid/map/ontology/SocialCenter#[classOrPropertyName]`
+* Individuals Path: `https://miciudadamiga.madrid/map/resource/[className]/[identifier]`
+    * Metro: `https://miciudadamiga.madrid/map/resource/ParadaMetro/[identifier]`
+    * District: `https://miciudadamiga.madrid/map/resource/District/[identifier]`
+    * Neighborhood: `https://miciudadamiga.madrid/map/resource/Neighborhood/[identifier]`
 
-https://miciudadamiga.madrid/
+Some examples of specific use cases are shown below:
 
-**Path**
-
-map/
-
-**Ontological Term Path**
-
-https://miciudadamiga.madrid/map/\[ontologyName\]#\[className\]
-
-*Example*
-
-https://miciudadamiga.madrid/map/ontology#Centro_de_Dia
-
-**Individuals Path**
-
-https://miciudadamiga.madrid/map/\[resource\]/\[resourceName\]
-
-*Example*
-
-https://miciudadamiga.madrid/map/resource/Bus
+* https://miciudadamiga.madrid/map/ontology/SocialCenter#ElderDayCenter
+* https://miciudadamiga.madrid/map/ontology/SocialCenter#belongsToNeighborhood
+* https://miciudadamiga.madrid/map/resource/ParadaMetro/Legazpi
+* https://miciudadamiga.madrid/map/resource/District/76

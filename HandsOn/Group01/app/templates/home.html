@@ -11,7 +11,7 @@
 <h1>
   Find my dialysis center
 </h1>
-<br>
+<br><br>
 
 <form method="post" action="/get_values">
   <label for="name">Health area</label>
@@ -22,7 +22,7 @@
     {% endfor %}
   </select>
 
-  <br><br>
+  <br><br><br>
 
   <label for="name">Province</label>
   <select name="province" method="GET" action="/" id="province">
@@ -32,8 +32,8 @@
     {% endfor %}
   </select>
 
-  <br><br>
-  
+  <br><br><br>
+
   <label for="name">City</label>
   <select name="city" method="GET" action="/" id="city">
     <option value="None" selected>-</option>
@@ -42,7 +42,7 @@
     {% endfor %}
   </select>
 
-  <br><br>
+  <br><br><br>
 
   <input type="submit" value="Buscar" />
 </form>

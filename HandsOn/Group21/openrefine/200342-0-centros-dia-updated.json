@@ -380,5 +380,295 @@
       "TIPO"
     ],
     "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PK",
+    "description": "Remove column PK"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TIPO-CENTRO",
+    "description": "Remove column TIPO-CENTRO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CENTRO-DIA",
+    "newColumnName": "name",
+    "description": "Rename column CENTRO-DIA to name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "HORARIO",
+    "newColumnName": "openingHours",
+    "description": "Rename column HORARIO to openingHours"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "EQUIPAMIENTO",
+    "description": "Remove column EQUIPAMIENTO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "METRO",
+    "newColumnName": "SubwayStation",
+    "description": "Rename column METRO to SubwayStation"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "BUS",
+    "newColumnName": "busLine",
+    "description": "Rename column BUS to busLine"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DESCRIPCION",
+    "newColumnName": "description",
+    "description": "Rename column DESCRIPCION to description"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ACCESIBILIDAD",
+    "newColumnName": "accesibility",
+    "description": "Rename column ACCESIBILIDAD to accesibility"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CONTENT-URL",
+    "newColumnName": "url",
+    "description": "Rename column CONTENT-URL to url"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DIRECCION",
+    "newColumnName": "address",
+    "description": "Rename column DIRECCION to address"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "COD-BARRIO",
+    "newColumnName": "COD-MadridNeighborhood",
+    "description": "Rename column COD-BARRIO to COD-MadridNeighborhood"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "BARRIO",
+    "newColumnName": "MadridNeighborhood",
+    "description": "Rename column BARRIO to MadridNeighborhood"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "COD-DISTRITO",
+    "newColumnName": "COD-District",
+    "description": "Rename column COD-DISTRITO to COD-District"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DISTRITO",
+    "newColumnName": "District",
+    "description": "Rename column DISTRITO to District"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COORDENADA-X",
+    "description": "Remove column COORDENADA-X"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COORDENADA-Y",
+    "description": "Remove column COORDENADA-Y"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "LATITUD",
+    "newColumnName": "latitude",
+    "description": "Rename column LATITUD to latitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "LONGITUD",
+    "newColumnName": "longitude",
+    "description": "Rename column LONGITUD to longitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TELEFONO",
+    "newColumnName": "telephone",
+    "description": "Rename column TELEFONO to telephone"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TIPO",
+    "description": "Remove column TIPO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value.replace(\"_\",\" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column name using expression value.replace(\"_\",\" \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "accesibility",
+    "expression": "value.replace(\"0\",\"False\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column accesibility using expression value.replace(\"0\",\"False\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "accesibility",
+    "expression": "value.replace(\"SI\",\"TRUE\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column accesibility using expression value.replace(\"SI\",\"TRUE\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "accesibility",
+    "expression": "value.replace(\"NO\",\"FALSE\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column accesibility using expression value.replace(\"NO\",\"FALSE\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COD-MadridNeighborhood",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COD-MadridNeighborhood using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COD-District",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COD-District using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MadridNeighborhood",
+    "expression": "value.replace(\"_\",\" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MadridNeighborhood using expression value.replace(\"_\",\" \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District",
+    "expression": "value.replace(\"_\",\" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column District using expression value.replace(\"_\",\" \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "latitude",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column latitude using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "longitude",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column longitude using expression value.toNumber()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "accesibility",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "FALSE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": false
+      }
+    ],
+    "description": "Mass edit cells in column accesibility"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "accesibility",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "TRUE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": true
+      }
+    ],
+    "description": "Mass edit cells in column accesibility"
   }
 ]

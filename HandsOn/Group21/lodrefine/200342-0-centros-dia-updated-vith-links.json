@@ -5,12 +5,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value.trim()",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column METRO using expression value.trim()"
+    "description": "Text transform on cells in column SubwayStation using expression value.trim()"
   },
   {
     "op": "core/mass-edit",
@@ -18,19 +18,19 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value",
     "edits": [
       {
         "from": [
-          "Barrio de la Concepción (Línea 7)"
+          "MadridNeighborhood de la Concepción (Línea 7)"
         ],
         "fromBlank": false,
         "fromError": false,
-        "to": "Barrio de la Concepción"
+        "to": "MadridNeighborhood de la Concepción"
       }
     ],
-    "description": "Mass edit cells in column METRO"
+    "description": "Mass edit cells in column SubwayStation"
   },
   {
     "op": "core/mass-edit",
@@ -38,7 +38,7 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value",
     "edits": [
       {
@@ -50,7 +50,7 @@
         "to": "Ciudad de los Ángeles"
       }
     ],
-    "description": "Mass edit cells in column METRO"
+    "description": "Mass edit cells in column SubwayStation"
   },
   {
     "op": "core/mass-edit",
@@ -58,7 +58,7 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value",
     "edits": [
       {
@@ -70,7 +70,7 @@
         "to": "Colombia"
       }
     ],
-    "description": "Mass edit cells in column METRO"
+    "description": "Mass edit cells in column SubwayStation"
   },
   {
     "op": "core/mass-edit",
@@ -78,7 +78,7 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value",
     "edits": [
       {
@@ -90,7 +90,7 @@
         "to": "Estrecho"
       }
     ],
-    "description": "Mass edit cells in column METRO"
+    "description": "Mass edit cells in column SubwayStation"
   },
   {
     "op": "core/mass-edit",
@@ -98,7 +98,7 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value",
     "edits": [
       {
@@ -110,7 +110,7 @@
         "to": "Iglesia"
       }
     ],
-    "description": "Mass edit cells in column METRO"
+    "description": "Mass edit cells in column SubwayStation"
   },
   {
     "op": "core/text-transform",
@@ -118,12 +118,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value.replace(\"L1\",\"\")",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column METRO using expression value.replace(\"L1\",\"\")"
+    "description": "Text transform on cells in column SubwayStation using expression value.replace(\"L1\",\"\")"
   },
   {
     "op": "core/text-transform",
@@ -131,12 +131,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value.replace(\"L3\",\"\")",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column METRO using expression value.replace(\"L3\",\"\")"
+    "description": "Text transform on cells in column SubwayStation using expression value.replace(\"L3\",\"\")"
   },
   {
     "op": "core/text-transform",
@@ -144,12 +144,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value.replace(\"L5\",\"\")",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column METRO using expression value.replace(\"L5\",\"\")"
+    "description": "Text transform on cells in column SubwayStation using expression value.replace(\"L5\",\"\")"
   },
   {
     "op": "core/text-transform",
@@ -157,12 +157,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value.replace(\"L9\",\"\")",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column METRO using expression value.replace(\"L9\",\"\")"
+    "description": "Text transform on cells in column SubwayStation using expression value.replace(\"L9\",\"\")"
   },
   {
     "op": "core/text-transform",
@@ -170,12 +170,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value.replace(\"L4\",\"\")",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column METRO using expression value.replace(\"L4\",\"\")"
+    "description": "Text transform on cells in column SubwayStation using expression value.replace(\"L4\",\"\")"
   },
   {
     "op": "core/text-transform",
@@ -183,12 +183,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value.replace(\"Línea 4\",\"\")",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column METRO using expression value.replace(\"Línea 4\",\"\")"
+    "description": "Text transform on cells in column SubwayStation using expression value.replace(\"Línea 4\",\"\")"
   },
   {
     "op": "core/text-transform",
@@ -196,12 +196,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value.replace(\"L6\",\"\")",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column METRO using expression value.replace(\"L6\",\"\")"
+    "description": "Text transform on cells in column SubwayStation using expression value.replace(\"L6\",\"\")"
   },
   {
     "op": "core/text-transform",
@@ -209,12 +209,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value.replace(\"L7\",\"\")",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column METRO using expression value.replace(\"L7\",\"\")"
+    "description": "Text transform on cells in column SubwayStation using expression value.replace(\"L7\",\"\")"
   },
   {
     "op": "core/text-transform",
@@ -222,12 +222,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value.replace(\"(\",\"\")",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column METRO using expression value.replace(\"(\",\"\")"
+    "description": "Text transform on cells in column SubwayStation using expression value.replace(\"(\",\"\")"
   },
   {
     "op": "core/text-transform",
@@ -235,12 +235,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value.replace(\")\",\"\")",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column METRO using expression value.replace(\")\",\"\")"
+    "description": "Text transform on cells in column SubwayStation using expression value.replace(\")\",\"\")"
   },
   {
     "op": "core/text-transform",
@@ -248,12 +248,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value.replace(\"y\",\",\")",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column METRO using expression value.replace(\"y\",\",\")"
+    "description": "Text transform on cells in column SubwayStation using expression value.replace(\"y\",\",\")"
   },
   {
     "op": "core/text-transform",
@@ -261,12 +261,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value.trim()",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column METRO using expression value.trim()"
+    "description": "Text transform on cells in column SubwayStation using expression value.trim()"
   },
   {
     "op": "core/mass-edit",
@@ -274,7 +274,7 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value",
     "edits": [
       {
@@ -286,7 +286,7 @@
         "to": "Laguna"
       }
     ],
-    "description": "Mass edit cells in column METRO"
+    "description": "Mass edit cells in column SubwayStation"
   },
   {
     "op": "core/mass-edit",
@@ -294,7 +294,7 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value",
     "edits": [
       {
@@ -306,7 +306,7 @@
         "to": "Legazpi"
       }
     ],
-    "description": "Mass edit cells in column METRO"
+    "description": "Mass edit cells in column SubwayStation"
   },
   {
     "op": "core/mass-edit",
@@ -314,7 +314,7 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value",
     "edits": [
       {
@@ -326,7 +326,7 @@
         "to": "Menendez Pelayo, Pacífico"
       }
     ],
-    "description": "Mass edit cells in column METRO"
+    "description": "Mass edit cells in column SubwayStation"
   },
   {
     "op": "core/mass-edit",
@@ -334,7 +334,7 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value",
     "edits": [
       {
@@ -346,7 +346,7 @@
         "to": "Noviciado, Santo Domingo, Plaza de España"
       }
     ],
-    "description": "Mass edit cells in column METRO"
+    "description": "Mass edit cells in column SubwayStation"
   },
   {
     "op": "core/mass-edit",
@@ -354,9 +354,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 5",
+          "name": "SubwayStation 5",
           "expression": "value",
-          "columnName": "METRO 5",
+          "columnName": "SubwayStation 5",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -374,7 +374,7 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "expression": "value",
     "edits": [
       {
@@ -386,7 +386,7 @@
         "to": ""
       }
     ],
-    "description": "Mass edit cells in column METRO"
+    "description": "Mass edit cells in column SubwayStation"
   },
   {
     "op": "core/column-split",
@@ -394,9 +394,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 5",
+          "name": "SubwayStation 5",
           "expression": "value",
-          "columnName": "METRO 5",
+          "columnName": "SubwayStation 5",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -414,14 +414,14 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO",
+    "columnName": "SubwayStation",
     "guessCellType": true,
     "removeOriginalColumn": true,
     "mode": "separator",
     "separator": ",",
     "regex": false,
     "maxColumns": 0,
-    "description": "Split column METRO by separator"
+    "description": "Split column SubwayStation by separator"
   },
   {
     "op": "core/text-transform",
@@ -429,9 +429,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 5",
+          "name": "SubwayStation 5",
           "expression": "value",
-          "columnName": "METRO 5",
+          "columnName": "SubwayStation 5",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -449,12 +449,12 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 1",
+    "columnName": "SubwayStation 1",
     "expression": "value.trim()",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column METRO 1 using expression value.trim()"
+    "description": "Text transform on cells in column SubwayStation 1 using expression value.trim()"
   },
   {
     "op": "core/text-transform",
@@ -462,9 +462,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 5",
+          "name": "SubwayStation 5",
           "expression": "value",
-          "columnName": "METRO 5",
+          "columnName": "SubwayStation 5",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -482,12 +482,12 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 2",
+    "columnName": "SubwayStation 2",
     "expression": "value.trim()",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column METRO 2 using expression value.trim()"
+    "description": "Text transform on cells in column SubwayStation 2 using expression value.trim()"
   },
   {
     "op": "core/text-transform",
@@ -495,9 +495,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 5",
+          "name": "SubwayStation 5",
           "expression": "value",
-          "columnName": "METRO 5",
+          "columnName": "SubwayStation 5",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -515,12 +515,12 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 3",
+    "columnName": "SubwayStation 3",
     "expression": "value.trim()",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column METRO 3 using expression value.trim()"
+    "description": "Text transform on cells in column SubwayStation 3 using expression value.trim()"
   },
   {
     "op": "core/recon",
@@ -528,9 +528,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 5",
+          "name": "SubwayStation 5",
           "expression": "value",
-          "columnName": "METRO 5",
+          "columnName": "SubwayStation 5",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -548,7 +548,7 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 1",
+    "columnName": "SubwayStation 1",
     "config": {
       "mode": "standard-service",
       "service": "https://wikidata.reconci.link/en/api",
@@ -556,13 +556,13 @@
       "schemaSpace": "http://www.wikidata.org/prop/direct/",
       "type": {
         "id": "Q928830",
-        "name": "metro station"
+        "name": "SubwayStation station"
       },
       "autoMatch": true,
       "columnDetails": [],
       "limit": 0
     },
-    "description": "Reconcile cells in column METRO 1 to type Q928830"
+    "description": "Reconcile cells in column SubwayStation 1 to type Q928830"
   },
   {
     "op": "core/mass-edit",
@@ -570,9 +570,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 5",
+          "name": "SubwayStation 5",
           "expression": "value",
-          "columnName": "METRO 5",
+          "columnName": "SubwayStation 5",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -589,9 +589,9 @@
         },
         {
           "type": "list",
-          "name": "METRO 1: judgment",
+          "name": "SubwayStation 1: judgment",
           "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-          "columnName": "METRO 1",
+          "columnName": "SubwayStation 1",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -609,7 +609,7 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 1",
+    "columnName": "SubwayStation 1",
     "expression": "value",
     "edits": [
       {
@@ -621,7 +621,7 @@
         "to": "La Latina"
       }
     ],
-    "description": "Mass edit cells in column METRO 1"
+    "description": "Mass edit cells in column SubwayStation 1"
   },
   {
     "op": "core/recon-judge-similar-cells",
@@ -629,9 +629,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 5",
+          "name": "SubwayStation 5",
           "expression": "value",
-          "columnName": "METRO 5",
+          "columnName": "SubwayStation 5",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -648,9 +648,9 @@
         },
         {
           "type": "list",
-          "name": "METRO 1: judgment",
+          "name": "SubwayStation 1: judgment",
           "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-          "columnName": "METRO 1",
+          "columnName": "SubwayStation 1",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -668,7 +668,7 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 1",
+    "columnName": "SubwayStation 1",
     "similarValue": "La Latina",
     "judgment": "matched",
     "match": {
@@ -680,7 +680,7 @@
       "score": 100
     },
     "shareNewTopics": false,
-    "description": "Match item La Latina (Q1115250) for cells containing \"La Latina\" in column METRO 1"
+    "description": "Match item La Latina (Q1115250) for cells containing \"La Latina\" in column SubwayStation 1"
   },
   {
     "op": "core/recon-judge-similar-cells",
@@ -688,9 +688,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 5",
+          "name": "SubwayStation 5",
           "expression": "value",
-          "columnName": "METRO 5",
+          "columnName": "SubwayStation 5",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -707,9 +707,9 @@
         },
         {
           "type": "list",
-          "name": "METRO 1: judgment",
+          "name": "SubwayStation 1: judgment",
           "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-          "columnName": "METRO 1",
+          "columnName": "SubwayStation 1",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -727,7 +727,7 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 1",
+    "columnName": "SubwayStation 1",
     "similarValue": "Urgel",
     "judgment": "matched",
     "match": {
@@ -740,7 +740,7 @@
       "score": 100
     },
     "shareNewTopics": false,
-    "description": "Match item Urgel (Q2696501) for cells containing \"Urgel\" in column METRO 1"
+    "description": "Match item Urgel (Q2696501) for cells containing \"Urgel\" in column SubwayStation 1"
   },
   {
     "op": "core/recon-judge-similar-cells",
@@ -748,9 +748,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 5",
+          "name": "SubwayStation 5",
           "expression": "value",
-          "columnName": "METRO 5",
+          "columnName": "SubwayStation 5",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -767,9 +767,9 @@
         },
         {
           "type": "list",
-          "name": "METRO 1: judgment",
+          "name": "SubwayStation 1: judgment",
           "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-          "columnName": "METRO 1",
+          "columnName": "SubwayStation 1",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -787,12 +787,12 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 1",
-    "similarValue": "Barrio Concepción",
+    "columnName": "SubwayStation 1",
+    "similarValue": "MadridNeighborhood Concepción",
     "judgment": "matched",
     "match": {
       "id": "Q2696985",
-      "name": "Barrio de la Concepción",
+      "name": "MadridNeighborhood de la Concepción",
       "types": [
         "Q928830",
         "Q22808403"
@@ -800,7 +800,7 @@
       "score": 85
     },
     "shareNewTopics": false,
-    "description": "Match item Barrio de la Concepción (Q2696985) for cells containing \"Barrio Concepción\" in column METRO 1"
+    "description": "Match item MadridNeighborhood de la Concepción (Q2696985) for cells containing \"MadridNeighborhood Concepción\" in column SubwayStation 1"
   },
   {
     "op": "core/recon-judge-similar-cells",
@@ -808,9 +808,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 5",
+          "name": "SubwayStation 5",
           "expression": "value",
-          "columnName": "METRO 5",
+          "columnName": "SubwayStation 5",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -827,9 +827,9 @@
         },
         {
           "type": "list",
-          "name": "METRO 1: judgment",
+          "name": "SubwayStation 1: judgment",
           "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-          "columnName": "METRO 1",
+          "columnName": "SubwayStation 1",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -847,7 +847,7 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 1",
+    "columnName": "SubwayStation 1",
     "similarValue": "Puente Vallecas",
     "judgment": "matched",
     "match": {
@@ -860,7 +860,7 @@
       "score": 91
     },
     "shareNewTopics": false,
-    "description": "Match item Puente de Vallecas (Q2479039) for cells containing \"Puente Vallecas\" in column METRO 1"
+    "description": "Match item Puente de Vallecas (Q2479039) for cells containing \"Puente Vallecas\" in column SubwayStation 1"
   },
   {
     "op": "core/mass-edit",
@@ -868,9 +868,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 5",
+          "name": "SubwayStation 5",
           "expression": "value",
-          "columnName": "METRO 5",
+          "columnName": "SubwayStation 5",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -887,9 +887,9 @@
         },
         {
           "type": "list",
-          "name": "METRO 1: judgment",
+          "name": "SubwayStation 1: judgment",
           "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-          "columnName": "METRO 1",
+          "columnName": "SubwayStation 1",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -907,7 +907,7 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 1",
+    "columnName": "SubwayStation 1",
     "expression": "value",
     "edits": [
       {
@@ -919,7 +919,7 @@
         "to": "Ciudad de los Ángeles"
       }
     ],
-    "description": "Mass edit cells in column METRO 1"
+    "description": "Mass edit cells in column SubwayStation 1"
   },
   {
     "op": "core/recon-judge-similar-cells",
@@ -927,9 +927,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 5",
+          "name": "SubwayStation 5",
           "expression": "value",
-          "columnName": "METRO 5",
+          "columnName": "SubwayStation 5",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -946,9 +946,9 @@
         },
         {
           "type": "list",
-          "name": "METRO 1: judgment",
+          "name": "SubwayStation 1: judgment",
           "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-          "columnName": "METRO 1",
+          "columnName": "SubwayStation 1",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -966,7 +966,7 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 1",
+    "columnName": "SubwayStation 1",
     "similarValue": "Ciudad de los Ángeles",
     "judgment": "matched",
     "match": {
@@ -978,7 +978,7 @@
       "score": 100
     },
     "shareNewTopics": false,
-    "description": "Match item Ciudad de los Ángeles (Q2042482) for cells containing \"Ciudad de los Ángeles\" in column METRO 1"
+    "description": "Match item Ciudad de los Ángeles (Q2042482) for cells containing \"Ciudad de los Ángeles\" in column SubwayStation 1"
   },
   {
     "op": "core/recon-judge-similar-cells",
@@ -986,9 +986,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 5",
+          "name": "SubwayStation 5",
           "expression": "value",
-          "columnName": "METRO 5",
+          "columnName": "SubwayStation 5",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -1005,9 +1005,9 @@
         },
         {
           "type": "list",
-          "name": "METRO 1: judgment",
+          "name": "SubwayStation 1: judgment",
           "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-          "columnName": "METRO 1",
+          "columnName": "SubwayStation 1",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -1025,7 +1025,7 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 1",
+    "columnName": "SubwayStation 1",
     "similarValue": "Cardenal Herrera Oria",
     "judgment": "matched",
     "match": {
@@ -1037,7 +1037,7 @@
       "score": 100
     },
     "shareNewTopics": false,
-    "description": "Match item Herrera Oria (Q2462763) for cells containing \"Cardenal Herrera Oria\" in column METRO 1"
+    "description": "Match item Herrera Oria (Q2462763) for cells containing \"Cardenal Herrera Oria\" in column SubwayStation 1"
   },
   {
     "op": "core/recon-judge-similar-cells",
@@ -1045,9 +1045,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 5",
+          "name": "SubwayStation 5",
           "expression": "value",
-          "columnName": "METRO 5",
+          "columnName": "SubwayStation 5",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -1064,9 +1064,9 @@
         },
         {
           "type": "list",
-          "name": "METRO 1: judgment",
+          "name": "SubwayStation 1: judgment",
           "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-          "columnName": "METRO 1",
+          "columnName": "SubwayStation 1",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -1084,7 +1084,7 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 1",
+    "columnName": "SubwayStation 1",
     "similarValue": "Pavones",
     "judgment": "matched",
     "match": {
@@ -1096,7 +1096,7 @@
       "score": 100
     },
     "shareNewTopics": false,
-    "description": "Match item Pavones (Q2479437) for cells containing \"Pavones\" in column METRO 1"
+    "description": "Match item Pavones (Q2479437) for cells containing \"Pavones\" in column SubwayStation 1"
   },
   {
     "op": "core/recon-clear-similar-cells",
@@ -1104,9 +1104,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 5",
+          "name": "SubwayStation 5",
           "expression": "value",
-          "columnName": "METRO 5",
+          "columnName": "SubwayStation 5",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -1123,9 +1123,9 @@
         },
         {
           "type": "list",
-          "name": "METRO 1: judgment",
+          "name": "SubwayStation 1: judgment",
           "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-          "columnName": "METRO 1",
+          "columnName": "SubwayStation 1",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -1143,9 +1143,9 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 1",
+    "columnName": "SubwayStation 1",
     "similarValue": "",
-    "description": "Clear recon data for cells containing \"\" in column METRO 1"
+    "description": "Clear recon data for cells containing \"\" in column SubwayStation 1"
   },
   {
     "op": "core/recon",
@@ -1153,9 +1153,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 5",
+          "name": "SubwayStation 5",
           "expression": "value",
-          "columnName": "METRO 5",
+          "columnName": "SubwayStation 5",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -1172,9 +1172,9 @@
         },
         {
           "type": "list",
-          "name": "METRO 1: judgment",
+          "name": "SubwayStation 1: judgment",
           "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-          "columnName": "METRO 1",
+          "columnName": "SubwayStation 1",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -1192,7 +1192,7 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 2",
+    "columnName": "SubwayStation 2",
     "config": {
       "mode": "standard-service",
       "service": "https://wikidata.reconci.link/en/api",
@@ -1200,13 +1200,13 @@
       "schemaSpace": "http://www.wikidata.org/prop/direct/",
       "type": {
         "id": "Q928830",
-        "name": "metro station"
+        "name": "SubwayStation station"
       },
       "autoMatch": true,
       "columnDetails": [],
       "limit": 0
     },
-    "description": "Reconcile cells in column METRO 2 to type Q928830"
+    "description": "Reconcile cells in column SubwayStation 2 to type Q928830"
   },
   {
     "op": "core/recon",
@@ -1214,9 +1214,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 5",
+          "name": "SubwayStation 5",
           "expression": "value",
-          "columnName": "METRO 5",
+          "columnName": "SubwayStation 5",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -1234,7 +1234,7 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 2",
+    "columnName": "SubwayStation 2",
     "config": {
       "mode": "standard-service",
       "service": "https://wikidata.reconci.link/en/api",
@@ -1242,13 +1242,13 @@
       "schemaSpace": "http://www.wikidata.org/prop/direct/",
       "type": {
         "id": "Q928830",
-        "name": "metro station"
+        "name": "SubwayStation station"
       },
       "autoMatch": true,
       "columnDetails": [],
       "limit": 0
     },
-    "description": "Reconcile cells in column METRO 2 to type Q928830"
+    "description": "Reconcile cells in column SubwayStation 2 to type Q928830"
   },
   {
     "op": "core/recon-judge-similar-cells",
@@ -1256,9 +1256,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 2: judgment",
+          "name": "SubwayStation 2: judgment",
           "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-          "columnName": "METRO 2",
+          "columnName": "SubwayStation 2",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -1276,7 +1276,7 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 2",
+    "columnName": "SubwayStation 2",
     "similarValue": "Pueblo Nuevo",
     "judgment": "matched",
     "match": {
@@ -1289,7 +1289,7 @@
       "score": 100
     },
     "shareNewTopics": false,
-    "description": "Match item Pueblo Nuevo (Q384453) for cells containing \"Pueblo Nuevo\" in column METRO 2"
+    "description": "Match item Pueblo Nuevo (Q384453) for cells containing \"Pueblo Nuevo\" in column SubwayStation 2"
   },
   {
     "op": "core/recon",
@@ -1297,9 +1297,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 2: judgment",
+          "name": "SubwayStation 2: judgment",
           "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-          "columnName": "METRO 2",
+          "columnName": "SubwayStation 2",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -1317,7 +1317,7 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 3",
+    "columnName": "SubwayStation 3",
     "config": {
       "mode": "standard-service",
       "service": "https://wikidata.reconci.link/en/api",
@@ -1331,7 +1331,7 @@
       "columnDetails": [],
       "limit": 0
     },
-    "description": "Reconcile cells in column METRO 3 to type Q928830"
+    "description": "Reconcile cells in column SubwayStation 3 to type Q928830"
   },
   {
     "op": "core/recon",
@@ -1339,7 +1339,7 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "METRO 3",
+    "columnName": "SubwayStation 3",
     "config": {
       "mode": "standard-service",
       "service": "https://wikidata.reconci.link/en/api",
@@ -1347,13 +1347,13 @@
       "schemaSpace": "http://www.wikidata.org/prop/direct/",
       "type": {
         "id": "Q928830",
-        "name": "metro station"
+        "name": "SubwayStation station"
       },
       "autoMatch": true,
       "columnDetails": [],
       "limit": 0
     },
-    "description": "Reconcile cells in column METRO 3 to type Q928830"
+    "description": "Reconcile cells in column SubwayStation 3 to type Q928830"
   },
   {
     "op": "core/recon-judge-similar-cells",
@@ -1361,9 +1361,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "METRO 3: judgment",
+          "name": "SubwayStation 3: judgment",
           "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-          "columnName": "METRO 3",
+          "columnName": "SubwayStation 3",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -1381,19 +1381,19 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "METRO 3",
+    "columnName": "SubwayStation 3",
     "similarValue": "Plaza de España",
     "judgment": "matched",
     "match": {
       "id": "Q776249",
-      "name": "Estación de Plaza de España (Metro de Madrid)",
+      "name": "Estación de Plaza de España (SubwayStation de Madrid)",
       "types": [
         "Q928830"
       ],
       "score": 100
     },
     "shareNewTopics": false,
-    "description": "Match item Estación de Plaza de España (Metro de Madrid) (Q776249) for cells containing \"Plaza de España\" in column METRO 3"
+    "description": "Match item Estación de Plaza de España (SubwayStation de Madrid) (Q776249) for cells containing \"Plaza de España\" in column SubwayStation 3"
   },
   {
     "op": "core/text-transform",
@@ -1401,12 +1401,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "BARRIO",
+    "columnName": "MadridNeighborhood",
     "expression": "value.replace(\"_\",\" \")",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column BARRIO using expression value.replace(\"_\",\" \")"
+    "description": "Text transform on cells in column MadridNeighborhood using expression value.replace(\"_\",\" \")"
   },
   {
     "op": "core/text-transform",
@@ -1414,12 +1414,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "BARRIO",
+    "columnName": "MadridNeighborhood",
     "expression": "value.replace(\"H.\",\"Histórico \")",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column BARRIO using expression value.replace(\"H.\",\"Histórico \")"
+    "description": "Text transform on cells in column MadridNeighborhood using expression value.replace(\"H.\",\"Histórico \")"
   },
   {
     "op": "core/text-transform",
@@ -1427,12 +1427,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "BARRIO",
+    "columnName": "MadridNeighborhood",
     "expression": "value.trim()",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column BARRIO using expression value.trim()"
+    "description": "Text transform on cells in column MadridNeighborhood using expression value.trim()"
   },
   {
     "op": "core/recon",
@@ -1440,7 +1440,7 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "BARRIO",
+    "columnName": "MadridNeighborhood",
     "config": {
       "mode": "standard-service",
       "service": "https://wikidata.reconci.link/en/api",
@@ -1454,7 +1454,7 @@
       "columnDetails": [],
       "limit": 0
     },
-    "description": "Reconcile cells in column BARRIO to type Q10267336"
+    "description": "Reconcile cells in column MadridNeighborhood to type Q10267336"
   },
   {
     "op": "core/recon-judge-similar-cells",
@@ -1462,9 +1462,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "BARRIO: judgment",
+          "name": "MadridNeighborhood: judgment",
           "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-          "columnName": "BARRIO",
+          "columnName": "MadridNeighborhood",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -1482,7 +1482,7 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "BARRIO",
+    "columnName": "MadridNeighborhood",
     "similarValue": "CASCO Histórico BARAJAS",
     "judgment": "matched",
     "match": {
@@ -1494,7 +1494,7 @@
       "score": 94
     },
     "shareNewTopics": false,
-    "description": "Match item Casco Histórico de Barajas (Q9701730) for cells containing \"CASCO Histórico BARAJAS\" in column BARRIO"
+    "description": "Match item Casco Histórico de Barajas (Q9701730) for cells containing \"CASCO Histórico BARAJAS\" in column MadridNeighborhood"
   },
   {
     "op": "core/recon-judge-similar-cells",
@@ -1502,9 +1502,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "BARRIO: judgment",
+          "name": "MadridNeighborhood: judgment",
           "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-          "columnName": "BARRIO",
+          "columnName": "MadridNeighborhood",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -1522,7 +1522,7 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "BARRIO",
+    "columnName": "MadridNeighborhood",
     "similarValue": "CASCO Histórico VICALVARO",
     "judgment": "matched",
     "match": {
@@ -1534,7 +1534,7 @@
       "score": 94
     },
     "shareNewTopics": false,
-    "description": "Match item Casco Histórico de Vicálvaro (Q16544374) for cells containing \"CASCO Histórico VICALVARO\" in column BARRIO"
+    "description": "Match item Casco Histórico de Vicálvaro (Q16544374) for cells containing \"CASCO Histórico VICALVARO\" in column MadridNeighborhood"
   },
   {
     "op": "core/recon-judge-similar-cells",
@@ -1542,9 +1542,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "BARRIO: judgment",
+          "name": "MadridNeighborhood: judgment",
           "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-          "columnName": "BARRIO",
+          "columnName": "MadridNeighborhood",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -1562,7 +1562,7 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "BARRIO",
+    "columnName": "MadridNeighborhood",
     "similarValue": "CASCO Histórico VALLECAS",
     "judgment": "matched",
     "match": {
@@ -1574,7 +1574,7 @@
       "score": 94
     },
     "shareNewTopics": false,
-    "description": "Match item Casco Histórico de Vallecas (Q16544370) for cells containing \"CASCO Histórico VALLECAS\" in column BARRIO"
+    "description": "Match item Casco Histórico de Vallecas (Q16544370) for cells containing \"CASCO Histórico VALLECAS\" in column MadridNeighborhood"
   },
   {
     "op": "core/recon-judge-similar-cells",
@@ -1582,9 +1582,9 @@
       "facets": [
         {
           "type": "list",
-          "name": "BARRIO: judgment",
+          "name": "MadridNeighborhood: judgment",
           "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-          "columnName": "BARRIO",
+          "columnName": "MadridNeighborhood",
           "invert": false,
           "omitBlank": false,
           "omitError": false,
@@ -1602,7 +1602,7 @@
       ],
       "mode": "row-based"
     },
-    "columnName": "BARRIO",
+    "columnName": "MadridNeighborhood",
     "similarValue": "PEÑAGRANDE",
     "judgment": "matched",
     "match": {
@@ -1614,7 +1614,7 @@
       "score": 100
     },
     "shareNewTopics": false,
-    "description": "Match item Peñagrande (Q3319582) for cells containing \"PEÑAGRANDE\" in column BARRIO"
+    "description": "Match item Peñagrande (Q3319582) for cells containing \"PEÑAGRANDE\" in column MadridNeighborhood"
   },
   {
     "op": "core/text-transform",
@@ -1622,12 +1622,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "DISTRITO",
+    "columnName": "District",
     "expression": "value.replace(\"_\",\" \")",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column DISTRITO using expression value.replace(\"_\",\" \")"
+    "description": "Text transform on cells in column District using expression value.replace(\"_\",\" \")"
   },
   {
     "op": "core/text-transform",
@@ -1635,12 +1635,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "DISTRITO",
+    "columnName": "District",
     "expression": "value.trim()",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column DISTRITO using expression value.trim()"
+    "description": "Text transform on cells in column District using expression value.trim()"
   },
   {
     "op": "core/recon",
@@ -1648,7 +1648,7 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "DISTRITO",
+    "columnName": "District",
     "config": {
       "mode": "standard-service",
       "service": "https://wikidata.reconci.link/en/api",
@@ -1662,7 +1662,656 @@
       "columnDetails": [],
       "limit": 0
     },
-    "description": "Reconcile cells in column DISTRITO to type Q3032114"
+    "description": "Reconcile cells in column District to type Q3032114"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "SubwayStation 1: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "SubwayStation 1",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 2: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 2",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 3: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 3",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "SubwayStation 1",
+    "similarValue": "Barrio Concepción",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2696985",
+      "name": "Barrio de la Concepción",
+      "types": [
+        "Q928830",
+        "Q22808403"
+      ],
+      "score": 85
+    },
+    "shareNewTopics": false,
+    "description": "Match item Barrio de la Concepción (Q2696985) for cells containing \"Barrio Concepción\" in column SubwayStation 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "SubwayStation 1: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "SubwayStation 1",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 2: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 2",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 3: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 3",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "SubwayStation 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pavones línea 9"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pavones"
+      }
+    ],
+    "description": "Mass edit cells in column SubwayStation 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "SubwayStation 1: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "SubwayStation 1",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 2: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 2",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 3: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 3",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "SubwayStation 1",
+    "similarValue": "Pavones",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2479437",
+      "name": "Pavones",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Pavones (Q2479437) for cells containing \"Pavones\" in column SubwayStation 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "SubwayStation 1: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "SubwayStation 1",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 2: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 2",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 3: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 3",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "SubwayStation 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Barrio de la Concepción Línea 7"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Barrio de la Concepción"
+      }
+    ],
+    "description": "Mass edit cells in column SubwayStation 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "SubwayStation 1: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "SubwayStation 1",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 2: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 2",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 3: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 3",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "SubwayStation 1",
+    "similarValue": "Barrio de la Concepción",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2696985",
+      "name": "Barrio de la Concepción",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Barrio de la Concepción (Q2696985) for cells containing \"Barrio de la Concepción\" in column SubwayStation 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "SubwayStation 1: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "SubwayStation 1",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 2: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 2",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 3: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 3",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "SubwayStation 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Arg&amp;uuml;elles Líneas 3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Arguelles"
+      }
+    ],
+    "description": "Mass edit cells in column SubwayStation 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "SubwayStation 1: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "SubwayStation 1",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 2: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 2",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 3: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 3",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "SubwayStation 1",
+    "similarValue": "Arguelles",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1890537",
+      "name": "Argüelles",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Argüelles (Q1890537) for cells containing \"Arguelles\" in column SubwayStation 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "SubwayStation 1: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "SubwayStation 1",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 2: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 2",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 3: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 3",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "SubwayStation 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Puente Alconcer AUTOBUS: 76"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column SubwayStation 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "SubwayStation 2: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "SubwayStation 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 2: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 2",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 3: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 3",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "SubwayStation 2",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column SubwayStation 2"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "SubwayStation 3: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "SubwayStation 3",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "SubwayStation 3: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "SubwayStation 3",
+          "from": 50,
+          "to": 51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "SubwayStation 3",
+    "similarValue": "",
+    "description": "Clear recon data for cells containing \"\" in column SubwayStation 3"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "SubwayStation 2: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "SubwayStation 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "SubwayStation 2",
+    "similarValue": "",
+    "description": "Clear recon data for cells containing \"\" in column SubwayStation 2"
   },
   {
     "op": "core/column-addition",
@@ -1670,12 +2319,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "baseColumnName": "METRO 1",
+    "baseColumnName": "SubwayStation 1",
     "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
     "onError": "set-to-blank",
-    "newColumnName": "same_as_wikidata_metro1",
+    "newColumnName": "same_as_wikidata_SubwayStation1",
     "columnInsertIndex": 6,
-    "description": "Create column same_as_wikidata_metro1 at index 6 based on column METRO 1 using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+    "description": "Create column same_as_wikidata_SubwayStation1 at index 6 based on column SubwayStation 1 using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
   },
   {
     "op": "core/column-addition",
@@ -1683,12 +2332,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "baseColumnName": "METRO 2",
+    "baseColumnName": "SubwayStation 2",
     "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
     "onError": "set-to-blank",
-    "newColumnName": "same_as_wikidata_metro2",
+    "newColumnName": "same_as_wikidata_SubwayStation2",
     "columnInsertIndex": 8,
-    "description": "Create column same_as_wikidata_metro2 at index 8 based on column METRO 2 using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+    "description": "Create column same_as_wikidata_SubwayStation2 at index 8 based on column SubwayStation 2 using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
   },
   {
     "op": "core/column-addition",
@@ -1696,12 +2345,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "baseColumnName": "METRO 3",
+    "baseColumnName": "SubwayStation 3",
     "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
     "onError": "set-to-blank",
-    "newColumnName": "same_as_wikidata_metro3",
+    "newColumnName": "same_as_wikidata_SubwayStation3",
     "columnInsertIndex": 10,
-    "description": "Create column same_as_wikidata_metro3 at index 10 based on column METRO 3 using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+    "description": "Create column same_as_wikidata_SubwayStation3 at index 10 based on column SubwayStation 3 using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
   },
   {
     "op": "core/column-addition",
@@ -1709,12 +2358,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "baseColumnName": "BARRIO",
+    "baseColumnName": "MadridNeighborhood",
     "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
     "onError": "set-to-blank",
-    "newColumnName": "same_as_wikidata_barrio",
+    "newColumnName": "same_as_wikidata_MadridNeighborhood",
     "columnInsertIndex": 18,
-    "description": "Create column same_as_wikidata_barrio at index 18 based on column BARRIO using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+    "description": "Create column same_as_wikidata_MadridNeighborhood at index 18 based on column MadridNeighborhood using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
   },
   {
     "op": "core/column-addition",
@@ -1722,11 +2371,101 @@
       "facets": [],
       "mode": "row-based"
     },
-    "baseColumnName": "DISTRITO",
+    "baseColumnName": "District",
     "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
     "onError": "set-to-blank",
-    "newColumnName": "same_as_wikidata_distrito",
+    "newColumnName": "same_as_wikidata_District",
     "columnInsertIndex": 21,
-    "description": "Create column same_as_wikidata_distrito at index 21 based on column DISTRITO using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+    "description": "Create column same_as_wikidata_District at index 21 based on column District using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "same_as_wikidata_SubwayStation1",
+    "index": 5,
+    "description": "Move column same_as_wikidata_SubwayStation1 to position 5"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "same_as_wikidata_SubwayStation1",
+    "index": 4,
+    "description": "Move column same_as_wikidata_SubwayStation1 to position 4"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "same_as_wikidata_SubwayStation1",
+    "index": 3,
+    "description": "Move column same_as_wikidata_SubwayStation1 to position 3"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "same_as_wikidata_SubwayStation2",
+    "index": 7,
+    "description": "Move column same_as_wikidata_SubwayStation2 to position 7"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "same_as_wikidata_SubwayStation2",
+    "index": 6,
+    "description": "Move column same_as_wikidata_SubwayStation2 to position 6"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "same_as_wikidata_SubwayStation2",
+    "index": 5,
+    "description": "Move column same_as_wikidata_SubwayStation2 to position 5"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "same_as_wikidata_SubwayStation3",
+    "index": 9,
+    "description": "Move column same_as_wikidata_SubwayStation3 to position 9"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "same_as_wikidata_SubwayStation3",
+    "index": 8,
+    "description": "Move column same_as_wikidata_SubwayStation3 to position 8"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "same_as_wikidata_SubwayStation3",
+    "index": 7,
+    "description": "Move column same_as_wikidata_SubwayStation3 to position 7"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "same_as_wikidata_MadridNeighborhood",
+    "index": 17,
+    "description": "Move column same_as_wikidata_MadridNeighborhood to position 17"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "same_as_wikidata_MadridNeighborhood",
+    "index": 16,
+    "description": "Move column same_as_wikidata_MadridNeighborhood to position 16"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "same_as_wikidata_MadridNeighborhood",
+    "index": 15,
+    "description": "Move column same_as_wikidata_MadridNeighborhood to position 15"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "same_as_wikidata_District",
+    "index": 20,
+    "description": "Move column same_as_wikidata_District to position 20"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "same_as_wikidata_District",
+    "index": 19,
+    "description": "Move column same_as_wikidata_District to position 19"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "same_as_wikidata_District",
+    "index": 18,
+    "description": "Move column same_as_wikidata_District to position 18"
   }
 ]

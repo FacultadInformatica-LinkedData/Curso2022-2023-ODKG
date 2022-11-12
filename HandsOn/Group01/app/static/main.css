@@ -15,9 +15,9 @@ input[type=submit] {
     border: 1px solid grey;
     border-radius: 2px;
     text-align: center;
-    padding-left: 8px;
-    padding-right: 8px;
-    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -42,6 +42,14 @@ h1 {
 }
 
 /* Form */
+body {
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+}
+
 label {
     font-size: 20px;
     padding-right: 40px;
@@ -50,7 +58,7 @@ label {
 
 select {
     padding-left: 10px;
-    padding-right: 50px;
+    inline-size: 300px;
     font-size: 15px;
     padding-top: 5px;
     padding-bottom: 5px;

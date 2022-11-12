@@ -1,0 +1,50 @@
+{% extends 'base.html' %} 
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+
+<title>Home</title>
+{% endblock %} 
+
+{% block body %}
+
+<h1>
+  Find my dialysis center
+</h1>
+<br>
+
+<form method="post" action="/get_values">
+  <label for="name">Health area</label>
+  <select name="health_area" method="GET" action="/" id="health_area">
+    <option value="None" selected>-</option>
+    {% for area in health_areas %}
+    <option value="{{area}}">{{area}}</option>"
+    {% endfor %}
+  </select>
+
+  <br><br>
+
+  <label for="name">Province</label>
+  <select name="province" method="GET" action="/" id="province">
+    <option value="None" selected>-</option>
+    {% for prov in provinces %}
+    <option value="{{prov}}">{{prov}}</option>"
+    {% endfor %}
+  </select>
+
+  <br><br>
+  
+  <label for="name">City</label>
+  <select name="city" method="GET" action="/" id="city">
+    <option value="None" selected>-</option>
+    {% for city in cities %}
+    <option value="{{city}}">{{city}}</option>"
+    {% endfor %}
+  </select>
+
+  <br><br>
+
+  <input type="submit" value="Buscar" />
+</form>
+
+{% endblock %}

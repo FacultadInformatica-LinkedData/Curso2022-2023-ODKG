@@ -1,0 +1,25 @@
+{% extends 'base.html' %} 
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+
+<title>results</title>
+{% endblock %} 
+
+{% block body %}
+
+<h1>
+    Results
+</h1>
+<p>
+    Health area: {{ health_area[0] }} <br>
+    Province: {{province[0]}} <br>
+    City: {{city[0]}}
+</p>
+
+<p>{{queries[0]}}</p>
+<br>
+<p>{{queries[1]}}</p>
+
+
+{% endblock %}

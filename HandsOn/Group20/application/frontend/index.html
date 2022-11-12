@@ -4,20 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Name of the application</title>
+    <link rel="icon" href="images/spain.png">
+    <title>Asociadrid</title>
     <link rel="stylesheet" href="./index.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1>Welcome to [Name Application]</h1>
-    <div class="container-fluid">
-        <div class="map-responsive">
-        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Madrid" width="950" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
+    <h1>Welcome to Asociadrid</h1>
+    <form action="">
+      <div class="grid-container">
+        <div class="container-fluid">
+            <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Madrid" width="1350" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="container-fluid" style="display:flex;justify-content:center;align-items:center;">
+          <select id="district" onchange="myChange()" class="form-select" aria-label="Default select example" style="width: 250px; text-align: center; margin-right: 2rem;">
+            <option value="" disabled selected hidden>Select district</option>
+            <option value="1" >Arganzuela</option>
+            <option value="2">Barajas</option>
+            <option value="3">Carabanchel</option>
+            <option value="4">Centro</option>
+            <option value="5">Chamartin</option>
+            <option value="6">Chamberi</option>
+            <option value="7">Ciudad Lineal</option>
+            <option value="8">Fuencarral-El Pardo</option>
+            <option value="9">Hortaleza</option>
+            <option value="10">Latina</option>
+            <option value="11">Moncloa-Aravaca</option>
+            <option value="12">Moratalaz</option>
+            <option value="13">Puente de Vallecas</option>
+            <option value="14">Retiro</option>
+            <option value="15">Salamanca</option>
+            <option value="16">San Blas-Canillejas</option>
+            <option value="17">Tetuan</option>
+            <option value="18">Usera</option>
+            <option value="19">Vicalvaro</option>
+            <option value="20">Villa Vallecas</option>
+            <option value="21">Villaverde</option>
+          </select>
+          <select id="subdistrict" class="form-select" aria-label="Default select example" style="width: 250px; text-align: center; margin-right: 2rem;">
+            <option value="" disabled selected hidden>Select subdistrict</option>
+          </select>
+          <select class="form-select" aria-label="Default select example" style="width: 250px; text-align: center; margin-right: 2rem;">
+            <option value="" disabled selected hidden>Select category</option>
+            <option value="1">Comerciantes.Empresarios.Profesionales Y Autónomos</option>
+            <option value="2">Culturales Y Casas Regionales</option>
+            <option value="3">De Comunicación</option>
+            <option value="4">De Defensa De Los Animales</option>
+            <option value="5">De Derechos Humanos</option>
+            <option value="6">De Estudiantes /alumnado</option>
+            <option value="7">De Inmigrantes</option>
+            <option value="8">De Madres Y Padres Del Alumnado</option>
+            <option value="9">De Mujeres</option>
+            <option value="10">De Personas Con Discapacidad</option>
+            <option value="11">De Personas Consumidoras Y Usuarias</option>
+            <option value="12">De Personas Lgtbi</option>
+            <option value="13">De Personas Mayores, Jubiladas Y Pensionistas</option>
+            <option value="14">De Salud Y Apoyo Mutuo</option>
+            <option value="15">Deportivas</option>
+            <option value="16">Familias</option>
+            <option value="17">Infantiles</option>
+            <option value="18">Juveniles</option>
+            <option value="19">Medioambientales Y Ecologistas</option>
+            <option value="20">Otras De Acción Social</option>
+            <option value="21">Para La Ciencia. La Tecnología Y La Investigación</option>
+            <option value="22">Para La Cooperación Al Desarrollo</option>
+            <option value="23">Vecinales</option>
+          </select>
+          <select class="form-select" aria-label="Default select example"style="width: 250px; text-align: center; margin-right: 2rem;">
+            <option value="" disabled selected hidden>Select kind of organization</option>
+            <option value="1">Association</option>
+            <option value="2">Collective</option>
+            <option value="3">Federation</option>
+            <option value="4">Foundation</option>
+          </select>
+          <input type="text" class="form-control" id="exampleTextInput" aria-describedby="textHelp" placeholder="Enter name" style="width: 250px; text-align: center;">
+        </div>
+        <div>
+          <button type="button" class="btn btn-secondary" style="margin-bottom: 2rem;">Search</button>
+        </div>
+      </div>
+    </form>  
   </body>
 </html>

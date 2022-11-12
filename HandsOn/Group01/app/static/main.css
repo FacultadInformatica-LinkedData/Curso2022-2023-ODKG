@@ -55,11 +55,16 @@ label {
     padding-right: 40px;
 }
 
-
 select {
     padding-left: 10px;
     inline-size: 300px;
     font-size: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+label[for=city]{
+    padding-right: 105px;
+}
+label[for=province]{
+    padding-right: 60px;
 }

@@ -22,18 +22,18 @@ def create_queries(health_area, province, city):
                 ?center gn:locatedIn ?health_area.
                 ?health_area a ns:Health_Area."""
     
-    # if health_area != 'None':
-    #     query1 = query1 + """?health_area rdfs:label\"""" + health_area + """\"^^xsd:string."""
+    if health_area != 'None':
+        query1 = query1 + """?health_area rdfs:label\"""" + health_area + """\"^^xsd:string."""
 
-    # query1 +=  """?health_area gn:locatedIn ?city.
-    #              ?city a ns:City."""
-    # if city != 'None':
-    #     query1 += """?city rdfs:label \""""+ city + """\"^^xsd:string ."""
+    query1 +=  """?health_area gn:locatedIn ?city.
+                 ?city a ns:City."""
+    if city != 'None':
+        query1 += """?city rdfs:label \""""+ city + """\"^^xsd:string ."""
 
-    # if province != "None":
-    #     query1 += """?city gn:locatedIn ?province.
-    #     ?province a ns:Province.
-    #     ?province rdfs:label \""""+ province + """\"^^xsd:string."""
+    if province != "None":
+        query1 += """?city gn:locatedIn ?province.
+        ?province a ns:Province.
+        ?province rdfs:label \""""+ province + """\"^^xsd:string."""
     
     query1 += """?center rdfs:label ?center_label.
         ?center ns:hasPhone ?phone.
@@ -41,16 +41,9 @@ def create_queries(health_area, province, city):
         }
         order by ?center_label"""
     
-    query2 = """"""
 
     query1 = """
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
-    SELECT * WHERE {
-    ?sub ?pred ?obj .
-    }
-    """
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \n PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n SELECT * WHERE {?sub ?pred ?obj .}"""
     response = requests.get(f"http://localhost:8080/sparql?query={urllib.parse.quote_plus(query1)}")
 
     return [response.status_code, response.json()["results"]["bindings"][0:10]]

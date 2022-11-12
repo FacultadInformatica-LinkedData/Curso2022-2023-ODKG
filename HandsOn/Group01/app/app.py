@@ -7,11 +7,11 @@ app = Flask(__name__)
 
 def create_queries(health_area, province, city):
     query1 = """
-                PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-                PREFIX gn: <http://www.geonames.org/ontology#> .
-                PREFIX ns: <http://www.dialysisComunidadValenciana.es/> .
-                PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-                PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> .
+                PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> 
+                PREFIX gn: <http://www.geonames.org/ontology#> 
+                PREFIX ns: <http://www.dialysisComunidadValenciana.es/> 
+                PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+                PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
 
                 select distinct ?center_label ?phone ?address ?entity_label where {
                 ?center a ns:Center. 
@@ -41,7 +41,7 @@ def create_queries(health_area, province, city):
         }
         order by ?center_label"""
     
-
+    return [query1, 0]
     query1 = """
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \n PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n SELECT * WHERE {?sub ?pred ?obj .}"""
     response = requests.get(f"http://localhost:8080/sparql?query={urllib.parse.quote_plus(query1)}")

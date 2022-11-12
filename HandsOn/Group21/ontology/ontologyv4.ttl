@@ -1,0 +1,122 @@
+ @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix ns: <http://www.miciudadamiga.madrid/map/ontology/SocialCenter#> .
+@prefix metro: <http://www.miciudadamiga.madrid/map/resource/ParadaMetro/> .
+@prefix district: <http://www.miciudadamiga.madrid/map/resource/District/> .
+@prefix neighborhood: <http://www.miciudadamiga.madrid/map/resource/Neighborhood/> .
+@prefix lgdo: <http://linkedgeodata.org/ontology/PublicBuilding> .
+@prefix Igdo: <http://www.owl-ontologies.com/Igdo#> .
+@prefix name xsd: <http://www.owl-ontologies.com/name xsd#> .
+@prefix schedule xsd: <http://www.owl-ontologies.com/schedule xsd#> .
+@prefix equipement xsd: <http://www.owl-ontologies.com/equipement xsd#> .
+@prefix busLine xsd: <http://www.owl-ontologies.com/busLine xsd#> .
+@prefix description xsd: <http://www.owl-ontologies.com/description xsd#> .
+@prefix accesibility xsd: <http://www.owl-ontologies.com/accesibility xsd#> .
+@prefix content-url xsd: <http://www.owl-ontologies.com/content-url xsd#> .
+@prefix address xsd: <http://www.owl-ontologies.com/address xsd#> .
+@prefix telephone xsd: <http://www.owl-ontologies.com/telephone xsd#> .
+@base <http://www.miciudadamiga.madrid/map/ontology/SocialCenter#> .
+
+<http://www.miciudadamiga.madrid/map/ontology/SocialCenter#> rdf:type owl:Ontology ;
+			dc:creator "Group21" ;
+			owl:versionInfo "0.1.5" ;
+			dc:title "Social Center Ontology" ;
+			dc:description "Ontology code created by Chowlk" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+### ns:hasMetroAccess
+ns:hasMetroAccess rdf:type owl:ObjectProperty ;
+		rdfs:label "has metro access" .
+
+### ns:belongsToMadridNeighborhood
+ns:belongsToMadridNeighborhood rdf:type owl:ObjectProperty ;
+		rdfs:domain ns:SocialCenter ;
+		rdfs:label "belongs to madrid neighborhood" .
+
+### ns:belongsToMadridDistric
+ns:belongsToMadridDistric rdf:type owl:ObjectProperty ;
+		rdfs:domain ns:SocialCenter ;
+		rdfs:label "belongs to madrid distric" .
+
+#################################################################
+#    Data Properties
+#################################################################
+
+### name xsd:string
+name xsd:string rdf:type owl:DatatypeProperty ;
+		rdfs:label "string" .
+
+### schedule xsd:string
+schedule xsd:string rdf:type owl:DatatypeProperty ;
+		rdfs:label "string" .
+
+### equipement xsd:string
+equipement xsd:string rdf:type owl:DatatypeProperty ;
+		rdfs:label "string" .
+
+### busLine xsd:string
+busLine xsd:string rdf:type owl:DatatypeProperty ;
+		rdfs:label "string" .
+
+### description xsd:string
+description xsd:string rdf:type owl:DatatypeProperty ;
+		rdfs:label "string" .
+
+### accesibility xsd:boolean
+accesibility xsd:boolean rdf:type owl:DatatypeProperty ;
+		rdfs:label "boolean" .
+
+### content-url xsd:anyURI
+content-url xsd:anyURI rdf:type owl:DatatypeProperty ;
+		rdfs:label "any u r i" .
+
+### address xsd:string
+address xsd:string rdf:type owl:DatatypeProperty ;
+		rdfs:label "string" .
+
+### telephone xsd:string
+telephone xsd:string rdf:type owl:DatatypeProperty ;
+		rdfs:label "string" .
+
+#################################################################
+#    Classes
+#################################################################
+
+### ns:SocialCenter
+ns:SocialCenter rdf:type owl:Class ;
+	rdfs:label "Social Center" ;
+	rdfs:subClassOf Igdo:PublicBuilding .
+
+### metro:SubwayStation
+metro:SubwayStation rdf:type owl:Class ;
+	rdfs:label "Subway Station" .
+
+### Igdo:PublicBuilding
+Igdo:PublicBuilding rdf:type owl:Class ;
+	rdfs:label "Public Building" .
+
+### neighborhood:MadridNeighborhood
+neighborhood:MadridNeighborhood rdf:type owl:Class ;
+	rdfs:label "Madrid Neighborhood" .
+
+### district:MadridDisctirct
+district:MadridDisctirct rdf:type owl:Class ;
+	rdfs:label "Madrid Disctirct" .
+
+#################################################################
+#    Instances
+#################################################################
+
+#################################################################
+#    General Axioms
+#################################################################
+

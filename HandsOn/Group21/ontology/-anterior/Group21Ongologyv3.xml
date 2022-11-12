@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" modified="2022-11-12T11:21:05.379Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="WdsgsPrFBvRkr06QeIfB" version="20.5.3" type="device">
+<mxfile host="app.diagrams.net" modified="2022-11-12T12:37:48.549Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="yivtE-U_uGXd7RbnDjzu" version="20.5.3" type="device">
   <diagram id="9PM6FLSkvyJNw-woXXAw" name="Página-1">
-    <mxGraphModel dx="1038" dy="560" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="526" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -61,18 +61,18 @@
             <mxPoint x="30" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CiubAc0ZpZ87c33IO2K0-7" value="" style="endArrow=open;html=1;fontColor=#000099;exitX=0.445;exitY=-0.053;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;exitPerimeter=0;" edge="1" source="SgGzgOKirr2fM64_-Xsk-4" target="CiubAc0ZpZ87c33IO2K0-9" parent="1">
+        <mxCell id="CiubAc0ZpZ87c33IO2K0-7" value="" style="endArrow=open;html=1;fontColor=#000099;exitX=0.445;exitY=-0.053;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;exitPerimeter=0;" parent="1" source="SgGzgOKirr2fM64_-Xsk-4" target="CiubAc0ZpZ87c33IO2K0-9" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="410" y="490" as="sourcePoint" />
             <mxPoint x="292.9999999999893" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CiubAc0ZpZ87c33IO2K0-8" value="&amp;lt;&amp;lt;ns:subClassOf&amp;gt;&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="CiubAc0ZpZ87c33IO2K0-7">
+        <mxCell id="CiubAc0ZpZ87c33IO2K0-8" value="&amp;lt;&amp;lt;ns:subClassOf&amp;gt;&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#ffffff;" parent="CiubAc0ZpZ87c33IO2K0-7" vertex="1" connectable="0">
           <mxGeometry x="-0.3277" relative="1" as="geometry">
             <mxPoint y="-7.14" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CiubAc0ZpZ87c33IO2K0-9" value="&lt;a style=&quot;outline: none; margin: 0px; padding: 0px; border: 0px; text-decoration-line: none; color: rgb(60, 60, 60); font-weight: 700; text-align: left; background-color: rgb(246, 246, 246);&quot; target=&quot;_blank&quot; href=&quot;http://linkedgeodata.org/ontology/PublicBuilding&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;lgdo:PublicBuilding&lt;/font&gt;&lt;/a&gt;" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" vertex="1" parent="1">
+        <mxCell id="CiubAc0ZpZ87c33IO2K0-9" value="&lt;a style=&quot;outline: none; margin: 0px; padding: 0px; border: 0px; text-decoration-line: none; color: rgb(60, 60, 60); font-weight: 700; text-align: left; background-color: rgb(246, 246, 246);&quot; target=&quot;_blank&quot; href=&quot;http://linkedgeodata.org/ontology/PublicBuilding&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;lgdo:PublicBuilding&lt;/font&gt;&lt;/a&gt;" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="1" vertex="1">
           <mxGeometry x="8" y="448" width="310" height="30" as="geometry" />
         </mxCell>
       </root>

@@ -8,13 +8,6 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/* GEO logo on the top right corner */
-img[type=geo_logo] {
-    /* background-color: white; */
-    position: absolute;
-    top: 0px;
-    right: 0px;
-}
 
 /* Submit buttons */
 input[type=submit] {
@@ -47,4 +40,18 @@ h1 {
     font-size: 30px;
     color: #232c3d;
 }
-    
+
+/* Form */
+label {
+    font-size: 20px;
+    padding-right: 40px;
+}
+
+
+select {
+    padding-left: 10px;
+    padding-right: 50px;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

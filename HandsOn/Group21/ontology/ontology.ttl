@@ -1,0 +1,94 @@
+ @prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://www.miciudadamiga.madrid/map/ontology/SocialCenter#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sch: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns: a owl:Ontology ;
+    dc:creator "Group21" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "Social Center Ontology" ;
+    owl:versionInfo "0.1.5" .
+
+ns:MadridDistrict a owl:Class ;
+    rdfs:label "Madrid District" ;
+    rdfs:subClassOf dbo:CityDistrict .
+
+ns:MadridNeighborhood a owl:Class ;
+    rdfs:label "Madrid Neighborhood" .
+
+ns:SubwayStop a owl:Class ;
+    rdfs:label "Subway Stop" .
+
+ns:accessByBusLines a owl:DatatypeProperty ;
+    rdfs:label "access by bus lines" ;
+    rdfs:range xsd:string .
+
+ns:belongsToMadridDistrict a owl:ObjectProperty ;
+    rdfs:label "belongs to madrid district" ;
+    rdfs:domain ns:DayCenter .
+
+ns:belongsToMadridNeighborhood a owl:ObjectProperty ;
+    rdfs:label "belongs to madrid neighborhood" ;
+    rdfs:domain ns:DayCenter .
+
+ns:hasAccesibility a owl:DatatypeProperty ;
+    rdfs:label "has accesibility" ;
+    rdfs:range xsd:boolean .
+
+ns:hasCode a owl:DatatypeProperty ;
+    rdfs:label "has code" ;
+    rdfs:range xsd:integer .
+
+ns:hasMetroAccess a owl:ObjectProperty ;
+    rdfs:label "has metro access" ;
+    rdfs:domain ns:DayCenter .
+
+ns:hasName a owl:DatatypeProperty ;
+    rdfs:label "has name" ;
+    rdfs:range xsd:string .
+
+sch:address a owl:DatatypeProperty ;
+    rdfs:label "address" ;
+    rdfs:range xsd:string .
+
+sch:description a owl:DatatypeProperty ;
+    rdfs:label "description" ;
+    rdfs:range xsd:string .
+
+sch:latitude a owl:DatatypeProperty ;
+    rdfs:label "latitude" ;
+    rdfs:range xsd:number .
+
+sch:longitude a owl:DatatypeProperty ;
+    rdfs:label "longitude" ;
+    rdfs:range xsd:number .
+
+sch:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:range xsd:string .
+
+sch:openingHours a owl:DatatypeProperty ;
+    rdfs:label "opening hours" ;
+    rdfs:range xsd:string .
+
+sch:telephone a owl:DatatypeProperty ;
+    rdfs:label "telephone" ;
+    rdfs:range xsd:string .
+
+sch:url a owl:DatatypeProperty ;
+    rdfs:label "url" ;
+    rdfs:range xsd:uRI .
+
+dbo:CityDistrict a owl:Class ;
+    rdfs:label "City District" .
+
+sch:GovernmentBuilding a owl:Class ;
+    rdfs:label "Government Building" .
+
+ns:DayCenter a owl:Class ;
+    rdfs:label "Day Center" ;
+    rdfs:subClassOf sch:GovernmentBuilding .
+

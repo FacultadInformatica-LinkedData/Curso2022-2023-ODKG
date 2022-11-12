@@ -1,11 +1,11 @@
 import folium
 
 
-POP_MIN_WIDTH="300"
-POP_MAX_WIDTH="300"
+POP_MIN_WIDTH="400"
+POP_MAX_WIDTH="400"
 
 
-def builder(item: dict):
+def builder(item: dict) -> folium.Popup:
   body = f"""
   <center>
     <a href={item["entidad_wikidata"]["value"]} target="_blank"><h3>{item["nombre"]["value"]}</h3></a>

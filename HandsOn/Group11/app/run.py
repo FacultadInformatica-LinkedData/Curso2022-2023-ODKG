@@ -36,7 +36,7 @@ map = folium.Map(
 )
 
 @app.route('/')
-def index():
+def index() -> str:
 
     plaques_list = sparql.select_all()
     for item in plaques_list:
@@ -56,7 +56,7 @@ def index():
 
 
 @app.route('/templates/map')
-def reload_map():
+def reload_map() -> str:
     return render_template('map.html')
 
 

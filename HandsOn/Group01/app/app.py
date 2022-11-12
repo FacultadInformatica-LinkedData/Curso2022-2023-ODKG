@@ -41,9 +41,8 @@ def create_queries(health_area, province, city):
         }
         order by ?center_label"""
     
-    return [query1, 0]
-    query1 = """
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \n PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n SELECT * WHERE {?sub ?pred ?obj .}"""
+    # query1 = """
+    # PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \n PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n SELECT * WHERE {?sub ?pred ?obj .}"""
     response = requests.get(f"http://localhost:8080/sparql?query={urllib.parse.quote_plus(query1)}")
 
     return [response.status_code, response.json()["results"]["bindings"][0:10]]

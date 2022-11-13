@@ -16,8 +16,17 @@
     Province: {{province[0]}} <br>
     City: {{city[0]}}
 </p>
+<table border = 1>
+    {% for a, b, c, d in queries[0] %}
 
-<p>{{queries[0]}}</p>
+    <tr>
+        <th> {{ a }} </th>
+        <td> {{ b }} </td>
+        <td> {{ c }} </td>
+        <td> {{ d }} </td>
+    </tr>
+    {% endfor %}
+</table>
 <br>
 <p>{{queries[1]}}</p>
 

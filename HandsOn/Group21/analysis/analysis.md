@@ -63,15 +63,16 @@ The Resource Naming Strategy follows the following rules:
 
 * Base domain: `https://miciudadamiga.madrid/`
 * Path: `map/`
-* Ontological Term Path: `https://miciudadamiga.madrid/map/ontology/SocialCenter#[classOrPropertyName]`
+* Ontological Term Path: `https://miciudadamiga.madrid/map/ontology#[classOrPropertyName]`
 * Individuals Path: `https://miciudadamiga.madrid/map/resource/[className]/[identifier]`
-    * Metro: `https://miciudadamiga.madrid/map/resource/ParadaMetro/[identifier]`
-    * District: `https://miciudadamiga.madrid/map/resource/District/[identifier]`
-    * Neighborhood: `https://miciudadamiga.madrid/map/resource/Neighborhood/[identifier]`
+    * Metro: `https://miciudadamiga.madrid/map/resource/SubwayStation/[identifier]`
+    * District: `https://miciudadamiga.madrid/map/resource/MadridDistrict/[identifier]`
+    * Neighborhood: `https://miciudadamiga.madrid/map/resource/MadridNeighborhood/[identifier]`
+    * Day Center: `https://miciudadamiga.madrid/map/resource/DayCenter/[identifier]`
 
 Some examples of specific use cases are shown below:
 
-* https://miciudadamiga.madrid/map/ontology/SocialCenter#ElderDayCenter
-* https://miciudadamiga.madrid/map/ontology/SocialCenter#belongsToNeighborhood
-* https://miciudadamiga.madrid/map/resource/ParadaMetro/Legazpi
-* https://miciudadamiga.madrid/map/resource/District/76
+* https://miciudadamiga.madrid/map/ontology#DayCenter
+* https://miciudadamiga.madrid/map/ontology#belongsToMadridNeighborhood
+* https://miciudadamiga.madrid/map/resource/SubwayStation/Legazpi
+* https://miciudadamiga.madrid/map/resource/MadridDistrict/76

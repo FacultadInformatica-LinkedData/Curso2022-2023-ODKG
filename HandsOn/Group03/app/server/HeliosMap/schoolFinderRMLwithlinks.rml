@@ -134,15 +134,15 @@ map:om_015 rml:reference "longitude" ;
 	rr:termType rr:Literal .
 
 map:om_016 rdf:type rr:ObjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/postalAddress/{pk}" ;
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/postalAddress/{identifier}" ;
 	rr:termType rr:IRI .
 
 map:om_017 rdf:type rr:ObjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/schoolyard/{pk}" ;
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/schoolyard/{identifier}" ;
 	rr:termType rr:IRI .
 
 map:om_018 rdf:type rr:ObjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/accessibility/{pk}" ;
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/accessibility/{identifier}" ;
 	rr:termType rr:IRI .
 
 map:om_019 rdf:type rr:ObjectMap ;
@@ -158,19 +158,19 @@ map:om_021 rml:reference "postalCode" ;
 	rr:termType rr:Literal .
 
 map:om_022 rdf:type rr:ObjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/locality/{pk}" ;
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/locality/{identifier}" ;
 	rr:termType rr:IRI .
 
 map:om_023 rdf:type rr:ObjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/district/{pk}" ;
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/district/{identifier}" ;
 	rr:termType rr:IRI .
 
 map:om_024 rdf:type rr:ObjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/province/{pk}" ;
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/province/{identifier}" ;
 	rr:termType rr:IRI .
 
 map:om_025 rdf:type rr:ObjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/neighborhood/{pk}" ;
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/neighborhood/{identifier}" ;
 	rr:termType rr:IRI .
 
 map:om_026 rdf:type rr:ObjectMap ;
@@ -254,11 +254,11 @@ map:om_045 rml:reference "facilitiesProximity" ;
 	rr:termType rr:Literal .
 
 map:om_046 rdf:type rr:ObjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/renfe/{pk}" ;
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/renfe/{identifier}" ;
 	rr:termType rr:IRI .
 
 map:om_047 rdf:type rr:ObjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/metro/{pk}" ;
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/metro/{identifier}" ;
 	rr:termType rr:IRI .
 
 map:om_048 rdf:type rr:ObjectMap ;
@@ -766,72 +766,72 @@ map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_Accessibility_00
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
 map:s_000 rdf:type rr:SubjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/school/{pk}" .
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/school/{identifier}" .
 
 map:s_001 rdf:type rr:SubjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/postalAddress/{pk}" .
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/postalAddress/{identifier}" .
 
 map:s_002 rdf:type rr:SubjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/locality/{pk}" .
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/locality/{identifier}" .
 
 map:s_003 rdf:type rr:SubjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/district/{pk}" .
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/district/{identifier}" .
 
 map:s_004 rdf:type rr:SubjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/province/{pk}" .
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/province/{identifier}" .
 
 map:s_005 rdf:type rr:SubjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/neighborhood/{pk}" .
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/neighborhood/{identifier}" .
 
 map:s_006 rdf:type rr:SubjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/accessibility/{pk}" .
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/accessibility/{identifier}" .
 
 map:s_007 rdf:type rr:SubjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/renfe/{pk}" .
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/renfe/{identifier}" .
 
 map:s_008 rdf:type rr:SubjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/metro/{pk}" .
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/metro/{identifier}" .
 
 map:s_009 rdf:type rr:SubjectMap ;
-	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/schoolyard/{pk}" .
+	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/schoolyard/{identifier}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
-	rml:source "/Users/Ofeucor/Downloads/HeliosMap/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_001 rml:referenceFormulation ql:CSV ;
-	rml:source "/Users/Ofeucor/Downloads/HeliosMap/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_002 rml:referenceFormulation ql:CSV ;
-	rml:source "/Users/Ofeucor/Downloads/HeliosMap/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_003 rml:referenceFormulation ql:CSV ;
-	rml:source "/Users/Ofeucor/Downloads/HeliosMap/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_004 rml:referenceFormulation ql:CSV ;
-	rml:source "/Users/Ofeucor/Downloads/HeliosMap/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_005 rml:referenceFormulation ql:CSV ;
-	rml:source "/Users/Ofeucor/Downloads/HeliosMap/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_006 rml:referenceFormulation ql:CSV ;
-	rml:source "/Users/Ofeucor/Downloads/HeliosMap/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_007 rml:referenceFormulation ql:CSV ;
-	rml:source "/Users/Ofeucor/Downloads/HeliosMap/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_008 rml:referenceFormulation ql:CSV ;
-	rml:source "/Users/Ofeucor/Downloads/HeliosMap/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_009 rml:referenceFormulation ql:CSV ;
-	rml:source "/Users/Ofeucor/Downloads/HeliosMap/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 

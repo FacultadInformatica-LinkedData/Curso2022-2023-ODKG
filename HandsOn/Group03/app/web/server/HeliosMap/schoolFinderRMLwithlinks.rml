@@ -796,42 +796,42 @@ map:s_009 rdf:type rr:SubjectMap ;
 	rr:template "http://smartcity.linkeddata.es/schoolfinder/resource/schoolyard/{identifier}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
-	rml:source "/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_001 rml:referenceFormulation ql:CSV ;
-	rml:source "/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_002 rml:referenceFormulation ql:CSV ;
-	rml:source "/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_003 rml:referenceFormulation ql:CSV ;
-	rml:source "/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_004 rml:referenceFormulation ql:CSV ;
-	rml:source "/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_005 rml:referenceFormulation ql:CSV ;
-	rml:source "/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_006 rml:referenceFormulation ql:CSV ;
-	rml:source "/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_007 rml:referenceFormulation ql:CSV ;
-	rml:source "/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_008 rml:referenceFormulation ql:CSV ;
-	rml:source "/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_009 rml:referenceFormulation ql:CSV ;
-	rml:source "/content/drive/MyDrive/MSc/odkg/handsOn/EstudioPatiosEscolares2022updatedwithlinks.csv" ;
+	rml:source "./EstudioPatiosEscolares2022updatedwithlinks.csv" ;
 	rdf:type rml:LogicalSource .
 

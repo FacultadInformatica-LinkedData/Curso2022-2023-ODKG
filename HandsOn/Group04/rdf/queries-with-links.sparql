@@ -1,0 +1,70 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+from rdflib import Graph, Namespace, Literal
+from rdflib.plugins.sparql import prepareQuery
+g = Graph()
+g.parse("rdf-triples-with-links.ttl", format="ttl")
+
+
+# In[2]:
+
+
+RR=Namespace ("http://www.w3.org/ns/r2rml#")
+FOAF = Namespace("http://xmlns.com/foaf/0.1/")
+XSD= Namespace("http://www.w3.org/2001/XMLSchema#")
+RDFS= Namespace("http://www.w3.org/2000/01/rdf-schema#")
+DC=Namespace("http://purl.org/dc/elements/1.1/")
+REV=Namespace("http://purl.org/stuff/rev#")
+GTFS= Namespace("http://vocab.gtfs.org/terms#")
+GEO=Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#")
+SCHEMA= Namespace("http://schema.org/")
+DCT=Namespace("http://purl.org/dc/terms/")
+RML=Namespace("http://semweb.mmlab.be/ns/rml#")
+QL= Namespace("http://semweb.mmlab.be/ns/ql#")
+RDF= Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
+PP=Namespace("http://www.urbanElementsMadrid.es/ontology/ont#")
+PI=Namespace("http://www.urbanElementsMadrid.es/resource/")
+OWL=Namespace("http://www.w3.org/2002/07/owl#")
+
+
+# In[3]:
+
+
+q1 = prepareQuery('''
+
+SELECT DISTINCT ?a ?b WHERE{
+
+?district pp:hasName ?a .
+?district owl:sameAs ?b
+
+}
+  
+  ''',
+  initNs = { "rr": RR, "foaf": FOAF, "xsd": XSD, "rdfs": RDFS, "dc": DC, "rev":REV, "gtfs":GTFS, "geo": GEO, "schema": SCHEMA, "dct":DCT, "rml":RML, "ql": QL, "rdf": RDF, "pp":PP,"pi":PI}
+)
+
+for r in g.query(q1):
+  print(r)
+
+
+# In[4]:
+
+
+q2 = prepareQuery('''
+
+SELECT (COUNT(?a) AS ?count) WHERE{
+
+?a owl:sameAs ?b
+
+}
+  
+  ''',
+  initNs = { "rr": RR, "foaf": FOAF, "xsd": XSD, "rdfs": RDFS, "dc": DC, "rev":REV, "gtfs":GTFS, "geo": GEO, "schema": SCHEMA, "dct":DCT, "rml":RML, "ql": QL, "rdf": RDF, "pp":PP,"pi":PI}
+)
+
+for r in g.query(q2):
+  print(r)

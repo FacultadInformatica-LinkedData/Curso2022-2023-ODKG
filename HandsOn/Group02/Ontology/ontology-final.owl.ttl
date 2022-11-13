@@ -1,0 +1,112 @@
+ @prefix bicyacoc: <http://bicycleaccident.com/group2/ontology/class#> .
+@prefix byciacoc: <http://www.owl-ontologies.com/byciacoc#> .
+@prefix byciacop: <http://www.owl-ontologies.com/byciacop#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ev: <https://motools.sourceforge.net/event/event.html#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+bicyacoc: a owl:Ontology ;
+    dc:creator "Group 2" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "Status of bicycle accident" ;
+    owl:versionInfo "0.0.1" .
+
+byciacop:ageRange a owl:DatatypeProperty ;
+    rdfs:label "age range" ;
+    rdfs:domain byciacoc:Victim ;
+    rdfs:range xsd:string .
+
+byciacop:alchoholUse a owl:DatatypeProperty ;
+    rdfs:label "alchohol use" ;
+    rdfs:range xsd:boolean .
+
+byciacop:bicycleIsElectronic a owl:DatatypeProperty ;
+    rdfs:label "bicycle is electronic" ;
+    rdfs:domain bicyacoc:BicycleAccident ;
+    rdfs:range xsd:boolean .
+
+byciacop:hasType a owl:DatatypeProperty ;
+    rdfs:label "has type" ;
+    rdfs:domain bicyacoc:BicycleAccident ;
+    rdfs:range xsd:string .
+
+byciacop:isDistrict a owl:ObjectProperty ;
+    rdfs:label "is district" ;
+    rdfs:domain bicyacoc:SpatialThingUTM ;
+    rdfs:range bicyacoc:District .
+
+byciacop:travelType a owl:DatatypeProperty ;
+    rdfs:label "travel type" ;
+    rdfs:domain byciacoc:Victim ;
+    rdfs:range xsd:string .
+
+byciacop:wasHospitalized a owl:DatatypeProperty ;
+    rdfs:label "was hospitalized" ;
+    rdfs:range xsd:boolean .
+
+rdfs:label a owl:DatatypeProperty ;
+    rdfs:label "label" ;
+    rdfs:domain bicyacoc:SpatialThingUTM ;
+    rdfs:range xsd:string .
+
+time: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:domain time:Instant .
+
+foaf:gender a owl:DatatypeProperty ;
+    rdfs:label "gender" ;
+    rdfs:domain byciacoc:Victim ;
+    rdfs:range xsd:string .
+
+ev:agent a owl:ObjectProperty ;
+    rdfs:label "agent" ;
+    rdfs:domain bicyacoc:BicycleAccident ;
+    rdfs:range byciacoc:Victim .
+
+ev:factor a owl:DatatypeProperty ;
+    rdfs:label "factor" ;
+    rdfs:range xsd:string .
+
+ev:term_place a owl:ObjectProperty ;
+    rdfs:label "term_place" ;
+    rdfs:domain bicyacoc:BicycleAccident ;
+    rdfs:range bicyacoc:SpatialThingUTM .
+
+ev:term_time a owl:ObjectProperty ;
+    rdfs:label "term_time" ;
+    rdfs:domain bicyacoc:BicycleAccident ;
+    rdfs:range time:Instant .
+
+bicyacoc:District a owl:Class ;
+    rdfs:label "District" ;
+    rdfs:subClassOf wgs84:SpatialThing .
+
+foaf:agent a owl:Class ;
+    rdfs:label "agent" .
+
+ev:Event a owl:Class ;
+    rdfs:label "Event" .
+
+wgs84:SpatialThing a owl:Class ;
+    rdfs:label "Spatial Thing" .
+
+time:Instant a owl:Class ;
+    rdfs:label "Instant" .
+
+bicyacoc:SpatialThingUTM a owl:Class ;
+    rdfs:label "Spatial Thing U T M" ;
+    rdfs:subClassOf wgs84:SpatialThing .
+
+byciacoc:Victim a owl:Class ;
+    rdfs:label "Victim" ;
+    rdfs:subClassOf foaf:agent .
+
+bicyacoc:BicycleAccident a owl:Class ;
+    rdfs:label "Bicycle Accident" ;
+    rdfs:subClassOf ev:Event .
+

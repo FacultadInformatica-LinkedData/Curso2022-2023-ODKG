@@ -10,6 +10,7 @@ import customtkinter
 from tkintermapview import TkinterMapView 
 import tkinter as tk
 from SPARQLWrapper import SPARQLWrapper, JSON
+from geopy.geocoders import Nominatim
 
 customtkinter.set_default_color_theme("blue")
 
@@ -29,11 +30,17 @@ IS_ELEC = ['Yes', 'No', 'All']
 endpoint = "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
 sparql = SPARQLWrapper(endpoint)
 
+list_district = []
+list_type_accident = []
+APP_NAME = "TkinterMapView with CustomTkinter"
+geolocator = Nominatim(user_agent=APP_NAME)
+
 class App(customtkinter.CTk):
 
     APP_NAME = "TkinterMapView with CustomTkinter"
     WIDTH = 800
     HEIGHT = 500
+    geolocator = Nominatim(user_agent=APP_NAME)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -94,8 +101,6 @@ class App(customtkinter.CTk):
                                                                        command=self.change_appearance_mode)
         self.appearance_mode_optionemenu.grid(row=6, column=0, padx=(20, 20), pady=(10, 20))
         
-        
-
         # ============ frame_right ============
 
         self.frame_right.grid_rowconfigure(1, weight=1)
@@ -119,11 +124,12 @@ class App(customtkinter.CTk):
         self.button_5.grid(row=0, column=1, sticky="w", padx=(12, 0), pady=12)
 
         # Set default values
-        self.map_widget.set_address("Madrid")
+        self.map_widget.set_address("Madrid") 
         self.map_option_menu.set("OpenStreetMap")
         self.appearance_mode_optionemenu.set("Dark")
-        
-        # new_marker = self.map_widget.set_adress(lat=40.4167754, lon=-3.7037902)
+
+        self.marker_list.append(self.map_widget.set_marker(40.4167754, -3.7037902))
+        self.marker_list.append(self.map_widget.set_marker(40.4167754, -3.8037902))
 
     def search_event(self, event=None):
         self.map_widget.set_address(self.entry.get())
@@ -155,47 +161,76 @@ class App(customtkinter.CTk):
         
     def change_district(self, new_district):
         print("change di")
+        
+        # sparql.setQuery("""
+        # PREFIX ns0: <https://motools.sourceforge.net/event/event.html#> .
+        # PREFIX ns1: <http://bicycleaccident.com/group2/ontology/property#> .
+        # PREFIX foaf: <http://xmlns.com/foaf/0.1/> .
+        # PREFIX time: <http://www.w3.org/2006/time#> .
+        # PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> .
+        # PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+        # PREFIX owl: <http://www.w3.org/2002/07/owl#> .
+        # PREFIX res: <http://bicycleaccident.com/group2/resource/>
+        
+        # SELECT ?adress WHERE {{
+        #   ?acc ns0:term_place ?place .
+        #   ?place ns1:isDistrict res:Place/?distr .
+        #   ?place rdfs:label ?adress .
+        #   FILTER(STRSTARTS(?distr, {%s} ))
+        # }}
+        # """,new_district)
+        
+        # sparql.setReturnFormat(JSON)
+        # results = sparql.query().convert()
+        # list_district = []
+        # for result in results["results"]["bindings"]:
+        #     adress = result['adress']['value']
+        #     list_district.append(adress)            
+        
         self.map_widget.set_address("Madrid "+new_district)
         self.map_widget.set_zoom(14)
+        self.update_marker()
 
-    def change_type_accident(self, new_accident):
+    def change_type_accident(self, new_type_accident):
         print("change ac")
+        
+        # sparql.setQuery("""
+        # PREFIX ns0: <https://motools.sourceforge.net/event/event.html#> .
+        # PREFIX ns1: <http://bicycleaccident.com/group2/ontology/property#> .
+        # PREFIX foaf: <http://xmlns.com/foaf/0.1/> .
+        # PREFIX time: <http://www.w3.org/2006/time#> .
+        # PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> .
+        # PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+        # PREFIX owl: <http://www.w3.org/2002/07/owl#> .
+        # PREFIX res: <http://bicycleaccident.com/group2/resource/>
+        
+        # SELECT ?adress WHERE {{
+        #   ?acc ns1:hasType ?type .
+        #   ?acc ns0:term_place ?place .
+        #   ?place rdfs:label ?adress .
+        #   FILTER(STRSTARTS(?type, {%s} ))
+        # }}
+        # """,new_type_accident)
+        
+        # sparql.setReturnFormat(JSON)
+        # results = sparql.query().convert()
+        # list_type_accident = []
+        # for result in results["results"]["bindings"]:
+        #     adress = result['adress']['value']
+        #     list_type_accident.append(adress)
+        self.update_marker()
+        
+    def update_marker(self):
+        self.clear_marker_event()
+        liste = list(set(list_district) & list(set(list_type_accident)))
+        for adr in liste:
+            location = geolocator.geocode(adr)
+            self.marker_list.append(self.map_widget.set_marker(40.4167754, -3.7037902, label='test'))
+            self.marker_list.append(self.map_widget.set_marker(location.latitude, location.longitude, label=adr))
+            
         
 
 if __name__ == "__main__":
     app = App()
     app.start()
-
-
-#%%
-
-endpoint = "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
-sparql = SPARQLWrapper(endpoint)
-
-sparql.setQuery("""
-SELECT ?item ?label WHERE {{
-  ?item wdt:P31/wdt:P279* wd:Q178561 .
-  ?item rdfs:label ?label . FILTER(LANG(?label) = "fr") .
-  FILTER(STRSTARTS(?label, "Siège ")) .
-}}
-""")  # Link to query: http://tinyurl.com/z8bd26h
-
-sparql.setReturnFormat(JSON)
-
-results = sparql.query().convert()
-
-i = 0
-
-for result in results["results"]["bindings"]:
-    qid = result['item']['value'].split('/')[-1]
-    label = result['label']['value']
-
-    label = label[:1].lower() + label[1:]
-
-    out = "{}\tLfr\t{}".format(qid, label)
-    print(out)
-    
-    instructions = tk.Label(self.frame_left, text=out, font='Raleway')
-    instructions.grid(row=i)
-    i+=1
 

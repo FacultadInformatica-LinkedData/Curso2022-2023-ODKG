@@ -23,6 +23,7 @@ mappings:
       - [ont:observations, $(observations)]
       - [ont:extraUses, $(extraUses)]
       - [ont:otherUses, $(otherUses)]
+      - [ont:equipment, $(equipment)]
 	  
       - [schema:identifier, $(identifier)]
       - [schema:name, $(name)]

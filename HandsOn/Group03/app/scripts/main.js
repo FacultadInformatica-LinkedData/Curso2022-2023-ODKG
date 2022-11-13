@@ -19,16 +19,55 @@ function search(schoolName = ""){
 
    	generateCards(searchResults);
 
-    getMap();
+    
     $("#searchResults").show();
 }
 
-function generateCards(results){for(let cardResult of results){getCard(cardResult);}}
 
-function getcard(school){
-	console.log('d')
-	$("#searchResults").html('hola')
+function getCard(school){
+	console.log(school)
+
+	let current = $("#searchResults").html()
+
+	let identifier = school['n']
+	let schoolName = school['n']
+
+	let newHTML = `<div class="schoolItem", id="${identifier}">
+          <div class="front cardFace">
+            <div class="schoolMap"></div>
+            <div class="schoolInfo">
+                <p class="schoolName">${schoolName}</p>
+                <p class="schoolLocation">Usera</p>
+                <hr>
+                <p class="schoolPlaygrond">Patio Accesible</p>
+                <br>
+                <p class="">Esto es un template</p>
+                <p class="">Que se cargará</p>
+                <p class="">Dinamicamente</p>
+            </div>
+          </div>
+          <div class="back cardFace">
+            <div class="backMapInfo">
+              <p>texto de ejemplo</p>
+            </div>
+            <div class="schoolInfo">
+              <p class="schoolName">Colegio Público Pradolongo</p>
+              <p class="schoolLocation">Usera</p>
+              <hr>
+              <p class="schoolPlaygrond">Patio Accesible</p>
+              <br>
+              <p class="">Anda que se</p>
+              <p class="">da la vuelta</p>
+            </div>
+          </div>
+        </div>`
+
+	$("#searchResults").html(current + newHTML)
+
+	getMap();
 }
+
+function generateCards(results){for(let cardResult of results){getCard(cardResult);}}
 
 $( document ).ready(function() {
     var savedSchools = [];
@@ -75,7 +114,7 @@ function getSpark(nameSearch){
 
     $.ajax({
     //url: "http://localhost:8080/sparql?query=PREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0A%0ASELECT%20%3Fs%20%3Fname%20WHERE%20%7B%0A%20%20%3Fs%20a%20ont%3ASchool.%0A%20%20%3Fs%20ont%3Aname%20%3Fname%0A%7D%20%0ALIMIT%2010",
-
+    async: false,
 
     url: "http://localhost:8080/sparql?query=PREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0A%0ASELECT%20%3Fs%20%3Fn%20WHERE%20%7B%0A%20%20%3Fs%20a%20ont%3ASchool%20.%0A%20%20%3Fs%20ont%3Aname%20%3Fn.%0A%20%20%0A%20%20filter%20contains%28%3Fn%2C%22"+nameSearch+"%22%29%0A%0A%7D%20%0A",
     headers: {
@@ -90,8 +129,6 @@ function getSpark(nameSearch){
     success: function (result) {
     	//console.log(result);
     	p = preprocess(result)
-    	console.log(p)
-
     	
         
     },

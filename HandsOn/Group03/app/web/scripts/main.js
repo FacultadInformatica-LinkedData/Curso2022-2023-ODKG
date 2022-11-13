@@ -28,6 +28,7 @@ jQuery.fn.shake = function(interval,distance,times){
 $("#schoolNameSearchBox").val("")
 
 function search(schoolName = ""){
+    $("#searchResults").html("")
     metroLine = $("#metroLineSelector").val();
     let searchResults = NaN;
     if(metroLine){
@@ -47,21 +48,27 @@ function getCard(school){
 
 	let current = $("#searchResults").html()
 
-	let identifier = school['n']
-	let schoolName = school['n']
+	let identifier = school['identifier']
+	let schoolName = school['name']
+    let neighborhoodName = school['neighborhoodName']
+    let streetAddress = school['streetAddress']
+
+    let schedule = school['schedule']
+    let telephone = school['telephone']
+    let laborday = school['laborday']
+    let typeAccesibility = school['typeAccesibility']
 
 	let newHTML = `<div class="schoolItem", id="${identifier}">
           <div class="front cardFace">
             <div class="schoolMap"></div>
             <div class="schoolInfo">
-                <p class="schoolName">${schoolName}</p>
-                <p class="schoolLocation">Usera</p>
-                <hr>
-                <p class="schoolPlaygrond">Patio Accesible</p>
                 <br>
-                <p class="">Esto es un template</p>
-                <p class="">Que se cargará</p>
-                <p class="">Dinamicamente</p>
+                <p class="schoolName">${schoolName}</p>
+                <br>
+                <p class="schoolLocation">${neighborhoodName}</p>
+                <hr>
+                <p class="schoolAddress">${streetAddress}</p>
+                <br>
             </div>
             <a class="starButton"><i class="fa fa-star"></i></a>
           </div>
@@ -70,13 +77,14 @@ function getCard(school){
               <p>texto de ejemplo</p>
             </div>
             <div class="schoolInfo">
-              <p class="schoolName">Colegio Público Pradolongo</p>
-              <p class="schoolLocation">Usera</p>
-              <hr>
-              <p class="schoolPlaygrond">Patio Accesible</p>
               <br>
-              <p class="">Anda que se</p>
-              <p class="">da la vuelta</p>
+                <p class="schoolName">${schoolName}</p>
+                <br>
+              <p class="typeAccesibility">${typeAccesibility}</p>
+              <hr>
+              <p class="schedule">${schedule}</p>
+              <p class="laborDay">${laborDay}</p>
+              <p class="telephone">${telephone}</p>
             </div>
             <a class="starButton"><i class="fa fa-star"></i></a>
           </div>
@@ -135,7 +143,7 @@ function getSpark(nameSearch){
         //url: "http://localhost:8080/sparql?query=PREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0A%0ASELECT%20%3Fs%20%3Fname%20WHERE%20%7B%0A%20%20%3Fs%20a%20ont%3ASchool.%0A%20%20%3Fs%20ont%3Aname%20%3Fname%0A%7D%20%0ALIMIT%2010",
         async: false,
 
-        url: "http://localhost:8080/sparql?query=PREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0A%0ASELECT%20%3Fs%20%3Fn%20WHERE%20%7B%0A%20%20%3Fs%20a%20ont%3ASchool%20.%0A%20%20%3Fs%20ont%3Aname%20%3Fn.%0A%20%20%0A%20%20filter%20contains%28%3Fn%2C%22"+nameSearch+"%22%29%0A%0A%7D%20%0A",
+        url: "http://localhost:8080/sparql?query=PREFIX%20sc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fscience%2Fowl%2Fsciencecommons%2F%3E%0APREFIX%20schema%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0APREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0ASELECT%20%2A%20%20WHERE%7B%0A%0A%20%20%20%20%3Fs%20a%20ont%3ASchool.%0A%20%20%20%20%3Fs%20schema%3Aidentifier%20%3Fidentifier.%0A%20%20%20%20%3Fs%20schema%3Aname%20%3Fname.%0A%20%20%20%20%3Fs%20schema%3Alatitude%20%3Flatitude.%0A%20%20%20%20%3Fs%20schema%3Alongitude%20%3Flongitude.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20schema%3Atelephone%20%3Ftelephone%7D.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3AlaborDay%20%3FlaborDay%7D.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3Aschedule%20%3Fschedule%7D.%0A%0A%20%20%20%20%3Fs%20schema%3Aaddress%20%3Faddress.%0A%20%20%20%20%3Faddress%20schema%3AstreetAddress%20%3FstreetAddress.%0A%0A%20%20%20%20%3Faddress%20ont%3AhasNeighborhood%20%3Fneighborhood.%0A%20%20%20%20%3Fneighborhood%20ont%3Aneighborhood%20%3FneighborhoodName%0A%20%20%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3AhasAccessibility%20%3Faccessibility%7D.%0A%09OPTIONAL%20%7B%20%3Faccessibility%20ont%3AtypeAccesibility%20%3FtypeAccesibility%7D.%0A%0A%20%20%20%20%20%20%20filter%20contains%28%3Fname%20%2C%22" + nameSearch + "%22%29%0A%0A%7D",
         headers: {
                 'accept': 'application/json',
                 'Access-Control-Allow-Origin':'*'
@@ -146,7 +154,7 @@ function getSpark(nameSearch){
         },
         ContentType : false,
         success: function (result) {
-            //console.log(result);
+            console.log(result);
             p = preprocess(result)
             
             

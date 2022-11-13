@@ -101,7 +101,7 @@ map:om_014 rdf:type rr:ObjectMap ;
 	rr:constant "http://miciudadamiga.madrid/map/ontology#SubwayStop" ;
 	rr:termType rr:IRI .
 
-map:om_015 rml:reference "subwayStation" ;
+map:om_015 rml:reference "SubwayStation" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
@@ -295,7 +295,7 @@ map:s_000 rdf:type rr:SubjectMap ;
 	rr:template "http://miciudadamiga.madrid/map/resource/DayCenter/{PK}" .
 
 map:s_001 rdf:type rr:SubjectMap ;
-	rr:template "http://miciudadamiga.madrid/map/resource/SubwayStop/{subwayStation}" .
+	rr:template "http://miciudadamiga.madrid/map/resource/SubwayStop/{SubwayStation}" .
 
 map:s_002 rdf:type rr:SubjectMap ;
 	rr:template "http://miciudadamiga.madrid/map/resource/MadridDistrict/{COD-District}" .

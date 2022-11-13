@@ -34,10 +34,10 @@ mappings:
   subwayStop:
     sources:
       - [../data/csv/200342-0-centros-dia-updated.csv~csv]
-    s: nsr:SubwayStop/$(subwayStation)
+    s: nsr:SubwayStop/$(SubwayStation)
     po:
       - [a, ns:SubwayStop]
-      - [ns:hasName, $(subwayStation), xsd:string]
+      - [ns:hasName, $(SubwayStation), xsd:string]
 
   madridDistrict:
     sources:

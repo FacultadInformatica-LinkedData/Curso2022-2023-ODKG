@@ -111,9 +111,9 @@ main{
     cursor:default;
     min-width: 320px; 
 }
-#QuickAccesButtonContainer button{
+#QuickAccesButtonContainer button, #QuickAccesButtonContainer select{
     min-height:40px;
-    min-width:50px;
+    min-width:100px;
     max-width:150px;
 
     height:5vh;
@@ -155,6 +155,10 @@ main{
     display:none;
     align-self: center;
 }
+.starButton{
+    margin: 10px;
+    align-self: flex-start;
+}
 /* ---------------------- END MAIN ---------------------- */
 /* ---------------------- FOOTER ---------------------- */
 footer{
@@ -174,7 +178,7 @@ footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     max-width: 1900px;
 }

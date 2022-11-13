@@ -1,3 +1,18 @@
+metroLines = {
+    "Line 1":"",
+    "Line 2":"",
+    "Line 3":"",
+    "Line 4":"",
+    "Line 5":"",
+    "Line 6":"",
+    "Line 7":"",
+    "Line 8":"",
+    "Line 9":"",
+    "Line 10":"",
+    "Line 11":"",
+    "Line 12":""
+}
+
 jQuery.fn.shake = function(interval,distance,times){
   interval = typeof interval == "undefined" ? 100 : interval;
   distance = typeof distance == "undefined" ? 10 : distance;
@@ -13,13 +28,16 @@ jQuery.fn.shake = function(interval,distance,times){
 $("#schoolNameSearchBox").val("")
 
 function search(schoolName = ""){
-    let searchResults = getSpark(schoolName);
-
-    console.log(searchResults);
-
+    metroLine = $("#metroLineSelector").val();
+    let searchResults = NaN;
+    if(metroLine){
+        searchResults = getSparkMetro(schoolName, metroLine);
+    }
+    else{
+        searchResults = getSpark(schoolName);
+    }
+    //console.log(searchResults);
    	generateCards(searchResults);
-
-    
     $("#searchResults").show();
 }
 
@@ -45,6 +63,7 @@ function getCard(school){
                 <p class="">Que se cargará</p>
                 <p class="">Dinamicamente</p>
             </div>
+            <a class="starButton"><i class="fa fa-star"></i></a>
           </div>
           <div class="back cardFace">
             <div class="backMapInfo">
@@ -59,6 +78,7 @@ function getCard(school){
               <p class="">Anda que se</p>
               <p class="">da la vuelta</p>
             </div>
+            <a class="starButton"><i class="fa fa-star"></i></a>
           </div>
         </div>`
 
@@ -109,36 +129,35 @@ function getMap(){
 }
 
 function getSpark(nameSearch){
-
 	var p;
-
     $.ajax({
-    //url: "http://localhost:8080/sparql?query=PREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0A%0ASELECT%20%3Fs%20%3Fname%20WHERE%20%7B%0A%20%20%3Fs%20a%20ont%3ASchool.%0A%20%20%3Fs%20ont%3Aname%20%3Fname%0A%7D%20%0ALIMIT%2010",
-    async: false,
+        //url: "http://localhost:8080/sparql?query=PREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0A%0ASELECT%20%3Fs%20%3Fname%20WHERE%20%7B%0A%20%20%3Fs%20a%20ont%3ASchool.%0A%20%20%3Fs%20ont%3Aname%20%3Fname%0A%7D%20%0ALIMIT%2010",
+        async: false,
 
-    url: "http://localhost:8080/sparql?query=PREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0A%0ASELECT%20%3Fs%20%3Fn%20WHERE%20%7B%0A%20%20%3Fs%20a%20ont%3ASchool%20.%0A%20%20%3Fs%20ont%3Aname%20%3Fn.%0A%20%20%0A%20%20filter%20contains%28%3Fn%2C%22"+nameSearch+"%22%29%0A%0A%7D%20%0A",
-    headers: {
-              'accept': 'application/json',
-              'Access-Control-Allow-Origin':'*'
-            },
-    type: "GET", /* or type:"GET" or type:"PUT" */
-    dataType: "json",
-    data: {
-    },
-    ContentType : false,
-    success: function (result) {
-    	//console.log(result);
-    	p = preprocess(result)
-    	
-        
-    },
-    error: function () {
-        console.log("error");
-    }
-});
-
+        url: "http://localhost:8080/sparql?query=PREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0A%0ASELECT%20%3Fs%20%3Fn%20WHERE%20%7B%0A%20%20%3Fs%20a%20ont%3ASchool%20.%0A%20%20%3Fs%20ont%3Aname%20%3Fn.%0A%20%20%0A%20%20filter%20contains%28%3Fn%2C%22"+nameSearch+"%22%29%0A%0A%7D%20%0A",
+        headers: {
+                'accept': 'application/json',
+                'Access-Control-Allow-Origin':'*'
+                },
+        type: "GET", /* or type:"GET" or type:"PUT" */
+        dataType: "json",
+        data: {
+        },
+        ContentType : false,
+        success: function (result) {
+            //console.log(result);
+            p = preprocess(result)
+            
+            
+        },
+        error: function () {
+            console.log("error");
+        }
+    });
     return p
 }
+
+function getSparkMetro(schoolName, metroLine){}
 
 function preprocess(json){
 	var columnName = json['head']['vars']

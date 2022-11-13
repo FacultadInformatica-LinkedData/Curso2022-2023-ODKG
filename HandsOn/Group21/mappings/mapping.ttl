@@ -38,52 +38,52 @@ map:om_000 rdf:type rr:ObjectMap ;
 	rr:constant "http://miciudadamiga.madrid/map/ontology#DayCenter" ;
 	rr:termType rr:IRI .
 
-map:om_001 rml:reference "Name" ;
+map:om_001 rml:reference "name" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_002 rml:reference "Address" ;
+map:om_002 rml:reference "address" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_003 rml:reference "Description" ;
+map:om_003 rml:reference "description" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_004 rml:reference "Latitude" ;
+map:om_004 rml:reference "latitude" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:number ;
 	rr:termType rr:Literal .
 
-map:om_005 rml:reference "Longitude" ;
+map:om_005 rml:reference "longitude" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:number ;
 	rr:termType rr:Literal .
 
-map:om_006 rml:reference "Opening Hours" ;
+map:om_006 rml:reference "openingHours" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_007 rml:reference "Telephone" ;
+map:om_007 rml:reference "telephone" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_008 rml:reference "Url" ;
+map:om_008 rml:reference "url" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:uRI ;
 	rr:termType rr:Literal .
 
-map:om_009 rml:reference "Bus Line" ;
+map:om_009 rml:reference "busLine" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_010 rml:reference "Accesibility" ;
+map:om_010 rml:reference "accesibility" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:boolean ;
 	rr:termType rr:Literal .
@@ -101,7 +101,7 @@ map:om_014 rdf:type rr:ObjectMap ;
 	rr:constant "http://miciudadamiga.madrid/map/ontology#SubwayStop" ;
 	rr:termType rr:IRI .
 
-map:om_015 rml:reference "Subway Station" ;
+map:om_015 rml:reference "subwayStation" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
@@ -124,12 +124,12 @@ map:om_019 rdf:type rr:ObjectMap ;
 	rr:constant "http://miciudadamiga.madrid/map/ontology#MadridNeighborhood" ;
 	rr:termType rr:IRI .
 
-map:om_020 rml:reference "Madrid Neighborhood" ;
+map:om_020 rml:reference "MadridNeighborhood" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_021 rml:reference "COD-Madrid Neighborhood" ;
+map:om_021 rml:reference "COD-MadridNeighborhood" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:integer ;
 	rr:termType rr:Literal .
@@ -292,16 +292,16 @@ map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_dayCenter_000, m
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
 map:s_000 rdf:type rr:SubjectMap ;
-	rr:template "http://miciudadamiga.madrid/map/resource/DayCenter/{Pk}" .
+	rr:constant "http://miciudadamiga.madrid/map/resource/DayCenter/$pk)" .
 
 map:s_001 rdf:type rr:SubjectMap ;
-	rr:template "http://miciudadamiga.madrid/map/resource/SubwayStop/{Subway Station}" .
+	rr:template "http://miciudadamiga.madrid/map/resource/SubwayStop/{subwayStation}" .
 
 map:s_002 rdf:type rr:SubjectMap ;
 	rr:template "http://miciudadamiga.madrid/map/resource/MadridDistrict/{COD-District}" .
 
 map:s_003 rdf:type rr:SubjectMap ;
-	rr:template "http://miciudadamiga.madrid/map/resource/MadridNeighborhood/{COD-Madrid Neighborhood}" .
+	rr:template "http://miciudadamiga.madrid/map/resource/MadridNeighborhood/{COD-MadridNeighborhood}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
 	rml:source "../data/csv/200342-0-centros-dia-updated.csv" ;

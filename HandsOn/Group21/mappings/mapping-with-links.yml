@@ -9,19 +9,19 @@ mappings:
   dayCenter:
     sources:
       - [../data/csv/200342-0-centros-dia-updated.csv~csv]
-    s: nsr:DayCenter/$(Pk)
+    s: nsr:DayCenter/$(pk)
     po:
       - [a, ns:DayCenter]
-      - [sch:name, $(Name), xsd:string]
-      - [sch:address, $(Address), xsd:string]
-      - [sch:description, $(Description), xsd:string]
-      - [sch:latitude, $(Latitude), xsd:number]
-      - [sch:longitude, $(Longitude), xsd:number]
-      - [sch:openingHours, $(Opening Hours), xsd:string]
-      - [sch:telephone, $(Telephone), xsd:string]
-      - [sch:url, $(Url), xsd:uRI]
-      - [ns:accessByBusLines, $(Bus Line), xsd:string]
-      - [ns:hasAccesibility, $(Accesibility), xsd:boolean]
+      - [sch:name, $(name), xsd:string]
+      - [sch:address, $(address), xsd:string]
+      - [sch:description, $(description), xsd:string]
+      - [sch:latitude, $(latitude), xsd:number]
+      - [sch:longitude, $(longitude), xsd:number]
+      - [sch:openingHours, $(openingHours), xsd:string]
+      - [sch:telephone, $(telephone), xsd:string]
+      - [sch:url, $(url), xsd:uRI]
+      - [ns:accessByBusLines, $(busLine), xsd:string]
+      - [ns:hasAccesibility, $(accesibility), xsd:boolean]
       - p: ns:belongsToMadridDistrict
         o:
           mapping: madridDistrict
@@ -30,34 +30,40 @@ mappings:
           mapping: madridNeighborhood
       - p: ns:hasMetroAccess
         o:
-          mapping: subwayStop
+          mapping: subwayStop1
+      - p: ns:hasMetroAccess
+        o:
+          mapping: subwayStop2
+      - p: ns:hasMetroAccess
+        o:
+          mapping: subwayStop3
 
   subwayStop1:
     sources:
       - [../data/csv/200342-0-centros-dia-updated.csv~csv]
-    s: nsr:SubwayStop/$(Subway Station 1)
+    s: nsr:SubwayStop/$(SubwayStation 1)
     po:
       - [a, ns:SubwayStop]
-      - [ns:hasName, $(Subway Station 1), xsd:string]
-      - [owl:sameAs, $(Same_as_wikidata_Subway Station 1)~iri]
+      - [ns:hasName, $(SubwayStation 1), xsd:string]
+      - [owl:sameAs, $(Same_as_wikidata_SubwayStation1)~iri]
   
   subwayStop2:
     sources:
       - [../data/csv/200342-0-centros-dia-updated.csv~csv]
-    s: nsr:SubwayStop/$(Subway Station 2)
+    s: nsr:SubwayStop/$(SubwayStation 2)
     po:
       - [a, ns:SubwayStop]
-      - [ns:hasName, $(Subway Station 2), xsd:string]
-      - [owl:sameAs, $(Same_as_wikidata_Subway Station 2)~iri]
+      - [ns:hasName, $(SubwayStation 2), xsd:string]
+      - [owl:sameAs, $(Same_as_wikidata_SubwayStation2)~iri]
 
   subwayStop3:
     sources:
       - [../data/csv/200342-0-centros-dia-updated.csv~csv]
-    s: nsr:SubwayStop/$(Subway Station 3)
+    s: nsr:SubwayStop/$(SubwayStation 3)
     po:
       - [a, ns:SubwayStop]
-      - [ns:hasName, $(Subway Station 3), xsd:string]
-      - [owl:sameAs, $(Same_as_wikidata_Subway Station 3)~iri]
+      - [ns:hasName, $(SubwayStation 3), xsd:string]
+      - [owl:sameAs, $(Same_as_wikidata_SubwayStation3)~iri]
 
   madridDistrict:
     sources:
@@ -72,9 +78,9 @@ mappings:
   madridNeighborhood:
     sources:
       - [../data/csv/200342-0-centros-dia-updated.csv~csv]
-    s: nsr:MadridNeighborhood/$(COD-Madrid Neighborhood)
+    s: nsr:MadridNeighborhood/$(COD-MadridNeighborhood)
     po:
       - [a, ns:MadridNeighborhood]
-      - [ns:hasName, $(Madrid Neighborhood), xsd:string]
-      - [ns:hasCode, $(COD-Madrid Neighborhood), xsd:integer]
-      - [owl:sameAs, $(Same_as_wikidata_Madrid Neighborhood)~iri]
+      - [ns:hasName, $(MadridNeighborhood), xsd:string]
+      - [ns:hasCode, $(COD-MadridNeighborhood), xsd:integer]
+      - [owl:sameAs, $(Same_as_wikidata_MadridNeighborhood)~iri]

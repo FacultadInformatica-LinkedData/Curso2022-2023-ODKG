@@ -8,19 +8,19 @@ mappings:
   dayCenter:
     sources:
       - [../data/csv/200342-0-centros-dia-updated.csv~csv]
-    s: nsr:DayCenter/$(Pk)
+    s: nsr:DayCenter/$pk)
     po:
       - [a, ns:DayCenter]
-      - [sch:name, $(Name), xsd:string]
-      - [sch:address, $(Address), xsd:string]
-      - [sch:description, $(Description), xsd:string]
-      - [sch:latitude, $(Latitude), xsd:number]
-      - [sch:longitude, $(Longitude), xsd:number]
-      - [sch:openingHours, $(Opening Hours), xsd:string]
-      - [sch:telephone, $(Telephone), xsd:string]
-      - [sch:url, $(Url), xsd:uRI]
-      - [ns:accessByBusLines, $(Bus Line), xsd:string]
-      - [ns:hasAccesibility, $(Accesibility), xsd:boolean]
+      - [sch:name, $(name), xsd:string]
+      - [sch:address, $(address), xsd:string]
+      - [sch:description, $(description), xsd:string]
+      - [sch:latitude, $(latitude), xsd:number]
+      - [sch:longitude, $(longitude), xsd:number]
+      - [sch:openingHours, $(openingHours), xsd:string]
+      - [sch:telephone, $(telephone), xsd:string]
+      - [sch:url, $(url), xsd:uRI]
+      - [ns:accessByBusLines, $(busLine), xsd:string]
+      - [ns:hasAccesibility, $(accesibility), xsd:boolean]
       - p: ns:belongsToMadridDistrict
         o:
           mapping: madridDistrict
@@ -34,10 +34,10 @@ mappings:
   subwayStop:
     sources:
       - [../data/csv/200342-0-centros-dia-updated.csv~csv]
-    s: nsr:SubwayStop/$(Subway Station)
+    s: nsr:SubwayStop/$(subwayStation)
     po:
       - [a, ns:SubwayStop]
-      - [ns:hasName, $(Subway Station), xsd:string]
+      - [ns:hasName, $(subwayStation), xsd:string]
 
   madridDistrict:
     sources:
@@ -51,8 +51,8 @@ mappings:
   madridNeighborhood:
     sources:
       - [../data/csv/200342-0-centros-dia-updated.csv~csv]
-    s: nsr:MadridNeighborhood/$(COD-Madrid Neighborhood)
+    s: nsr:MadridNeighborhood/$(COD-MadridNeighborhood)
     po:
       - [a, ns:MadridNeighborhood]
-      - [ns:hasName, $(Madrid Neighborhood), xsd:string]
-      - [ns:hasCode, $(COD-Madrid Neighborhood), xsd:integer]
+      - [ns:hasName, $(MadridNeighborhood), xsd:string]
+      - [ns:hasCode, $(COD-MadridNeighborhood), xsd:integer]

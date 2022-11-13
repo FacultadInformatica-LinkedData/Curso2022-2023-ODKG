@@ -27,7 +27,7 @@ TYPE_ACCIDENT = ['All', 'Frontal-lateral collision', 'Fall', 'Scope', 'Lateral c
 
 IS_ELEC = ['Yes', 'No', 'All']
 
-endpoint = "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
+endpoint = "http://localhost:9000/bicycleaccident.com/group2/"
 sparql = SPARQLWrapper(endpoint)
 
 list_district = []
@@ -162,30 +162,48 @@ class App(customtkinter.CTk):
     def change_district(self, new_district):
         print("change di")
         
-        # sparql.setQuery("""
-        # PREFIX ns0: <https://motools.sourceforge.net/event/event.html#> .
-        # PREFIX ns1: <http://bicycleaccident.com/group2/ontology/property#> .
-        # PREFIX foaf: <http://xmlns.com/foaf/0.1/> .
-        # PREFIX time: <http://www.w3.org/2006/time#> .
-        # PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> .
-        # PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-        # PREFIX owl: <http://www.w3.org/2002/07/owl#> .
-        # PREFIX res: <http://bicycleaccident.com/group2/resource/>
+        if new_district == "All":
+            sparql.setQuery("""
+            PREFIX ns0: <https://motools.sourceforge.net/event/event.html#> .
+            PREFIX ns1: <http://bicycleaccident.com/group2/ontology/property#> .
+            PREFIX foaf: <http://xmlns.com/foaf/0.1/> .
+            PREFIX time: <http://www.w3.org/2006/time#> .
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> .
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+            PREFIX owl: <http://www.w3.org/2002/07/owl#> .
+            PREFIX res: <http://bicycleaccident.com/group2/resource/>
+            
+            SELECT ?adress WHERE {{
+              ?acc ns0:term_place ?place .
+              ?place ns1:isDistrict res:Place/?distr .
+              ?place rdfs:label ?adress .
+            }}
+            """)
+        else:
+            sparql.setQuery("""
+            PREFIX ns0: <https://motools.sourceforge.net/event/event.html#> .
+            PREFIX ns1: <http://bicycleaccident.com/group2/ontology/property#> .
+            PREFIX foaf: <http://xmlns.com/foaf/0.1/> .
+            PREFIX time: <http://www.w3.org/2006/time#> .
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> .
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+            PREFIX owl: <http://www.w3.org/2002/07/owl#> .
+            PREFIX res: <http://bicycleaccident.com/group2/resource/>
+            
+            SELECT ?adress WHERE {{
+              ?acc ns0:term_place ?place .
+              ?place ns1:isDistrict res:Place/?distr .
+              ?place rdfs:label ?adress .
+              FILTER(STRSTARTS(?distr, { %s } ))
+            }}
+            """, new_district)
         
-        # SELECT ?adress WHERE {{
-        #   ?acc ns0:term_place ?place .
-        #   ?place ns1:isDistrict res:Place/?distr .
-        #   ?place rdfs:label ?adress .
-        #   FILTER(STRSTARTS(?distr, {%s} ))
-        # }}
-        # """,new_district)
-        
-        # sparql.setReturnFormat(JSON)
-        # results = sparql.query().convert()
-        # list_district = []
-        # for result in results["results"]["bindings"]:
-        #     adress = result['adress']['value']
-        #     list_district.append(adress)            
+        sparql.setReturnFormat(JSON)
+        results = sparql.query().convert()
+        list_district = []
+        for result in results["results"]["bindings"]:
+            adress = result['adress']['value']
+            list_district.append(adress)            
         
         self.map_widget.set_address("Madrid "+new_district)
         self.map_widget.set_zoom(14)
@@ -233,4 +251,11 @@ class App(customtkinter.CTk):
 if __name__ == "__main__":
     app = App()
     app.start()
+
+#%%
+
+
+endpoint = "http://localhost:9000/bicycleaccident.com/group2/"
+sparql = SPARQLWrapper(endpoint)
+
 

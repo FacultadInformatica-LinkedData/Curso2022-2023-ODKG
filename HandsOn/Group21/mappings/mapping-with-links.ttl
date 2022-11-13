@@ -125,7 +125,7 @@ map:om_017 rml:reference "SubwayStation 1" ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_018 rml:reference "Same_as_wikidata_SubwayStation1" ;
+map:om_018 rml:reference "same_as_wikidata_SubwayStation1" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
@@ -138,7 +138,7 @@ map:om_020 rml:reference "SubwayStation 2" ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_021 rml:reference "Same_as_wikidata_SubwayStation2" ;
+map:om_021 rml:reference "same_as_wikidata_SubwayStation2" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
@@ -151,7 +151,7 @@ map:om_023 rml:reference "SubwayStation 3" ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_024 rml:reference "Same_as_wikidata_SubwayStation3" ;
+map:om_024 rml:reference "same_as_wikidata_SubwayStation3" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
@@ -169,7 +169,7 @@ map:om_027 rml:reference "COD-District" ;
 	rr:datatype xsd:integer ;
 	rr:termType rr:Literal .
 
-map:om_028 rml:reference "Same_as_wikidata_District" ;
+map:om_028 rml:reference "same_as_wikidata_District" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
@@ -182,7 +182,7 @@ map:om_030 rml:reference "MadridNeighborhood" ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_031 rml:reference "Same_as_wikidata_MadridNeighborhood" ;
+map:om_031 rml:reference "same_as_wikidata_MadridNeighborhood" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 

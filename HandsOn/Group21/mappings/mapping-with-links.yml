@@ -45,7 +45,7 @@ mappings:
     po:
       - [a, ns:SubwayStop]
       - [ns:hasName, $(SubwayStation 1), xsd:string]
-      - [owl:sameAs, $(Same_as_wikidata_SubwayStation1)~iri]
+      - [owl:sameAs, $(same_as_wikidata_SubwayStation1)~iri]
   
   subwayStop2:
     sources:
@@ -54,7 +54,7 @@ mappings:
     po:
       - [a, ns:SubwayStop]
       - [ns:hasName, $(SubwayStation 2), xsd:string]
-      - [owl:sameAs, $(Same_as_wikidata_SubwayStation2)~iri]
+      - [owl:sameAs, $(same_as_wikidata_SubwayStation2)~iri]
 
   subwayStop3:
     sources:
@@ -63,7 +63,7 @@ mappings:
     po:
       - [a, ns:SubwayStop]
       - [ns:hasName, $(SubwayStation 3), xsd:string]
-      - [owl:sameAs, $(Same_as_wikidata_SubwayStation3)~iri]
+      - [owl:sameAs, $(same_as_wikidata_SubwayStation3)~iri]
 
   madridDistrict:
     sources:
@@ -73,7 +73,7 @@ mappings:
       - [a, ns:MadridDistrict]
       - [ns:hasName, $(District), xsd:string]
       - [ns:hasCode, $(COD-District), xsd:integer]
-      - [owl:sameAs, $(Same_as_wikidata_District)~iri]
+      - [owl:sameAs, $(same_as_wikidata_District)~iri]
 
   madridNeighborhood:
     sources:
@@ -82,7 +82,7 @@ mappings:
     po:
       - [a, ns:MadridNeighborhood]
       - [ns:hasName, $(MadridNeighborhood), xsd:string]
-      - [owl:sameAs, $(Same_as_wikidata_MadridNeighborhood)~iri]
+      - [owl:sameAs, $(same_as_wikidata_MadridNeighborhood)~iri]
       - p: ns:isInMadridDistrict
         o:
           mapping: madridDistrict

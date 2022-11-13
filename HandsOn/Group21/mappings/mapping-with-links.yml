@@ -9,7 +9,7 @@ mappings:
   dayCenter:
     sources:
       - [../data/csv/200342-0-centros-dia-updated.csv~csv]
-    s: nsr:DayCenter/$(pk)
+    s: nsr:DayCenter/$(PK)
     po:
       - [a, ns:DayCenter]
       - [sch:name, $(name), xsd:string]

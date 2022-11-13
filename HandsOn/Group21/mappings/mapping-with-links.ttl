@@ -426,7 +426,7 @@ map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_dayCenter_000, m
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
 map:s_000 rdf:type rr:SubjectMap ;
-	rr:template "http://miciudadamiga.madrid/map/resource/DayCenter/{pk}" .
+	rr:template "http://miciudadamiga.madrid/map/resource/DayCenter/{PK}" .
 
 map:s_001 rdf:type rr:SubjectMap ;
 	rr:template "http://miciudadamiga.madrid/map/resource/SubwayStop/{SubwayStation 1}" .

@@ -11,10 +11,10 @@
 <h1>
   Find my dialysis center
 </h1>
-<br>
+<br><br>
 
 <form method="post" action="/get_values">
-  <label for="name">Health area</label>
+  <label for="health_area">Health area</label>
   <select name="health_area" method="GET" action="/" id="health_area">
     <option value="None" selected>-</option>
     {% for area in health_areas %}
@@ -22,19 +22,10 @@
     {% endfor %}
   </select>
 
-  <br><br>
 
-  <label for="name">Province</label>
-  <select name="province" method="GET" action="/" id="province">
-    <option value="None" selected>-</option>
-    {% for prov in provinces %}
-    <option value="{{prov}}">{{prov}}</option>"
-    {% endfor %}
-  </select>
+  <br><br><br>
 
-  <br><br>
-  
-  <label for="name">City</label>
+  <label for="city">City</label>
   <select name="city" method="GET" action="/" id="city">
     <option value="None" selected>-</option>
     {% for city in cities %}
@@ -42,7 +33,17 @@
     {% endfor %}
   </select>
 
-  <br><br>
+  <br><br><br>
+
+  <label for="province">Province</label>
+  <select name="province" method="GET" action="/" id="province">
+    <option value="None" selected>-</option>
+    {% for prov in provinces %}
+    <option value="{{prov}}">{{prov}}</option>"
+    {% endfor %}
+  </select>
+
+  <br><br><br>
 
   <input type="submit" value="Buscar" />
 </form>

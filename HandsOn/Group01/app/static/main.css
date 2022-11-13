@@ -8,13 +8,6 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/* GEO logo on the top right corner */
-img[type=geo_logo] {
-    /* background-color: white; */
-    position: absolute;
-    top: 0px;
-    right: 0px;
-}
 
 /* Submit buttons */
 input[type=submit] {
@@ -22,9 +15,9 @@ input[type=submit] {
     border: 1px solid grey;
     border-radius: 2px;
     text-align: center;
-    padding-left: 8px;
-    padding-right: 8px;
-    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -47,4 +40,31 @@ h1 {
     font-size: 30px;
     color: #232c3d;
 }
-    
+
+/* Form */
+body {
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+}
+
+label {
+    font-size: 20px;
+    padding-right: 40px;
+}
+
+select {
+    padding-left: 10px;
+    inline-size: 300px;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+label[for=city]{
+    padding-right: 105px;
+}
+label[for=province]{
+    padding-right: 60px;
+}

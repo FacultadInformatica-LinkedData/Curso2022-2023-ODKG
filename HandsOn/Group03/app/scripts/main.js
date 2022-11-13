@@ -99,6 +99,7 @@ $( document ).ready(function() {
 
     });
     $('.schoolInfo').on('click', flipItem);
+    $('.starButton').on('click', saveSchool);
 });
 
 function flipItem() {
@@ -183,3 +184,6 @@ function preprocess(json){
 }
 
 
+function saveSchool(){
+    console.log(this);
+}

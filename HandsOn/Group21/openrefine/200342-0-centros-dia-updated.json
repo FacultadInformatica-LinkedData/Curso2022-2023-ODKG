@@ -383,11 +383,6 @@
   },
   {
     "op": "core/column-removal",
-    "columnName": "PK",
-    "description": "Remove column PK"
-  },
-  {
-    "op": "core/column-removal",
     "columnName": "TIPO-CENTRO",
     "description": "Remove column TIPO-CENTRO"
   },

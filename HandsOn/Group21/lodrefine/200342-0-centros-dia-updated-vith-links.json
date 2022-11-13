@@ -2467,5 +2467,35 @@
     "columnName": "same_as_wikidata_District",
     "index": 18,
     "description": "Move column same_as_wikidata_District to position 18"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "SubwayStation 3: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "SubwayStation 3",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "SubwayStation 3",
+    "similarValue": "",
+    "description": "Clear recon data for cells containing \"\" in column SubwayStation 3"
   }
 ]

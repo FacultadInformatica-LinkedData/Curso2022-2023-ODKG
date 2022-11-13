@@ -7,7 +7,7 @@ Created on Sat Nov 12 16:31:50 2022
 """
 
 import customtkinter
-from tkintermapview import TkinterMapView
+from tkintermapview import TkinterMapView 
 import tkinter as tk
 from SPARQLWrapper import SPARQLWrapper, JSON
 
@@ -122,6 +122,8 @@ class App(customtkinter.CTk):
         self.map_widget.set_address("Madrid")
         self.map_option_menu.set("OpenStreetMap")
         self.appearance_mode_optionemenu.set("Dark")
+        
+        # new_marker = self.map_widget.set_adress(lat=40.4167754, lon=-3.7037902)
 
     def search_event(self, event=None):
         self.map_widget.set_address(self.entry.get())

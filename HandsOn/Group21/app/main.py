@@ -17,7 +17,8 @@ total_centers_col, accessibility_col = st.columns(2)
 total_centers_col.metric("Total de Centros", total)
 accessibility_col.metric("Accesibilidad", f'{accessibility}%')
 
-region_tab, subway_tab = st.tabs(['Análisis por región', 'Accesibilidad por metro'])
+region_tab, subway_tab = st.tabs(
+    ['Análisis por región', 'Accesibilidad por metro'])
 
 with region_tab:
     option = st.selectbox(
@@ -56,13 +57,22 @@ with subway_tab:
     centers_by_subway_data = controller.get_centers_by_subway_stop(subway_name)
     subway_map_col.map(centers_by_subway_data)
 
-    subway_info_col.metric('Cantidad de centros cerca', centers_by_subway_data.shape[0])
-    subway_info_col.dataframe(centers_by_subway_data.drop(['lat', 'lon'], axis=1), use_container_width=True)
+    subway_info_col.metric(
+        'Cantidad de centros cerca',
+        centers_by_subway_data.shape[0])
+    subway_info_col.dataframe(
+        centers_by_subway_data.drop(['lat', 'lon'], axis=1),
+        use_container_width=True)
 
     st.subheader(f'Mapa de los centros por cantidad de estaciones de metro cerca')
     num_subway_map_col, num_subway_info_col = st.columns(2)
-    subway_number = num_subway_info_col.number_input('Cantidad de estaciones cerca', min_value=0, max_value=3)
+    subway_number = num_subway_info_col.number_input(
+        'Cantidad de estaciones cerca',
+        min_value=0,
+        max_value=3)
     centers_by_subway_data = controller.get_center_by_subway_stop_number(subway_number)
-    num_subway_info_col.dataframe(centers_by_subway_data.drop(['lat', 'lon'], axis=1), use_container_width=True)
+    num_subway_info_col.dataframe(
+        centers_by_subway_data.drop(['lat', 'lon'], axis=1),
+        use_container_width=True)
     num_subway_map_col.map(centers_by_subway_data)
 

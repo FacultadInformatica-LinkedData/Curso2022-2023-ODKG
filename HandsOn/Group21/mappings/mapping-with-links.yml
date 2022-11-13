@@ -8,7 +8,7 @@ prefixes:
 mappings:
   dayCenter:
     sources:
-      - [../data/csv/200342-0-centros-dia-updated.csv~csv]
+      - [../data/csv/200342-0-centros-dia-updated-with-links.csv~csv]
     s: nsr:DayCenter/$(PK)
     po:
       - [a, ns:DayCenter]
@@ -40,7 +40,7 @@ mappings:
 
   subwayStop1:
     sources:
-      - [../data/csv/200342-0-centros-dia-updated.csv~csv]
+      - [../data/csv/200342-0-centros-dia-updated-with-links.csv~csv]
     s: nsr:SubwayStop/$(SubwayStation 1)
     po:
       - [a, ns:SubwayStop]
@@ -49,7 +49,7 @@ mappings:
   
   subwayStop2:
     sources:
-      - [../data/csv/200342-0-centros-dia-updated.csv~csv]
+      - [../data/csv/200342-0-centros-dia-updated-with-links.csv~csv]
     s: nsr:SubwayStop/$(SubwayStation 2)
     po:
       - [a, ns:SubwayStop]
@@ -58,7 +58,7 @@ mappings:
 
   subwayStop3:
     sources:
-      - [../data/csv/200342-0-centros-dia-updated.csv~csv]
+      - [../data/csv/200342-0-centros-dia-updated-with-links.csv~csv]
     s: nsr:SubwayStop/$(SubwayStation 3)
     po:
       - [a, ns:SubwayStop]
@@ -67,7 +67,7 @@ mappings:
 
   madridDistrict:
     sources:
-      - [../data/csv/200342-0-centros-dia-updated.csv~csv]
+      - [../data/csv/200342-0-centros-dia-updated-with-links.csv~csv]
     s: nsr:MadridDistrict/$(COD-District)
     po:
       - [a, ns:MadridDistrict]
@@ -77,10 +77,12 @@ mappings:
 
   madridNeighborhood:
     sources:
-      - [../data/csv/200342-0-centros-dia-updated.csv~csv]
-    s: nsr:MadridNeighborhood/$(COD-MadridNeighborhood)
+      - [../data/csv/200342-0-centros-dia-updated-with-links.csv~csv]
+    s: nsr:MadridNeighborhood/$(MadridNeighborhood)
     po:
       - [a, ns:MadridNeighborhood]
       - [ns:hasName, $(MadridNeighborhood), xsd:string]
-      - [ns:hasCode, $(COD-MadridNeighborhood), xsd:integer]
       - [owl:sameAs, $(Same_as_wikidata_MadridNeighborhood)~iri]
+      - p: ns:isInMadridDistrict
+        o:
+          mapping: madridDistrict

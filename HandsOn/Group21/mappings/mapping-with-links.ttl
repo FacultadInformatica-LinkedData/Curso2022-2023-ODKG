@@ -182,14 +182,12 @@ map:om_030 rml:reference "MadridNeighborhood" ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_031 rml:reference "COD-MadridNeighborhood" ;
-	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:integer ;
-	rr:termType rr:Literal .
-
-map:om_032 rml:reference "Same_as_wikidata_MadridNeighborhood" ;
+map:om_031 rml:reference "Same_as_wikidata_MadridNeighborhood" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
+
+map:om_032 rdf:type rr:ObjectMap ;
+	rr:parentTriplesMap map:map_madridDistrict_000 .
 
 map:pm_000 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
@@ -285,10 +283,10 @@ map:pm_030 rdf:type rr:PredicateMap ;
 	rr:constant ns:hasName .
 
 map:pm_031 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasCode .
+	rr:constant owl:sameAs .
 
 map:pm_032 rdf:type rr:PredicateMap ;
-	rr:constant owl:sameAs .
+	rr:constant ns:isInMadridDistrict .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_000 ;
@@ -441,28 +439,28 @@ map:s_004 rdf:type rr:SubjectMap ;
 	rr:template "http://miciudadamiga.madrid/map/resource/MadridDistrict/{COD-District}" .
 
 map:s_005 rdf:type rr:SubjectMap ;
-	rr:template "http://miciudadamiga.madrid/map/resource/MadridNeighborhood/{COD-MadridNeighborhood}" .
+	rr:template "http://miciudadamiga.madrid/map/resource/MadridNeighborhood/{MadridNeighborhood}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
-	rml:source "../data/csv/200342-0-centros-dia-updated.csv" ;
+	rml:source "../data/csv/200342-0-centros-dia-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_001 rml:referenceFormulation ql:CSV ;
-	rml:source "../data/csv/200342-0-centros-dia-updated.csv" ;
+	rml:source "../data/csv/200342-0-centros-dia-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_002 rml:referenceFormulation ql:CSV ;
-	rml:source "../data/csv/200342-0-centros-dia-updated.csv" ;
+	rml:source "../data/csv/200342-0-centros-dia-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_003 rml:referenceFormulation ql:CSV ;
-	rml:source "../data/csv/200342-0-centros-dia-updated.csv" ;
+	rml:source "../data/csv/200342-0-centros-dia-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_004 rml:referenceFormulation ql:CSV ;
-	rml:source "../data/csv/200342-0-centros-dia-updated.csv" ;
+	rml:source "../data/csv/200342-0-centros-dia-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_005 rml:referenceFormulation ql:CSV ;
-	rml:source "../data/csv/200342-0-centros-dia-updated.csv" ;
+	rml:source "../data/csv/200342-0-centros-dia-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .

@@ -129,10 +129,8 @@ map:om_020 rml:reference "MadridNeighborhood" ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_021 rml:reference "COD-MadridNeighborhood" ;
-	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:integer ;
-	rr:termType rr:Literal .
+map:om_021 rdf:type rr:ObjectMap ;
+	rr:parentTriplesMap map:map_madridDistrict_000 .
 
 map:pm_000 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
@@ -198,7 +196,7 @@ map:pm_020 rdf:type rr:PredicateMap ;
 	rr:constant ns:hasName .
 
 map:pm_021 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasCode .
+	rr:constant ns:isInMadridDistrict .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_000 ;
@@ -301,7 +299,7 @@ map:s_002 rdf:type rr:SubjectMap ;
 	rr:template "http://miciudadamiga.madrid/map/resource/MadridDistrict/{COD-District}" .
 
 map:s_003 rdf:type rr:SubjectMap ;
-	rr:template "http://miciudadamiga.madrid/map/resource/MadridNeighborhood/{COD-MadridNeighborhood}" .
+	rr:template "http://miciudadamiga.madrid/map/resource/MadridNeighborhood/{MadridNeighborhood}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
 	rml:source "../data/csv/200342-0-centros-dia-updated.csv" ;

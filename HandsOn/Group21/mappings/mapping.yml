@@ -51,8 +51,10 @@ mappings:
   madridNeighborhood:
     sources:
       - [../data/csv/200342-0-centros-dia-updated.csv~csv]
-    s: nsr:MadridNeighborhood/$(COD-MadridNeighborhood)
+    s: nsr:MadridNeighborhood/$(MadridNeighborhood)
     po:
       - [a, ns:MadridNeighborhood]
       - [ns:hasName, $(MadridNeighborhood), xsd:string]
-      - [ns:hasCode, $(COD-MadridNeighborhood), xsd:integer]
+      - p: ns:isInMadridDistrict
+        o:
+          mapping: madridDistrict

@@ -42,7 +42,18 @@ mappings:
       - [a, vocab:Magnitude]
       - [owl:sameAs, $(same_as_wikidata_magnitude)~iri]
       - [vocab:hasMagnitudeName, $(MagnitudeName), xsd:string]
-      - [vocab:isMeasuredIn, $(UnitOfMeasure), xsd:string]
-      - [vocab:isMeasuredIn $(same_as_wikidata_unit_of_measure)~iri]
       - [saref:hasTimestamp, $(Time), xsd:date]
       - [saref:hasValue, $(Measurement), xsd:integer]
+      - p: saref:isMeasuredIn
+        o:
+          - mapping: unitOfMeasureMap
+
+  unitOfMeasureMap:
+    sources:
+      - ["datos202112-updated.csv~csv"]
+
+    s: http://smartcity.airquality.es/airquality/magnitude/$(UnitOfMeasure)
+
+    po:
+      - [a saref:UnitOfMeasure]
+      - [owl:sameAs $(same_as_wikidata_unit_of_measure)~iri]

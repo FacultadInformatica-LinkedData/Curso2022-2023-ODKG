@@ -171,17 +171,13 @@ var lookup = {
   ],
 };
 
-// When an option is changed, search the above for matching choices
+let map, infoWindow;
+let markers = [];
+
 function myChange() {
-  // Set selected option as variable
   var selectValue = $('#district').val();
-  console.log(selectValue);
-  // Empty the target field
   $('#subdistrict').empty();
-  console.log(lookup[selectValue]);
-  // For each choice in the selected option
   for (i = 0; i < lookup[selectValue].length; i++) {
-    // Output choice in the target field
     $('#subdistrict').append(
       "<option value='" +
         lookup[selectValue][i] +
@@ -192,27 +188,92 @@ function myChange() {
   }
 }
 
+const encodeForAjax = (data) => {
+  return Object.keys(data)
+    .map(function (k) {
+      return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
+    })
+    .join('&');
+};
+
+const ajaxGet = (whereTo, responseHandler, data = null) => {
+  httpRequest = new XMLHttpRequest();
+  httpRequest.addEventListener('load', responseHandler);
+  const url = data ? `${whereTo}?${encodeForAjax(data)}` : whereTo;
+  httpRequest.open('get', url, true);
+  httpRequest.send();
+};
+
 function initMap() {
-  new google.maps.Map(document.getElementById('map'), {
-    zoom: 10,
-    center: { lat: 40.35, lng: -3.7 },
+  infoWindow = new google.maps.InfoWindow();
+  map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 12,
+    center: { lat: 40.41, lng: -3.7 },
   });
 }
 
-function addMarker(lat, lng) {
-  const pos = { lat: lat, lng: lng };
-  const map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 4,
-    center: pos,
-  });
-  new google.maps.Marker({
-    position: pos,
+function addMarker(org, title, lat, lng) {
+  const marker = new google.maps.Marker({
+    position: { lat: lat, lng: lng },
     map: map,
+    title: title,
+    icon: {
+      url: `http://maps.google.com/mapfiles/ms/icons/${orgToColor(
+        org
+      )}-dot.png`,
+    },
   });
+
+  marker.addListener('click', () => {
+    infoWindow.close();
+    infoWindow.setContent(title);
+    infoWindow.open({
+      anchor: marker,
+      map,
+    });
+  });
+
+  markers.push(marker);
+}
+
+function addResultsToMap(response) {
+  Object.keys(response).forEach((org) => {
+    response[org].forEach((responseItem) =>
+      addMarker(
+        org,
+        responseItem.name,
+        responseItem.latitude,
+        responseItem.longitude
+      )
+    );
+  });
+}
+
+function deleteMarkers() {
+  markers.forEach((marker) => marker.setMap(null));
+  markers = [];
+}
+
+function orgToColor(org) {
+  if (org == 'Association') return 'red';
+  else if (org == 'Collective') return 'orange';
+  else if (org == 'Federation') return 'yellow';
+  else if (org == 'Foundation') return 'blue';
+  else print(`Unexpected org: ${org}`);
 }
 
 function search() {
-   
+  deleteMarkers();
+  ajaxGet(
+    '/search/',
+    (r) => addResultsToMap(JSON.parse(r.target.responseText)),
+    {
+      district: $('#district').val(),
+      subdistrict: $('#subdistrict').val(),
+      category: $('#category').val(),
+      organization: $('#organization').val(),
+    }
+  );
 }
 
 window.initMap = initMap;

@@ -4,21 +4,19 @@ WHERE {
     ?subject ?property ?object
 }
 
-# Get all Day Center for the Elderly
-SELECT DISTINCT ?subject
+# Get all Day Centers for the Elderly
+SELECT ?name
 WHERE {
-    ?subject a <https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosDiaMayores>
+    ?subject a <http://miciudadamiga.madrid/map/ontology#DayCenter>.
+    ?subject <http://schema.org/name> ?name
 }
 
 # Get how many Day Center for the Elderly there are in each district
-# Because of some casting issues in the mapping, we need to filter the type of
-# the literal `district` to retrieve only strings (the other option is to get
-# the numeric code of the district)
-SELECT ?district (COUNT(DISTINCT ?center) AS ?center_count)
+SELECT ?district_name (COUNT(DISTINCT ?center) AS ?center_count)
 WHERE {
-    ?center <http://purl.org/ctic/infraestructuras/localizacion#distrito> ?district.
-    ?center a <https://datos.madrid.es/egob/kos/entidadesYorganismos/CentrosAtencionSocialMayores/CentrosDiaMayores>
-    FILTER(datatype(?district) = xsd:string)
+    ?center <http://miciudadamiga.madrid/map/ontology#belongsToMadridDistrict> ?district.
+    ?center a <http://miciudadamiga.madrid/map/ontology#DayCenter>.
+    ?district <http://miciudadamiga.madrid/map/ontology#hasName> ?district_name
 }
 GROUP BY ?district
 ORDER BY DESC(?center_count)
@@ -27,7 +25,10 @@ ORDER BY DESC(?center_count)
 # "José Villareal"
 SELECT ?transport_access
 WHERE {{
-    <http://miciudadamiga.madrid/map/resource/Jos%C3%A9_Villareal> <http://miciudadamiga.madrid/map/ontology#metroAccess> ?transport_access
+    ?center <http://schema.org/name> "José Villareal".
+    ?center <http://miciudadamiga.madrid/map/ontology#hasMetroAccess> ?transport_access_uri.
+    ?transport_access_uri <http://miciudadamiga.madrid/map/ontology#hasName> ?transport_access
 } UNION {
-    <http://miciudadamiga.madrid/map/resource/Jos%C3%A9_Villareal> <http://miciudadamiga.madrid/map/ontology#busAccess> ?transport_access
+    ?center <http://schema.org/name> "José Villareal".
+    ?center <http://miciudadamiga.madrid/map/ontology#accessByBusLines> ?transport_access
 }}

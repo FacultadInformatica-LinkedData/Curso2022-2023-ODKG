@@ -1,6 +1,6 @@
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix ns: <http://www.miciudadamiga.madrid/map/ontology/SocialCenter#> .
+@prefix ns: <http://miciudadamiga.madrid/map/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sch: <https://schema.org/> .
@@ -15,9 +15,6 @@ ns: a owl:Ontology ;
 ns:MadridDistrict a owl:Class ;
     rdfs:label "Madrid District" ;
     rdfs:subClassOf dbo:CityDistrict .
-
-ns:MadridNeighborhood a owl:Class ;
-    rdfs:label "Madrid Neighborhood" .
 
 ns:SubwayStop a owl:Class ;
     rdfs:label "Subway Stop" .
@@ -49,6 +46,10 @@ ns:hasMetroAccess a owl:ObjectProperty ;
 ns:hasName a owl:DatatypeProperty ;
     rdfs:label "has name" ;
     rdfs:range xsd:string .
+
+ns:isInMadridDistrict a owl:ObjectProperty ;
+    rdfs:label "is in madrid district" ;
+    rdfs:domain ns:MadridNeighborhood .
 
 sch:address a owl:DatatypeProperty ;
     rdfs:label "address" ;
@@ -84,6 +85,9 @@ sch:url a owl:DatatypeProperty ;
 
 dbo:CityDistrict a owl:Class ;
     rdfs:label "City District" .
+
+ns:MadridNeighborhood a owl:Class ;
+    rdfs:label "Madrid Neighborhood" .
 
 sch:GovernmentBuilding a owl:Class ;
     rdfs:label "Government Building" .

@@ -1,7 +1,8 @@
 {% extends 'base.html' %} 
 
 {% block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='results.css') }}">
+<script src="static/go_back.js"></script>
 
 <title>results</title>
 {% endblock %} 
@@ -11,24 +12,85 @@
 <h1>
     Results
 </h1>
-<p>
-    Health area: {{ health_area[0] }} <br>
-    Province: {{province[0]}} <br>
-    City: {{city[0]}}
-</p>
-<table border = 1>
-    {% for a, b, c, d in queries[0] %}
+<br><br>
 
-    <tr>
-        <th> {{ a }} </th>
-        <td> {{ b }} </td>
-        <td> {{ c }} </td>
-        <td> {{ d }} </td>
-    </tr>
-    {% endfor %}
-</table>
-<br>
-<p>{{queries[1]}}</p>
+{% if health_area[0] == 'None' and city[0] == 'None'  and province[0] == 'None' %}
+    <p>The search is empty. This are all the centers in Comunidad Valenciana:</p><br>
 
+    {% if queries != [] %}
+    <table border = 1>
+        <tr>
+            <th>Center</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Health area</th>
+            <th>Province</th>
+            <th>City</th>
+            <th>Entity</th>
+        </tr>
 
-{% endblock %}
+        {% for center, phone, address, health_area, city, province, entity in queries %}
+
+        <tr>
+            <td> {{ center }} </td>
+            <td> {{ phone }} </td>
+            <td> {{ address }} </td>
+            <td> {{ health_area }} </td>
+            <td> {{ city }} </td>
+            <td> {{ province }} </td>
+            <td> {{ entity }} </td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>There are no dialysis centers that meet your specifications. Please repeat the search.</p>
+    {% endif %}
+
+{% else %}
+    <p>
+    <b>Search:</b><br>
+        <ul>
+            {% if health_area[0] != 'None' %}
+            <li>Health area: {{ health_area[0] }}</li> <br>
+            {% endif %}
+
+            {% if city[0] != 'None' %}
+            <li>City: {{city[0]}}</li> <br>
+            {% endif %}
+
+            {% if province[0] != 'None' %}
+            <li>Province: {{province[0]}}</li> <br>
+            {% endif %}            
+        </ul>
+        <br>
+    
+
+    {% if queries != [] %}
+    The dialysis centers found according to your specifications are:</p>
+    <table border = 1>
+        <tr>
+            <th>Center</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Entity</th>
+        </tr>
+
+        {% for center, phone, address, entity in queries %}
+
+        <tr>
+            <td> {{ center }} </td>
+            <td> {{ phone }} </td>
+            <td> {{ address }} </td>
+            <td> {{ entity }} </td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>There are no dialysis centers that meet your specifications. Please repeat the search.</p>
+    {% endif %}
+{% endif %}
+
+<br><br>
+<button onclick="goBack()">Back</button>
+
+{% endblock %} 

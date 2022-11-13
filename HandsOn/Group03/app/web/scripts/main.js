@@ -192,11 +192,18 @@ function getSpark(nameSearch, line_filter = "", district_filter="", Access_filte
 
     let url = "http://localhost:8080/sparql?query=PREFIX%20sc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fscience%2Fowl%2Fsciencecommons%2F%3E%0APREFIX%20schema%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0APREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0ASELECT%20%2A%20%20WHERE%7B%0A%0A%20%20%20%20%3Fs%20a%20ont%3ASchool.%0A%20%20%20%20%3Fs%20schema%3Aidentifier%20%3Fidentifier.%0A%20%20%20%20%3Fs%20schema%3Aname%20%3Fname.%0A%20%20%20%20%3Fs%20schema%3Alatitude%20%3Flatitude.%0A%20%20%20%20%3Fs%20schema%3Alongitude%20%3Flongitude.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20schema%3Atelephone%20%3Ftelephone%7D.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3AlaborDay%20%3FlaborDay%7D.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3Aschedule%20%3Fschedule%7D.%0A%0A%20%20%20%20%3Fs%20schema%3Aaddress%20%3Faddress.%0A%20%20%20%20%3Faddress%20schema%3AstreetAddress%20%3FstreetAddress.%0A%0A%20%20%20%20%3Faddress%20ont%3AhasNeighborhood%20%3Fneighborhood.%0A%20%20%20%20%3Fneighborhood%20ont%3Aneighborhood%20%3FneighborhoodName%0A%20%20%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3AhasAccessibility%20%3Faccessibility%7D.%0A%09OPTIONAL%20%7B%20%3Faccessibility%20ont%3AtypeAccessibility%20%3FtypeAccessibility%7D.%0A%0A%20%20%20%20%20%20%20filter%20contains%28%3Fname%20%2C%22" + nameSearch + "%22%29%0A%0A"
 
-    if line_filter == ""{
-        
+    if (line_filter == "") {
+        url += ""
+    }
+    if (district_filter == "") {
+        url += ""
+    }
+    if (Access_filter == "") {
+        url += ""
     }
 
-    url += "%7D"
+
+    url += "%7D" 
     $.ajax({
         //url: "http://localhost:8080/sparql?query=PREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0A%0ASELECT%20%3Fs%20%3Fname%20WHERE%20%7B%0A%20%20%3Fs%20a%20ont%3ASchool.%0A%20%20%3Fs%20ont%3Aname%20%3Fname%0A%7D%20%0ALIMIT%2010",
         async: false,

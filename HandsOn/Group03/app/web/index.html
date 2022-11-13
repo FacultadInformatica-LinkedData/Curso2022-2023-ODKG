@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Technical Attributes-->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SchoolFinder</title>
-    <!--Descriptive Attributes-->
-    <meta
-    name="description"
-    content="Application that allow you to find madrid school information"
-    />
-    <meta name="author" content="Luis Ortiz Benito"/>
-    <meta name="keywords" content="LinkedData, OpenGraphs, SchoolFinder" />
-    <meta name="robots" content="index, follow">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+  <!--Technical Attributes-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SchoolFinder</title>
+  <!--Descriptive Attributes-->
+  <meta
+  name="description"
+  content="Application that allow you to find madrid school information"
+  />
+  <meta name="author" content="Luis Ortiz Benito"/>
+  <meta name="keywords" content="LinkedData, OpenGraphs, SchoolFinder" />
+  <meta name="robots" content="index, follow">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/main.js"></script>
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-    <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
     <!-- <meta property="og:site_name" content="">
     <meta property="og:url" content="">
     <meta property="og:title" content="">
@@ -38,55 +38,82 @@
     <meta name="twitter:creator" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:image" content=""> -->
-</head>
-<body>
-  <header>
-    <div id="Logo">
-      <h1>SchoolFinder</h1>
-    </div>
-    
-    <nav id="headerMenu">
-      <ul>
-        <a href="./Index.html"><li>Explore</li></a>
-        <a href="./MySchools.html"><li>My Schools</li></a>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="containerPage" id="home-ExplorePage">
-      <h1 class="pageTitle">Explorer Tool</h1>
-      <div id="InteractionContainer">
-        <div id="QuickAccesButtonContainer">
-          <select name="metroLineSelector" id="metroLineSelector">
-            <option value="" selected >Select a line</option> <!--disabled hidden-->
-            <option value="Line1">Line 1</option>
-            <option value="Line2">Line 2</option>
-            <option value="Line3">Line 3</option>
-            <option value="Line4">Line 4</option>
-            <option value="Line5">Line 5</option>
-            <option value="Line6">Line 6</option>
-            <option value="Line7">Line 7</option>
-            <option value="Line8">Line 8</option>
-            <option value="Line9">Line 9</option>
-            <option value="Line10">Line 10</option>
-            <option value="Line11">Line 11</option>
-            <option value="Line12">Line 12</option>
-          </select>
-          <button>Select</button>
-          <button>Select</button>
-          <button>Select</button>
-        </div> 
-        <form action="/search" method="post" id="SchoolSearchForm">
-          <input type="text" placeholder="Enter a school name.."  name="schoolName" id="schoolNameSearchBox">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
+  </head>
+  <body>
+    <header>
+      <div id="Logo">
+        <h1>SchoolFinder</h1>
       </div>
-      <div id="searchResults">
-        <!-- Este de abajo tiene el template del mapa de verdad -->
-        <div class="schoolItem">
-          <div class="front cardFace">
-            <div class="schoolMap"></div>
-            <div class="schoolInfo">
+
+      <nav id="headerMenu">
+        <ul>
+          <a href="./Index.html"><li>Explore</li></a>
+          <a href="./MySchools.html"><li>My Schools</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="containerPage" id="home-ExplorePage">
+        <h1 class="pageTitle">Explorer Tool</h1>
+        <div id="InteractionContainer">
+          <div id="QuickAccesButtonContainer">
+            <select name="metroLineSelector" id="metroLineSelector">
+              <option value="" selected >Select a line</option> <!--disabled hidden-->
+              <option value="Line1">Line 1</option>
+              <option value="Line2">Line 2</option>
+              <option value="Line3">Line 3</option>
+              <option value="Line4">Line 4</option>
+              <option value="Line5">Line 5</option>
+              <option value="Line6">Line 6</option>
+              <option value="Line7">Line 7</option>
+              <option value="Line8">Line 8</option>
+              <option value="Line9">Line 9</option>
+              <option value="Line10">Line 10</option>
+              <option value="Line11">Line 11</option>
+              <option value="Line12">Line 12</option>
+            </select>
+            <select name="districtSelector" id="districtSelector">
+              <option value="" selected >Select a district</option> <!--disabled hidden-->
+              <option value=Hortaleza>Hortaleza</option>
+              <option value=Villa de Vallecas>Villa de Vallecas</option>
+              <option value=Puente de Vallecas>Puente de Vallecas</option>
+              <option value=San Blas>San Blas</option>
+              <option value=Latina>Latina</option>
+              <option value=Vicálvaro>Vicálvaro</option>
+              <option value=Fuencarral-El Pardo>Fuencarral-El Pardo</option>
+              <option value=Salamanca>Salamanca</option>
+              <option value=Villaverde>Villaverde</option>
+              <option value=Carabanchel>Carabanchel</option>
+              <option value=Centro>Centro</option>
+              <option value=Moncloa-Aravaca>Moncloa-Aravaca</option>
+              <option value=Chamartín>Chamartín</option>
+              <option value=Barajas>Barajas</option>
+              <option value=Ciudad Lineal>Ciudad Lineal</option>
+              <option value=Chamberí>Chamberí</option>
+              <option value=Usera>Usera</option>
+              <option value=Retiro>Retiro</option>
+              <option value=Moratalaz>Moratalaz</option>
+              <option value=Tetuán>Tetuán</option>
+              <option value=Arganzuela>Arganzuela</option>
+            </select>
+            <select name="typeAccessibilitySelector" id="typeAccessibilitySelector">
+              <option value="" selected >Select a type of accessible</option> <!--disabled hidden-->
+              <option value=0>Not Accessible</option>
+              <option value=1>Accessible</option>
+              <option value=2>Partially accessible</option>
+            </select>
+          </div> 
+          <form action="/search" method="post" id="SchoolSearchForm">
+            <input type="text" placeholder="Enter a school name.."  name="schoolName" id="schoolNameSearchBox">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div id="searchResults">
+          <!-- Este de abajo tiene el template del mapa de verdad -->
+          <div class="schoolItem">
+            <div class="front cardFace">
+              <div class="schoolMap"></div>
+              <div class="schoolInfo">
                 <p class="schoolName">Colegio Público Pradolongo</p>
                 <p class="schoolLocation">Usera</p>
                 <hr>
@@ -95,36 +122,36 @@
                 <p class="">Esto es un template</p>
                 <p class="">Que se cargará</p>
                 <p class="">Dinamicamente</p>
+              </div>
+              <a class="starButton"><i class="fa fa-star"></i></a>
             </div>
-            <a class="starButton"><i class="fa fa-star"></i></a>
-          </div>
-          <div class="back cardFace">
-            <div class="backMapInfo">
-              <p>texto de ejemplo</p>
+            <div class="back cardFace">
+              <div class="backMapInfo">
+                <p>texto de ejemplo</p>
+              </div>
+              <div class="schoolInfo">
+                <p class="schoolName">Colegio Público Pradolongo</p>
+                <p class="schoolLocation">Usera</p>
+                <hr>
+                <p class="schoolPlaygrond">Patio Accesible</p>
+                <br>
+                <p class="">Anda que se</p>
+                <p class="">da la vuelta</p>
+              </div>
+              <a class="starButton"><i class="fa fa-star"></i></a>
             </div>
-            <div class="schoolInfo">
-              <p class="schoolName">Colegio Público Pradolongo</p>
-              <p class="schoolLocation">Usera</p>
-              <hr>
-              <p class="schoolPlaygrond">Patio Accesible</p>
-              <br>
-              <p class="">Anda que se</p>
-              <p class="">da la vuelta</p>
-            </div>
-            <a class="starButton"><i class="fa fa-star"></i></a>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-  <footer>
-    <nav id="footerMenu">
-      <ul>
-        <a href="./FAQ.html"><li>FAQ</li></a>
-        <a href="./AboutUs.html"><li>About us</li></a>
-        <a href="./PrivacyPolicy.html"><li>Privacy Policy</li></a>
-      </ul>
-    </nav>
-  </footer>
-</body>
-</html>
+    </main>
+    <footer>
+      <nav id="footerMenu">
+        <ul>
+          <a href="./FAQ.html"><li>FAQ</li></a>
+          <a href="./AboutUs.html"><li>About us</li></a>
+          <a href="./PrivacyPolicy.html"><li>Privacy Policy</li></a>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+  </html>

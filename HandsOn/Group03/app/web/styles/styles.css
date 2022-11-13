@@ -344,6 +344,7 @@ text-align: center;
 }
 .schoolInfo{
     margin-left: 15px;
+    height: 100%;
 }
 .schoolItem:hover{
     box-shadow: 0 24px 32px rgb(0 255 132/ 20%);

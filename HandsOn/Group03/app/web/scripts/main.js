@@ -1,16 +1,28 @@
 metroLines = {
-    "Line 1":"",
-    "Line 2":"",
-    "Line 3":"",
-    "Line 4":"",
-    "Line 5":"",
-    "Line 6":"",
-    "Line 7":"",
-    "Line 8":"",
-    "Line 9":"",
-    "Line 10":"",
-    "Line 11":"",
-    "Line 12":""
+    "Line1":"Q1826675",
+    "Line2":"Q1826679",
+    "Line3":"Q1826673",
+    "Line4":"Q1826677",
+    "Line5":"Q1568028",
+    "Line6":"Q514227",
+    "Line7":"Q1826683",
+    "Line8":"Q1475527",
+    "Line9":"Q1759707",
+    "Line10":"Q1760090",
+    "Line11":"Q608251",
+    "Line12":"Q1558864"
+}
+
+districts_options = ['Hortaleza', 'Villa de Vallecas', 'Puente de Vallecas', 'San Blas',
+       'Latina', 'Vicálvaro', 'Fuencarral-El Pardo', 'Salamanca',
+       'Villaverde', 'Carabanchel', 'Centro', 'Moncloa-Aravaca',
+       'Chamartín', 'Barajas', 'Ciudad Lineal', 'Chamberí', 'Usera',
+       'Retiro', 'Moratalaz', 'Tetuán', 'Arganzuela']
+
+function flipItem() {
+    $(this).parent().parent().shake(100,10,3);
+    $(this).parent().parent().find('.front').toggleClass("invisibleFront");
+    $(this).parent().parent().find('.back').toggleClass("visibleBack");
 }
 
 jQuery.fn.shake = function(interval,distance,times){
@@ -32,13 +44,24 @@ function search(schoolName = ""){
     metroLine = $("#metroLineSelector").val();
     let searchResults = NaN;
     if(metroLine){
-        searchResults = getSparkMetro(schoolName, metroLine);
+        let w_station = getWiki(metroLines[metroLine])
+        let ws = []
+        for (var w of w_station){
+            ws.push(w.replace("http://www.", "https://").replace(":", "%3A").replace("/", "%2F").replace("/", "%2F").replace("/", "%2F").replace("/", "%2F").replace("/", "%2F").replace("/", "%2F").replace("/", "%2F").replace("/", "%2F"))
+        }
+        searchResults = getSparkMetro(schoolName, "%22" + ws.join("%22%2C%20%22") + "%22");
+
+        console.log(searchResults)
     }
     else{
         searchResults = getSpark(schoolName);
     }
     //console.log(searchResults);
    	generateCards(searchResults);
+
+    $('.schoolInfo').on('click', flipItem);
+    $('.starButton').on('click', saveSchool);
+
     $("#searchResults").show();
 }
 
@@ -55,8 +78,8 @@ function getCard(school){
 
     let schedule = school['schedule']
     let telephone = school['telephone']
-    let laborday = school['laborday']
-    let typeAccesibility = school['typeAccesibility']
+    let laborDay = school['laborDay']
+    let typeAccessibility = school['typeAccessibility']
 
 	let newHTML = `<div class="schoolItem", id="${identifier}">
           <div class="front cardFace">
@@ -80,7 +103,7 @@ function getCard(school){
               <br>
                 <p class="schoolName">${schoolName}</p>
                 <br>
-              <p class="typeAccesibility">${typeAccesibility}</p>
+              <p class="typeAccesibility">Tipo de accesibilidad: ${typeAccessibility}</p>
               <hr>
               <p class="schedule">${schedule}</p>
               <p class="laborDay">${laborDay}</p>
@@ -110,11 +133,7 @@ $( document ).ready(function() {
     $('.starButton').on('click', saveSchool);
 });
 
-function flipItem() {
-    $(this).parent().parent().shake(100,10,3);
-    $(this).parent().parent().find('.front').toggleClass("invisibleFront");
-    $(this).parent().parent().find('.back').toggleClass("visibleBack");
-}
+
 
 
 function getMap(){
@@ -137,13 +156,15 @@ function getMap(){
     L.marker(target).addTo(map);
 }
 
-function getSpark(nameSearch){
-	var p;
+function getSparkMetro(nameSearch, lines){
+
+    var p;
     $.ajax({
         //url: "http://localhost:8080/sparql?query=PREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0A%0ASELECT%20%3Fs%20%3Fname%20WHERE%20%7B%0A%20%20%3Fs%20a%20ont%3ASchool.%0A%20%20%3Fs%20ont%3Aname%20%3Fname%0A%7D%20%0ALIMIT%2010",
         async: false,
 
-        url: "http://localhost:8080/sparql?query=PREFIX%20sc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fscience%2Fowl%2Fsciencecommons%2F%3E%0APREFIX%20schema%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0APREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0ASELECT%20%2A%20%20WHERE%7B%0A%0A%20%20%20%20%3Fs%20a%20ont%3ASchool.%0A%20%20%20%20%3Fs%20schema%3Aidentifier%20%3Fidentifier.%0A%20%20%20%20%3Fs%20schema%3Aname%20%3Fname.%0A%20%20%20%20%3Fs%20schema%3Alatitude%20%3Flatitude.%0A%20%20%20%20%3Fs%20schema%3Alongitude%20%3Flongitude.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20schema%3Atelephone%20%3Ftelephone%7D.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3AlaborDay%20%3FlaborDay%7D.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3Aschedule%20%3Fschedule%7D.%0A%0A%20%20%20%20%3Fs%20schema%3Aaddress%20%3Faddress.%0A%20%20%20%20%3Faddress%20schema%3AstreetAddress%20%3FstreetAddress.%0A%0A%20%20%20%20%3Faddress%20ont%3AhasNeighborhood%20%3Fneighborhood.%0A%20%20%20%20%3Fneighborhood%20ont%3Aneighborhood%20%3FneighborhoodName%0A%20%20%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3AhasAccessibility%20%3Faccessibility%7D.%0A%09OPTIONAL%20%7B%20%3Faccessibility%20ont%3AtypeAccesibility%20%3FtypeAccesibility%7D.%0A%0A%20%20%20%20%20%20%20filter%20contains%28%3Fname%20%2C%22" + nameSearch + "%22%29%0A%0A%7D",
+
+        url: `http://localhost:8080/sparql?query=PREFIX%20owl%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0APREFIX%20sc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fscience%2Fowl%2Fsciencecommons%2F%3E%0APREFIX%20schema%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0APREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0ASELECT%20%3Fs%20%3Fname%20%3Fwiki%20%20WHERE%7B%0A%0A%20%20%20%20%3Fs%20a%20ont%3ASchool.%0A%20%20%20%20%3Fs%20schema%3Aidentifier%20%3Fidentifier.%0A%20%20%20%20%3Fs%20schema%3Aname%20%3Fname.%0A%0A%20%20%20%20%3Fs%20ont%3AhasAccessibility%20%3Faccessibility.%0A%20%20%20%20%3Faccessibility%20ont%3AhasMetro%20%3Fmetro.%0A%20%20%3Fmetro%20owl%3AsameAs%20%3Fwiki%0A%20%20%0A%09%20%20FILTER%28%3Fwiki%20IN%20%28${lines}%29%29.%0A%20%20%20%20FILTER%20%28Contains%28%3Fname%2C%20%22${nameSearch}%22%29%29%0A%0A%0A%0A%7D`,
         headers: {
                 'accept': 'application/json',
                 'Access-Control-Allow-Origin':'*'
@@ -154,8 +175,8 @@ function getSpark(nameSearch){
         },
         ContentType : false,
         success: function (result) {
-            console.log(result);
-            p = preprocess(result)
+            //console.log(result);
+            p = preprocessHelios(result)
             
             
         },
@@ -166,9 +187,77 @@ function getSpark(nameSearch){
     return p
 }
 
-function getSparkMetro(schoolName, metroLine){}
+function getSpark(nameSearch, line_filter = "", district_filter="", Access_filter=""){
+	var p;
 
-function preprocess(json){
+    let url = "http://localhost:8080/sparql?query=PREFIX%20sc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fscience%2Fowl%2Fsciencecommons%2F%3E%0APREFIX%20schema%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0APREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0ASELECT%20%2A%20%20WHERE%7B%0A%0A%20%20%20%20%3Fs%20a%20ont%3ASchool.%0A%20%20%20%20%3Fs%20schema%3Aidentifier%20%3Fidentifier.%0A%20%20%20%20%3Fs%20schema%3Aname%20%3Fname.%0A%20%20%20%20%3Fs%20schema%3Alatitude%20%3Flatitude.%0A%20%20%20%20%3Fs%20schema%3Alongitude%20%3Flongitude.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20schema%3Atelephone%20%3Ftelephone%7D.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3AlaborDay%20%3FlaborDay%7D.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3Aschedule%20%3Fschedule%7D.%0A%0A%20%20%20%20%3Fs%20schema%3Aaddress%20%3Faddress.%0A%20%20%20%20%3Faddress%20schema%3AstreetAddress%20%3FstreetAddress.%0A%0A%20%20%20%20%3Faddress%20ont%3AhasNeighborhood%20%3Fneighborhood.%0A%20%20%20%20%3Fneighborhood%20ont%3Aneighborhood%20%3FneighborhoodName%0A%20%20%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3AhasAccessibility%20%3Faccessibility%7D.%0A%09OPTIONAL%20%7B%20%3Faccessibility%20ont%3AtypeAccessibility%20%3FtypeAccessibility%7D.%0A%0A%20%20%20%20%20%20%20filter%20contains%28%3Fname%20%2C%22" + nameSearch + "%22%29%0A%0A"
+
+    if line_filter == ""{
+        
+    }
+
+    url += "%7D"
+    $.ajax({
+        //url: "http://localhost:8080/sparql?query=PREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0A%0ASELECT%20%3Fs%20%3Fname%20WHERE%20%7B%0A%20%20%3Fs%20a%20ont%3ASchool.%0A%20%20%3Fs%20ont%3Aname%20%3Fname%0A%7D%20%0ALIMIT%2010",
+        async: false,
+
+        url: url
+        ,
+        headers: {
+                'accept': 'application/json',
+                'Access-Control-Allow-Origin':'*'
+                },
+        type: "GET", /* or type:"GET" or type:"PUT" */
+        dataType: "json",
+        data: {
+        },
+        ContentType : false,
+        success: function (result) {
+            //console.log(result);
+            p = preprocessHelios(result)
+            
+            
+        },
+        error: function () {
+            console.log("error");
+        }
+    });
+    return p
+}
+
+
+function getWiki(line){
+
+    console.log(line)
+    var p;
+    $.ajax({
+        url: `https://query.wikidata.org/bigdata/namespace/wdq/sparql?query=SELECT%20DISTINCT%20%3Fitem%20WHERE%20%7B%0A%20%20%3Fitem%20%28wdt%3AP31%2F%28wdt%3AP279%2A%29%29%20wd%3AQ928830%3B%0A%20%20%20%20wdt%3AP81%20wd%3A${line}.%0A%20%20OPTIONAL%20%7B%0A%20%20%20%20_%3Ab0%20ps%3AP197%20%3Fadjacent%3B%0A%20%20%20%20%20%20pq%3AP81%20wd%3A${line}.%0A%20%20%7D%0A%0A%7D%0AORDER%20BY%20%28%3FitemLabel%29`,
+        async: false,
+
+        headers: {
+                'accept': 'application/json',
+                'Access-Control-Allow-Origin':'*'
+                },
+        type: "GET", /* or type:"GET" or type:"PUT" */
+        dataType: "json",
+        data: {
+        },
+        ContentType : false,
+        success: function (result) {
+            //console.log(result);
+            p = preprocessWiki(result)
+            
+            
+        },
+        error: function () {
+            console.log("error");
+        }
+    });
+    return p
+}
+
+
+function preprocessHelios(json){
 	var columnName = json['head']['vars']
 
 	var values = json['results']['bindings']
@@ -191,7 +280,40 @@ function preprocess(json){
 	return results
 }
 
+function preprocessWiki(json){
+    var values = json['results']['bindings']
+
+
+    let results = []
+
+
+    for (var r of values){
+        results.push(r['item']['value'])
+    }
+
+
+    return results
+}
+
+
+function addSchool(schoolCode){
+    console.log(schoolCode);
+}
+function removeSchool(schoolCode){
+    console.log(schoolCode);
+}
 
 function saveSchool(){
-    console.log(this);
+   schoolCode = ($(this).parent().parent()).html(); //se trae lo que está dentro de <div class="schoolItem">ESTO</div>
+   state = $(this).children().css('color');
+   if(state == 'rgb(121, 125, 237)'){
+    //guardando...
+    $(this).children().css('color','#00ff84');
+    addSchool(schoolCode);
+   }
+   else{
+    //eliminando...
+    $(this).children().css('color','rgb(121, 125, 237)');
+    removeSchool(schoolCode);
+   }
 }

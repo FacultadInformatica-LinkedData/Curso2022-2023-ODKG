@@ -417,7 +417,6 @@
 <http://www.dialysisComunidadValenciana.es/resource/entity/generalitat_valenciana> <http://www.w3.org/2002/07/owl#sameAs> <https://www.wikidata.org/wiki/Q2477285>.
 <http://www.dialysisComunidadValenciana.es/resource/entity/torrevieja_salud_ute_ley_18_82> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Entity>.
 <http://www.dialysisComunidadValenciana.es/resource/entity/torrevieja_salud_ute_ley_18_82> <http://www.w3.org/2000/01/rdf-schema#label> "TORREVIEJA SALUD UTE LEY 18/82"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.dialysisComunidadValenciana.es/resource/entity/torrevieja_salud_ute_ley_18_82> <http://www.w3.org/2002/07/owl#sameAs> < >.
 <http://www.dialysisComunidadValenciana.es/resource/entity/seguridad_social> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Entity>.
 <http://www.dialysisComunidadValenciana.es/resource/entity/seguridad_social> <http://www.w3.org/2000/01/rdf-schema#label> "Social Security in Spain"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.dialysisComunidadValenciana.es/resource/entity/seguridad_social> <http://www.w3.org/2002/07/owl#sameAs> <https://www.wikidata.org/wiki/Q2878592>.

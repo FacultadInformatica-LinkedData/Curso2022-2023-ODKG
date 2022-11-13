@@ -552,8 +552,7 @@
 
 <http://www.dialysisComunidadValenciana.es/resource/entity/torrevieja_salud_ute_ley_18_82>
   a ns:Entity ;
-  rdfs:label "TORREVIEJA SALUD UTE LEY 18/82"^^xsd:string ;
-  owl:sameAs <http://njh.me/ > .
+  rdfs:label "TORREVIEJA SALUD UTE LEY 18/82"^^xsd:string .
 
 <http://www.dialysisComunidadValenciana.es/resource/entity/seguridad_social>
   a ns:Entity ;

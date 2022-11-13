@@ -223,9 +223,9 @@ class App(customtkinter.CTk):
     def update_marker(self):
         self.clear_marker_event()
         liste = list(set(list_district) & list(set(list_type_accident)))
+        self.marker_list.append(self.map_widget.set_marker(40.4167754, -3.7037902, label='test'))
         for adr in liste:
             location = geolocator.geocode(adr)
-            self.marker_list.append(self.map_widget.set_marker(40.4167754, -3.7037902, label='test'))
             self.marker_list.append(self.map_widget.set_marker(location.latitude, location.longitude, label=adr))
             
         

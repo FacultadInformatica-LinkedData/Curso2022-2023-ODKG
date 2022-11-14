@@ -1,0 +1,4 @@
+### We used https://shacl.org/playground/ to create the validation report ###
+### We had a violation with a station that was not inUse in our validation report, which we fixed ##
+### Therefore we have no violations in our validation report and the report.ttl is empty ###
+

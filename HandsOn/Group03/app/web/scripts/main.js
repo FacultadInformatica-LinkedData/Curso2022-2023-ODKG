@@ -53,6 +53,12 @@ districts_options = ['Hortaleza', 'Villa de Vallecas', 'Puente de Vallecas', 'Sa
        'Chamartin', 'Barajas', 'Ciudad Lineal', 'Chamberi', 'Usera',
        'Retiro', 'Moratalaz', 'Tetuan', 'Arganzuela']
 
+accesibilityDict = {
+    "0":"Not Accessible",
+    "1":"Accessible",
+    "2":"Partially accessible"
+}
+
 function flipItem() {
     $(this).parent().parent().shake(100,10,3);
     $(this).parent().parent().find('.front').toggleClass("invisibleFront");
@@ -126,10 +132,7 @@ function getCard(school){
     let telephone = school['telephone']
     let laborDay = school['laborDay']
     let typeAccessibility = school['typeAccessibility']
-    let mapAccesibility = new map();
-    mapAccesibility.set("0","Not Accessible")
-    mapAccesibility.set("1","Accessible")
-    mapAccesibility.set("2","Partially accessible")
+    
     var utm = "+proj=utm +zone=30";
     var wgs84 = "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs";
     coords = proj4(utm,wgs84,[school['latitude'], school['longitude']]);
@@ -164,7 +167,7 @@ function getCard(school){
               <br>
                 <p class="schoolName">${schoolName}</p>
                 <br>
-              <p class="typeAccesibility">Tipo de accesibilidad: ${mapAccesibility.get(typeAccessibility)}</p>
+              <p class="typeAccesibility">Tipo de accesibilidad: ${accesibilityDict[typeAccessibility]}</p>
               <hr>
               <p class="schedule">${schedule}</p>
               <p class="laborDay">${laborDay}</p>

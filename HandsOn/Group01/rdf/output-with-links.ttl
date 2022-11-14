@@ -140,7 +140,7 @@
   rdfs:label "CLINICA DIAVERUM XIRIVELLA"^^xsd:string ;
   ns:hasPhone "" ;
   ns:hasAddress "C/ Dels Corretgers, 68"^^xsd:string ;
-  gn:locatedIn <http://www.dialysisComunidadValenciana.es/resource/health_area/h_general> ;
+  gn:locatedIn <http://www.dialysisComunidadValenciana.es/resource/health_area/h_general_valencia> ;
   ns:managed_by <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum> ;
   geo:long "-0.43512652399994"^^xsd:float ;
   geo:lat "39.45415166400005"^^xsd:float .
@@ -150,7 +150,7 @@
   rdfs:label "CLINICA DIAVERUM VALENCIA"^^xsd:string ;
   ns:hasPhone "" ;
   ns:hasAddress "C/ Alcasser, 54"^^xsd:string ;
-  gn:locatedIn <http://www.dialysisComunidadValenciana.es/resource/health_area/h_general> ;
+  gn:locatedIn <http://www.dialysisComunidadValenciana.es/resource/health_area/h_general_valencia> ;
   ns:managed_by <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum> ;
   geo:long "-0.41070001199994904"^^xsd:float ;
   geo:lat "39.47184000100003"^^xsd:float .
@@ -175,9 +175,9 @@
   geo:long "0.134770023000044"^^xsd:float ;
   geo:lat "40.099539985000035"^^xsd:float .
 
-<http://www.dialysisComunidadValenciana.es/resource/center/h_general>
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_castellon>
   a ns:Center ;
-  rdfs:label "H. GENERAL"^^xsd:string ;
+  rdfs:label "H. GENERAL CASTELLON"^^xsd:string ;
   ns:hasPhone "964725223"^^xsd:string ;
   ns:hasAddress "Avda. Benicassim, s/n"^^xsd:string ;
   gn:locatedIn <http://www.dialysisComunidadValenciana.es/resource/health_area/hgucs> ;
@@ -320,20 +320,20 @@
   rdfs:label "CLINICA DIAVERUM TORRENT"^^xsd:string ;
   ns:hasPhone "" ;
   ns:hasAddress "C/ Music Jose Orti Soriano, 25"^^xsd:string ;
-  gn:locatedIn <http://www.dialysisComunidadValenciana.es/resource/health_area/h_general> ;
+  gn:locatedIn <http://www.dialysisComunidadValenciana.es/resource/health_area/h_general_valencia> ;
   ns:managed_by <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum> ;
   geo:long "-0.45715000499995906"^^xsd:float ;
   geo:lat "39.439770002000046"^^xsd:float .
 
-<http://www.dialysisComunidadValenciana.es/resource/center/h_general_alicante>
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general>
   a ns:Center ;
-  rdfs:label "H. GENERAL ALICANTE"^^xsd:string ;
-  ns:hasPhone "965938493/95"^^xsd:string, "965357657"^^xsd:string ;
-  ns:hasAddress "C/ Pintor Baeza s/n"^^xsd:string, "Avda. Sevilla, 5"^^xsd:string ;
-  gn:locatedIn <http://www.dialysisComunidadValenciana.es/resource/health_area/h_general_alicante>, <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_alicante> ;
-  ns:managed_by <http://www.dialysisComunidadValenciana.es/resource/entity/generalitat_valenciana>, <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum> ;
-  geo:long "-0.485540446999948"^^xsd:float, "-0.514100007999957"^^xsd:float ;
-  geo:lat "38.35959468800007"^^xsd:float, "38.39190000600007"^^xsd:float .
+  rdfs:label "H. GENERAL"^^xsd:string ;
+  ns:hasPhone "965938493/95"^^xsd:string ;
+  ns:hasAddress "C/ Pintor Baeza s/n"^^xsd:string ;
+  gn:locatedIn <http://www.dialysisComunidadValenciana.es/resource/health_area/h_general_alicante> ;
+  ns:managed_by <http://www.dialysisComunidadValenciana.es/resource/entity/generalitat_valenciana> ;
+  geo:long "-0.485540446999948"^^xsd:float ;
+  geo:lat "38.35959468800007"^^xsd:float .
 
 <http://www.dialysisComunidadValenciana.es/resource/center/vithas_h_perpetuo_internacional>
   a ns:Center ;
@@ -354,6 +354,16 @@
   ns:managed_by <http://www.dialysisComunidadValenciana.es/resource/entity/elche_crevillente_salud> ;
   geo:long "-0.714308237999944"^^xsd:float ;
   geo:lat "38.25508728800003"^^xsd:float .
+
+<http://www.dialysisComunidadValenciana.es/resource/center/h_general_alicante>
+  a ns:Center ;
+  rdfs:label "H. GENERAL ALICANTE"^^xsd:string ;
+  ns:hasPhone "965357657"^^xsd:string ;
+  ns:hasAddress "Avda. Sevilla, 5"^^xsd:string ;
+  gn:locatedIn <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_alicante> ;
+  ns:managed_by <http://www.dialysisComunidadValenciana.es/resource/entity/diaverum> ;
+  geo:long "-0.514100007999957"^^xsd:float ;
+  geo:lat "38.39190000600007"^^xsd:float .
 
 <http://www.dialysisComunidadValenciana.es/resource/center/h_marina_baixa_villajoyosa>
   a ns:Center ;
@@ -624,9 +634,9 @@
   rdfs:label "H. Clinico"^^xsd:string ;
   gn:locatedIn <http://www.dialysisComunidadValenciana.es/resource/city/valencia>, <http://www.dialysisComunidadValenciana.es/resource/city/massamagrell> .
 
-<http://www.dialysisComunidadValenciana.es/resource/health_area/h_general>
+<http://www.dialysisComunidadValenciana.es/resource/health_area/h_general_valencia>
   a ns:Health_Area ;
-  rdfs:label "H. General"^^xsd:string ;
+  rdfs:label "H. General Valemcia"^^xsd:string, "H. General Valencia"^^xsd:string ;
   gn:locatedIn <http://www.dialysisComunidadValenciana.es/resource/city/xirivella>, <http://www.dialysisComunidadValenciana.es/resource/city/valencia>, <http://www.dialysisComunidadValenciana.es/resource/city/torrent> .
 
 <http://www.dialysisComunidadValenciana.es/resource/health_area/h_vinaros>
@@ -676,7 +686,7 @@
 
 <http://www.dialysisComunidadValenciana.es/resource/health_area/h_general_alicante>
   a ns:Health_Area ;
-  rdfs:label "H General Alicante"^^xsd:string ;
+  rdfs:label "H. General Alicante"^^xsd:string ;
   gn:locatedIn <http://www.dialysisComunidadValenciana.es/resource/city/alicante> .
 
 <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_elche_crevillente>

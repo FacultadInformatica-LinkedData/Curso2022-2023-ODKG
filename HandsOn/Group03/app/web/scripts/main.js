@@ -88,6 +88,7 @@ $("#schoolNameSearchBox").val("")
 
 function search(schoolName = ""){
     $("#searchResults").html("")
+
     metroLine = $("#metroLineSelector").val();
     let searchResults = NaN;
     let metro_filter= ""
@@ -112,7 +113,7 @@ function search(schoolName = ""){
     access_filter = $("#typeAccessibilitySelector").val();
     
     //console.log(metro_filter,district_filter,access_filter)
-   
+
     searchResults = getSpark(schoolName, metro_filter, district_filter, access_filter);
     
     console.log(searchResults);
@@ -281,7 +282,7 @@ function getSpark(nameSearch, line_filter = "", district_filter="", access_filte
 
     let url = "http://localhost:8080/sparql?query=PREFIX%20owl%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0APREFIX%20sc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fscience%2Fowl%2Fsciencecommons%2F%3E%0APREFIX%20schema%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0APREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0ASELECT%20%2A%20%20WHERE%7B%0A%0A%20%20%20%20%3Fs%20a%20ont%3ASchool.%0A%20%20%20%20%3Fs%20schema%3Aidentifier%20%3Fidentifier.%0A%20%20%20%20%3Fs%20schema%3Aname%20%3Fname.%0A%20%20%20%20%3Fs%20schema%3Alatitude%20%3Flatitude.%0A%20%20%20%20%3Fs%20schema%3Alongitude%20%3Flongitude.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20schema%3Atelephone%20%3Ftelephone%7D.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3AlaborDay%20%3FlaborDay%7D.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3Aschedule%20%3Fschedule%7D.%0A%0A%20%20%20%20%3Fs%20schema%3Aaddress%20%3Faddress.%0A%20%20%20%20%3Faddress%20schema%3AstreetAddress%20%3FstreetAddress.%0A%0A%09%3Faddress%20ont%3AhasDistrict%20%3Fdistrict.%0A%09%3Fdistrict%20ont%3Adistrict%20%3FdistrictName.%0A%0A%0A%20%20%20%20%3Faddress%20ont%3AhasNeighborhood%20%3Fneighborhood.%0A%20%20%20%20%3Fneighborhood%20ont%3Aneighborhood%20%3FneighborhoodName.%0A%20%20%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3AhasAccessibility%20%3Faccessibility%7D.%0A%09OPTIONAL%20%7B%20%3Faccessibility%20ont%3AtypeAccessibility%20%3FtypeAccessibility%7D.%0A%20%20%20%20%0A%20%20%20%20%3Faccessibility%20ont%3AhasMetro%20%3Fmetro.%0A%20%20%20%20%3Fmetro%20owl%3AsameAs%20%3Fwiki.%0A%20%20"
 
-    url += `%20%20%20filter%20%28contains%28%3Fname%20%2C%22${nameSearch}%22%29%29.%0A`
+    url += `%20%20%20filter%20%28contains%28lcase%28%3Fname%29%20%2Clcase%28%22${nameSearch}%22%29%29%29.%0A`
 
     if (line_filter != "") {
         url += `%20%20%20FILTER%28%3Fwiki%20IN%20%28${line_filter}%29%29.%0A%20`

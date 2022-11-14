@@ -131,7 +131,7 @@ map:om_020 rml:reference "wikidata_nombre_id" ;
 	rr:termType rr:Literal .
 
 map:om_021 rdf:type rr:ObjectMap ;
-	rr:constant "http://www.wikidata.org/entity/($wikidata_nombre_id)" ;
+	rr:template "http://www.wikidata.org/entity/{wikidata_nombre_id}" ;
 	rr:termType rr:IRI .
 
 map:om_022 rdf:type rr:ObjectMap ;

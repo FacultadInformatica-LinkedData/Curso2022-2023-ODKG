@@ -51,7 +51,7 @@ mappings:
       - [ns:nombre,$(nombre)]
       - [ns:wikidata_uri,$(wikidata_nombre_uri)]
       - [ns:wikidata_id,$(wikidata_nombre_id)]
-      - [owl:sameAs,http://www.wikidata.org/entity/($wikidata_nombre_id)~iri]
+      - [owl:sameAs,http://www.wikidata.org/entity/$(wikidata_nombre_id)~iri]
 
  triplesmap4:
    sources:

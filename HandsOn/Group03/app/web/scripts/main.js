@@ -217,11 +217,11 @@ function getMap(id, lon, lat){
     const key = 'T0cx4SaMZWSM2Gq2mAgG';
     var map = new maplibregl.Map({
         container: id,
-        style: 'mapbox://styles/mapbox/streets-v11',
+        style: `https://api.maptiler.com/maps/streets-v2/style.json?key=${key}`,
         center: [lon,lat],
         zoom: 15
     });
-
+    const school = new maplibregl.Marker().setLngLat([lon, lat]).addTo(map);
     /*var el = document.createElement('div');                                       
     el.style.backgroundImage = 'url(https://placekitten.com/g/50/)';              
     el.style.width = '50px';                                                      

@@ -645,5 +645,33 @@
     "newColumnName": "same_as_wikidata_communes",
     "columnInsertIndex": 14,
     "description": "Create column same_as_wikidata_communes at index 14 based on column Nom communes équipées using expression grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Station en fonctionnement",
+          "expression": "value",
+          "columnName": "Station en fonctionnement",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "false",
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
   }
 ]

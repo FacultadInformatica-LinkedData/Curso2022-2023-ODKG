@@ -127,9 +127,12 @@ class App(customtkinter.CTk):
         self.map_widget.set_address("Madrid") 
         self.map_option_menu.set("OpenStreetMap")
         self.appearance_mode_optionemenu.set("Dark")
+        
+        self.change_district('All')
+        self.change_type_accident('All')
 
-        self.marker_list.append(self.map_widget.set_marker(40.4167754, -3.7037902))
-        self.marker_list.append(self.map_widget.set_marker(40.4167754, -3.8037902))
+        # self.marker_list.append(self.map_widget.set_marker(40.4167754, -3.7037902))
+        # self.marker_list.append(self.map_widget.set_marker(40.4167754, -3.8037902))
 
     def search_event(self, event=None):
         self.map_widget.set_address(self.entry.get())
@@ -162,9 +165,9 @@ class App(customtkinter.CTk):
     def change_district(self, new_district):
         print("change di")
         nd = new_district
-        new_district = new_district.replace(' ', '')
+        new_district = new_district.replace(' ', '').upper()
         
-        if new_district == "All":
+        if new_district == "ALL":
             sparql.setQuery("""
                 PREFIX ns0: <https://motools.sourceforge.net/event/event.html#> 
             PREFIX ns1: <http://bicycleaccident.com/group2/ontology/property#> 
@@ -293,7 +296,7 @@ TYPE_ACCIDENT = ['Frontal-lateral collision', 'Fall', 'Scope', 'Lateral collisio
        'Frontal collision', 'Other', 'Hitting an animal',
        'Multiple collision', 'Overturn', 'Track exit only']
 
-for d in TYPE_ACCIDENT:
+for d in DISTRICTS:
     print(d)
     distr = d
     

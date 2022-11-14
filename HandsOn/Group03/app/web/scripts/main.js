@@ -12,6 +12,40 @@ metroLines = {
     "Line11":"Q608251",
     "Line12":"Q1558864"
 }
+templateSchoolHtml = `<div class="schoolItem", id="${10}">
+<div class="front cardFace">
+<iframe class="schoolMap" width="500" height="300" src="https://api.maptiler.com/maps/basic-v2/?key=T0cx4SaMZWSM2Gq2mAgG#${14.5}/${-3.4}/${40}/"></iframe>
+  <div class="schoolInfo">
+      <br>
+      <p class="schoolName">${"schoolName"}</p>
+      <br>
+      <p class="schoolLocation">District: ${"districtName"}</p>
+      <p class="schoolLocation">Neighborhood: ${"neighborhoodName"}</p>
+      <hr>
+      <p class="schoolAddress">${"Template address"}</p>
+      <br>
+  </div>
+  <a class="starButton"><i class="fa fa-star"></i></a>
+</div>
+<div class="back cardFace">
+  <div class="backMapInfo">
+    <p>texto de ejemplo</p>
+  </div>
+  <div class="schoolInfo">
+    <br>
+      <p class="schoolName">${"Prueba"}</p>
+      <br>
+    <p class="typeAccesibility">Tipo de accesibilidad: ${"prueba"}</p>
+    <hr>
+    <p class="schedule">${"schedule"}</p>
+    <p class="laborDay">${"laborDay"}</p>
+    <p class="telephone">${"telephone"}</p>
+  </div>
+  <a class="starButton"><i class="fa fa-star"></i></a>
+</div>
+</div>`
+
+var savedSchools = [templateSchoolHtml,templateSchoolHtml,templateSchoolHtml];
 
 districts_options = ['Hortaleza', 'Villa de Vallecas', 'Puente de Vallecas', 'San Blas',
        'Latina', 'Vicalvaro', 'Fuencarral-El Pardo', 'Salamanca',
@@ -59,11 +93,11 @@ function search(schoolName = ""){
         //console.log(searchResults)
     }
 
-    console.log($("#districtSelector").val())
+    //console.log($("#districtSelector").val())
     district_filter = $("#districtSelector").val().replace(" ", "%20").replace(" ", "%20").replace(" ", "%20");
     access_filter = $("#typeAccessibilitySelector").val();
-
-    console.log(metro_filter,district_filter,access_filter)
+    
+    //console.log(metro_filter,district_filter,access_filter)
    
     searchResults = getSpark(schoolName, metro_filter, district_filter, access_filter);
     
@@ -78,7 +112,7 @@ function search(schoolName = ""){
 
 
 function getCard(school){
-	console.log(school)
+	//console.log(school)
 
 	let current = $("#searchResults").html()
 
@@ -148,7 +182,6 @@ function getCard(school){
 function generateCards(results){for(let cardResult of results){getCard(cardResult);}}
 
 $( document ).ready(function() {
-    var savedSchools = [];
     $('#SchoolSearchForm').on('submit', (event) => {
         event.preventDefault();
         // handle the form data
@@ -352,4 +385,10 @@ function saveSchool(){
     $(this).children().css('color','rgb(121, 125, 237)');
     removeSchool(schoolCode);
    }
+}
+
+function loadSchools(){
+     $("#SchoolListContainer").html('');
+    let schoolListHtml = savedSchools.join('\n\n');
+    $("#SchoolListContainer").html(schoolListHtml);
 }

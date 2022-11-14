@@ -1,0 +1,1397 @@
+identifier,location_code,location_name
+http://www.group22.org/gz/resource/Location/L1,1,CALLE DE BAILEN NUM 15
+http://www.group22.org/gz/resource/Location/L2,2,CALLE DE BAILEN NUM 6
+http://www.group22.org/gz/resource/Location/L3,3,CALLE DEL MESON DE PAREDES, NUM. 37 C/V C/ DE AMPARO NUM 26
+http://www.group22.org/gz/resource/Location/L4,4,CALLE MESON DE PAREDES NUM 68
+http://www.group22.org/gz/resource/Location/L5,5,CALLE DE SEGOVIA NUM 12
+http://www.group22.org/gz/resource/Location/L6,6,CALLE DE SEGOVIA, Nº 21-23 Y C/ DE LA MORERÍA, Nº 28
+http://www.group22.org/gz/resource/Location/L7,7,CALLE DE SEGOVIA, Nº27 C/V CUESTA DE LOS CIEGOS
+http://www.group22.org/gz/resource/Location/L8,8,CALLE DE SEGOVIA C/V CUESTA DE LA VEGA
+http://www.group22.org/gz/resource/Location/L9,9,CALLE DE SEGOVIA, Nº 31 Y 37 C/V CUESTA DE JAVALQUINTO
+http://www.group22.org/gz/resource/Location/L10,10,CALLE DE SEGOVIA NUM 35
+http://www.group22.org/gz/resource/Location/L11,11,RONDA DE SEGOVIA NUM 9
+http://www.group22.org/gz/resource/Location/L12,12,PLAZA DE GABRIEL MIRO
+http://www.group22.org/gz/resource/Location/L13,13,CUESTA DE LOS CIEGOS
+http://www.group22.org/gz/resource/Location/L14,14,CALLE DE BEATRIZ GALINDO NUM 3
+http://www.group22.org/gz/resource/Location/L15,15,CUESTA DE LOS CIEGOS NUM 3
+http://www.group22.org/gz/resource/Location/L16,16,CUESTA DE LOS CIEGOS NUM 5
+http://www.group22.org/gz/resource/Location/L17,17,CUESTA DE JAVALQUINTO NUM 5
+http://www.group22.org/gz/resource/Location/L18,18,CUESTA DE JAVALQUINTO NUM 7
+http://www.group22.org/gz/resource/Location/L19,19,CALLE DE LA MORERIA NUM 12
+http://www.group22.org/gz/resource/Location/L20,20,CALLE DE LA MORERIA NUM 22
+http://www.group22.org/gz/resource/Location/L21,21,CUESTA DE LOS CIEGOS C/V C/ DE BEATRIZ GALINDO
+http://www.group22.org/gz/resource/Location/L22,22,CALLE DE BARCELÓ
+http://www.group22.org/gz/resource/Location/L23,23,CALLE DE FUENCARRAL NUM 43
+http://www.group22.org/gz/resource/Location/L24,24,CALLE DE LA ALAMEDA NUM 12
+http://www.group22.org/gz/resource/Location/L25,25,RONDA SEGOVIA NUM 57
+http://www.group22.org/gz/resource/Location/L26,26,RONDA SEGOVIA NUM 9
+http://www.group22.org/gz/resource/Location/L27,27,CALLE DE JERTE NUM 3
+http://www.group22.org/gz/resource/Location/L28,28,CALLE DEL MESÓN DE PAREDES NUM 63
+http://www.group22.org/gz/resource/Location/L29,29,CALLE DE ALGECIRAS NUM 8
+http://www.group22.org/gz/resource/Location/L30,30,CALLE DE ALGECIRAS NUM 4-6
+http://www.group22.org/gz/resource/Location/L31,31,CALLE DEL ROSARIO C/V C/ DE JERTE
+http://www.group22.org/gz/resource/Location/L32,32,AVENIDA DE LA GRAN VIA DE SAN FRANCISCO NUM 19-21
+http://www.group22.org/gz/resource/Location/L33,33,CALLE DEL CASINO NUM 3 Y 5
+http://www.group22.org/gz/resource/Location/L34,34,CALLE DE EMBAJADORES NUM 66 B
+http://www.group22.org/gz/resource/Location/L35,35,CALLE DEL SOMBRERETE NUM 15
+http://www.group22.org/gz/resource/Location/L36,36,PLAZA DEL GENERAL VARA DEL REY
+http://www.group22.org/gz/resource/Location/L37,37,PASEO DE LAS YESERIAS
+http://www.group22.org/gz/resource/Location/L38,38,CALLE DEL CONCEJAL BENITO MARTÍN LOZANO NUM 9
+http://www.group22.org/gz/resource/Location/L39,39,CALLE DE SAN ISIDORO DE SEVILLA NUM 15 B
+http://www.group22.org/gz/resource/Location/L40,40,PASEO DE LAS YESERIAS NUM 43-49
+http://www.group22.org/gz/resource/Location/L41,41,CALLE DE CARMEN COBEÑA NUM 5 B
+http://www.group22.org/gz/resource/Location/L42,42,CALLE DE EROS NUM 6
+http://www.group22.org/gz/resource/Location/L43,43,CALLE DE VILLOSLADA NUM 5-11
+http://www.group22.org/gz/resource/Location/L44,44,CALLE DE SAN EPIFANIO NUM 9
+http://www.group22.org/gz/resource/Location/L45,45,CALLE DEL PUERTO DE BÉJAR C/V C/ DE EMBAJADORES
+http://www.group22.org/gz/resource/Location/L46,46,PASEO DE LOS MELANCÓLICOS NUM 34
+http://www.group22.org/gz/resource/Location/L47,47,TRAVESIA DE LOS MELANCÓLICOS
+http://www.group22.org/gz/resource/Location/L48,48,CALLE DE LA ANTRACITA NUM 5
+http://www.group22.org/gz/resource/Location/L49,49,CALLE DEL RODIO C/V C/ DEL PLOMO
+http://www.group22.org/gz/resource/Location/L50,50,CALLE DE TITÁN NUM 12
+http://www.group22.org/gz/resource/Location/L51,51,CALLE DEL PLANETA TIERRA NUM 1
+http://www.group22.org/gz/resource/Location/L52,52,CALLE DE TITÁN NUM 11-15
+http://www.group22.org/gz/resource/Location/L53,53,CALLE DEL RODIO C/V C/ DE EMBAJADORES NUM 181
+http://www.group22.org/gz/resource/Location/L54,54,CALLE DEL RODIO NUM 6
+http://www.group22.org/gz/resource/Location/L55,55,CALLE DE LA ANTRACITA NUM 3
+http://www.group22.org/gz/resource/Location/L56,56,CALLE DEL RODIO C/V C/ DEL HIERRO
+http://www.group22.org/gz/resource/Location/L57,57,CALLE DE AMALTEA NUM 13
+http://www.group22.org/gz/resource/Location/L58,58,CALLE DE AMALTEA NUM 11
+http://www.group22.org/gz/resource/Location/L59,59,CALLE DE AMALTEA NUM 5
+http://www.group22.org/gz/resource/Location/L60,60,CALLE DE AMALTEA NUM 2
+http://www.group22.org/gz/resource/Location/L61,61,CALLE DEL HIERRO NUM 6
+http://www.group22.org/gz/resource/Location/L62,62,CALLE DEL HIERRO NUM 8-16
+http://www.group22.org/gz/resource/Location/L63,63,CALLE DE VALDEMORILLO NUM 3
+http://www.group22.org/gz/resource/Location/L64,64,CALLE DEL TENIENTE CORONEL NOREÑA NUM 67
+http://www.group22.org/gz/resource/Location/L65,65,PLAZA DE CASAR DE CÁCERES
+http://www.group22.org/gz/resource/Location/L66,66,CALLE DE LEONOR DE LA VEGA NUM 1-11
+http://www.group22.org/gz/resource/Location/L67,67,CALLE DEL ORIANA NUM 10
+http://www.group22.org/gz/resource/Location/L68,68,CALLE DE TOLEDO NUM 177
+http://www.group22.org/gz/resource/Location/L69,69,CALLE DE RICARDO DAMAS NUM 1
+http://www.group22.org/gz/resource/Location/L70,70,CALLE DE MAZARREDO NUM 7
+http://www.group22.org/gz/resource/Location/L71,71,CALLE DEL TENIENTE CORONEL NOREÑA NUM 26 B
+http://www.group22.org/gz/resource/Location/L72,72,CALLE DEL GENERAL LACY, NUM. 23 C/V C/ BUSTAMANTE
+http://www.group22.org/gz/resource/Location/L73,73,CALLE DE ARGANDA NUM 5
+http://www.group22.org/gz/resource/Location/L74,74,CALLE DEL CINZ NUM 1-3
+http://www.group22.org/gz/resource/Location/L75,75,CALLE DE LA CIRCONITA NUM 1-3
+http://www.group22.org/gz/resource/Location/L76,76,CALLE DE EMBAJADORES NUM 173
+http://www.group22.org/gz/resource/Location/L77,77,CALLE DE MELILLA NUM 9
+http://www.group22.org/gz/resource/Location/L78,78,CALLE DE GRANITO, FRENTE AL NUM 32-36
+http://www.group22.org/gz/resource/Location/L79,79,CALLE DE ARGANDA NUM 1
+http://www.group22.org/gz/resource/Location/L80,80,CALLE DE MELILLA NUM 57-65
+http://www.group22.org/gz/resource/Location/L81,81,CALLE DE MELILLA NUM 37-47
+http://www.group22.org/gz/resource/Location/L82,82,CALLE DE TOLEDO NUM 151
+http://www.group22.org/gz/resource/Location/L83,83,CALLE DE TOLEDO NUM 155
+http://www.group22.org/gz/resource/Location/L84,84,TRAVESIA DE SAN ISIDORO DE SEVILLA NUM 7
+http://www.group22.org/gz/resource/Location/L85,85,CALLE DE BOLÍVAR NUM 18B-D
+http://www.group22.org/gz/resource/Location/L86,86,CALLE DE TOMÁS BRETÓN NUM 58
+http://www.group22.org/gz/resource/Location/L87,87,CALLE DE BOLÍVAR NUM 24B-E
+http://www.group22.org/gz/resource/Location/L88,88,CALLE DEL PLOMO NUM 5A
+http://www.group22.org/gz/resource/Location/L89,89,CALLE DE TOLEDO NUM 178
+http://www.group22.org/gz/resource/Location/L90,90,CALLE DEL CRISTO DEL CAMINO NUM 5
+http://www.group22.org/gz/resource/Location/L91,91,CALLE DEL PÁRROCO EUSEBIO CUENCA NUM 13
+http://www.group22.org/gz/resource/Location/L92,92,CALLE DE ALEJANDRO SAINT AUBIN NUM 2 B
+http://www.group22.org/gz/resource/Location/L93,93,GLORIETA DE SAN VÍCTOR
+http://www.group22.org/gz/resource/Location/L94,94,CALLE DE GARGANTILLA NUM 2
+http://www.group22.org/gz/resource/Location/L95,95,CALLE DE PALOS DE LA FRONTERA NUM 42
+http://www.group22.org/gz/resource/Location/L96,96,PASEO DE LAS YESERÍAS NUM 35 B
+http://www.group22.org/gz/resource/Location/L97,97,CALLE DE MORATINES NUM 27
+http://www.group22.org/gz/resource/Location/L98,98,CALLE DE VILLA DEL PRADO NUM 2-4
+http://www.group22.org/gz/resource/Location/L99,99,PASEO DE LAS ACACIAS NUM 31
+http://www.group22.org/gz/resource/Location/L100,100,CALLE DE RAMÍREZ DE PRADO NUM 2
+http://www.group22.org/gz/resource/Location/L101,101,PASEO DEL MOLINO NUM 2
+http://www.group22.org/gz/resource/Location/L102,102,CALLE DE ALEJANDRO SAINT AUBIN NUM 8
+http://www.group22.org/gz/resource/Location/L103,103,CALLE DE CARABAÑA NUM 7
+http://www.group22.org/gz/resource/Location/L104,104,CALLE DE CARABAÑA NUM 1-5
+http://www.group22.org/gz/resource/Location/L105,105,CALLE DE MÉNDEZ ÁLVARO NUM 44-54
+http://www.group22.org/gz/resource/Location/L106,106,CALLE DE EMBAJADORES NUM 316-E
+http://www.group22.org/gz/resource/Location/L107,107,PASEO DE LAS YESERÍAS NUM 10
+http://www.group22.org/gz/resource/Location/L108,108,PASEO DE LA CHOPERA NUM 10 A
+http://www.group22.org/gz/resource/Location/L109,109,PASEO IMPERIAL NUM 32
+http://www.group22.org/gz/resource/Location/L110,110,CALLE DE CASIMIRO MAHOU BIERHANS NUM 2
+http://www.group22.org/gz/resource/Location/L111,111,CALLE DE ALEJANDRO DUMAS NUM 34
+http://www.group22.org/gz/resource/Location/L112,112,CALLE DE CASIMIRO MAHOU BIERHANS NUM 17
+http://www.group22.org/gz/resource/Location/L113,113,CALLE DE CASIMIRO MAHOU BIERHANS NUM 5
+http://www.group22.org/gz/resource/Location/L114,114,PASEO DE LA VIRGEN DEL PUERTO NUM 67
+http://www.group22.org/gz/resource/Location/L115,115,CALLE DE ALPEDRETE NUM 20
+http://www.group22.org/gz/resource/Location/L116,116,CALLE DE LEGANÉS NUM 1
+http://www.group22.org/gz/resource/Location/L117,117,CALLE DE ALAMEDILLA NUM 14
+http://www.group22.org/gz/resource/Location/L118,118,CALLE DE MÉNDEZ ÁLVARO NUM 63
+http://www.group22.org/gz/resource/Location/L119,119,CALLE DE LEGANÉS NUM 6
+http://www.group22.org/gz/resource/Location/L120,120,PLAZA DE LA INDEPENDENCIA NUM 7
+http://www.group22.org/gz/resource/Location/L121,121,CALLE DE ALFONSO XII NUM 9
+http://www.group22.org/gz/resource/Location/L122,122,CALLE DE JUAN ESPLANDIU NUM 4 B
+http://www.group22.org/gz/resource/Location/L123,123,PLAZA DE MURILLO
+http://www.group22.org/gz/resource/Location/L124,124,PLAZA DE LA LEALTAD
+http://www.group22.org/gz/resource/Location/L125,125,CALLE DE ANTONIO NEBRIJA NUM 9
+http://www.group22.org/gz/resource/Location/L126,126,CALLE DE JOSÉ ANSELMO CLAVÉ NUM 1
+http://www.group22.org/gz/resource/Location/L127,127,CALLE DE LUIS MITJANS NUM 52 A
+http://www.group22.org/gz/resource/Location/L128,128,CALLE DE LAS COCHERAS NUM 1-3
+http://www.group22.org/gz/resource/Location/L129,129,CALLE DE CATALINA SUÁREZ NUM 3
+http://www.group22.org/gz/resource/Location/L130,130,CALLE DE JÁTIVA NUM 3
+http://www.group22.org/gz/resource/Location/L131,131,PLAZA DE MARIANO DE CAVIA
+http://www.group22.org/gz/resource/Location/L132,132,CALLE DE LUIS PEIDRÓ NUM 6
+http://www.group22.org/gz/resource/Location/L133,133,AVENIDA DE LA CIUDAD DE BARCELONA NUM 184
+http://www.group22.org/gz/resource/Location/L134,134,CALLE DEL PEZ VOLADOR NUM 21
+http://www.group22.org/gz/resource/Location/L135,135,CALLE DE ANDRÉS TORREJÓN NUM 19
+http://www.group22.org/gz/resource/Location/L136,136,CALLE DE ANGELES GARCÍA MADRID NUM 20
+http://www.group22.org/gz/resource/Location/L137,137,CALLE DE SALAS NUM 1
+http://www.group22.org/gz/resource/Location/L138,138,CALLE DE GOYA NUM 2
+http://www.group22.org/gz/resource/Location/L139,139,AVENIDA DE BRASILIA NUM 2
+http://www.group22.org/gz/resource/Location/L140,140,AVENIDA DE BRASILIA NUM 6
+http://www.group22.org/gz/resource/Location/L141,141,CALLE DE ENRIQUE D'ALMONTE NUM 1
+http://www.group22.org/gz/resource/Location/L142,142,CALLE DEL DOCTOR GÓMEZ ULLA NUM 9
+http://www.group22.org/gz/resource/Location/L143,143,CALLE DE TOMÁS LÓPEZ NUM 8-10
+http://www.group22.org/gz/resource/Location/L144,144,CALLE DE LA POVEDA NUM 1
+http://www.group22.org/gz/resource/Location/L145,145,CALLE DEL PRÍNCIPE DE VERGARA NUM 68
+http://www.group22.org/gz/resource/Location/L146,146,CALLE DE JOSÉ PICÓN NUM 26
+http://www.group22.org/gz/resource/Location/L147,147,CALLE DE RAMÓN DE AGUINAGA C/V C/ RUFINO BLANCO
+http://www.group22.org/gz/resource/Location/L148,148,CALLE DE JUAN BRAVO NUM 3 B
+http://www.group22.org/gz/resource/Location/L149,149,CALLE DE JUAN BRAVO NUM 3-C
+http://www.group22.org/gz/resource/Location/L150,150,CALLE DE MARTÍNEZ IZQUIERDO, 57 C/V C/ DE LUIS CALVO
+http://www.group22.org/gz/resource/Location/L151,151,AVENIDA DE BAVIERA NUM 15
+http://www.group22.org/gz/resource/Location/L152,152,AVENIDA DE LA GUINDALERA NUM 3
+http://www.group22.org/gz/resource/Location/L153,153,PLAZA DE BURDEOS NUM 1-4
+http://www.group22.org/gz/resource/Location/L154,154,PLAZA DE BASILEA NUM 1-3
+http://www.group22.org/gz/resource/Location/L155,155,CALLE DE BRESCIA NUM 1-3
+http://www.group22.org/gz/resource/Location/L156,156,CALLE DE BRESCIA NUM 2
+http://www.group22.org/gz/resource/Location/L157,157,CALLE DE BOSTON NUM 1A
+http://www.group22.org/gz/resource/Location/L158,158,AVENIDA DE AMÉRICA NUM 38
+http://www.group22.org/gz/resource/Location/L159,159,AVENIDA DE BAVIERA NUM 12
+http://www.group22.org/gz/resource/Location/L160,160,AVENIDA DE BRASILIA NUM 37-39
+http://www.group22.org/gz/resource/Location/L161,161,CALLE DE BERLIN NUM 5 D
+http://www.group22.org/gz/resource/Location/L162,162,CALLE DE BERLIN NUM 7
+http://www.group22.org/gz/resource/Location/L163,163,CALLE DE BERLIN NUM 4
+http://www.group22.org/gz/resource/Location/L164,164,PLAZA DE VENECIA NUM 1
+http://www.group22.org/gz/resource/Location/L165,165,CALLE DE BERNA NUM 5-11
+http://www.group22.org/gz/resource/Location/L166,166,AVENIDA DE BRUSELAS C/V AVENIDA DE BONN
+http://www.group22.org/gz/resource/Location/L167,167,CALLE DE BERNA NUM 1-3
+http://www.group22.org/gz/resource/Location/L168,168,AVENIDA DE BONN NUM 6
+http://www.group22.org/gz/resource/Location/L169,169,CALLE DE BOLONIA NUM 2
+http://www.group22.org/gz/resource/Location/L170,170,AVENIDA DE BONN NUM 10
+http://www.group22.org/gz/resource/Location/L171,171,AVENIDA DE BRUSELAS NUM 51
+http://www.group22.org/gz/resource/Location/L172,172,PLAZA DE BURDEOS
+http://www.group22.org/gz/resource/Location/L173,173,AVENIDA DE BRUSELAS C/V C/ DE LUIS CALVO
+http://www.group22.org/gz/resource/Location/L174,174,CALLE DE BREMEN C/V C/ ARROYO DEL CANALILLO
+http://www.group22.org/gz/resource/Location/L175,175,CALLE DE BAYONA NUM 1-11
+http://www.group22.org/gz/resource/Location/L176,176,PLAZA DE BASILEA NUM 2-6
+http://www.group22.org/gz/resource/Location/L177,177,AVENIDA DE BRUSELAS NUM 44-46
+http://www.group22.org/gz/resource/Location/L178,178,CALLE VILLAFRANCA NUM 19
+http://www.group22.org/gz/resource/Location/L179,179,PLAZA DE AMÉRCIA ESPAÑOLA NUM 4
+http://www.group22.org/gz/resource/Location/L180,180,CALLE DE HERMOSILLA C/V C/ DE LANUZA
+http://www.group22.org/gz/resource/Location/L181,181,CALLE DE RAFAELA BONILLA NUM 10
+http://www.group22.org/gz/resource/Location/L182,182,CALLE ARDEMANS NUM 69
+http://www.group22.org/gz/resource/Location/L183,183,CALLE DE VÍCTOR DE LA SERNA NUM 21 B
+http://www.group22.org/gz/resource/Location/L184,184,CALLE DE DOCTOR FLEMING NUM 40
+http://www.group22.org/gz/resource/Location/L185,185,CALLE MAURICIO LEGENDRE C/V C/ JOSE VASCONCELOSC/V A C/ JOSE VASCONCELOS
+http://www.group22.org/gz/resource/Location/L186,186,PASEO DE LA CASTELLANA NUM 78 B
+http://www.group22.org/gz/resource/Location/L187,187,CALLE DEL PRINCIPE DE VERGARA NUM 148
+http://www.group22.org/gz/resource/Location/L188,188,AVENIDA DE RAMON Y CAJAL NUM 2
+http://www.group22.org/gz/resource/Location/L189,189,CALLE DEL PADRE CLARET NUM 38
+http://www.group22.org/gz/resource/Location/L190,190,CALLE DEL PALMITO NUM 7
+http://www.group22.org/gz/resource/Location/L191,191,CALLE DE RECAREDO NUM 10
+http://www.group22.org/gz/resource/Location/L192,192,CALLE DEL CORAZÓN DE MARÍA NUM 18
+http://www.group22.org/gz/resource/Location/L193,193,CALLE DE MARTÍN MACHÍO NUM 1
+http://www.group22.org/gz/resource/Location/L194,194,AVENIDA DE LA PAZ C/V CUESTA SAGRADO CORAZÓNAVDA. DE LA PAZ C/V CUESTA SAGRADO CORAZÓN.
+http://www.group22.org/gz/resource/Location/L195,195,CALLE DE PRADILLO NUM 25
+http://www.group22.org/gz/resource/Location/L196,196,PLAZA DE VALPARAÍSO
+http://www.group22.org/gz/resource/Location/L197,197,CALLE DEL PRINCIPE DE VERGARA NUM 141
+http://www.group22.org/gz/resource/Location/L198,198,CALLE DE COLOMBIA NUM 59
+http://www.group22.org/gz/resource/Location/L199,199,CALLE DE VINAROZ NUM 29
+http://www.group22.org/gz/resource/Location/L200,200,CALLE DE LOS CONDES DEL VAL NUM 19
+http://www.group22.org/gz/resource/Location/L201,201,CALLE DE LOS CONDES DEL VAL NUM 19 BIS
+http://www.group22.org/gz/resource/Location/L202,202,CALLE DE PUERTO RICO NUM 56
+http://www.group22.org/gz/resource/Location/L203,203,CALLE DE PARAGUAY NUM 9
+http://www.group22.org/gz/resource/Location/L204,204,AVENIDA DE ALFONSO XIII, JUNTO AL Nº 158
+http://www.group22.org/gz/resource/Location/L205,205,PASEO DE NUESTRA SEÑORA DEL RECUERDO C/V AV. DE BURGOS NUM 1
+http://www.group22.org/gz/resource/Location/L206,206,PASEO DE NUESTRA SEÑORA DEL RECUERDO C/V AV. DE BURGOS NUM 7
+http://www.group22.org/gz/resource/Location/L207,207,CALLE DE ROSA JARDÓN NUM 11
+http://www.group22.org/gz/resource/Location/L208,208,CALLE DE SANTA MARÍA MAGDALENA NUM 20
+http://www.group22.org/gz/resource/Location/L209,209,AVENIDA DE LA PAZ C/V C/ DE LA DRÁCENA
+http://www.group22.org/gz/resource/Location/L210,210,CALLE DEL CORAZÓN DE MARÍA NUM 56-66
+http://www.group22.org/gz/resource/Location/L211,211,CALLE DEL PADRE CLARET NUM 4
+http://www.group22.org/gz/resource/Location/L212,212,CALLE CORAZÓN DE MARÍA NUM 84
+http://www.group22.org/gz/resource/Location/L213,213,PLAZA DEL COLEGIO ATENEO POLITÉCNICO
+http://www.group22.org/gz/resource/Location/L214,214,CALLE DEL PADRE DAMIAN NUM 22
+http://www.group22.org/gz/resource/Location/L215,215,CALLE DE LÓPEZ DE HOYOS NUM 57
+http://www.group22.org/gz/resource/Location/L216,216,CALLE DEL DUQUE DE SEVILLA NUM 7
+http://www.group22.org/gz/resource/Location/L217,217,CALLE DE FEDERICO SALMÓN NUM 2
+http://www.group22.org/gz/resource/Location/L218,218,CALLE NAVALAFUENTE NUM 2
+http://www.group22.org/gz/resource/Location/L219,219,CALLE NAVALAFUENTE NUM 4
+http://www.group22.org/gz/resource/Location/L220,220,CALLE FELIPE CAMPOS NUM 6
+http://www.group22.org/gz/resource/Location/L221,221,CALLE DE LA BASILICA NUM 14
+http://www.group22.org/gz/resource/Location/L222,222,CALLE DE TERESITA GONZALEZ QUEVEDO NUM 1-7
+http://www.group22.org/gz/resource/Location/L223,223,CALLE DE PINOS ALTA NUM 77
+http://www.group22.org/gz/resource/Location/L224,224,PASEO DE LA DIRECCIÓN NUM 289
+http://www.group22.org/gz/resource/Location/L225,225,PASEO DE LA DIRECCION NUM 307
+http://www.group22.org/gz/resource/Location/L226,226,AVENIDA DEL GENERAL PERON NUM 21
+http://www.group22.org/gz/resource/Location/L227,227,CALLE DE LA VÍA LÍMITE C/V C/ DE SINESIO DELGADO
+http://www.group22.org/gz/resource/Location/L228,228,CALLE DE CAPITÁN BLANCO ARGIBAY NUM 173
+http://www.group22.org/gz/resource/Location/L229,229,CAMINO DEL CHORRILLO
+http://www.group22.org/gz/resource/Location/L230,230,CALLE DE SAN RAIMUNDO C/V C/ DE TENERIFE
+http://www.group22.org/gz/resource/Location/L231,231,CALLE DE FRANCOS RODRIGUEZ C/V AV. DE PABLO IGLESIAS
+http://www.group22.org/gz/resource/Location/L232,232,CALLE DE FRAY JUNÍPERO SERRA NUM 27-29
+http://www.group22.org/gz/resource/Location/L233,233,CALLE DE TENERIFE, 27 C/V C/ DE LAS CAROLINAS
+http://www.group22.org/gz/resource/Location/L234,234,PLAZA PABLO RUIZ PICASSO
+http://www.group22.org/gz/resource/Location/L235,235,PLAZA CARLOS TRÍAZ BERTRÁN Y PZA. MANUEL GÓMEZ MORENO
+http://www.group22.org/gz/resource/Location/L236,236,PASEO DE LA CASTELLANA NUM 75 B
+http://www.group22.org/gz/resource/Location/L237,237,CALLE DE FRANCOS RODRÍGUEZ C/V C/ DE NUMANCIA
+http://www.group22.org/gz/resource/Location/L224,224,PASEO DE LA DIRECCIÓN NUM 289
+http://www.group22.org/gz/resource/Location/L238,238,AVENIDA FILIPINAS
+http://www.group22.org/gz/resource/Location/L239,239,CALLE DE RAIMUNDO FERNANDEZ VILLAVERDE NUM 28 B
+http://www.group22.org/gz/resource/Location/L240,240,PASEO DE SAN FRANCISCO DE SALES NUM 39
+http://www.group22.org/gz/resource/Location/L241,241,CALLE DE LUCIO DEL VALLE C/V AV. DE ISLAS FILIPINAS
+http://www.group22.org/gz/resource/Location/L242,242,CALLE DE VALLEHERMOSO NUM 107
+http://www.group22.org/gz/resource/Location/L243,243,CALLE DE EUSTAQUIO RODRÍGUEZ NUM 10
+http://www.group22.org/gz/resource/Location/L244,244,CALLE DE MELÉNDEZ VALDÉS NUM 26
+http://www.group22.org/gz/resource/Location/L245,245,PLAZA DEL DESCUBRIDOR DIEGO DE ORDÁS
+http://www.group22.org/gz/resource/Location/L246,246,CALLE DE NUESTRA SEÑORA DE VALVERDE NUM 151
+http://www.group22.org/gz/resource/Location/L247,247,AVENIDA DE LA GUARDIA NUM 4
+http://www.group22.org/gz/resource/Location/L248,248,CALLE DE RIBADAVIA NUM 45
+http://www.group22.org/gz/resource/Location/L249,249,CALLE DEL ARZOBISPO MORCILLO NUM 9
+http://www.group22.org/gz/resource/Location/L250,250,PASEO DE LA VAGUADA NUM 13
+http://www.group22.org/gz/resource/Location/L251,251,CALLE DE MARBELLA C/V C/ LA MASÓ, 6
+http://www.group22.org/gz/resource/Location/L252,252,CALLE DE RAMÓN GÓMEZ DE LA SERNA NUM 14
+http://www.group22.org/gz/resource/Location/L253,253,AVENIDA DEL CARDENAL HERRERA ORIA NUM 385
+http://www.group22.org/gz/resource/Location/L254,254,CALLE CASTILLO DE CANDANCHU C/V C/ PUERTO DE SOMPORT
+http://www.group22.org/gz/resource/Location/L255,255,CALLE DE ALONSO QUIJANO NUM 54
+http://www.group22.org/gz/resource/Location/L256,256,AVENIDA DEL MONASTERIO DE EL ESCORIAL NUM 41 B
+http://www.group22.org/gz/resource/Location/L257,257,CALLE DE ALONSO QUIJANO NUM 43
+http://www.group22.org/gz/resource/Location/L258,258,CALLE DE AFUERAS A VALVERDE NUM 54
+http://www.group22.org/gz/resource/Location/L259,259,CALLE DE AFUERAS A VALVERDE, FRENTE AL NUM 14
+http://www.group22.org/gz/resource/Location/L260,260,CALLE DE AFUERAS A VALVERDE, FRENTE AL NUM 32
+http://www.group22.org/gz/resource/Location/L261,261,CALLE DE ALONSO QUIJANO NUM 42
+http://www.group22.org/gz/resource/Location/L262,262,CALLE ALDONZA LORENZO C/V AV. CAMPO DE CALATRAVAC/ ALDONZA LORENZO C/V AVDA. CAMPO DE CALATRAVA
+http://www.group22.org/gz/resource/Location/L263,263,PLAZA DE LOS TRES OLIVOS
+http://www.group22.org/gz/resource/Location/L264,264,RONDA DEL INGENIOSO HIDALGO NUM 44
+http://www.group22.org/gz/resource/Location/L265,265,CALLE DE ALDONZA LORENZO NUM 19
+http://www.group22.org/gz/resource/Location/L266,266,CALLE DE AFUERAS A VALVERDE, FRENTE AL NUM 44
+http://www.group22.org/gz/resource/Location/L267,267,CALLE DE BASILIO DE PRADO NUM 19
+http://www.group22.org/gz/resource/Location/L268,268,CALLE DE MANUEL GARRIDO NUM 6
+http://www.group22.org/gz/resource/Location/L269,269,AVENIDA DEL CARDENAL HERRERA ORIA NUM 99
+http://www.group22.org/gz/resource/Location/L270,270,CALLE DE LA DIVINA PASTORA NUM 3 A-C
+http://www.group22.org/gz/resource/Location/L271,271,PLAZA DE CIEZA NUM 1
+http://www.group22.org/gz/resource/Location/L272,272,PLAZA DE VILLAFRANCA DE LOS BARROS NUM 1
+http://www.group22.org/gz/resource/Location/L273,273,AVENIDA SANTUARIO DE VALVERDE C/V C/ MONASTERIO SAMOS
+http://www.group22.org/gz/resource/Location/L274,274,AVENIDA MONASTERIO DE SILOS C/V MONASTERIO DE EL PAULAR
+http://www.group22.org/gz/resource/Location/L275,275,CALLE DE GLORIA FUERTES NUM 191
+http://www.group22.org/gz/resource/Location/L276,276,CALLE DEL MONASTERIO DEL PAULAR NUM 32
+http://www.group22.org/gz/resource/Location/L274,274,AVENIDA MONASTERIO DE SILOS C/V MONASTERIO DE EL PAULAR
+http://www.group22.org/gz/resource/Location/L277,277,AVENIDA MONASTERIO DE SILOS C/V MONASTERIO LAS HUELGAS
+http://www.group22.org/gz/resource/Location/L278,278,GLORIETA SANTUARIO DE TISCAR. AV MONASTERIO DEL ESCORIAL
+http://www.group22.org/gz/resource/Location/L279,279,AVENIDA MONASTERIO DE EL ESCORIAL C/V MONASTERIO SILOS
+http://www.group22.org/gz/resource/Location/L279,279,AVENIDA MONASTERIO DE EL ESCORIAL C/V MONASTERIO SILOS
+http://www.group22.org/gz/resource/Location/L280,280,CALLE MONASTERIO DE GUADALUPE C/V SANTUARIO VALVERDE
+http://www.group22.org/gz/resource/Location/L281,281,AVENIDA SANTUARIO DE VALVERDE C/V AV MONAST. EL ESCORIAL
+http://www.group22.org/gz/resource/Location/L282,282,AVENIDA DEL MONASTERIO DE EL ESCORIAL NUM 16
+http://www.group22.org/gz/resource/Location/L283,283,CALLE DEL MONASTERIO DE GUADALUPE NUM 6
+http://www.group22.org/gz/resource/Location/L284,284,AVENIDA DEL SANTUARIO DE VALVERDE NUM 15
+http://www.group22.org/gz/resource/Location/L285,285,AVENIDA DEL MONASTERIO DE EL ESCORIAL NUM 28A
+http://www.group22.org/gz/resource/Location/L286,286,AVENIDA MONASTERIO DE SILOS, FRENTE AL Nº 25 B
+http://www.group22.org/gz/resource/Location/L287,287,CALLE DE LOS MONASTERIOS DE SUSO Y YUSO NUM 6 B
+http://www.group22.org/gz/resource/Location/L288,288,CALLE DEL MONASTERIO DE EL PAULAR NUM 9
+http://www.group22.org/gz/resource/Location/L289,289,AVENIDA DEL SANTUARIO DE VALVERDE NUM 23 B
+http://www.group22.org/gz/resource/Location/L290,290,AVENIDA DEL MONASTERIO DE SILOS NUM 33 B
+http://www.group22.org/gz/resource/Location/L291,291,AVENIDA DEL SANTUARIO DE VALVERDE NUM 28 B
+http://www.group22.org/gz/resource/Location/L292,292,CALLE DE LOS MONASTERIOS SUSO Y YUSO NUM 11 B
+http://www.group22.org/gz/resource/Location/L293,293,CALLE DE LOS MONASTERIOS SUSO Y YUSO NUM 14 D
+http://www.group22.org/gz/resource/Location/L294,294,AVENIDA DEL MONASTERIO DE SILOS NUM 47 B
+http://www.group22.org/gz/resource/Location/L295,295,CALLE DEL MONASTERIO DEL PAULAR NUM 15
+http://www.group22.org/gz/resource/Location/L296,296,AVENIDA DEL MONASTERIO DE EL ESCORIAL NUM 39
+http://www.group22.org/gz/resource/Location/L297,297,AVENIDA DEL MONASTERIO DE SILOS NUM 41 B
+http://www.group22.org/gz/resource/Location/L298,298,CALLE DE LOS MONASTERIOS DE SUSO Y YUSO NUM 19
+http://www.group22.org/gz/resource/Location/L299,299,AVENIDA DEL MONTECARMELO, FRENTE AL Nº 31
+http://www.group22.org/gz/resource/Location/L300,300,AVENIDA DE MONTECARMELO, FRENTE AL Nº 51
+http://www.group22.org/gz/resource/Location/L301,301,CALLE DE LOS MONASTERIOS SUSO Y YUSO NUM 27 B
+http://www.group22.org/gz/resource/Location/L302,302,AVENIDA DEL MONTECARMELO, FRENTE AL Nº 5
+http://www.group22.org/gz/resource/Location/L303,303,CALLE DEL MONASTERIO DE EL PAULAR NUM 66-68
+http://www.group22.org/gz/resource/Location/L304,304,CALLE DEL MONASTERIO DE EL PAULAR NUM 136
+http://www.group22.org/gz/resource/Location/L305,305,AVENIDA DEL MONTECARMELO NUM 10 B
+http://www.group22.org/gz/resource/Location/L306,306,CALLE DEL MONASTERIO DE OSEIRA NUM 5-25
+http://www.group22.org/gz/resource/Location/L307,307,AVENIDA DEL MONASTERIO DE EL ESCORIAL NUM 59 B
+http://www.group22.org/gz/resource/Location/L308,308,AVENIDA DEL MONASTERIO DE SILOS NUM 55 B
+http://www.group22.org/gz/resource/Location/L309,309,CALLE DE LOS MONASTERIOS SUSO Y YUSO NUM 35 B
+http://www.group22.org/gz/resource/Location/L310,310,AVENIDA DEL SANTUARIO DE VALVERDE NUM 60
+http://www.group22.org/gz/resource/Location/L311,311,AVENIDA DEL MONASTERIO DE EL ESCORIAL NUM 60
+http://www.group22.org/gz/resource/Location/L312,312,AVENIDA DEL MONASTERIO DE SILOS NUM 40 B
+http://www.group22.org/gz/resource/Location/L313,313,AVENIDA DEL SANTUARIO DE VALVERDE NUM 68 B
+http://www.group22.org/gz/resource/Location/L314,314,AVENIDA DEL MONASTERIO DE SILOS NUM 69 B
+http://www.group22.org/gz/resource/Location/L315,315,CALLE DE LOS MONASTERIOS DE SUSO Y YUSO NUM 49 B
+http://www.group22.org/gz/resource/Location/L316,316,AVENIDA DEL SANTUARIO DE VALVERDE NUM 49 B
+http://www.group22.org/gz/resource/Location/L317,317,AVENIDA SANTUARIO DE VALVERDE NUM 76
+http://www.group22.org/gz/resource/Location/L318,318,AVENIDA DEL MONASTERIO DE SILOS NUM 75 B
+http://www.group22.org/gz/resource/Location/L319,319,AVENIDA DEL MONASTERIO DE SILOS NUM 52
+http://www.group22.org/gz/resource/Location/L320,320,AVENIDA DEL SANTUARIO DE VALVERDE NUM 57 B
+http://www.group22.org/gz/resource/Location/L321,321,AVENIDA DEL SANTUARIO DE VALVERDE NUM 84 B
+http://www.group22.org/gz/resource/Location/L322,322,AVENIDA DEL MONASTERIO DE SILOS NUM 79 B
+http://www.group22.org/gz/resource/Location/L323,323,AVENIDA DEL MONASTERIO DE SILOS NUM 76 B
+http://www.group22.org/gz/resource/Location/L324,324,AVENIDA DEL SANTUARIO DE VALVERDE NUM 65
+http://www.group22.org/gz/resource/Location/L325,325,AVENIDA DEL MONASTERIO DE EL ESCORIAL NUM 92
+http://www.group22.org/gz/resource/Location/L326,326,CALLE DE LOS MONASTERIOS SUSO Y YUSO, FRENTE AL NUM 33-73
+http://www.group22.org/gz/resource/Location/L327,327,AVENIDA DEL SANTUARIO DE VALVERDE NUM 100 B
+http://www.group22.org/gz/resource/Location/L328,328,AVENIDA DEL SANTUARIO DE VALVERDE NUM 92 B
+http://www.group22.org/gz/resource/Location/L329,329,CALLE DEL MONASTERIO DE ARLANZA NUM 18
+http://www.group22.org/gz/resource/Location/L330,330,ISLETA ACCESO M-607
+http://www.group22.org/gz/resource/Location/L331,331,AVENIDA DEL SANTUARIO DE VALVERDE NUM 79 B
+http://www.group22.org/gz/resource/Location/L332,332,AVENIDA DEL SANTUARIO DE VALVERDE NUM 110
+http://www.group22.org/gz/resource/Location/L333,333,AVENIDA DEL MONASTERIO DE SILOS NUM 84
+http://www.group22.org/gz/resource/Location/L334,334,CALLE DE NUESTRA SEÑORA DE VALVERDE NUM 209
+http://www.group22.org/gz/resource/Location/L335,335,CALLE DEL CABALLERO DE LOS ESPEJOS NUM 32-38
+http://www.group22.org/gz/resource/Location/L336,336,CALLE DEL MONASTERIO DE ARLANZA NUM 13
+http://www.group22.org/gz/resource/Location/L337,337,PASEO DE SAN MILLÁN DE LA COGOLLA C/V C/ VALCARLOS
+http://www.group22.org/gz/resource/Location/L338,338,CALLE DE NUESTRA SEÑORA DE VALVERDE NUM 203 B
+http://www.group22.org/gz/resource/Location/L339,339,PASEO DE SAN MILLAN DE LA COGOLLA NUM 9
+http://www.group22.org/gz/resource/Location/L340,340,AVENIDA DEL SANTUARIO DE VALVERDE NUM 7
+http://www.group22.org/gz/resource/Location/L341,341,CALLE DEL MONASTERIO DE OSEIRA
+http://www.group22.org/gz/resource/Location/L342,342,AVENIDA DEL MONASTERIO DE SILOS NUM 20
+http://www.group22.org/gz/resource/Location/L343,343,GLORIETA DE LA ARTILLERÍA ANTIAÉREA
+http://www.group22.org/gz/resource/Location/L344,344,AVENIDA DEL SANTUARIO DE VALVERDE NUM 73
+http://www.group22.org/gz/resource/Location/L345,345,AVENIDA DEL SANTUARIO DE VALVERDE NUM 89
+http://www.group22.org/gz/resource/Location/L346,346,CALLE DEL CABALLERO DE LOS ESPEJOS NUM 10
+http://www.group22.org/gz/resource/Location/L347,347,AVENIDA DEL CAMINO DE SANTIAGO NUM 35
+http://www.group22.org/gz/resource/Location/L348,348,CALLE DE AZOFRA NUM 23 A
+http://www.group22.org/gz/resource/Location/L349,349,CALLE DE SAN JUAN ORTEGA NUM 12 A
+http://www.group22.org/gz/resource/Location/L350,350,CALLE DE CAPISCOL NUM 5
+http://www.group22.org/gz/resource/Location/L351,351,CALLE DE PALAS DEL REY NUM 22
+http://www.group22.org/gz/resource/Location/L352,352,CALLE DE PALAS DEL REY NUM 16
+http://www.group22.org/gz/resource/Location/L353,353,CALLE DE PORTOMARIN NUM 13A
+http://www.group22.org/gz/resource/Location/L354,354,AVENIDA DEL CAMINO DE SANTIAGO C/V C/PORTOMARIN
+http://www.group22.org/gz/resource/Location/L355,355,PASEO DE TIERRA DE MÉLIDE C/V C/ DE CEBREIRO
+http://www.group22.org/gz/resource/Location/L356,356,PASEO DE TIERRA DE MELIDE C/V GTA DEL MONTE DEL GOZO
+http://www.group22.org/gz/resource/Location/L357,357,PASEO DE TIERRA DE MÉLIDE C/V C/ DE VALCARLOS
+http://www.group22.org/gz/resource/Location/L358,358,GLORIETA DEL MONTE DEL GOZO C/V Pº DE TIERRA DE MÉLIDE
+http://www.group22.org/gz/resource/Location/L359,359,PASEO DE TIERRA DE MÉLIDE C/V C/ SIERRA DE ATAPUERCA
+http://www.group22.org/gz/resource/Location/L358,358,GLORIETA DEL MONTE DEL GOZO C/V Pº DE TIERRA DE MÉLIDE
+http://www.group22.org/gz/resource/Location/L360,360,PASEO DE TIERRA DE MELIDE NUM 38 A
+http://www.group22.org/gz/resource/Location/L361,361,GLORIETA DE LALÍN
+http://www.group22.org/gz/resource/Location/L362,362,AVENIDA DEL CAMINO DE SANTIAGO C/V C/ DE VALCARLOS
+http://www.group22.org/gz/resource/Location/L363,363,AVENIDA DEL CAMINO DE SANTIAGO NUM 13 B
+http://www.group22.org/gz/resource/Location/L364,364,CALLE DE CASTIELLO DE JACA NUM 9
+http://www.group22.org/gz/resource/Location/L365,365,CALLE DE BURGUETE C/V C/ DE PUENTE DE LA REINA
+http://www.group22.org/gz/resource/Location/L366,366,CALLE DE CASTIELLO DE JACA NUM 37
+http://www.group22.org/gz/resource/Location/L367,367,CALLE DE CASTIELLO DE JACA C/V C/ DE BERDÚN
+http://www.group22.org/gz/resource/Location/L368,368,AVENIDA DE SANTO DOMINGO DE LA CALZADA C/V C/ FRÓMISTA
+http://www.group22.org/gz/resource/Location/L369,369,CALLE DE FRÓMISTA C/V C/ DE CASTIELLO DE JACA
+http://www.group22.org/gz/resource/Location/L370,370,CALLE DE CASTIELLO DE JACA C/V C/ DE MOLINASECA
+http://www.group22.org/gz/resource/Location/L371,371,CALLE DE MOLINASECA C/V C/ DE PALAS DEL REY
+http://www.group22.org/gz/resource/Location/L372,372,PASEO DE TIERRA DE MELIDE C/V C/ DE PALAS DEL REY
+http://www.group22.org/gz/resource/Location/L373,373,CALLE DE PORTOMARÍN C/V PSO. DE TIERRA DE MELIDE
+http://www.group22.org/gz/resource/Location/L374,374,CALLE DE CASTRILLO DE POLVAZARES
+http://www.group22.org/gz/resource/Location/L375,375,CALLE ITERO DE LA VEGA C/V BERCIANOS DEL REAL CAMINO
+http://www.group22.org/gz/resource/Location/L376,376,CALLE VILLAFRANCA DE MONTES DE OCA
+http://www.group22.org/gz/resource/Location/L377,377,CALLE VILLAFRANCA DE MONTES DE OCA C/V C/ BERCIANOS
+http://www.group22.org/gz/resource/Location/L378,378,PASEO DE TIERRA DE MELIDE C/V AV CAMINO DE SANTIAGO
+http://www.group22.org/gz/resource/Location/L379,379,AVENIDA DEL CAMINO DE SANTIAGO C/V M-40
+http://www.group22.org/gz/resource/Location/L380,380,CALLE DE VILLAFRANCA DE MONTES DE OCA C/V M-40
+http://www.group22.org/gz/resource/Location/L381,381,CALLE VILLADANGOS DEL PÁRAMO C/V BERCIANOS DEL REAL CA
+http://www.group22.org/gz/resource/Location/L382,382,CALLE CASTILLO DE CANDANCHÚ C/V AV STO DOMINGO DE LA C
+http://www.group22.org/gz/resource/Location/L383,383,CALLE DEL PÓRTICO DE LA GLORIA C/V CARRETERA M-603
+http://www.group22.org/gz/resource/Location/L384,384,AVENIDA DEL CAMINO DE SANTIAGO C/V RONDA COMUNICACIÓN NUM 32
+http://www.group22.org/gz/resource/Location/L385,385,RONDA DE LA COMUNICACIÓN C/V M-40
+http://www.group22.org/gz/resource/Location/L386,386,RONDA DE LA COMUNICACIÓN NUM 16
+http://www.group22.org/gz/resource/Location/L387,387,AVENIDA DE SANTO DOMINGO DE LA CALZADA C/V C/ DEL ABETAL
+http://www.group22.org/gz/resource/Location/L388,388,CALLE DEL PÓRTICO DE LA GLORIA C/V RONDA COMUNICACIÓN NUM 5
+http://www.group22.org/gz/resource/Location/L389,389,RONDA DE LA COMUNICACIÓN NUM 5
+http://www.group22.org/gz/resource/Location/L390,390,CALLE DEL PÓRTICO DE LA GLORIA NUM 2
+http://www.group22.org/gz/resource/Location/L391,391,CALLE DEL PÓRTICO DE LA GLORIA NUM 8
+http://www.group22.org/gz/resource/Location/L392,392,RONDA DE LA COMUNICACIÓN NUM 24
+http://www.group22.org/gz/resource/Location/L393,393,CALLE DEL PÓRTICO DE LA GLORIA, FRENTE AL NUM 2
+http://www.group22.org/gz/resource/Location/L394,394,RONDA DE LA COMUNICACIÓN C/V AV. CAMINO DE SANTIAGO
+http://www.group22.org/gz/resource/Location/L395,395,AVENIDA DEL CAMINO DE SANTIAGO C/V RONDA COMUNICACIÓN NUM 36
+http://www.group22.org/gz/resource/Location/L396,396,RONDA COMUNICACIÓN NUM 31,35
+http://www.group22.org/gz/resource/Location/L397,397,CALLE DE SANDALIO LOPEZ NUM 6-10C/ SANDALIO LÓPEZ, ENTRE Nº 6 Y 10
+http://www.group22.org/gz/resource/Location/L398,398,RONDA COMUNICACIÓN Nº 1O C/V M-40
+http://www.group22.org/gz/resource/Location/L399,399,CALLE PÓRTICO DE LA GLORIA C/V C/PUERTA DE PLATERÍAS
+http://www.group22.org/gz/resource/Location/L400,400,RONDA DE LA COMUNICACIÓN NUM 2
+http://www.group22.org/gz/resource/Location/L401,401,RONDA DE LA COMUNICACIÓN NUM 28
+http://www.group22.org/gz/resource/Location/L402,402,CALLE DE LA MASÓ NUM 80
+http://www.group22.org/gz/resource/Location/L403,403,AVENIDA SANTO DOMINGO DE LA CALZADA C/V AV. BURGOS
+http://www.group22.org/gz/resource/Location/L404,404,CALLE DE FRÓMISTAC/ PALAS DEL REY C/V C/FROMISTA.
+http://www.group22.org/gz/resource/Location/L405,405,CALLE DE LAS ISLAS BAHAMAS NUM 22
+http://www.group22.org/gz/resource/Location/L406,406,PLAZA DE SAN FERNANDO NUM 1
+http://www.group22.org/gz/resource/Location/L407,407,CALLE DE PUENTECESURES C/V C/ DE LA VILLA DE MARÍN
+http://www.group22.org/gz/resource/Location/L408,408,CALLE DE MORALZARZAL
+http://www.group22.org/gz/resource/Location/L409,409,CALLE DE MARBELLA C/V C/ DE NURIA, 76
+http://www.group22.org/gz/resource/Location/L410,410,CALLE DE ALFONSO RODRÍGUEZ CASTELAO NUM 1A
+http://www.group22.org/gz/resource/Location/L411,411,CALLE FERMÍN CABALLERO C/V C/SANTIAGO DE COMPOSTELA
+http://www.group22.org/gz/resource/Location/L412,412,AVENIDA DEL CARDENAL HERRERA ORIA NUM 87
+http://www.group22.org/gz/resource/Location/L413,413,CALLE DE LLODIO
+http://www.group22.org/gz/resource/Location/L414,414,CALLE DEL VALLE DE ENMEDIO NUM 1
+http://www.group22.org/gz/resource/Location/L415,415,CALLE CERRO ÁLAMOS BLANCOS C/V C/ ARROYO DEL MONTE
+http://www.group22.org/gz/resource/Location/L416,416,CALLE MIRADOR DE LA REINA C/V C/ CERRO ALAMOS BLANCOS
+http://www.group22.org/gz/resource/Location/L417,417,CALLE PEÑA DEL ÁGUILA C/V C/ MIRADOR DE LA REINA
+http://www.group22.org/gz/resource/Location/L418,418,PLAZA DEL VALLE DE LA JAROSA
+http://www.group22.org/gz/resource/Location/L418,418,PLAZA DEL VALLE DE LA JAROSA
+http://www.group22.org/gz/resource/Location/L419,419,CALLE DE CARLOS BRAVO C/V C/ DE ANTONIO MOLINA
+http://www.group22.org/gz/resource/Location/L420,420,CALLE DE LA ISLA DE SÁLVORA NUM 10
+http://www.group22.org/gz/resource/Location/L421,421,CALLE DE JOAQUÍN LORENZO NUM 39
+http://www.group22.org/gz/resource/Location/L422,422,CALLE DE BUITRAGO DE LOZOYA NUM 20
+http://www.group22.org/gz/resource/Location/L423,423,CALLE DE MAGDALENA DÍAZ
+http://www.group22.org/gz/resource/Location/L424,424,CALLE JOAQUÍN LORENZO C/V AV.DOCTOR RAMÓN CASTROVIEJO
+http://www.group22.org/gz/resource/Location/L425,425,AVENIDA DEL CARDENAL HERRERA ORIA NUM 78
+http://www.group22.org/gz/resource/Location/L426,426,CALLE DE CHANTADA C/V C/ DE CÁNDIDO MATEOS
+http://www.group22.org/gz/resource/Location/L427,427,CALLE DE JOAQUÍN LORENZO C/V C/ DE LA ISLA MALAITA
+http://www.group22.org/gz/resource/Location/L428,428,CALLE DE HONTALBILLA
+http://www.group22.org/gz/resource/Location/L429,429,PASEO DE LA CASTELLANA NUM 259 F
+http://www.group22.org/gz/resource/Location/L430,430,AVENIDA BURGOS NUM 135
+http://www.group22.org/gz/resource/Location/L431,431,CALLE AZUL NUM 6
+http://www.group22.org/gz/resource/Location/L432,432,AVENIDA MONFORTE DE LEMOS C/V C/ DE PEDRO RICO,2 NUM 4
+http://www.group22.org/gz/resource/Location/L433,433,CALLE DE LA BAÑEZA NUM 44
+http://www.group22.org/gz/resource/Location/L434,434,CALLE DE LA BAÑEZA NUM 40 C
+http://www.group22.org/gz/resource/Location/L435,435,CALLE DE LA CABRERA NUM 17
+http://www.group22.org/gz/resource/Location/L436,436,CALLE DE LA CABRERA NUM 7
+http://www.group22.org/gz/resource/Location/L437,437,CALLE DEL VALLE DE MENA NUM 14
+http://www.group22.org/gz/resource/Location/L438,438,CALLE DEL VALLE DE MENA NUM 6
+http://www.group22.org/gz/resource/Location/L439,439,CALLE DE MARÍA DE MAEZTU NUM 150
+http://www.group22.org/gz/resource/Location/L440,440,CALLE DE MARÍA DE MAEZTU C/V C/ DE JUANITA DE LA CRUZ
+http://www.group22.org/gz/resource/Location/L441,441,CALLE DE MARÍA DE MAEZTU C/V C/ DE MARÍA CASARES
+http://www.group22.org/gz/resource/Location/L442,442,CALLE DE MARÍA DE MAEZTU C/V C/DE LA SENDA DEL INFANTE
+http://www.group22.org/gz/resource/Location/L443,443,CALLE DE MARÍA DE MAEZTU C/V C/DE FEDERICA MONTSENY
+http://www.group22.org/gz/resource/Location/L444,444,CALLE DE MARÍA DE MAEZTU C/V C/DE MARÍA MONTESSORY
+http://www.group22.org/gz/resource/Location/L445,445,PASEO DE LA PUERTA DEL ANGEL NUM 1
+http://www.group22.org/gz/resource/Location/L446,446,AVENIDA COMPLUTENSE NUM 40
+http://www.group22.org/gz/resource/Location/L447,447,CARRETERA DE LA CORUÑA KM 9
+http://www.group22.org/gz/resource/Location/L448,448,CARRETERA DE CASTILLA C/V PASEO DE LA RINCONADA
+http://www.group22.org/gz/resource/Location/L449,449,PASEO DEL COMANDANTE FORTEA C/V C/ SAN POL DE MARCOLONIA CUARTEL DE LA MONTAÑA. JARDINES
+http://www.group22.org/gz/resource/Location/L450,450,CARRETERA DE CASTILLA C/V C/ DEL ARROYO DE POZUELO
+http://www.group22.org/gz/resource/Location/L451,451,CARRETERA DE CASTILLA C/V RONDA DE LA BUGANVILLA DEL REY
+http://www.group22.org/gz/resource/Location/L452,452,AUTOVÍA CALLE 30 KM 22
+http://www.group22.org/gz/resource/Location/L453,453,PASEO DE MORET NUM 2PLAZA DE LA MONCLOA CTRA DE CASTILLA
+http://www.group22.org/gz/resource/Location/L454,454,CALLE DE FERRAZ NUM 1PASEO DEL REY.
+http://www.group22.org/gz/resource/Location/L455,455,AVENIDA DEL DOCTOR FEDERICO RUBIO Y GALIJARDINES DE FRANCOS RODRIGUEZ
+http://www.group22.org/gz/resource/Location/L456,456,PASEO DE JUAN XXIII
+http://www.group22.org/gz/resource/Location/L457,457,CALLE DE RAFAEL BOTÍ NUM 1
+http://www.group22.org/gz/resource/Location/L458,458,CALLE DE LAS ROSAS DE ARAVACA C/V C/ DEL RÍO SELLA
+http://www.group22.org/gz/resource/Location/L459,459,CALLE DEL RIO SELLA C/V C/ DEL UNICORNIO
+http://www.group22.org/gz/resource/Location/L460,460,CALLE DEL PAVO REAL C/V C/ DE LA CORONA AUSTRAL
+http://www.group22.org/gz/resource/Location/L461,461,CALLE DE LA VÍA LÁCTEA
+http://www.group22.org/gz/resource/Location/L462,462,CALLE DE VALTRAVIESO NUM 34
+http://www.group22.org/gz/resource/Location/L463,463,CALLE DE RAFAEL BOTÍ NUM 3
+http://www.group22.org/gz/resource/Location/L464,464,CALLE DE LAS CINCO LAGUNAS NUM 12
+http://www.group22.org/gz/resource/Location/L465,465,CALLE DEL ESCULTOR PERESEJO NUM 9
+http://www.group22.org/gz/resource/Location/L466,466,CALLE DE ANICETO MARINAS C/V AV. DE VALLADOLID
+http://www.group22.org/gz/resource/Location/L467,467,CALLE DE LA GOLONDRINA NUM 4
+http://www.group22.org/gz/resource/Location/L468,468,SITIO AL PRADO DE LA VILLA (VALDECAHONDES)
+http://www.group22.org/gz/resource/Location/L469,469,CALLE DE SINESIO DELGADO C/V C/ DE EMERENCIANA ZURILLA NUM 73
+http://www.group22.org/gz/resource/Location/L470,470,CALLE DE SAN RESTITUTO NUM 72
+http://www.group22.org/gz/resource/Location/L471,471,CALLE ALFONSO FDEZ CLAUSELLS - AV. MARTIRES MARISTAS -C/ ISLAS MARIANAS
+http://www.group22.org/gz/resource/Location/L472,472,CALLE DE LA ISLA DE OZA NUM 82
+http://www.group22.org/gz/resource/Location/L473,473,CALLE DE LA ISLA DE OZA NUM 61
+http://www.group22.org/gz/resource/Location/L474,474,CALLE DE LA PINILLA NUM 79
+http://www.group22.org/gz/resource/Location/L475,475,CALLE DE LA LA PINILLA NUM 36
+http://www.group22.org/gz/resource/Location/L476,476,CALLE DE LA BRÚJULA C/V C/ DEL ESCULTOR PERESEJO NUM 64
+http://www.group22.org/gz/resource/Location/L477,477,CALLE DE LA PINILLA, FRENTE AL NUM 93
+http://www.group22.org/gz/resource/Location/L478,478,CALLE DE ARGENTONA NUM 21-23
+http://www.group22.org/gz/resource/Location/L479,479,CALLE DE ARGENTONA NUM 25
+http://www.group22.org/gz/resource/Location/L480,480,AVENIDA DEL TALGO NUM 159
+http://www.group22.org/gz/resource/Location/L481,481,AVENIDA DEL TALGO C/V CALLE DEL CERRO DE VALDECAHONDE
+http://www.group22.org/gz/resource/Location/L482,482,CALLE DE RAFAEL BOTÍ NUM 68
+http://www.group22.org/gz/resource/Location/L483,483,CALLE DE RAFAEL BOTÍ NUM 9
+http://www.group22.org/gz/resource/Location/L484,484,CALLE DE HORCHE C/V C/ DE SIGUÜENZA
+http://www.group22.org/gz/resource/Location/L485,485,CARRETERA DE HUMERA (FRENTE AL Nº 163)
+http://www.group22.org/gz/resource/Location/L486,486,CALLE VIRGEN DE LOS ROSALES S/N C/V C/ GOLONDRINA
+http://www.group22.org/gz/resource/Location/L487,487,CALLE DEL VALLE DE PAS NUM 4
+http://www.group22.org/gz/resource/Location/L488,488,CALLE DE LAS ROSAS DE ARAVACA NUM 31
+http://www.group22.org/gz/resource/Location/L489,489,CALLE DE LAS ROSAS DE ARAVACA NUM 41
+http://www.group22.org/gz/resource/Location/L490,490,CALLE DEL VALLE DEL PAS NUM 36
+http://www.group22.org/gz/resource/Location/L491,491,GLORIETA DE SAN ANTONIO DE LA FLORIDA C/V C/ DE MOZART
+http://www.group22.org/gz/resource/Location/L492,492,CALLE DE RAFAEL VILLA NUM 74
+http://www.group22.org/gz/resource/Location/L493,493,CALLE DEL CARRIL DE LOS CALEROS NUM 2
+http://www.group22.org/gz/resource/Location/L494,494,PASEO DEL REY NUM 36
+http://www.group22.org/gz/resource/Location/L495,495,GLORIETA DE SAN ANTONIO DE LA FLORIDA NUM 8
+http://www.group22.org/gz/resource/Location/L496,496,CALLE DE ANTONIO MACHADO NUM 47
+http://www.group22.org/gz/resource/Location/L497,497,CALLE SEIS DE DICIEMBRE NUM 9
+http://www.group22.org/gz/resource/Location/L498,498,CALLE ROSA DE LUXEMBURGO NUM 56
+http://www.group22.org/gz/resource/Location/L499,499,CALLE ROSA DE LUXEMBURGO NUM 3
+http://www.group22.org/gz/resource/Location/L500,500,CALLE ROSA DE LUXEMBURGO NUM 10
+http://www.group22.org/gz/resource/Location/L501,501,AVENIDA PABLO IGLESIAS NUM 35 A
+http://www.group22.org/gz/resource/Location/L502,502,CALLE CABELLERA DE BERENICE NUM 41
+http://www.group22.org/gz/resource/Location/L503,503,CALLE PICO DE LA GOLONDRINA(ENTRE Cº ZARZUELA-C/SALLE)
+http://www.group22.org/gz/resource/Location/L504,504,CALLE DE LA CABELLERA DE BERENICE NUM 57-61
+http://www.group22.org/gz/resource/Location/L505,505,CALLE CABELLERA DE BERENICE NUM 60
+http://www.group22.org/gz/resource/Location/L506,506,CALLE CASIOPEA NUM 16
+http://www.group22.org/gz/resource/Location/L507,507,CALLE CASIOPEA NUM 14
+http://www.group22.org/gz/resource/Location/L508,508,AVENIDA SANTO ÁNGEL DE LA GUARDA NUM 23
+http://www.group22.org/gz/resource/Location/L509,509,CALLE GENERAL CADENAS CAMPOS NUM 9
+http://www.group22.org/gz/resource/Location/L510,510,CALLE DE LA INDUSTRIA
+http://www.group22.org/gz/resource/Location/L510,510,CALLE DE LA INDUSTRIA
+http://www.group22.org/gz/resource/Location/L511,511,CALLE DE DOÑA URRACA NUM 17
+http://www.group22.org/gz/resource/Location/L512,512,CALLE DE DOÑA BERENGUELA NUM 12
+http://www.group22.org/gz/resource/Location/L513,513,CALLE CUART DE POBLET, FRENTE AL Nº 41
+http://www.group22.org/gz/resource/Location/L514,514,CALLE DE CUART DE POBLET, FRENTE AL Nº 9
+http://www.group22.org/gz/resource/Location/L515,515,CALLE DE LAS HIGUERAS, FRENTE AL NUM 11
+http://www.group22.org/gz/resource/Location/L516,516,CALLE DE LAS HIGUERAS, FRENTE AL NUM 9
+http://www.group22.org/gz/resource/Location/L517,517,CALLE DE PABLO CASALS
+http://www.group22.org/gz/resource/Location/L518,518,CALLE DE CARAMUEL NUM 53
+http://www.group22.org/gz/resource/Location/L519,519,AVENIDA DE LAS ÁGUILAS NUM 63-97
+http://www.group22.org/gz/resource/Location/L520,520,CALLE DE MARCELINO CASTILLO NUM 29C/V MARCELINO CASTILLO PARQUE CERRO DE ALMODOVAR
+http://www.group22.org/gz/resource/Location/L521,521,CALLE DE LA VIDAUBA NUM 4
+http://www.group22.org/gz/resource/Location/L522,522,CALLE CONCEJAL FCO JOSE JIMENEZ MARTIN C/V C/ ALHAMBRA
+http://www.group22.org/gz/resource/Location/L523,523,PASEO DE EXTREMADURA, NÚMERO 181 POSTERIOR
+http://www.group22.org/gz/resource/Location/L524,524,CALLE DIGITAL NUM 18-B
+http://www.group22.org/gz/resource/Location/L525,525,PASEO DE LOS HÚSARES NUM 50
+http://www.group22.org/gz/resource/Location/L526,526,PASEO DE LOS HÚSARES NUM 52-54
+http://www.group22.org/gz/resource/Location/L527,527,PASEO DE LOS HÚSARES NUM 56
+http://www.group22.org/gz/resource/Location/L528,528,CALLE DE LA CORONILA NUM 6
+http://www.group22.org/gz/resource/Location/L529,529,CALLE DEL ARO NUM 7
+http://www.group22.org/gz/resource/Location/L530,530,CALLE DEL ARO NUM 10
+http://www.group22.org/gz/resource/Location/L531,531,CALLE DE LA BELLADONA NUM 10
+http://www.group22.org/gz/resource/Location/L532,532,CALLE DEL MELILOTO NUM 32
+http://www.group22.org/gz/resource/Location/L533,533,CALLE DEL MELILOTO NUM 30
+http://www.group22.org/gz/resource/Location/L534,534,CALLE DEL MELILOTO NUM 24
+http://www.group22.org/gz/resource/Location/L535,535,CALLE DEL MELILOTO NUM 16
+http://www.group22.org/gz/resource/Location/L536,536,CALLE DEL MELILOTO NUM 8
+http://www.group22.org/gz/resource/Location/L537,537,CALLE DE LA MILENRAMA NUM 15
+http://www.group22.org/gz/resource/Location/L538,538,CALLE DE MARAVILLA NUM 22
+http://www.group22.org/gz/resource/Location/L539,539,CALLE DE LA CORONILA NUM 8
+http://www.group22.org/gz/resource/Location/L540,540,CALLE DEL ARO NUM 9
+http://www.group22.org/gz/resource/Location/L541,541,CALLE DEL ARO NUM 12
+http://www.group22.org/gz/resource/Location/L542,542,CALLE DE LA BELLADONA NUM 12
+http://www.group22.org/gz/resource/Location/L543,543,CALLE DE MARAVILLA NUM 31
+http://www.group22.org/gz/resource/Location/L544,544,CALLE DEL CONCEJAL FRANCISCO JOSÉ JIMÉNEZ MARTÍN NUM 120
+http://www.group22.org/gz/resource/Location/L545,545,CALLE DEL PINAR DE SAN JOSÉ C/V C/ DE LA TORTA NUM 10
+http://www.group22.org/gz/resource/Location/L546,546,CALLE PINAR DE SAN JOSÉ C/V AVDA.DE LA HOSPITALIDAD
+http://www.group22.org/gz/resource/Location/L547,547,CALLE DE LA TORTA C/V AV. DE LA HOSPITALIDAD
+http://www.group22.org/gz/resource/Location/L548,548,CALLE DE LAS FLAUTAS C/V C/ DE LOS TIMBALES
+http://www.group22.org/gz/resource/Location/L549,549,CARRETERA DEL BARRIO DE LA FORTUNA C/V C/ DEL XILÓFONO NUM 1
+http://www.group22.org/gz/resource/Location/L550,550,CALLE DE LOS CLARINETES C/V C/ LAS FLAUTAS
+http://www.group22.org/gz/resource/Location/L551,551,CALLE DE LOS CLARINETES C/V C/ DEL FAGOT
+http://www.group22.org/gz/resource/Location/L552,552,AVENIDA DE LA PESETA C/V C/ DE LAS FLAUTAS
+http://www.group22.org/gz/resource/Location/L553,553,CALLE CONTRABAJOS NUM 1
+http://www.group22.org/gz/resource/Location/L554,554,AUTOVÍA M-40 C/V CTRA. DEL BARRIO DE LA FORTUNA
+http://www.group22.org/gz/resource/Location/L555,555,CARRETERA DEL BARRIO DE LA FORTUNA, FRENTE AL NUM 33
+http://www.group22.org/gz/resource/Location/L556,556,AVENIDA DE LA PESETA C/V C/ DE LA TORTA
+http://www.group22.org/gz/resource/Location/L557,557,CALLE DE SAN CRISPÍN NUM 14
+http://www.group22.org/gz/resource/Location/L558,558,PASEO DE EXTREMADURA,EN EL ENTORNO DEL Nº 351
+http://www.group22.org/gz/resource/Location/L559,559,CALLE DE HURTUMPASCUAL, 2 C/V C/ CARLOS FUENTES, 2A
+http://www.group22.org/gz/resource/Location/L560,560,CALLE CONCEJAL FCO. JOSÉ JIMÉNEZ MARTÍN, FRENTE AL NUM 18-120
+http://www.group22.org/gz/resource/Location/L561,561,CALLE DE RIOCABADO C/V C/ DE VIÑEGRA
+http://www.group22.org/gz/resource/Location/L562,562,CALLE DE GOTARRENDURA NUM 2
+http://www.group22.org/gz/resource/Location/L563,563,CALLE DEL CONCEJAL FRANCISCO JOSÉ JIMÉNEZ MARTÍN NUM 38-56
+http://www.group22.org/gz/resource/Location/L564,564,CALLE DE LOS CORACEROS NUM 2-8
+http://www.group22.org/gz/resource/Location/L565,565,PASEO DE LOS LANCEROS NUM 1-5
+http://www.group22.org/gz/resource/Location/L566,566,CALLE DE LOS GRANADEROS NUM 15
+http://www.group22.org/gz/resource/Location/L567,567,CALLE DE LOS GRANADEROS NUM 23
+http://www.group22.org/gz/resource/Location/L568,568,CALLE DE LOS GRANADEROS NUM 1
+http://www.group22.org/gz/resource/Location/L569,569,PASEO DE LOS LANCEROS NUM 2
+http://www.group22.org/gz/resource/Location/L570,570,PASEO DE LOS HÚSARES NUM 16
+http://www.group22.org/gz/resource/Location/L571,571,PLAZA DE LA SUITE
+http://www.group22.org/gz/resource/Location/L572,572,CALLE DE SANCHORREJA, FRENTE AL NUM 17
+http://www.group22.org/gz/resource/Location/L573,573,CALLE DE TEMBLEQUE NUM 45
+http://www.group22.org/gz/resource/Location/L574,574,AVENIDA DE LOS CAPRICHOS, FRENTE AL NUM 14
+http://www.group22.org/gz/resource/Location/L575,575,CALLE DE RIOCABADO C/V C/ DE GOTARRENDURA
+http://www.group22.org/gz/resource/Location/L576,576,PASEO DE EXTREMADURA C/V C/ DE LA ALVERJA NUM 20
+http://www.group22.org/gz/resource/Location/L577,577,CALLE JOSE DE CADALSO, 73 C/V C/ MAESTRA JUSTA FREIRE
+http://www.group22.org/gz/resource/Location/L578,578,CALLE DE ANSELMO LORENZO NUM 11
+http://www.group22.org/gz/resource/Location/L579,579,CALLE DEL OLIVILLO
+http://www.group22.org/gz/resource/Location/L580,580,PASEO DE EXTREMADURA NUM 181
+http://www.group22.org/gz/resource/Location/L581,581,CALLE DE RAFAEL FINAT NUM 54
+http://www.group22.org/gz/resource/Location/L582,582,PASEO DE EXTREMADURA NUM 18-20
+http://www.group22.org/gz/resource/Location/L583,583,CALLE DE VILLASANDINO NUM 29
+http://www.group22.org/gz/resource/Location/L584,584,CALLE DE DANIEL SEGOVIA C/V C/ DEL CINE
+http://www.group22.org/gz/resource/Location/L585,585,CALLE C/ DANIEL SEGOVIA C/V C/ DE MANUEL GARCÍA
+http://www.group22.org/gz/resource/Location/L586,586,CALLE DE GRANJA DE TORREHERMOSA C/V C/ DE ILLESCAS NUM 2
+http://www.group22.org/gz/resource/Location/L587,587,CALLE DE MINGORRÍA NUM 9
+http://www.group22.org/gz/resource/Location/L588,588,CALLE DE HOYO DE PINARES NUM 12-14
+http://www.group22.org/gz/resource/Location/L589,589,PLAZA DE RABASA
+http://www.group22.org/gz/resource/Location/L590,590,GLORIETA DE LA VELLOSILLA NUM 1
+http://www.group22.org/gz/resource/Location/L591,591,CALLE DE LA FUENTE DE LIMA NUM 28
+http://www.group22.org/gz/resource/Location/L592,592,CALLE DE SEPULVEDA, FRENTE AL NUM 212
+http://www.group22.org/gz/resource/Location/L593,593,CALLE SEPÚLVEDA C/V C/CONCEJAL FCO.JOSÉ JIMENEZ MARTÍN NUM 170
+http://www.group22.org/gz/resource/Location/L594,594,CALLE DE NAVIA NUM 12
+http://www.group22.org/gz/resource/Location/L595,595,CALLE RAFAEL FINAT NUM 45 B
+http://www.group22.org/gz/resource/Location/L596,596,CALLE RIOCABADO NUM 22
+http://www.group22.org/gz/resource/Location/L597,597,CALLE DE LA LATINA NUM 16
+http://www.group22.org/gz/resource/Location/L598,598,CALLE VALENTÍN LLAGUNO NUM 4
+http://www.group22.org/gz/resource/Location/L599,599,AVENIDA DE LOS POBLADOS NUM 74
+http://www.group22.org/gz/resource/Location/L600,600,PASEO DE LA ERMITA DEL SANTO C/V PASEO QUINCE DE MAYO
+http://www.group22.org/gz/resource/Location/L601,601,CALLE DEL PARQUE DE EUGENIA DE MONTIJO NUM 3
+http://www.group22.org/gz/resource/Location/L602,602,CALLE VIA LUSITANA NUM 3
+http://www.group22.org/gz/resource/Location/L603,603,PASEO DE LA ERMITA DEL SANTO
+http://www.group22.org/gz/resource/Location/L603,603,PASEO DE LA ERMITA DEL SANTO
+http://www.group22.org/gz/resource/Location/L603,603,PASEO DE LA ERMITA DEL SANTO
+http://www.group22.org/gz/resource/Location/L604,604,CALLE DE CARONTE NUM 16
+http://www.group22.org/gz/resource/Location/L605,605,CALLE ZAIDA C/V C/ TÓRTOLA
+http://www.group22.org/gz/resource/Location/L606,606,CALLE DE MIGUEL SORIANO NUM 1
+http://www.group22.org/gz/resource/Location/L607,607,CALLE DE LOS TEJARES, NÚMERO 39 POSTERIOR
+http://www.group22.org/gz/resource/Location/L608,608,CALLE DE CASAR DE PALOMERO C/V C/ DE ALGORTA
+http://www.group22.org/gz/resource/Location/L609,609,CALLE DE PIEDRAHITA C/V C/ DE WITERICO
+http://www.group22.org/gz/resource/Location/L610,610,CALLE DE ALBA DE TORMES NUM 2
+http://www.group22.org/gz/resource/Location/L611,611,CALLE DE SALVADOR ALLENDE NUM 3
+http://www.group22.org/gz/resource/Location/L612,612,CALLE DEL PATRIMONIO DE LA HUMANIDAD NUM 37
+http://www.group22.org/gz/resource/Location/L613,613,CALLE DE LOS MORALES NUM 31
+http://www.group22.org/gz/resource/Location/L614,614,CALLE DEL PATRIMONIO DE LA HUMANIDAD NUM 27
+http://www.group22.org/gz/resource/Location/L615,615,CALLE DEL PATRIMONIO DE LA HUMANIDAD NUM 17
+http://www.group22.org/gz/resource/Location/L616,616,CALLE DE LA LONJA DE LA SEDA NUM 32
+http://www.group22.org/gz/resource/Location/L617,617,CALLE DE LA LONJA DE LA SEDA C/V C/ DE TORDESILLAS
+http://www.group22.org/gz/resource/Location/L618,618,CALLE DEL JACOBEO C/V C/ DE LA LONJA DE LA SEDA
+http://www.group22.org/gz/resource/Location/L619,619,CALLE PALMERAL DE ELCHE C/V C/ REAL ALCAZAR DE SEVILLA NUM 6
+http://www.group22.org/gz/resource/Location/L620,620,CALLE DEL MONASTERIO DE POBLET NUM 1
+http://www.group22.org/gz/resource/Location/L621,621,CALLE DE SAN CRISTÓBAL DE LA LAGUNA NUM 2
+http://www.group22.org/gz/resource/Location/L622,622,CALLE DEL ARTE MUDÉJAR DE TERUEL NUM 4
+http://www.group22.org/gz/resource/Location/L623,623,CALLE LONJA DE LA SEDA C/V C/ ACUEDUCTO DE SEGOVIA
+http://www.group22.org/gz/resource/Location/L624,624,CALLE DE LA PLAZA MAYOR DE SALAMANCA
+http://www.group22.org/gz/resource/Location/L625,625,CALLE LONJA DE LA SEDA C/V C/ MURALLAS DE LUGO
+http://www.group22.org/gz/resource/Location/L626,626,CALLE DE LA LONJA DE LA SEDA NUM 26
+http://www.group22.org/gz/resource/Location/L627,627,AVENIDA DE LA PESETA NUM 70
+http://www.group22.org/gz/resource/Location/L628,628,AUTOVÍA M-40 C/V AVDA. DE CARABANCHEL ALTO NUM 180
+http://www.group22.org/gz/resource/Location/L629,629,CALLE DEL JACOBEO C/V C/ DEL PARQUE DE DOÑANA
+http://www.group22.org/gz/resource/Location/L630,630,CALLE PAISAJE DE ARANJUEZ C/V C/ HOSPITAL DE SAN PAU
+http://www.group22.org/gz/resource/Location/L631,631,CALLE DEL JACOBEO C/V C/ DEL SITIO DE EL ESCORIAL
+http://www.group22.org/gz/resource/Location/L632,632,CALLE DEL SITIO DEL ESCORIAL NUM 21
+http://www.group22.org/gz/resource/Location/L633,633,CALLE DEL JACOBEO C/V C/ DEL SITIO DEL ESCORIAL
+http://www.group22.org/gz/resource/Location/L634,634,CALLE DEL JACOBEO C/V C/HOSPITAL S. PAU Y C/ P. DOÑANA
+http://www.group22.org/gz/resource/Location/L635,635,CALLE DEL JACOBEO C/V C/ DEL HOSPITAL DE SAN PAU
+http://www.group22.org/gz/resource/Location/L636,636,CALLE DEL JACOBEO C/V CAMINO DE LAS CRUCES
+http://www.group22.org/gz/resource/Location/L637,637,CALLE DE LA BLANCA C/V C/ DEL ARDITE
+http://www.group22.org/gz/resource/Location/L638,638,CALLE DEL CASTELLANO C/V C/ DEL CENTÉN
+http://www.group22.org/gz/resource/Location/L639,639,CALLE DEL DOBLER C/V C/ DEL DUCADO
+http://www.group22.org/gz/resource/Location/L640,640,CALLE DEL FLORIN C/V C/ DEL TREMIS
+http://www.group22.org/gz/resource/Location/L641,641,CALLE DEL PRINCIPADO C/V C/ DEL TRENTIN
+http://www.group22.org/gz/resource/Location/L642,642,AVENIDA DEL EURO C/V C/ DEL CIDRO NUM 19
+http://www.group22.org/gz/resource/Location/L643,643,CALLE DEL PESO HISPANO NUM 2
+http://www.group22.org/gz/resource/Location/L644,644,AVENIDA DE LA PESETA NUM 76
+http://www.group22.org/gz/resource/Location/L645,645,CALLE DEL PESO HISPANO NUM 7
+http://www.group22.org/gz/resource/Location/L646,646,CALLE DEL DURO NUM 11
+http://www.group22.org/gz/resource/Location/L647,647,CALLE VIA LUSITANA NUM 55
+http://www.group22.org/gz/resource/Location/L648,648,CALLE VÍA LUSITANA NUM 65
+http://www.group22.org/gz/resource/Location/L649,649,CALLE DE LA DOBLA C/V C/ DEL PEPIÓN
+http://www.group22.org/gz/resource/Location/L650,650,AVENIDA DEL EURO C/V C/ VÍA LUSITANA
+http://www.group22.org/gz/resource/Location/L651,651,AVENIDA DE LOS POBLADOS NUM 120
+http://www.group22.org/gz/resource/Location/L652,652,AVENIDA DE LOS POBLADOS NUM 112
+http://www.group22.org/gz/resource/Location/L653,653,AVENIDA DE LOS POBLADOS NUM 114
+http://www.group22.org/gz/resource/Location/L654,654,AVENIDA DE LOS POBLADOS NUM 116
+http://www.group22.org/gz/resource/Location/L655,655,CALLE DE HILARIO HERRANZ ESTABLOS NUM 36
+http://www.group22.org/gz/resource/Location/L656,656,AVENIDA DE LOS POBLADOS NUM 122
+http://www.group22.org/gz/resource/Location/L657,657,CALLE DEL HALCONERO DEL REY C/V AV. DE LOS POBLADOS NUM 110
+http://www.group22.org/gz/resource/Location/L658,658,AUTOVÍA M-40 C/V AV.CARABANCHEL ALTO Y C/ VÍA LUSITANA
+http://www.group22.org/gz/resource/Location/L659,659,CALLE DE LAS ONCE VIGAS C/V AV. DE LA PESETA
+http://www.group22.org/gz/resource/Location/L660,660,CALLE DE ILDEFONSO GONZALEZ VALENCIA C/V M-40
+http://www.group22.org/gz/resource/Location/L661,661,CALLE DE LAS CATORCE OLIVAS NUM 2
+http://www.group22.org/gz/resource/Location/L662,662,AUTOVÍA M-40 C/V C/ VIA LUSITANA
+http://www.group22.org/gz/resource/Location/L663,663,CALLE DE LA TRESETA C/V C/ DEL REAL
+http://www.group22.org/gz/resource/Location/L664,664,PLAZA DE ALMODÓVAR NUM 2
+http://www.group22.org/gz/resource/Location/L665,665,CALLE DEL FAROLILLO NUM 2
+http://www.group22.org/gz/resource/Location/L666,666,CALLE DE ANTONIO DE LEYVA NUM 23
+http://www.group22.org/gz/resource/Location/L667,667,CALLE DE TEJARES NUM 3
+http://www.group22.org/gz/resource/Location/L668,668,CAMINO ALTO DE SAN ISIDRO NUM 1-27
+http://www.group22.org/gz/resource/Location/L604,604,CALLE DE CARONTE NUM 16
+http://www.group22.org/gz/resource/Location/L669,669,PASEO DEL QUINCE DE MAYO C/V C/ DE ANTONIO VICO
+http://www.group22.org/gz/resource/Location/L670,670,CALLE DE ROGER DE LAURIA NUM 1
+http://www.group22.org/gz/resource/Location/L671,671,CALLE DE CARONTE NUM 14
+http://www.group22.org/gz/resource/Location/L672,672,CALLE DE EL TOBOSO NUM 25
+http://www.group22.org/gz/resource/Location/L673,673,CALLE DE EL TOBOSO NUM 41
+http://www.group22.org/gz/resource/Location/L674,674,CALLE DE LA GUITARRA NUM 8-16
+http://www.group22.org/gz/resource/Location/L675,675,CALLE DE CAZALEGAS NUM 9
+http://www.group22.org/gz/resource/Location/L676,676,CALLE DE BALTANÁS NUM 17
+http://www.group22.org/gz/resource/Location/L677,677,CALLE DE NAVAHONDA NUM 7-15
+http://www.group22.org/gz/resource/Location/L678,678,AVENIDA POBLADOS NUM 107
+http://www.group22.org/gz/resource/Location/L679,679,AVENIDA POBLADOS NUM 113
+http://www.group22.org/gz/resource/Location/L680,680,CALLE BLASÓN NUM 28
+http://www.group22.org/gz/resource/Location/L681,681,CALLE DEL ARROYO OPAÑEL S/N C/V SANTA CATALINA LABOURE
+http://www.group22.org/gz/resource/Location/L682,682,RONDA DE LAS COOPERATIVAS NUM 6
+http://www.group22.org/gz/resource/Location/L683,683,AVENIDA DE RAFAELA YBARRA NUM 85
+http://www.group22.org/gz/resource/Location/L684,684,CALLE DEL TORERO NUM 6
+http://www.group22.org/gz/resource/Location/L685,685,CALLE DE CERECINOS NUM 1
+http://www.group22.org/gz/resource/Location/L686,686,CAMINO DE PERALES NUM 90
+http://www.group22.org/gz/resource/Location/L687,687,AVENIDA DE LOS ROSALES NUM 25
+http://www.group22.org/gz/resource/Location/L688,688,CALLE DE SILVINA NUM 35
+http://www.group22.org/gz/resource/Location/L689,689,CALLE DE PERIANA NUM 27
+http://www.group22.org/gz/resource/Location/L690,690,CALLE DEL OLIGISTO NUM 7
+http://www.group22.org/gz/resource/Location/L691,691,AVENIDA DE LOS ROSALES NUM 27
+http://www.group22.org/gz/resource/Location/L692,692,CALLE DEL SIMCA
+http://www.group22.org/gz/resource/Location/L693,693,CALLE DEL TIBURÓN NUM 2
+http://www.group22.org/gz/resource/Location/L694,694,ROTONDA C/ DEL SIMCA C/V C/ DEL CENSO NUM 7
+http://www.group22.org/gz/resource/Location/L695,695,CAMINO DE PERALES NUM 23
+http://www.group22.org/gz/resource/Location/L696,696,CALLE DE ORTIZ CAMPOS NUM 12
+http://www.group22.org/gz/resource/Location/L697,697,CALLE DE SAN RUPERTO NUM 7
+http://www.group22.org/gz/resource/Location/L698,698,CALLE DE EDUARDO BARREIROS NUM 1
+http://www.group22.org/gz/resource/Location/L699,699,CALLE POPULAR MADRILEÑA NUM 11
+http://www.group22.org/gz/resource/Location/L700,700,CALLE DE PRIMITIVA GAÑAN NUM 8
+http://www.group22.org/gz/resource/Location/L701,701,CALLE GAINZA NUM 317
+http://www.group22.org/gz/resource/Location/L702,702,CALLE FITERO NUM 7
+http://www.group22.org/gz/resource/Location/L703,703,AVENIDA SAN FERMÍN C/V CALLE ESTAFETA
+http://www.group22.org/gz/resource/Location/L704,704,CALLE OLIGISTO NUM 3
+http://www.group22.org/gz/resource/Location/L705,705,CALLE DOCTOR TOLOSA LATOUR NUM 9
+http://www.group22.org/gz/resource/Location/L706,706,CALLE JOSÉ BIELSA NUM 10
+http://www.group22.org/gz/resource/Location/L707,707,AVENIDA SAN FERMÍN C/V C/ ESTAFETA Y POPULAR MADRILEÑA
+http://www.group22.org/gz/resource/Location/L708,708,AVENIDA RAFAELA YBARRA NUM 93-103
+http://www.group22.org/gz/resource/Location/L709,709,AVENIDA DE LA ALBUFERA NUM 142
+http://www.group22.org/gz/resource/Location/L710,710,CALLE DE PEÑA GORBEA NUM 17 B
+http://www.group22.org/gz/resource/Location/L711,711,CALLE DE EMBAJADORES, 251 C/V RONDA DEL SUR, 8
+http://www.group22.org/gz/resource/Location/L712,712,CALLE DE FERNANDO GIRÁLDEZ FRENTE AL NUM 33-51
+http://www.group22.org/gz/resource/Location/L713,713,CALLE DEL TROLE NUM 7-9
+http://www.group22.org/gz/resource/Location/L714,714,CALLE DEL COCHERÓN DE LA VILLA NUM 17-25
+http://www.group22.org/gz/resource/Location/L715,715,CALLE DE EL YESERO NUM 5
+http://www.group22.org/gz/resource/Location/L716,716,CALLE DE EL YESERO NUM 3
+http://www.group22.org/gz/resource/Location/L717,717,CALLE DE EL YESERO NUM 1
+http://www.group22.org/gz/resource/Location/L718,718,AVENIDA DEL CONOCIMIENTO, Nº 2-30 C/V AUTOVÍA M-40
+http://www.group22.org/gz/resource/Location/L719,719,CALLE DE LA SIERRA DE TOLOÑO C/V AV. DE BUENOS AIRES NUM 9
+http://www.group22.org/gz/resource/Location/L720,720,PLAZA DE MARTINIEZ DE LA RIVA NUM 1-6
+http://www.group22.org/gz/resource/Location/L721,721,PLAZA DE MARTINIEZ DE LA RIVA NUM 7
+http://www.group22.org/gz/resource/Location/L722,722,PLAZA DE SIERRA CARBONERA
+http://www.group22.org/gz/resource/Location/L723,723,CALLE DE UCEDA NUM 66-78
+http://www.group22.org/gz/resource/Location/L724,724,CALLE DE RODRÍGUEZ ESPINOSA C/V C/ DE JUAN PORTAS
+http://www.group22.org/gz/resource/Location/L725,725,CALLE DE MONTES PIRINEOS C/V C/ DE EDUARDO ROJO
+http://www.group22.org/gz/resource/Location/L726,726,CALLE PUERTO DE LA BOINAGUA C/V MARTINEZ DE LA RIVA
+http://www.group22.org/gz/resource/Location/L727,727,CALLE DE LA PEÑA FALCONERA
+http://www.group22.org/gz/resource/Location/L728,728,CALLE DE MARTÍNEZ DE LA RIVA NUM 108
+http://www.group22.org/gz/resource/Location/L729,729,CALLE DE LA PEÑA AMAYA NUM 1-7
+http://www.group22.org/gz/resource/Location/L730,730,CALLE DOLORES FOLGUERAS C/V C/ PICO DE LA MALICIOSA
+http://www.group22.org/gz/resource/Location/L731,731,AVENIDA DE PABLO NERUDA NUM 18-26
+http://www.group22.org/gz/resource/Location/L732,732,AVENIDA DE PABLO NERUDA NUM 14-16
+http://www.group22.org/gz/resource/Location/L733,733,AVENIDA DE PABLO NERUDA NUM 2E-10
+http://www.group22.org/gz/resource/Location/L734,734,TRAVESIA DE FELIPE DE DIEGO NUM 2
+http://www.group22.org/gz/resource/Location/L735,735,TRAVESIA DE FELIPE DE DIEGO NUM 16
+http://www.group22.org/gz/resource/Location/L736,736,CAMINO DE VALDERRIBAS, FRENTE AL NUM 26
+http://www.group22.org/gz/resource/Location/L737,737,CAMINO DE VALDERRIBAS NUM 16-18
+http://www.group22.org/gz/resource/Location/L738,738,CALLE DEL IBOR NUM 11 A-C
+http://www.group22.org/gz/resource/Location/L739,739,CALLE DEL IBOR NUM 17-19
+http://www.group22.org/gz/resource/Location/L740,740,CALLE DEL DOCTOR BELLIDO NUM 21
+http://www.group22.org/gz/resource/Location/L741,741,CALLE DEL DOCTOR BELLIDO NUM 23
+http://www.group22.org/gz/resource/Location/L742,742,PLAZA DEL CINE
+http://www.group22.org/gz/resource/Location/L743,743,CALLE PUERTO DE BALBARÁN NUM 2-8
+http://www.group22.org/gz/resource/Location/L744,744,TRAVESIA DE PEDRO LABORDE NUM 1
+http://www.group22.org/gz/resource/Location/L745,745,CALLE PUERTO DE LA BONAIGUA NUM 20
+http://www.group22.org/gz/resource/Location/L746,746,AVENIDA DEL PADRE LLANOS NUM 12
+http://www.group22.org/gz/resource/Location/L747,747,CALLE DE LA COOPERATIVA ELÉCTRICA
+http://www.group22.org/gz/resource/Location/L748,748,AVENIDA RAFAEL ALBERTI NUM 38
+http://www.group22.org/gz/resource/Location/L749,749,CALLE DE JOSÉ BERGAMÍN NUM 1-5
+http://www.group22.org/gz/resource/Location/L750,750,CALLE DE MANUEL MARÍA ARRILAGA NUM 29 B
+http://www.group22.org/gz/resource/Location/L751,751,AVENIDA DEL DOCTOR GARCÍA TAPIA NUM 136
+http://www.group22.org/gz/resource/Location/L752,752,CALLE DEL ARROYO FONTARRON NUM 22
+http://www.group22.org/gz/resource/Location/L753,753,AVENIDA DE MORATALAZ NUM 183
+http://www.group22.org/gz/resource/Location/L754,754,CALLE ARROYO BELINCOSO C/V AV. DOCTOR GARCÍA TAPIA
+http://www.group22.org/gz/resource/Location/L755,755,CALLE DE MOLNA DE SEGURA, FRENTE AL NUM 19-31
+http://www.group22.org/gz/resource/Location/L756,756,AVENIDA DOCTOR GARCIA TAPIA 76 C/V C/ ARROYO BELINCOSO
+http://www.group22.org/gz/resource/Location/L757,757,CALLE PRIMAVERA DE PRAGA C/V C/CAMINO DE LOS VINATEROS NUM 11
+http://www.group22.org/gz/resource/Location/L758,758,CALLE DEL CAMINO DE LOS VINATEROS NUM 32
+http://www.group22.org/gz/resource/Location/L759,759,CALLE DE CARMEN AMAYA NUM 16
+http://www.group22.org/gz/resource/Location/L760,760,CALLE DEL CORREGIDOR DIEGO CABEZA DE VACA
+http://www.group22.org/gz/resource/Location/L761,761,CALLE DEL CAMINO DE LOS VINATEROS NUM 159-B
+http://www.group22.org/gz/resource/Location/L762,762,CALLE DEL CAMINO DE LOS VINATEROS NUM 30
+http://www.group22.org/gz/resource/Location/L753,753,AVENIDA DE MORATALAZ NUM 183
+http://www.group22.org/gz/resource/Location/L763,763,PLAZA DE MANUEL DE LA QUINTANA
+http://www.group22.org/gz/resource/Location/L764,764,CALLE DEL CAMINO DE LOS VINATEROS NUM 107-B
+http://www.group22.org/gz/resource/Location/L765,765,CALLE DE LA MARROQUINA NUM 70
+http://www.group22.org/gz/resource/Location/L766,766,AVENIDA DEL DOCTOR GACIA TAPIA NUM 51
+http://www.group22.org/gz/resource/Location/L767,767,CALLE DE RAMÓN ARECES NUM 1
+http://www.group22.org/gz/resource/Location/L768,768,CALLE DE FLANDES NUM 4
+http://www.group22.org/gz/resource/Location/L769,769,AVENIDA DEL DOCTOR GARCIA TAPIA NUM 59
+http://www.group22.org/gz/resource/Location/L770,770,CALLE DE LITUANIA NUM 3
+http://www.group22.org/gz/resource/Location/L771,771,CALLE DE ANTONIO CUMELLA NUM 6
+http://www.group22.org/gz/resource/Location/L772,772,CALLE DE LA CIUDAD ENCANTADA NUM 16
+http://www.group22.org/gz/resource/Location/L773,773,AVENIDA DEL DOCTOR GARCÍA TAPIA NUM 165
+http://www.group22.org/gz/resource/Location/L774,774,CALLE FUENTE CARRANTONA NUM 22
+http://www.group22.org/gz/resource/Location/L775,775,CALLE DE LOS MISTERIOS, C/V C/ DE ARTURO SORIA
+http://www.group22.org/gz/resource/Location/L776,776,CALLE DE ANTONIO PIRALA NUM 8
+http://www.group22.org/gz/resource/Location/L777,777,CALLE DE LUIS RUIZ NUM 29
+http://www.group22.org/gz/resource/Location/L778,778,AVENIDA DEL MARQUES DE CORBERA
+http://www.group22.org/gz/resource/Location/L779,779,AVENIDA DE DAROCA NUM 95
+http://www.group22.org/gz/resource/Location/L780,780,CALLE DE FÉLIX RODRÍGUEZ DE LA FUENTE NUM 26
+http://www.group22.org/gz/resource/Location/L781,781,CALLE DE JOSÉ DEL HIERRO NUM 1
+http://www.group22.org/gz/resource/Location/L782,782,CALLE DE SALVADOR DE MADARIAGA NUM 7
+http://www.group22.org/gz/resource/Location/L783,783,CALLE DE EZEQUIEL SOLANA NUM 47
+http://www.group22.org/gz/resource/Location/L784,784,CALLE DE SANTURCE NUM 64
+http://www.group22.org/gz/resource/Location/L785,785,CALLE DE GANDHI NUM 16
+http://www.group22.org/gz/resource/Location/L786,786,CALLE DE JAZMÍN NUM 37-55
+http://www.group22.org/gz/resource/Location/L787,787,CALLE DE COSTA RICA
+http://www.group22.org/gz/resource/Location/L788,788,CALLE DE SANTURCE NUM 32
+http://www.group22.org/gz/resource/Location/L789,789,CALLE DE LA VEREDA DEL CARMEN NUM 6
+http://www.group22.org/gz/resource/Location/L790,790,CALLE DE CALERUEGA NUM 52
+http://www.group22.org/gz/resource/Location/L791,791,CALLE DE JAZMÍN NUM 36
+http://www.group22.org/gz/resource/Location/L792,792,CALLE DE AGASTIA NUM 87
+http://www.group22.org/gz/resource/Location/L793,793,CALLE DE CALERUEGA NUM 65
+http://www.group22.org/gz/resource/Location/L794,794,CALLE DE ARTURO SORIA NUM 233
+http://www.group22.org/gz/resource/Location/L795,795,PLAZA DE BAMI C/V CALLE DE BENIDORM NUM 15
+http://www.group22.org/gz/resource/Location/L796,796,AVENIDA DEL MARQUES DE CORBERA C/V AV. DE DAROCA
+http://www.group22.org/gz/resource/Location/L797,797,CALLE DE SALVADOR DE MADARIAGA NUM 9
+http://www.group22.org/gz/resource/Location/L798,798,CALLE DEL DOCTOR CIRAJAS NUM 1
+http://www.group22.org/gz/resource/Location/L799,799,AVENIDA DE AMERICA C/V AV. DE CARONDELET
+http://www.group22.org/gz/resource/Location/L800,800,CALLE DE BACARES NUM 22
+http://www.group22.org/gz/resource/Location/L801,801,AVENIDA DE AMERICA C/V AV. DEL PAPA NEGRO
+http://www.group22.org/gz/resource/Location/L802,802,CALLE DEL MAR DEL JAPON, 7 C/V C/ DEL MAR MEDITERRÁNEO NUM 6
+http://www.group22.org/gz/resource/Location/L803,803,CALLE DE ULISES NUM 23NUM 23
+http://www.group22.org/gz/resource/Location/L804,804,AVENIDA DE LOGROÑO NUM 8
+http://www.group22.org/gz/resource/Location/L805,805,CAMINO DE LA HUERTA, 301 C/V C/ DEL PADRE ARRUPE
+http://www.group22.org/gz/resource/Location/L806,806,CALLE DE JULIO CARO BAROJA NUM 41
+http://www.group22.org/gz/resource/Location/L807,807,AVENIDA DE LOGROÑO NUM 10 F-J
+http://www.group22.org/gz/resource/Location/L808,808,CALLE DE ROQUETAS DE MAR
+http://www.group22.org/gz/resource/Location/L809,809,CALLE DE LA TORONGA NUM 1
+http://www.group22.org/gz/resource/Location/L810,810,CALLE DEL PINTOR LUCIO MUÑOZ NUM 3-35
+http://www.group22.org/gz/resource/Location/L811,811,CALLE ANA DE AUSTRIA 8, C/V C/ SANCHINARRO Y C/ DE OÑA
+http://www.group22.org/gz/resource/Location/L812,812,AVENIDA ING. EMILIO HERRERA C/V VICENTE BLASCO IBÁÑEZ
+http://www.group22.org/gz/resource/Location/L813,813,CALLE DE SANTA VIRGILIA NUM 17
+http://www.group22.org/gz/resource/Location/L814,814,CALLE DE RAFAELA APARICIO NUM 2
+http://www.group22.org/gz/resource/Location/L815,815,CALLE DE LAS PEONIAS NUM 2
+http://www.group22.org/gz/resource/Location/L816,816,CALLE DE MONTALBOS, FRENTE AL NUM 14
+http://www.group22.org/gz/resource/Location/L817,817,PLAZA DE GOLMAYO
+http://www.group22.org/gz/resource/Location/L818,818,AVENIDA DE FRANCISCO PI Y MARGALL C/V MARIA DE PORTUGAL
+http://www.group22.org/gz/resource/Location/L819,819,AVENIDA DE FRANCISCO PI Y MARGALL C/V C/ DE MARÍA TUDOR
+http://www.group22.org/gz/resource/Location/L820,820,AVENIDA DE ISABEL DE VALOIS NUM 16
+http://www.group22.org/gz/resource/Location/L821,821,CALLE ANA DE AUSTRIA C/V AV. FRANCISCO PI Y MARGALL
+http://www.group22.org/gz/resource/Location/L822,822,CALLE MARIA DE PORTUGAL 18 C/V CTRA. NACIONAL A1
+http://www.group22.org/gz/resource/Location/L823,823,AVENIDA FRANCISCO PI Y MARGALL C/V CTRA. NACIONAL A1
+http://www.group22.org/gz/resource/Location/L824,824,CALLE DE MARÍA DE PORTUGAL, 1 C/V CTRA. NACIONAL A1
+http://www.group22.org/gz/resource/Location/L825,825,CALLE DE LOS PADRES DOMINICOS NUM 3
+http://www.group22.org/gz/resource/Location/L826,826,CALLE DEL ARROYO DE VALDEVEBAS C/V CTRA. NACIONAL A1
+http://www.group22.org/gz/resource/Location/L827,827,CALLE DE MARTINA DIAZ NUM 4
+http://www.group22.org/gz/resource/Location/L828,828,AVENIDA DE NICETO ALCALÁ ZAMORA NUM 13
+http://www.group22.org/gz/resource/Location/L829,829,CALLE VICENTE BLASCO IBAÑEZ C/V C/ PADRES DOMINICOS
+http://www.group22.org/gz/resource/Location/L830,830,CALLE VICENTE BLASCO IBAÑEZ C/V AV. ING EMILIO HERRERA
+http://www.group22.org/gz/resource/Location/L831,831,CALLE VICENTE BLASCO IBAÑEZ C/V AV. FCO. PI Y MARGALL
+http://www.group22.org/gz/resource/Location/L832,832,AVENIDA DE NICETO ALCALA ZAMORA NUM 4
+http://www.group22.org/gz/resource/Location/L833,833,CALLE DE MARIA DE PORTUGAL NUM 28
+http://www.group22.org/gz/resource/Location/L834,834,CALLE DE LA INFANTA CATALINA MICAELA, FRENTE AL NUM 23
+http://www.group22.org/gz/resource/Location/L831,831,CALLE VICENTE BLASCO IBAÑEZ C/V AV. FCO. PI Y MARGALL
+http://www.group22.org/gz/resource/Location/L835,835,AVENIDA DE FRANCISCO PI Y MARGALL NUM 7
+http://www.group22.org/gz/resource/Location/L836,836,CALLE DE LA INFANTA CATALINA MICAELA, FRENTE AL NUM 33
+http://www.group22.org/gz/resource/Location/L837,837,CALLE DE MARÍA DE PORTUGAL NUM 24
+http://www.group22.org/gz/resource/Location/L838,838,CALLE DE MARIA TUDOR NUM 37
+http://www.group22.org/gz/resource/Location/L839,839,CALLE DE MARIA TUDOR NUM 32
+http://www.group22.org/gz/resource/Location/L840,840,CALLE DE MARÍA DE TUDOR NUM 10-30
+http://www.group22.org/gz/resource/Location/L841,841,CAMINO VIEJO DEL CURA
+http://www.group22.org/gz/resource/Location/L842,842,CALLE DE AGATHA CHRISTIE NUM 54-56
+http://www.group22.org/gz/resource/Location/L843,843,AVENIDA DE SAN LUIS NUM 27
+http://www.group22.org/gz/resource/Location/L844,844,AVENIDA DE LOGROÑO C/V AUTOVÍA M-40
+http://www.group22.org/gz/resource/Location/L845,845,AVENIDA DE LOGROÑO NUM 6
+http://www.group22.org/gz/resource/Location/L846,846,AVENIDA DE SAN LUIS NUM 23 B
+http://www.group22.org/gz/resource/Location/L847,847,CAMINO VIEJO DEL CURALÍMITE LA MORALEJA-ALCOBENDAS.
+http://www.group22.org/gz/resource/Location/L848,848,CAMINO DE LOS CENAGALES NUM 8
+http://www.group22.org/gz/resource/Location/L849,849,CALLE DEL TORENO NUM 2
+http://www.group22.org/gz/resource/Location/L850,850,CALLE DE CARMEN RICO GODOY NUM 94
+http://www.group22.org/gz/resource/Location/L851,851,CALLE DE CARMEN RICO GODOY NUM 134
+http://www.group22.org/gz/resource/Location/L852,852,CALLE DE CARMEN RICO GODOY NUM 9
+http://www.group22.org/gz/resource/Location/L853,853,CALLE DE CARMEN RICO GODOY NUM 11
+http://www.group22.org/gz/resource/Location/L854,854,CALLE DE CARMEN RICO GODOY NUM 35
+http://www.group22.org/gz/resource/Location/L855,855,CARRETERA DE LA ESTACIÓN DE HORTALEZA NUM 7
+http://www.group22.org/gz/resource/Location/L856,856,PLAZA ALCALDE MORENO TORRES C/V AV. FCO. PI Y MARGALL
+http://www.group22.org/gz/resource/Location/L857,857,CALLE DE ESTANISLAO GÓMEZ NUM 65-77
+http://www.group22.org/gz/resource/Location/L858,858,CALLE DEL PISUEÑA NUM 64
+http://www.group22.org/gz/resource/Location/L859,859,CALLE DE VILLAMIEL DE CÁCERES NUM 21
+http://www.group22.org/gz/resource/Location/L860,860,CALLE DE ACADEMOS NUM 15
+http://www.group22.org/gz/resource/Location/L861,861,CALLE DE ACADEMOS C/V AVENIDA DE LOGROÑOC/ ACADEMOS C/V AVDA. LOGROÑO.
+http://www.group22.org/gz/resource/Location/L862,862,CALLE DE RAFAELA APARICIO C/V AV. DE MARUJA MALLO
+http://www.group22.org/gz/resource/Location/L863,863,CALLE DE ROQUETAS DE MAR NUM 11
+http://www.group22.org/gz/resource/Location/L864,864,CALLE DE CALANDA NUM 30
+http://www.group22.org/gz/resource/Location/L865,865,AUTOVÍA M-40 C/V AVENIDA DE FRANCISCO PI Y MARGALL
+http://www.group22.org/gz/resource/Location/L866,866,CALLE DEL NEVADO DEL CUMBAL NUM 4
+http://www.group22.org/gz/resource/Location/L867,867,CALLE DEL MAR ADRIÁTICO NUM 12
+http://www.group22.org/gz/resource/Location/L868,868,CALLE DE ACONCAGUA NUM 2
+http://www.group22.org/gz/resource/Location/L869,869,CALLE DE GALAPA NUM 10
+http://www.group22.org/gz/resource/Location/L870,870,CALLE DE SANTA VIRGILIA NUM 12 B
+http://www.group22.org/gz/resource/Location/L871,871,CALLE DEL MAR DE LAS ANTILLAS NUM 8-10
+http://www.group22.org/gz/resource/Location/L872,872,AVENIDA DE LOS ANDES NUM 9
+http://www.group22.org/gz/resource/Location/L873,873,CALLE DEL OLIMPO NUM 31
+http://www.group22.org/gz/resource/Location/L874,874,AVENIDA DEL PAPA NEGRO NUM 123
+http://www.group22.org/gz/resource/Location/L875,875,PLAZA DE LÓPEZ DE LA PLATA
+http://www.group22.org/gz/resource/Location/L876,876,AVENIDA DE MACHUPICHU NUM 56
+http://www.group22.org/gz/resource/Location/L877,877,PLAZA DE MANUEL RODRIGO
+http://www.group22.org/gz/resource/Location/L878,878,CALLE DE RAFAEL ZUFRIATEGUI NUM 8-12
+http://www.group22.org/gz/resource/Location/L879,879,CALLE DE EL PROVENCIO NUM 8
+http://www.group22.org/gz/resource/Location/L880,880,CALLE DE EL PROVENCIO NUM 12
+http://www.group22.org/gz/resource/Location/L881,881,CALLE DE EL PROVENCIO NUM 16
+http://www.group22.org/gz/resource/Location/L882,882,PLAZA DE ANDRÉS JÁUREGUI
+http://www.group22.org/gz/resource/Location/L883,883,CALLE DE MIGUEL RIESCO NUM 16
+http://www.group22.org/gz/resource/Location/L884,884,CALLE DE JUAN CLEMENTE NUÑEZ NUM 60
+http://www.group22.org/gz/resource/Location/L885,885,AVENIDA DE LOS ANDES NUM 23
+http://www.group22.org/gz/resource/Location/L886,886,AVENIDA DE LOS ANDES NUM 25
+http://www.group22.org/gz/resource/Location/L887,887,GLORIETA DEL YUCATÁN NUM 1
+http://www.group22.org/gz/resource/Location/L888,888,AVENIDA DEL ARROYO SANTO C/V GLORIETA MAR CARIBE
+http://www.group22.org/gz/resource/Location/L889,889,AVENIDA DEL ARROYO SANTO C/V AVENIDA DE LOS ARCES
+http://www.group22.org/gz/resource/Location/L890,890,AVENIDA DEL ARROYO SANTO C/V AVENIDA DE LAS AZALEAS
+http://www.group22.org/gz/resource/Location/L891,891,CALLE DE MARÍA MOLINER NUM 6
+http://www.group22.org/gz/resource/Location/L892,892,CALLE DE ZENOBIA CAMPRUBÍ NUM 4
+http://www.group22.org/gz/resource/Location/L893,893,PLAZA DEL ALCALDE MORENO TORRES
+http://www.group22.org/gz/resource/Location/L894,894,CALLE DEL PRÍNCIPE CARLOS NUM 36
+http://www.group22.org/gz/resource/Location/L895,895,CALLE DE ELENA FORTÚN NUM 7
+http://www.group22.org/gz/resource/Location/L896,896,CALLE DE FERNANDO DE HIGUERAS NUM 55
+http://www.group22.org/gz/resource/Location/L897,897,CALLE DE FERNANDO DE HIGUERAS NUM 45
+http://www.group22.org/gz/resource/Location/L898,898,GLORIETA DE LUIS BLANCO SOLER
+http://www.group22.org/gz/resource/Location/L899,899,CALLE DE LUIS MARTÍNEZ FEDUCHI NUM 96
+http://www.group22.org/gz/resource/Location/L900,900,CALLE DE FRANCISCO UMBRAL NUM 41
+http://www.group22.org/gz/resource/Location/L901,901,PLAZA DE CASTO FERNÁNDEZ SHAW
+http://www.group22.org/gz/resource/Location/L902,902,PLAZA DE FERNANDO GARCÍA MERCADAL
+http://www.group22.org/gz/resource/Location/L903,903,CALLE DE FERNANDO DE HIGUERAS NUM 43
+http://www.group22.org/gz/resource/Location/L904,904,CALLE DE JORDI SOLÉ TURÁ NUM 36
+http://www.group22.org/gz/resource/Location/L905,905,CALLE DE JORDI SOLÉ TURÁ NUM 2-20
+http://www.group22.org/gz/resource/Location/L906,906,CALLE DE ESTANISLAO PÉREZ PUITA NUM 23-27
+http://www.group22.org/gz/resource/Location/L907,907,CALLE DE ANTONIO MIRÓ VALVERDE ENTRE AV SECUNDINO ZUAZ
+http://www.group22.org/gz/resource/Location/L908,908,CALLE DE FINA CALDERÓN ENTRE C/ DE FELIX CANDELA
+http://www.group22.org/gz/resource/Location/L909,909,CALLE DE FERNANDO DE HIGUERAS NUM 11
+http://www.group22.org/gz/resource/Location/L910,910,CALLE DE LOS HERMANOS GASCÓN NUM 76
+http://www.group22.org/gz/resource/Location/L911,911,CALLE DE JOSÉ ANTONIO CORDECH ENTRE C/FÉLIX CANDELA
+http://www.group22.org/gz/resource/Location/L912,912,CALLE DE JOSEFINA ALCOLEA ENTRE AV SECUNDINO ZUAZO
+http://www.group22.org/gz/resource/Location/L913,913,CALLE JOSEFINA ALCOLEA ENTRE AV JUAN ANTONIO SAMARANCH
+http://www.group22.org/gz/resource/Location/L914,914,CALLE DE ANTONIO MIRÓ VALVERDE ENTRE C/FÉLIX CANDELA
+http://www.group22.org/gz/resource/Location/L915,915,CALLE DE FINA CALDERÓN ENTRE AV DE JUAN ANTONIO SAMARA
+http://www.group22.org/gz/resource/Location/L916,916,CALLE DE JOSÉ ANTONIO CORDECH ENTRE AV SECUNDINO ZUAZO
+http://www.group22.org/gz/resource/Location/L917,917,CALLE DE FINA CALDERÓN ENTRE AV DE SECUNDINO ZUAZO
+http://www.group22.org/gz/resource/Location/L918,918,CALLE DE ANTONIO MIRÓ VALVERDE ENTRE C/ LEANDRO SILVA
+http://www.group22.org/gz/resource/Location/L919,919,CALLE DE JOSEFINA ALCOLEA ENTRE C/ FÉLIX CANDELA
+http://www.group22.org/gz/resource/Location/L920,920,CALLE DE LUIS MARTÍNEZ FEDUCHI NUM 64
+http://www.group22.org/gz/resource/Location/L921,921,CALLE DE ESTANISLAO PÉREZ PITA NUM 45
+http://www.group22.org/gz/resource/Location/L922,922,CALLE DE JORDI SOLÉ TURÁ NUM 34
+http://www.group22.org/gz/resource/Location/L923,923,CALLE DE JOSÉ ANTONIO FERNÁNDEZ ORDOÑEZ NUM 25
+http://www.group22.org/gz/resource/Location/L924,924,CALLE DE JUAN DANIEL FULLAONDO NUM 14
+http://www.group22.org/gz/resource/Location/L925,925,CALLE DE JOSEFINA ALCOLEA ENTRE C/ MARIA DE LAS MERCED
+http://www.group22.org/gz/resource/Location/L926,926,CALLE DE JOSE ANTONIO CORDECH ENTRE C/ MARÍA DE LAS ME
+http://www.group22.org/gz/resource/Location/L927,927,CALLE DE FINA CALDERÓN ENTRE C/ MARÍA DE LAS MERCEDES
+http://www.group22.org/gz/resource/Location/L928,928,CALLE DE ESTANISLAO PÉREZ PITA NUM 7
+http://www.group22.org/gz/resource/Location/L929,929,CALLE DE LA MAESTRA DOLORES MARCO NUM 10
+http://www.group22.org/gz/resource/Location/L930,930,CALLE DE JOSÉ ANTONIO FERNÁNDEZ ORDOÑEZ NUM 7
+http://www.group22.org/gz/resource/Location/L931,931,CALLE DE ROCÍO JURADO NUM 14
+http://www.group22.org/gz/resource/Location/L932,932,AVENIDA DE LAS FUERZAS ARMADAS NUM 206
+http://www.group22.org/gz/resource/Location/L933,933,CALLE DE ROCÍO JURADO NUM 30
+http://www.group22.org/gz/resource/Location/L934,934,AVENIDA DE LAS FUERZAS ARMADAS NUM 116
+http://www.group22.org/gz/resource/Location/L935,935,CALLE DE JOSÉ LUIS COLL NUM 3
+http://www.group22.org/gz/resource/Location/L936,936,CALLE DE ANTONIO FLOREZ C/V AV FCO JAVIER SÁENZ DE OIZ
+http://www.group22.org/gz/resource/Location/L937,937,CALLE DE ANOETA NUM 14 B
+http://www.group22.org/gz/resource/Location/L938,938,CALLE DE PALOMARES NUM 34
+http://www.group22.org/gz/resource/Location/L939,939,CALLE DE ANOETA NUM 45
+http://www.group22.org/gz/resource/Location/L940,940,CALLE DE BURJASOT NUM 1 A
+http://www.group22.org/gz/resource/Location/L941,941,CALLE INTERMEDIA SUR C/V C/ TRANSVERSAL SEXTA
+http://www.group22.org/gz/resource/Location/L942,942,CALLE PRINCIPAL NUM 26
+http://www.group22.org/gz/resource/Location/L943,943,CALLE INTERMEDIA NORTE C/V C/ TRANSVERSAL SEXTA
+http://www.group22.org/gz/resource/Location/L944,944,CALLE C/ TRANSVERSAL SEXTA C/V C/ PRINCIPAL
+http://www.group22.org/gz/resource/Location/L945,945,CALLE PRINCIPAL NUM 4
+http://www.group22.org/gz/resource/Location/L946,946,CALLE TRANSVERSAL SEXTA C/V C/ INTERMEDIA SUR
+http://www.group22.org/gz/resource/Location/L947,947,CALLE DE MARÍA CALLAS C/V C/ DE SELMA LAGERLOFF
+http://www.group22.org/gz/resource/Location/L948,948,CALLE DE CLARA SCHUMANN C/V C/ DE PILAR LORENGAR
+http://www.group22.org/gz/resource/Location/L949,949,CALLE DE JOSÉ PÉREZ NUM 3
+http://www.group22.org/gz/resource/Location/L950,950,CALLE DE LAGUNA DEL MARQUESADO C/V C/ DE SAN ERASMO NUM 38
+http://www.group22.org/gz/resource/Location/L951,951,CALLE DE LAGUNA DEL MARQUESADO C/V C/ DE SAN ERASMO NUM 19
+http://www.group22.org/gz/resource/Location/L952,952,CALLE DE LA RESINA NUM 27
+http://www.group22.org/gz/resource/Location/L953,953,CALLE DE LAGUNA DEL MARQUESADO C/V C/ DE SAN EUSTAQUIO NUM 22
+http://www.group22.org/gz/resource/Location/L954,954,CALLE DE LA RESINA NUM 25
+http://www.group22.org/gz/resource/Location/L955,955,CALLE DE LAGUNA DALGA C/V AVENIDA REAL DE PINTO
+http://www.group22.org/gz/resource/Location/L956,956,CALLE DE LAGUNA DEL MARQUESADO C/V C/ DE SAN ERASMO NUM 25
+http://www.group22.org/gz/resource/Location/L957,957,CALLE DE LAGUNA DEL MARQUESADO C/V C/ DE SAN EUSTAQUIO NUM 26
+http://www.group22.org/gz/resource/Location/L958,958,CALLE DE SAN EUSTAQUIO C/V C/ DE LAGUNA DEL MARQUESADO
+http://www.group22.org/gz/resource/Location/L959,959,CALLE DE LAGUNA DALGA
+http://www.group22.org/gz/resource/Location/L960,960,GLORIETA DE LA CALLE DE LAGUNA DEL MARQUESADO
+http://www.group22.org/gz/resource/Location/L961,961,CALLE DE LAS LENGUAS NUM 4
+http://www.group22.org/gz/resource/Location/L962,962,CALLE DE PILAR LORENGAR C/V C/ DE CAMPOS IBAÑEZ
+http://www.group22.org/gz/resource/Location/L963,963,CALLE CLARA SCHUMANN C/V CTRA. VILLAVERDE A VALLECAS NUM 8
+http://www.group22.org/gz/resource/Location/L964,964,CALLE DE CLARA SCHUMANN C/V C/ DE AUGUSTÓBRIGA NUM 13
+http://www.group22.org/gz/resource/Location/L965,965,CALLE DEL AMERICIO NUM 2
+http://www.group22.org/gz/resource/Location/L966,966,CALLE DE MIGUEL SOLAS NUM 6
+http://www.group22.org/gz/resource/Location/L967,967,CALLE DEL CABALLERO DE LA CRUZ NUM 2
+http://www.group22.org/gz/resource/Location/L968,968,CALLE DE AUGUSTÓBRIGA
+http://www.group22.org/gz/resource/Location/L969,969,AVENIDA DE LOS ROSALES NUM 93-111
+http://www.group22.org/gz/resource/Location/L970,970,CALLE DE LAGUNA DEL MARQUESADO C/V C/ DE SAN ERASMO NUM 44
+http://www.group22.org/gz/resource/Location/L958,958,CALLE DE SAN EUSTAQUIO C/V C/ DE LAGUNA DEL MARQUESADO
+http://www.group22.org/gz/resource/Location/L971,971,CALLE DE LA ACEBEDA NUM 2
+http://www.group22.org/gz/resource/Location/L972,972,CALLE DE LA ACEBEDA NUM 6
+http://www.group22.org/gz/resource/Location/L973,973,CALLE DE BERZOSA DE LOZOYA NUM 14
+http://www.group22.org/gz/resource/Location/L974,974,CALLE DE LA ACEBEDA NUM 32 POS
+http://www.group22.org/gz/resource/Location/L975,975,CALLE DE LA ACEBEDA NUM 32
+http://www.group22.org/gz/resource/Location/L976,976,CALLE DE LA ACEBEDA C/V FF.CC.
+http://www.group22.org/gz/resource/Location/L977,977,CALLE DE LA ACEBEDA, NUMERO 34-54 POSTERIOR
+http://www.group22.org/gz/resource/Location/L978,978,AVENIDA DE LOS ROSALES, 123-125
+http://www.group22.org/gz/resource/Location/L979,979,CALLE DE SAN JENARO NUM 2 A
+http://www.group22.org/gz/resource/Location/L980,980,CALLE DE SAN JENARO NUM 2 E
+http://www.group22.org/gz/resource/Location/L981,981,PLAZA DE LAS SUFRAGISTAS
+http://www.group22.org/gz/resource/Location/L982,982,CALLE DE SANTA PETRONILA NUM 20
+http://www.group22.org/gz/resource/Location/L983,983,CALLE DE SANTA PETRONILA NUM 21
+http://www.group22.org/gz/resource/Location/L984,984,CALLE DE LA PÍCARA MOLINERA CV C/ASOMBRO DE DAMASCO
+http://www.group22.org/gz/resource/Location/L985,985,CALLE DE LA ALIANZA NUM 14
+http://www.group22.org/gz/resource/Location/L986,986,PLAZA DE LOS METALES C/V C/ DE LA ESTEFANITA
+http://www.group22.org/gz/resource/Location/L987,987,PLAZA DE LOS METALES C/V C/ DE HULLA
+http://www.group22.org/gz/resource/Location/L988,988,CALLE DE LA ESMALTINA
+http://www.group22.org/gz/resource/Location/L989,989,CALLE DEL BERROCAL NUM 2-10
+http://www.group22.org/gz/resource/Location/L990,990,CALLE DEL BERROCAL NUM 12-30
+http://www.group22.org/gz/resource/Location/L991,991,CALLE DEL BERROCAL NUM 32-50
+http://www.group22.org/gz/resource/Location/L992,992,CALLE DEL BERROCAL NUM 52-72
+http://www.group22.org/gz/resource/Location/L993,993,CALLE ZAFIRO NUM 8
+http://www.group22.org/gz/resource/Location/L994,994,CALLE ZAFIRO NUM 6
+http://www.group22.org/gz/resource/Location/L995,995,CALLE DE LA PÍCARA MOLINERA CV C/EL LUCERO DEL ALBA
+http://www.group22.org/gz/resource/Location/L996,996,CALLE DE LA PÍCARA MOLINERA CV C/EL CASERÍO
+http://www.group22.org/gz/resource/Location/L997,997,CALLE DE LA PÍCARA MOLINERA CV C/DE LA CALESERA
+http://www.group22.org/gz/resource/Location/L998,998,CALLE DE LA TABERNERA DEL PUERTO C/V EDUARDO BARREIROS
+http://www.group22.org/gz/resource/Location/L999,999,CALLE DE LA TABERNERA DEL PUERTO C/V DE LA CALESERA
+http://www.group22.org/gz/resource/Location/L1000,1000,CALLE DE CIFUENTES NUM 5
+http://www.group22.org/gz/resource/Location/L1001,1001,CALLE DE BOETTICHER Y NAVARRO NUM 31
+http://www.group22.org/gz/resource/Location/L1002,1002,CALLE DE BABILAFUENTE NUM 2
+http://www.group22.org/gz/resource/Location/L1003,1003,CALLE DE TORREDONJIMENO
+http://www.group22.org/gz/resource/Location/L1004,1004,CAMINO DE LA SUERTE
+http://www.group22.org/gz/resource/Location/L1005,1005,CALLE DEL PUERTO DE IDIAZABAL NUM 14-16
+http://www.group22.org/gz/resource/Location/L1006,1006,PASEO FEDERICO GARCIA LORCA NUM 6-8
+http://www.group22.org/gz/resource/Location/L1007,1007,CALLE DE PEDROSA DEL PRÍNCIPE NUM 6
+http://www.group22.org/gz/resource/Location/L1008,1008,CALLE DEL CONGOSTO NUM 74
+http://www.group22.org/gz/resource/Location/L1009,1009,CALLE DE TORRE DE JUAN ABAD NUM 10
+http://www.group22.org/gz/resource/Location/L1010,1010,CALLE DE TORRE DE JUAN ABAD NUM 3
+http://www.group22.org/gz/resource/Location/L1011,1011,CALLE DE LA PEÑA CERVERA NUM 8
+http://www.group22.org/gz/resource/Location/L1012,1012,CALLE DEL CONGOSTO C/V C/ DE VILLAR DEL POZO
+http://www.group22.org/gz/resource/Location/L1013,1013,CALLE DE TORREDONJIMENO NUM 6
+http://www.group22.org/gz/resource/Location/L1014,1014,CALLE DEL CONGOSTO C/V AV. DE LA VILLA DE VALLECAS NUM 17
+http://www.group22.org/gz/resource/Location/L1015,1015,AVENIDA DE LA VILLA DE VALLECAS
+http://www.group22.org/gz/resource/Location/L1016,1016,CARRETERA DE VILLAVERDE A VALLECAS NUM 283
+http://www.group22.org/gz/resource/Location/L1017,1017,CARRETERA VILLAVERDE A VALLECAS C/V C/ CABEZA MESADA
+http://www.group22.org/gz/resource/Location/L1018,1018,CALLE PEÑARANDA DE BRACAMONTE C/V AV. DE LAS SUERTES
+http://www.group22.org/gz/resource/Location/L1019,1019,CALLE REAL DE ARGANDA NUM 52
+http://www.group22.org/gz/resource/Location/L1020,1020,AVENIDA DE LA GAVIA, FRENTE AL NUM 43
+http://www.group22.org/gz/resource/Location/L1021,1021,CALLE DE VILLALUENGA DE LA SAGRA NUM 11
+http://www.group22.org/gz/resource/Location/L1022,1022,CALLE REAL DE ARGANDA 68 C/V AV. DEL ENSANCHE VALLECAS
+http://www.group22.org/gz/resource/Location/L1023,1023,AVENIDA DE LA GAVIA C/V C/ DE VILLAMAYOR DE SANTIAGO
+http://www.group22.org/gz/resource/Location/L1024,1024,CALLE MORATILLA DE HENARES C/V C/ CORRAL DE ALMAGUER
+http://www.group22.org/gz/resource/Location/L1025,1025,AVENIDA DEL ENSANCHE DE VALLECAS C/V AVDA DE LA GAVIA
+http://www.group22.org/gz/resource/Location/L1026,1026,CALLE REAL DE ARGANDA NUM 72
+http://www.group22.org/gz/resource/Location/L1027,1027,CALLE DE VILLALUENGA DE LA SAGRA NUM 3
+http://www.group22.org/gz/resource/Location/L1028,1028,CALLE DE VILLALUENGA DE LA SAGRA NUM 7
+http://www.group22.org/gz/resource/Location/L1029,1029,AVENIDA DE LAS SUERTES C/V C/ DE ENTREPEÑAS
+http://www.group22.org/gz/resource/Location/L1030,1030,AVENIDA DE LAS SUERTES C/V C/ BARRANCO DEL NOVILLO
+http://www.group22.org/gz/resource/Location/L1031,1031,CALLE DE VILLALUENGA DE LA SAGRA NUM 24
+http://www.group22.org/gz/resource/Location/L1032,1032,CALLE DE LA PUEBLANUEVA NUM 44
+http://www.group22.org/gz/resource/Location/L1033,1033,CALLE DE CORRAL DE ALMAGUER NUM 29
+http://www.group22.org/gz/resource/Location/L1034,1034,CALLE DE LA PUEBLANUEVA NUM 43
+http://www.group22.org/gz/resource/Location/L1035,1035,AVENIDA DEL ENSANCHE DE VALLECAS C/V M-45
+http://www.group22.org/gz/resource/Location/L1036,1036,AVENIDA VILLA DE VALLECAS C/V AV. DEL CERRO MILANO
+http://www.group22.org/gz/resource/Location/L1037,1037,AVENIDA VILLA DE VALLECAS C/V AVENIDA DE LA GAVIA
+http://www.group22.org/gz/resource/Location/L1038,1038,CALLE DE ESTREMERA NUM 11
+http://www.group22.org/gz/resource/Location/L1039,1039,CALLE DE PUENTEDEY NUM 5
+http://www.group22.org/gz/resource/Location/L1040,1040,CALLE DE ENTREPEÑAS NUM 53
+http://www.group22.org/gz/resource/Location/L1041,1041,AVENIDA DEL CERRO MILANO C/V C/ PEÑARANDA DE BRACAMONTE NUM 54
+http://www.group22.org/gz/resource/Location/L1042,1042,AVENIDA DEL CERRO MILANO C/V AV. DE LA GAVIA
+http://www.group22.org/gz/resource/Location/L1043,1043,AVENIDA DEL CERRO MILANO C/V C/ PEÑARANDA DE BRACAMONTE
+http://www.group22.org/gz/resource/Location/L1042,1042,AVENIDA DEL CERRO MILANO C/V AV. DE LA GAVIA
+http://www.group22.org/gz/resource/Location/L1044,1044,AVENIDA DEL MAYORAZGO C/V C/ DE SERRANILLOS DEL VALLE
+http://www.group22.org/gz/resource/Location/L1045,1045,CALLE DE PEÑARANDA DE BRACAMONTE C/V AV CERRO MILANO
+http://www.group22.org/gz/resource/Location/L1046,1046,CAMINO DEL SANTÍSIMO (LATERAL ENTRE M-45 Y AV C.MILANO)
+http://www.group22.org/gz/resource/Location/L1047,1047,AVENIDA DE LA VILLA DE VALLECAS NUM 13
+http://www.group22.org/gz/resource/Location/L1048,1048,AVENIDA DEL CERRO MILANO C/V C/ DE TALAMANCA DEL JARAMA
+http://www.group22.org/gz/resource/Location/L1049,1049,AVENIDA VILLA DE VALLECAS C/V AV. ENSANCHE DE VALLECAS
+http://www.group22.org/gz/resource/Location/L1050,1050,CALLE DE ENTREPEÑAS NUM 66
+http://www.group22.org/gz/resource/Location/L1051,1051,CALLE DE VILLAMAYOR DE SANTIAGO NUM 25
+http://www.group22.org/gz/resource/Location/L1052,1052,CALLE CORRAL DE ALMAGUER C/V C/ VILLAMAYOR DE SANTIAGO
+http://www.group22.org/gz/resource/Location/L1053,1053,CALLE DE BAÑOS DE VALDEARADOS NUM 4
+http://www.group22.org/gz/resource/Location/L1054,1054,AVENIDA DEL CERRO MILANO NUM 6
+http://www.group22.org/gz/resource/Location/L1055,1055,AVENIDA DEL CERRO MILANO, FRENTE AL NUM 3
+http://www.group22.org/gz/resource/Location/L1056,1056,CAMINO DEL SANTÍSIMO (LATERAL ENTRE M-45 Y AV. SUERTES)
+http://www.group22.org/gz/resource/Location/L1057,1057,AVENIDA DEL CERRO MILANO NUM 22
+http://www.group22.org/gz/resource/Location/L1058,1058,CALLE DE MAZATERÓN NUM 1
+http://www.group22.org/gz/resource/Location/L1059,1059,CALLE DE ENTREPEÑAS NUM 25
+http://www.group22.org/gz/resource/Location/L1060,1060,CALLE DE ENTREPEÑAS NUM 43
+http://www.group22.org/gz/resource/Location/L1040,1040,CALLE DE ENTREPEÑAS NUM 53
+http://www.group22.org/gz/resource/Location/L1061,1061,AVENIDA ENSANCHE DE VALLECAS C/V AVENIDA DE LAS SUERTES
+http://www.group22.org/gz/resource/Location/L1062,1062,POBLADO DE ALTAMIRAPOBLADO ALTAMIRA S/N.
+http://www.group22.org/gz/resource/Location/L1063,1063,CAMINO DE VASARES NUM 4
+http://www.group22.org/gz/resource/Location/L1064,1064,CAMINO DE VASARES NUM 2C/ FELIPE ÁLVAREZ C/V C/ PUERTO DEL BRUCH.
+http://www.group22.org/gz/resource/Location/L1065,1065,AVENIDA DE SANTA EUGENIA NUM 1A
+http://www.group22.org/gz/resource/Location/L1066,1066,CALLE DEL MONTE DE MONTJUICH NUM 7
+http://www.group22.org/gz/resource/Location/L1067,1067,CAMINO DE VASARES
+http://www.group22.org/gz/resource/Location/L1068,1068,CALLE DE ZAZUAR NUM 1
+http://www.group22.org/gz/resource/Location/L1069,1069,CALLE DE LA VIRGEN DE LAS VIÑAS NUM 15
+http://www.group22.org/gz/resource/Location/L1070,1070,CALLE DE PUENTELARRA NUM 12-16
+http://www.group22.org/gz/resource/Location/L1071,1071,CALLE DE POZA DE LA SAL, 2 Y C/ FUENTESPINA, 29 A
+http://www.group22.org/gz/resource/Location/L1072,1072,CALLE DE LA SIERRA GADOR NUM 7 A
+http://www.group22.org/gz/resource/Location/L1073,1073,AVENIDA DEL CERRO MILANO C/V CAMINO DE VALDECULEBRA
+http://www.group22.org/gz/resource/Location/L1074,1074,CALLE DE LA CAÑADA DEL SANTÍSIMO NUM 45
+http://www.group22.org/gz/resource/Location/L1075,1075,CALLE DE CONGOSTO NUM 39
+http://www.group22.org/gz/resource/Location/L1075,1075,CALLE DE CONGOSTO NUM 39
+http://www.group22.org/gz/resource/Location/L1075,1075,CALLE DE CONGOSTO NUM 39
+http://www.group22.org/gz/resource/Location/L1076,1076,AVENIDA DE LA VILLA DE VALLECAS C/V C/ MAPLICA DE TAJO
+http://www.group22.org/gz/resource/Location/L1077,1077,AVENIDA ENSANCHE DE VALLECAS C/V C/ J. GUTIERREZ MAROTO
+http://www.group22.org/gz/resource/Location/L1078,1078,AVENIDA DEL ENSANCHE DE VALLECAS NUM 69
+http://www.group22.org/gz/resource/Location/L1079,1079,CALLE DE JOSÉ GUTIERREZ MAROTO NUM 13
+http://www.group22.org/gz/resource/Location/L1080,1080,CALLE DE RAFAEL DE LEÓN NUM 14
+http://www.group22.org/gz/resource/Location/L1081,1081,CALLE DE RAFAEL DE LEÓN NUM 17
+http://www.group22.org/gz/resource/Location/L1082,1082,CALLE DE LA CAÑADA DEL SANTÍSIMO NUM 36
+http://www.group22.org/gz/resource/Location/L1083,1083,AVENIDA DEL ENSANCHE DE VALLECAS C/V AV. CERRO MILANO NUM 33
+http://www.group22.org/gz/resource/Location/L1084,1084,CALLE DE LA CAÑADA DEL SANTÍSIMO, FRENTE AL Nº. 46
+http://www.group22.org/gz/resource/Location/L1085,1085,CALLE DE LA CAÑADA DEL SANTÍSIMO, FRENTE AL Nº. 56
+http://www.group22.org/gz/resource/Location/L1086,1086,AVENIDA DEL CERRO MILANO C/V AUTOVÍA M-45
+http://www.group22.org/gz/resource/Location/L1087,1087,CALLE DE BERNARDINO DE PANTORBA NUM 18
+http://www.group22.org/gz/resource/Location/L1088,1088,AVENIDA DE SALMEDINA C/V C/ DE LA CAÑADA DEL SANTÍSIMO
+http://www.group22.org/gz/resource/Location/L1089,1089,AVENIDA DE SALMEDINA C/V C/ DE JOSE GUTIERREZ MAROTO
+http://www.group22.org/gz/resource/Location/L1090,1090,CALLE DE JOSÉ GUTIÉRREZ MAROTO C/V C/ DE JOSÉ TAMAYO
+http://www.group22.org/gz/resource/Location/L1091,1091,CALLE DE SIERRA VIEJA NUM 38
+http://www.group22.org/gz/resource/Location/L1092,1092,CALLE DE VILLAR DEL OLMO C/V C/ ROZAS DE PUERTO REAL
+http://www.group22.org/gz/resource/Location/L1093,1093,CALLE VILLAR DEL OLMO C/V MARTÍN MUÑOZ DE LAS POSADAS NUM 3
+http://www.group22.org/gz/resource/Location/L1094,1094,CALLE DE TINEO NUM 2 Y 4
+http://www.group22.org/gz/resource/Location/L1095,1095,AVENIDA DEL MAYORAZGO C/V BULEVAR DE LA NATURALEZA
+http://www.group22.org/gz/resource/Location/L1096,1096,CALLE DE VALDERREBOLLO NUM 3
+http://www.group22.org/gz/resource/Location/L1097,1097,CALLE VALDERREBOLLO Nº8 C/V C/ DE TINEO NUM 3
+http://www.group22.org/gz/resource/Location/L1098,1098,AVENIDA DEL MAYORAZGO NUM 26
+http://www.group22.org/gz/resource/Location/L1099,1099,AVENIDA DEL MAYORAZGO C/V AV/ DE LA GAVIA
+http://www.group22.org/gz/resource/Location/L1100,1100,BULEVAR DE LA NATURALEZA NUM 33
+http://www.group22.org/gz/resource/Location/L1101,1101,AVENIDA DEL MAYORAZGO C/V C/ DE CASTEJÓN DE HENARES
+http://www.group22.org/gz/resource/Location/L1102,1102,AVENIDA DEL MAYORAZGO C/V C/ DEL PUERTO DE PORZUNA
+http://www.group22.org/gz/resource/Location/L1103,1103,AVENIDA DEL MAYORAZGO C/V C/ DE VILLAMANTA NUM 25
+http://www.group22.org/gz/resource/Location/L1104,1104,AVENIDA DE LA VILLA DE VALLECAS C/V AV. DEL CERRO MILANO
+http://www.group22.org/gz/resource/Location/L1105,1105,AVENIDA DEL MAYORAZGO C/V C/ DE TALAMANCA DEL JARAMA
+http://www.group22.org/gz/resource/Location/L1106,1106,AVENIDA DEL MAYORAZGO C/V CAMINO DEL SANTÍSIMO
+http://www.group22.org/gz/resource/Location/L1107,1107,CALLE GRANJA DE SAN ILDEFONSO C/V C/ PUERTO DE PORZUNA
+http://www.group22.org/gz/resource/Location/L1108,1108,CALLE ROZAS DEL PUERTO REAL C/V C/ SIERRA DE PALOMERAS
+http://www.group22.org/gz/resource/Location/L1109,1109,CALLE DE HONRUBIA C/V C/ DE ALMONTE
+http://www.group22.org/gz/resource/Location/L1110,1110,CALLE DE ALMONTE C/V C/ DE TINEO
+http://www.group22.org/gz/resource/Location/L1111,1111,CALLE BULEVAR DE LA NATURALEZA C/V C/ DE HONRUBIA
+http://www.group22.org/gz/resource/Location/L1110,1110,CALLE DE ALMONTE C/V C/ DE TINEO
+http://www.group22.org/gz/resource/Location/L1109,1109,CALLE DE HONRUBIA C/V C/ DE ALMONTE
+http://www.group22.org/gz/resource/Location/L1112,1112,BULEVAR DE LA NATURALEZA C/V C/ DE TINEO
+http://www.group22.org/gz/resource/Location/L1113,1113,CALLE DEL ALTO DEL RETIRO NUM 4
+http://www.group22.org/gz/resource/Location/L1114,1114,CALLE DE ANTONIO GADES C/V AV. DE LAS SUERTES
+http://www.group22.org/gz/resource/Location/L1115,1115,CALLE DE ANTONIO GADES C/V CAMINO DEL SANTÍSIMO
+http://www.group22.org/gz/resource/Location/L1116,1116,CALLE J.A. REBOLLEDO Y PALMA C/V C/ PRINCESA KAPURTALA
+http://www.group22.org/gz/resource/Location/L1117,1117,CALLE DE JOSÉ ANTONIO REBOLLEDO Y PALMA NUM 23
+http://www.group22.org/gz/resource/Location/L1118,1118,AVENIDA DEL CERRO MILANO C/V C/ DEL ARTE EXPRESIONISTA
+http://www.group22.org/gz/resource/Location/L1119,1119,AVENIDA CERRO MILANO C/V CAMINO VIEJO DE LA CANTERA
+http://www.group22.org/gz/resource/Location/L1120,1120,CALLE CARDENAL V. ENRIQUE T. C/V C/ PILAR DE MADARIAGA
+http://www.group22.org/gz/resource/Location/L1121,1121,AVENIDA DEL CERRO MILANO C/V C/ DEL ARTE POP
+http://www.group22.org/gz/resource/Location/L1122,1122,CALLE DEL ARTE FIGURATIVO C/V DEL ARTE EXPRESIONISTA
+http://www.group22.org/gz/resource/Location/L1123,1123,AVENIDA DE VALDECULEBRAS NUM 134
+http://www.group22.org/gz/resource/Location/L1124,1124,CALLE ARTE FIGURATIVO C/V C/ DE LA ESCUELA DE VALLECAS
+http://www.group22.org/gz/resource/Location/L1125,1125,AVENIDA DE LA GRAN VÍA DEL SURESTE NUM 45
+http://www.group22.org/gz/resource/Location/L1126,1126,AVENIDA DE LAS SUERTES C/V C/ PILAR DE MADARIAGA ROJO
+http://www.group22.org/gz/resource/Location/L1127,1127,AVENIDA SUERTES C/V C/ CARDENAL VICENTE ENRIQUE TARANCON
+http://www.group22.org/gz/resource/Location/L1128,1128,CALLE CARDENAL V ENRIQUE T. C/V PRINCESA DE KAPURTALA
+http://www.group22.org/gz/resource/Location/L1129,1129,AVENIDA GRAN VÍA DEL SURESTE C/V C/ CERRO DEL MURMULLO
+http://www.group22.org/gz/resource/Location/L1130,1130,CALLE DEL MAESTRO GARCÍA NAVARRO
+http://www.group22.org/gz/resource/Location/L1131,1131,CALLE DE LA PRINCESA DE KAPURTALA
+http://www.group22.org/gz/resource/Location/L1132,1132,AVENIDA DE LAS SUERTES C/V AV. DEL ENSANCHE DE VALLECAS
+http://www.group22.org/gz/resource/Location/L1133,1133,AVENIDA DE SALMEDINA C/V C/ DEL EMBALSE DE SAN JUAN
+http://www.group22.org/gz/resource/Location/L1134,1134,AVENIDA DE LAS SUERTES NUM 100
+http://www.group22.org/gz/resource/Location/L1135,1135,CALLE DE ADOLFO MARSILLACH NUM 4
+http://www.group22.org/gz/resource/Location/L1136,1136,CALLE DE SILVINA OCAMPO C/V C/ DE ANTONIO GADES
+http://www.group22.org/gz/resource/Location/L1137,1137,CALLE DE LA ESCUELA DE VALLECAS FRENTE AL NUM 45
+http://www.group22.org/gz/resource/Location/L1138,1138,CALLE ALEJANDO HUMBOLT C/V C/ FERNANDO CHUECA GOITIA NUM 72
+http://www.group22.org/gz/resource/Location/L1139,1139,CALLE DE ANTONIO GADES NUM 47
+http://www.group22.org/gz/resource/Location/L1140,1140,CALLE DE ADOLFO MARSILLACH NUM 46
+http://www.group22.org/gz/resource/Location/L1141,1141,CALLE EMBALSE DE S. JUAN C/V AV. ENSANCHE DE VALLECAS
+http://www.group22.org/gz/resource/Location/L1142,1142,CALLE EMBALSE DE NAVACERRADA C/V C/ EMBALSE DE PINILLA
+http://www.group22.org/gz/resource/Location/L1143,1143,CALLE EMBALSE DE NAVACERRADA C/V AV. ENSANCHE VALLECAS
+http://www.group22.org/gz/resource/Location/L1144,1144,CALLE DEL EMBALSE DE SAN JUAN C/V AV. DE SALMEDINA
+http://www.group22.org/gz/resource/Location/L1145,1145,AVENIDA DEL CERRO MILANO NUM 303
+http://www.group22.org/gz/resource/Location/L1146,1146,AVENIDA DE SALMEDINA C/V C/ DE ANTONIO GADES
+http://www.group22.org/gz/resource/Location/L1147,1147,AVENIDA DE SALMEDINA C/V AV. DEL CERRO MILANO
+http://www.group22.org/gz/resource/Location/L1148,1148,AVENIDA DEL CERRO MILANO C/V CAMINO DEL SANTÍSIMO
+http://www.group22.org/gz/resource/Location/L1149,1149,AVENIDA GRAN VÍA DEL SURESTE C/V C/ EDUARDO CHILLIDA
+http://www.group22.org/gz/resource/Location/L1150,1150,AVENIDA DE LAS SUERTES C/V C/ DE ADOLFO MARSILLACH
+http://www.group22.org/gz/resource/Location/L1151,1151,CALLE DE EL EMBALSE DE EL VELLÓN
+http://www.group22.org/gz/resource/Location/L1152,1152,AVENIDA SALMEDINA C/V C/ DEL EMBALSE DE SAN JUAN
+http://www.group22.org/gz/resource/Location/L1153,1153,AVENIDA DE VALDECULEBRAS NUM 228
+http://www.group22.org/gz/resource/Location/L1154,1154,AVENIDA DE VALDECULEBRAS NUM 186
+http://www.group22.org/gz/resource/Location/L1155,1155,AVENIDA DE LAS SUERTES NUM 104
+http://www.group22.org/gz/resource/Location/L1156,1156,CALLE DE SILVINA OCAMPO C/V C/ DE ADOLFO MARSILLACH
+http://www.group22.org/gz/resource/Location/L1157,1157,CALLE DE ALEJANDRO HUMBOLT C/V C/ DE ADOLFO MARSILLACH
+http://www.group22.org/gz/resource/Location/L1158,1158,AVENIDA DE LA GRAN VÍA DEL SURESTE NUM 47
+http://www.group22.org/gz/resource/Location/L1159,1159,CALLE DEL ALTO DEL RETIRO C/V CAMINO DEL SANTÍSIMO
+http://www.group22.org/gz/resource/Location/L1160,1160,AVENIDA DE LAS SUERTES C/V AUTOVÍA M-45
+http://www.group22.org/gz/resource/Location/L1161,1161,CALLE DE LA CAÑADA DEL SANTÍSIMO NUM 16
+http://www.group22.org/gz/resource/Location/L1162,1162,AVENIDA DE LAS SUERTES C/V C/ DE LA CAÑADA DEL SANTÍSIMO
+http://www.group22.org/gz/resource/Location/L1163,1163,CALLE DEL ALTO DEL RETIRO C/V AV. DE LAS SUERTES
+http://www.group22.org/gz/resource/Location/L1164,1164,CALLE DE LA CAÑADA DEL SANTÍSIMO NUM 11
+http://www.group22.org/gz/resource/Location/L1165,1165,AVENIDA DE LAS SUERTES NUM 80
+http://www.group22.org/gz/resource/Location/L1166,1166,AVENIDA DE LAS SUERTES NUM 60
+http://www.group22.org/gz/resource/Location/L1167,1167,CALLE DEL ALTO DEL RETIRO C/V C/ JUAN ANTONIO BARDEM NUM 1
+http://www.group22.org/gz/resource/Location/L1168,1168,CALLE JOSÉ GUTIÉRREZ MAROTO C/V AV. DE LAS SUERTES
+http://www.group22.org/gz/resource/Location/L1169,1169,AVENIDA DE LA GAVIA, FRENTE AL Nº 25
+http://www.group22.org/gz/resource/Location/L1170,1170,CALLE CASTEJÓN DE HENARES C/V CTRA VILLAVERDE-VALLECAS
+http://www.group22.org/gz/resource/Location/L1171,1171,CALLE DE EL SITIO DE BALER
+http://www.group22.org/gz/resource/Location/L1172,1172,AVENIDA DEL MAYORAZGO, FRENTE AL Nº 8
+http://www.group22.org/gz/resource/Location/L1173,1173,CALLE DE ZAZUAR NUM 22
+http://www.group22.org/gz/resource/Location/L1174,1174,CALLE DE LA ISLA DE GUAM NUM 38
+http://www.group22.org/gz/resource/Location/L1175,1175,AVENIDA DE CANILLEJAS A VICÁLVARO C/V C/ DE VILLABLANCA
+http://www.group22.org/gz/resource/Location/L1176,1176,AVENIDA DE DAROCA, NÚM. 299 POSTERIOR
+http://www.group22.org/gz/resource/Location/L1177,1177,AVENIDA DE DAROCA NUM 299
+http://www.group22.org/gz/resource/Location/L1178,1178,AUTOVÍA M-40 C/V AUTOPISTA R-3
+http://www.group22.org/gz/resource/Location/L1179,1179,AUTOVÍA M-40 C/V PARCELA SUR DEL CAMINO DE LOS LEÑEROS
+http://www.group22.org/gz/resource/Location/L1180,1180,AUTOVÍA M-40 C/V PARCELA NORTE DEL CAMINO DE LOS LEÑEROS
+http://www.group22.org/gz/resource/Location/L1181,1181,AVENIDA DE DAROCA NUM 301
+http://www.group22.org/gz/resource/Location/L1182,1182,CALLE DE SAN CIPRIANO NUM 27
+http://www.group22.org/gz/resource/Location/L1183,1183,CALLE DEL HORNO DE LABRADORES NUM 14
+http://www.group22.org/gz/resource/Location/L1184,1184,CALLE DEL ABAD JUAN CATALÁN NUM 8-60
+http://www.group22.org/gz/resource/Location/L1185,1185,CALLE DEL ABAD JUAN CATALÁN NUM 62-76
+http://www.group22.org/gz/resource/Location/L1186,1186,CARRETERA VICÁLV. A EST. O'DONELL C/V C/ ABAD JUAN CATALÁN
+http://www.group22.org/gz/resource/Location/L1187,1187,CARRETERA VICÁLVARO A ESTACIÓN O'DONELL, FRENTE AL Nº 31
+http://www.group22.org/gz/resource/Location/L1188,1188,CARRETERA VICÁLVARO A ESTACIÓN O'DONELL, FRENTE AL Nº 2B
+http://www.group22.org/gz/resource/Location/L1189,1189,CALLE DE CASALARREINA C/V PLAZA DE ALOSNO
+http://www.group22.org/gz/resource/Location/L1190,1190,CALLE DE CASALARREINA, 52 C/V AV. DE DAROCA, 296
+http://www.group22.org/gz/resource/Location/L1191,1191,CALLE CASALARREINA, NUM. 52 POSTERIOR
+http://www.group22.org/gz/resource/Location/L1192,1192,CALLE DE CASALARREINA, FRENTE AL NUM. 41
+http://www.group22.org/gz/resource/Location/L1193,1193,AVENIDA DE DAROCA NUM 296
+http://www.group22.org/gz/resource/Location/L1194,1194,CAMINO VIEJO DE VICÁLVARO, ENTRE M40 Y PLAZA DE ALOSNO
+http://www.group22.org/gz/resource/Location/L1195,1195,PLAZA DE JUAN CARLOS ONETTI
+http://www.group22.org/gz/resource/Location/L1196,1196,PLAZA DE JUAN ROF CARBALLO
+http://www.group22.org/gz/resource/Location/L1197,1197,BULEVAR DE JOSÉ PRAT NUM 24-38
+http://www.group22.org/gz/resource/Location/L1198,1198,PLAZA DE LOS COOPERATIVISTAS
+http://www.group22.org/gz/resource/Location/L1199,1199,PLAZA DE ROSA CHACEL
+http://www.group22.org/gz/resource/Location/L1200,1200,PLAZA DE JUAN BENET
+http://www.group22.org/gz/resource/Location/L1201,1201,BULEVAR DE JOSÉ PRAT NUM 6-18
+http://www.group22.org/gz/resource/Location/L1202,1202,BULEVAR DE JOSÉ PRAT NUM 1
+http://www.group22.org/gz/resource/Location/L1203,1203,AVENIDA DEMOCRACIA, ENTRE P. ALOSNO Y C/ TREN DE ARGANDA
+http://www.group22.org/gz/resource/Location/L1204,1204,BULEVAR DE INDALECIO PRIETO NUM 7
+http://www.group22.org/gz/resource/Location/L1205,1205,BULEVAR DE INDALECIO PRIETO NUM 6
+http://www.group22.org/gz/resource/Location/L1206,1206,CALLE DE LA LADERA DE LOS ALMENDROS NUM 2
+http://www.group22.org/gz/resource/Location/L1207,1207,CALLE DE LA LADERA DE LOS ALMENDROS NUM 46
+http://www.group22.org/gz/resource/Location/L1208,1208,CALLE LADERA DE LOS ALMELDROS C/V BULEVAR DE JOSÉ PRAT NUM 1
+http://www.group22.org/gz/resource/Location/L1209,1209,CALLE DEL PRAT C/V AV. DE LA AURORA BOREAL
+http://www.group22.org/gz/resource/Location/L1210,1210,CALLE DE LA TENERÍA NUM 1
+http://www.group22.org/gz/resource/Location/L1211,1211,CALLE DE CORDEL DE PAVONES NUM 9
+http://www.group22.org/gz/resource/Location/L1212,1212,CAMINO VIEJO DE VICÁLVARO C/V PLAZA DE ALOSNO
+http://www.group22.org/gz/resource/Location/L1213,1213,CALLE DE SAN CIPRIANO NUM 70
+http://www.group22.org/gz/resource/Location/L1214,1214,CALLE ALTO DEL ESPARRAGAL
+http://www.group22.org/gz/resource/Location/L1215,1215,CALLE DE LA DEHESA VIEJA FRENTE AL NUM 1
+http://www.group22.org/gz/resource/Location/L1216,1216,GLORIETA EN CALLE DE LA DEHESA VIEJA C/V C/DE LOS AHUMAOS
+http://www.group22.org/gz/resource/Location/L1217,1217,CALLE DE LA DEHESA VIEJA FRENTE AL NUM 13
+http://www.group22.org/gz/resource/Location/L1218,1218,GLORIETA EN CALLE DE LA DEHESA VIEJA CV ALBERTO SANCHEZ
+http://www.group22.org/gz/resource/Location/L1219,1219,CALLE DE LA DEHESA VIEJA FRENTE AL NUM 25
+http://www.group22.org/gz/resource/Location/L1220,1220,GLORIETA DE LA DEHESA VIEJA C/V DE LA CUQUEÑA VIEJA
+http://www.group22.org/gz/resource/Location/L1221,1221,CALLE DE LA DEHESA VIEJA FRENTE AL NUM 37
+http://www.group22.org/gz/resource/Location/L1222,1222,CALLE DE FUENCEMILLÁN, ENTRE C/ DE ABRIL Y C/ DE MAYO
+http://www.group22.org/gz/resource/Location/L1223,1223,CALLE DE CIRCE NUM 57
+http://www.group22.org/gz/resource/Location/L1224,1224,AVENIDA DE ARCENTALES NUM 2
+http://www.group22.org/gz/resource/Location/L1225,1225,AVENIDA DE ARCENTALES NUM 4
+http://www.group22.org/gz/resource/Location/L1226,1226,CALLE POBLADURA DEL VALLE - C/ ARCOS DEL JALÓN
+http://www.group22.org/gz/resource/Location/L1227,1227,CALLE DE ALCALÁ NUM 527
+http://www.group22.org/gz/resource/Location/L1228,1228,CALLE DE FENELON NUM 17
+http://www.group22.org/gz/resource/Location/L1229,1229,AVENIDA DE GUADALAJARA NUM 113
+http://www.group22.org/gz/resource/Location/L1230,1230,CALLE DE RUSIA NUM 9-11
+http://www.group22.org/gz/resource/Location/L1231,1231,CALLE DEL MARQUESADO DE SANTA MARTA NUM 8
+http://www.group22.org/gz/resource/Location/L1232,1232,CALLE DEL MARQUESADO DE SANTA MARTA NUM 10
+http://www.group22.org/gz/resource/Location/L1233,1233,CALLE DEL MARQUESADO DE SANTA MARTA NUM 12
+http://www.group22.org/gz/resource/Location/L1234,1234,CALLE DE ALONSO CONTRERAS NUM 14-16
+http://www.group22.org/gz/resource/Location/L1235,1235,CALLE DE ESPARTA NUM 29
+http://www.group22.org/gz/resource/Location/L1236,1236,CALLE DE ESPARTA NUM 27
+http://www.group22.org/gz/resource/Location/L1237,1237,CALLE DE ESPARTA NUM 25
+http://www.group22.org/gz/resource/Location/L1238,1238,CALLE DE ESPARTA NUM 23
+http://www.group22.org/gz/resource/Location/L1239,1239,CALLE DE RIOBAMBA NUM 8
+http://www.group22.org/gz/resource/Location/L1240,1240,CALLE DE RIOBAMBA NUM 11
+http://www.group22.org/gz/resource/Location/L1241,1241,CALLE DE IQUITOS NUM 8
+http://www.group22.org/gz/resource/Location/L1242,1242,CALLE DE TAMPICO NUM 65
+http://www.group22.org/gz/resource/Location/L1243,1243,CALLE DE TAMPICO NUM 67
+http://www.group22.org/gz/resource/Location/L1244,1244,CALLE DE ALEGRÍA DE ORIA NUM 47
+http://www.group22.org/gz/resource/Location/L1245,1245,CALLE DE ALEGRÍA DE ORIA NUM 52
+http://www.group22.org/gz/resource/Location/L1246,1246,CALLE DE MIAMI NUM 22-24
+http://www.group22.org/gz/resource/Location/L1247,1247,CALLE DE BELICE NUM 3
+http://www.group22.org/gz/resource/Location/L1248,1248,CALLE DE ALCALÁ NUM 523
+http://www.group22.org/gz/resource/Location/L1249,1249,CALLE DE ALCALÁ NUM 501
+http://www.group22.org/gz/resource/Location/L1250,1250,CALLE DE ALCALÁ NUM 493
+http://www.group22.org/gz/resource/Location/L1251,1251,CALLE DE ALCALÁ NUM 483
+http://www.group22.org/gz/resource/Location/L1252,1252,CALLE DE ALCALÁ NUM 477
+http://www.group22.org/gz/resource/Location/L1253,1253,CALLE DE RIOBAMBA NUM 6
+http://www.group22.org/gz/resource/Location/L1254,1254,CALLE DE RIOBAMBA NUM 13-17
+http://www.group22.org/gz/resource/Location/L1255,1255,CALLE DE VENTURADA NUM 46
+http://www.group22.org/gz/resource/Location/L1256,1256,CALLE DE ALCALÁ NUM 479
+http://www.group22.org/gz/resource/Location/L1257,1257,CALLE DE GONZALO TORRENTE BALLESTER NUM 2
+http://www.group22.org/gz/resource/Location/L1258,1258,CALLE GONZALO TORRENTE BALLESTER NUM 4
+http://www.group22.org/gz/resource/Location/L1259,1259,CALLE DE EUTERPE NUM 1
+http://www.group22.org/gz/resource/Location/L1260,1260,CALLE DEL MARQUESADO DE SANTA MARTA NUM 6
+http://www.group22.org/gz/resource/Location/L1261,1261,CALLE DE IQUITOS NUM 10C/ IQUITOS C/V C/ CAMPECHE.
+http://www.group22.org/gz/resource/Location/L1262,1262,CALLE DE TESEO NUM 48
+http://www.group22.org/gz/resource/Location/L1263,1263,PASEO DE GINEBRA C/V AVENIDA DE GUADALAJARA
+http://www.group22.org/gz/resource/Location/L1264,1264,PASEO DE GINEBRA C/V C/ DE SUECIAPº GINEBRA C/V C/ SUECIA.
+http://www.group22.org/gz/resource/Location/L1265,1265,CALLE DE MARSELLA NUM 4
+http://www.group22.org/gz/resource/Location/L1266,1266,AVENIDA DE NIZA NUM 9
+http://www.group22.org/gz/resource/Location/L1267,1267,CALLE JULIA GARCÍA BOUTÁN C/V C/ SUECIA Y AV. DE NIZA
+http://www.group22.org/gz/resource/Location/L1268,1268,AVENIDA DE NIZA NUM 63
+http://www.group22.org/gz/resource/Location/L1269,1269,AVENIDA DE ARCENTALES C/V C/ DE LA ILIADA
+http://www.group22.org/gz/resource/Location/L1270,1270,PLAZA DE GRECIA
+http://www.group22.org/gz/resource/Location/L1271,1271,CALLE DE SUECIA C/V PLAZA DE GRECIA Y AV. DE NIZA
+http://www.group22.org/gz/resource/Location/L1272,1272,CALLE DE DÉDALO C/V C/ DE CRONOS
+http://www.group22.org/gz/resource/Location/L1273,1273,CALLE ONCE NUM 7
+http://www.group22.org/gz/resource/Location/L1274,1274,CALLE DE DEYANIRA NUM 1-5
+http://www.group22.org/gz/resource/Location/L1275,1275,CALLE DE PASTRANA NUM 5
+http://www.group22.org/gz/resource/Location/L1276,1276,CALLE DE PASTRANA NUM 10
+http://www.group22.org/gz/resource/Location/L1277,1277,AVENIDA SÉPTIMA NUM 18-62
+http://www.group22.org/gz/resource/Location/L1278,1278,CALLE DE VERSALLES, FRENTE AL NUM 19
+http://www.group22.org/gz/resource/Location/L1279,1279,CALLE DE ALCALÁ NUM 553
+http://www.group22.org/gz/resource/Location/L1280,1280,CALLE DE ALCALÁ NUM 551
+http://www.group22.org/gz/resource/Location/L1281,1281,CALLE DE FUENBELLIDA NUM 35-49
+http://www.group22.org/gz/resource/Location/L1282,1282,AVENIDA DEL INVIERNO NUM 1
+http://www.group22.org/gz/resource/Location/L1283,1283,CALLE DE FUEMBELLIDA, FRENTEA AL NUM 35
+http://www.group22.org/gz/resource/Location/L1284,1284,CALLE DE YÉCORA NUM 8-12
+http://www.group22.org/gz/resource/Location/L1285,1285,CALLE DE NANCLARES DE OCA NUM 8
+http://www.group22.org/gz/resource/Location/L1286,1286,CALLE DE ARCAUTE NUM 9
+http://www.group22.org/gz/resource/Location/L1287,1287,CALLE DE ARCAUTE NUM 2
+http://www.group22.org/gz/resource/Location/L1288,1288,CALLE DE ARCAUTE NUM 4-8
+http://www.group22.org/gz/resource/Location/L1289,1289,CALLE DE TELÉMACO NUM 2
+http://www.group22.org/gz/resource/Location/L1290,1290,CALLE DE GENERAL ARANAZ NUM 80-82
+http://www.group22.org/gz/resource/Location/L1291,1291,CALLE DE LA ESFINGE NUM 31
+http://www.group22.org/gz/resource/Location/L1292,1292,CALLE DEL CONCEJAL GINÉS MELÉNDEZ
+http://www.group22.org/gz/resource/Location/L1293,1293,CALLE AÍNSA NUM 6 B
+http://www.group22.org/gz/resource/Location/L1294,1294,CALLE DE JULIA GARCÍA BOUTÁN C/V C/ DE SUECIA Y SOFÍA
+http://www.group22.org/gz/resource/Location/L1295,1295,CALLE DE LIVERPOOL C/ DE SOFÍA
+http://www.group22.org/gz/resource/Location/L1296,1296,AVENIDA SÉPTIMA NUM 13
+http://www.group22.org/gz/resource/Location/L1297,1297,CALLE DE ARACNE, FRENTE NUM 27-33
+http://www.group22.org/gz/resource/Location/L1298,1298,CALLE DE PIRRA C/V C/ DE DEYANIRA
+http://www.group22.org/gz/resource/Location/L1299,1299,CALLE DE PIRRA, FRENTE NUM 32
+http://www.group22.org/gz/resource/Location/L1300,1300,CALLE DE PIRRA C/V C/ DE ARACNE
+http://www.group22.org/gz/resource/Location/L1301,1301,CALLE DE RUFINO GONZÁLEZ NUM 66
+http://www.group22.org/gz/resource/Location/L1302,1302,CALLE DE ISAAC RAMOS NUM 2
+http://www.group22.org/gz/resource/Location/L1303,1303,PASEO DE LAS BARQUILLAS NUM 4
+http://www.group22.org/gz/resource/Location/L1304,1304,PASEO DE LAS BARQUILLAS NUM 7
+http://www.group22.org/gz/resource/Location/L1305,1305,CALLE DE LA PLAYA DE PONIENTE NUM 9
+http://www.group22.org/gz/resource/Location/L1306,1306,CALLE DE LA PLAYA DE BOLNUEVO, FRENTE AL Nº 2-24
+http://www.group22.org/gz/resource/Location/L1307,1307,CALLE DE LA PLAYA DE BOLNUEVO, FRENTE AL Nº 34-50
+http://www.group22.org/gz/resource/Location/L1308,1308,CALLE DE LA PLAYA DE BOLNUEVO, FRENTE AL Nº 52-74
+http://www.group22.org/gz/resource/Location/L1309,1309,CALLE DEL MISTRAL NUM 4
+http://www.group22.org/gz/resource/Location/L1310,1310,CALLE DEL SOTAVENTO C/V C/ DEL MISTRAL NUM 3
+http://www.group22.org/gz/resource/Location/L1311,1311,CALLE DE LA PLAYA DE BARLOVENTO C/V C/ DEL HURACÁN
+http://www.group22.org/gz/resource/Location/L1312,1312,CALLE DEL SIMÚN C/V C/ DEL ARROYO DE LA TÍA MARTINA NUM 2
+http://www.group22.org/gz/resource/Location/L1313,1313,GLORIETA PLAYA LAS CATEDRALES C/V C/ PLAYA DEL SARDINERO
+http://www.group22.org/gz/resource/Location/L1314,1314,CALLE DE PLAYA TORIMBIA C/V C/ DE LA PLAYA DE BOLNUEVO
+http://www.group22.org/gz/resource/Location/L1315,1315,CALLE DE PLAYA TORIMBIA C/V C/ DE LA PLAYA DE SAN JUAN
+http://www.group22.org/gz/resource/Location/L1316,1316,CALLE DE PLAYA TORIMBIA C/V C/ DE LA PLAYA DE ZARAUZ
+http://www.group22.org/gz/resource/Location/L1317,1317,CALLE PLAYA LAS CATEDRALES C/V C/ PLAYA DE BOLNUEVO
+http://www.group22.org/gz/resource/Location/L1318,1318,CALLE PLAYA LAS CATEDRALES C/V C/ PLAYA DE SAN JUAN
+http://www.group22.org/gz/resource/Location/L1319,1319,CALLE PLAYA LAS CATEDRALES C/V C/ PLAYA DE ZARAUZ
+http://www.group22.org/gz/resource/Location/L1320,1320,CALLE PLAYA DE LAS CATEDRALES C/V C/ PLAYA DE ARO
+http://www.group22.org/gz/resource/Location/L1321,1321,CALLE DE PLAYA DE LA CONCHA C/V C/ PLAYA DE BOLNUEVO
+http://www.group22.org/gz/resource/Location/L1322,1322,CALLE DE PLAYA DE LA CONCHA C/V C/ DE PLAYA DE AMÉRICA
+http://www.group22.org/gz/resource/Location/L1323,1323,CALLE DE ALHAURÍN NUM 1
+http://www.group22.org/gz/resource/Location/L1324,1324,CALLE DE LA PLAYA AMÉRICA NUM 30-34
+http://www.group22.org/gz/resource/Location/L1325,1325,CALLE DE LA PLAYA AMÉRICA NUM 22-26
+http://www.group22.org/gz/resource/Location/L1326,1326,CALLE DE ALHAURÍN NUM 2
+http://www.group22.org/gz/resource/Location/L1327,1327,CALLE DE ARCADIA C/V C/ DEL TIMÓN
+http://www.group22.org/gz/resource/Location/L1328,1328,CALLE DEL GRAN PODER NUM 24
+http://www.group22.org/gz/resource/Location/L1329,1329,CALLE DE ALAR DEL REY NUM 35-37
+http://www.group22.org/gz/resource/Location/L1330,1330,CALLE DEL TIMÓN NUM 32
+http://www.group22.org/gz/resource/Location/L1331,1331,CALLE DE ARROYOMOLINO NUM 7
+http://www.group22.org/gz/resource/Location/L1332,1332,CALLE DE ALHAURÍN NUM 12
+http://www.group22.org/gz/resource/Location/L1333,1333,CALLE DE ARROYOMOLINO NUM 8
+http://www.group22.org/gz/resource/Location/L1334,1334,CALLE DE RIAÑO NUM 1
+http://www.group22.org/gz/resource/Location/L1335,1335,PASEO DE LA VÍA VERDE DE LA GASOLINA NUM 21-23
+http://www.group22.org/gz/resource/Location/L1336,1336,CALLE DE BRIONES NUM 53-63
+http://www.group22.org/gz/resource/Location/L1337,1337,CALLE BAHÍA DE SANTA POLA C/V C/ BAHÍA DE SANTANDER
+http://www.group22.org/gz/resource/Location/L1338,1338,CALLE BAHÍA DE SANTA POLA C/V C/ BAHÍA DE SANTOÑA
+http://www.group22.org/gz/resource/Location/L1339,1339,CALLE DE LA BAHÍA DE SANTOÑA C/V C/ DE BANDE
+http://www.group22.org/gz/resource/Location/L1340,1340,AVENIDA DE LA BAHÍA DE ALMERÍA C/V C/ DE BANDE
+http://www.group22.org/gz/resource/Location/L1341,1341,CALLE DE LA BAHIA DE ALICANTE, NUM. 5-23 POSTERIOR
+http://www.group22.org/gz/resource/Location/L1342,1342,CALLE DE LA BAHIA DE CARTAGENA NUM 12-26
+http://www.group22.org/gz/resource/Location/L1343,1343,CALLE DE LA BAHÍA DE SANTANDER NUM 27
+http://www.group22.org/gz/resource/Location/L1344,1344,CALLE DE LA BAHÍA DE ALICANTE NUM 37
+http://www.group22.org/gz/resource/Location/L1345,1345,CALLE DE LA BAHÍA DE MÁLAGA C/V C/ DE VALHONDO
+http://www.group22.org/gz/resource/Location/L1346,1346,CALLE DE LA BAHÍA DE MÁLAGA C/V C/ BAHÍA DE ALICANTE
+http://www.group22.org/gz/resource/Location/L1347,1347,CALLE DE LA PLAYA DE BARLOVENTO NUM 40
+http://www.group22.org/gz/resource/Location/L1348,1348,GLORIETA DE LA ERMITA DE LA VIRGEN DE LA SOLEDAD
+http://www.group22.org/gz/resource/Location/L1349,1349,CALLE DE ARIADNA C/V C/ DE ALAR DEL REY
+http://www.group22.org/gz/resource/Location/L1350,1350,CALLE DE ARTEMISA C/V C/ DE ARIADNA
+http://www.group22.org/gz/resource/Location/L1351,1351,CALLE DE BELLATERRA, FRENTE AL NUM 14-42
+http://www.group22.org/gz/resource/Location/L1352,1352,CALLE DE BENICARLÓ NUM 15
+http://www.group22.org/gz/resource/Location/L1353,1353,CALLE DE BURETA NUM 32-36
+http://www.group22.org/gz/resource/Location/L1354,1354,CALLE DE BURRIANA C/V C/ DE LA BAÑA
+http://www.group22.org/gz/resource/Location/L1355,1355,AVENIDA DE LOGROÑO
+http://www.group22.org/gz/resource/Location/L1355,1355,AVENIDA DE LOGROÑO
+http://www.group22.org/gz/resource/Location/L1356,1356,PLAZA DEL MERCURIO
+http://www.group22.org/gz/resource/Location/L1357,1357,CALLE DEL OBENQUE NUM 1
+http://www.group22.org/gz/resource/Location/L1358,1358,CALLE DEL VELERO NUM 1
+http://www.group22.org/gz/resource/Location/L1359,1359,CALLE DEL OBENQUE NUM 3
+http://www.group22.org/gz/resource/Location/L1360,1360,CALLE DEL OBENQUE NUM 2
+http://www.group22.org/gz/resource/Location/L1361,1361,CALLE DEL OBENQUE NUM 7
+http://www.group22.org/gz/resource/Location/L1362,1362,CALLE DEL NORAY NUM 1
+http://www.group22.org/gz/resource/Location/L1363,1363,CALLE DEL VELERO NUM 2
+http://www.group22.org/gz/resource/Location/L1364,1364,CALLE DE TINTÍN Y MILÚ NUM 6
+http://www.group22.org/gz/resource/Location/L1365,1365,CALLE MISTRAL C/V GTA. LA ALMENDREA Y GTA. LOS CARROS
+http://www.group22.org/gz/resource/Location/L1366,1366,CAMINO DE SINTRA
+http://www.group22.org/gz/resource/Location/L1367,1367,AUTOVÍA M-11 C/V GLORIETA DE SINTRA
+http://www.group22.org/gz/resource/Location/L1368,1368,GLORIETA DE S.A.R. DON JUAN DE BORBÓN Y BATTEMBERG NUM 5
+http://www.group22.org/gz/resource/Location/L1369,1369,PASEO DE ALAMEDA DE OSUNA NUM 25PARQUE EL CAPRICHO
+http://www.group22.org/gz/resource/Location/L1370,1370,CALLE DE GÉMINIS C/V C/ DE IBERIA Y DE VENUS
+http://www.group22.org/gz/resource/Location/L1371,1371,CALLE DE GÉMINIS C/V C/ DEL ZODÍACO, 15
+http://www.group22.org/gz/resource/Location/L1372,1372,CALLE DE JOAQUÍN IBARRA NUM 5
+http://www.group22.org/gz/resource/Location/L1373,1373,CALLE DEL OBENQUE NUM 6
+http://www.group22.org/gz/resource/Location/L1374,1374,PLAZA DE NUESTRA SEÑORA DE LORETO NUM 1-8
+http://www.group22.org/gz/resource/Location/L1375,1375,PASEO DE LA ALAMEDA DE OSUNA NUM 48
+http://www.group22.org/gz/resource/Location/L1376,1376,CALLE DE ESTANISLAO PÉREZ PITA NUM 59-71
+http://www.group22.org/gz/resource/Location/L1377,1377,AVENIDA DE JOSÉ ANTONIO CORRALES NUM 18

@@ -176,15 +176,15 @@ let markers = [];
 
 function myChange() {
   var selectValue = $('#district').val();
-  $('#subdistrict').empty();
-  for (i = 0; i < lookup[selectValue].length; i++) {
-    $('#subdistrict').append(
-      "<option value='" +
-        lookup[selectValue][i] +
-        "'>" +
-        lookup[selectValue][i] +
-        '</option>'
-    );
+  $('#subdistrict option').not(':first').remove();
+
+  if (selectValue == '') {
+    $('#subdistrict').attr('hidden', true);
+  } else {
+    for (const place of lookup[selectValue]) {
+      $('#subdistrict').attr('hidden', false);
+      $('#subdistrict').append(`<option value='${place}'>${place}</option>`);
+    }
   }
 }
 
@@ -212,11 +212,11 @@ function initMap() {
   });
 }
 
-function addMarker(org, title, lat, lng) {
+function addMarker(org, responseItem) {
   const marker = new google.maps.Marker({
-    position: { lat: lat, lng: lng },
+    position: { lat: responseItem.latitude, lng: responseItem.longitude },
     map: map,
-    title: title,
+    title: responseItem.name,
     icon: {
       url: `http://maps.google.com/mapfiles/ms/icons/${orgToColor(
         org
@@ -225,8 +225,20 @@ function addMarker(org, title, lat, lng) {
   });
 
   marker.addListener('click', () => {
+    const contentString = `
+    <h5>${responseItem.name}</h5>
+    <div style="text-align: left; ">
+      <ul style="display: inline-block; text-align: left; ">
+        <li><b>Number of affiliates:</b>  ${responseItem.num_affiliates}</li>
+        <li><b>Telephone:</b> ${responseItem.telephone}</li>
+        <li><b>Email:</b> ${responseItem.email}</li>
+        <li><b>Website:</b> <a href="${responseItem.uri}">${responseItem.uri}</a></li>
+        <li><b>Founding date:</b> ${responseItem.founding_date}</li>
+      </ul>
+    </div>`;
+
     infoWindow.close();
-    infoWindow.setContent(title);
+    infoWindow.setContent(contentString);
     infoWindow.open({
       anchor: marker,
       map,
@@ -238,14 +250,7 @@ function addMarker(org, title, lat, lng) {
 
 function addResultsToMap(response) {
   Object.keys(response).forEach((org) => {
-    response[org].forEach((responseItem) =>
-      addMarker(
-        org,
-        responseItem.name,
-        responseItem.latitude,
-        responseItem.longitude
-      )
-    );
+    response[org].forEach((responseItem) => addMarker(org, responseItem));
   });
 }
 
@@ -270,7 +275,7 @@ function search() {
     {
       district: $('#district').val(),
       subdistrict: $('#subdistrict').val(),
-      category: $('#category').val(),
+      purpose: $('#purpose').val(),
       organization: $('#organization').val(),
     }
   );

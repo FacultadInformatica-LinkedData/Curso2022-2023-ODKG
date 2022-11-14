@@ -155,7 +155,7 @@ function getCard(school){
     let zoom = 14.5;
 	let newHTML = `<div class="schoolItem" id="${identifier}">
             <div class="front cardFace"> 
-            <iframe class="schoolMap" width="500" height="300" src="https://api.maptiler.com/maps/basic-v2/?key=T0cx4SaMZWSM2Gq2mAgG#${zoom}/${coords[1]}/${coords[0]}/"></iframe>
+            <iframe class="schoolMap" width="500" height="300" src="https://api.maptiler.com/maps/basic-v2/?key=T0cx4SaMZWSM2Gq2mAgG#${zoom}/${coords[0]}/${coords[1]}/"></iframe>
 
             </div>
             <div class="schoolInfo">

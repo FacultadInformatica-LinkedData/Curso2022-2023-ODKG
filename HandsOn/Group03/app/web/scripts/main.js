@@ -128,7 +128,7 @@ function getCard(school){
     let districtName = school['districtName']
     let neighborhoodName = school['neighborhoodName']
     let streetAddress = school['streetAddress']
-    let HTMLId = `SchoolMap${identifier}`;
+    let HTMLId = `Map${identifier}`;
 
     let schedule = school['schedule']
     let telephone = school['telephone']
@@ -148,7 +148,7 @@ function getCard(school){
     let zoom = 14.5;
 	let newHTML = `<div class="schoolItem" id="${identifier}">
             <div class="front cardFace"> 
-            <div class="SchoolMap" id="SchoolMap${identifier}">
+            <div class="SchoolMap" id="Map${identifier}">
             </div>
             <div class="schoolInfo">
                 <br>

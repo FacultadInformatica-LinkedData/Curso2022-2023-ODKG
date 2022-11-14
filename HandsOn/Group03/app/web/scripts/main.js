@@ -217,7 +217,7 @@ function getMap(id, lon, lat){
     const key = 'T0cx4SaMZWSM2Gq2mAgG';
     var map = new maplibregl.Map({
         container: id,
-        style: 'mapbox://styles/mapbox/streets-v11',
+        style: `https://api.maptiler.com/maps/streets-v2/style.json?key=${key}`,
         center: [lon,lat],
         zoom: 15
     });

@@ -13,15 +13,15 @@ mappings:
     po:
       - [a, bs:BikeStation]
       - [schema:name ,$(Nom station)]
-      - [bs:inUse ,$(Station en fonctionnement)]
+      - [bs:inUse ,$(Station en fonctionnement), xsd:boolean]
       - [dbo:capacity ,$(Capacité de la station)]
-      - [bs:availableParkingSpots ,$(Nombre bornettes libres)]
-      - [bs:availableBikes ,$(Nombre total vélos disponibles)]
-      - [bs:availableElectricalBikes ,$(Vélos électriques disponibles)]
-      - [bs:paymentTerminalAvailable ,$(Borne de paiement disponible)]
+      - [bs:availableParkingSpots ,$(Nombre bornettes libres), xsd:nonNegativeInteger]
+      - [bs:availableBikes ,$(Nombre total vélos disponibles), xsd:nonNegativeInteger]
+      - [bs:availableElectricalBikes ,$(Vélos électriques disponibles), xsd:nonNegativeInteger]
+      - [bs:paymentTerminalAvailable ,$(Borne de paiement disponible), xsd:boolean]
       - [paw:lastUpdateOn ,$(Actualisation de la donnée)]
-      - [bs:returnOfVeilbPossible ,$(Retour vélib possible)]
-      - [bs:availableMechanicalBikes, $(Vélos mécaniques disponibles)]
+      - [bs:returnOfVeilbPossible ,$(Retour vélib possible), xsd:boolean]
+      - [bs:availableMechanicalBikes, $(Vélos mécaniques disponibles), xsd:nonNegativeInteger]
       - [schema:id, $(Identifiant station)]
       - p: bs:locatedInArea
         o:

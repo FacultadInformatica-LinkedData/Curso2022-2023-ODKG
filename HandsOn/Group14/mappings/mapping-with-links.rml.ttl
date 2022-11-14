@@ -6,6 +6,8 @@
 @prefix map: <http://mapping.example.com/> .
 @prefix ma: <http://www.w3.org/ns/ma-ont#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix schema: <http://schema.org/> .
 @prefix bs: <http://smartbikes.org/ontology/bikeStation#> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
@@ -39,6 +41,7 @@ map:om_001 rml:reference "Nom station" ;
 
 map:om_002 rml:reference "Station en fonctionnement" ;
 	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:boolean ;
 	rr:termType rr:Literal .
 
 map:om_003 rml:reference "Capacité de la station" ;
@@ -47,18 +50,22 @@ map:om_003 rml:reference "Capacité de la station" ;
 
 map:om_004 rml:reference "Nombre bornettes libres" ;
 	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:nonNegativeInteger ;
 	rr:termType rr:Literal .
 
 map:om_005 rml:reference "Nombre total vélos disponibles" ;
 	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:nonNegativeInteger ;
 	rr:termType rr:Literal .
 
 map:om_006 rml:reference "Vélos électriques disponibles" ;
 	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:nonNegativeInteger ;
 	rr:termType rr:Literal .
 
 map:om_007 rml:reference "Borne de paiement disponible" ;
 	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:boolean ;
 	rr:termType rr:Literal .
 
 map:om_008 rml:reference "Actualisation de la donnée" ;
@@ -67,10 +74,12 @@ map:om_008 rml:reference "Actualisation de la donnée" ;
 
 map:om_009 rml:reference "Retour vélib possible" ;
 	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:boolean ;
 	rr:termType rr:Literal .
 
 map:om_010 rml:reference "Vélos mécaniques disponibles" ;
 	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:nonNegativeInteger ;
 	rr:termType rr:Literal .
 
 map:om_011 rml:reference "Identifiant station" ;
@@ -260,14 +269,14 @@ map:s_002 rdf:type rr:SubjectMap ;
 	rr:template "http://smartbikes.org/resource/coordinate/{Coordonnées géographiques 1}_{Coordonnées géographiques 2}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
-	rml:source "./csv/velib-disponibilite-en-temps-reel-updated-with-links.csv" ;
+	rml:source "velib-disponibilite-en-temps-reel-updated.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_001 rml:referenceFormulation ql:CSV ;
-	rml:source "./csv/velib-disponibilite-en-temps-reel-updated-with-links.csv" ;
+	rml:source "velib-disponibilite-en-temps-reel-updated.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_002 rml:referenceFormulation ql:CSV ;
-	rml:source "./csv/velib-disponibilite-en-temps-reel-updated-with-links.csv" ;
+	rml:source "velib-disponibilite-en-temps-reel-updated.csv" ;
 	rdf:type rml:LogicalSource .
 

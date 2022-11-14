@@ -6,8 +6,8 @@
 <http://smartcity.airquality.es/airquality/station/Arturo%20Soria> a vocab:Station ;
     vocab:hasStationName "Arturo Soria" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4400457"^^xsd:real ;
-    vocab:longitude "-3.6392422"^^xsd:real ;
+    vocab:latitude "40.4400457"^^xsd:float ;
+    vocab:longitude "-3.6392422"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
@@ -15,16 +15,16 @@
 <http://smartcity.airquality.es/airquality/station/Barajas%20Pueblo> a vocab:Station ;
     vocab:hasStationName "Barajas Pueblo" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4769179"^^xsd:real ;
-    vocab:longitude "-3.5800258"^^xsd:real ;
+    vocab:latitude "40.4769179"^^xsd:float ;
+    vocab:longitude "-3.5800258"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
 
 <http://smartcity.airquality.es/airquality/station/Barrio%20del%20Pilar> a vocab:Station ;
     vocab:hasStationName "Barrio del Pilar" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4782322"^^xsd:real ;
-    vocab:longitude "-3.7115364"^^xsd:real ;
+    vocab:latitude "40.4782322"^^xsd:float ;
+    vocab:longitude "-3.7115364"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
@@ -32,8 +32,8 @@
 <http://smartcity.airquality.es/airquality/station/Casa%20de%20Campo> a vocab:Station ;
     vocab:hasStationName "Casa de Campo" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4193577"^^xsd:real ;
-    vocab:longitude "-3.7473445"^^xsd:real ;
+    vocab:latitude "40.4193577"^^xsd:float ;
+    vocab:longitude "-3.7473445"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
@@ -42,8 +42,8 @@
 <http://smartcity.airquality.es/airquality/station/Cuatro%20Caminos> a vocab:Station ;
     vocab:hasStationName "Cuatro Caminos" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4455439"^^xsd:real ;
-    vocab:longitude "-3.7071303"^^xsd:real ;
+    vocab:latitude "40.4455439"^^xsd:float ;
+    vocab:longitude "-3.7071303"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
         <http://smartcity.airquality.es/airquality/magnitude/sulfur%20dioxide> .
@@ -51,24 +51,24 @@
 <http://smartcity.airquality.es/airquality/station/El%20Pardo> a vocab:Station ;
     vocab:hasStationName "El Pardo" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.5180701"^^xsd:real ;
-    vocab:longitude "-3.7746101"^^xsd:real ;
+    vocab:latitude "40.5180701"^^xsd:float ;
+    vocab:longitude "-3.7746101"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
 
 <http://smartcity.airquality.es/airquality/station/Ensanche%20de%20Vallecas> a vocab:Station ;
     vocab:hasStationName "Ensanche de Vallecas" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.3730118"^^xsd:real ;
-    vocab:longitude "-3.6121394"^^xsd:real ;
+    vocab:latitude "40.3730118"^^xsd:float ;
+    vocab:longitude "-3.6121394"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
 
 <http://smartcity.airquality.es/airquality/station/Escuelas%20Aguirre> a vocab:Station ;
     vocab:hasStationName "Escuelas Aguirre" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4215533"^^xsd:real ;
-    vocab:longitude "-3.6823158"^^xsd:real ;
+    vocab:latitude "40.4215533"^^xsd:float ;
+    vocab:longitude "-3.6823158"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
         <http://smartcity.airquality.es/airquality/magnitude/sulfur%20dioxide> .
@@ -76,8 +76,8 @@
 <http://smartcity.airquality.es/airquality/station/Farolillo> a vocab:Station ;
     vocab:hasStationName "Farolillo" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.3947825"^^xsd:real ;
-    vocab:longitude "-3.7318356"^^xsd:real ;
+    vocab:latitude "40.3947825"^^xsd:float ;
+    vocab:longitude "-3.7318356"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
@@ -85,24 +85,24 @@
 <http://smartcity.airquality.es/airquality/station/Juan%20Carlos%20I> a vocab:Station ;
     vocab:hasStationName "Juan Carlos I" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4607255"^^xsd:real ;
-    vocab:longitude "-3.6163407"^^xsd:real ;
+    vocab:latitude "40.4607255"^^xsd:float ;
+    vocab:longitude "-3.6163407"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
 
 <http://smartcity.airquality.es/airquality/station/M%C3%A9ndez%20%C3%81lvaro> a vocab:Station ;
     vocab:hasStationName "Méndez Álvaro" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.3980991"^^xsd:real ;
-    vocab:longitude "-3.6868138"^^xsd:real ;
+    vocab:latitude "40.3980991"^^xsd:float ;
+    vocab:longitude "-3.6868138"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
 
 <http://smartcity.airquality.es/airquality/station/Moratalaz> a vocab:Station ;
     vocab:hasStationName "Moratalaz" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4079517"^^xsd:real ;
-    vocab:longitude "-3.6453104"^^xsd:real ;
+    vocab:latitude "40.4079517"^^xsd:float ;
+    vocab:longitude "-3.6453104"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
@@ -111,32 +111,32 @@
 <http://smartcity.airquality.es/airquality/station/Parque%20del%20Retiro%20%28Ponce%29> a vocab:Station ;
     vocab:hasStationName "Parque del Retiro (Ponce)" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4144444"^^xsd:real ;
-    vocab:longitude "-3.6824999"^^xsd:real ;
+    vocab:latitude "40.4144444"^^xsd:float ;
+    vocab:longitude "-3.6824999"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
 
 <http://smartcity.airquality.es/airquality/station/Paseo%20de%20la%20Castellana> a vocab:Station ;
     vocab:hasStationName "Paseo de la Castellana" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4398904"^^xsd:real ;
-    vocab:longitude "-3.6903729"^^xsd:real ;
+    vocab:latitude "40.4398904"^^xsd:float ;
+    vocab:longitude "-3.6903729"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
 
 <http://smartcity.airquality.es/airquality/station/Plaza%20Castilla> a vocab:Station ;
     vocab:hasStationName "Plaza Castilla" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4655841"^^xsd:real ;
-    vocab:longitude "-3.6887449"^^xsd:real ;
+    vocab:latitude "40.4655841"^^xsd:float ;
+    vocab:longitude "-3.6887449"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
 
 <http://smartcity.airquality.es/airquality/station/Plaza%20El%C3%ADptica> a vocab:Station ;
     vocab:hasStationName "Plaza Elíptica" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.3850336"^^xsd:real ;
-    vocab:longitude "-3.7187679"^^xsd:real ;
+    vocab:latitude "40.3850336"^^xsd:float ;
+    vocab:longitude "-3.7187679"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
@@ -144,8 +144,8 @@
 <http://smartcity.airquality.es/airquality/station/Plaza%20de%20Espa%C3%B1a> a vocab:Station ;
     vocab:hasStationName "Plaza de España" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4238823"^^xsd:real ;
-    vocab:longitude "-3.7122567"^^xsd:real ;
+    vocab:latitude "40.4238823"^^xsd:float ;
+    vocab:longitude "-3.7122567"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
@@ -154,8 +154,8 @@
 <http://smartcity.airquality.es/airquality/station/Plaza%20del%20Carmen> a vocab:Station ;
     vocab:hasStationName "Plaza del Carmen" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4192091"^^xsd:real ;
-    vocab:longitude "-3.7031662"^^xsd:real ;
+    vocab:latitude "40.4192091"^^xsd:float ;
+    vocab:longitude "-3.7031662"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
@@ -164,16 +164,16 @@
 <http://smartcity.airquality.es/airquality/station/Ram%C3%B3n%20y%20Cajal> a vocab:Station ;
     vocab:hasStationName "Ramón y Cajal" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4514734"^^xsd:real ;
-    vocab:longitude "-3.6773491"^^xsd:real ;
+    vocab:latitude "40.4514734"^^xsd:float ;
+    vocab:longitude "-3.6773491"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
 
 <http://smartcity.airquality.es/airquality/station/Sanchinarro> a vocab:Station ;
     vocab:hasStationName "Sanchinarro" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4942012"^^xsd:real ;
-    vocab:longitude "-3.6605173"^^xsd:real ;
+    vocab:latitude "40.4942012"^^xsd:float ;
+    vocab:longitude "-3.6605173"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
@@ -182,24 +182,24 @@
 <http://smartcity.airquality.es/airquality/station/Tres%20Olivos> a vocab:Station ;
     vocab:hasStationName "Tres Olivos" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.5005477"^^xsd:real ;
-    vocab:longitude "-3.6897308"^^xsd:real ;
+    vocab:latitude "40.5005477"^^xsd:float ;
+    vocab:longitude "-3.6897308"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
 
 <http://smartcity.airquality.es/airquality/station/Urb.%20Embajada> a vocab:Station ;
     vocab:hasStationName "Urb. Embajada" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4623628"^^xsd:real ;
-    vocab:longitude "-3.5805649"^^xsd:real ;
+    vocab:latitude "40.4623628"^^xsd:float ;
+    vocab:longitude "-3.5805649"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
 
 <http://smartcity.airquality.es/airquality/station/Vallecas> a vocab:Station ;
     vocab:hasStationName "Vallecas" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.3881478"^^xsd:real ;
-    vocab:longitude "-3.6515286"^^xsd:real ;
+    vocab:latitude "40.3881478"^^xsd:float ;
+    vocab:longitude "-3.6515286"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
         <http://smartcity.airquality.es/airquality/magnitude/sulfur%20dioxide> .
@@ -207,8 +207,8 @@
 <http://smartcity.airquality.es/airquality/station/Villaverde> a vocab:Station ;
     vocab:hasStationName "Villaverde" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.347147"^^xsd:real ;
-    vocab:longitude "-3.7133167"^^xsd:real ;
+    vocab:latitude "40.347147"^^xsd:float ;
+    vocab:longitude "-3.7133167"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
         <http://smartcity.airquality.es/airquality/magnitude/sulfur%20dioxide> .
@@ -581,29 +581,29 @@
         "2021-12-29"^^xsd:date,
         "2021-12-30"^^xsd:date,
         "2021-12-31"^^xsd:date ;
-    saref:hasValue "0"^^xsd:real,
-        "1"^^xsd:real,
-        "10"^^xsd:real,
-        "107"^^xsd:real,
-        "11"^^xsd:real,
-        "12"^^xsd:real,
-        "13"^^xsd:real,
-        "131"^^xsd:real,
-        "14"^^xsd:real,
-        "15"^^xsd:real,
-        "16"^^xsd:real,
-        "19"^^xsd:real,
-        "2"^^xsd:real,
-        "3"^^xsd:real,
-        "4"^^xsd:real,
-        "420"^^xsd:real,
-        "421"^^xsd:real,
-        "5"^^xsd:real,
-        "6"^^xsd:real,
-        "7"^^xsd:real,
-        "8"^^xsd:real,
-        "9"^^xsd:real,
-        "98"^^xsd:real ;
+    saref:hasValue "0.0"^^xsd:float,
+        "1.0"^^xsd:float,
+        "2.0"^^xsd:float,
+        "3.0"^^xsd:float,
+        "4.0"^^xsd:float,
+        "5.0"^^xsd:float,
+        "6.0"^^xsd:float,
+        "7.0"^^xsd:float,
+        "8.0"^^xsd:float,
+        "9.0"^^xsd:float,
+        "10.0"^^xsd:float,
+        "11.0"^^xsd:float,
+        "12.0"^^xsd:float,
+        "13.0"^^xsd:float,
+        "14.0"^^xsd:float,
+        "15.0"^^xsd:float,
+        "16.0"^^xsd:float,
+        "19.0"^^xsd:float,
+        "98.0"^^xsd:float,
+        "107.0"^^xsd:float,
+        "131.0"^^xsd:float,
+        "420.0"^^xsd:float,
+        "421.0"^^xsd:float ;
     saref:isMeasuredIn <http://smartcity.airquality.es/airquality/magnitude/microgram%20per%20cubic%20metre> .
 
 <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide> a vocab:Magnitude ;
@@ -974,18 +974,18 @@
         "2021-12-29"^^xsd:date,
         "2021-12-30"^^xsd:date,
         "2021-12-31"^^xsd:date ;
-    saref:hasValue "0"^^xsd:real,
-        "0.1"^^xsd:real,
-        "0.2"^^xsd:real,
-        "0.3"^^xsd:real,
-        "0.4"^^xsd:real,
-        "0.5"^^xsd:real,
-        "0.6"^^xsd:real,
-        "0.7"^^xsd:real,
-        "0.8"^^xsd:real,
-        "0.9"^^xsd:real,
-        "1"^^xsd:real,
-        "1.1"^^xsd:real ;
+    saref:hasValue "0.0"^^xsd:float,
+        "0.1"^^xsd:float,
+        "0.2"^^xsd:float,
+        "0.3"^^xsd:float,
+        "0.4"^^xsd:float,
+        "0.5"^^xsd:float,
+        "0.6"^^xsd:float,
+        "0.7"^^xsd:float,
+        "0.8"^^xsd:float,
+        "0.9"^^xsd:float,
+        "1.0"^^xsd:float,
+        "1.1"^^xsd:float ;
     saref:isMeasuredIn <http://smartcity.airquality.es/airquality/magnitude/microgram%20per%20cubic%20metre> .
 
 <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide> a vocab:Magnitude ;
@@ -1356,153 +1356,153 @@
         "2021-12-29"^^xsd:date,
         "2021-12-30"^^xsd:date,
         "2021-12-31"^^xsd:date ;
-    saref:hasValue "0"^^xsd:real,
-        "1"^^xsd:real,
-        "10"^^xsd:real,
-        "100"^^xsd:real,
-        "101"^^xsd:real,
-        "102"^^xsd:real,
-        "103"^^xsd:real,
-        "104"^^xsd:real,
-        "107"^^xsd:real,
-        "108"^^xsd:real,
-        "109"^^xsd:real,
-        "11"^^xsd:real,
-        "112"^^xsd:real,
-        "113"^^xsd:real,
-        "114"^^xsd:real,
-        "115"^^xsd:real,
-        "117"^^xsd:real,
-        "118"^^xsd:real,
-        "12"^^xsd:real,
-        "120"^^xsd:real,
-        "121"^^xsd:real,
-        "122"^^xsd:real,
-        "123"^^xsd:real,
-        "126"^^xsd:real,
-        "127"^^xsd:real,
-        "128"^^xsd:real,
-        "13"^^xsd:real,
-        "131"^^xsd:real,
-        "132"^^xsd:real,
-        "135"^^xsd:real,
-        "136"^^xsd:real,
-        "137"^^xsd:real,
-        "138"^^xsd:real,
-        "139"^^xsd:real,
-        "14"^^xsd:real,
-        "140"^^xsd:real,
-        "141"^^xsd:real,
-        "147"^^xsd:real,
-        "148"^^xsd:real,
-        "149"^^xsd:real,
-        "15"^^xsd:real,
-        "151"^^xsd:real,
-        "152"^^xsd:real,
-        "1523"^^xsd:real,
-        "154"^^xsd:real,
-        "1583"^^xsd:real,
-        "159"^^xsd:real,
-        "16"^^xsd:real,
-        "162"^^xsd:real,
-        "167"^^xsd:real,
-        "17"^^xsd:real,
-        "174"^^xsd:real,
-        "177"^^xsd:real,
-        "179"^^xsd:real,
-        "18"^^xsd:real,
-        "182"^^xsd:real,
-        "19"^^xsd:real,
-        "197"^^xsd:real,
-        "2"^^xsd:real,
-        "20"^^xsd:real,
-        "21"^^xsd:real,
-        "214"^^xsd:real,
-        "216"^^xsd:real,
-        "22"^^xsd:real,
-        "23"^^xsd:real,
-        "2336"^^xsd:real,
-        "24"^^xsd:real,
-        "25"^^xsd:real,
-        "26"^^xsd:real,
-        "27"^^xsd:real,
-        "28"^^xsd:real,
-        "29"^^xsd:real,
-        "3"^^xsd:real,
-        "30"^^xsd:real,
-        "31"^^xsd:real,
-        "32"^^xsd:real,
-        "33"^^xsd:real,
-        "34"^^xsd:real,
-        "35"^^xsd:real,
-        "36"^^xsd:real,
-        "37"^^xsd:real,
-        "38"^^xsd:real,
-        "39"^^xsd:real,
-        "4"^^xsd:real,
-        "40"^^xsd:real,
-        "41"^^xsd:real,
-        "42"^^xsd:real,
-        "43"^^xsd:real,
-        "44"^^xsd:real,
-        "45"^^xsd:real,
-        "46"^^xsd:real,
-        "47"^^xsd:real,
-        "48"^^xsd:real,
-        "49"^^xsd:real,
-        "5"^^xsd:real,
-        "50"^^xsd:real,
-        "51"^^xsd:real,
-        "52"^^xsd:real,
-        "53"^^xsd:real,
-        "54"^^xsd:real,
-        "55"^^xsd:real,
-        "56"^^xsd:real,
-        "57"^^xsd:real,
-        "58"^^xsd:real,
-        "59"^^xsd:real,
-        "6"^^xsd:real,
-        "60"^^xsd:real,
-        "61"^^xsd:real,
-        "62"^^xsd:real,
-        "63"^^xsd:real,
-        "64"^^xsd:real,
-        "65"^^xsd:real,
-        "66"^^xsd:real,
-        "67"^^xsd:real,
-        "68"^^xsd:real,
-        "69"^^xsd:real,
-        "7"^^xsd:real,
-        "70"^^xsd:real,
-        "71"^^xsd:real,
-        "72"^^xsd:real,
-        "73"^^xsd:real,
-        "74"^^xsd:real,
-        "75"^^xsd:real,
-        "76"^^xsd:real,
-        "77"^^xsd:real,
-        "78"^^xsd:real,
-        "79"^^xsd:real,
-        "8"^^xsd:real,
-        "80"^^xsd:real,
-        "81"^^xsd:real,
-        "82"^^xsd:real,
-        "83"^^xsd:real,
-        "84"^^xsd:real,
-        "85"^^xsd:real,
-        "86"^^xsd:real,
-        "87"^^xsd:real,
-        "88"^^xsd:real,
-        "89"^^xsd:real,
-        "9"^^xsd:real,
-        "90"^^xsd:real,
-        "92"^^xsd:real,
-        "93"^^xsd:real,
-        "94"^^xsd:real,
-        "95"^^xsd:real,
-        "96"^^xsd:real,
-        "98"^^xsd:real,
-        "99"^^xsd:real ;
+    saref:hasValue "0.0"^^xsd:float,
+        "1.0"^^xsd:float,
+        "2.0"^^xsd:float,
+        "3.0"^^xsd:float,
+        "4.0"^^xsd:float,
+        "5.0"^^xsd:float,
+        "6.0"^^xsd:float,
+        "7.0"^^xsd:float,
+        "8.0"^^xsd:float,
+        "9.0"^^xsd:float,
+        "10.0"^^xsd:float,
+        "11.0"^^xsd:float,
+        "12.0"^^xsd:float,
+        "13.0"^^xsd:float,
+        "14.0"^^xsd:float,
+        "15.0"^^xsd:float,
+        "16.0"^^xsd:float,
+        "17.0"^^xsd:float,
+        "18.0"^^xsd:float,
+        "19.0"^^xsd:float,
+        "20.0"^^xsd:float,
+        "21.0"^^xsd:float,
+        "22.0"^^xsd:float,
+        "23.0"^^xsd:float,
+        "24.0"^^xsd:float,
+        "25.0"^^xsd:float,
+        "26.0"^^xsd:float,
+        "27.0"^^xsd:float,
+        "28.0"^^xsd:float,
+        "29.0"^^xsd:float,
+        "30.0"^^xsd:float,
+        "31.0"^^xsd:float,
+        "32.0"^^xsd:float,
+        "33.0"^^xsd:float,
+        "34.0"^^xsd:float,
+        "35.0"^^xsd:float,
+        "36.0"^^xsd:float,
+        "37.0"^^xsd:float,
+        "38.0"^^xsd:float,
+        "39.0"^^xsd:float,
+        "40.0"^^xsd:float,
+        "41.0"^^xsd:float,
+        "42.0"^^xsd:float,
+        "43.0"^^xsd:float,
+        "44.0"^^xsd:float,
+        "45.0"^^xsd:float,
+        "46.0"^^xsd:float,
+        "47.0"^^xsd:float,
+        "48.0"^^xsd:float,
+        "49.0"^^xsd:float,
+        "50.0"^^xsd:float,
+        "51.0"^^xsd:float,
+        "52.0"^^xsd:float,
+        "53.0"^^xsd:float,
+        "54.0"^^xsd:float,
+        "55.0"^^xsd:float,
+        "56.0"^^xsd:float,
+        "57.0"^^xsd:float,
+        "58.0"^^xsd:float,
+        "59.0"^^xsd:float,
+        "60.0"^^xsd:float,
+        "61.0"^^xsd:float,
+        "62.0"^^xsd:float,
+        "63.0"^^xsd:float,
+        "64.0"^^xsd:float,
+        "65.0"^^xsd:float,
+        "66.0"^^xsd:float,
+        "67.0"^^xsd:float,
+        "68.0"^^xsd:float,
+        "69.0"^^xsd:float,
+        "70.0"^^xsd:float,
+        "71.0"^^xsd:float,
+        "72.0"^^xsd:float,
+        "73.0"^^xsd:float,
+        "74.0"^^xsd:float,
+        "75.0"^^xsd:float,
+        "76.0"^^xsd:float,
+        "77.0"^^xsd:float,
+        "78.0"^^xsd:float,
+        "79.0"^^xsd:float,
+        "80.0"^^xsd:float,
+        "81.0"^^xsd:float,
+        "82.0"^^xsd:float,
+        "83.0"^^xsd:float,
+        "84.0"^^xsd:float,
+        "85.0"^^xsd:float,
+        "86.0"^^xsd:float,
+        "87.0"^^xsd:float,
+        "88.0"^^xsd:float,
+        "89.0"^^xsd:float,
+        "90.0"^^xsd:float,
+        "92.0"^^xsd:float,
+        "93.0"^^xsd:float,
+        "94.0"^^xsd:float,
+        "95.0"^^xsd:float,
+        "96.0"^^xsd:float,
+        "98.0"^^xsd:float,
+        "99.0"^^xsd:float,
+        "100.0"^^xsd:float,
+        "101.0"^^xsd:float,
+        "102.0"^^xsd:float,
+        "103.0"^^xsd:float,
+        "104.0"^^xsd:float,
+        "107.0"^^xsd:float,
+        "108.0"^^xsd:float,
+        "109.0"^^xsd:float,
+        "112.0"^^xsd:float,
+        "113.0"^^xsd:float,
+        "114.0"^^xsd:float,
+        "115.0"^^xsd:float,
+        "117.0"^^xsd:float,
+        "118.0"^^xsd:float,
+        "120.0"^^xsd:float,
+        "121.0"^^xsd:float,
+        "122.0"^^xsd:float,
+        "123.0"^^xsd:float,
+        "126.0"^^xsd:float,
+        "127.0"^^xsd:float,
+        "128.0"^^xsd:float,
+        "131.0"^^xsd:float,
+        "132.0"^^xsd:float,
+        "135.0"^^xsd:float,
+        "136.0"^^xsd:float,
+        "137.0"^^xsd:float,
+        "138.0"^^xsd:float,
+        "139.0"^^xsd:float,
+        "140.0"^^xsd:float,
+        "141.0"^^xsd:float,
+        "147.0"^^xsd:float,
+        "148.0"^^xsd:float,
+        "149.0"^^xsd:float,
+        "151.0"^^xsd:float,
+        "152.0"^^xsd:float,
+        "154.0"^^xsd:float,
+        "159.0"^^xsd:float,
+        "162.0"^^xsd:float,
+        "167.0"^^xsd:float,
+        "174.0"^^xsd:float,
+        "177.0"^^xsd:float,
+        "179.0"^^xsd:float,
+        "182.0"^^xsd:float,
+        "197.0"^^xsd:float,
+        "214.0"^^xsd:float,
+        "216.0"^^xsd:float,
+        "1523.0"^^xsd:float,
+        "1583.0"^^xsd:float,
+        "2336.0"^^xsd:float ;
     saref:isMeasuredIn <http://smartcity.airquality.es/airquality/magnitude/microgram%20per%20cubic%20metre> .
 
 <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> a vocab:Magnitude ;
@@ -1873,138 +1873,138 @@
         "2021-12-29"^^xsd:date,
         "2021-12-30"^^xsd:date,
         "2021-12-31"^^xsd:date ;
-    saref:hasValue "0"^^xsd:real,
-        "10"^^xsd:real,
-        "100"^^xsd:real,
-        "101"^^xsd:real,
-        "102"^^xsd:real,
-        "103"^^xsd:real,
-        "104"^^xsd:real,
-        "105"^^xsd:real,
-        "107"^^xsd:real,
-        "108"^^xsd:real,
-        "109"^^xsd:real,
-        "11"^^xsd:real,
-        "111"^^xsd:real,
-        "112"^^xsd:real,
-        "114"^^xsd:real,
-        "115"^^xsd:real,
-        "116"^^xsd:real,
-        "117"^^xsd:real,
-        "119"^^xsd:real,
-        "12"^^xsd:real,
-        "120"^^xsd:real,
-        "121"^^xsd:real,
-        "122"^^xsd:real,
-        "124"^^xsd:real,
-        "125"^^xsd:real,
-        "126"^^xsd:real,
-        "127"^^xsd:real,
-        "129"^^xsd:real,
-        "13"^^xsd:real,
-        "130"^^xsd:real,
-        "131"^^xsd:real,
-        "132"^^xsd:real,
-        "134"^^xsd:real,
-        "135"^^xsd:real,
-        "14"^^xsd:real,
-        "141"^^xsd:real,
-        "142"^^xsd:real,
-        "143"^^xsd:real,
-        "147"^^xsd:real,
-        "15"^^xsd:real,
-        "16"^^xsd:real,
-        "17"^^xsd:real,
-        "18"^^xsd:real,
-        "19"^^xsd:real,
-        "2"^^xsd:real,
-        "20"^^xsd:real,
-        "21"^^xsd:real,
-        "22"^^xsd:real,
-        "23"^^xsd:real,
-        "24"^^xsd:real,
-        "25"^^xsd:real,
-        "26"^^xsd:real,
-        "27"^^xsd:real,
-        "28"^^xsd:real,
-        "29"^^xsd:real,
-        "3"^^xsd:real,
-        "30"^^xsd:real,
-        "31"^^xsd:real,
-        "32"^^xsd:real,
-        "33"^^xsd:real,
-        "34"^^xsd:real,
-        "35"^^xsd:real,
-        "36"^^xsd:real,
-        "37"^^xsd:real,
-        "38"^^xsd:real,
-        "39"^^xsd:real,
-        "4"^^xsd:real,
-        "40"^^xsd:real,
-        "41"^^xsd:real,
-        "42"^^xsd:real,
-        "43"^^xsd:real,
-        "44"^^xsd:real,
-        "45"^^xsd:real,
-        "46"^^xsd:real,
-        "47"^^xsd:real,
-        "48"^^xsd:real,
-        "49"^^xsd:real,
-        "5"^^xsd:real,
-        "50"^^xsd:real,
-        "51"^^xsd:real,
-        "52"^^xsd:real,
-        "53"^^xsd:real,
-        "54"^^xsd:real,
-        "55"^^xsd:real,
-        "56"^^xsd:real,
-        "57"^^xsd:real,
-        "58"^^xsd:real,
-        "59"^^xsd:real,
-        "6"^^xsd:real,
-        "60"^^xsd:real,
-        "61"^^xsd:real,
-        "62"^^xsd:real,
-        "63"^^xsd:real,
-        "64"^^xsd:real,
-        "65"^^xsd:real,
-        "66"^^xsd:real,
-        "67"^^xsd:real,
-        "68"^^xsd:real,
-        "69"^^xsd:real,
-        "7"^^xsd:real,
-        "70"^^xsd:real,
-        "71"^^xsd:real,
-        "72"^^xsd:real,
-        "73"^^xsd:real,
-        "74"^^xsd:real,
-        "75"^^xsd:real,
-        "76"^^xsd:real,
-        "77"^^xsd:real,
-        "78"^^xsd:real,
-        "79"^^xsd:real,
-        "8"^^xsd:real,
-        "80"^^xsd:real,
-        "81"^^xsd:real,
-        "82"^^xsd:real,
-        "83"^^xsd:real,
-        "84"^^xsd:real,
-        "85"^^xsd:real,
-        "86"^^xsd:real,
-        "87"^^xsd:real,
-        "88"^^xsd:real,
-        "89"^^xsd:real,
-        "9"^^xsd:real,
-        "90"^^xsd:real,
-        "91"^^xsd:real,
-        "92"^^xsd:real,
-        "93"^^xsd:real,
-        "94"^^xsd:real,
-        "95"^^xsd:real,
-        "96"^^xsd:real,
-        "97"^^xsd:real,
-        "98"^^xsd:real,
-        "99"^^xsd:real ;
+    saref:hasValue "0.0"^^xsd:float,
+        "2.0"^^xsd:float,
+        "3.0"^^xsd:float,
+        "4.0"^^xsd:float,
+        "5.0"^^xsd:float,
+        "6.0"^^xsd:float,
+        "7.0"^^xsd:float,
+        "8.0"^^xsd:float,
+        "9.0"^^xsd:float,
+        "10.0"^^xsd:float,
+        "11.0"^^xsd:float,
+        "12.0"^^xsd:float,
+        "13.0"^^xsd:float,
+        "14.0"^^xsd:float,
+        "15.0"^^xsd:float,
+        "16.0"^^xsd:float,
+        "17.0"^^xsd:float,
+        "18.0"^^xsd:float,
+        "19.0"^^xsd:float,
+        "20.0"^^xsd:float,
+        "21.0"^^xsd:float,
+        "22.0"^^xsd:float,
+        "23.0"^^xsd:float,
+        "24.0"^^xsd:float,
+        "25.0"^^xsd:float,
+        "26.0"^^xsd:float,
+        "27.0"^^xsd:float,
+        "28.0"^^xsd:float,
+        "29.0"^^xsd:float,
+        "30.0"^^xsd:float,
+        "31.0"^^xsd:float,
+        "32.0"^^xsd:float,
+        "33.0"^^xsd:float,
+        "34.0"^^xsd:float,
+        "35.0"^^xsd:float,
+        "36.0"^^xsd:float,
+        "37.0"^^xsd:float,
+        "38.0"^^xsd:float,
+        "39.0"^^xsd:float,
+        "40.0"^^xsd:float,
+        "41.0"^^xsd:float,
+        "42.0"^^xsd:float,
+        "43.0"^^xsd:float,
+        "44.0"^^xsd:float,
+        "45.0"^^xsd:float,
+        "46.0"^^xsd:float,
+        "47.0"^^xsd:float,
+        "48.0"^^xsd:float,
+        "49.0"^^xsd:float,
+        "50.0"^^xsd:float,
+        "51.0"^^xsd:float,
+        "52.0"^^xsd:float,
+        "53.0"^^xsd:float,
+        "54.0"^^xsd:float,
+        "55.0"^^xsd:float,
+        "56.0"^^xsd:float,
+        "57.0"^^xsd:float,
+        "58.0"^^xsd:float,
+        "59.0"^^xsd:float,
+        "60.0"^^xsd:float,
+        "61.0"^^xsd:float,
+        "62.0"^^xsd:float,
+        "63.0"^^xsd:float,
+        "64.0"^^xsd:float,
+        "65.0"^^xsd:float,
+        "66.0"^^xsd:float,
+        "67.0"^^xsd:float,
+        "68.0"^^xsd:float,
+        "69.0"^^xsd:float,
+        "70.0"^^xsd:float,
+        "71.0"^^xsd:float,
+        "72.0"^^xsd:float,
+        "73.0"^^xsd:float,
+        "74.0"^^xsd:float,
+        "75.0"^^xsd:float,
+        "76.0"^^xsd:float,
+        "77.0"^^xsd:float,
+        "78.0"^^xsd:float,
+        "79.0"^^xsd:float,
+        "80.0"^^xsd:float,
+        "81.0"^^xsd:float,
+        "82.0"^^xsd:float,
+        "83.0"^^xsd:float,
+        "84.0"^^xsd:float,
+        "85.0"^^xsd:float,
+        "86.0"^^xsd:float,
+        "87.0"^^xsd:float,
+        "88.0"^^xsd:float,
+        "89.0"^^xsd:float,
+        "90.0"^^xsd:float,
+        "91.0"^^xsd:float,
+        "92.0"^^xsd:float,
+        "93.0"^^xsd:float,
+        "94.0"^^xsd:float,
+        "95.0"^^xsd:float,
+        "96.0"^^xsd:float,
+        "97.0"^^xsd:float,
+        "98.0"^^xsd:float,
+        "99.0"^^xsd:float,
+        "100.0"^^xsd:float,
+        "101.0"^^xsd:float,
+        "102.0"^^xsd:float,
+        "103.0"^^xsd:float,
+        "104.0"^^xsd:float,
+        "105.0"^^xsd:float,
+        "107.0"^^xsd:float,
+        "108.0"^^xsd:float,
+        "109.0"^^xsd:float,
+        "111.0"^^xsd:float,
+        "112.0"^^xsd:float,
+        "114.0"^^xsd:float,
+        "115.0"^^xsd:float,
+        "116.0"^^xsd:float,
+        "117.0"^^xsd:float,
+        "119.0"^^xsd:float,
+        "120.0"^^xsd:float,
+        "121.0"^^xsd:float,
+        "122.0"^^xsd:float,
+        "124.0"^^xsd:float,
+        "125.0"^^xsd:float,
+        "126.0"^^xsd:float,
+        "127.0"^^xsd:float,
+        "129.0"^^xsd:float,
+        "130.0"^^xsd:float,
+        "131.0"^^xsd:float,
+        "132.0"^^xsd:float,
+        "134.0"^^xsd:float,
+        "135.0"^^xsd:float,
+        "141.0"^^xsd:float,
+        "142.0"^^xsd:float,
+        "143.0"^^xsd:float,
+        "147.0"^^xsd:float ;
     saref:isMeasuredIn <http://smartcity.airquality.es/airquality/magnitude/microgram%20per%20cubic%20metre> .
 
 <http://smartcity.airquality.es/airquality/municipality/Madrid> a vocab:Municipality ;

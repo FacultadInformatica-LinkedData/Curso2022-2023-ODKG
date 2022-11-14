@@ -58,12 +58,12 @@ map:om_004 rml:reference "StationName" ;
 
 map:om_005 rml:reference "Latitude" ;
 	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:real ;
+	rr:datatype xsd:float ;
 	rr:termType rr:Literal .
 
 map:om_006 rml:reference "Longitude" ;
 	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:real ;
+	rr:datatype xsd:float ;
 	rr:termType rr:Literal .
 
 map:om_007 rdf:type rr:ObjectMap ;
@@ -92,7 +92,7 @@ map:om_012 rml:reference "Time" ;
 
 map:om_013 rml:reference "Measurement" ;
 	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:real ;
+	rr:datatype xsd:float ;
 	rr:termType rr:Literal .
 
 map:om_014 rdf:type rr:ObjectMap ;

@@ -1,0 +1,121 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  vocab: http://www.odkg.group22.org/gz/ontology/MadridGreenZones#
+
+mappings:
+  species:
+    sources:
+      - [/content/mapping/Species.csv~csv]
+    s: $(identifier)
+    po:
+      - [a, vocab:Species]
+      - [vocab:speciesCode, $(species_code)]
+      - [vocab:speciesName, $(species_name)]
+
+  woodland:
+    sources:
+      - [/content/mapping/ArboladoZonasVerdesDistritosCalles-2021-updated.csv~csv]
+    s: $(identifier)
+    po:
+      - [a, vocab:Woodland]
+      - [vocab:unitSpecies, $(units_species), xsd:integer]
+      - p: vocab:hasSpecies
+        o:
+          mapping: species
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(species)]
+              - [str2, $(identifier)]
+
+  district:
+    sources:
+      - [/content/mapping/District.csv~csv]
+    s: $(identifier)
+    po:
+      - [a, vocab:District]
+      - [vocab:districtCode, $(district_code)]
+      - [vocab:districtName, $(district_name)]
+      - p: vocab:hasWoodland
+        o:
+          mapping: woodland
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(identifier)]
+              - [str2, $(district_number)]
+  location:
+    sources:
+      - [/content/mapping/Location.csv~csv]
+    s: $(identifier)
+    po:
+      - [a, vocab:Location]
+      - [vocab:locationCode, $(location_code)]
+      - [vocab:locationName, $(location_name)]
+
+  destination:
+    sources:
+      - [/content/mapping/Destination.csv~csv]
+    s: $(identifier)
+    po:
+      - [a, vocab:Destination]
+      - [vocab:destinationCode, $(destination_code)]
+      - [vocab:destinationName, $(destination_name)]
+  type:
+    sources:
+      - [/content/mapping/Type.csv~csv]
+    s: $(identifier)
+    po:
+      - [a, vocab:Type]
+      - [vocab:typeCode, $(type_code)]
+      - [vocab:typeName, $(type_name)]
+
+  greenzone:
+    sources:
+      - [/content/mapping/Zonas-verdes-2021-updated.csv~csv]
+    s: $(identifier)
+    po:
+      - [a, vocab:GreenZone]
+      - [vocab:archiveNumber, $(archive_number), xds:integer]
+      - [vocab:solar, $(solar_m2), xds:float]
+      - p: vocab:hasDistrict
+        o:
+          mapping: district
+         condition:
+            function: equal
+            parameters:
+              - [str1, $(district)]
+              - [str2, $(identifier)]
+      - p: vocab:hasLocation
+        o:
+          mapping: location
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(location)]
+              - [str2, $(identifier)]
+      - p: vocab:hasDestination
+        o:
+          mapping: destination
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(destination)]
+              - [str2, $(identifier)]
+      - p: vocab:hasType
+        o:
+          mapping: type
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(type)]
+              - [str2, $(identifier)]

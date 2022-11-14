@@ -221,7 +221,7 @@ function getMap(id, lon, lat){
         center: [lon,lat],
         zoom: 15
     });
-
+    const school = new maplibregl.Marker().setLngLat([lon, lat]).addTo(map);
     /*var el = document.createElement('div');                                       
     el.style.backgroundImage = 'url(https://placekitten.com/g/50/)';              
     el.style.width = '50px';                                                      

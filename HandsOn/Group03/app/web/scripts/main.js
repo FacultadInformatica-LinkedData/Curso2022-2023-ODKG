@@ -48,8 +48,8 @@ templateSchoolHtml = `<div class="schoolItem", id="${10}">
 
 var mySchools = JSON.parse(localStorage.getItem('mySchools'));
 
-var savedSchools = [templateSchoolHtml,templateSchoolHtml,templateSchoolHtml];
-//var savedSchools = [];
+//var savedSchools = [templateSchoolHtml,templateSchoolHtml,templateSchoolHtml];
+var savedSchools = [];
 
 console.log(mySchools, savedSchools)
 

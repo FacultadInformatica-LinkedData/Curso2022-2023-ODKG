@@ -8,7 +8,7 @@ region_map = {
     'Distrito': 'District',
     'Barrio': 'Neighborhood'
 }
-controller = AppController('rdf/200342-0-centros-dia-with-links.ttl')
+controller = AppController('HandsOn/Group21/rdf/200342-0-centros-dia-with-links.ttl')
 
 st.title('Centros de Día para Adultos Mayores en Madrid')
 

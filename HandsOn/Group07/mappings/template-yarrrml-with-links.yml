@@ -43,7 +43,7 @@ mappings:
       - [owl:sameAs, $(same_as_wikidata_magnitude)~iri]
       - [vocab:hasMagnitudeName, $(MagnitudeName), xsd:string]
       - [saref:hasTimestamp, $(Time), xsd:date]
-      - [saref:hasValue, $(Measurement), xsd:integer]
+      - [saref:hasValue, $(Measurement), xsd:real]
       - p: saref:isMeasuredIn
         o:
           - mapping: unitOfMeasureMap

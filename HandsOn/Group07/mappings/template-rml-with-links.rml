@@ -92,7 +92,7 @@ map:om_012 rml:reference "Time" ;
 
 map:om_013 rml:reference "Measurement" ;
 	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:integer ;
+	rr:datatype xsd:real ;
 	rr:termType rr:Literal .
 
 map:om_014 rdf:type rr:ObjectMap ;
@@ -233,4 +233,5 @@ map:source_002 rml:referenceFormulation ql:CSV ;
 map:source_003 rml:referenceFormulation ql:CSV ;
 	rml:source "datos202112-updated.csv" ;
 	rdf:type rml:LogicalSource .
+
 

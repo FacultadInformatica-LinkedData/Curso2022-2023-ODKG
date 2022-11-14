@@ -406,7 +406,8 @@ function findSchoolInArray(schoolCode){
     return index;
 }
 function addSchool(schoolCode){
-    savedSchools.push(schoolCode);
+
+    savedSchools.push(schoolCode.replace("fa fa-star", "fa fa-star fa-star-saved"));
     mySchools = JSON.stringify(savedSchools);
     localStorage.setItem('mySchools', mySchools)
 }
@@ -439,7 +440,8 @@ function saveSchool(){
 
 
 function loadSchools(){
-    $("#SchoolListContainer").html('');
+    console.log('YESSSSSSSSSS')
+    $("#SchoolListContainer").html(' ');
     savedSchools = JSON.parse(localStorage.getItem('mySchools'))
     let schoolListHtml = savedSchools.join('\n\n');
     schoolListHtml.replace('class="fa fa-star"','class="fa fa-star fa-star-saved"')

@@ -113,7 +113,7 @@ main{
 }
 #QuickAccesButtonContainer button, #QuickAccesButtonContainer select{
     min-height:40px;
-    min-width:100px;
+    min-width:140px;
     max-width:150px;
 
     height:5vh;
@@ -369,7 +369,7 @@ text-align: center;
 }
 
 .fa-star-saved{
-    color:var(---highlight-secondary-color) !important;
+    color:#00ff84 !important;
 }
 
 .fa-star-NotSaved{

@@ -1,223 +1,222 @@
-@prefix ns1: <https://saref.etsi.org/core/v3.1.1/> .
-@prefix ns2: <http://smartcity.airquality.es/airquality/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix saref: <https://saref.etsi.org/core/v3.1.1/> .
+@prefix vocab: <http://smartcity.airquality.es/airquality/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://smartcity.airquality.es/airquality/station/Arturo%20Soria> a ns2:Station ;
-    ns2:hasStationName "Arturo Soria" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.4400457"^^xsd:real ;
-    ns2:longitude "-3.6392422"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
+<http://smartcity.airquality.es/airquality/station/Arturo%20Soria> a vocab:Station ;
+    vocab:hasStationName "Arturo Soria" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.4400457"^^xsd:real ;
+    vocab:longitude "-3.6392422"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
 
-<http://smartcity.airquality.es/airquality/station/Barajas%20Pueblo> a ns2:Station ;
-    ns2:hasStationName "Barajas Pueblo" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.4769179"^^xsd:real ;
-    ns2:longitude "-3.5800258"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+<http://smartcity.airquality.es/airquality/station/Barajas%20Pueblo> a vocab:Station ;
+    vocab:hasStationName "Barajas Pueblo" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.4769179"^^xsd:real ;
+    vocab:longitude "-3.5800258"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
 
-<http://smartcity.airquality.es/airquality/station/Barrio%20del%20Pilar> a ns2:Station ;
-    ns2:hasStationName "Barrio del Pilar" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.4782322"^^xsd:real ;
-    ns2:longitude "-3.7115364"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
+<http://smartcity.airquality.es/airquality/station/Barrio%20del%20Pilar> a vocab:Station ;
+    vocab:hasStationName "Barrio del Pilar" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.4782322"^^xsd:real ;
+    vocab:longitude "-3.7115364"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
 
-<http://smartcity.airquality.es/airquality/station/Casa%20de%20Campo> a ns2:Station ;
-    ns2:hasStationName "Casa de Campo" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.4193577"^^xsd:real ;
-    ns2:longitude "-3.7473445"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/sulfur%20dioxide> .
-
-<http://smartcity.airquality.es/airquality/station/Cuatro%20Caminos> a ns2:Station ;
-    ns2:hasStationName "Cuatro Caminos" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.4455439"^^xsd:real ;
-    ns2:longitude "-3.7071303"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/sulfur%20dioxide> .
-
-<http://smartcity.airquality.es/airquality/station/El%20Pardo> a ns2:Station ;
-    ns2:hasStationName "El Pardo" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.5180701"^^xsd:real ;
-    ns2:longitude "-3.7746101"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
-
-<http://smartcity.airquality.es/airquality/station/Ensanche%20de%20Vallecas> a ns2:Station ;
-    ns2:hasStationName "Ensanche de Vallecas" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.3730118"^^xsd:real ;
-    ns2:longitude "-3.6121394"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
-
-<http://smartcity.airquality.es/airquality/station/Escuelas%20Aguirre> a ns2:Station ;
-    ns2:hasStationName "Escuelas Aguirre" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.4215533"^^xsd:real ;
-    ns2:longitude "-3.6823158"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/sulfur%20dioxide> .
-
-<http://smartcity.airquality.es/airquality/station/Farolillo> a ns2:Station ;
-    ns2:hasStationName "Farolillo" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.3947825"^^xsd:real ;
-    ns2:longitude "-3.7318356"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
-
-<http://smartcity.airquality.es/airquality/station/Juan%20Carlos%20I> a ns2:Station ;
-    ns2:hasStationName "Juan Carlos I" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.4607255"^^xsd:real ;
-    ns2:longitude "-3.6163407"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
-
-<http://smartcity.airquality.es/airquality/station/M%C3%A9ndez%20%C3%81lvaro> a ns2:Station ;
-    ns2:hasStationName "Méndez Álvaro" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.3980991"^^xsd:real ;
-    ns2:longitude "-3.6868138"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
-
-<http://smartcity.airquality.es/airquality/station/Moratalaz> a ns2:Station ;
-    ns2:hasStationName "Moratalaz" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.4079517"^^xsd:real ;
-    ns2:longitude "-3.6453104"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
+<http://smartcity.airquality.es/airquality/station/Casa%20de%20Campo> a vocab:Station ;
+    vocab:hasStationName "Casa de Campo" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.4193577"^^xsd:real ;
+    vocab:longitude "-3.7473445"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
         <http://smartcity.airquality.es/airquality/magnitude/sulfur%20dioxide> .
 
-<http://smartcity.airquality.es/airquality/station/Parque%20del%20Retiro%20%28Ponce%29> a ns2:Station ;
-    ns2:hasStationName "Parque del Retiro (Ponce)" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.4144444"^^xsd:real ;
-    ns2:longitude "-3.6824999"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
-
-<http://smartcity.airquality.es/airquality/station/Paseo%20de%20la%20Castellana> a ns2:Station ;
-    ns2:hasStationName "Paseo de la Castellana" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.4398904"^^xsd:real ;
-    ns2:longitude "-3.6903729"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
-
-<http://smartcity.airquality.es/airquality/station/Plaza%20Castilla> a ns2:Station ;
-    ns2:hasStationName "Plaza Castilla" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.4655841"^^xsd:real ;
-    ns2:longitude "-3.6887449"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
-
-<http://smartcity.airquality.es/airquality/station/Plaza%20El%C3%ADptica> a ns2:Station ;
-    ns2:hasStationName "Plaza Elíptica" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.3850336"^^xsd:real ;
-    ns2:longitude "-3.7187679"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
-
-<http://smartcity.airquality.es/airquality/station/Plaza%20de%20Espa%C3%B1a> a ns2:Station ;
-    ns2:hasStationName "Plaza de España" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.4238823"^^xsd:real ;
-    ns2:longitude "-3.7122567"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+<http://smartcity.airquality.es/airquality/station/Cuatro%20Caminos> a vocab:Station ;
+    vocab:hasStationName "Cuatro Caminos" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.4455439"^^xsd:real ;
+    vocab:longitude "-3.7071303"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
         <http://smartcity.airquality.es/airquality/magnitude/sulfur%20dioxide> .
 
-<http://smartcity.airquality.es/airquality/station/Plaza%20del%20Carmen> a ns2:Station ;
-    ns2:hasStationName "Plaza del Carmen" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.4192091"^^xsd:real ;
-    ns2:longitude "-3.7031662"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
-        <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+<http://smartcity.airquality.es/airquality/station/El%20Pardo> a vocab:Station ;
+    vocab:hasStationName "El Pardo" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.5180701"^^xsd:real ;
+    vocab:longitude "-3.7746101"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
+
+<http://smartcity.airquality.es/airquality/station/Ensanche%20de%20Vallecas> a vocab:Station ;
+    vocab:hasStationName "Ensanche de Vallecas" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.3730118"^^xsd:real ;
+    vocab:longitude "-3.6121394"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
+
+<http://smartcity.airquality.es/airquality/station/Escuelas%20Aguirre> a vocab:Station ;
+    vocab:hasStationName "Escuelas Aguirre" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.4215533"^^xsd:real ;
+    vocab:longitude "-3.6823158"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
         <http://smartcity.airquality.es/airquality/magnitude/sulfur%20dioxide> .
 
-<http://smartcity.airquality.es/airquality/station/Ram%C3%B3n%20y%20Cajal> a ns2:Station ;
-    ns2:hasStationName "Ramón y Cajal" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.4514734"^^xsd:real ;
-    ns2:longitude "-3.6773491"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+<http://smartcity.airquality.es/airquality/station/Farolillo> a vocab:Station ;
+    vocab:hasStationName "Farolillo" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.3947825"^^xsd:real ;
+    vocab:longitude "-3.7318356"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
 
-<http://smartcity.airquality.es/airquality/station/Sanchinarro> a ns2:Station ;
-    ns2:hasStationName "Sanchinarro" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.4942012"^^xsd:real ;
-    ns2:longitude "-3.6605173"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
+<http://smartcity.airquality.es/airquality/station/Juan%20Carlos%20I> a vocab:Station ;
+    vocab:hasStationName "Juan Carlos I" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.4607255"^^xsd:real ;
+    vocab:longitude "-3.6163407"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
+
+<http://smartcity.airquality.es/airquality/station/M%C3%A9ndez%20%C3%81lvaro> a vocab:Station ;
+    vocab:hasStationName "Méndez Álvaro" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.3980991"^^xsd:real ;
+    vocab:longitude "-3.6868138"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
+
+<http://smartcity.airquality.es/airquality/station/Moratalaz> a vocab:Station ;
+    vocab:hasStationName "Moratalaz" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.4079517"^^xsd:real ;
+    vocab:longitude "-3.6453104"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
         <http://smartcity.airquality.es/airquality/magnitude/sulfur%20dioxide> .
 
-<http://smartcity.airquality.es/airquality/station/Tres%20Olivos> a ns2:Station ;
-    ns2:hasStationName "Tres Olivos" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.5005477"^^xsd:real ;
-    ns2:longitude "-3.6897308"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+<http://smartcity.airquality.es/airquality/station/Parque%20del%20Retiro%20%28Ponce%29> a vocab:Station ;
+    vocab:hasStationName "Parque del Retiro (Ponce)" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.4144444"^^xsd:real ;
+    vocab:longitude "-3.6824999"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
 
-<http://smartcity.airquality.es/airquality/station/Urb.%20Embajada> a ns2:Station ;
-    ns2:hasStationName "Urb. Embajada" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.4623628"^^xsd:real ;
-    ns2:longitude "-3.5805649"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+<http://smartcity.airquality.es/airquality/station/Paseo%20de%20la%20Castellana> a vocab:Station ;
+    vocab:hasStationName "Paseo de la Castellana" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.4398904"^^xsd:real ;
+    vocab:longitude "-3.6903729"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
 
-<http://smartcity.airquality.es/airquality/station/Vallecas> a ns2:Station ;
-    ns2:hasStationName "Vallecas" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.3881478"^^xsd:real ;
-    ns2:longitude "-3.6515286"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+<http://smartcity.airquality.es/airquality/station/Plaza%20Castilla> a vocab:Station ;
+    vocab:hasStationName "Plaza Castilla" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.4655841"^^xsd:real ;
+    vocab:longitude "-3.6887449"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
+
+<http://smartcity.airquality.es/airquality/station/Plaza%20El%C3%ADptica> a vocab:Station ;
+    vocab:hasStationName "Plaza Elíptica" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.3850336"^^xsd:real ;
+    vocab:longitude "-3.7187679"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
+
+<http://smartcity.airquality.es/airquality/station/Plaza%20de%20Espa%C3%B1a> a vocab:Station ;
+    vocab:hasStationName "Plaza de España" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.4238823"^^xsd:real ;
+    vocab:longitude "-3.7122567"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
         <http://smartcity.airquality.es/airquality/magnitude/sulfur%20dioxide> .
 
-<http://smartcity.airquality.es/airquality/station/Villaverde> a ns2:Station ;
-    ns2:hasStationName "Villaverde" ;
-    ns2:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    ns2:latitude "40.347147"^^xsd:real ;
-    ns2:longitude "-3.7133167"^^xsd:real ;
-    ns1:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+<http://smartcity.airquality.es/airquality/station/Plaza%20del%20Carmen> a vocab:Station ;
+    vocab:hasStationName "Plaza del Carmen" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.4192091"^^xsd:real ;
+    vocab:longitude "-3.7031662"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
         <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
         <http://smartcity.airquality.es/airquality/magnitude/sulfur%20dioxide> .
 
-<http://smartcity.airquality.es/airquality/magnitude/sulfur%20dioxide> a ns2:Magnitude ;
-    ns2:hasMagnitudeName "sulfur dioxide" ;
-    ns2:isMeasuredIn "microgram per cubic metre" ;
+<http://smartcity.airquality.es/airquality/station/Ram%C3%B3n%20y%20Cajal> a vocab:Station ;
+    vocab:hasStationName "Ramón y Cajal" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.4514734"^^xsd:real ;
+    vocab:longitude "-3.6773491"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
+
+<http://smartcity.airquality.es/airquality/station/Sanchinarro> a vocab:Station ;
+    vocab:hasStationName "Sanchinarro" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.4942012"^^xsd:real ;
+    vocab:longitude "-3.6605173"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/sulfur%20dioxide> .
+
+<http://smartcity.airquality.es/airquality/station/Tres%20Olivos> a vocab:Station ;
+    vocab:hasStationName "Tres Olivos" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.5005477"^^xsd:real ;
+    vocab:longitude "-3.6897308"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
+
+<http://smartcity.airquality.es/airquality/station/Urb.%20Embajada> a vocab:Station ;
+    vocab:hasStationName "Urb. Embajada" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.4623628"^^xsd:real ;
+    vocab:longitude "-3.5805649"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> .
+
+<http://smartcity.airquality.es/airquality/station/Vallecas> a vocab:Station ;
+    vocab:hasStationName "Vallecas" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.3881478"^^xsd:real ;
+    vocab:longitude "-3.6515286"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/sulfur%20dioxide> .
+
+<http://smartcity.airquality.es/airquality/station/Villaverde> a vocab:Station ;
+    vocab:hasStationName "Villaverde" ;
+    vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
+    vocab:latitude "40.347147"^^xsd:real ;
+    vocab:longitude "-3.7133167"^^xsd:real ;
+    saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide>,
+        <http://smartcity.airquality.es/airquality/magnitude/sulfur%20dioxide> .
+
+<http://smartcity.airquality.es/airquality/magnitude/sulfur%20dioxide> a vocab:Magnitude ;
+    vocab:hasMagnitudeName "sulfur dioxide" ;
     owl:sameAs <https://wikidata.org/entity/Q5282> ;
-    ns1:hasTimestamp "2021-01-01"^^xsd:date,
+    saref:hasTimestamp "2021-01-01"^^xsd:date,
         "2021-01-02"^^xsd:date,
         "2021-01-03"^^xsd:date,
         "2021-01-04"^^xsd:date,
@@ -582,35 +581,35 @@
         "2021-12-29"^^xsd:date,
         "2021-12-30"^^xsd:date,
         "2021-12-31"^^xsd:date ;
-    ns1:hasValue 0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        19,
-        98,
-        107,
-        131,
-        420,
-        421 .
+    saref:hasValue "0"^^xsd:real,
+        "1"^^xsd:real,
+        "10"^^xsd:real,
+        "107"^^xsd:real,
+        "11"^^xsd:real,
+        "12"^^xsd:real,
+        "13"^^xsd:real,
+        "131"^^xsd:real,
+        "14"^^xsd:real,
+        "15"^^xsd:real,
+        "16"^^xsd:real,
+        "19"^^xsd:real,
+        "2"^^xsd:real,
+        "3"^^xsd:real,
+        "4"^^xsd:real,
+        "420"^^xsd:real,
+        "421"^^xsd:real,
+        "5"^^xsd:real,
+        "6"^^xsd:real,
+        "7"^^xsd:real,
+        "8"^^xsd:real,
+        "9"^^xsd:real,
+        "98"^^xsd:real ;
+    saref:isMeasuredIn <http://smartcity.airquality.es/airquality/magnitude/microgram%20per%20cubic%20metre> .
 
-<http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide> a ns2:Magnitude ;
-    ns2:hasMagnitudeName "carbon monoxide" ;
-    ns2:isMeasuredIn "microgram per cubic metre" ;
+<http://smartcity.airquality.es/airquality/magnitude/carbon%20monoxide> a vocab:Magnitude ;
+    vocab:hasMagnitudeName "carbon monoxide" ;
     owl:sameAs <https://wikidata.org/entity/Q2025> ;
-    ns1:hasTimestamp "2021-01-01"^^xsd:date,
+    saref:hasTimestamp "2021-01-01"^^xsd:date,
         "2021-01-02"^^xsd:date,
         "2021-01-03"^^xsd:date,
         "2021-01-04"^^xsd:date,
@@ -975,24 +974,24 @@
         "2021-12-29"^^xsd:date,
         "2021-12-30"^^xsd:date,
         "2021-12-31"^^xsd:date ;
-    ns1:hasValue 0,
-        "0.1"^^xsd:integer,
-        "0.2"^^xsd:integer,
-        "0.3"^^xsd:integer,
-        "0.4"^^xsd:integer,
-        "0.5"^^xsd:integer,
-        "0.6"^^xsd:integer,
-        "0.7"^^xsd:integer,
-        "0.8"^^xsd:integer,
-        "0.9"^^xsd:integer,
-        1,
-        "1.1"^^xsd:integer .
+    saref:hasValue "0"^^xsd:real,
+        "0.1"^^xsd:real,
+        "0.2"^^xsd:real,
+        "0.3"^^xsd:real,
+        "0.4"^^xsd:real,
+        "0.5"^^xsd:real,
+        "0.6"^^xsd:real,
+        "0.7"^^xsd:real,
+        "0.8"^^xsd:real,
+        "0.9"^^xsd:real,
+        "1"^^xsd:real,
+        "1.1"^^xsd:real ;
+    saref:isMeasuredIn <http://smartcity.airquality.es/airquality/magnitude/microgram%20per%20cubic%20metre> .
 
-<http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide> a ns2:Magnitude ;
-    ns2:hasMagnitudeName "nitric oxide" ;
-    ns2:isMeasuredIn "microgram per cubic metre" ;
+<http://smartcity.airquality.es/airquality/magnitude/nitric%20oxide> a vocab:Magnitude ;
+    vocab:hasMagnitudeName "nitric oxide" ;
     owl:sameAs <https://wikidata.org/entity/Q207843> ;
-    ns1:hasTimestamp "2021-01-01"^^xsd:date,
+    saref:hasTimestamp "2021-01-01"^^xsd:date,
         "2021-01-02"^^xsd:date,
         "2021-01-03"^^xsd:date,
         "2021-01-04"^^xsd:date,
@@ -1357,159 +1356,159 @@
         "2021-12-29"^^xsd:date,
         "2021-12-30"^^xsd:date,
         "2021-12-31"^^xsd:date ;
-    ns1:hasValue 0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49,
-        50,
-        51,
-        52,
-        53,
-        54,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        61,
-        62,
-        63,
-        64,
-        65,
-        66,
-        67,
-        68,
-        69,
-        70,
-        71,
-        72,
-        73,
-        74,
-        75,
-        76,
-        77,
-        78,
-        79,
-        80,
-        81,
-        82,
-        83,
-        84,
-        85,
-        86,
-        87,
-        88,
-        89,
-        90,
-        92,
-        93,
-        94,
-        95,
-        96,
-        98,
-        99,
-        100,
-        101,
-        102,
-        103,
-        104,
-        107,
-        108,
-        109,
-        112,
-        113,
-        114,
-        115,
-        117,
-        118,
-        120,
-        121,
-        122,
-        123,
-        126,
-        127,
-        128,
-        131,
-        132,
-        135,
-        136,
-        137,
-        138,
-        139,
-        140,
-        141,
-        147,
-        148,
-        149,
-        151,
-        152,
-        154,
-        159,
-        162,
-        167,
-        174,
-        177,
-        179,
-        182,
-        197,
-        214,
-        216,
-        1523,
-        1583,
-        2336 .
+    saref:hasValue "0"^^xsd:real,
+        "1"^^xsd:real,
+        "10"^^xsd:real,
+        "100"^^xsd:real,
+        "101"^^xsd:real,
+        "102"^^xsd:real,
+        "103"^^xsd:real,
+        "104"^^xsd:real,
+        "107"^^xsd:real,
+        "108"^^xsd:real,
+        "109"^^xsd:real,
+        "11"^^xsd:real,
+        "112"^^xsd:real,
+        "113"^^xsd:real,
+        "114"^^xsd:real,
+        "115"^^xsd:real,
+        "117"^^xsd:real,
+        "118"^^xsd:real,
+        "12"^^xsd:real,
+        "120"^^xsd:real,
+        "121"^^xsd:real,
+        "122"^^xsd:real,
+        "123"^^xsd:real,
+        "126"^^xsd:real,
+        "127"^^xsd:real,
+        "128"^^xsd:real,
+        "13"^^xsd:real,
+        "131"^^xsd:real,
+        "132"^^xsd:real,
+        "135"^^xsd:real,
+        "136"^^xsd:real,
+        "137"^^xsd:real,
+        "138"^^xsd:real,
+        "139"^^xsd:real,
+        "14"^^xsd:real,
+        "140"^^xsd:real,
+        "141"^^xsd:real,
+        "147"^^xsd:real,
+        "148"^^xsd:real,
+        "149"^^xsd:real,
+        "15"^^xsd:real,
+        "151"^^xsd:real,
+        "152"^^xsd:real,
+        "1523"^^xsd:real,
+        "154"^^xsd:real,
+        "1583"^^xsd:real,
+        "159"^^xsd:real,
+        "16"^^xsd:real,
+        "162"^^xsd:real,
+        "167"^^xsd:real,
+        "17"^^xsd:real,
+        "174"^^xsd:real,
+        "177"^^xsd:real,
+        "179"^^xsd:real,
+        "18"^^xsd:real,
+        "182"^^xsd:real,
+        "19"^^xsd:real,
+        "197"^^xsd:real,
+        "2"^^xsd:real,
+        "20"^^xsd:real,
+        "21"^^xsd:real,
+        "214"^^xsd:real,
+        "216"^^xsd:real,
+        "22"^^xsd:real,
+        "23"^^xsd:real,
+        "2336"^^xsd:real,
+        "24"^^xsd:real,
+        "25"^^xsd:real,
+        "26"^^xsd:real,
+        "27"^^xsd:real,
+        "28"^^xsd:real,
+        "29"^^xsd:real,
+        "3"^^xsd:real,
+        "30"^^xsd:real,
+        "31"^^xsd:real,
+        "32"^^xsd:real,
+        "33"^^xsd:real,
+        "34"^^xsd:real,
+        "35"^^xsd:real,
+        "36"^^xsd:real,
+        "37"^^xsd:real,
+        "38"^^xsd:real,
+        "39"^^xsd:real,
+        "4"^^xsd:real,
+        "40"^^xsd:real,
+        "41"^^xsd:real,
+        "42"^^xsd:real,
+        "43"^^xsd:real,
+        "44"^^xsd:real,
+        "45"^^xsd:real,
+        "46"^^xsd:real,
+        "47"^^xsd:real,
+        "48"^^xsd:real,
+        "49"^^xsd:real,
+        "5"^^xsd:real,
+        "50"^^xsd:real,
+        "51"^^xsd:real,
+        "52"^^xsd:real,
+        "53"^^xsd:real,
+        "54"^^xsd:real,
+        "55"^^xsd:real,
+        "56"^^xsd:real,
+        "57"^^xsd:real,
+        "58"^^xsd:real,
+        "59"^^xsd:real,
+        "6"^^xsd:real,
+        "60"^^xsd:real,
+        "61"^^xsd:real,
+        "62"^^xsd:real,
+        "63"^^xsd:real,
+        "64"^^xsd:real,
+        "65"^^xsd:real,
+        "66"^^xsd:real,
+        "67"^^xsd:real,
+        "68"^^xsd:real,
+        "69"^^xsd:real,
+        "7"^^xsd:real,
+        "70"^^xsd:real,
+        "71"^^xsd:real,
+        "72"^^xsd:real,
+        "73"^^xsd:real,
+        "74"^^xsd:real,
+        "75"^^xsd:real,
+        "76"^^xsd:real,
+        "77"^^xsd:real,
+        "78"^^xsd:real,
+        "79"^^xsd:real,
+        "8"^^xsd:real,
+        "80"^^xsd:real,
+        "81"^^xsd:real,
+        "82"^^xsd:real,
+        "83"^^xsd:real,
+        "84"^^xsd:real,
+        "85"^^xsd:real,
+        "86"^^xsd:real,
+        "87"^^xsd:real,
+        "88"^^xsd:real,
+        "89"^^xsd:real,
+        "9"^^xsd:real,
+        "90"^^xsd:real,
+        "92"^^xsd:real,
+        "93"^^xsd:real,
+        "94"^^xsd:real,
+        "95"^^xsd:real,
+        "96"^^xsd:real,
+        "98"^^xsd:real,
+        "99"^^xsd:real ;
+    saref:isMeasuredIn <http://smartcity.airquality.es/airquality/magnitude/microgram%20per%20cubic%20metre> .
 
-<http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> a ns2:Magnitude ;
-    ns2:hasMagnitudeName "nitrogen dioxide" ;
-    ns2:isMeasuredIn "microgram per cubic metre" ;
+<http://smartcity.airquality.es/airquality/magnitude/nitrogen%20dioxide> a vocab:Magnitude ;
+    vocab:hasMagnitudeName "nitrogen dioxide" ;
     owl:sameAs <https://wikidata.org/entity/Q207895> ;
-    ns1:hasTimestamp "2021-01-01"^^xsd:date,
+    saref:hasTimestamp "2021-01-01"^^xsd:date,
         "2021-01-02"^^xsd:date,
         "2021-01-03"^^xsd:date,
         "2021-01-04"^^xsd:date,
@@ -1874,140 +1873,141 @@
         "2021-12-29"^^xsd:date,
         "2021-12-30"^^xsd:date,
         "2021-12-31"^^xsd:date ;
-    ns1:hasValue 0,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49,
-        50,
-        51,
-        52,
-        53,
-        54,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        61,
-        62,
-        63,
-        64,
-        65,
-        66,
-        67,
-        68,
-        69,
-        70,
-        71,
-        72,
-        73,
-        74,
-        75,
-        76,
-        77,
-        78,
-        79,
-        80,
-        81,
-        82,
-        83,
-        84,
-        85,
-        86,
-        87,
-        88,
-        89,
-        90,
-        91,
-        92,
-        93,
-        94,
-        95,
-        96,
-        97,
-        98,
-        99,
-        100,
-        101,
-        102,
-        103,
-        104,
-        105,
-        107,
-        108,
-        109,
-        111,
-        112,
-        114,
-        115,
-        116,
-        117,
-        119,
-        120,
-        121,
-        122,
-        124,
-        125,
-        126,
-        127,
-        129,
-        130,
-        131,
-        132,
-        134,
-        135,
-        141,
-        142,
-        143,
-        147 .
+    saref:hasValue "0"^^xsd:real,
+        "10"^^xsd:real,
+        "100"^^xsd:real,
+        "101"^^xsd:real,
+        "102"^^xsd:real,
+        "103"^^xsd:real,
+        "104"^^xsd:real,
+        "105"^^xsd:real,
+        "107"^^xsd:real,
+        "108"^^xsd:real,
+        "109"^^xsd:real,
+        "11"^^xsd:real,
+        "111"^^xsd:real,
+        "112"^^xsd:real,
+        "114"^^xsd:real,
+        "115"^^xsd:real,
+        "116"^^xsd:real,
+        "117"^^xsd:real,
+        "119"^^xsd:real,
+        "12"^^xsd:real,
+        "120"^^xsd:real,
+        "121"^^xsd:real,
+        "122"^^xsd:real,
+        "124"^^xsd:real,
+        "125"^^xsd:real,
+        "126"^^xsd:real,
+        "127"^^xsd:real,
+        "129"^^xsd:real,
+        "13"^^xsd:real,
+        "130"^^xsd:real,
+        "131"^^xsd:real,
+        "132"^^xsd:real,
+        "134"^^xsd:real,
+        "135"^^xsd:real,
+        "14"^^xsd:real,
+        "141"^^xsd:real,
+        "142"^^xsd:real,
+        "143"^^xsd:real,
+        "147"^^xsd:real,
+        "15"^^xsd:real,
+        "16"^^xsd:real,
+        "17"^^xsd:real,
+        "18"^^xsd:real,
+        "19"^^xsd:real,
+        "2"^^xsd:real,
+        "20"^^xsd:real,
+        "21"^^xsd:real,
+        "22"^^xsd:real,
+        "23"^^xsd:real,
+        "24"^^xsd:real,
+        "25"^^xsd:real,
+        "26"^^xsd:real,
+        "27"^^xsd:real,
+        "28"^^xsd:real,
+        "29"^^xsd:real,
+        "3"^^xsd:real,
+        "30"^^xsd:real,
+        "31"^^xsd:real,
+        "32"^^xsd:real,
+        "33"^^xsd:real,
+        "34"^^xsd:real,
+        "35"^^xsd:real,
+        "36"^^xsd:real,
+        "37"^^xsd:real,
+        "38"^^xsd:real,
+        "39"^^xsd:real,
+        "4"^^xsd:real,
+        "40"^^xsd:real,
+        "41"^^xsd:real,
+        "42"^^xsd:real,
+        "43"^^xsd:real,
+        "44"^^xsd:real,
+        "45"^^xsd:real,
+        "46"^^xsd:real,
+        "47"^^xsd:real,
+        "48"^^xsd:real,
+        "49"^^xsd:real,
+        "5"^^xsd:real,
+        "50"^^xsd:real,
+        "51"^^xsd:real,
+        "52"^^xsd:real,
+        "53"^^xsd:real,
+        "54"^^xsd:real,
+        "55"^^xsd:real,
+        "56"^^xsd:real,
+        "57"^^xsd:real,
+        "58"^^xsd:real,
+        "59"^^xsd:real,
+        "6"^^xsd:real,
+        "60"^^xsd:real,
+        "61"^^xsd:real,
+        "62"^^xsd:real,
+        "63"^^xsd:real,
+        "64"^^xsd:real,
+        "65"^^xsd:real,
+        "66"^^xsd:real,
+        "67"^^xsd:real,
+        "68"^^xsd:real,
+        "69"^^xsd:real,
+        "7"^^xsd:real,
+        "70"^^xsd:real,
+        "71"^^xsd:real,
+        "72"^^xsd:real,
+        "73"^^xsd:real,
+        "74"^^xsd:real,
+        "75"^^xsd:real,
+        "76"^^xsd:real,
+        "77"^^xsd:real,
+        "78"^^xsd:real,
+        "79"^^xsd:real,
+        "8"^^xsd:real,
+        "80"^^xsd:real,
+        "81"^^xsd:real,
+        "82"^^xsd:real,
+        "83"^^xsd:real,
+        "84"^^xsd:real,
+        "85"^^xsd:real,
+        "86"^^xsd:real,
+        "87"^^xsd:real,
+        "88"^^xsd:real,
+        "89"^^xsd:real,
+        "9"^^xsd:real,
+        "90"^^xsd:real,
+        "91"^^xsd:real,
+        "92"^^xsd:real,
+        "93"^^xsd:real,
+        "94"^^xsd:real,
+        "95"^^xsd:real,
+        "96"^^xsd:real,
+        "97"^^xsd:real,
+        "98"^^xsd:real,
+        "99"^^xsd:real ;
+    saref:isMeasuredIn <http://smartcity.airquality.es/airquality/magnitude/microgram%20per%20cubic%20metre> .
 
-<http://smartcity.airquality.es/airquality/municipality/Madrid> a ns2:Municipality ;
-    ns2:hasMunicipalityName "Madrid" ;
+<http://smartcity.airquality.es/airquality/municipality/Madrid> a vocab:Municipality ;
+    vocab:hasMunicipalityName "Madrid" ;
     owl:sameAs <https://wikidata.org/entity/Q2807> .
 

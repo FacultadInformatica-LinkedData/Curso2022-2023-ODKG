@@ -93,6 +93,7 @@ function search(schoolName = ""){
     let metro_filter= ""
     if(metroLine){
         let w_station = getWiki(metroLines[metroLine])
+        console.log("w_station", w_station)
         let ws = []
         for (var w of w_station){
             ws.push(w.replace("http://www.", "https://").replace(":", "%3A").replace("/", "%2F").replace("/", "%2F").replace("/", "%2F").replace("/", "%2F").replace("/", "%2F").replace("/", "%2F").replace("/", "%2F").replace("/", "%2F"))

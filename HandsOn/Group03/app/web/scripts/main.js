@@ -93,15 +93,19 @@ function getCard(school){
     let laborDay = school['laborDay']
     let typeAccessibility = school['typeAccessibility']
 
-    let lonT = school['longitude'].slice(0,2) + "." +school['longitude'].slice(2)
-    let latT = school['latitude'].slice(0,1) + "." +school['latitude'].slice(1)
+    var utm = "+proj=utm +zone=30";
+    var wgs84 = "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs";
+    coords = proj4(utm,wgs84,[school['latitude'], school['longitude']]);
+    console.log(coords)
 
-	let newHTML = `<div class="schoolItem", id="${identifier}">
-          <div class="front cardFace">
-            <iframe class="schoolMap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-3.8222%2C40.4882%2C-3.5029%2C40.3539&amp;layer=mapnik&amp;marker=${lonT}2C-${latT}" 
+    /*<iframe class="schoolMap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-3.8222%2C40.4882%2C-3.5029%2C40.3539&amp;layer=mapnik&amp;marker=${coords[0]}2C-${coords[1]}" 
             style="border: 1px solid black">
             </iframe>
+*/
+	let newHTML = `<div class="schoolItem", id="${identifier}">
+          <div class="front cardFace">
+            <div class="schoolMap" id="schoolMap${identifier}"></div>
             <div class="schoolInfo">
                 <br>
                 <p class="schoolName">${schoolName}</p>
@@ -134,7 +138,7 @@ function getCard(school){
 
 	$("#searchResults").html(current + newHTML)
 
-	//getMap(`schoolMap${identifier}`, school['longitude'], school['latitude']);
+	getMap(`schoolMap${identifier}`, coords[1], coords[0]);
 }
 
 function generateCards(results){for(let cardResult of results){getCard(cardResult);}}

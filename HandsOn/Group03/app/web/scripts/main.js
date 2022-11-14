@@ -154,7 +154,7 @@ function getCard(school){
     let zoom = 14.5;
 	let newHTML = `<div class="schoolItem" id="${identifier}">
             <div class="front cardFace"> 
-            <div class="SchoolMap" id="Map${identifier}">
+            <div class="SchoolMap" id="${schoolName}">
             </div>
             <div class="schoolInfo">
                 <br>
@@ -189,7 +189,7 @@ function getCard(school){
     $("#searchResults").html(current + newHTML)
 
 
-	getMap(HTMLId, coords[1], coords[0]);
+	getMap(schoolName, coords[1], coords[0]);
 
     $("#searchResults").html(current + newHTML)
 

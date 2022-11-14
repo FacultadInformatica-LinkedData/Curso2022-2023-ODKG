@@ -368,3 +368,10 @@ text-align: center;
     display:flex;
 }
 
+.fa-star-saved{
+    color:var(---highlight-secondary-color) !important;
+}
+
+.fa-star-NotSaved{
+    color:var(--secondary-color) !important;
+}

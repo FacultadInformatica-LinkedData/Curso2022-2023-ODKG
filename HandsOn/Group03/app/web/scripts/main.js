@@ -48,8 +48,8 @@ templateSchoolHtml = `<div class="schoolItem", id="${10}">
 
 var mySchools = JSON.parse(localStorage.getItem('mySchools'));
 
-// var savedSchools = [templateSchoolHtml,templateSchoolHtml,templateSchoolHtml];
-var savedSchools = [];
+var savedSchools = [templateSchoolHtml,templateSchoolHtml,templateSchoolHtml];
+//var savedSchools = [];
 
 console.log(mySchools, savedSchools)
 
@@ -220,7 +220,7 @@ function getMap(id, lon, lat){
         center: [lon,lat],
         zoom: 15
     });
-
+    const school = new maplibregl.Marker().setLngLat([lon, lat]).addTo(map);
     /*var el = document.createElement('div');                                       
     el.style.backgroundImage = 'url(https://placekitten.com/g/50/)';              
     el.style.width = '50px';                                                      
@@ -417,14 +417,20 @@ function saveSchool(){
    }
    else{
     //eliminando...
+    try {$(this).removeClass("fa-star-saved")} catch (error) {}
+    
     $(this).children().css('color','rgb(121, 125, 237)');
+    
     removeSchool(schoolCode);
    }
 }
+
 
 function loadSchools(){
     $("#SchoolListContainer").html('');
     savedSchools = JSON.parse(localStorage.getItem('mySchools'))
     let schoolListHtml = savedSchools.join('\n\n');
+    schoolListHtml.replace('class="fa fa-star"','class="fa fa-star fa-star-saved"')
     $("#SchoolListContainer").html(schoolListHtml);
+
 }

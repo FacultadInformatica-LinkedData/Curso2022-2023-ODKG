@@ -110,9 +110,9 @@ map:om_015 rml:reference "wikidata_distrito_id" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
-map:om_016 rml:reference "wikidata_distrito_uri" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
+map:om_016 rdf:type rr:ObjectMap ;
+	rr:template "http://www.wikidata.org/entity/{wikidata_distrito_id}" ;
+	rr:termType rr:IRI .
 
 map:om_017 rdf:type rr:ObjectMap ;
 	rr:constant "http://placasdemadrid.linkeddata.es/placas-madrid/ontology/Entidad" ;
@@ -130,9 +130,9 @@ map:om_020 rml:reference "wikidata_nombre_id" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
-map:om_021 rml:reference "wikidata_nombre_uri" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
+map:om_021 rdf:type rr:ObjectMap ;
+	rr:constant "http://www.wikidata.org/entity/($wikidata_nombre_id)" ;
+	rr:termType rr:IRI .
 
 map:om_022 rdf:type rr:ObjectMap ;
 	rr:constant "http://placasdemadrid.linkeddata.es/placas-madrid/ontology/Web" ;

@@ -40,7 +40,7 @@ mappings:
       - [ns:nombre,$(distrito)]
       - [ns:wikidata_uri,$(wikidata_distrito_uri)]
       - [ns:wikidata_id,$(wikidata_distrito_id)]
-      - [owl:sameAs,$(wikidata_distrito_uri)]
+      - [owl:sameAs, http://www.wikidata.org/entity/$(wikidata_distrito_id)~iri]
 
  triplesmap3:
    sources:
@@ -51,7 +51,7 @@ mappings:
       - [ns:nombre,$(nombre)]
       - [ns:wikidata_uri,$(wikidata_nombre_uri)]
       - [ns:wikidata_id,$(wikidata_nombre_id)]
-      - [owl:sameAs,$(wikidata_nombre_uri)]
+      - [owl:sameAs,http://www.wikidata.org/entity/($wikidata_nombre_id)~iri]
 
  triplesmap4:
    sources:

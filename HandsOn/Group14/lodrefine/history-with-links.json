@@ -451,7 +451,7 @@
       "score": 100
     },
     "shareNewTopics": false,
-    "description": "Match item Saint-Maurice (Q21603) for cells containing \"Saint-Maurice\" in column Nom communes équipées"
+    "description": "Match item Saint-Maurice (Q274327) for cells containing \"Saint-Maurice\" in column Nom communes équipées"
   },
   {
     "op": "core/recon-judge-similar-cells",

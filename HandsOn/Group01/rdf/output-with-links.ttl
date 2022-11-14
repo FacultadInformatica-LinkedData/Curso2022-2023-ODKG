@@ -269,7 +269,7 @@
   a ns0:Center ;
   rdfs:label "H GENERAL UNIVERSITARIO ELDA"^^xsd:string ;
   ns0:hasPhone "966989071"^^xsd:string ;
-  ns0:hasAddress "Crtra. Sax � La Torreta, s/n"^^xsd:string ;
+  ns0:hasAddress "Crtra. Sax La Torreta, s/n"^^xsd:string ;
   ns1:locatedIn <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_elda> ;
   ns0:managed_by <http://www.dialysisComunidadValenciana.es/resource/entity/generalitat_valenciana> ;
   geo:long "-0.7995384869999491"^^xsd:float ;
@@ -399,7 +399,7 @@
 
 <http://www.dialysisComunidadValenciana.es/resource/city/lliria>
   a ns0:City ;
-  rdfs:label "Ll�ria"^^xsd:string ;
+  rdfs:label "Lliria"^^xsd:string ;
   ns1:locatedIn <http://www.dialysisComunidadValenciana.es/resource/province/valencia> ;
   owl:sameAs <https://www.wikidata.org/wiki/Q23067> .
 
@@ -459,7 +459,7 @@
 
 <http://www.dialysisComunidadValenciana.es/resource/city/vinaros>
   a ns0:City ;
-  rdfs:label "Vinar�s"^^xsd:string ;
+  rdfs:label "Vinaros"^^xsd:string ;
   ns1:locatedIn <http://www.dialysisComunidadValenciana.es/resource/province/castellon> ;
   owl:sameAs <https://www.wikidata.org/wiki/Q917888> .
 
@@ -470,19 +470,19 @@
 
 <http://www.dialysisComunidadValenciana.es/resource/city/castello>
   a ns0:City ;
-  rdfs:label "Castell� de la Plana"^^xsd:string ;
+  rdfs:label "Castello de la Plana"^^xsd:string ;
   ns1:locatedIn <http://www.dialysisComunidadValenciana.es/resource/province/castellon> ;
   owl:sameAs <https://www.wikidata.org/wiki/Q15092> .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/la_vall_d_uixo>
   a ns0:City ;
-  rdfs:label "La Vall d'Uix�"^^xsd:string ;
+  rdfs:label "La Vall d'Uixo"^^xsd:string ;
   ns1:locatedIn <http://www.dialysisComunidadValenciana.es/resource/province/castellon> ;
   owl:sameAs <https://www.wikidata.org/wiki/Q1637512> .
 
 <http://www.dialysisComunidadValenciana.es/resource/city/denia>
   a ns0:City ;
-  rdfs:label "D�nia"^^xsd:string ;
+  rdfs:label "Denia"^^xsd:string ;
   ns1:locatedIn <http://www.dialysisComunidadValenciana.es/resource/province/alicante> ;
   owl:sameAs <https://www.wikidata.org/wiki/Q646725> .
 
@@ -552,7 +552,7 @@
 
 <http://www.dialysisComunidadValenciana.es/resource/entity/clinica_vistahermosa_grupo_hla>
   a ns0:Entity ;
-  rdfs:label "Cl�nica Vistahermosa Grupo Hla"^^xsd:string ;
+  rdfs:label "Clinica Vistahermosa Grupo Hla"^^xsd:string ;
   owl:sameAs <https://www.wikidata.org/wiki/Q87761418> .
 
 <http://www.dialysisComunidadValenciana.es/resource/entity/generalitat_valenciana>
@@ -575,7 +575,7 @@
 
 <http://www.dialysisComunidadValenciana.es/resource/entity/centro_medico_salus_baleares>
   a ns0:Entity ;
-  rdfs:label "CENTRO M�DICO SALUS BALEARES"^^xsd:string .
+  rdfs:label "CENTRO MEDICO SALUS BALEARES"^^xsd:string .
 
 <http://www.dialysisComunidadValenciana.es/resource/entity/casa_de_reposo_y_sanatorio_ppto_socorro_sa>
   a ns0:Entity ;

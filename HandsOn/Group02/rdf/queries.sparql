@@ -1,0 +1,45 @@
+select ?s where {
+?s ns1:bicycleIsElectronic 1 . 
+?s ns0:term_place <http://bicycleaccident.com/group2/resource/Place/PRINCIPEDEVERGARA>
+}
+
+select ?p where {
+?s ?p ?o .
+?s ns1:hasType "Fall"
+}
+
+select ?o where {
+?s ns1:duringWeather ?o
+}
+
+select ?s where {
+?s ns0:term_time <http://bicycleaccident.com/group2/resource/Time/20190111160000>
+}
+
+select ?s where {
+?s ns1:isDistrict "3  RETIRO" .
+?s rdfs:label "CALLE ALFONSO XI"
+}
+
+select ?o {
+?s ns1:isDistrict ?o
+}
+
+select ?s where {
+?s time:inXSDDateTimeStamp "2019-01-12T22:25:00+02:00"^^xsd:dateTimeStamp
+}
+
+select ?s where {
+?s ns1:ageRange "30 - 34" 
+?s foaf:gender "Man" 
+}
+
+select ?o {
+?s ns1:ageRange ?o
+}
+
+select ?s {
+?s ns1:wasHospitalized 1 
+}
+
+

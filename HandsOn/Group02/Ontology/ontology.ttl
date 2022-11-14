@@ -1,138 +1,214 @@
- @prefix bicyacoc: <http://bicycleaccident.com/group2/ontology/class#> .
-@prefix bicyacop: <http://bicycleaccident.com/group2/ontology/property#> .
-@prefix byciacoc: <http://www.owl-ontologies.com/byciacoc#> .
-@prefix byciacop: <http://www.owl-ontologies.com/byciacop#> .
-@prefix bycyacoc: <http://www.owl-ontologies.com/bycyacoc#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix ev: <https://motools.sourceforge.net/event/event.html#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+ @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix bicyacoc: <http://bicycleaccident.com/group2/ontology/class#> .
+@prefix bicyacop: <http://bicycleaccident.com/group2/ontology/property#> .
+@prefix bicyacr: <http://bicycleaccident.com/group2/resource/> .
+@prefix ev: <https://motools.sourceforge.net/event/event.html#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#>> .
+@prefix byciacoc: <http://www.owl-ontologies.com/byciacoc#> .
+@prefix byciacop: <http://www.owl-ontologies.com/byciacop#> .
+@base <http://bicycleaccident.com/group2/ontology/class#> .
 
-bicyacoc: a owl:Ontology ;
-    dc:creator "Group 2" ;
-    dc:description "Ontology code created by Chowlk" ;
-    dc:title "Status of bicycle accident" ;
-    owl:versionInfo "0.0.1" .
+<http://bicycleaccident.com/group2/ontology/class#> rdf:type owl:Ontology ;
+			dc:creator "Group 2" ;
+			owl:versionInfo "0.0.1" ;
+			dc:title "Status of bicycle accident" ;
+			dc:description "Ontology code created by Chowlk" .
 
-bicyacop:x_utm a owl:ObjectProperty ;
-    rdfs:label "x_utm" ;
-    rdfs:domain bycyacoc:SpatialThingUTM ;
-    rdfs:range xsd:integer .
+#################################################################
+#    Object Properties
+#################################################################
 
-bicyacop:y_utm a owl:ObjectProperty ;
-    rdfs:label "y_utm" ;
-    rdfs:domain bycyacoc:SpatialThingUTM ;
-    rdfs:range xsd:integer .
+### byciacop:hasType
+byciacop:hasType rdf:type owl:ObjectProperty ;
+		rdfs:domain bicyacoc:BicycleAccident ;
+		rdfs:range rdf:XMLLiteral ;
+		rdfs:label "has type" .
 
-byciacop:ageRange a owl:ObjectProperty ;
-    rdfs:label "age range" ;
-    rdfs:domain byciacoc:Victim ;
-    rdfs:range rdf:XMLLiteral .
+### ev:agent
+ev:agent rdf:type owl:ObjectProperty ;
+		rdfs:domain bicyacoc:BicycleAccident ;
+		rdfs:range byciacoc:Victim ;
+		rdfs:label "agent" .
 
-byciacop:alchoholUse a owl:ObjectProperty ;
-    rdfs:label "alchohol use" ;
-    rdfs:domain byciacoc:Victim ;
-    rdfs:range xsd:boolean .
+### foaf:gender
+foaf:gender rdf:type owl:ObjectProperty ;
+		rdfs:domain byciacoc:Victim ;
+		rdfs:range rdf:XMLLiteral ;
+		rdfs:label "gender" .
 
-byciacop:bicycleIsElectronic a owl:ObjectProperty ;
-    rdfs:label "bicycle is electronic" ;
-    rdfs:domain bicyacoc:BicycleAccident ;
-    rdfs:range xsd:boolean .
+### byciacop:travelType
+byciacop:travelType rdf:type owl:ObjectProperty ;
+		rdfs:domain byciacoc:Victim ;
+		rdfs:range rdf:XMLLiteral ;
+		rdfs:label "travel type" .
 
-byciacop:duringWeather a owl:ObjectProperty ;
-    rdfs:label "during weather" ;
-    rdfs:domain bycyacoc:SpatialThingUTM ;
-    rdfs:range rdf:XMLLiteral .
+### byciacop:bicycleIsElectronic
+byciacop:bicycleIsElectronic rdf:type owl:ObjectProperty ;
+		rdfs:domain bicyacoc:BicycleAccident ;
+		rdfs:range xsd:boolean ;
+		rdfs:label "bicycle is electronic" .
 
-byciacop:hasType a owl:ObjectProperty ;
-    rdfs:label "has type" ;
-    rdfs:domain bicyacoc:BicycleAccident ;
-    rdfs:range rdf:XMLLiteral .
+### byciacop:isDistrict
+byciacop:isDistrict rdf:type owl:ObjectProperty ;
+		rdfs:domain bicyacoc:SpatialThingUTM ;
+		rdfs:range bicyacoc:District ;
+		rdfs:label "is district" .
 
-byciacop:isDistrictName a owl:ObjectProperty ;
-    rdfs:label "is district name" ;
-    rdfs:domain bycyacoc:SpatialThingUTM ;
-    rdfs:range rdf:XMLLiteral .
+### rdfs:label
+rdfs:label rdf:type owl:ObjectProperty ;
+		rdfs:domain bicyacoc:SpatialThingUTM ;
+		rdfs:range rdf:XMLLiteral ;
+		rdfs:label "label" .
 
-byciacop:isStreetName a owl:ObjectProperty ;
-    rdfs:label "is street name" ;
-    rdfs:domain bycyacoc:SpatialThingUTM ;
-    rdfs:range rdf:XMLLiteral .
+### byciacop:duringWeather
+byciacop:duringWeather rdf:type owl:ObjectProperty ;
+		rdfs:domain bicyacoc:BicycleAccident ;
+		rdfs:range rdf:XMLLiteral ;
+		rdfs:label "during weather" .
 
-byciacop:travelType a owl:ObjectProperty ;
-    rdfs:label "travel type" ;
-    rdfs:domain byciacoc:Victim ;
-    rdfs:range rdf:XMLLiteral .
+### ev:term_place
+ev:term_place rdf:type owl:ObjectProperty ;
+		rdfs:domain bicyacoc:BicycleAccident ;
+		rdfs:range bicyacoc:SpatialThingUTM ;
+		rdfs:label "term_place" .
 
-byciacop:wasHospitalized a owl:ObjectProperty ;
-    rdfs:label "was hospitalized" ;
-    rdfs:range xsd:boolean .
+### ev:term_time
+ev:term_time rdf:type owl:ObjectProperty ;
+		rdfs:domain bicyacoc:BicycleAccident ;
+		rdfs:range time:Instant ;
+		rdfs:label "term_time" .
 
-xsd:timeDate a owl:Class ;
-    rdfs:label "time Date" .
+### byciacop:ageRange
+byciacop:ageRange rdf:type owl:ObjectProperty ;
+		rdfs:domain byciacoc:Victim ;
+		rdfs:range rdf:XMLLiteral ;
+		rdfs:label "age range" .
 
-wgs84:SpatialThing a owl:Class ;
-    rdfs:label "Spatial Thing" .
+### byciacop:wasHospitalized
+byciacop:wasHospitalized rdf:type owl:ObjectProperty ;
+		rdfs:domain byciacoc:Victim ;
+		rdfs:range xsd:boolean ;
+		rdfs:label "was hospitalized" .
 
-time:hasBeginning a owl:ObjectProperty ;
-    rdfs:label "has beginning" ;
-    rdfs:domain time:TemporalEntity ;
-    rdfs:range time:Instant .
+### byciacop:alchoholUse
+byciacop:alchoholUse rdf:type owl:ObjectProperty ;
+		rdfs:domain byciacoc:Victim ;
+		rdfs:range xsd:boolean ;
+		rdfs:label "alchohol use" .
 
-foaf:gender a owl:ObjectProperty ;
-    rdfs:label "gender" ;
-    rdfs:domain byciacoc:Victim ;
-    rdfs:range rdf:XMLLiteral .
+#################################################################
+#    Data Properties
+#################################################################
 
-ev:agent a owl:ObjectProperty ;
-    rdfs:label "agent" ;
-    rdfs:domain bicyacoc:BicycleAccident ;
-    rdfs:range byciacoc:Victim .
+#################################################################
+#    Classes
+#################################################################
 
-ev:term_place a owl:ObjectProperty ;
-    rdfs:label "term_place" ;
-    rdfs:domain bicyacoc:BicycleAccident ;
-    rdfs:range bycyacoc:SpatialThingUTM .
+### ev:Event
+ev:Event rdf:type owl:Class ;
+	rdfs:label "Event" .
 
-ev:term_time a owl:ObjectProperty ;
-    rdfs:label "term_time" ;
-    rdfs:domain bicyacoc:BicycleAccident ;
-    rdfs:range time:TemporalEntity .
+### bicyacoc:BicycleAccident
+bicyacoc:BicycleAccident rdf:type owl:Class ;
+	rdfs:label "Bicycle Accident" ;
+	rdfs:subClassOf ev:Event .
 
-time:Instant a owl:Class ;
-    rdfs:label "Instant" .
+### time:Instant
+time:Instant rdf:type owl:Class ;
+	rdfs:label "Instant" .
 
-foaf:agent a owl:Class ;
-    rdfs:label "agent" .
+### wgs84:SpatialThing
+wgs84:SpatialThing rdf:type owl:Class ;
+	rdfs:label "Spatial Thing" .
 
-ev:Event a owl:Class ;
-    rdfs:label "Event" .
+### rdf:XMLLiteral
+rdf:XMLLiteral rdf:type owl:Class ;
+	rdfs:label "X M L Literal" .
 
-xsd:integer a owl:Class ;
-    rdfs:label "integer" .
+### byciacoc:Victim
+byciacoc:Victim rdf:type owl:Class ;
+	rdfs:label "Victim" ;
+	rdfs:subClassOf foaf:agent .
 
-time:TemporalEntity a owl:Class ;
-    rdfs:label "Temporal Entity" .
+### rdf:XMLLiteral
+rdf:XMLLiteral rdf:type owl:Class ;
+	rdfs:label "X M L Literal" .
 
-xsd:boolean a owl:Class ;
-    rdfs:label "boolean" .
+### rdf:XMLLiteral
+rdf:XMLLiteral rdf:type owl:Class ;
+	rdfs:label "X M L Literal" .
 
-bicyacoc:BicycleAccident a owl:Class ;
-    rdfs:label "Bicycle Accident" ;
-    rdfs:subClassOf ev:Event .
+### foaf:agent
+foaf:agent rdf:type owl:Class ;
+	rdfs:label "agent" .
 
-byciacoc:Victim a owl:Class ;
-    rdfs:label "Victim" ;
-    rdfs:subClassOf foaf:agent .
+### time:Instant
+time:Instant rdf:type owl:Class ;
+	rdfs:label "Instant" .
 
-bycyacoc:SpatialThingUTM a owl:Class ;
-    rdfs:label "Spatial Thing U T M" .
+### xsd:timeDate
+xsd:timeDate rdf:type owl:Class ;
+	rdfs:label "time Date" .
 
-rdf:XMLLiteral a owl:Class ;
-    rdfs:label "X M L Literal" .
+### bicyacoc:SpatialThingUTM
+bicyacoc:SpatialThingUTM rdf:type owl:Class ;
+	rdfs:label "Spatial Thing U T M" ;
+	rdfs:subClassOf wgs84:SpatialThing .
+
+### bicyacoc:District
+bicyacoc:District rdf:type owl:Class ;
+	rdfs:label "District" .
+
+### rdf:XMLLiteral
+rdf:XMLLiteral rdf:type owl:Class ;
+	rdfs:label "X M L Literal" .
+
+### xsd:boolean
+xsd:boolean rdf:type owl:Class ;
+	rdfs:label "boolean" .
+
+### rdf:XMLLiteral
+rdf:XMLLiteral rdf:type owl:Class ;
+	rdfs:label "X M L Literal" .
+
+### rdf:XMLLiteral
+rdf:XMLLiteral rdf:type owl:Class ;
+	rdfs:label "X M L Literal" .
+
+### xsd:boolean
+xsd:boolean rdf:type owl:Class ;
+	rdfs:label "boolean" .
+
+### xsd:boolean
+xsd:boolean rdf:type owl:Class ;
+	rdfs:label "boolean" .
+
+### bicyacoc:SpatialThingUTM
+bicyacoc:SpatialThingUTM rdf:type owl:Class ;
+	rdfs:label "Spatial Thing U T M" .
+
+### byciacoc:Victim
+byciacoc:Victim rdf:type owl:Class ;
+	rdfs:label "Victim" .
+
+#################################################################
+#    Instances
+#################################################################
+
+#################################################################
+#    General Axioms
+#################################################################
 

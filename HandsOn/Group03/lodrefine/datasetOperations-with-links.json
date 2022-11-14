@@ -1,0 +1,1011 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q928830",
+        "name": "metro station"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column metro to type Q928830"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": "Nan",
+    "judgment": "matched",
+    "match": {
+      "id": "Q858684",
+      "name": "NaN",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Match item NaN (Q858684) for cells containing \"Nan\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": "Carabanchel , eugenia de montijo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2056760",
+      "name": "Carabanchel",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Carabanchel (Q2056760) for cells containing \"Carabanchel , eugenia de montijo\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": "Nueva numancia , portazgo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2696516",
+      "name": "Nueva Numancia",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Nueva Numancia (Q2696516) for cells containing \"Nueva numancia , portazgo\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": "Tirso de molina , antón martín",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2474438",
+      "name": "Tirso de Molina",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Tirso de Molina (Q2474438) for cells containing \"Tirso de molina , antón martín\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": "El carmen, quintana",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2480869",
+      "name": "El Carmen",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Carmen (Q2480869) for cells containing \"El carmen, quintana\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": "Canal , islas filipinas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2479455",
+      "name": "Canal",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Canal (Q2479455) for cells containing \"Canal , islas filipinas\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "metro: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "metro",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": "Campamento , empalme",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2481364",
+      "name": "Campamento",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Campamento (Q2481364) for cells containing \"Campamento , empalme\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "metro: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "metro",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": "Puerta toledo, pirámides, acacias",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2056515",
+      "name": "Puerta de Toledo",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Puerta de Toledo (Q2056515) for cells containing \"Puerta toledo, pirámides, acacias\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "metro: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "metro",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": "Pacífico, puente de vallecas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2479769",
+      "name": "Pacífico",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Pacífico (Q2479769) for cells containing \"Pacífico, puente de vallecas\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "metro: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "metro",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": "Tetuán, valdeacederas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q515413",
+      "name": "Tetuán",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Tetuán (Q515413) for cells containing \"Tetuán, valdeacederas\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "metro: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "metro",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": "Esperanza, arturo soria",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2481243",
+      "name": "Esperanza",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Esperanza (Q2481243) for cells containing \"Esperanza, arturo soria\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "metro: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "metro",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": " simancas, san blas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2481349",
+      "name": "Simancas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Simancas (Q2481349) for cells containing \" simancas, san blas\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "metro: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "metro",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": "Noviciado , tribunal , bilbao",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2479844",
+      "name": "Tribunal",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Tribunal (Q2479844) for cells containing \"Noviciado , tribunal , bilbao\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "metro: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "metro",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": "Artilleros, pavones",
+    "judgment": "matched",
+    "match": {
+      "id": "Q649362",
+      "name": "Artilleros",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Artilleros (Q649362) for cells containing \"Artilleros, pavones\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "metro: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "metro",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": "Ventura rodríguez , plaza de españa",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2378663",
+      "name": "Ventura Rodríguez",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ventura Rodríguez (Q2378663) for cells containing \"Ventura rodríguez , plaza de españa\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "metro: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "metro",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": "Oporto , opañel",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2482116",
+      "name": "Opañel",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Opañel (Q2482116) for cells containing \"Oporto , opañel\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "metro: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "metro",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": "Opañel , plaza elíptica",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2482116",
+      "name": "Opañel",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Opañel (Q2482116) for cells containing \"Opañel , plaza elíptica\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "metro: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "metro",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": "Atocha , menéndez pelayo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q9161733",
+      "name": "Atocha Renfe",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Atocha Renfe (Q9161733) for cells containing \"Atocha , menéndez pelayo\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "metro: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "metro",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": "La latina, puerta de toledo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1115250",
+      "name": "La Latina",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item La Latina (Q1115250) for cells containing \"La latina, puerta de toledo\" in column metro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "metro",
+    "similarValue": " latina",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1115250",
+      "name": "La Latina",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item La Latina (Q1115250) for cells containing \" latina\" in column metro"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "metro",
+    "expression": "grel:\"https://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_metro",
+    "columnInsertIndex": 39,
+    "description": "Create column same_as_wikidata_metro at index 39 based on column metro using expression grel:\"https://www.wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "renfe",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q55488",
+        "name": "railway station"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column renfe to type Q55488"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "renfe",
+    "similarValue": "Nan",
+    "judgment": "matched",
+    "match": {
+      "id": "Q858684",
+      "name": "NaN",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Match item NaN (Q858684) for cells containing \"Nan\" in column renfe"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "renfe: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "renfe",
+          "from": 49,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "renfe",
+    "similarValue": " pirámides , embajadores",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2056493",
+      "name": "Pirámides",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Pirámides (Q2056493) for cells containing \" pirámides , embajadores\" in column renfe"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "renfe: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "renfe",
+          "from": 49,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "renfe",
+    "similarValue": " villaverde alto",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2480338",
+      "name": "Villaverde Alto",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Villaverde Alto (Q2480338) for cells containing \" villaverde alto\" in column renfe"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "renfe",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_renfe",
+    "columnInsertIndex": 38,
+    "description": "Create column same_as_wikidata_renfe at index 38 based on column renfe using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "same_as_wikidata_metro",
+    "description": "Remove column same_as_wikidata_metro"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "metro",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_metro",
+    "columnInsertIndex": 40,
+    "description": "Create column same_as_wikidata_metro at index 40 based on column metro using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "locality",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2074737",
+        "name": "municipality of Spain"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column locality to type Q2074737"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "locality",
+    "similarValue": "Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2807",
+      "name": "Madrid",
+      "types": [
+        "Q2074737",
+        "Q515",
+        "Q1549591",
+        "Q1637706",
+        "Q5119",
+        "Q486972",
+        "Q51929311"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Madrid (Q2807) for cells containing \"Madrid\" in column locality"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "locality",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_locality",
+    "columnInsertIndex": 8,
+    "description": "Create column same_as_wikidata_locality at index 8 based on column locality using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "neighborhood",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10267336",
+        "name": "neighborhood of Madrid"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column neighborhood to type Q10267336"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "neighborhood",
+    "similarValue": "Casco H.Vallecas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16544370",
+      "name": "Casco Histórico de Vallecas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Casco Histórico de Vallecas (Q16544370) for cells containing \"Casco H.Vallecas\" in column neighborhood"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "neighborhood",
+    "similarValue": "Casco H.Vicalvaro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16544374",
+      "name": "Casco Histórico de Vicálvaro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Casco Histórico de Vicálvaro (Q16544374) for cells containing \"Casco H.Vicalvaro\" in column neighborhood"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "neighborhood",
+    "similarValue": "El Salvador",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10367095",
+      "name": "Salvador",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Salvador (Q10367095) for cells containing \"El Salvador\" in column neighborhood"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "neighborhood",
+    "similarValue": "Ambroz",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16544374",
+      "name": "Casco Histórico de Vicálvaro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Casco Histórico de Vicálvaro (Q16544374) for cells containing \"Ambroz\" in column neighborhood"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "neighborhood",
+    "similarValue": "Peña Grande",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3319582",
+      "name": "Peñagrande",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Peñagrande (Q3319582) for cells containing \"Peña Grande\" in column neighborhood"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "neighborhood",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_neighborhood",
+    "columnInsertIndex": 12,
+    "description": "Create column same_as_wikidata_neighborhood at index 12 based on column neighborhood using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column district to type Q3032114"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "district",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_district",
+    "columnInsertIndex": 14,
+    "description": "Create column same_as_wikidata_district at index 14 based on column district using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "province",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10742",
+        "name": "autonomous community of Spain"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column province to type Q10742"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "province",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_province",
+    "columnInsertIndex": 10,
+    "description": "Create column same_as_wikidata_province at index 10 based on column province using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]

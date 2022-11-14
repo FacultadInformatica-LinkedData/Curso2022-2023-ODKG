@@ -1,0 +1,29 @@
+SELECT ?d ?prop ?o WHERE {
+	?s a ont:School .
+	?s ont:hasSchoolGround ?sc .
+	?sc ont:hasLocalization ?l .
+	?l ont:hasDistrict ?d .
+	?d ont:district "Hortaleza" .
+	?d ?prop ?o
+}
+
+SELECT ?s ?n WHERE {
+	?s a ont:School .
+	?s ont:hasSchoolGround ?sc .
+	?sc ont:hasAccessibility ?a .
+	?a ont:hasMetro ?m .
+	?m owl:sameAs <https://wikidata.org/entity/Q2479793> .
+	?sc ont:hasLocalization ?l .
+	?l ont:hasLocality ?loc .
+	?loc ont:locality "Madrid" .
+	?s ont:name ?n
+}
+
+SELECT ?s ?n WHERE {
+	?s a ont:School .
+	?s ont:hasSchoolGround ?sc .
+	?sc ont:hasLocalization ?l .
+	?l ont:hasDistrict ?d .
+	?d owl:sameAs <https://wikidata.org/entity/Q1947988> .
+	?s ont:name ?n
+}

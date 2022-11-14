@@ -1,11 +1,23 @@
 @base <http://smartbikes.org/resources/> .
 @prefix bs: <http://smartbikes.org/ontology/bikeStation#> .
+@prefix wdi: <https://www.wikidata.org/wiki/> .
 @prefix dbo: <https://dbpedia.org/ontology/> .
-@prefix dbr: http://dbpedia.org/resource/ .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix paw: <http://purl.org/pav/> .
 @prefix schema: <https://schema.org/> .
+
+### http://smartbikes.org/resources/Coordinate/48.87929591733507_2.3373600840568547
+
+:Coordinate/48.87929591733507_2.3373600840568547 a schema:GeoCoordinate;
+	schema:latitude 48.87929591733507;
+	schema:longitude 2.3373600840568547;
+
+### http://smartbikes.org/resources/Coordinate/48.865983_2.275725
+
+:Coordinate/48.865983_2.275725 a schema:GeoCoordinate;
+	schema:latitude 48.865983;
+	schema:longitude 2.275725;
 
 ### http://smartbikes.org/resources/BikeStation/9020
 
@@ -21,10 +33,9 @@
 	bs:paymentTerminalAvailable "true"^^xsd:boolean;
 	bs:returnOfVeilbPossible "true"^^xsd:boolean;
 	paw:lastUpdateOn "2022-10-05T09:58:36+02:00"^^xsd:dateTime;
-	schema:latitude 48.87929591733507;
-	schema:longitude 2.3373600840568547;
-	dbo:locatedInArea dbr:Paris.
-	
+	schema:geo :Coordinate/48.87929591733507_2.3373600840568547;
+	bs:locatedInArea wdi:Q90;
+
 ### http://smartbikes.org/resources/BikeStation/9020
 
 :BikeStation/16107 a bs:BikeStation;
@@ -39,6 +50,5 @@
 	bs:paymentTerminalAvailable "true"^^xsd:boolean;
 	bs:returnOfVeilbPossible "true"^^xsd:boolean;
 	paw:lastUpdateOn "2022-10-05T09:59:42+02:00"^^xsd:dateTime;
-	schema:latitude 48.865983;
-	schema:longitude 2.275725;
-	dbo:locatedInArea dbr:Paris.
+	schema:geo :Coordinate/48.865983_2.275725;
+	bs:locatedInArea wdi:Q90;

@@ -1,0 +1,105 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "nombre",
+    "expression": "grel:value + \", MADRID\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column nombre using expression grel:value + \", MADRID\""
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "nombre",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column nombre to type Q79007"
+  },
+  {
+    "op": "core/recon-match-best-candidates",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "nombre: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "nombre",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "nombre",
+    "description": "Match each cell to its best recon candidate in column nombre"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "nombre",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_street",
+    "columnInsertIndex": 2,
+    "description": "Create column wikidata_street at index 2 based on column nombre using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "nombre",
+    "expression": "value.replace(/^([^,]+)(, MADRID)/,\"^$1\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column nombre using expression value.replace(/^([^,]+)(, MADRID)/,\"^$1\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "nombre",
+    "expression": "value.replace(\"^\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column nombre using expression value.replace(\"^\",\"\")"
+  }
+]

@@ -128,6 +128,7 @@ function getCard(school){
     let districtName = school['districtName']
     let neighborhoodName = school['neighborhoodName']
     let streetAddress = school['streetAddress']
+    let HTMLId = `SchoolMap${identifier}`;
 
     let schedule = school['schedule']
     let telephone = school['telephone']
@@ -146,8 +147,8 @@ function getCard(school){
 */
     let zoom = 14.5;
 	let newHTML = `<div class="schoolItem" id="${identifier}">
-          <div class="front cardFace"> 
-          <div class="SchoolMap" id="SchoolMap${identifier}">
+            <div class="front cardFace"> 
+            <div class="SchoolMap" id="SchoolMap${identifier}">
             </div>
             <div class="schoolInfo">
                 <br>
@@ -181,7 +182,7 @@ function getCard(school){
 
 	$("#searchResults").html(current + newHTML)
 
-	getMap(`schoolMap${identifier}`, coords[1], coords[0]);
+	getMap(HTMLId, coords[1], coords[0]);
 }
 
 function generateCards(results){for(let cardResult of results){getCard(cardResult);}}

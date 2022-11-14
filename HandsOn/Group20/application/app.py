@@ -31,8 +31,6 @@ def executeQuery(district, subdistrict, purpose, organization):
     if purpose:
         bindings["p"] = Literal(purpose)
 
-    print(bindings)
-
     orgs = (
         [organization]
         if organization

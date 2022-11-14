@@ -281,4 +281,5 @@ function search() {
   );
 }
 
+document.addEventListener("load", search());
 window.initMap = initMap;

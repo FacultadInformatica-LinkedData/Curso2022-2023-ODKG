@@ -191,7 +191,6 @@ function getCard(school){
 
 	getMap(schoolName, coords[1], coords[0]);
 
-    $("#searchResults").html(current + newHTML)
 
 }
 
@@ -217,7 +216,7 @@ function getMap(id, lon, lat){
     const key = 'T0cx4SaMZWSM2Gq2mAgG';
     var map = new maplibregl.Map({
         container: id,
-        style: 'mapbox://styles/mapbox/streets-v11',
+        style: `https://api.maptiler.com/maps/streets-v2/style.json?key=${key}`,
         center: [lon,lat],
         zoom: 15
     });
@@ -407,7 +406,9 @@ function removeSchool(schoolCode){
 }
 
 function saveSchool(){
-   schoolCode = ($(this).parent().parent()).html(); //se trae lo que está dentro de <div class="schoolItem">ESTO</div>
+   schoolCode = ($(this).parent().parent().parent()).html(); //se trae lo que está dentro de <div class="schoolItem">ESTO</div>
+   console.log(schoolCode)
+
    state = $(this).children().css('color');
    if(state == 'rgb(121, 125, 237)'){
     //guardando...

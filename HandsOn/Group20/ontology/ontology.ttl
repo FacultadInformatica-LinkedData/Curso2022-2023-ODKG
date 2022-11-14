@@ -39,7 +39,7 @@ org:purpose rdf:type owl:DatatypeProperty ;
     rdfs:range xsd:string .
 
 property:num_affiliates rdf:type owl:DatatypeProperty ;
-    rdfs:domain schema:Organization ;
+    rdfs:domain class:CollaborativeEntity ;
     rdfs:range xsd:integer .
 
 schema:foundingDate rdf:type owl:DatatypeProperty ;
@@ -47,7 +47,7 @@ schema:foundingDate rdf:type owl:DatatypeProperty ;
     rdfs:range xsd:date .
 
 property:asoc_affiliated rdf:type owl:DatatypeProperty ;
-    rdfs:domain schema:Organization ;
+    rdfs:domain class:CollaborativeEntity ;
     rdfs:range xsd:integer .
 
 schema:telephone rdf:type owl:DatatypeProperty ;
@@ -134,32 +134,31 @@ schema:Thing rdf:type owl:Class;
     rdfs:label "Thing"@en.
 
 schema:Organization rdf:type owl:Class;
-    owl:equivalentClass org:Organization;
     rdfs:subClassOf schema:Thing;
     rdfs:label "Organization"@en.
 
 org:Organization rdf:type owl:Class;
-    owl:equivalentClass schema:Organization;
     rdfs:label "Organization"@en.
 
-class:Association rdf:type owl:Class;
+class:CollaborativeEntity rdf:type owl:Class;
+    rdfs:label "Collaborative Entity"@en;
     rdfs:subClassOf org:Organization;
-    rdfs:subClassOf schema:Organization;
+    rdfs:subClassOf schema:Organization.
+
+class:Association rdf:type owl:Class;
+    rdfs:subClassOf class:CollaborativeEntity;
     rdfs:label "Association"@en.
 
 class:Collective rdf:type owl:Class ;
-    rdfs:subClassOf org:Organization;
-    rdfs:subClassOf schema:Organization;
+    rdfs:subClassOf class:CollaborativeEntity;
     rdfs:label "Collective"@en.
 
 class:Federation rdf:type owl:Class ;
-    rdfs:subClassOf org:Organization;
-    rdfs:subClassOf schema:Organization;
+    rdfs:subClassOf class:CollaborativeEntity;
     rdfs:label "Federation"@en.
 
 class:Foundation rdf:type owl:Class ;
-    rdfs:subClassOf org:Organization;
-    rdfs:subClassOf schema:Organization;
+    rdfs:subClassOf class:CollaborativeEntity;
     rdfs:label "Foundation"@en.
 
 schema:WebSite rdf:type owl:Class;

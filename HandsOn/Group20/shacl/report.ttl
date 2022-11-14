@@ -1,5 +1,5 @@
-@prefix rr:    <http://www.w3.org/ns/r2rml#> .
 @prefix schema: <https://schema.org/> .
+@prefix rr:    <http://www.w3.org/ns/r2rml#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix org:   <http://www.w3.org/ns/org#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
@@ -12,7 +12,23 @@
 @prefix class: <https://www.asociadrid.es/ontology/class#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
+<https://astrea.linkeddata.es/shapes#c07f158cd3dbf5b44e8748366608470d>
+        <http://shacl-play.sparna.fr/ontology#targetMatched>
+                false .
+
 <https://astrea.linkeddata.es/shapes#090b2643d03a0c4bdc7637e48bc45466>
+        <http://shacl-play.sparna.fr/ontology#targetMatched>
+                false .
+
+<https://astrea.linkeddata.es/shapes#f9546acd69d215613c9954baa52d201e>
+        <http://shacl-play.sparna.fr/ontology#targetMatched>
+                false .
+
+<https://astrea.linkeddata.es/shapes#89fde9d06cb87af7d0d2076b8b543da2>
+        <http://shacl-play.sparna.fr/ontology#targetMatched>
+                false .
+
+<https://astrea.linkeddata.es/shapes#993b6589c994d15205e34fdcbae76687>
         <http://shacl-play.sparna.fr/ontology#targetMatched>
                 false .
 
@@ -28,12 +44,16 @@
         <http://shacl-play.sparna.fr/ontology#targetMatched>
                 false .
 
-<https://astrea.linkeddata.es/shapes#74ac90c9c816d92423aaedea3c4d9dd8>
-        <http://shacl-play.sparna.fr/ontology#targetMatched>
-                false .
-
 [ a            sh:ValidationReport ;
   <http://shacl-play.sparna.fr/ontology#hasMatched>
           true ;
   sh:conforms  true
 ] .
+
+<https://astrea.linkeddata.es/shapes#b29c323cc06e9c6c8210c13b868f65d7>
+        <http://shacl-play.sparna.fr/ontology#targetMatched>
+                false .
+
+<https://astrea.linkeddata.es/shapes#74ac90c9c816d92423aaedea3c4d9dd8>
+        <http://shacl-play.sparna.fr/ontology#targetMatched>
+                false .

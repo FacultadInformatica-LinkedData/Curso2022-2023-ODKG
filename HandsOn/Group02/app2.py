@@ -27,11 +27,9 @@ TYPE_ACCIDENT = ['All', 'Frontal-lateral collision', 'Fall', 'Scope', 'Lateral c
 
 IS_ELEC = ['Yes', 'No', 'All']
 
-endpoint = "http://localhost:9000/bicycleaccident.com/group2/"
+endpoint = "http://localhost:9000/sparql"
 sparql = SPARQLWrapper(endpoint)
 
-list_district = []
-list_type_accident = []
 APP_NAME = "TkinterMapView with CustomTkinter"
 geolocator = Nominatim(user_agent=APP_NAME)
 
@@ -41,6 +39,8 @@ class App(customtkinter.CTk):
     WIDTH = 800
     HEIGHT = 500
     geolocator = Nominatim(user_agent=APP_NAME)
+    list_district = []
+    list_type_accident = []
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -161,90 +161,119 @@ class App(customtkinter.CTk):
         
     def change_district(self, new_district):
         print("change di")
+        nd = new_district
+        new_district = new_district.replace(' ', '')
         
         if new_district == "All":
             sparql.setQuery("""
-            PREFIX ns0: <https://motools.sourceforge.net/event/event.html#> .
-            PREFIX ns1: <http://bicycleaccident.com/group2/ontology/property#> .
-            PREFIX foaf: <http://xmlns.com/foaf/0.1/> .
-            PREFIX time: <http://www.w3.org/2006/time#> .
-            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> .
-            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-            PREFIX owl: <http://www.w3.org/2002/07/owl#> .
-            PREFIX res: <http://bicycleaccident.com/group2/resource/>
-            
-            SELECT ?adress WHERE {{
-              ?acc ns0:term_place ?place .
-              ?place ns1:isDistrict res:Place/?distr .
+                PREFIX ns0: <https://motools.sourceforge.net/event/event.html#> 
+            PREFIX ns1: <http://bicycleaccident.com/group2/ontology/property#> 
+            PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+            PREFIX time: <http://www.w3.org/2006/time#> 
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+            PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+            PREFIX place: <http://bicycleaccident.com/group2/resource/Place/>
+
+            SELECT ?adress WHERE {
+              ?place a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
               ?place rdfs:label ?adress .
-            }}
+            } 
             """)
+            self.map_widget.set_address("Madrid")
+            self.map_widget.set_zoom(14)
+            
         else:
             sparql.setQuery("""
-            PREFIX ns0: <https://motools.sourceforge.net/event/event.html#> .
-            PREFIX ns1: <http://bicycleaccident.com/group2/ontology/property#> .
-            PREFIX foaf: <http://xmlns.com/foaf/0.1/> .
-            PREFIX time: <http://www.w3.org/2006/time#> .
-            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> .
-            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-            PREFIX owl: <http://www.w3.org/2002/07/owl#> .
-            PREFIX res: <http://bicycleaccident.com/group2/resource/>
-            
-            SELECT ?adress WHERE {{
-              ?acc ns0:term_place ?place .
-              ?place ns1:isDistrict res:Place/?distr .
+                PREFIX ns0: <https://motools.sourceforge.net/event/event.html#> 
+            PREFIX ns1: <http://bicycleaccident.com/group2/ontology/property#> 
+            PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+            PREFIX time: <http://www.w3.org/2006/time#> 
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+            PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+            PREFIX place: <http://bicycleaccident.com/group2/resource/Place/>
+
+            SELECT ?adress WHERE {
+              ?place a <http://bicycleaccident.com/group2/ontology/class#SpatialThingUTM> .
               ?place rdfs:label ?adress .
-              FILTER(STRSTARTS(?distr, { %s } ))
-            }}
-            """, new_district)
+              ?place ns1:isDistrict place:"""+new_district+""" .
+            } 
+            """)
+            self.map_widget.set_address("Madrid "+nd)
+            self.map_widget.set_zoom(14)
         
         sparql.setReturnFormat(JSON)
         results = sparql.query().convert()
-        list_district = []
+
+        self.list_district = []
         for result in results["results"]["bindings"]:
             adress = result['adress']['value']
-            list_district.append(adress)            
-        
-        self.map_widget.set_address("Madrid "+new_district)
-        self.map_widget.set_zoom(14)
+            self.list_district.append(adress)  
+        print("distr", self.list_district)
         self.update_marker()
 
     def change_type_accident(self, new_type_accident):
         print("change ac")
         
-        # sparql.setQuery("""
-        # PREFIX ns0: <https://motools.sourceforge.net/event/event.html#> .
-        # PREFIX ns1: <http://bicycleaccident.com/group2/ontology/property#> .
-        # PREFIX foaf: <http://xmlns.com/foaf/0.1/> .
-        # PREFIX time: <http://www.w3.org/2006/time#> .
-        # PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> .
-        # PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-        # PREFIX owl: <http://www.w3.org/2002/07/owl#> .
-        # PREFIX res: <http://bicycleaccident.com/group2/resource/>
+        if new_type_accident == "All":
+            sparql.setQuery("""
+            PREFIX ns0: <https://motools.sourceforge.net/event/event.html#> 
+            PREFIX ns1: <http://bicycleaccident.com/group2/ontology/property#> 
+            PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+            PREFIX time: <http://www.w3.org/2006/time#> 
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+            PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+            PREFIX res: <http://bicycleaccident.com/group2/resource/>
+            
+            SELECT ?adress WHERE {{
+              ?acc ns0:term_place ?place .
+              ?place rdfs:label ?adress .
+            }}
+            """)
+            
+        else:   
+            sparql.setQuery("""
+            PREFIX ns0: <https://motools.sourceforge.net/event/event.html#> 
+            PREFIX ns1: <http://bicycleaccident.com/group2/ontology/property#> 
+            PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+            PREFIX time: <http://www.w3.org/2006/time#> 
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+            PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+            PREFIX res: <http://bicycleaccident.com/group2/resource/>
+            
+            SELECT ?adress WHERE {
+              ?acc ns1:hasType \""""+new_type_accident+"""\" .
+              ?acc ns0:term_place ?place .
+              ?place rdfs:label ?adress .
+            }
+            """)
         
-        # SELECT ?adress WHERE {{
-        #   ?acc ns1:hasType ?type .
-        #   ?acc ns0:term_place ?place .
-        #   ?place rdfs:label ?adress .
-        #   FILTER(STRSTARTS(?type, {%s} ))
-        # }}
-        # """,new_type_accident)
-        
-        # sparql.setReturnFormat(JSON)
-        # results = sparql.query().convert()
-        # list_type_accident = []
-        # for result in results["results"]["bindings"]:
-        #     adress = result['adress']['value']
-        #     list_type_accident.append(adress)
+        sparql.setReturnFormat(JSON)
+        results = sparql.query().convert()
+
+        self.list_type_accident = []
+        for result in results["results"]["bindings"]:
+            adress = result['adress']['value']
+            self.list_type_accident.append(adress)
+        print("type ", self.list_type_accident)
         self.update_marker()
         
     def update_marker(self):
+        print("update")
         self.clear_marker_event()
-        liste = list(set(list_district) & set(list_type_accident))
-        self.marker_list.append(self.map_widget.set_marker(40.4167754, -3.6037902))
+        print("type ", self.list_type_accident)
+        print("distr", self.list_district)
+        liste = list(set(self.list_district) & set(self.list_type_accident))
+        print(liste)
         for adr in liste:
             location = geolocator.geocode(adr)
-            self.marker_list.append(self.map_widget.set_marker(location.latitude, location.longitude, label=adr))
+            if location != None:
+                lat = location.latitude
+                lon = location.longitude
+                self.marker_list.append(self.map_widget.set_marker(lat, lon))
             
         
 
@@ -254,8 +283,49 @@ if __name__ == "__main__":
 
 #%%
 
+from SPARQLWrapper import SPARQLWrapper, JSON, XML
 
-endpoint = "http://localhost:9000/bicycleaccident.com/group2/"
+endpoint = "http://localhost:9000/sparql"
 sparql = SPARQLWrapper(endpoint)
+
+TYPE_ACCIDENT = ['Frontal-lateral collision', 'Fall', 'Scope', 'Lateral collision',
+       'Hitting a person', 'Crash against fixed obstacle',
+       'Frontal collision', 'Other', 'Hitting an animal',
+       'Multiple collision', 'Overturn', 'Track exit only']
+
+for d in TYPE_ACCIDENT:
+    print(d)
+    distr = d
+    
+    sparql.setQuery("""
+    PREFIX ns0: <https://motools.sourceforge.net/event/event.html#> 
+    PREFIX ns1: <http://bicycleaccident.com/group2/ontology/property#> 
+    PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+    PREFIX time: <http://www.w3.org/2006/time#> 
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+    PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+    PREFIX res: <http://bicycleaccident.com/group2/resource/>
+    
+    SELECT ?adress WHERE {
+      ?acc ns1:hasType \""""+distr+"""\" .
+      ?acc ns0:term_place ?place .
+      ?place rdfs:label ?adress .
+    }
+    """)
+    
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
+    
+    list_district = []
+    for result in results["results"]["bindings"]:
+        adress = result['adress']['value']
+        list_district.append(adress)
+    
+    print(list_district)
+
+
+
+
 
 

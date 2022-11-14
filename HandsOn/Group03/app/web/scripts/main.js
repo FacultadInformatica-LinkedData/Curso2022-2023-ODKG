@@ -48,8 +48,8 @@ templateSchoolHtml = `<div class="schoolItem", id="${10}">
 
 var mySchools = JSON.parse(localStorage.getItem('mySchools'));
 
-// var savedSchools = [templateSchoolHtml,templateSchoolHtml,templateSchoolHtml];
-var savedSchools = [];
+var savedSchools = [templateSchoolHtml,templateSchoolHtml,templateSchoolHtml];
+//var savedSchools = [];
 
 console.log(mySchools, savedSchools)
 
@@ -416,14 +416,20 @@ function saveSchool(){
    }
    else{
     //eliminando...
+    try {$(this).removeClass("fa-star-saved")} catch (error) {}
+    
     $(this).children().css('color','rgb(121, 125, 237)');
+    
     removeSchool(schoolCode);
    }
 }
+
 
 function loadSchools(){
     $("#SchoolListContainer").html('');
     savedSchools = JSON.parse(localStorage.getItem('mySchools'))
     let schoolListHtml = savedSchools.join('\n\n');
+    schoolListHtml.replace('class="fa fa-star"','class="fa fa-star fa-star-saved"')
     $("#SchoolListContainer").html(schoolListHtml);
+
 }

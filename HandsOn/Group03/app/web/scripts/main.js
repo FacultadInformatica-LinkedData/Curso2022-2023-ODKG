@@ -14,10 +14,10 @@ metroLines = {
 }
 
 districts_options = ['Hortaleza', 'Villa de Vallecas', 'Puente de Vallecas', 'San Blas',
-       'Latina', 'Vicálvaro', 'Fuencarral-El Pardo', 'Salamanca',
+       'Latina', 'Vicalvaro', 'Fuencarral-El Pardo', 'Salamanca',
        'Villaverde', 'Carabanchel', 'Centro', 'Moncloa-Aravaca',
-       'Chamartín', 'Barajas', 'Ciudad Lineal', 'Chamberí', 'Usera',
-       'Retiro', 'Moratalaz', 'Tetuán', 'Arganzuela']
+       'Chamartin', 'Barajas', 'Ciudad Lineal', 'Chamberi', 'Usera',
+       'Retiro', 'Moratalaz', 'Tetuan', 'Arganzuela']
 
 function flipItem() {
     $(this).parent().parent().shake(100,10,3);
@@ -43,19 +43,30 @@ function search(schoolName = ""){
     $("#searchResults").html("")
     metroLine = $("#metroLineSelector").val();
     let searchResults = NaN;
+    let metro_filter= ""
     if(metroLine){
         let w_station = getWiki(metroLines[metroLine])
         let ws = []
         for (var w of w_station){
             ws.push(w.replace("http://www.", "https://").replace(":", "%3A").replace("/", "%2F").replace("/", "%2F").replace("/", "%2F").replace("/", "%2F").replace("/", "%2F").replace("/", "%2F").replace("/", "%2F").replace("/", "%2F"))
         }
-        searchResults = getSparkMetro(schoolName, "%22" + ws.join("%22%2C%20%22") + "%22");
+        //searchResults = getSparkMetro(schoolName, "%22" + ws.join("%22%2C%20%22") + "%22");
+        //console.log(searchResults)
 
-        console.log(searchResults)
+        metro_filter = "%22" + ws.join("%22%2C%20%22") + "%22"
+
+        //searchResults = getSpark(schoolName, "%22" + ws.join("%22%2C%20%22") + "%22")
+        //console.log(searchResults)
     }
-    else{
-        searchResults = getSpark(schoolName);
-    }
+
+    console.log($("#districtSelector").val())
+    district_filter = $("#districtSelector").val().replace(" ", "%20").replace(" ", "%20").replace(" ", "%20");
+    access_filter = $("#typeAccessibilitySelector").val();
+
+    console.log(metro_filter,district_filter,access_filter)
+   
+    searchResults = getSpark(schoolName, metro_filter, district_filter, access_filter);
+    
     //console.log(searchResults);
    	generateCards(searchResults);
 
@@ -73,6 +84,7 @@ function getCard(school){
 
 	let identifier = school['identifier']
 	let schoolName = school['name']
+    let districtName = school['districtName']
     let neighborhoodName = school['neighborhoodName']
     let streetAddress = school['streetAddress']
 
@@ -81,14 +93,21 @@ function getCard(school){
     let laborDay = school['laborDay']
     let typeAccessibility = school['typeAccessibility']
 
+    let lonT = school['longitude'].slice(0,2) + "." +school['longitude'].slice(2)
+    let latT = school['latitude'].slice(0,1) + "." +school['latitude'].slice(1)
+
 	let newHTML = `<div class="schoolItem", id="${identifier}">
           <div class="front cardFace">
-            <div class="schoolMap"></div>
+            <iframe class="schoolMap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-3.8222%2C40.4882%2C-3.5029%2C40.3539&amp;layer=mapnik&amp;marker=${lonT}2C-${latT}" 
+            style="border: 1px solid black">
+            </iframe>
             <div class="schoolInfo">
                 <br>
                 <p class="schoolName">${schoolName}</p>
                 <br>
-                <p class="schoolLocation">${neighborhoodName}</p>
+                <p class="schoolLocation">District: ${districtName}</p>
+                <p class="schoolLocation">Neighborhood: ${neighborhoodName}</p>
                 <hr>
                 <p class="schoolAddress">${streetAddress}</p>
                 <br>
@@ -115,7 +134,7 @@ function getCard(school){
 
 	$("#searchResults").html(current + newHTML)
 
-	getMap();
+	//getMap(`schoolMap${identifier}`, school['longitude'], school['latitude']);
 }
 
 function generateCards(results){for(let cardResult of results){getCard(cardResult);}}
@@ -136,24 +155,22 @@ $( document ).ready(function() {
 
 
 
-function getMap(){
+function getMap(id, lon, lat){
     // Where you want to render the map.
-    var element = $('.schoolMap');
+    var element = $(`#${id}`);
     element = element[0]
     // Height has to be set. You can do this in CSS too.
     element.style = 'height:300px;';
     // Create Leaflet map on map element.
-    var map = L.map(element);
+    var map = L.map(element, {
+    crs: L.CRS.EPSG32630
+    });
     // Add OSM tile layer to the Leaflet map.
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
     // Target's GPS coordinates.
-    var target = L.latLng('47.50737', '19.04611');
-    // Set map's center to target with zoom 14.
-    map.setView(target, 14);
-    // Place a marker on the same location.
-    L.marker(target).addTo(map);
+
 }
 
 function getSparkMetro(nameSearch, lines){
@@ -164,7 +181,7 @@ function getSparkMetro(nameSearch, lines){
         async: false,
 
 
-        url: `http://localhost:8080/sparql?query=PREFIX%20owl%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0APREFIX%20sc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fscience%2Fowl%2Fsciencecommons%2F%3E%0APREFIX%20schema%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0APREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0ASELECT%20%3Fs%20%3Fname%20%3Fwiki%20%20WHERE%7B%0A%0A%20%20%20%20%3Fs%20a%20ont%3ASchool.%0A%20%20%20%20%3Fs%20schema%3Aidentifier%20%3Fidentifier.%0A%20%20%20%20%3Fs%20schema%3Aname%20%3Fname.%0A%0A%20%20%20%20%3Fs%20ont%3AhasAccessibility%20%3Faccessibility.%0A%20%20%20%20%3Faccessibility%20ont%3AhasMetro%20%3Fmetro.%0A%20%20%3Fmetro%20owl%3AsameAs%20%3Fwiki%0A%20%20%0A%09%20%20FILTER%28%3Fwiki%20IN%20%28${lines}%29%29.%0A%20%20%20%20FILTER%20%28Contains%28%3Fname%2C%20%22${nameSearch}%22%29%29%0A%0A%0A%0A%7D`,
+        url: `http://localhost:8080/sparql?query=PREFIX%20owl%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0APREFIX%20sc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fscience%2Fowl%2Fsciencecommons%2F%3E%0APREFIX%20schema%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0APREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0ASELECT%20%3Fs%20%3Fname%20%3Fwiki%20%20WHERE%7B%0A%0A%20%20%20%20%3Fs%20a%20ont%3ASchool.%0A%20%20%20%20%3Fs%20schema%3Aidentifier%20%3Fidentifier.%0A%20%20%20%20%3Fs%20schema%3Aname%20%3Fname.%0A%0A%20%20%20%20%3Fs%20ont%3AhasAccessibility%20%3Faccessibility.%0A%20%20%20%20%3Faccessibility%20ont%3AhasMetro%20%3Fmetro.%0A%20%20%3Fmetro%20owl%3AsameAs%20%3Fwiki%0A%20%20%0A%09%20%20%20FILTER%28%3Fwiki%20IN%20%28${lines}%29%29.%0A%20%20%20FILTER%20%28Contains%28%3Fname%2C%20%22${nameSearch}%22%29%29%0A%0A%0A%0A%7D`,
         headers: {
                 'accept': 'application/json',
                 'Access-Control-Allow-Origin':'*'
@@ -187,23 +204,27 @@ function getSparkMetro(nameSearch, lines){
     return p
 }
 
-function getSpark(nameSearch, line_filter = "", district_filter="", Access_filter=""){
+function getSpark(nameSearch, line_filter = "", district_filter="", access_filter=""){
 	var p;
 
-    let url = "http://localhost:8080/sparql?query=PREFIX%20sc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fscience%2Fowl%2Fsciencecommons%2F%3E%0APREFIX%20schema%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0APREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0ASELECT%20%2A%20%20WHERE%7B%0A%0A%20%20%20%20%3Fs%20a%20ont%3ASchool.%0A%20%20%20%20%3Fs%20schema%3Aidentifier%20%3Fidentifier.%0A%20%20%20%20%3Fs%20schema%3Aname%20%3Fname.%0A%20%20%20%20%3Fs%20schema%3Alatitude%20%3Flatitude.%0A%20%20%20%20%3Fs%20schema%3Alongitude%20%3Flongitude.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20schema%3Atelephone%20%3Ftelephone%7D.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3AlaborDay%20%3FlaborDay%7D.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3Aschedule%20%3Fschedule%7D.%0A%0A%20%20%20%20%3Fs%20schema%3Aaddress%20%3Faddress.%0A%20%20%20%20%3Faddress%20schema%3AstreetAddress%20%3FstreetAddress.%0A%0A%20%20%20%20%3Faddress%20ont%3AhasNeighborhood%20%3Fneighborhood.%0A%20%20%20%20%3Fneighborhood%20ont%3Aneighborhood%20%3FneighborhoodName%0A%20%20%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3AhasAccessibility%20%3Faccessibility%7D.%0A%09OPTIONAL%20%7B%20%3Faccessibility%20ont%3AtypeAccessibility%20%3FtypeAccessibility%7D.%0A%0A%20%20%20%20%20%20%20filter%20contains%28%3Fname%20%2C%22" + nameSearch + "%22%29%0A%0A"
+    let url = "http://localhost:8080/sparql?query=PREFIX%20owl%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0APREFIX%20sc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fscience%2Fowl%2Fsciencecommons%2F%3E%0APREFIX%20schema%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0APREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0ASELECT%20%2A%20%20WHERE%7B%0A%0A%20%20%20%20%3Fs%20a%20ont%3ASchool.%0A%20%20%20%20%3Fs%20schema%3Aidentifier%20%3Fidentifier.%0A%20%20%20%20%3Fs%20schema%3Aname%20%3Fname.%0A%20%20%20%20%3Fs%20schema%3Alatitude%20%3Flatitude.%0A%20%20%20%20%3Fs%20schema%3Alongitude%20%3Flongitude.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20schema%3Atelephone%20%3Ftelephone%7D.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3AlaborDay%20%3FlaborDay%7D.%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3Aschedule%20%3Fschedule%7D.%0A%0A%20%20%20%20%3Fs%20schema%3Aaddress%20%3Faddress.%0A%20%20%20%20%3Faddress%20schema%3AstreetAddress%20%3FstreetAddress.%0A%0A%09%3Faddress%20ont%3AhasDistrict%20%3Fdistrict.%0A%09%3Fdistrict%20ont%3Adistrict%20%3FdistrictName.%0A%0A%0A%20%20%20%20%3Faddress%20ont%3AhasNeighborhood%20%3Fneighborhood.%0A%20%20%20%20%3Fneighborhood%20ont%3Aneighborhood%20%3FneighborhoodName.%0A%20%20%0A%20%20%20%20OPTIONAL%20%7B%20%3Fs%20ont%3AhasAccessibility%20%3Faccessibility%7D.%0A%09OPTIONAL%20%7B%20%3Faccessibility%20ont%3AtypeAccessibility%20%3FtypeAccessibility%7D.%0A%20%20%20%20%0A%20%20%20%20%3Faccessibility%20ont%3AhasMetro%20%3Fmetro.%0A%20%20%20%20%3Fmetro%20owl%3AsameAs%20%3Fwiki.%0A%20%20"
 
-    if (line_filter == "") {
-        url += ""
+    url += `%20%20%20filter%20%28contains%28%3Fname%20%2C%22${nameSearch}%22%29%29.%0A`
+
+    if (line_filter != "") {
+        url += `%20%20%20FILTER%28%3Fwiki%20IN%20%28${line_filter}%29%29.%0A%20`
     }
-    if (district_filter == "") {
-        url += ""
+    if (district_filter != "") {
+        url += `%20%20%20filter%20%28contains%28%3FdistrictName%20%2C%22${district_filter}%22%29%29.%0A`
     }
-    if (Access_filter == "") {
-        url += ""
+    if (access_filter != "") {
+        url += `%20%20%20filter%20%28%3FtypeAccessibility%20%3D%20%22${access_filter}%22%20%29.%0A`
     }
 
 
     url += "%7D" 
+
+    console.log(url)
     $.ajax({
         //url: "http://localhost:8080/sparql?query=PREFIX%20ont%3A%20%3Chttp%3A%2F%2Fsmartcity.linkeddata.es%2Fschoolfinder%2Fontology%2F%3E%0A%0ASELECT%20%3Fs%20%3Fname%20WHERE%20%7B%0A%20%20%3Fs%20a%20ont%3ASchool.%0A%20%20%3Fs%20ont%3Aname%20%3Fname%0A%7D%20%0ALIMIT%2010",
         async: false,

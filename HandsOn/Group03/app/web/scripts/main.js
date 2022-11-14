@@ -145,9 +145,10 @@ function getCard(school){
             </iframe>
 */
     let zoom = 14.5;
-	let newHTML = `<div class="schoolItem", id="${identifier}">
-          <div class="front cardFace">
-          <iframe class="schoolMap" width="500" height="300" src="https://api.maptiler.com/maps/basic-v2/?key=T0cx4SaMZWSM2Gq2mAgG#${zoom}/${coords[1]}/${coords[0]}/"></iframe>
+	let newHTML = `<div class="schoolItem" id="${identifier}">
+          <div class="front cardFace"> 
+          <div class="SchoolMap" id="SchoolMap${identifier}">
+            </div>
             <div class="schoolInfo">
                 <br>
                 <p class="schoolName">${schoolName}</p>
@@ -180,7 +181,7 @@ function getCard(school){
 
 	$("#searchResults").html(current + newHTML)
 
-	//getMap(`schoolMap${identifier}`, coords[1], coords[0]);
+	getMap(`schoolMap${identifier}`, coords[1], coords[0]);
 }
 
 function generateCards(results){for(let cardResult of results){getCard(cardResult);}}
@@ -201,20 +202,20 @@ $( document ).ready(function() {
 
 
 function getMap(id, lon, lat){
-    // Where you want to render the map.
-    var element = $(`#${id}`);
-    element = element[0]
-    // Height has to be set. You can do this in CSS too.
-    element.style = 'height:300px;';
-    // Create Leaflet map on map element.
-    var map = L.map(element, {
-    crs: L.CRS.EPSG32630
+    //si no funcionan añadir # al
+    const key = 'T0cx4SaMZWSM2Gq2mAgG';
+    const map = new maplibregl.Map({
+        container: id,
+        style: `https://api.maptiler.com/maps/streets-v2/style.json?key=${key}`,
+        center: [lon,lat],
+        zoom: 15
     });
-    // Add OSM tile layer to the Leaflet map.
-    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-    // Target's GPS coordinates.
+    const london = new maplibregl.Marker()
+        .setLngLat([lon, lat])
+        .addTo(map);
+    map.on('error', function(err) {
+        throw new Error("To load the map, you must replace YOUR_MAPTILER_API_KEY_HERE first, see README");
+    });
 
 }
 

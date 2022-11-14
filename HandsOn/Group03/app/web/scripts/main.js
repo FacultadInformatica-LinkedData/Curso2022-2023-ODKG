@@ -45,7 +45,8 @@ templateSchoolHtml = `<div class="schoolItem", id="${10}">
 </div>
 </div>`
 
-var savedSchools = [templateSchoolHtml,templateSchoolHtml,templateSchoolHtml];
+// var savedSchools = [templateSchoolHtml,templateSchoolHtml,templateSchoolHtml];
+var savedSchools = [];
 
 districts_options = ['Hortaleza', 'Villa de Vallecas', 'Puente de Vallecas', 'San Blas',
        'Latina', 'Vicalvaro', 'Fuencarral-El Pardo', 'Salamanca',
@@ -367,12 +368,22 @@ function preprocessWiki(json){
     return results
 }
 
-
+function findSchoolInArray(schoolCode){
+    let index = 0
+    for(school of savedSchools){
+        if(school == schoolCode){
+            return index;
+        }
+        index++;
+    }
+    return index;
+}
 function addSchool(schoolCode){
-    console.log(schoolCode);
+    savedSchools.push(schoolCode);
 }
 function removeSchool(schoolCode){
-    console.log(schoolCode);
+    let schoolPosition = findSchoolInArray(schoolCode);
+    savedSchools = savedSchools.splice(schoolPosition, 1);
 }
 
 function saveSchool(){
@@ -391,7 +402,7 @@ function saveSchool(){
 }
 
 function loadSchools(){
-     $("#SchoolListContainer").html('');
+    $("#SchoolListContainer").html('');
     let schoolListHtml = savedSchools.join('\n\n');
     $("#SchoolListContainer").html(schoolListHtml);
 }

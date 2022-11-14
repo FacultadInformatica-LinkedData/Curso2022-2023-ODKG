@@ -1,0 +1,145 @@
+*{margin: 0px;padding: 0px;>}
+
+
+header{
+	width: 100%;
+	overflow: hidden;
+	background: #50FF4B;
+	z-index:40; 
+	margin-bottom: 20px; 
+}
+header .logo{
+	color: #f2f2f2;
+	font-size: 40px;
+	line-height: 150px;
+	/*cuantos espacios de linea va a ocupar*/
+	float: left;
+}
+header nav{
+	float: right;
+	/*desplazamos los contenidos del header nav(navegador) hacia la derecha*/
+	line-height: 200px;
+}
+header nav a,div{
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	line-height: normal;
+	/*para que cuando lo presionemos no ocupe el url todo el tamaño del enlace*/
+	-webkit-transition:500ms ease-in-out;
+	-o-transition:500ms ease-in-out;
+	transition: 500ms ease-in-out;
+}
+header nav a:hover{
+	background: #800080;
+}
+header nav div:hover{
+	background: #800080;
+
+}
+video{
+	/*Hace que las coordenadas del vídeo sean relativas al tamaño del navegador*/
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	/*Queremos que el vídeo esté centrado*/
+	top: 50%;
+	left: 50%;
+
+
+	transform: translateX(-50%) translateY(-50%);
+
+	/*Tenemos que llevar el vídeo al fondo: cuanto más alto, más adelante se colocará*/
+	z-index: -1;
+}
+
+.fondo{
+	/*Hace que las coordenadas del vídeo sean relativas al tamaño del navegador*/
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	/*Queremos que el vídeo esté centrado*/
+	top: 50%;
+	left: 50%;
+
+
+	transform: translateX(-50%) translateY(-50%);
+
+	/*Tenemos que llevar el vídeo al fondo: cuanto más alto, más adelante se colocará*/
+	z-index: -1;
+}
+.marginTopOpen{
+	margin-top: : 70px;
+}
+
+.marginTopClosed{
+	margin-top: 150px;
+}
+
+
+.textWrapper{
+	/*funcion que nos sirve para poder centrar el texto ademas de poder poner los márgenes bien*/
+	margin: auto;
+	max-width: 10000px;
+	width: 90%;
+	overflow:hidden ;
+}
+/*Cuando estemos navegando hacia abajo de la pagina web, nos va a salir el header minimizado arriba*/
+.headerScrollDown{
+	position: fixed;
+	height: 100px;
+	
+}
+.headerScrollDown .logo{
+	line-height: 100px;
+	font-size: 30px;
+}
+.headerScrollDown nav{
+	line-height: 100px;
+}
+/*corregimos fallos cuando minimizamos la ventana del navegador para que no se superpongan cosas ni haya fallos de visualizacion*/
+/*cuando llega a los 950 pixels lo que hace es poner el logo arriba y debajo de este se colocan los enlaces*/
+@media screen and (max-width: 1250px){
+	header .logo,
+	header nav{
+		width: 100%;
+		text-align: center;
+		line-height: 100px;
+	}
+	.headerScrollDown {height: auto;}
+	.headerScrollDown .logo, .headerScrollDown nav{
+		line-height: 50px;
+	}
+}
+
+/*ahora ponemos los funcionales para el login desplegable uwu*/
+
+.login{
+	background: #252932;
+	float: right;
+	width: 150px;
+	border: none;
+	cursor:pointer;
+	margin-top: 0px;
+	margin-right: 20px;
+	display: none;
+	color: #FFF;
+	font-family: "Arial";
+
+}
+.closed_Button{
+	cursor: pointer;
+}
+#registrarse{
+	float: left;
+	display: inline-block;
+	color: #fff;
+
+}
+
+.send{
+	border: none;
+	margin: 15px 100px;
+	width: 60px;
+}

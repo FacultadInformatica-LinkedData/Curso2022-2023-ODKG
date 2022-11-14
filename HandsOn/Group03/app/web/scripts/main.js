@@ -92,7 +92,10 @@ function getCard(school){
     let telephone = school['telephone']
     let laborDay = school['laborDay']
     let typeAccessibility = school['typeAccessibility']
-
+    let mapAccesibility = new map();
+    mapAccesibility.set("0","Not Accessible")
+    mapAccesibility.set("1","Accessible")
+    mapAccesibility.set("2","Partially accessible")
     var utm = "+proj=utm +zone=30";
     var wgs84 = "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs";
     coords = proj4(utm,wgs84,[school['latitude'], school['longitude']]);
@@ -127,7 +130,7 @@ function getCard(school){
               <br>
                 <p class="schoolName">${schoolName}</p>
                 <br>
-              <p class="typeAccesibility">Tipo de accesibilidad: ${typeAccessibility}</p>
+              <p class="typeAccesibility">Tipo de accesibilidad: ${mapAccesibility.get(typeAccessibility)}</p>
               <hr>
               <p class="schedule">${schedule}</p>
               <p class="laborDay">${laborDay}</p>

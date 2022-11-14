@@ -165,6 +165,9 @@ main{
     /* color: var(--highlight-secondary-color); PARA CUANDO SE GUARDE*/
     color: var(--secondary-color);
 }
+
+
+
 /* ---------------------- END MAIN ---------------------- */
 /* ---------------------- FOOTER ---------------------- */
 footer{
@@ -341,6 +344,13 @@ text-align: center;
 .schoolMap, .backMapInfo{
     width:228px !important;
     height:221px !important;
+}
+.mapboxgl-marker {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border:1px solid gray;
+    background-color:lightblue;
 }
 .schoolInfo{
     margin-left: 15px;

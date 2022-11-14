@@ -45,8 +45,13 @@ templateSchoolHtml = `<div class="schoolItem", id="${10}">
 </div>
 </div>`
 
+
+var mySchools = JSON.parse(localStorage.getItem('mySchools'));
+
 // var savedSchools = [templateSchoolHtml,templateSchoolHtml,templateSchoolHtml];
 var savedSchools = [];
+
+console.log(mySchools, savedSchools)
 
 districts_options = ['Hortaleza', 'Villa de Vallecas', 'Puente de Vallecas', 'San Blas',
        'Latina', 'Vicalvaro', 'Fuencarral-El Pardo', 'Salamanca',
@@ -59,6 +64,7 @@ accesibilityDict = {
     "1":"Accessible",
     "2":"Partially accessible"
 }
+
 
 function flipItem() {
     $(this).parent().parent().shake(100,10,3);
@@ -180,9 +186,13 @@ function getCard(school){
           </div>
         </div>`
 
-	$("#searchResults").html(current + newHTML)
+    $("#searchResults").html(current + newHTML)
+
 
 	getMap(HTMLId, coords[1], coords[0]);
+
+    $("#searchResults").html(current + newHTML)
+
 }
 
 function generateCards(results){for(let cardResult of results){getCard(cardResult);}}
@@ -205,18 +215,22 @@ $( document ).ready(function() {
 function getMap(id, lon, lat){
     //si no funcionan añadir # al
     const key = 'T0cx4SaMZWSM2Gq2mAgG';
-    const map = new maplibregl.Map({
+    var map = new maplibregl.Map({
         container: id,
-        style: `https://api.maptiler.com/maps/streets-v2/style.json?key=${key}`,
+        style: 'mapbox://styles/mapbox/streets-v11',
         center: [lon,lat],
         zoom: 15
     });
-    const london = new maplibregl.Marker()
-        .setLngLat([lon, lat])
-        .addTo(map);
-    map.on('error', function(err) {
-        throw new Error("To load the map, you must replace YOUR_MAPTILER_API_KEY_HERE first, see README");
-    });
+
+    /*var el = document.createElement('div');                                       
+    el.style.backgroundImage = 'url(https://placekitten.com/g/50/)';              
+    el.style.width = '50px';                                                      
+    el.style.height = '50px';
+    el.style.borderRadius = '50%';                                                     
+    new maplibregl.Marker(el).setLngLat([lon, lat]).addTo(map);
+*/
+    console.log(map)
+    
 
 }
 
@@ -382,10 +396,14 @@ function findSchoolInArray(schoolCode){
 }
 function addSchool(schoolCode){
     savedSchools.push(schoolCode);
+    mySchools = JSON.stringify(savedSchools);
+    localStorage.setItem('mySchools', mySchools)
 }
 function removeSchool(schoolCode){
     let schoolPosition = findSchoolInArray(schoolCode);
     savedSchools = savedSchools.splice(schoolPosition, 1);
+    mySchools = JSON.stringify(savedSchools);
+    localStorage.setItem('mySchools', mySchools)
 }
 
 function saveSchool(){
@@ -405,6 +423,7 @@ function saveSchool(){
 
 function loadSchools(){
     $("#SchoolListContainer").html('');
+    savedSchools = JSON.parse(localStorage.getItem('mySchools'))
     let schoolListHtml = savedSchools.join('\n\n');
     $("#SchoolListContainer").html(schoolListHtml);
 }

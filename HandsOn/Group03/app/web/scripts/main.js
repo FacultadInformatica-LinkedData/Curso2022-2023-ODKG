@@ -115,13 +115,25 @@ function search(schoolName = ""){
    
     searchResults = getSpark(schoolName, metro_filter, district_filter, access_filter);
     
-    //console.log(searchResults);
-   	generateCards(searchResults);
+    console.log(searchResults);
 
-    $('.schoolInfo').on('click', flipItem);
-    $('.starButton').on('click', saveSchool);
+    if (searchResults.length){
+        generateCards(searchResults);
+
+        $('.schoolInfo').on('click', flipItem);
+        $('.starButton').on('click', saveSchool);
+        
+    }else{
+        
+        
+        
+
+        $("#searchResults").html("<h3>Schools not found</h3>")
+
+    }
 
     $("#searchResults").show();
+    
 }
 
 
@@ -156,8 +168,7 @@ function getCard(school){
 	let newHTML = `<div class="schoolItem" id="${identifier}">
             <div class="front cardFace"> 
             <iframe class="schoolMap" width="500" height="300" src="https://api.maptiler.com/maps/basic-v2/?key=T0cx4SaMZWSM2Gq2mAgG#${zoom}/${coords[1]}/${coords[0]}/"></iframe>
-
-            </div>
+            
             <div class="schoolInfo">
                 <br>
                 <p class="schoolName">${schoolName}</p>
@@ -171,9 +182,8 @@ function getCard(school){
             <a class="starButton"><i class="fa fa-star"></i></a>
           </div>
           <div class="back cardFace">
-            <div class="backMapInfo">
-              <p>texto de ejemplo</p>
-            </div>
+            <iframe class="schoolMap" width="500" height="300" src="https://api.maptiler.com/maps/basic-v2/?key=T0cx4SaMZWSM2Gq2mAgG#${zoom}/${coords[1]}/${coords[0]}/"></iframe>
+
             <div class="schoolInfo">
               <br>
                 <p class="schoolName">${schoolName}</p>
@@ -408,7 +418,7 @@ function removeSchool(schoolCode){
 }
 
 function saveSchool(){
-   schoolCode = ($(this).parent().parent().parent()).html(); //se trae lo que está dentro de <div class="schoolItem">ESTO</div>
+   schoolCode = ($(this).parent().parent()).prop('outerHTML'); //se trae lo que está dentro de <div class="schoolItem">ESTO</div>
    console.log(schoolCode)
 
    state = $(this).children().css('color');

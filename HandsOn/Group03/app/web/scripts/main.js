@@ -96,16 +96,17 @@ function getCard(school){
     var utm = "+proj=utm +zone=30";
     var wgs84 = "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs";
     coords = proj4(utm,wgs84,[school['latitude'], school['longitude']]);
-    console.log(coords)
+    //console.log(coords)
 
     /*<iframe class="schoolMap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
             src="https://www.openstreetmap.org/export/embed.html?bbox=-3.8222%2C40.4882%2C-3.5029%2C40.3539&amp;layer=mapnik&amp;marker=${coords[0]}2C-${coords[1]}" 
             style="border: 1px solid black">
             </iframe>
 */
+    let zoom = 14.5;
 	let newHTML = `<div class="schoolItem", id="${identifier}">
           <div class="front cardFace">
-            <div class="schoolMap" id="schoolMap${identifier}"></div>
+          <iframe class="schoolMap" width="500" height="300" src="https://api.maptiler.com/maps/basic-v2/?key=T0cx4SaMZWSM2Gq2mAgG#${zoom}/${coords[0]}/${coords[1]}/"></iframe><div class="schoolInfo">
             <div class="schoolInfo">
                 <br>
                 <p class="schoolName">${schoolName}</p>
@@ -138,7 +139,7 @@ function getCard(school){
 
 	$("#searchResults").html(current + newHTML)
 
-	getMap(`schoolMap${identifier}`, coords[1], coords[0]);
+	//getMap(`schoolMap${identifier}`, coords[1], coords[0]);
 }
 
 function generateCards(results){for(let cardResult of results){getCard(cardResult);}}

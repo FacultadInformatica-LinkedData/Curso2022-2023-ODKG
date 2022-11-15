@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.189">
+<meta name="generator" content="quarto-1.1.251">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -53,10 +53,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The topic of the selected datasets are describe next:</p>
 <ul>
 <li><a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=22bceca8a5a03410VgnVCM1000000b205a0aRCRD&amp;vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&amp;vgnextfmt=default">200342-0-centros-dia.csv</a>: Municipal and subsidized day centers in the city of Madrid specialized in elderly care.</li>
-<li><a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=7dda6a49c7105510VgnVCM2000001f4a900aRCRD&amp;vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&amp;vgnextfmt=default">200761-0-parques-jardines.csv</a>: Elderly homes and supervised apartments in the city of Madrid.</li>
-<li><a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=dc758935dde13410VgnVCM2000000c205a0aRCRD&amp;vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&amp;vgnextfmt=default">300048-0-ancianos-residencias-apartamento.csv</a>: Main municipal parks and gardens in the city of Madrid.</li>
 </ul>
-<p><a href="./analysis/dataset_schema.jpg">The data schema in UML can be located in this link.</a></p>
 </section>
 <section id="exploratory-data-analysis-eda" class="level3">
 <h3 class="anchored" data-anchor-id="exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</h3>
@@ -70,11 +67,10 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="data-sources-licensing">Data Source’s Licensing</h3>
 <p>Each of the selected datasets are edited by the City of Madrid, while the responsibles for the data are described next:</p>
 <ul>
-<li><code>200761-0-parques-jardines.csv</code>: General Directorate of Water Management and Green Areas (<em>Dirección General de Gestión del Agua y Zonas Verdes</em>).</li>
 <li><code>200342-0-centros-dia.csv</code>: General Directorate for the Elderly (<em>Dirección General de Mayores</em>).</li>
-<li><code>300048-0-ancianos-residencias-apartamento.csv</code>: General Directorate of Attention to Citizenship (<em>Dirección General de Atención a la Ciudadanía</em>).</li>
 </ul>
 <p>Regarding the <a href="https://datos.madrid.es/egob/catalogo/aviso-legal">licences of each of the datasets and its conditions of use</a>, all of them can be use for commercial and non-commercial purposes subject to the acknowledgment of source’s authority.</p>
+<p>We haven’t found a specific license of the dataset. All the information related with the use of data provided by the Madrid City council shows that it’s an open license. However, they didn’t refer to a specific license.</p>
 <section id="condition-of-re-use" class="level4">
 <h4 class="anchored" data-anchor-id="condition-of-re-use">Condition of re-use</h4>
 <ol type="1">
@@ -112,20 +108,33 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
+<section id="Data-licensing" class="level5">
+<h3 class="anchored" data-anchor-id="Data-licensing">Data-licensing</h3>
+<p>We decided to use a CC0 license for our data, since it waives copyright and database protection, we saw fit to use this kind of license to trully make Open Data and allow any user to make applications based on this data.</p>
+<p><a href="https://creativecommons.org/share-your-work/public-domain/cc0/">Creative Commons: CC0</a></p>
+</section>
 <section id="resource-naming-strategy-rns" class="level3">
 <h3 class="anchored" data-anchor-id="resource-naming-strategy-rns">Resource Naming Strategy (RNS)</h3>
-<p><strong>Base domain</strong></p>
-<p>https://miciudadamiga.madrid/</p>
-<p><strong>Path</strong></p>
-<p>map/</p>
-<p><strong>Ontological Term Path</strong></p>
-<p>https://miciudadamiga.madrid/map/[ontologyName]#[className]</p>
-<p><em>Example</em></p>
-<p>https://miciudadamiga.madrid/map/ontology#Centro_de_Dia</p>
-<p><strong>Individuals Path</strong></p>
-<p>https://miciudadamiga.madrid/map/[resource]/[resourceName]</p>
-<p><em>Example</em></p>
-<p>https://miciudadamiga.madrid/map/resource/Bus</p>
+<p>The Resource Naming Strategy follows the following rules:</p>
+<ul>
+<li>Base domain: <code>https://miciudadamiga.madrid/</code></li>
+<li>Path: <code>map/</code></li>
+<li>Ontological Term Path: <code>https://miciudadamiga.madrid/map/ontology#[classOrPropertyName]</code></li>
+<li>Individuals Path: <code>https://miciudadamiga.madrid/map/resource/[className]/[identifier]</code>
+<ul>
+<li>Metro: <code>https://miciudadamiga.madrid/map/resource/SubwayStation/[identifier]</code></li>
+<li>District: <code>https://miciudadamiga.madrid/map/resource/MadridDistrict/[identifier]</code></li>
+<li>Neighborhood: <code>https://miciudadamiga.madrid/map/resource/MadridNeighborhood/[identifier]</code></li>
+<li>Day Center: <code>https://miciudadamiga.madrid/map/resource/DayCenter/[identifier]</code></li>
+</ul></li>
+</ul>
+<p>Some examples of specific use cases are shown below:</p>
+<ul>
+<li>https://miciudadamiga.madrid/map/ontology#DayCenter</li>
+<li>https://miciudadamiga.madrid/map/ontology#belongsToMadridNeighborhood</li>
+<li>https://miciudadamiga.madrid/map/resource/SubwayStation/Legazpi</li>
+<li>https://miciudadamiga.madrid/map/resource/MadridDistrict/76</li>
+</ul>
 </section>
 </section>
 

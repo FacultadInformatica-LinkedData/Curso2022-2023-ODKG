@@ -1,0 +1,60 @@
+prefixes:
+  xsd: http://www.w3.org/2001/XMLSchema#
+  sch: http://schema.org/
+  ns: http://miciudadamiga.madrid/map/ontology#
+  nsr: http://miciudadamiga.madrid/map/resource/
+
+mappings:
+  dayCenter:
+    sources:
+      - [../data/csv/200342-0-centros-dia-updated.csv~csv]
+    s: nsr:DayCenter/$(PK)
+    po:
+      - [a, ns:DayCenter]
+      - [sch:name, $(name), xsd:string]
+      - [sch:address, $(address), xsd:string]
+      - [sch:description, $(description), xsd:string]
+      - [sch:latitude, $(latitude), xsd:number]
+      - [sch:longitude, $(longitude), xsd:number]
+      - [sch:openingHours, $(openingHours), xsd:string]
+      - [sch:telephone, $(telephone), xsd:string]
+      - [sch:url, $(url), xsd:uRI]
+      - [ns:accessByBusLines, $(busLine), xsd:string]
+      - [ns:hasAccesibility, $(accesibility), xsd:boolean]
+      - p: ns:belongsToMadridDistrict
+        o:
+          mapping: madridDistrict
+      - p: ns:belongsToMadridNeighborhood
+        o:
+          mapping: madridNeighborhood
+      - p: ns:hasMetroAccess
+        o:
+          mapping: subwayStop
+
+  subwayStop:
+    sources:
+      - [../data/csv/200342-0-centros-dia-updated.csv~csv]
+    s: nsr:SubwayStop/$(SubwayStation)
+    po:
+      - [a, ns:SubwayStop]
+      - [ns:hasName, $(SubwayStation), xsd:string]
+
+  madridDistrict:
+    sources:
+      - [../data/csv/200342-0-centros-dia-updated.csv~csv]
+    s: nsr:MadridDistrict/$(COD-District)
+    po:
+      - [a, ns:MadridDistrict]
+      - [ns:hasName, $(District), xsd:string]
+      - [ns:hasCode, $(COD-District), xsd:integer]
+
+  madridNeighborhood:
+    sources:
+      - [../data/csv/200342-0-centros-dia-updated.csv~csv]
+    s: nsr:MadridNeighborhood/$(MadridNeighborhood)
+    po:
+      - [a, ns:MadridNeighborhood]
+      - [ns:hasName, $(MadridNeighborhood), xsd:string]
+      - p: ns:isInMadridDistrict
+        o:
+          mapping: madridDistrict

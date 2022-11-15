@@ -7,7 +7,7 @@
 - [X] Uses the .nt extension
 - [X] Is serialized in the NTriples format
 - [X] Follows the resource naming strategy
-- [ ] Uses class and property URIs that are the same as those used in the ontology
+- [x] Uses class and property URIs that are the same as those used in the ontology
 
 **Every URI in the RDF files:**
 
@@ -23,9 +23,9 @@
 **Every value in the RDF files:**
 
 - [X] Is trimmed
-- [ ] Is properly encoded (e.g., dates, booleans)
+- [x] Is properly encoded (e.g., dates, booleans)
 - [X] Includes its datatype
-- [ ] Uses the correct datatype (e.g., values of 0-1 may be booleans and not integers, not every string made of numbers is a number)
+- [x] Uses the correct datatype (e.g., values of 0-1 may be booleans and not integers, not every string made of numbers is a number)
 
 ## Comments on the self-assessment
 _(If required)_

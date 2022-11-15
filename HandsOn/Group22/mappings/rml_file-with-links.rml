@@ -5,6 +5,7 @@
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix map: <http://mapping.example.com/> .
 @prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -97,7 +98,7 @@ map:om_004 rml:reference "units_species" ;
 
 map:om_005 rml:reference "species_info" ;
 	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
+	rr:termType rr:IRI .
 
 map:om_006 rdf:type rr:ObjectMap ;
 	rr:joinCondition map:jc_000 ;
@@ -166,7 +167,7 @@ map:om_021 rml:reference "archive_number" ;
 
 map:om_022 rml:reference "district_info" ;
 	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
+	rr:termType rr:IRI .
 
 map:om_023 rml:reference "solar_m2" ;
 	rdf:type rr:ObjectMap ;
@@ -205,7 +206,7 @@ map:pm_004 rdf:type rr:PredicateMap ;
 	rr:constant vocab:unitSpecies .
 
 map:pm_005 rdf:type rr:PredicateMap ;
-	rr:constant vocab:infoSpecies .
+	rr:constant owl:sameAs .
 
 map:pm_006 rdf:type rr:PredicateMap ;
 	rr:constant vocab:hasSpecies .
@@ -256,7 +257,7 @@ map:pm_021 rdf:type rr:PredicateMap ;
 	rr:constant vocab:archiveNumber .
 
 map:pm_022 rdf:type rr:PredicateMap ;
-	rr:constant vocab:districtInfo .
+	rr:constant owl:sameAs .
 
 map:pm_023 rdf:type rr:PredicateMap ;
 	rr:constant vocab:solar .

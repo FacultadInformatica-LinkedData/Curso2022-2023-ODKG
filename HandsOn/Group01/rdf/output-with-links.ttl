@@ -1,7 +1,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ns0: <http://www.dialysisComunidadValenciana.es/> .
-@prefix ns1: <http://www.geonames.org/ontology#> .
+@prefix ns: <http://www.dialysisComunidadValenciana.es/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 

@@ -6,8 +6,13 @@ sparql = SPARQLWrapper(HELIO_SERVER)
 SELECT_ALL = """
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX ns: <http://placasdemadrid.linkeddata.es/placas-madrid/ontology/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
-SELECT DISTINCT ?nombre ?descripcion ?direccion ?fecha ?idioma ?keywords ?titular_derechos ?lat ?lon ?distritoID ?distrito_nombre ?distrito_wikidata ?entidad_wikidata ?web_url WHERE {
+
+SELECT DISTINCT ?nombre ?descripcion ?direccion ?fecha ?idioma ?keywords ?titular_derechos ?lat ?lon ?distritoID ?distrito_nombre ?distrito_wikidata 
+?entidad_wikidata ?web_url ?db ?dd ?pb ?bne ?imgw (GROUP_CONCAT(DISTINCT ?occupation; SEPARATOR = ", ") AS ?occupation_list)
+
+WHERE {
 
   ?Placa ns:nombre ?nombre .
   ?Placa ns:descripcion ?descripcion .
@@ -30,7 +35,39 @@ SELECT DISTINCT ?nombre ?descripcion ?direccion ?fecha ?idioma ?keywords ?titula
 
   ?Placa ns:tieneWeb ?Web .
   ?Web ns:url ?web_url .
+
+  OPTIONAL{
+   SERVICE <https://query.wikidata.org/sparql> {
+     OPTIONAL{
+        ?entidad_wikidata wdt:P569 ?db . # date of birth
+       }
+     OPTIONAL{
+         ?entidad_wikidata wdt:P570 ?dd . # date of death
+       }
+     OPTIONAL{
+         ?entidad_wikidata wdt:P19 ?pbe . # place of birth
+         ?pbe rdfs:label ?pb . # nombre
+         FILTER (LANG(?pb) = "en") .
+       }
+     OPTIONAL{
+        ?entidad_wikidata wdt:P950 ?bne . # BNE id
+       }
+     OPTIONAL{
+       ?entidad_wikidata wdt:P106 ?oc . # occupation category
+       ?oc wdt:P373 ?occupation . # occupation label
+      }
+     OPTIONAL{
+        ?entidad_wikidata wdt:P18 ?imgw . # image
+       }
+   }
+  }
+
 }
+
+GROUP BY ?nombre ?descripcion ?direccion ?fecha ?idioma ?keywords ?titular_derechos ?lat ?lon ?distritoID ?distrito_nombre ?distrito_wikidata 
+?entidad_wikidata ?web_url ?db ?dd ?pb ?bne ?imgw
+
+# LIMIT 20
 """
 
 

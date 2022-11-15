@@ -8,7 +8,7 @@ SELECT DISTINCT ?commune WHERE {
 }
 
 SELECT ?station ?capa ?name WHERE {
-   ?station bs:locatedInArea wdt:Q90.
+   ?station bs:locatedInArea "Paris".
    ?station dbo:capacity ?capa.
    ?station schema:name ?name.
 }
@@ -52,4 +52,17 @@ SELECT ?name ?capacity WHERE {
    ?station dbo:capacity ?capacity.
    ?station dbo:capacity "30".
    ?station schema:name ?name.
+}
+##Get close to me station
+PREFIX schema: <http://schema.org/>
+
+SELECT ?station ?lat ?long WHERE {
+  ?station schema:geo ?geo.
+  ?geo schema:latitude ?lat.
+  ?geo schema:longitude ?long.
+  FILTER(
+    (?lat<= "48.87") && (?lat>= "48.86")
+    &&
+    (?long<= "2.36") && (?long>= "2.35")
+  )
 }

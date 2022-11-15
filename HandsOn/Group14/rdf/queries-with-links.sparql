@@ -14,3 +14,16 @@ SELECT ?coordinate ?latitude ?longitude WHERE {
             ?coordinate schema:latitude ?latitude.
             ?coordinate schema:longitude ?longitude;
         }
+##Get close to me station
+PREFIX schema: <http://schema.org/>
+
+SELECT ?station ?lat ?long WHERE {
+  ?station schema:geo ?geo.
+  ?geo schema:latitude ?lat.
+  ?geo schema:longitude ?long.
+  FILTER(
+    (?lat<= "48.87") && (?lat>= "48.86")
+    &&
+    (?long<= "2.36") && (?long>= "2.35")
+  )
+}

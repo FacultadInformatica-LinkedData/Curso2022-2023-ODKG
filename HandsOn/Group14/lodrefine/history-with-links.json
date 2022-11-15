@@ -443,7 +443,7 @@
     "similarValue": "Saint-Maurice",
     "judgment": "matched",
     "match": {
-      "id": "Q21603",
+      "id": "Q274327",
       "name": "Saint-Maurice",
       "types": [
         "Q484170"
@@ -451,7 +451,7 @@
       "score": 100
     },
     "shareNewTopics": false,
-    "description": "Match item Saint-Maurice (Q21603) for cells containing \"Saint-Maurice\" in column Nom communes équipées"
+    "description": "Match item Saint-Maurice (Q274327) for cells containing \"Saint-Maurice\" in column Nom communes équipées"
   },
   {
     "op": "core/recon-judge-similar-cells",
@@ -645,5 +645,33 @@
     "newColumnName": "same_as_wikidata_communes",
     "columnInsertIndex": 14,
     "description": "Create column same_as_wikidata_communes at index 14 based on column Nom communes équipées using expression grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Station en fonctionnement",
+          "expression": "value",
+          "columnName": "Station en fonctionnement",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "false",
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
   }
 ]

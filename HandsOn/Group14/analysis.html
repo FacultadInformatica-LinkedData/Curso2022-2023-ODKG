@@ -123,7 +123,9 @@
     Empty data. Will be ignored
 </p>
 <h1>Resources naming strategies</h1>
-<p>The main resource is the station. The starting URI is http://smartbikes.org/ontology/bikeStation for ontologies and http://smartbikes.org/resource/bikeStation/stationId# .
+<p>The main resource is the station. The starting URI is http://smartbikes.org/ontology/bikeStation for ontologies and http://smartbikes.org/resource/bikeStation/${stationId} for the resources (we are sure that stationId are unique) .
+    We also add two more URI one for the coordinate of the station http://smartbikes.org/resource/coordinate/$(Coordonnées géographiques 1)_$(Coordonnées géographiques 2) that just hold the localisation.
+    Moreover, in the linking process we add an intermediate entity that hold our cities with the URI http://smartbikes.org/resource/commune/$(Nom communes équipées). This entity hold the city name and the sameAs that refers to the same entity in wikidata.
     All properties will be after the hash because (except for the statistique analyse not implemented yet) all data can be useful to prompt while requesting one of a specific station.
 </p>
 </body>

@@ -1,0 +1,151 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "NOMBRE_ESPECIE",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q16521",
+        "name": "taxon"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NOMBRE_ESPECIE to type Q16521"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "NOMBRE_ESPECIE",
+    "expression": "grel:\"hhtps://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "new specie",
+    "columnInsertIndex": 3,
+    "description": "Create column new specie at index 3 based on column NOMBRE_ESPECIE using expression grel:\"hhtps://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "new specie",
+    "description": "Remove column new specie"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "NOMBRE_ESPECIE",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "new_species",
+    "columnInsertIndex": 3,
+    "description": "Create column new_species at index 3 based on column NOMBRE_ESPECIE using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "NOMBRE_ESPECIE",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q20071150",
+        "name": "botanical natural monument"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NOMBRE_ESPECIE to type Q20071150"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "NOMBRE_ESPECIE",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q16521",
+        "name": "taxon"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NOMBRE_ESPECIE to type Q16521"
+  },
+  {
+    "op": "core/recon-copy-across-columns",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "fromColumnName": "NOMBRE_ESPECIE",
+    "toColumnNames": [
+      "new_species"
+    ],
+    "judgments": [
+      "new",
+      "matched"
+    ],
+    "applyToJudgedCells": true,
+    "description": "Copy recon judgments from column NOMBRE_ESPECIE to new_species"
+  },
+  {
+    "op": "core/recon-match-best-candidates",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "NOMBRE_ESPECIE",
+    "description": "Match each cell to its best recon candidate in column NOMBRE_ESPECIE"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "NOMBRE_ESPECIE",
+    "expression": "grel:\"hhtps://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "new_species2",
+    "columnInsertIndex": 3,
+    "description": "Create column new_species2 at index 3 based on column NOMBRE_ESPECIE using expression grel:\"hhtps://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "NOMBRE_ESPECIE",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "new_species",
+    "columnInsertIndex": 3,
+    "description": "Create column new_species at index 3 based on column NOMBRE_ESPECIE using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]

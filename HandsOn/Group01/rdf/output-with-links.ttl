@@ -703,3 +703,18 @@
   a ns0:Health_Area ;
   rdfs:label "Dpto. Salud Orihuela"^^xsd:string ;
   ns1:locatedIn <http://www.dialysisComunidadValenciana.es/resource/city/orihuela> .
+
+<http://www.dialysisComunidadValenciana.es/resource/province/valencia>
+  a ns:Province ;
+  rdfs:label "Valencia Province"^^xsd:string ;
+  owl:sameAs <https://www.wikidata.org/wiki/Q54939> .
+
+<http://www.dialysisComunidadValenciana.es/resource/province/castellon>
+  a ns:Province ;
+  rdfs:label "Castellon"^^xsd:string ;
+  owl:sameAs <https://www.wikidata.org/wiki/Q54942> .
+
+<http://www.dialysisComunidadValenciana.es/resource/province/alicante>
+  a ns:Province ;
+  rdfs:label "Alicante Province"^^xsd:string ;
+  owl:sameAs <https://www.wikidata.org/wiki/Q54936> .

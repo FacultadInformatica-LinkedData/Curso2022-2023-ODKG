@@ -511,3 +511,12 @@
 <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_orihuela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Health_Area>.
 <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_orihuela> <http://www.w3.org/2000/01/rdf-schema#label> "Dpto. Salud Orihuela"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.dialysisComunidadValenciana.es/resource/health_area/dpto_salud_orihuela> <http://www.geonames.org/ontology#locatedIn> <http://www.dialysisComunidadValenciana.es/resource/city/orihuela>.
+<http://www.dialysisComunidadValenciana.es/resource/province/valencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Province>.
+<http://www.dialysisComunidadValenciana.es/resource/province/valencia> <http://www.w3.org/2000/01/rdf-schema#label> "Valencia Province"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/province/valencia> <http://www.w3.org/2002/07/owl#sameAs> <https://www.wikidata.org/wiki/Q54939>.
+<http://www.dialysisComunidadValenciana.es/resource/province/castellon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Province>.
+<http://www.dialysisComunidadValenciana.es/resource/province/castellon> <http://www.w3.org/2000/01/rdf-schema#label> "Castellon"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/province/castellon> <http://www.w3.org/2002/07/owl#sameAs> <https://www.wikidata.org/wiki/Q54942>.
+<http://www.dialysisComunidadValenciana.es/resource/province/alicante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.dialysisComunidadValenciana.es/Province>.
+<http://www.dialysisComunidadValenciana.es/resource/province/alicante> <http://www.w3.org/2000/01/rdf-schema#label> "Alicante Province"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.dialysisComunidadValenciana.es/resource/province/alicante> <http://www.w3.org/2002/07/owl#sameAs> <https://www.wikidata.org/wiki/Q54936>.

@@ -720,5 +720,128 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column health_area_id using expression grel:value.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\").replace(\"à\",\"a\").replace(\"è\",\"e\").replace(\"ò\",\"o\")"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "health_area",
+    "index": 3,
+    "description": "Move column health_area to position 3"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "province",
+    "expression": "jython:return value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column province using expression jython:return value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "health_area_id",
+    "expression": "grel:value.replace(\"-\",\"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column health_area_id using expression grel:value.replace(\"-\",\"_\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "health_area",
+    "expression": "grel:value.replace(\"-\", \" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column health_area using expression grel:value.replace(\"-\", \" \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "health_area",
+    "expression": "grel:value.replace(\" – \",\" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column health_area using expression grel:value.replace(\" – \",\" \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "health_area_id",
+    "expression": "grel:value.replace(\"___\", \"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column health_area_id using expression grel:value.replace(\"___\", \"_\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "center",
+    "expression": "grel:value.replace(\"Í\",\"I\").replace(\"Ò\",\"O\").replace(\"Ó\",\"O\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column center using expression grel:value.replace(\"Í\",\"I\").replace(\"Ò\",\"O\").replace(\"Ó\",\"O\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "address",
+    "expression": "value.replace(/[‘’‚‛‹›‚]/,\"\\'\").replace(/[“”«»„]/,\"\\\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column address using expression value.replace(/[‘’‚‛‹›‚]/,\"\\'\").replace(/[“”«»„]/,\"\\\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "address",
+    "expression": "grel:value.replace(\"à\",\"a\").replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"è\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ò\",\"o\").replace(\"ú\",\"u\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column address using expression grel:value.replace(\"à\",\"a\").replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"è\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ò\",\"o\").replace(\"ú\",\"u\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "health_area",
+    "expression": "grel:value.replace(\"Í\",\"I\").replace(\"Ò\",\"O\").replace(\"Ó\",\"O\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ò\",\"o\").replace(\"á\",\"a\").replace(\"à\",\"a\").replace(\"ú\",\"u\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column health_area using expression grel:value.replace(\"Í\",\"I\").replace(\"Ò\",\"O\").replace(\"Ó\",\"O\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ò\",\"o\").replace(\"á\",\"a\").replace(\"à\",\"a\").replace(\"ú\",\"u\")"
   }
 ]

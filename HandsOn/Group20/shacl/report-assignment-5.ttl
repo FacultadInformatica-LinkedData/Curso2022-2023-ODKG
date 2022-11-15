@@ -1,0 +1,30 @@
+@prefix schema: <https://schema.org/> .
+@prefix rr:    <http://www.w3.org/ns/r2rml#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml:   <http://semweb.mmlab.be/ns/rml#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix transit: <http://vocab.org/transit/terms/> .
+@prefix property: <https://www.asociadrid.es/ontology/property/> .
+@prefix vocab: <http://example.org#> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ql:    <http://semweb.mmlab.be/ns/ql#> .
+@prefix class: <https://www.asociadrid.es/ontology/class#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://astrea.linkeddata.es/shapes#d15dbeb029439d85afc05f428bc5d038>
+        <http://shacl-play.sparna.fr/ontology#targetMatched>
+                false .
+
+<https://astrea.linkeddata.es/shapes#89fde9d06cb87af7d0d2076b8b543da2>
+        <http://shacl-play.sparna.fr/ontology#targetMatched>
+                false .
+
+[ a            sh:ValidationReport ;
+  <http://shacl-play.sparna.fr/ontology#hasMatched>
+          true ;
+  sh:conforms  true
+] .

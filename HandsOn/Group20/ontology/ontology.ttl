@@ -6,94 +6,123 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix property: <https://www.asociadrid.es/ontology/property#> .
 @prefix class: <https://www.asociadrid.es/ontology/class#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix schema: <https://schema.org/> .
+@prefix dasp:<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix org:<http://www.w3.org/ns/org#> .
 
 
 # Datatype Properties
 
-
-property:name rdf:type owl:DatatypeProperty ;
-    rdfs:domain class:CollaborativeEntitiy ;
+schema:identifier rdf:type owl:DatatypeProperty ;
+    rdfs:label "identifier"@en ;
+    rdfs:domain schema:Thing ;
     rdfs:range xsd:string .
 
-property:cif rdf:type owl:DatatypeProperty ;
-    rdfs:domain class:CollaborativeEntity ;
+schema:legalName rdf:type owl:DatatypeProperty ;
+    rdfs:label "legal name"@en ;
+    rdfs:domain schema:Organization ;
     rdfs:range xsd:string .
 
-property:area rdf:type owl:DatatypeProperty ;
-    rdfs:domain class:CollaborativeEntity ;
+schema:taxID rdf:type owl:DatatypeProperty ;
+    rdfs:label "tax id"@en ;
+    rdfs:domain schema:Organization ;
     rdfs:range xsd:string .
 
-property:category rdf:type owl:DatatypeProperty ;
-    rdfs:domain class:CollaborativeEntity ;
+schema:areaServed rdf:type owl:DatatypeProperty ;
+    rdfs:label "area served"@en ;
+    rdfs:domain schema:Organization ;
+    rdfs:range xsd:string .
+
+org:purpose rdf:type owl:DatatypeProperty ;
+    rdfs:domain org:Organization ;
     rdfs:range xsd:string .
 
 property:num_affiliates rdf:type owl:DatatypeProperty ;
     rdfs:domain class:CollaborativeEntity ;
     rdfs:range xsd:integer .
 
-property:register_date rdf:type owl:DatatypeProperty ;
-    rdfs:domain class:CollaborativeEntity ;
+schema:foundingDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain class:Organization ;
     rdfs:range xsd:date .
 
 property:asoc_affiliated rdf:type owl:DatatypeProperty ;
-    rdfs:domain class:Federation ;
+    rdfs:domain class:CollaborativeEntity ;
     rdfs:range xsd:integer .
-    
-property:complete_address rdf:type owl:DatatypeProperty ;
-    rdfs:domain class:Address ;
+
+schema:telephone rdf:type owl:DatatypeProperty ;
+    rdfs:label "telephone"@en;
+    rdfs:domain schema:Organization ;
+    rdfs:range xsd:string.
+
+schema:email rdf:type owl:DatatypeProperty ;
+    rdfs:label "email"@en ;
+    rdfs:domain schema:Organization ;
+    rdfs:range xsd:string .     
+       
+schema:address rdf:type owl:DatatypeProperty ;
+    rdfs:label "address"@en ;
+    rdfs:domain schema:Place ;
     rdfs:range xsd:string .
 
-property:latitude rdf:type owl:DatatypeProperty ;
-    rdfs:domain class:Address ;
-    rdfs:range xsd:float .
+property:detail rdf:type owl:DatatypeProperty ;
+    rdfs:label "detail"@en ;
+    rdfs:domain schema:Place ;
+    rdfs:range xsd:string .
 
-property:longitude rdf:type owl:DatatypeProperty ;
-    rdfs:domain class:Address ;
-    rdfs:range xsd:float .
+schema:latitude rdf:type owl:DatatypeProperty ;
+    rdfs:domain schema:Place ;
+    rdfs:range xsd:double .
+
+schema:longitude rdf:type owl:DatatypeProperty ;
+    rdfs:domain schema:Place ;
+    rdfs:range xsd:double .
 
 property:zipcode rdf:type owl:DatatypeProperty ;
-    rdfs:domain class:Address ;
-    rdfs:range xsd:integer .
+    rdfs:domain schema:Place ;
+    rdfs:range xsd:string .
 
 property:subdistrict_label rdf:type owl:DatatypeProperty ;
-    rdfs:domain class:Subdistrict ;
+    rdfs:domain dasp:Barrio ;
     rdfs:range xsd:string .
 
 property:district_label rdf:type owl:DatatypeProperty ;
-    rdfs:domain class:District ;
+    rdfs:domain dasp:Distrito ;
     rdfs:range xsd:string .
+
+property:website_uri rdf:type owl:DatatypeProperty ;
+    rdfs:domain schema:WebSite ;
+    rdfs:range xsd:anyURI.
 
 
 # Object Properties
 
-property:belongsToSubdistrict rdf:type owl:ObjectProperty ;
-    rdfs:domain class:Address;
-    rdfs:range class:Subdistrict .
+dasp:barrio rdf:type owl:ObjectProperty ;
+    rdfs:label "pertenece al barrio"@es ;
+    rdfs:label "belongs to subdistrict"@en ;
+    rdfs:domain schema:Place;
+    rdfs:range dasp:Barrio .
 
-property:belongsToDistrict rdf:type owl:ObjectProperty ;
-    rdfs:domain class:Subdistrict;
-    rdfs:range class:District .
+dasp:distrito rdf:type owl:ObjectProperty ;
+    rdfs:label "pertenece al distrito"@es ;
+    rdfs:label "belongs to district"@en ;
+    rdfs:domain class:Barrio ;
+    rdfs:range class:Distrito .
 
-
-property:hasAPhone rdf:type owl:ObjectProperty ;
-    rdfs:domain class:CollaborativeEntity ;
-    rdfs:range class:Phone .
-
-property:hasAnAdress rdf:type owl:ObjectProperty ;
-    rdfs:domain class:CollaborativeEntity ;
-    rdfs:range class:Address .
-
-property:hasAnEmail rdf:type owl:ObjectProperty ;
-    rdfs:domain class:CollaborativeEntity ;
-    rdfs:range class:Email .
+schema:location rdf:type owl:ObjectProperty ;
+    rdfs:label "location"@en ;
+    rdfs:domain schema:Organization ;
+    rdfs:range schema:Place .
 
 property:hasAWebsite rdf:type owl:ObjectProperty ;
-    rdfs:domain class:CollaborativeEntity ;
-    rdfs:range class:Website .
+    rdfs:label "has a website"@en ;
+    rdfs:domain schema:Organization ;
+    rdfs:range schema:WebSite .
 
-property:affiliatedTo rdf:type owl:ObjectProperty ;
-    rdfs:domain class:Association ;
-    rdfs:range class:Federation .
+schema:memberOf rdf:type owl:ObjectProperty ;
+    rdfs:label "member of"@en ;
+    rdfs:domain schema:Organization ;
+    rdfs:range schema:Organization .
 
 
 # Classes
@@ -101,31 +130,47 @@ property:affiliatedTo rdf:type owl:ObjectProperty ;
 class: a owl:Ontology ;
     dc:description "Ontology code created by Chowlk" .
 
-class:CollaborativeEntity rdf:type owl:Class.
+schema:Thing rdf:type owl:Class;
+    rdfs:label "Thing"@en.
+
+schema:Organization rdf:type owl:Class;
+    rdfs:subClassOf schema:Thing;
+    rdfs:label "Organization"@en.
+
+org:Organization rdf:type owl:Class;
+    rdfs:label "Organization"@en.
+
+class:CollaborativeEntity rdf:type owl:Class;
+    rdfs:label "Collaborative Entity"@en;
+    rdfs:subClassOf org:Organization;
+    rdfs:subClassOf schema:Organization.
 
 class:Association rdf:type owl:Class;
-    rdfs:subClassOf class:CollaborativeEntitiy .
+    rdfs:subClassOf class:CollaborativeEntity;
+    rdfs:label "Association"@en.
 
 class:Collective rdf:type owl:Class ;
-    rdfs:subClassOf class:CollaborativeEntity .
+    rdfs:subClassOf class:CollaborativeEntity;
+    rdfs:label "Collective"@en.
 
 class:Federation rdf:type owl:Class ;
-    rdfs:subClassOf class:CollaborativeEntity .
+    rdfs:subClassOf class:CollaborativeEntity;
+    rdfs:label "Federation"@en.
 
 class:Foundation rdf:type owl:Class ;
-    rdfs:subClassOf class:CollaborativeEntity .
+    rdfs:subClassOf class:CollaborativeEntity;
+    rdfs:label "Foundation"@en.
 
-class:District rdf:type owl:Class .
+schema:WebSite rdf:type owl:Class;
+    rdfs:label "WebSite"@en.
 
-class:Subdistrict rdf:type owl:Class .
+dasp:Distrito rdf:type owl:Class;
+    rdfs:label "Distrito"@es;
+    rdfs:label "District"@en.
 
-class:Email rdf:type owl:Class ;
-    rdfs:label "Email" .
+dasp:Barrio rdf:type owl:Class;
+    rdfs:label "Barrio"@es;
+    rdfs:label "Subdistrict"@en.
 
-class:Phone rdf:type owl:Class ;
-        rdfs:label "Phone" .
-
-class:Website rdf:type owl:Class ;
-        rdfs:label "Website" .
-
-class:Address rdf:type owl:Class.
+schema:Place rdf:type owl:Class;
+    rdfs:label "Place"@en.

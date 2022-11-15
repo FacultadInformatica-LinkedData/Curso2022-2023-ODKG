@@ -13,13 +13,25 @@ SELECT ?link  WHERE {
 ?elem property:streetResourceWikidata ?link
 }
 
+#Select all URIs pointing to wikidata resources for streets/sqares (final assignment version)
+SELECT ?link  WHERE {
+?elem rdf:type schema:Place.
+?elem property:streetResourceWikidata ?link
+}
+
 #Count the number of wikidata references to streets/sqares.
 SELECT (COUNT(?link) as ?count)  WHERE {
 ?elem rdf:type class:Address.
 ?elem property:streetResourceWikidata ?link
 }
 
-#Select all URIs pointing to wikidata resources for organizations.
+#Count the number of wikidata references to streets/sqares.
+SELECT (COUNT(?link) as ?count)  WHERE {
+?elem rdf:type schema:Place.
+?elem property:streetResourceWikidata ?link
+}
+
+#Select all URIs pointing to wikidata resources for organizations (same also for final assignment graph).
 SELECT ?link  WHERE {
 {{?elem rdf:type class:Federation.}
  UNION
@@ -31,7 +43,7 @@ SELECT ?link  WHERE {
 ?elem owl:sameAs ?link
 }
 
-#Count the number of wikidata references to organizations.
+#Count the number of wikidata references to organizations (same also for final assignment graph).
 SELECT (COUNT(?link) as ?count)  WHERE {
 {{?elem rdf:type class:Federation.}
  UNION
@@ -62,5 +74,27 @@ SELECT (COUNT(?link) as ?count)  WHERE {
 
 SELECT (COUNT(?link) as ?count)  WHERE {
 ?elem rdf:type class:Subdistrict.
+?elem owl:sameAs ?link
+}
+
+#Select all URIs pointing to wikidata resources for districts and subdistricts (final assignment graph).
+SELECT ?link  WHERE {
+?elem rdf:type dasp:Distrito.
+?elem owl:sameAs ?link
+}
+
+SELECT ?link  WHERE {
+?elem rdf:type dasp:Barrio.
+?elem owl:sameAs ?link
+}
+
+#Count the number of wikidata references to districts and subdistricts (final assignment graph).
+SELECT (COUNT(?link) as ?count)  WHERE {
+?elem rdf:type dasp:Distrito.
+?elem owl:sameAs ?link
+}
+
+SELECT (COUNT(?link) as ?count)  WHERE {
+?elem rdf:type dasp:Barrio.
 ?elem owl:sameAs ?link
 }

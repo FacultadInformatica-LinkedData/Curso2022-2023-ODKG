@@ -1,18 +1,22 @@
 @base <https://www.asociadrid.es> .
-@prefix rr: <http://www.w3.org/ns/r2rml#>.
-@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
-@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
-@prefix transit: <http://vocab.org/transit/terms/>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix transit: <http://vocab.org/transit/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix vocab: <http://example.org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix colab: <https://www.asociadrid.es/class#> .
-@prefix schema: <https://schema.org/>.
+@prefix schema: <https://schema.org/> .
 @prefix property: <https://www.asociadrid.es/ontology/property#> .
 @prefix class: <https://www.asociadrid.es/ontology/class#> .
+@prefix schema: <https://schema.org/> .
+@prefix dasp:<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix org:<http://www.w3.org/ns/org#> .
+
 
 #Mappings for district,  subdistrict and address
 
@@ -22,17 +26,24 @@
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
-    rr:template "https://www.asociadrid.es/resource/District/{district}";
-    rr:class class:District;
+    rr:template "https://www.asociadrid.es/resource/Distrito/{district_trimmed}";
+    rr:class dasp:Distrito;
+    rr:termType rr:IRI
   ];
    rr:predicateObjectMap [
-    rr:predicate property:district_label;
+    rr:predicateMap [
+      rr:constant property:district_label;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "district"
     ]
   ];
 rr:predicateObjectMap [
-    rr:predicate owl:sameAs;
+    rr:predicateMap [
+      rr:constant owl:sameAs;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
     rml:reference "same_as_district_wikidata";
     rr:termType rr:IRI
@@ -44,24 +55,34 @@ rr:predicateObjectMap [
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
-    rr:template "https://www.asociadrid.es/resource/Subdistrict/{subdistrict}";
-    rr:class class:Subdistrict;
+    rr:template "https://www.asociadrid.es/resource/Barrio/{subdistrict_trimmed}";
+    rr:class dasp:Barrio;
+    rr:termType rr:IRI
   ];
   rr:predicateObjectMap [
-    rr:predicate property:property:belongsToDistrict;
+    rr:predicateMap [
+      rr:constant dasp:distrito;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rr:parentTriplesMap <#TriplesMap1>
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:subdistrict_label;
+    rr:predicateMap [
+      rr:constant property:subdistrict_label;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "subdistrict"
     ]
   ]
 ;
 rr:predicateObjectMap [
-    rr:predicate owl:sameAs;
+    rr:predicateMap [
+      rr:constant owl:sameAs;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
     rml:reference "same_as_subdistrict_wikidata";
     rr:termType rr:IRI
@@ -74,23 +95,33 @@ rr:predicateObjectMap [
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
-    rr:template "https://www.asociadrid.es/resource/Address/{id}";
-    rr:class class:Address;
+    rr:template "https://www.asociadrid.es/resource/Place/{trimmed_address}";
+    rr:class schema:Place;
+    rr:termType rr:IRI
   ];
   rr:predicateObjectMap [
-    rr:predicate property:complete_address;
+    rr:predicateMap [
+      rr:constant schema:address;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "address"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:detail;
+    rr:predicateMap [
+      rr:constant property:detail;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "detail"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:latitude;
+    rr:predicateMap [
+      rr:constant schema:latitude;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "latitude";
       rr:datatype xsd:double 
@@ -98,34 +129,46 @@ rr:predicateObjectMap [
     
   ];
   rr:predicateObjectMap [
-    rr:predicate property:longitude;
+    rr:predicateMap [
+      rr:constant schema:longitude;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "longitude";
       rr:datatype xsd:double 
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:zipcode;
+    rr:predicateMap [
+      rr:constant property:zipcode;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "zip_code"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:belongsToSubdistrict;
+    rr:predicateMap [
+      rr:constant dasp:barrio;
+      rr:termType rr:IRI
+      ];
     rr:objectMap [
       rr:parentTriplesMap <#TriplesMap2>
     ]
   ]
 ;
 rr:predicateObjectMap [
-    rr:predicate property:streetResourceWikidata;
+    rr:predicateMap [
+      rr:constant property:streetResourceWikidata;
+      rr:termType rr:IRI
+      ];
     rr:objectMap [
     rml:reference "address_street_wikidata";
     rr:termType rr:IRI
     ]
   ].
 
-#Mappings for phones, emails and websites
+#Mappings for websites
 
 <#TriplesMap4> a rr:TriplesMap;
   rml:logicalSource [
@@ -133,103 +176,115 @@ rr:predicateObjectMap [
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
-    rr:template "https://www.asociadrid.es/resource/Phone/{phone}";
-    rr:class class:Phone;
+    rr:template "https://www.asociadrid.es/resource/WebSite/{trimmed_website}";
+    rr:termType rr:IRI;
+    rr:class schema:WebSite
   ];
   rr:predicateObjectMap [
-    rr:predicate rdfs:label;
+    rr:predicateMap [
+      rr:constant property:website_uri;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
-      rml:reference "phone"
+      rml:reference "website";
+      rr:datatype xsd:anyURI
+      
     ]
   ]
-  .
+.
+
+#Mappings for Organizations
 
 <#TriplesMap5> a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "./csv/transformed_files_with_links/merged-files-with-links.csv" ;
-    rml:referenceFormulation ql:CSV 
-  ];
-  rr:subjectMap [
-    rr:template "https://www.asociadrid.es/resource/Website/{website}";
-    rr:termType rr:IRI;
-    rr:class class:Website;
-  ];
-  rr:predicateObjectMap [
-    rr:predicate rdfs:label;
-    rr:objectMap [
-      rml:reference "website"
-    ]
-  ]
-.
-
-<#TriplesMap6> a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "./csv/transformed_files_with_links/merged-files-with-links.csv" ;
-    rml:referenceFormulation ql:CSV 
-  ];
-  rr:subjectMap [
-    rr:template "https://www.asociadrid.es/resource/Email/{email}";
-    rr:class class:Email;
-  ];
-  rr:predicateObjectMap [
-    rr:predicate rdfs:label;
-    rr:objectMap [
-      rml:reference "email"
-    ]
-  ]
-.
-
-#Mappings for CollaborativeEntities
-
-<#TriplesMap7> a rr:TriplesMap;
   rml:logicalSource [
     rml:source "./csv/transformed_files_with_links/collectives-updated-with-links.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
-    rr:template "https://www.asociadrid.es/resource/CollaborativeEntity/Collective/{name}";
+    rr:template "https://www.asociadrid.es/resource/Collective/{trimmed_name}";
     rr:class class:Collective;
+    rr:termType rr:IRI
+
   ];
   rr:predicateObjectMap [
-    rr:predicate property:id;
+    rr:predicateMap [
+      rr:constant schema:identifier;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "id"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:name;
+    rr:predicateMap [
+      rr:constant schema:legalName;
+      rr:termType rr:IRI
+    ];    
     rr:objectMap [
       rml:reference "name"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:register_date;
+    rr:predicateMap [
+      rr:constant schema:foundingDate;
+      rr:termType rr:IRI
+    ];    
     rr:objectMap [
-      rml:reference "register_date";
+      rml:reference "register_date_alt_format";
       rr:datatype xsd:date 
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:num_affiliates;
+    rr:predicateMap [
+      rr:constant property:num_affiliates;
+      rr:termType rr:IRI
+    ];    
     rr:objectMap [
       rml:reference "num_affiliates";
       rr:datatype xsd:integer 
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:category;
+    rr:predicateMap [
+      rr:constant org:purpose;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "category"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:area;
+    rr:predicateMap [
+      rr:constant schema:areaServed;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "geographical_scope"
     ]
   ];
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant schema:telephone;
+      rr:termType rr:IRI
+    ];
+    rr:objectMap [
+      rml:reference "phone"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant schema:email;
+      rr:termType rr:IRI
+    ];
+    rr:objectMap [
+      rml:reference "email"
+    ]
+  ];
    rr:predicateObjectMap [
-    rr:predicate property:hasAnAddress;
+    rr:predicateMap [
+      rr:constant schema:location;
+      rr:termType rr:IRI
+      ];
     rr:objectMap [
       rr:parentTriplesMap <#TriplesMap3>;
       rr:joinCondition [
@@ -239,7 +294,10 @@ rr:predicateObjectMap [
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:hasAPhone;
+    rr:predicateMap [
+      rr:constant property:hasAWebsite;
+      rr:termType rr:IRI
+        ];
     rr:objectMap [
       rr:parentTriplesMap <#TriplesMap4>;
       rr:joinCondition [
@@ -248,90 +306,116 @@ rr:predicateObjectMap [
             ];
     ]
   ];
-  rr:predicateObjectMap [
-    rr:predicate property:hasAWebsite;
-    rr:objectMap [
-      rr:parentTriplesMap <#TriplesMap5>;
-      rr:joinCondition [
-                rr:child "id";
-                rr:parent "id";
-            ];
-    ]
-  ];
-  rr:predicateObjectMap [
-    rr:predicate property:hasAnEmail;
-    rr:objectMap [
-      rr:parentTriplesMap <#TriplesMap6>;
-      rr:joinCondition [
-                rr:child "id";
-                rr:parent "id";
-            ];
-    ]
-  ]
-;
 rr:predicateObjectMap [
-    rr:predicate owl:sameAs;
+    rr:predicateMap [
+      rr:constant owl:sameAs;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
     rml:reference "same_as_organization_wikidata";
     rr:termType rr:IRI
     ]
   ].
 
-<#TriplesMap8> a rr:TriplesMap;
+<#TriplesMap6> a rr:TriplesMap;
   rml:logicalSource [
     rml:source "./csv/transformed_files_with_links/foundations-updated-with-links.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
-    rr:template "https://www.asociadrid.es/resource/CollaborativeEntity/Foundation/{name}";
+    rr:template "https://www.asociadrid.es/resource/Foundation/{trimmed_name}";
     rr:class class:Foundation;
+    rr:termType rr:IRI
+
   ];
   rr:predicateObjectMap [
-    rr:predicate property:id;
+    rr:predicateMap [
+      rr:constant schema:identifier;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "id"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:name;
+    rr:predicateMap [
+      rr:constant schema:legalName;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "name"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:register_date;
+    rr:predicateMap [
+      rr:constant schema:foundingDate;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
-      rml:reference "register_date";
+      rml:reference "register_date_alt_format";
       rr:datatype xsd:date 
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:cif;
+    rr:predicateMap [
+      rr:constant schema:taxID;
+      rr:termType rr:IRI
+    ];    
     rr:objectMap [
       rml:reference "tax_code"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:num_affiliates;
+    rr:predicateMap [
+      rr:constant property:num_affiliates;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "num_affiliates";
       rr:datatype xsd:integer 
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:category;
+    rr:predicateMap [
+      rr:constant org:purpose;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "category"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:area;
+    rr:predicateMap [
+      rr:constant schema:areaServed;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "geographical_scope"
     ]
   ];
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant schema:telephone;
+      rr:termType rr:IRI
+    ];
+    rr:objectMap [
+      rml:reference "phone"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant schema:email;
+      rr:termType rr:IRI
+    ];
+    rr:objectMap [
+      rml:reference "email"
+    ]
+  ];
    rr:predicateObjectMap [
-    rr:predicate property:hasAnAddress;
+    rr:predicateMap [
+      rr:constant schema:location;
+      rr:termType rr:IRI
+      ];
     rr:objectMap [
       rr:parentTriplesMap <#TriplesMap3>;
       rr:joinCondition [
@@ -341,7 +425,10 @@ rr:predicateObjectMap [
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:hasAPhone;
+    rr:predicateMap [
+      rr:constant property:hasAWebsite;
+      rr:termType rr:IRI
+      ];
     rr:objectMap [
       rr:parentTriplesMap <#TriplesMap4>;
       rr:joinCondition [
@@ -351,96 +438,125 @@ rr:predicateObjectMap [
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:hasAWebsite;
-    rr:objectMap [
-      rr:parentTriplesMap <#TriplesMap5>;
-      rr:joinCondition [
-                rr:child "id";
-                rr:parent "id";
-            ];
-    ]
-  ];
-  rr:predicateObjectMap [
-    rr:predicate property:hasAnEmail;
-    rr:objectMap [
-      rr:parentTriplesMap <#TriplesMap6>;
-      rr:joinCondition [
-                rr:child "id";
-                rr:parent "id";
-            ];
-    ]
-  ]
-;
-rr:predicateObjectMap [
-    rr:predicate owl:sameAs;
+    rr:predicateMap [
+      rr:constant owl:sameAs;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
     rml:reference "same_as_organization_wikidata";
     rr:termType rr:IRI
     ]
   ].
 
-<#TriplesMap9> a rr:TriplesMap;
+
+<#TriplesMap7> a rr:TriplesMap;
   rml:logicalSource [
     rml:source "./csv/transformed_files_with_links/federations-updated-with-links.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
-    rr:template "https://www.asociadrid.es/resource/CollaborativeEntity/Federation/{name}";
+    rr:template "https://www.asociadrid.es/resource/Federation/{trimmed_name}";
     rr:class class:Federation;
+    rr:termType rr:IRI
   ];
   rr:predicateObjectMap [
-    rr:predicate property:id;
+    rr:predicateMap [
+      rr:constant schema:identifier;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "id"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:name;
+    rr:predicateMap [
+      rr:constant schema:legalName;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "name"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:register_date;
+    rr:predicateMap [
+      rr:constant schema:foundingDate;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
-      rml:reference "register_date";
+      rml:reference "register_date_alt_format";
       rr:datatype xsd:date 
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:cif;
+    rr:predicateMap [
+      rr:constant schema:taxID;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "tax_code"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:num_affiliates;
+    rr:predicateMap [
+      rr:constant property:num_affiliates;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "num_affiliates";
       rr:datatype xsd:integer 
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:asoc_madrid;
+    rr:predicateMap [
+      rr:constant property:asoc_affiliated;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "asoc_affiliated";
       rr:datatype xsd:integer 
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:category;
+    rr:predicateMap [
+      rr:constant org:purpose;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "category"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:area;
+    rr:predicateMap [
+      rr:constant schema:areaServed;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "geographical_scope"
     ]
   ];
+rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant schema:telephone;
+      rr:termType rr:IRI
+    ];
+    rr:objectMap [
+      rml:reference "phone"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant schema:email;
+      rr:termType rr:IRI
+    ];
+    rr:objectMap [
+      rml:reference "email"
+    ]
+  ];
    rr:predicateObjectMap [
-    rr:predicate property:hasAnAddress;
+    rr:predicateMap [
+      rr:constant schema:location;
+      rr:termType rr:IRI
+      ];
     rr:objectMap [
       rr:parentTriplesMap <#TriplesMap3>;
       rr:joinCondition [
@@ -450,7 +566,10 @@ rr:predicateObjectMap [
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:hasAPhone;
+    rr:predicateMap [
+      rr:constant property:hasAWebsite;
+      rr:termType rr:IRI
+      ];
     rr:objectMap [
       rr:parentTriplesMap <#TriplesMap4>;
       rr:joinCondition [
@@ -459,90 +578,114 @@ rr:predicateObjectMap [
             ];
     ]
   ];
-  rr:predicateObjectMap [
-    rr:predicate property:hasAWebsite;
-    rr:objectMap [
-      rr:parentTriplesMap <#TriplesMap5>;
-      rr:joinCondition [
-                rr:child "id";
-                rr:parent "id";
-            ];
-    ]
-  ];
-  rr:predicateObjectMap [
-    rr:predicate property:hasAnEmail;
-    rr:objectMap [
-      rr:parentTriplesMap <#TriplesMap6>;
-      rr:joinCondition [
-                rr:child "id";
-                rr:parent "id";
-            ];
-    ]
-  ]
-;
 rr:predicateObjectMap [
-    rr:predicate owl:sameAs;
+    rr:predicateMap [
+      rr:constant owl:sameAs;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
     rml:reference "same_as_organization_wikidata";
     rr:termType rr:IRI
     ]
   ].
-
-<#TriplesMap10> a rr:TriplesMap;
+<#TriplesMap8> a rr:TriplesMap;
   rml:logicalSource [
     rml:source "./csv/transformed_files_with_links/associations-updated-with-links.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
-    rr:template "https://www.asociadrid.es/resource/CollaborativeEntity/Association/{name}";
+    rr:template "https://www.asociadrid.es/resource/Association/{trimmed_name}";
     rr:class class:Association;
+    rr:termType rr:IRI
   ];
   rr:predicateObjectMap [
-    rr:predicate property:id;
+    rr:predicateMap [
+      rr:constant schema:identifier;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "id"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:name;
+    rr:predicateMap [
+      rr:constant schema:legalName;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "name"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:register_date;
+    rr:predicateMap [
+      rr:constant schema:foundingDate;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
-      rml:reference "register_date";
+      rml:reference "register_date_alt_format";
       rr:datatype xsd:date 
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:cif;
+    rr:predicateMap [
+      rr:constant schema:taxID;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "tax_code"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:num_affiliates;
+    rr:predicateMap [
+      rr:constant property:num_affiliates;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "num_affiliates";
       rr:datatype xsd:integer 
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:category;
+    rr:predicateMap [
+      rr:constant org:purpose;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "category"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:area;
+    rr:predicateMap [
+      rr:constant schema:areaServed;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
       rml:reference "geographical_scope"
     ]
   ];
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant schema:telephone;
+      rr:termType rr:IRI
+    ];
+    rr:objectMap [
+      rml:reference "phone"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant schema:email;
+      rr:termType rr:IRI
+    ];
+    rr:objectMap [
+      rml:reference "email"
+    ]
+  ];
    rr:predicateObjectMap [
-    rr:predicate property:hasAnAddress;
+    rr:predicateMap [
+      rr:constant schema:location;
+      rr:termType rr:IRI
+      ];
     rr:objectMap [
       rr:parentTriplesMap <#TriplesMap3>;
       rr:joinCondition [
@@ -552,7 +695,10 @@ rr:predicateObjectMap [
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:hasAPhone;
+    rr:predicateMap [
+      rr:constant property:hasAWebsite;
+      rr:termType rr:IRI
+      ];
     rr:objectMap [
       rr:parentTriplesMap <#TriplesMap4>;
       rr:joinCondition [
@@ -562,29 +708,12 @@ rr:predicateObjectMap [
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:hasAWebsite;
+    rr:predicateMap [
+      rr:constant schema:memberOf;
+      rr:termType rr:IRI
+      ];
     rr:objectMap [
-      rr:parentTriplesMap <#TriplesMap5>;
-      rr:joinCondition [
-                rr:child "id";
-                rr:parent "id";
-            ];
-    ]
-  ];
-  rr:predicateObjectMap [
-    rr:predicate property:hasAnEmail;
-    rr:objectMap [
-      rr:parentTriplesMap <#TriplesMap6>;
-      rr:joinCondition [
-                rr:child "id";
-                rr:parent "id";
-            ];
-    ]
-  ];
-  rr:predicateObjectMap [
-    rr:predicate property:affiliatedTo;
-    rr:objectMap [
-      rr:parentTriplesMap <#TriplesMap9>;
+      rr:parentTriplesMap <#TriplesMap7>;
       rr:joinCondition [
                 rr:child "belongs_to_id1";
                 rr:parent "id";
@@ -592,9 +721,12 @@ rr:predicateObjectMap [
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:affiliatedTo;
+    rr:predicateMap [
+      rr:constant schema:memberOf;
+      rr:termType rr:IRI
+      ];
     rr:objectMap [
-      rr:parentTriplesMap <#TriplesMap9>;
+      rr:parentTriplesMap <#TriplesMap7>;
       rr:joinCondition [
                 rr:child "belongs_to_id2";
                 rr:parent "id";
@@ -602,9 +734,12 @@ rr:predicateObjectMap [
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:affiliatedTo;
+    rr:predicateMap [
+      rr:constant schema:memberOf;
+      rr:termType rr:IRI
+      ];
     rr:objectMap [
-      rr:parentTriplesMap <#TriplesMap9>;
+      rr:parentTriplesMap <#TriplesMap7>;
       rr:joinCondition [
                 rr:child "belongs_to_id3";
                 rr:parent "id";
@@ -612,9 +747,12 @@ rr:predicateObjectMap [
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate property:affiliatedTo;
+    rr:predicateMap [
+      rr:constant schema:memberOf;
+      rr:termType rr:IRI
+      ];
     rr:objectMap [
-      rr:parentTriplesMap <#TriplesMap9>;
+      rr:parentTriplesMap <#TriplesMap7>;
       rr:joinCondition [
                 rr:child "belongs_to_id4";
                 rr:parent "id";
@@ -623,7 +761,10 @@ rr:predicateObjectMap [
   ]
 ;
 rr:predicateObjectMap [
-    rr:predicate owl:sameAs;
+    rr:predicateMap [
+      rr:constant owl:sameAs;
+      rr:termType rr:IRI
+    ];
     rr:objectMap [
     rml:reference "same_as_organization_wikidata";
     rr:termType rr:IRI

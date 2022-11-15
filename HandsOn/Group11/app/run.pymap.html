@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4a29e6b8f8477e282c137598621c3ff3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4a29e6b8f8477e282c137598621c3ff3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4a29e6b8f8477e282c137598621c3ff3 = L.map(
+                "map_4a29e6b8f8477e282c137598621c3ff3",
+                {
+                    center: [40.428285284058816, -3.7070024693800345],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_aeeda570c2e121a0e56252722e11c8da = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4a29e6b8f8477e282c137598621c3ff3);
+        
+    
+            var marker_08aff51346d73b6df9d2d25e4ebe254a = L.marker(
+                [40.428285284058816, -3.7070024693800345],
+                {}
+            ).addTo(map_4a29e6b8f8477e282c137598621c3ff3);
+        
+    
+            var icon_1c3a7a62a0b3566582771b90df90abf3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_08aff51346d73b6df9d2d25e4ebe254a.setIcon(icon_1c3a7a62a0b3566582771b90df90abf3);
+        
+    
+        var popup_e988410ebd2db96ff4ef43c4530a95d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a93409047b2dd5e79b8fd15eefcb33a3 = $(`<div id="html_a93409047b2dd5e79b8fd15eefcb33a3" style="width: 100.0%; height: 100.0%;">     <center>       <h4>Rafael de Penagos</h4>     </center>     <hr/>     <p style="width: 50%; overflow: hidden; text-overflow: ellipsis;">En esta casa vivió y tuvo su estudio el dibujante madrileño RAFAEL DE PENAGOS de 1914 a1926, años fundamentales en su creación artística.  Penagos fue un artista reconocido por su trabajo como cartelista e ilustrador de publicaciones periódicas: La Esfera, la Voz, Nuevo Mundo y sobre todo ABC y Blanco y Negro. En ellas  reinventó la sociedad de los años veinte, la estilizó, la hizo más “chic “, más estilosa y glamorosa. Su hijo, lo describe como dibujante de elegancias y de la elegancia, se dedicó a glosar con un lápiz aquella vida mundana... Los tés del Palace. Y las tardes del Ritz. Y Fornos. Y Maxim´s. Y los bailes de máscaras del Teatro Real, de la Zarzuela o del Círculo de Bellas Artes que él anunció con tantos carteles. Y unas mujeres esbeltas, graciosas, picarescas e ingenuas a un tiempo, nos salen al paso. Porque su gran creación fue ese atractivo temario femenino. Inventó un nuevo tipo de mujer, la “mujer Penagos”, una mujer fina y estilizada a la que dotó de un europeismo muy español, y a quien la realidad, las mujeres de carne y hueso, haciendo verdadera la paradoja de Oscar Wilde, de que la naturaleza imita al arte, empezaron a imitar, a convertirse en el arquetipo creado por el artista.”  Penagos fue madrileño, nacido en un hotelito de la calle de Granada el 7 de marzo de 1889, hijo de notario. Estudió en la Escuela Superior de Artes e Industrias. Su primer trabajo fue en 1900 en La Novela Ilustrada, dirigida por Blasco Ibáñez. Siguió su formación artística en la Academia de Bellas Artes de San Fernando, compartiendo caballete y cincel con Victorio Macho y José Gutiérrez Solana. Tuvo muchos premios. Desde 1910 se dejaba ver como tertuliano en el Café de Levante con sus amigos Valle Inclán y Ricardo Baroja.  Primer Premio de la Exposición de Arte Decorativo en el Círculo de Bellas Artes, empieza con el cartelismo, cuando una beca le lleva, en 1913, nada menos que a Paris. Luego a Londres. El inicio de la Guerra Mundial le trae a su Madrid, instalándole en este estudio, frente al Retiro donde lleva una  “vida bohemia y mundana”. Empieza las grandes colaboraciones en la prensa, en los carteles y las ilustraciones de los Cuentos de Calleja. Tiene éxito y grandes amigos. Una vida fructífera. En 1935 se hace catedrático de Instituto, vive en varias ciudades. Tiene una época de colaboraciones y viajes internacionales y regresa a Madrid en 1953, muriendo al año siguiente en la calle Bordadores nº 6.  Toda su vida fue una limpia y pronta acuarela ilusionada de los colores de lo mejor de la vida. </p>     <p>       <strong>Date: </strong>2001-01-01<br />       <strong>Address: </strong><a href="http://placasdemadrid.linkeddata.es/placas-madrid/resource/Ubicacion/GEO_413528688896" target="_blank">C/ Alfonso XII, 36</a><br />       <strong>District: </strong><a href="http://placasdemadrid.linkeddata.es/placas-madrid/resource/Distrito/Retiro" target="_blank">Retiro</a>     </p>     <p>       <a href="http://placasdemadrid.linkeddata.es/placas-madrid/resource/Web/WEB_58240" target="_blank">More info.</a>     </p> </div>`)[0];
+                popup_e988410ebd2db96ff4ef43c4530a95d8.setContent(html_a93409047b2dd5e79b8fd15eefcb33a3);
+            
+        
+
+        marker_08aff51346d73b6df9d2d25e4ebe254a.bindPopup(popup_e988410ebd2db96ff4ef43c4530a95d8)
+        ;
+
+        
+    
+</script>
+</html>

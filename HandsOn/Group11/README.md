@@ -5,4 +5,4 @@ This directory contains the work of the group 11 members to the hands-on assignm
 Carlos Miguel (@charly98cma)
 Manuel Leira (@mlupm)
 Laura Artiles (@laurartiles)
-Daniel Lorente (@dloriente)
+Daniel Loriente (@dloriente)

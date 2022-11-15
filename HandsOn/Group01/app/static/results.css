@@ -1,0 +1,28 @@
+table {
+	border-collapse: collapse;
+}
+
+th {
+	color: #ffffff;
+    background-color: #165963;
+	height: 30px;
+	text-align: center;
+}
+
+td {
+	height: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: white;
+}
+table td:nth-child(2) {
+	text-align: center;
+}
+
+body{
+	font-size: 18px;
+}
+
+h1 {
+    font-size: 30px;
+}

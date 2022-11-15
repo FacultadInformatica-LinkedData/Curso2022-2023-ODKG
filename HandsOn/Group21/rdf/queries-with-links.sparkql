@@ -1,0 +1,32 @@
+# Get links in Wikidata for MadridDistrict
+SELECT ?name ?wikidata_uri
+WHERE {
+    ?district a <http://miciudadamiga.madrid/map/ontology#MadridDistrict>.
+    ?district <http://www.w3.org/2002/07/owl#sameAs> ?wikidata_uri.
+    ?district <http://miciudadamiga.madrid/map/ontology#hasName> ?name
+}
+
+# Get links in Wikidata for MadridNeighborhood
+SELECT ?name ?wikidata_uri
+WHERE {
+    ?neighborhood a <http://miciudadamiga.madrid/map/ontology#MadridNeighborhood>.
+    ?neighborhood <http://www.w3.org/2002/07/owl#sameAs> ?wikidata_uri.
+    ?neighborhood <http://miciudadamiga.madrid/map/ontology#hasName> ?name
+}
+
+# Get links in Wikidata for SubwayStop
+SELECT ?name ?wikidata_uri
+WHERE {
+    ?subwayStop a <http://miciudadamiga.madrid/map/ontology#SubwayStop>.
+    ?subwayStop <http://www.w3.org/2002/07/owl#sameAs> ?wikidata_uri.
+    ?subwayStop <http://miciudadamiga.madrid/map/ontology#hasName> ?name
+}
+
+# Get coordinates from Wikidata for SubwayStop
+SELECT ?name ?coordinates
+WHERE {
+    ?subwayStop a <http://miciudadamiga.madrid/map/ontology#SubwayStop>.
+    ?subwayStop <http://www.w3.org/2002/07/owl#sameAs> ?wikidata_uri.
+    ?subwayStop <http://miciudadamiga.madrid/map/ontology#hasName> ?name.
+    ?wikidata_uri <http://www.wikidata.org/prop/direct/P625> ?coordinates
+}

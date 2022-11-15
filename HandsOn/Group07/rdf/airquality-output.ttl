@@ -5,8 +5,8 @@
 <http://smartcity.airquality.es/airquality/station/Arturo%20Soria> a vocab:Station ;
     vocab:hasStationName "Arturo Soria" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4400457"^^xsd:real ;
-    vocab:longitude "-3.6392422"^^xsd:real ;
+    vocab:latitude "40.4400457"^^xsd:float ;
+    vocab:longitude "-3.6392422"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/012>,
         <http://smartcity.airquality.es/airquality/magnitude/014>,
         <http://smartcity.airquality.es/airquality/magnitude/06>,
@@ -16,8 +16,8 @@
 <http://smartcity.airquality.es/airquality/station/Barajas%20Pueblo> a vocab:Station ;
     vocab:hasStationName "Barajas Pueblo" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4769179"^^xsd:real ;
-    vocab:longitude "-3.5800258"^^xsd:real ;
+    vocab:latitude "40.4769179"^^xsd:float ;
+    vocab:longitude "-3.5800258"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/012>,
         <http://smartcity.airquality.es/airquality/magnitude/014>,
         <http://smartcity.airquality.es/airquality/magnitude/07>,
@@ -26,8 +26,8 @@
 <http://smartcity.airquality.es/airquality/station/Barrio%20del%20Pilar> a vocab:Station ;
     vocab:hasStationName "Barrio del Pilar" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4782322"^^xsd:real ;
-    vocab:longitude "-3.7115364"^^xsd:real ;
+    vocab:latitude "40.4782322"^^xsd:float ;
+    vocab:longitude "-3.7115364"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/012>,
         <http://smartcity.airquality.es/airquality/magnitude/014>,
         <http://smartcity.airquality.es/airquality/magnitude/06>,
@@ -37,8 +37,8 @@
 <http://smartcity.airquality.es/airquality/station/Casa%20de%20Campo> a vocab:Station ;
     vocab:hasStationName "Casa de Campo" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4193577"^^xsd:real ;
-    vocab:longitude "-3.7473445"^^xsd:real ;
+    vocab:latitude "40.4193577"^^xsd:float ;
+    vocab:longitude "-3.7473445"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/01>,
         <http://smartcity.airquality.es/airquality/magnitude/010>,
         <http://smartcity.airquality.es/airquality/magnitude/012>,
@@ -57,8 +57,8 @@
 <http://smartcity.airquality.es/airquality/station/Castellana> a vocab:Station ;
     vocab:hasStationName "Castellana" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4398904"^^xsd:real ;
-    vocab:longitude "-3.6903729"^^xsd:real ;
+    vocab:latitude "40.4398904"^^xsd:float ;
+    vocab:longitude "-3.6903729"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/010>,
         <http://smartcity.airquality.es/airquality/magnitude/012>,
         <http://smartcity.airquality.es/airquality/magnitude/07>,
@@ -68,8 +68,8 @@
 <http://smartcity.airquality.es/airquality/station/Cuatro%20Caminos> a vocab:Station ;
     vocab:hasStationName "Cuatro Caminos" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4455439"^^xsd:real ;
-    vocab:longitude "-3.7071303"^^xsd:real ;
+    vocab:latitude "40.4455439"^^xsd:float ;
+    vocab:longitude "-3.7071303"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/01>,
         <http://smartcity.airquality.es/airquality/magnitude/010>,
         <http://smartcity.airquality.es/airquality/magnitude/012>,
@@ -83,8 +83,8 @@
 <http://smartcity.airquality.es/airquality/station/El%20Pardo> a vocab:Station ;
     vocab:hasStationName "El Pardo" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.5180701"^^xsd:real ;
-    vocab:longitude "-3.7746101"^^xsd:real ;
+    vocab:latitude "40.5180701"^^xsd:float ;
+    vocab:longitude "-3.7746101"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/012>,
         <http://smartcity.airquality.es/airquality/magnitude/014>,
         <http://smartcity.airquality.es/airquality/magnitude/07>,
@@ -93,8 +93,8 @@
 <http://smartcity.airquality.es/airquality/station/Ensanche%20de%20Vallecas> a vocab:Station ;
     vocab:hasStationName "Ensanche de Vallecas" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.3730118"^^xsd:real ;
-    vocab:longitude "-3.6121394"^^xsd:real ;
+    vocab:latitude "40.3730118"^^xsd:float ;
+    vocab:longitude "-3.6121394"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/012>,
         <http://smartcity.airquality.es/airquality/magnitude/014>,
         <http://smartcity.airquality.es/airquality/magnitude/07>,
@@ -103,8 +103,8 @@
 <http://smartcity.airquality.es/airquality/station/Escuelas%20Aguirre> a vocab:Station ;
     vocab:hasStationName "Escuelas Aguirre" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4215533"^^xsd:real ;
-    vocab:longitude "-3.6823158"^^xsd:real ;
+    vocab:latitude "40.4215533"^^xsd:float ;
+    vocab:longitude "-3.6823158"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/01>,
         <http://smartcity.airquality.es/airquality/magnitude/010>,
         <http://smartcity.airquality.es/airquality/magnitude/012>,
@@ -123,8 +123,8 @@
 <http://smartcity.airquality.es/airquality/station/Farolillo> a vocab:Station ;
     vocab:hasStationName "Farolillo" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.3947825"^^xsd:real ;
-    vocab:longitude "-3.7318356"^^xsd:real ;
+    vocab:latitude "40.3947825"^^xsd:float ;
+    vocab:longitude "-3.7318356"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/010>,
         <http://smartcity.airquality.es/airquality/magnitude/012>,
         <http://smartcity.airquality.es/airquality/magnitude/014>,
@@ -138,8 +138,8 @@
 <http://smartcity.airquality.es/airquality/station/Juan%20Carlos%20I> a vocab:Station ;
     vocab:hasStationName "Juan Carlos I" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4607255"^^xsd:real ;
-    vocab:longitude "-3.6163407"^^xsd:real ;
+    vocab:latitude "40.4607255"^^xsd:float ;
+    vocab:longitude "-3.6163407"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/012>,
         <http://smartcity.airquality.es/airquality/magnitude/014>,
         <http://smartcity.airquality.es/airquality/magnitude/07>,
@@ -148,8 +148,8 @@
 <http://smartcity.airquality.es/airquality/station/M%C3%A9ndez%20%C3%81lvaro> a vocab:Station ;
     vocab:hasStationName "Méndez Álvaro" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.3980991"^^xsd:real ;
-    vocab:longitude "-3.6868138"^^xsd:real ;
+    vocab:latitude "40.3980991"^^xsd:float ;
+    vocab:longitude "-3.6868138"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/010>,
         <http://smartcity.airquality.es/airquality/magnitude/012>,
         <http://smartcity.airquality.es/airquality/magnitude/07>,
@@ -159,8 +159,8 @@
 <http://smartcity.airquality.es/airquality/station/Moratalaz> a vocab:Station ;
     vocab:hasStationName "Moratalaz" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4079517"^^xsd:real ;
-    vocab:longitude "-3.6453104"^^xsd:real ;
+    vocab:latitude "40.4079517"^^xsd:float ;
+    vocab:longitude "-3.6453104"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/01>,
         <http://smartcity.airquality.es/airquality/magnitude/010>,
         <http://smartcity.airquality.es/airquality/magnitude/012>,
@@ -171,8 +171,8 @@
 <http://smartcity.airquality.es/airquality/station/Parque%20del%20Retiro> a vocab:Station ;
     vocab:hasStationName "Parque del Retiro" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4144444"^^xsd:real ;
-    vocab:longitude "-3.6824999"^^xsd:real ;
+    vocab:latitude "40.4144444"^^xsd:float ;
+    vocab:longitude "-3.6824999"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/012>,
         <http://smartcity.airquality.es/airquality/magnitude/014>,
         <http://smartcity.airquality.es/airquality/magnitude/07>,
@@ -181,8 +181,8 @@
 <http://smartcity.airquality.es/airquality/station/Plaza%20Castilla> a vocab:Station ;
     vocab:hasStationName "Plaza Castilla" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4655841"^^xsd:real ;
-    vocab:longitude "-3.6887449"^^xsd:real ;
+    vocab:latitude "40.4655841"^^xsd:float ;
+    vocab:longitude "-3.6887449"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/010>,
         <http://smartcity.airquality.es/airquality/magnitude/012>,
         <http://smartcity.airquality.es/airquality/magnitude/07>,
@@ -192,8 +192,8 @@
 <http://smartcity.airquality.es/airquality/station/Plaza%20El%C3%ADptica> a vocab:Station ;
     vocab:hasStationName "Plaza Elíptica" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.3850336"^^xsd:real ;
-    vocab:longitude "-3.7187679"^^xsd:real ;
+    vocab:latitude "40.3850336"^^xsd:float ;
+    vocab:longitude "-3.7187679"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/010>,
         <http://smartcity.airquality.es/airquality/magnitude/012>,
         <http://smartcity.airquality.es/airquality/magnitude/06>,
@@ -204,8 +204,8 @@
 <http://smartcity.airquality.es/airquality/station/Plaza%20de%20Espa%C3%B1a> a vocab:Station ;
     vocab:hasStationName "Plaza de España" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4238823"^^xsd:real ;
-    vocab:longitude "-3.7122567"^^xsd:real ;
+    vocab:latitude "40.4238823"^^xsd:float ;
+    vocab:longitude "-3.7122567"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/01>,
         <http://smartcity.airquality.es/airquality/magnitude/012>,
         <http://smartcity.airquality.es/airquality/magnitude/06>,
@@ -215,8 +215,8 @@
 <http://smartcity.airquality.es/airquality/station/Plaza%20del%20Carmen> a vocab:Station ;
     vocab:hasStationName "Plaza del Carmen" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4192091"^^xsd:real ;
-    vocab:longitude "-3.7031662"^^xsd:real ;
+    vocab:latitude "40.4192091"^^xsd:float ;
+    vocab:longitude "-3.7031662"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/01>,
         <http://smartcity.airquality.es/airquality/magnitude/012>,
         <http://smartcity.airquality.es/airquality/magnitude/014>,
@@ -227,8 +227,8 @@
 <http://smartcity.airquality.es/airquality/station/Ram%C3%B3n%20y%20Cajal> a vocab:Station ;
     vocab:hasStationName "Ramón y Cajal" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4514734"^^xsd:real ;
-    vocab:longitude "-3.6773491"^^xsd:real ;
+    vocab:latitude "40.4514734"^^xsd:float ;
+    vocab:longitude "-3.6773491"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/012>,
         <http://smartcity.airquality.es/airquality/magnitude/020>,
         <http://smartcity.airquality.es/airquality/magnitude/030>,
@@ -239,8 +239,8 @@
 <http://smartcity.airquality.es/airquality/station/Sanchinarro> a vocab:Station ;
     vocab:hasStationName "Sanchinarro" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4942012"^^xsd:real ;
-    vocab:longitude "-3.6605173"^^xsd:real ;
+    vocab:latitude "40.4942012"^^xsd:float ;
+    vocab:longitude "-3.6605173"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/01>,
         <http://smartcity.airquality.es/airquality/magnitude/010>,
         <http://smartcity.airquality.es/airquality/magnitude/012>,
@@ -252,8 +252,8 @@
 <http://smartcity.airquality.es/airquality/station/Tres%20Olivos> a vocab:Station ;
     vocab:hasStationName "Tres Olivos" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.5005477"^^xsd:real ;
-    vocab:longitude "-3.6897308"^^xsd:real ;
+    vocab:latitude "40.5005477"^^xsd:float ;
+    vocab:longitude "-3.6897308"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/010>,
         <http://smartcity.airquality.es/airquality/magnitude/012>,
         <http://smartcity.airquality.es/airquality/magnitude/014>,
@@ -263,8 +263,8 @@
 <http://smartcity.airquality.es/airquality/station/Urb.%20Embajada> a vocab:Station ;
     vocab:hasStationName "Urb. Embajada" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.4623628"^^xsd:real ;
-    vocab:longitude "-3.5805649"^^xsd:real ;
+    vocab:latitude "40.4623628"^^xsd:float ;
+    vocab:longitude "-3.5805649"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/010>,
         <http://smartcity.airquality.es/airquality/magnitude/012>,
         <http://smartcity.airquality.es/airquality/magnitude/020>,
@@ -279,8 +279,8 @@
 <http://smartcity.airquality.es/airquality/station/Vallecas> a vocab:Station ;
     vocab:hasStationName "Vallecas" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.3881478"^^xsd:real ;
-    vocab:longitude "-3.6515286"^^xsd:real ;
+    vocab:latitude "40.3881478"^^xsd:float ;
+    vocab:longitude "-3.6515286"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/01>,
         <http://smartcity.airquality.es/airquality/magnitude/010>,
         <http://smartcity.airquality.es/airquality/magnitude/012>,
@@ -290,8 +290,8 @@
 <http://smartcity.airquality.es/airquality/station/Villaverde> a vocab:Station ;
     vocab:hasStationName "Villaverde" ;
     vocab:isLocatedIn <http://smartcity.airquality.es/airquality/municipality/Madrid> ;
-    vocab:latitude "40.347147"^^xsd:real ;
-    vocab:longitude "-3.7133167"^^xsd:real ;
+    vocab:latitude "40.347147"^^xsd:float ;
+    vocab:longitude "-3.7133167"^^xsd:float ;
     saref:makesMeasurement <http://smartcity.airquality.es/airquality/magnitude/01>,
         <http://smartcity.airquality.es/airquality/magnitude/012>,
         <http://smartcity.airquality.es/airquality/magnitude/014>,

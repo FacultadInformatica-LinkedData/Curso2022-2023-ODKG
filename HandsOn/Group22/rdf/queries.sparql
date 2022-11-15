@@ -1,15 +1,70 @@
-PREFIX ns: <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#> 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX vocab: <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#>
+SELECT ?number ?solar WHERE { 
+    ?s a vocab:GreenZone. 
+    ?s vocab:archiveNumber ?number.
+    ?s vocab:solar ?solar
+}
 
-SELECT ?distrito ?nombre WHERE { 
-    ?distrito a ns:District . 
-    ?distrito rdfs:label ?nombre.
+
+PREFIX vocab: <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#>
+SELECT ?name WHERE { 
+    ?s a vocab:Location. 
+    ?s vocab:locationName ?name
 }
-SELECT ?parque ?nombre WHERE { 
-    ?parque a ns:GreenZone . 
-    ?parque rdfs:label ?nombre.
+
+PREFIX vocab: <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#>
+SELECT ?name WHERE { 
+    ?d a vocab:Destination. 
+    ?d vocab:destinationName ?name
 }
-SELECT ?arboleda ?nombre WHERE { 
-    ?arboleda a ns:Woodland . 
-    ?arboleda rdfs:label ?nombre.
+
+PREFIX vocab: <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#>
+SELECT ?name WHERE { 
+    ?d a vocab:Type. 
+    ?d vocab:typeName ?name
 }
+
+
+PREFIX vocab: <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#>
+SELECT ?name ?newDistrict WHERE { 
+    ?d a vocab:GreenZone. 
+    ?d vocab:archiveNumber ?name.
+    ?d vocab:hasDistrict ?district.
+    ?district a vocab:District.
+    ?district vocab:districtName ?newDistrict
+}
+
+
+PREFIX vocab: <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#>
+SELECT ?namedistrict ?woodland ?namespecies ?units WHERE { 
+    ?district a vocab:District.
+    ?district vocab:districtName ?namedistrict.
+    ?district vocab:hasWoodland ?woodland.
+    ?woodland a vocab:Woodland. 
+    ?woodland vocab:hasSpecies ?species.
+    ?species a vocab:Species.
+    ?species vocab:speciesName ?namespecies.
+    ?woodland vocab:unitSpecies ?units
+}
+
+PREFIX vocab: <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#>
+SELECT ?name WHERE { 
+    ?d a vocab:District. 
+    ?d vocab:districtName ?name
+}
+
+PREFIX vocab: <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#>
+SELECT ?woodland ?namespecies ?units WHERE { 
+    ?woodland a vocab:Woodland. 
+    ?woodland vocab:hasSpecies ?species.
+    ?species a vocab:Species.
+    ?species vocab:speciesName ?namespecies.
+    ?woodland vocab:unitSpecies ?units
+}
+
+PREFIX vocab: <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#>
+SELECT ?name WHERE { 
+    ?species a vocab:Species. 
+    ?species vocab:speciesName ?name
+}
+

@@ -1,4 +1,4 @@
-refixes:
+prefixes:
   rr: http://www.w3.org/ns/r2rml#
   foaf: http://xmlns.com/foaf/0.1/
   xsd: http://www.w3.org/2001/XMLSchema#
@@ -20,7 +20,7 @@ mappings:
       - [a, vocab:Neighborhood]
       - [rdfs:label, $(Nombre)]
       - [vocab:hasNeighborhoodNumber, $(Codigo)]
-      - [vocab:hasDistrict, $(distrito)]
+      - [vocab:hasDistrict, $(distrito)~iri]
       - [owl:sameAs, $(barrio_wikidata)~iri]
 
   triplesmap2:
@@ -57,24 +57,27 @@ mappings:
     s: $(identificador)
     po:
       - [a, vocab:ParkingArea]
-      - [vocab:hasStreet, $(calle)]
-      - [vocab:hasDistrict, $(distrito)]
-      - [vocab:hasNeighborhood, $(barrio)]
+      - [vocab:hasStreet, $(calle)~iri]
+      - [vocab:hasDistrict, $(distrito)~iri]
+      - [vocab:hasNeighborhood, $(barrio)~iri]
       - [vocab:blockId, $(num_finca)]
       - [vocab:color, $(color)]
       - [vocab:parkingSpaces, $(num_plazas)]
+      - [vocab:hasLocation, $(location)~iri]
+
   triplesmap6:
     sources:
       - [parquimetros_updated.csv~csv]
     s: $(identificador)
     po:
+      - [vocab:hasLocation, $(location)~iri]
       - [a, vocab:ParkingMeter]
-      - [vocab:hasStreet, $(calle)]
-      - [vocab:hasDistrict, $(distrito)]
-      - [vocab:hasNeighborhood, $(barrio)]
+      - [vocab:hasStreet, $(calle)~iri]
+      - [vocab:hasDistrict, $(distrito)~iri]
+      - [vocab:hasNeighborhood, $(barrio)~iri]
       - [vocab:blockId, $(num_finca)]
       - [vocab:parkingMeterId, $(matricula)]
-      - [vocab:hasLocation, $(location)]
+
   triplesmap7:
     sources:
       - [tickets-parquimetro-2022-subset_updated.csv~csv]
@@ -83,4 +86,4 @@ mappings:
       - [a, vocab:ParkingMeterTicket]
       - [vocab:startDateTime, $(fecha_inicio)]
       - [vocab:endDatetime, $(fecha_fin)]
-      - [vocab:hasParkingMeter, $(parquimetro)]
+      - [vocab:hasParkingMeter, $(parquimetro)~iri]

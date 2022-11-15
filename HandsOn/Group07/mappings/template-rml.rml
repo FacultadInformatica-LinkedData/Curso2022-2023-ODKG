@@ -49,12 +49,12 @@ map:om_003 rml:reference "StationName" ;
 
 map:om_004 rml:reference "Latitude" ;
 	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:real ;
+	rr:datatype xsd:float ;
 	rr:termType rr:Literal .
 
 map:om_005 rml:reference "Longitude" ;
 	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:real ;
+	rr:datatype xsd:float ;
 	rr:termType rr:Literal .
 
 map:om_006 rdf:type rr:ObjectMap ;

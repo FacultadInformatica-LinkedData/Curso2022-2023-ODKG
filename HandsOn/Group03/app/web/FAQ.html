@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Technical Attributes-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SchoolFinder</title>
+  <!--Descriptive Attributes-->
+  <meta
+  name="description"
+  content="Application that allow you to find madrid school information"
+  />
+  <meta name="author" content="Luis Ortiz Benito"/>
+  <meta name="keywords" content="LinkedData, OpenGraphs, SchoolFinder, FAQ" />
+  <meta name="robots" content="index, follow">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
+  <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js%22%3E"></script>
+  <link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel="stylesheet" />
+    <!-- <meta property="og:site_name" content="">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="">
+    <meta property="og:image" content="">
+
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content=""> -->
+  </head>
+  <body>
+    <header>
+      <div id="Logo">
+        <h1>SchoolFinder</h1>
+      </div>
+
+      <nav id="headerMenu">
+        <ul>
+          <a href="./Index.html"><li>Explore</li></a>
+          <a href="./MySchools.html"><li>My Schools</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="containerPage" id="home-FAQPage">
+        <h1 class="pageTitle">FAQ</h1>
+        <ol id="FAQListContainer">
+          <li class="FaqItem">
+            <div class="faqQuestion">
+              <h2>Where the dataset come from?</h2>
+            </div>
+            <div class="faqAnswer">
+              <p><!--Who is the publisher and the rightsholder?-->
+              The responsible for the data set is the 
+              Directorate General of Territorial Coordination and Deconcentration, belonging to the Madrid City Council.</p>
+              <a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=78da52c974fb3410VgnVCM2000000c205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default" >Dataset</a>
+
+            </div>
+          </li>
+          <li class="FaqItem">
+            <div class="faqQuestion">
+              <h2>What are the remarks about the licensing of the data source?</h2>
+            </div>
+            <div class="faqAnswer">
+              
+              <p><!--What is the license?-->
+                The license is <b>CC by</b>, which allows commercial and non-commercial use and reuse of the information under the following conditions.
+              </p>
+              <p><!--Which will be the license to be used for the generated dataset?-->
+                The license to be used for the generated dataset will be inherited from the original license of the dataset.
+                <ol>
+                  <li>
+                    It is forbidden to distort the meaning of the information.
+                  </li>
+                  <li>
+                    The source of the documents to be reused must be cited. This citation may be made as follows: "Origin of the data: Community of Madrid and Madrid City Council.
+                  </li>
+                  <li>
+                    The date of the last update of the documents subject to reuse must be mentioned, as long as it was included in the original document.
+                  </li>
+                  <li>
+                    It may not be indicated, insinuated or suggested that the Community of Madrid and the Madrid City Council participate, sponsor or support the reuse that is carried out with the information.
+                  </li>
+                  <li>
+                    Metadata on the date of update and applicable reuse conditions included, if any, in the document made available for reuse must be retained, not altered or deleted.
+                  </li>
+                  <li>
+                    In case of information anonymized for personal data protection or other reasons, it is expressly prohibited to re-identify individuals from this data and other possible past, current or future data and information sources.
+                  </li>
+                </ol>
+              </p>
+            </div>
+          </li>
+          <li class="FaqItem">
+            <div class="faqQuestion">
+              <h2>What are the transformations and mappings performed?</h2>
+            </div>
+            <div class="faqAnswer">
+              <p>
+              Transformations and Mappings:
+              <ol>
+                <li>
+                Adapt our ontology to an already existing one from schema.org.
+                </li>
+                <li>
+                Script to make the YARRRML file using the ttl file.  
+                </li>
+                <li>
+                Cleaning and renaming of columns.
+                </li>
+                <li>
+                Generation of RDF using morph-KGC python library
+                </li>
+              </ol>
+            </div>
+          </li>
+          
+          <li class="FaqItem">
+            <div class="faqQuestion">
+              <h2>What is the URI generation policy:</h2>
+            </div>
+            <div class="faqAnswer">
+              <img src="./img/ResourceNamingStrategy.jpg" alt="Resource Name strategy" class="fillImage" />
+              <!-- <div class="responseContainer">
+                <table class="default">
+                  <tbody style="background: rgba(128, 255, 0, 0.3); border: 1px solid rgba(100, 200, 0, 0.3);">
+                    <tr>
+                      <td rowspan="3" ALIGN=center>
+                        <h2>Domain</h2>
+                        <p>http://smartcity.linkeddata.es/</p>
+                      </td>
+                      <td rowspan="3"  ALIGN=center>
+                        <h2>Path</h2>
+                        <p>schoolfinder/</p>
+                      </td>
+                      <td rowspan="2" ALIGN=center>
+                        <h2>Ontology</h2>
+                        <p>ontology/</p>
+                      </td>
+                      <td rowspan="1" ALIGN=center>
+                        <h2>Class</h2>
+                        <p>[ontologyName]#[className]/</p>
+                      </td>
+                    </tr>
+        
+                    <tr>
+                      <td rowspan="1" ALIGN=center>
+                        <h2>Property</h2>
+                        <p>[ontologyName]#[propertyName]</p>
+                      </td>
+                    </tr>
+        
+                    <tr>
+                      <td rowspan="1" ALIGN=center>
+                        <h2>Data</h2>
+                        <p>resource/</p>
+                      </td>
+                      <td rowspan="1" ALIGN=center>
+                        <h2>Individual</h2>
+                        <p>[className]/[identifier]</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div> -->
+            </div>
+          </li>
+          <li class="FaqItem" style="width:85vw; max-width:1400px;">
+            <div class="faqQuestion">
+              <h2>What was the ontolgy used? (Previous version)</h2>
+            </div>
+            <div class="faqAnswer">
+              <img src="./img/Diagram_ontology_old.drawio-2.png" alt="Ontology diagram old schema" class="fillImage" style="max-width:1400px;">
+          </li>
+          <li class="FaqItem" style="width:50vw; max-width:900px;">
+            <div class="faqQuestion">
+              <h2>What is the ontolgy used? (Current version)</h2>
+            </div>
+            <div class="faqAnswer">
+              <img src="./img/DiagramaOntologia.drawio.png" alt="Ontology diagram schema" class="fillImage" style="max-width:900px;">
+          </li>
+          <li class="FaqItem">
+            <div class="faqQuestion">
+              <h2>What tools have you used for the assignment?</h2>
+            </div>
+            <div class="faqAnswer">
+              <p><!--Which will be the license to be used for the generated dataset?-->
+                The license to be used for the generated dataset will be inherited from the original license of the dataset.
+                <ol>
+                  <li>
+                    OWL. and chowlk
+                  </li>
+                  <li>
+                    HELIOS.
+                  </li>
+                  <li>
+                    JUPYTER, PYTHON, PANDAS 
+                  </li>
+                  <li>
+                    Morph-KGC
+                  </li>
+                  <li>
+                    yarrrml matey, diagram io + (libreria)
+                  </li>
+                  <li>
+                    Metadata on the date of update and applicable reuse conditions included, if any, in the document made available for reuse must be retained, not altered or deleted.
+                  </li>
+                  <li>
+                    Web Tools
+                  </li>
+                </ol>
+              </p>
+            </div>
+          </li>
+          <li class="FaqItem">
+            <div class="faqQuestion">
+              <h2>What can you do with this application?</h2>
+            </div>
+            <div class="faqAnswer">
+                <p>
+                  The following actions can be performed
+                  <ol>
+                    <li>
+                      Search schools by name.
+                    </li>
+                    <li>
+                      Filter schools that are connected by a given Metro line.
+                    </li>
+                    <li>
+                      Filter schools that belong to a certain district.
+                    </li>
+                    <li>
+                      Filter schools by their accessibility level. 
+                    </li>
+                    <li>
+                      Combine all these filters.
+                    </li>
+                    <li>
+                      Add schools you like into a favourite schools list and the access them later.
+                    </li>
+                    <li>
+                      Look for more information by clicking each card.
+                    </li>
+                  </ol>
+                </p>
+            </div>
+          </li>
+      </ol>
+    </div>
+  </main>
+  <footer>
+    <nav id="footerMenu">
+      <ul>
+        <a href="./FAQ.html"><li>FAQ</li></a>
+        <a href="./AboutUs.html"><li>About us</li></a>
+        <a href="./PrivacyPolicy.html"><li>Privacy Policy</li></a>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>

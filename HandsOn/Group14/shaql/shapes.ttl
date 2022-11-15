@@ -1,0 +1,103 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix schema: <http://schema.org/> .
+@prefix bs:    <http://smartbikes.org/ontology/bikeStation#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix paw:   <http://purl.org/pav/> .
+@prefix wiki:  <http://www.wikidata.org/wiki/> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#a5c3286520499ddd242570215d01d7b4> , <https://astrea.linkeddata.es/shapes#575a238f6f5d018c0daf1b1b11e5b02f> , <https://astrea.linkeddata.es/shapes#459718835d223a97b8946daca115fb20> , <https://astrea.linkeddata.es/shapes#102bc42a23024c2057aa0297ad72931f> , <https://astrea.linkeddata.es/shapes#2d888bb34bcfdcda14b601c32ad9aafc> , <https://astrea.linkeddata.es/shapes#e716667dbc516ff5938beeb329c573c4> , <https://astrea.linkeddata.es/shapes#4d38c04b5f5c8ec21a8daca010a57365> , <https://astrea.linkeddata.es/shapes#f7e194193fb74f7617a6f72ea749e3d2> , <https://astrea.linkeddata.es/shapes#83f794ed044e309125d13597021f40de> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/0620946147> .
+
+<https://astrea.linkeddata.es/shapes#459718835d223a97b8946daca115fb20>
+        a               sh:NodeShape ;
+        sh:property     <https://astrea.linkeddata.es/shapes#575a238f6f5d018c0daf1b1b11e5b02f> , <https://astrea.linkeddata.es/shapes#a5c3286520499ddd242570215d01d7b4> , <https://astrea.linkeddata.es/shapes#f7e194193fb74f7617a6f72ea749e3d2> , <https://astrea.linkeddata.es/shapes#102bc42a23024c2057aa0297ad72931f> , <https://astrea.linkeddata.es/shapes#2d888bb34bcfdcda14b601c32ad9aafc> , <https://astrea.linkeddata.es/shapes#4d38c04b5f5c8ec21a8daca010a57365> , <https://astrea.linkeddata.es/shapes#e716667dbc516ff5938beeb329c573c4> ;
+        sh:targetClass  bs:BikeStation .
+
+<https://astrea.linkeddata.es/shapes#2d888bb34bcfdcda14b601c32ad9aafc>
+        a                sh:PropertyShape ;
+        rdfs:label       "available mechanical bikes" ;
+        sh:datatype      xsd:nonNegativeInteger ;
+        sh:minInclusive  0 ;
+        sh:name          "available mechanical bikes" ;
+        sh:nodeKind      sh:Literal ;
+        sh:path          bs:availableMechanicalBikes ;
+        sh:pattern       "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#4d38c04b5f5c8ec21a8daca010a57365>
+        a                sh:PropertyShape ;
+        rdfs:label       "available electrical bikes" ;
+        sh:datatype      xsd:nonNegativeInteger ;
+        sh:minInclusive  0 ;
+        sh:name          "available electrical bikes" ;
+        sh:nodeKind      sh:Literal ;
+        sh:path          bs:availableElectricalBikes ;
+        sh:pattern       "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#575a238f6f5d018c0daf1b1b11e5b02f>
+        a            sh:PropertyShape ;
+        rdfs:label   "return of velib possible" ;
+        sh:datatype  xsd:boolean ;
+        sh:name      "return of velib possible" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      bs:returnOfVelibPossible ;
+        sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#102bc42a23024c2057aa0297ad72931f>
+        a                sh:PropertyShape ;
+        rdfs:label       "available parking spots" ;
+        sh:datatype      xsd:nonNegativeInteger ;
+        sh:minInclusive  0 ;
+        sh:name          "available parking spots" ;
+        sh:nodeKind      sh:Literal ;
+        sh:path          bs:availableParkingSpots ;
+        sh:pattern       "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#f7e194193fb74f7617a6f72ea749e3d2>
+        a            sh:PropertyShape ;
+        rdfs:label   "in use" ;
+        sh:datatype  xsd:boolean ;
+        sh:name      "in use" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      bs:inUse ;
+        sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/report/0620946147>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "[line: 62, col: 5 ] Undefined prefix: rdf\n" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "206"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#a5c3286520499ddd242570215d01d7b4>
+        a            sh:PropertyShape ;
+        rdfs:label   "payment terminal available" ;
+        sh:datatype  xsd:boolean ;
+        sh:name      "payment terminal available" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      bs:paymentTerminalAvailable ;
+        sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#83f794ed044e309125d13597021f40de>
+        a            sh:PropertyShape ;
+        sh:maxCount  1 ;
+        sh:nodeKind  sh:IRIOrLiteral .
+
+<https://astrea.linkeddata.es/shapes#e716667dbc516ff5938beeb329c573c4>
+        a                sh:PropertyShape ;
+        rdfs:label       "available bikes" ;
+        sh:datatype      xsd:nonNegativeInteger ;
+        sh:minInclusive  0 ;
+        sh:name          "available bikes" ;
+        sh:nodeKind      sh:Literal ;
+        sh:path          bs:availableBikes ;
+        sh:pattern       "[\\-+]?[0-9]+" .

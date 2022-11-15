@@ -22116,5 +22116,1246 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column detail using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "district",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "district_trimmed",
+    "columnInsertIndex": 12,
+    "description": "Create column district_trimmed at index 12 based on column district using expression grel:value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district_trimmed",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district_trimmed using expression value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district_trimmed",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district_trimmed using expression value.trim()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "subdistrict",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "subdistrict_trimmed",
+    "columnInsertIndex": 15,
+    "description": "Create column subdistrict_trimmed at index 15 based on column subdistrict using expression grel:value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subdistrict_trimmed using expression value.toLowercase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "alameda de osuna"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "alameda_de_osuna"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "apostol santiago"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "apostol_santiago"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "bellas vistas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bellas_vistas"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "casa de campo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "casa_de_campo"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "casco h.barajas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "casco_h_barajas"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "casco h.vicalvaro"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "casco_h_vicalvaro"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "casco h.vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "casco_h_vallecas"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ciudad jardin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ciudad_jardin"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ciudad universitaria"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ciudad_universitaria"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "cuatro caminos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "cuatro_caminos"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "cuatro vientos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "cuatro_vientos"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "el goloso"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "el_goloso"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "el pardo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "el_pardo"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "el pilar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "el_pilar"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "el plantio"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "el_plantio"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "el salvador"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "el_salvador"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "el viso"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "el_viso"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ensanche de vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ensanche_de_vallecas"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "fuente del berro"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "fuente_del_berro"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "la paz"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "la_paz"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "las aguilas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "las_aguilas"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "los angeles"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "los_angeles"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "los carmenes"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "los_carmenes"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "los rosales"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "los_rosales"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "nueva españa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nueva_españa"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "palomeras bajas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "palomeras_bajas"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "palomeras sureste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "palomeras_sureste"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "palos de moguer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "palos_de_moguer"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "pinar del rey"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pinar_del_rey"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "pueblo nuevo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pueblo_nuevo"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "puerta bonita"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "puerta_bonita"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "puerta del angel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "puerta_del_angel"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "rios rosas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "rios_rosas"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "san andres"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "san_andres"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "san cristobal"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "san_cristobal"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "san diego"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "san_diego"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "san fermin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "san_fermin"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "san isidro"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "san_isidro"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "san juan bautista"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "san_juan_bautista"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "santa eugenia"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "santa_eugenia"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "villaverde alto c.h."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "casco_h_villaverde_alto"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "vista alegre"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "vista_alegre"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "niño jesus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "niño_jesus"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "media legua"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "media_legua"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict_trimmed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "subdistrict_trimmed",
+          "expression": "value",
+          "columnName": "subdistrict_trimmed",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "casco_h_villaverde_alto",
+                "l": "casco_h_villaverde_alto"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Villaverde Alto C.H."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Casco H.Villaverde Alto"
+      }
+    ],
+    "description": "Mass edit cells in column subdistrict"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "address",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "addtransitory",
+    "columnInsertIndex": 4,
+    "description": "Create column addtransitory at index 4 based on column address using expression grel:value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "addtransitory",
+    "expression": "join ([coalesce(cells['addtransitory'].value,''),coalesce(cells['detail'].value,'')],'_')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column addtransitory using expression join ([coalesce(cells['addtransitory'].value,''),coalesce(cells['detail'].value,'')],'_')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "addtransitory",
+    "expression": "value.replace(\" \",\"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column addtransitory using expression value.replace(\" \",\"_\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "addtransitory",
+    "expression": "value.replace(\",\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column addtransitory using expression value.replace(\",\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "addtransitory",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column addtransitory using expression value.toLowercase()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "addtransitory",
+    "expression": "grel:if(value[-1]==\"_\",value[0,-1],value)",
+    "onError": "set-to-blank",
+    "newColumnName": "trimmed_address",
+    "columnInsertIndex": 5,
+    "description": "Create column trimmed_address at index 5 based on column addtransitory using expression grel:if(value[-1]==\"_\",value[0,-1],value)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "addtransitory",
+    "description": "Remove column addtransitory"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "trimmed_address",
+    "expression": "value.replace(\"º\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column trimmed_address using expression value.replace(\"º\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "trimmed_address",
+    "expression": "value.replace(\"ª\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column trimmed_address using expression value.replace(\"ª\",\"\")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "website",
+    "expression": "grel:if(value[10]==\".\",value[11,-1]+value[-1],value[6,-1]+value[-1]))",
+    "onError": "set-to-blank",
+    "newColumnName": "trimmed_website",
+    "columnInsertIndex": 23,
+    "description": "Create column trimmed_website at index 23 based on column website using expression grel:if(value[10]==\".\",value[11,-1]+value[-1],value[6,-1]+value[-1]))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "trimmed_website",
+    "expression": "value.replace(\"/\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column trimmed_website using expression value.replace(\"/\",\"\")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "trimmed_website",
+    "expression": "grel:if(value[0]==\".\",value[1,-1]+value[-1],value)",
+    "onError": "set-to-blank",
+    "newColumnName": "tr",
+    "columnInsertIndex": 24,
+    "description": "Create column tr at index 24 based on column trimmed_website using expression grel:if(value[0]==\".\",value[1,-1]+value[-1],value)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "trimmed_website",
+    "description": "Remove column trimmed_website"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "tr",
+    "newColumnName": "trimmed_website",
+    "description": "Rename column tr to trimmed_website"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "register_date",
+    "expression": "grel:value[0,10]",
+    "onError": "set-to-blank",
+    "newColumnName": "register_date2",
+    "columnInsertIndex": 20,
+    "description": "Create column register_date2 at index 20 based on column register_date using expression grel:value[0,10]"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "register_date2",
+    "newColumnName": "register_date_alt_format",
+    "description": "Rename column register_date2 to register_date_alt_format"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "website",
+    "expression": "value.replace(\"...\",\".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column website using expression value.replace(\"...\",\".\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "website",
+    "expression": "value.replace(\"..\",\".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column website using expression value.replace(\"..\",\".\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "website",
+    "expression": "value.replace(\" \",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column website using expression value.replace(\" \",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "website",
+    "expression": "value.replace(\"\\\"\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column website using expression value.replace(\"\\\"\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "website",
+    "expression": "value.replace(\"///\",\"//\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column website using expression value.replace(\"///\",\"//\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subdistrict_trimmed",
+    "expression": "value.replace(\" \",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subdistrict_trimmed using expression value.replace(\" \",\"\")"
   }
 ]

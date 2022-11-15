@@ -59,6 +59,7 @@ bs:returnOfVelibPossible a owl:DatatypeProperty ;
 bs:locatedInArea a owl:FunctionalProperty;
     rdfs:label "commune located in are";
     rdfs:domain bs:BikeStation;
+    rdfs:range schema:GeoCoordinate.
 
 ### Reused properties from other ontologies ###
 
@@ -74,6 +75,6 @@ bs:BikeStation a owl:Class ;
 
 ### Reused classes from other ontologies ###
 
-wiki:Q484170 a owl:Class
+wiki:Q484170 a owl:Class.
 schema:CivicStructure a owl:Class.
 schema:GeoCoordinate a owl:Class.

@@ -2305,5 +2305,70 @@
     "oldColumnName": "v",
     "newColumnName": "name",
     "description": "Rename column v to name"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "name",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "trimmed_name",
+    "columnInsertIndex": 3,
+    "description": "Create column trimmed_name at index 3 based on column name using expression grel:value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "trimmed_name",
+    "expression": "value.replace(\" \",\"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column trimmed_name using expression value.replace(\" \",\"_\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "trimmed_name",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column trimmed_name using expression value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "trimmed_name",
+    "expression": "value.replace(\"_-_\",\"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column trimmed_name using expression value.replace(\"_-_\",\"_\")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "register_date",
+    "expression": "grel:value[0,10]",
+    "onError": "set-to-blank",
+    "newColumnName": "register_date_alt_format",
+    "columnInsertIndex": 15,
+    "description": "Create column register_date_alt_format at index 15 based on column register_date using expression grel:value[0,10]"
   }
 ]

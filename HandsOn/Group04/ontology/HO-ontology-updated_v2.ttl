@@ -1,0 +1,105 @@
+
+@prefix : <http://www.urbanElementsMadrid.es/resource/> .
+@prefix p: <http://www.urbanElementsMadrid.es/ontology/ont#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <https://www.urbanElementsMadrid.es/ontology/ont#> .
+
+<http://www.urbanElementsMadrid.es/ontology/ont#> a owl:Ontology .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+p:Fountain a owl:Class ;
+    rdfs:label "Fountain" .
+
+p:Restroom a owl:Class ;
+    rdfs:label "Restroom" .
+
+p:Address a owl:Class ;
+    rdfs:label "Address" .
+
+p:District a owl:Class ;
+    rdfs:label "District" .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+p:hasAddress a owl:ObjectProperty ;
+    rdfs:label "has address" ;
+    rdfs:domain :Fountain ;
+    rdfs:range :Address .
+
+p:hasDistrict a owl:ObjectProperty ;
+    rdfs:label "has district" ;
+    rdfs:domain :Fountain ;
+    rdfs:range :District .
+
+
+p:hasAddress a owl:ObjectProperty ;
+    rdfs:label "has address" ;
+    rdfs:domain :Restroom ;
+    rdfs:range :Address .
+
+p:hasDistrict a owl:ObjectProperty ;
+    rdfs:label "has district" ;
+    rdfs:domain :Restroom ;
+    rdfs:range :District .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+p:hasId a owl:DatatypeProperty ;
+    rdfs:label "has id" ;
+    rdfs:domain :Fountain ;
+    rdfs:range xsd:string .
+
+p:hasId a owl:DatatypeProperty ;
+    rdfs:label "has id" ;
+    rdfs:domain :Restroom ;
+    rdfs:range xsd:string .
+
+p:hasName a owl:DatatypeProperty ;
+    rdfs:label "has name" ;
+    rdfs:domain :District ;
+    rdfs:range xsd:string .
+
+p:isLocated a owl:DatatypeProperty ;
+    rdfs:label "is located" ;
+    rdfs:domain :Address ;
+    rdfs:range xsd:string .
+
+p:latitude a owl:DatatypeProperty ;
+    rdfs:label "latitude" ;
+    rdfs:domain :Fountain ;
+    rdfs:range xsd:float .
+
+p:longitude a owl:DatatypeProperty ;
+    rdfs:label "longitude" ;
+    rdfs:domain :Fountain ;
+    rdfs:range xsd:float .
+
+p:latitude a owl:DatatypeProperty ;
+    rdfs:label "latitude" ;
+    rdfs:domain :Restroom ;
+    rdfs:range xsd:float .
+
+p:longitude a owl:DatatypeProperty ;
+    rdfs:label "longitude" ;
+    rdfs:domain :Restroom ;
+    rdfs:range xsd:float .
+
+p:hasCode a owl:DatatypeProperty ;
+    rdfs:label "has code" ;
+    rdfs:domain :District ;
+    rdfs:range xsd:float .
+
+

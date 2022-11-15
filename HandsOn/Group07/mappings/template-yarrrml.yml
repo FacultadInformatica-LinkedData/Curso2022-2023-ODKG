@@ -23,8 +23,8 @@ mappings:
     po:
       - [a, vocab:Station]
       - [vocab:hasStationName, $(StationName), xsd:string]
-      - [vocab:latitude, $(Latitude), xsd:real]
-      - [vocab:longitude, $(Longitude), xsd:real]
+      - [vocab:latitude, $(Latitude), xsd:float]
+      - [vocab:longitude, $(Longitude), xsd:float]
 
       - p: vocab:isLocatedIn
         o:
@@ -40,6 +40,6 @@ mappings:
     po:
       - [a, vocab:Magnitude]
       - [vocab:hasMagnitudeName, $(MagnitudeName), xsd:string]
-      - [vocab:isMeasureIn, $(UnitOfMeasure), xsd:string]
+      - [vocab:isMeasuredIn, $(UnitOfMeasure), xsd:string]
       - [saref:hasTimestamp, $(Time), xsd:date]
       - [saref:hasValue, $(Measurement), xsd:integer]

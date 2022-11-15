@@ -4152,1772 +4152,1772 @@
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Distrito/Carabanchel> a ns1:Distrito ;
     ns1:nombre "Carabanchel" ;
     ns1:wikidata_id "Q1001991" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1001991" ;
-    owl:sameAs "https://wikidata.org/entity/Q1001991" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1001991>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1001991> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Distrito/Latina> a ns1:Distrito ;
     ns1:nombre "Latina" ;
     ns1:wikidata_id "Q794954" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q794954" ;
-    owl:sameAs "https://wikidata.org/entity/Q794954" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q794954>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q794954> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Distrito/Moratalaz> a ns1:Distrito ;
     ns1:nombre "Moratalaz" ;
     ns1:wikidata_id "Q2076109" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2076109" ;
-    owl:sameAs "https://wikidata.org/entity/Q2076109" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2076109>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2076109> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Distrito/Puente_de_Vallecas> a ns1:Distrito ;
     ns1:nombre "Puente de Vallecas" ;
     ns1:wikidata_id "Q2003054" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2003054" ;
-    owl:sameAs "https://wikidata.org/entity/Q2003054" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2003054>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2003054> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/%C3%81ngel_Gonz%C3%A1lez> a ns1:Entidad ;
     ns1:nombre "Ángel González Muñiz" ;
     ns1:wikidata_id "Q715118" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q715118" ;
-    owl:sameAs "https://wikidata.org/entity/Q715118" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q715118>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q715118> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/%C3%81ngel_Nieto> a ns1:Entidad ;
     ns1:nombre "Ángel Nieto" ;
     ns1:wikidata_id "Q251846" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q251846" ;
-    owl:sameAs "https://wikidata.org/entity/Q251846" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q251846>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q251846> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/%C3%81ngel_V%C3%A1zquez> a ns1:Entidad ;
     ns1:nombre "Ángel Vázquez Molina" ;
     ns1:wikidata_id "Q3577021" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3577021" ;
-    owl:sameAs "https://wikidata.org/entity/Q3577021" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3577021>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3577021> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Adriano_del_Valle> a ns1:Entidad ;
     ns1:nombre "Adriano del Valle" ;
     ns1:wikidata_id "Q5658428" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5658428" ;
-    owl:sameAs "https://wikidata.org/entity/Q5658428" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5658428>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5658428> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Agust%C3%ADn_Gonz%C3%A1lez_de_Amez%C3%BAa> a ns1:Entidad ;
     ns1:nombre "Agustín González de Amezúa" ;
     ns1:wikidata_id "Q5660680" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5660680" ;
-    owl:sameAs "https://wikidata.org/entity/Q5660680" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5660680>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5660680> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Agustina_de_Arag%C3%B3n> a ns1:Entidad ;
     ns1:nombre "Agustina de Aragón" ;
     ns1:wikidata_id "Q718272" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q718272" ;
-    owl:sameAs "https://wikidata.org/entity/Q718272" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q718272>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q718272> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Alejandro_Casona> a ns1:Entidad ;
     ns1:nombre "Alejandro Casona" ;
     ns1:wikidata_id "Q289215" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q289215" ;
-    owl:sameAs "https://wikidata.org/entity/Q289215" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q289215>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q289215> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Alejandro_Dumas> a ns1:Entidad ;
     ns1:nombre "Alexandre Dumas" ;
     ns1:wikidata_id "Q38337" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q38337" ;
-    owl:sameAs "https://wikidata.org/entity/Q38337" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q38337>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q38337> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Alfonso_Reyes> a ns1:Entidad ;
     ns1:nombre "Alfonso Reyes" ;
     ns1:wikidata_id "Q462721" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q462721" ;
-    owl:sameAs "https://wikidata.org/entity/Q462721" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q462721>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q462721> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Alfonso_S%C3%A1nchez> a ns1:Entidad ;
     ns1:nombre "Alfonso" ;
     ns1:wikidata_id "Q5667206" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5667206" ;
-    owl:sameAs "https://wikidata.org/entity/Q5667206" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5667206>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5667206> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Alfredo_Fraile> a ns1:Entidad ;
     ns1:nombre "Alfredo Fraile" ;
     ns1:wikidata_id "Q2646323" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2646323" ;
-    owl:sameAs "https://wikidata.org/entity/Q2646323" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2646323>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2646323> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Alonso_Zamora_Vicente> a ns1:Entidad ;
     ns1:nombre "Alonso Zamora Vicente" ;
     ns1:wikidata_id "Q32690" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q32690" ;
-    owl:sameAs "https://wikidata.org/entity/Q32690" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q32690>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q32690> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Alonso_de_Ercilla> a ns1:Entidad ;
     ns1:nombre "Alonso de Ercilla" ;
     ns1:wikidata_id "Q357620" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q357620" ;
-    owl:sameAs "https://wikidata.org/entity/Q357620" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q357620>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q357620> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Amadeo_I> a ns1:Entidad ;
     ns1:nombre "Prince Amedeo, 1st Duke of Aosta" ;
     ns1:wikidata_id "Q32432" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q32432" ;
-    owl:sameAs "https://wikidata.org/entity/Q32432" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q32432>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q32432> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Amador_Cuesta_Barrientos_AMADOR> a ns1:Entidad ;
     ns1:nombre "Amador Cuesta" ;
     ns1:wikidata_id "Q5671529" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5671529" ;
-    owl:sameAs "https://wikidata.org/entity/Q5671529" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5671529>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5671529> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Ana_Princesa_Eboli> a ns1:Entidad ;
     ns1:nombre "Ana de Mendoza, Princess of Eboli" ;
     ns1:wikidata_id "Q457676" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q457676" ;
-    owl:sameAs "https://wikidata.org/entity/Q457676" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q457676>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q457676> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Andr%C3%A9s_Mart%C3%ADnez_de_Le%C3%B3n> a ns1:Entidad ;
     ns1:nombre "Andrés Martínez de León" ;
     ns1:wikidata_id "Q5675926" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5675926" ;
-    owl:sameAs "https://wikidata.org/entity/Q5675926" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5675926>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5675926> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Andr%C3%A9s_Segovia> a ns1:Entidad ;
     ns1:nombre "Andrés Segovia Torres" ;
     ns1:wikidata_id "Q192529" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q192529" ;
-    owl:sameAs "https://wikidata.org/entity/Q192529" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q192529>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q192529> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Angel_Sanz-Briz> a ns1:Entidad ;
     ns1:nombre "Ángel Sanz Briz" ;
     ns1:wikidata_id "Q251912" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q251912" ;
-    owl:sameAs "https://wikidata.org/entity/Q251912" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q251912>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q251912> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Angel_de_Andr%C3%A9s> a ns1:Entidad ;
     ns1:nombre "Ángel de Andrés Miquel" ;
     ns1:wikidata_id "Q4762311" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q4762311" ;
-    owl:sameAs "https://wikidata.org/entity/Q4762311" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q4762311>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4762311> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Aniceto_Marinas> a ns1:Entidad ;
     ns1:nombre "Aniceto Marinas" ;
     ns1:wikidata_id "Q8199739" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q8199739" ;
-    owl:sameAs "https://wikidata.org/entity/Q8199739" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q8199739>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q8199739> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Ant%C3%B3n_Mart%C3%ADn> a ns1:Entidad ;
     ns1:nombre "Antón Martín" ;
     ns1:wikidata_id "Q5700573" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5700573" ;
-    owl:sameAs "https://wikidata.org/entity/Q5700573" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5700573>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5700573> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Antonio_Diaz-Ca%C3%B1abate> a ns1:Entidad ;
     ns1:nombre "Antonio Díaz-Cañabate" ;
     ns1:wikidata_id "Q5698183" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5698183" ;
-    owl:sameAs "https://wikidata.org/entity/Q5698183" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5698183>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5698183> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Antonio_Dom%C3%ADnguez_Ortiz> a ns1:Entidad ;
     ns1:nombre "Antonio Domínguez Ortiz" ;
     ns1:wikidata_id "Q601842" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q601842" ;
-    owl:sameAs "https://wikidata.org/entity/Q601842" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q601842>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q601842> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Antonio_El_bailar%C3%ADn> a ns1:Entidad ;
     ns1:nombre "Antonio Ruiz Soler" ;
     ns1:wikidata_id "Q2701392" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2701392" ;
-    owl:sameAs "https://wikidata.org/entity/Q2701392" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2701392>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2701392> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Antonio_Gala> a ns1:Entidad ;
     ns1:nombre "Antonio Gala" ;
     ns1:wikidata_id "Q3750903" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3750903" ;
-    owl:sameAs "https://wikidata.org/entity/Q3750903" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3750903>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3750903> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Antonio_Hern%C3%A1ndez_Gil> a ns1:Entidad ;
     ns1:nombre "Antonio Hernández Gil" ;
     ns1:wikidata_id "Q8201302" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q8201302" ;
-    owl:sameAs "https://wikidata.org/entity/Q8201302" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q8201302>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q8201302> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Antonio_Herrero_Lima> a ns1:Entidad ;
     ns1:nombre "Antonio Herrero Lima" ;
     ns1:wikidata_id "Q8201307" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q8201307" ;
-    owl:sameAs "https://wikidata.org/entity/Q8201307" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q8201307>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q8201307> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Antonio_Manso> a ns1:Entidad ;
     ns1:nombre "Antonio Manso" ;
     ns1:wikidata_id "Q68906860" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q68906860" ;
-    owl:sameAs "https://wikidata.org/entity/Q68906860" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q68906860>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q68906860> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Antonio_P%C3%A9rez> a ns1:Entidad ;
     ns1:nombre "Antonio Pérez" ;
     ns1:wikidata_id "Q772704" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q772704" ;
-    owl:sameAs "https://wikidata.org/entity/Q772704" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q772704>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q772704> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Antonio_Rafael_Mengs> a ns1:Entidad ;
     ns1:nombre "Anton Raphael Mengs" ;
     ns1:wikidata_id "Q76718" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q76718" ;
-    owl:sameAs "https://wikidata.org/entity/Q76718" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q76718>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q76718> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Armando_L%C3%B3pez_Salinas> a ns1:Entidad ;
     ns1:nombre "Armando López Salinas" ;
     ns1:wikidata_id "Q5704550" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5704550" ;
-    owl:sameAs "https://wikidata.org/entity/Q5704550" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5704550>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5704550> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Armando_Palacio_Vald%C3%A9s> a ns1:Entidad ;
     ns1:nombre "Armando Palacio Valdés" ;
     ns1:wikidata_id "Q645141" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q645141" ;
-    owl:sameAs "https://wikidata.org/entity/Q645141" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q645141>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q645141> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Ataulfo_Argenta> a ns1:Entidad ;
     ns1:nombre "Ataúlfo Argenta" ;
     ns1:wikidata_id "Q2526035" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2526035" ;
-    owl:sameAs "https://wikidata.org/entity/Q2526035" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2526035>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2526035> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Bartolom%C3%A9_Carducho> a ns1:Entidad ;
     ns1:nombre "Bartolomeo Carducci" ;
     ns1:wikidata_id "Q809536" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q809536" ;
-    owl:sameAs "https://wikidata.org/entity/Q809536" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q809536>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q809536> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Bartolom%C3%A9_Hurtado> a ns1:Entidad ;
     ns1:nombre "Bartolomé Hurtado" ;
     ns1:wikidata_id "Q5721384" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5721384" ;
-    owl:sameAs "https://wikidata.org/entity/Q5721384" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5721384>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5721384> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Bela_Bartok> a ns1:Entidad ;
     ns1:nombre "Béla Bartók" ;
     ns1:wikidata_id "Q83326" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q83326" ;
-    owl:sameAs "https://wikidata.org/entity/Q83326" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q83326>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q83326> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Blanca_de_Igual> a ns1:Entidad ;
     ns1:nombre "Blanca de Igual" ;
     ns1:wikidata_id "Q78063675" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q78063675" ;
-    owl:sameAs "https://wikidata.org/entity/Q78063675" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q78063675>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q78063675> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/C%C3%A9sar_Chicote_y_del_Riego> a ns1:Entidad ;
     ns1:nombre "César Chicote y del Riego" ;
     ns1:wikidata_id "Q57833113" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q57833113" ;
-    owl:sameAs "https://wikidata.org/entity/Q57833113" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q57833113>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q57833113> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/C%C3%A9sar_Gonz%C3%A1lez_Ruano> a ns1:Entidad ;
     ns1:nombre "César González-Ruano" ;
     ns1:wikidata_id "Q3010458" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3010458" ;
-    owl:sameAs "https://wikidata.org/entity/Q3010458" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3010458>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3010458> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Camilo_Jos%C3%A9_Cela> a ns1:Entidad ;
     ns1:nombre "Camilo José Cela" ;
     ns1:wikidata_id "Q132589" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q132589" ;
-    owl:sameAs "https://wikidata.org/entity/Q132589" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q132589>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q132589> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Carlos_Fern%C3%A1ndez-Shaw> a ns1:Entidad ;
     ns1:nombre "Carlos Fernández Shaw" ;
     ns1:wikidata_id "Q3660056" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3660056" ;
-    owl:sameAs "https://wikidata.org/entity/Q3660056" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3660056>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3660056> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Carlos_Fern%C3%A1ndez_Casado> a ns1:Entidad ;
     ns1:nombre "Carlos Fernández Casado" ;
     ns1:wikidata_id "Q5750318" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5750318" ;
-    owl:sameAs "https://wikidata.org/entity/Q5750318" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5750318>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5750318> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Carlos_Mar%C3%ADa_de_Castro> a ns1:Entidad ;
     ns1:nombre "Carlos María de Castro" ;
     ns1:wikidata_id "Q3774030" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3774030" ;
-    owl:sameAs "https://wikidata.org/entity/Q3774030" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3774030>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3774030> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Carlos_Ollero> a ns1:Entidad ;
     ns1:nombre "Carlos Ollero Gómez" ;
     ns1:wikidata_id "Q5751189" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5751189" ;
-    owl:sameAs "https://wikidata.org/entity/Q5751189" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5751189>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5751189> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Carlos_Palomino> a ns1:Entidad ;
     ns1:nombre "Carlos Palomino" ;
     ns1:wikidata_id "Q1747511" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1747511" ;
-    owl:sameAs "https://wikidata.org/entity/Q1747511" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1747511>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1747511> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Carlos_S%C3%A1nchez_P%C3%A9rez%2C_Ceesepe> a ns1:Entidad ;
     ns1:nombre "Carlos Sánchez Pérez" ;
     ns1:wikidata_id "Q5853635" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5853635" ;
-    owl:sameAs "https://wikidata.org/entity/Q5853635" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5853635>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5853635> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Carmelo_Bernaola> a ns1:Entidad ;
     ns1:nombre "Carmelo Bernaola" ;
     ns1:wikidata_id "Q2602845" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2602845" ;
-    owl:sameAs "https://wikidata.org/entity/Q2602845" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2602845>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2602845> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Carmen_Bravo-Villasante> a ns1:Entidad ;
     ns1:nombre "Carmen Bravo-Villasante" ;
     ns1:wikidata_id "Q5752461" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5752461" ;
-    owl:sameAs "https://wikidata.org/entity/Q5752461" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5752461>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5752461> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Carmen_Burgos> a ns1:Entidad ;
     ns1:nombre "Carmen de Burgos" ;
     ns1:wikidata_id "Q5752699" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5752699" ;
-    owl:sameAs "https://wikidata.org/entity/Q5752699" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5752699>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5752699> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Carmen_Conde> a ns1:Entidad ;
     ns1:nombre "Carmen Conde" ;
     ns1:wikidata_id "Q616019" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q616019" ;
-    owl:sameAs "https://wikidata.org/entity/Q616019" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q616019>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q616019> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Carmen_Laforet> a ns1:Entidad ;
     ns1:nombre "Carmen Laforet" ;
     ns1:wikidata_id "Q269123" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q269123" ;
-    owl:sameAs "https://wikidata.org/entity/Q269123" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q269123>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q269123> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Carolina_Prok%C3%B3fiev> a ns1:Entidad ;
     ns1:nombre "Lina Llubera" ;
     ns1:wikidata_id "Q9022675" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q9022675" ;
-    owl:sameAs "https://wikidata.org/entity/Q9022675" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q9022675>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q9022675> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Cecilia_Evangelina_Sobredo> a ns1:Entidad ;
     ns1:nombre "Cecilia" ;
     ns1:wikidata_id "Q937017" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q937017" ;
-    owl:sameAs "https://wikidata.org/entity/Q937017" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q937017>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q937017> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Clara_Campoamor> a ns1:Entidad ;
     ns1:nombre "Clara Campoamor" ;
     ns1:wikidata_id "Q3321142" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3321142" ;
-    owl:sameAs "https://wikidata.org/entity/Q3321142" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3321142>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3321142> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Claudio_Coello> a ns1:Entidad ;
     ns1:nombre "Claudio Coello" ;
     ns1:wikidata_id "Q332466" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q332466" ;
-    owl:sameAs "https://wikidata.org/entity/Q332466" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q332466>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q332466> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Concha_Espina> a ns1:Entidad ;
     ns1:nombre "Concha Espina" ;
     ns1:wikidata_id "Q3751269" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3751269" ;
-    owl:sameAs "https://wikidata.org/entity/Q3751269" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3751269>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3751269> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Conde_Duque_de_Olivares> a ns1:Entidad ;
     ns1:nombre "Gaspar de Guzmán, Count-Duke of Olivares" ;
     ns1:wikidata_id "Q371833" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q371833" ;
-    owl:sameAs "https://wikidata.org/entity/Q371833" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q371833>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q371833> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Constancio_Bernaldo_de_Quir%C3%B3s> a ns1:Entidad ;
     ns1:nombre "Constancio Bernaldo de Quirós" ;
     ns1:wikidata_id "Q5784412" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5784412" ;
-    owl:sameAs "https://wikidata.org/entity/Q5784412" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5784412>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5784412> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/D%C3%A1maso_Alonso> a ns1:Entidad ;
     ns1:nombre "Dámaso Alonso" ;
     ns1:wikidata_id "Q312945" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q312945" ;
-    owl:sameAs "https://wikidata.org/entity/Q312945" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q312945>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q312945> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Diego_Saavedra_y_Fajardo> a ns1:Entidad ;
     ns1:nombre "Diego de Saavedra Fajardo" ;
     ns1:wikidata_id "Q2715411" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2715411" ;
-    owl:sameAs "https://wikidata.org/entity/Q2715411" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2715411>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2715411> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Dionisio_Ridruejo> a ns1:Entidad ;
     ns1:nombre "Dionisio Ridruejo" ;
     ns1:wikidata_id "Q2553101" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2553101" ;
-    owl:sameAs "https://wikidata.org/entity/Q2553101" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2553101>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2553101> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Do%C3%B1a_Mar%C3%ADa_de_Miranda> a ns1:Entidad ;
     ns1:nombre "Doña Maria de Miranda y Barreda" ;
     ns1:wikidata_id "Q96317132" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q96317132" ;
-    owl:sameAs "https://wikidata.org/entity/Q96317132" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q96317132>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q96317132> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Dolores_Vargas%2C_La_Terremoto> a ns1:Entidad ;
     ns1:nombre "Dolores Vargas “La Terremoto”" ;
     ns1:wikidata_id "Q15993508" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q15993508" ;
-    owl:sameAs "https://wikidata.org/entity/Q15993508" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q15993508>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q15993508> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Dom%C3%A9nico_Scarlatti> a ns1:Entidad ;
     ns1:nombre "Domenico Scarlatti" ;
     ns1:wikidata_id "Q167837" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q167837" ;
-    owl:sameAs "https://wikidata.org/entity/Q167837" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q167837>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q167837> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Domingo_Ortega> a ns1:Entidad ;
     ns1:nombre "Domingo Ortega" ;
     ns1:wikidata_id "Q2986477" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2986477" ;
-    owl:sameAs "https://wikidata.org/entity/Q2986477" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2986477>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2986477> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Domingu%C3%ADn> a ns1:Entidad ;
     ns1:nombre "Domingo Dominguín" ;
     ns1:wikidata_id "Q3034817" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3034817" ;
-    owl:sameAs "https://wikidata.org/entity/Q3034817" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3034817>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3034817> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Eduardo_Arroyo> a ns1:Entidad ;
     ns1:nombre "Eduardo Arroyo" ;
     ns1:wikidata_id "Q555137" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q555137" ;
-    owl:sameAs "https://wikidata.org/entity/Q555137" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q555137>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q555137> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Eduardo_Chicharro> a ns1:Entidad ;
     ns1:nombre "Eduardo Chicharro y Agüera" ;
     ns1:wikidata_id "Q3815373" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3815373" ;
-    owl:sameAs "https://wikidata.org/entity/Q3815373" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3815373>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3815373> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/El%C3%ADas_Tormo> a ns1:Entidad ;
     ns1:nombre "Elías Tormo" ;
     ns1:wikidata_id "Q11681434" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q11681434" ;
-    owl:sameAs "https://wikidata.org/entity/Q11681434" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q11681434>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q11681434> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Elena_Fort%C3%BAn> a ns1:Entidad ;
     ns1:nombre "Elena Fortún" ;
     ns1:wikidata_id "Q5359012" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5359012" ;
-    owl:sameAs "https://wikidata.org/entity/Q5359012" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5359012>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5359012> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Eloy_Gonzalo> a ns1:Entidad ;
     ns1:nombre "Eloy Gonzalo" ;
     ns1:wikidata_id "Q1245933" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1245933" ;
-    owl:sameAs "https://wikidata.org/entity/Q1245933" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1245933>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1245933> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Emilio_Carrere> a ns1:Entidad ;
     ns1:nombre "Emilio Carrere" ;
     ns1:wikidata_id "Q266059" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q266059" ;
-    owl:sameAs "https://wikidata.org/entity/Q266059" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q266059>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q266059> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Emilio_Novoa> a ns1:Entidad ;
     ns1:nombre "Emilio Novoa González" ;
     ns1:wikidata_id "Q20535980" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q20535980" ;
-    owl:sameAs "https://wikidata.org/entity/Q20535980" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q20535980>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q20535980> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Enrique_Herreros> a ns1:Entidad ;
     ns1:nombre "Enrique Herreros" ;
     ns1:wikidata_id "Q27969745" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q27969745" ;
-    owl:sameAs "https://wikidata.org/entity/Q27969745" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q27969745>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q27969745> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Enrique_IV> a ns1:Entidad ;
     ns1:nombre "Henry IV of Castile" ;
     ns1:wikidata_id "Q310918" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q310918" ;
-    owl:sameAs "https://wikidata.org/entity/Q310918" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q310918>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q310918> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Enrique_Jardiel_Poncela> a ns1:Entidad ;
     ns1:nombre "Enrique Jardiel Poncela" ;
     ns1:wikidata_id "Q726529" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q726529" ;
-    owl:sameAs "https://wikidata.org/entity/Q726529" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q726529>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q726529> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Ernestina_de_Champourcin> a ns1:Entidad ;
     ns1:nombre "Ernestina de Champourcín" ;
     ns1:wikidata_id "Q3754414" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3754414" ;
-    owl:sameAs "https://wikidata.org/entity/Q3754414" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3754414>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3754414> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Eugenio_de_Aviraneta> a ns1:Entidad ;
     ns1:nombre "Eugenio de Aviraneta" ;
     ns1:wikidata_id "Q3755799" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3755799" ;
-    owl:sameAs "https://wikidata.org/entity/Q3755799" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3755799>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3755799> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/F%C3%A9lix_Grande> a ns1:Entidad ;
     ns1:nombre "Félix Grande" ;
     ns1:wikidata_id "Q3092458" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3092458" ;
-    owl:sameAs "https://wikidata.org/entity/Q3092458" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3092458>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3092458> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Fabiola_Mora_y_Arag%C3%B3n> a ns1:Entidad ;
     ns1:nombre "Queen Fabiola of Belgium" ;
     ns1:wikidata_id "Q231171" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q231171" ;
-    owl:sameAs "https://wikidata.org/entity/Q231171" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q231171>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q231171> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Federico_Chueca> a ns1:Entidad ;
     ns1:nombre "Federico Chueca" ;
     ns1:wikidata_id "Q652534" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q652534" ;
-    owl:sameAs "https://wikidata.org/entity/Q652534" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q652534>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q652534> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Federico_Sainz_de_Robles> a ns1:Entidad ;
     ns1:nombre "Federico Carlos Sainz de Robles" ;
     ns1:wikidata_id "Q5857542" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5857542" ;
-    owl:sameAs "https://wikidata.org/entity/Q5857542" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5857542>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5857542> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Felipa_Polo_Asenjo_La_Felipa> a ns1:Entidad ;
     ns1:nombre "Felipa Polo Asenjo" ;
     ns1:wikidata_id "Q104033391" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q104033391" ;
-    owl:sameAs "https://wikidata.org/entity/Q104033391" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q104033391>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q104033391> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Felipe_III> a ns1:Entidad ;
     ns1:nombre "Philip III of Spain" ;
     ns1:wikidata_id "Q34464" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q34464" ;
-    owl:sameAs "https://wikidata.org/entity/Q34464" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q34464>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q34464> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Fernando_%C3%81lvarez_de_Miranda> a ns1:Entidad ;
     ns1:nombre "Fernando Álvarez de Miranda y Torres" ;
     ns1:wikidata_id "Q3069577" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3069577" ;
-    owl:sameAs "https://wikidata.org/entity/Q3069577" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3069577>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3069577> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Fernando_Fern%C3%A1n_G%C3%B3mez> a ns1:Entidad ;
     ns1:nombre "Fernando Fernán Gómez" ;
     ns1:wikidata_id "Q318736" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q318736" ;
-    owl:sameAs "https://wikidata.org/entity/Q318736" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q318736>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q318736> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Fernando_Garc%C3%ADa_Mercadal> a ns1:Entidad ;
     ns1:nombre "Fernando García Mercadal" ;
     ns1:wikidata_id "Q3751119" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3751119" ;
-    owl:sameAs "https://wikidata.org/entity/Q3751119" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3751119>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3751119> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Fernando_de_Castro> a ns1:Entidad ;
     ns1:nombre "Fernando de Castro Rodríguez" ;
     ns1:wikidata_id "Q5860451" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5860451" ;
-    owl:sameAs "https://wikidata.org/entity/Q5860451" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5860451>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5860451> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Fidel_Pag%C3%A9s> a ns1:Entidad ;
     ns1:nombre "Fidel Pagés" ;
     ns1:wikidata_id "Q1344339" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1344339" ;
-    owl:sameAs "https://wikidata.org/entity/Q1344339" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1344339>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1344339> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Fornarina_Consuelo_Vello> a ns1:Entidad ;
     ns1:nombre "Fornarina" ;
     ns1:wikidata_id "Q5864045" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5864045" ;
-    owl:sameAs "https://wikidata.org/entity/Q5864045" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5864045>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5864045> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Francisco_Arjona_Herrera_C%C3%BAchares> a ns1:Entidad ;
     ns1:nombre "Francisco Arjona Herrera" ;
     ns1:wikidata_id "Q3010761" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3010761" ;
-    owl:sameAs "https://wikidata.org/entity/Q3010761" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3010761>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3010761> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Francisco_Grande_Covi%C3%A1n> a ns1:Entidad ;
     ns1:nombre "Francisco Grande Covián" ;
     ns1:wikidata_id "Q3753868" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3753868" ;
-    owl:sameAs "https://wikidata.org/entity/Q3753868" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3753868>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3753868> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Francisco_Mart%C3%ADnez_Marina> a ns1:Entidad ;
     ns1:nombre "Francisco Martínez Marina" ;
     ns1:wikidata_id "Q2881318" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2881318" ;
-    owl:sameAs "https://wikidata.org/entity/Q2881318" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2881318>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2881318> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Francisco_P%C3%A9rez_Mateo> a ns1:Entidad ;
     ns1:nombre "Francisco Pérez Mateo" ;
     ns1:wikidata_id "Q6436734" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q6436734" ;
-    owl:sameAs "https://wikidata.org/entity/Q6436734" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q6436734>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6436734> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Francisco_Serrano_Dom%C3%ADnguez> a ns1:Entidad ;
     ns1:nombre "Francisco Serrano, 1st Duke of la Torre" ;
     ns1:wikidata_id "Q515741" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q515741" ;
-    owl:sameAs "https://wikidata.org/entity/Q515741" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q515741>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q515741> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Francisco_Silvela> a ns1:Entidad ;
     ns1:nombre "Francisco Silvela" ;
     ns1:wikidata_id "Q1236383" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1236383" ;
-    owl:sameAs "https://wikidata.org/entity/Q1236383" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1236383>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1236383> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Francisco_de_Quevedo> a ns1:Entidad ;
     ns1:nombre "Francisco Quevedo" ;
     ns1:wikidata_id "Q201315" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q201315" ;
-    owl:sameAs "https://wikidata.org/entity/Q201315" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q201315>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q201315> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Francisco_de_Rojas_Zorrilla> a ns1:Entidad ;
     ns1:nombre "Francisco de Rojas Zorrilla" ;
     ns1:wikidata_id "Q1442310" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1442310" ;
-    owl:sameAs "https://wikidata.org/entity/Q1442310" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1442310>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442310> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Fray_Bartolom%C3%A9_de_las_Casas> a ns1:Entidad ;
     ns1:nombre "Bartolomé de Las Casas" ;
     ns1:wikidata_id "Q207416" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q207416" ;
-    owl:sameAs "https://wikidata.org/entity/Q207416" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q207416>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q207416> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Fray_Mat%C3%ADas_de_Irala> a ns1:Entidad ;
     ns1:nombre "Matías de Irala" ;
     ns1:wikidata_id "Q20925428" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q20925428" ;
-    owl:sameAs "https://wikidata.org/entity/Q20925428" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q20925428>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q20925428> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Gabriela_Mistral> a ns1:Entidad ;
     ns1:nombre "Gabriela Mistral" ;
     ns1:wikidata_id "Q80871" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q80871" ;
-    owl:sameAs "https://wikidata.org/entity/Q80871" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q80871>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q80871> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Gaspar_Melchor_de_Jovellanos> a ns1:Entidad ;
     ns1:nombre "Gaspar Melchor de Jovellanos" ;
     ns1:wikidata_id "Q282498" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q282498" ;
-    owl:sameAs "https://wikidata.org/entity/Q282498" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q282498>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q282498> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Gast%C3%B3n_Baquero_D%C3%ADaz> a ns1:Entidad ;
     ns1:nombre "Gastón Baquero" ;
     ns1:wikidata_id "Q2069702" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2069702" ;
-    owl:sameAs "https://wikidata.org/entity/Q2069702" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2069702>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2069702> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/General_Casta%C3%B1os> a ns1:Entidad ;
     ns1:nombre "Francisco Javier Castaños, 1st Duke of Bailén" ;
     ns1:wikidata_id "Q420319" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q420319" ;
-    owl:sameAs "https://wikidata.org/entity/Q420319" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q420319>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q420319> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Giacomo_Amigoni> a ns1:Entidad ;
     ns1:nombre "Jacopo Amigoni" ;
     ns1:wikidata_id "Q380897" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q380897" ;
-    owl:sameAs "https://wikidata.org/entity/Q380897" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q380897>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q380897> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Giacomo_Casanova> a ns1:Entidad ;
     ns1:nombre "Giacomo Casanova" ;
     ns1:wikidata_id "Q83321" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q83321" ;
-    owl:sameAs "https://wikidata.org/entity/Q83321" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q83321>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q83321> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Giacomo_Puccini> a ns1:Entidad ;
     ns1:nombre "Giacomo Puccini" ;
     ns1:wikidata_id "Q7311" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q7311" ;
-    owl:sameAs "https://wikidata.org/entity/Q7311" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q7311>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q7311> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Gioachino_Rossini> a ns1:Entidad ;
     ns1:nombre "Gioacchino Rossini" ;
     ns1:wikidata_id "Q9726" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q9726" ;
-    owl:sameAs "https://wikidata.org/entity/Q9726" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q9726>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q9726> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Giov%C3%A1n_Dom%C3%A9nico_Olivieri> a ns1:Entidad ;
     ns1:nombre "Giovanni Domenico Olivieri" ;
     ns1:wikidata_id "Q5949132" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5949132" ;
-    owl:sameAs "https://wikidata.org/entity/Q5949132" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5949132>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5949132> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Giuseppe_Verdi> a ns1:Entidad ;
     ns1:nombre "Giuseppe Verdi" ;
     ns1:wikidata_id "Q7317" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q7317" ;
-    owl:sameAs "https://wikidata.org/entity/Q7317" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q7317>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q7317> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Gonzalo_Torrente_Ballester> a ns1:Entidad ;
     ns1:nombre "Gonzalo Torrente Ballester" ;
     ns1:wikidata_id "Q500546" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q500546" ;
-    owl:sameAs "https://wikidata.org/entity/Q500546" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q500546>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q500546> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Gregorio_Mara%C3%B1%C3%B3n> a ns1:Entidad ;
     ns1:nombre "Gregorio Marañón" ;
     ns1:wikidata_id "Q708559" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q708559" ;
-    owl:sameAs "https://wikidata.org/entity/Q708559" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q708559>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q708559> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Guillermo_Fern%C3%A1ndez-Shaw> a ns1:Entidad ;
     ns1:nombre "Guillermo Fernández-Shaw" ;
     ns1:wikidata_id "Q4888937" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q4888937" ;
-    owl:sameAs "https://wikidata.org/entity/Q4888937" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q4888937>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4888937> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Guillermo_Luca_de_Tena> a ns1:Entidad ;
     ns1:nombre "Guillermo Luca de Tena" ;
     ns1:wikidata_id "Q3390808" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3390808" ;
-    owl:sameAs "https://wikidata.org/entity/Q3390808" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3390808>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3390808> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Gutierre_Vargas_Carvajal> a ns1:Entidad ;
     ns1:nombre "Gutierre de Vargas Carvajal" ;
     ns1:wikidata_id "Q1983725" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1983725" ;
-    owl:sameAs "https://wikidata.org/entity/Q1983725" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1983725>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1983725> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Hans_Christian_Andersen> a ns1:Entidad ;
     ns1:nombre "Hans Christian Andersen" ;
     ns1:wikidata_id "Q5673" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5673" ;
-    owl:sameAs "https://wikidata.org/entity/Q5673" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5673>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5673> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Horacio_V%C3%A1zquez-Rial> a ns1:Entidad ;
     ns1:nombre "Horacio Vázquez-Rial" ;
     ns1:wikidata_id "Q2406730" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2406730" ;
-    owl:sameAs "https://wikidata.org/entity/Q2406730" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2406730>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2406730> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Ignacio_Aldecoa> a ns1:Entidad ;
     ns1:nombre "Ignacio Aldecoa" ;
     ns1:wikidata_id "Q1657241" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1657241" ;
-    owl:sameAs "https://wikidata.org/entity/Q1657241" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1657241>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1657241> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Indalecio_Prieto> a ns1:Entidad ;
     ns1:nombre "Indalecio Prieto" ;
     ns1:wikidata_id "Q433615" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q433615" ;
-    owl:sameAs "https://wikidata.org/entity/Q433615" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q433615>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q433615> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Isaac_Alb%C3%A9niz> a ns1:Entidad ;
     ns1:nombre "Isaac Albéniz" ;
     ns1:wikidata_id "Q185812" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q185812" ;
-    owl:sameAs "https://wikidata.org/entity/Q185812" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q185812>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q185812> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/J%C3%B3se_Mar%C3%ADa_Gil-Robles_Qui%C3%B1ones> a ns1:Entidad ;
     ns1:nombre "José María Gil-Robles y Quiñones" ;
     ns1:wikidata_id "Q504061" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q504061" ;
-    owl:sameAs "https://wikidata.org/entity/Q504061" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q504061>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q504061> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jacinto_Benavente> a ns1:Entidad ;
     ns1:nombre "Jacinto Benavente" ;
     ns1:wikidata_id "Q83184" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q83184" ;
-    owl:sameAs "https://wikidata.org/entity/Q83184" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q83184>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q83184> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jacinto_Miquelarena> a ns1:Entidad ;
     ns1:nombre "Jacinto Miquelarena" ;
     ns1:wikidata_id "Q2887957" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2887957" ;
-    owl:sameAs "https://wikidata.org/entity/Q2887957" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2887957>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2887957> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jacometrezo> a ns1:Entidad ;
     ns1:nombre "Jacopo da Trezzo" ;
     ns1:wikidata_id "Q3805911" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3805911" ;
-    owl:sameAs "https://wikidata.org/entity/Q3805911" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3805911>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3805911> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jaime_Campmany> a ns1:Entidad ;
     ns1:nombre "Jaime Campmany" ;
     ns1:wikidata_id "Q5924952" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5924952" ;
-    owl:sameAs "https://wikidata.org/entity/Q5924952" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5924952>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5924952> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jaime_Marquet> a ns1:Entidad ;
     ns1:nombre "Jaime Marquet" ;
     ns1:wikidata_id "Q1678035" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1678035" ;
-    owl:sameAs "https://wikidata.org/entity/Q1678035" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1678035>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1678035> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jer%C3%B3nimo_de_Quintana> a ns1:Entidad ;
     ns1:nombre "Jerónimo de la Quintana" ;
     ns1:wikidata_id "Q16743840" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q16743840" ;
-    owl:sameAs "https://wikidata.org/entity/Q16743840" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q16743840>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q16743840> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jes%C3%BAs_del_Pozo> a ns1:Entidad ;
     ns1:nombre "Jesús del Pozo" ;
     ns1:wikidata_id "Q9011705" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q9011705" ;
-    owl:sameAs "https://wikidata.org/entity/Q9011705" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q9011705>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q9011705> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Joaqu%C3%ADn_Calvo-Sotelo> a ns1:Entidad ;
     ns1:nombre "Joaquín Calvo Sotelo" ;
     ns1:wikidata_id "Q9012217" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q9012217" ;
-    owl:sameAs "https://wikidata.org/entity/Q9012217" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q9012217>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q9012217> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Joaqu%C3%ADn_Rodrigo> a ns1:Entidad ;
     ns1:nombre "Joaquín Rodrigo" ;
     ns1:wikidata_id "Q151084" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q151084" ;
-    owl:sameAs "https://wikidata.org/entity/Q151084" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q151084>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q151084> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Joaqu%C3%ADn_Satr%C3%BAstegui> a ns1:Entidad ;
     ns1:nombre "Joaquín Satrústegui" ;
     ns1:wikidata_id "Q4891842" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q4891842" ;
-    owl:sameAs "https://wikidata.org/entity/Q4891842" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q4891842>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4891842> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Joaquin_Ruiz-Gim%C3%A9nez> a ns1:Entidad ;
     ns1:nombre "Joaquín Ruiz Giménez" ;
     ns1:wikidata_id "Q932392" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q932392" ;
-    owl:sameAs "https://wikidata.org/entity/Q932392" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q932392>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q932392> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jorge_Lu%C3%ADs_Borges> a ns1:Entidad ;
     ns1:nombre "Jorge Luis Borges" ;
     ns1:wikidata_id "Q909" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q909" ;
-    owl:sameAs "https://wikidata.org/entity/Q909" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q909>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q909> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jorge_Santayana> a ns1:Entidad ;
     ns1:nombre "George Santayana" ;
     ns1:wikidata_id "Q237833" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q237833" ;
-    owl:sameAs "https://wikidata.org/entity/Q237833" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q237833>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q237833> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jorge_Sempr%C3%BAn_Maura> a ns1:Entidad ;
     ns1:nombre "Jorge Semprún" ;
     ns1:wikidata_id "Q157004" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q157004" ;
-    owl:sameAs "https://wikidata.org/entity/Q157004" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q157004>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q157004> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_Benito_Churriguera> a ns1:Entidad ;
     ns1:nombre "José Benito de Churriguera" ;
     ns1:wikidata_id "Q637172" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q637172" ;
-    owl:sameAs "https://wikidata.org/entity/Q637172" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q637172>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q637172> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_Bergam%C3%ADn> a ns1:Entidad ;
     ns1:nombre "José Bergamín" ;
     ns1:wikidata_id "Q332850" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q332850" ;
-    owl:sameAs "https://wikidata.org/entity/Q332850" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q332850>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q332850> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_Caballero> a ns1:Entidad ;
     ns1:nombre "José Caballero" ;
     ns1:wikidata_id "Q5942192" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5942192" ;
-    owl:sameAs "https://wikidata.org/entity/Q5942192" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5942192>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5942192> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_Cast%C3%A1n_Tobe%C3%B1as> a ns1:Entidad ;
     ns1:nombre "José Castán Tobeñas" ;
     ns1:wikidata_id "Q6291893" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q6291893" ;
-    owl:sameAs "https://wikidata.org/entity/Q6291893" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q6291893>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6291893> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_Cubiles> a ns1:Entidad ;
     ns1:nombre "José Cubiles" ;
     ns1:wikidata_id "Q2067302" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2067302" ;
-    owl:sameAs "https://wikidata.org/entity/Q2067302" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2067302>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2067302> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_Garc%C3%ADa_Nieto> a ns1:Entidad ;
     ns1:nombre "José García Nieto" ;
     ns1:wikidata_id "Q921366" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q921366" ;
-    owl:sameAs "https://wikidata.org/entity/Q921366" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q921366>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q921366> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_Guti%C3%A9rrez_Solana> a ns1:Entidad ;
     ns1:nombre "José Gutiérrez Solana" ;
     ns1:wikidata_id "Q428928" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q428928" ;
-    owl:sameAs "https://wikidata.org/entity/Q428928" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q428928>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q428928> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_Hierro> a ns1:Entidad ;
     ns1:nombre "Pepe Hierro" ;
     ns1:wikidata_id "Q770123" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q770123" ;
-    owl:sameAs "https://wikidata.org/entity/Q770123" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q770123>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q770123> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_Lu%C3%ADs_S%C3%A1enz_de_Heredia> a ns1:Entidad ;
     ns1:nombre "José Luis Sáenz de Heredia" ;
     ns1:wikidata_id "Q1398439" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1398439" ;
-    owl:sameAs "https://wikidata.org/entity/Q1398439" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1398439>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1398439> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_Luis_Sampedro> a ns1:Entidad ;
     ns1:nombre "José Luis Sampedro" ;
     ns1:wikidata_id "Q1393782" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1393782" ;
-    owl:sameAs "https://wikidata.org/entity/Q1393782" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1393782>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1393782> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_Mar%C3%ADa_Manresa> a ns1:Entidad ;
     ns1:nombre "José María Manresa y Ortuño" ;
     ns1:wikidata_id "Q58212076" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q58212076" ;
-    owl:sameAs "https://wikidata.org/entity/Q58212076" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q58212076>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q58212076> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_Mar%C3%ADa_Otero_de_Navascu%C3%A9s> a ns1:Entidad ;
     ns1:nombre "José María Otero de Navascués" ;
     ns1:wikidata_id "Q6454862" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q6454862" ;
-    owl:sameAs "https://wikidata.org/entity/Q6454862" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q6454862>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6454862> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_Mar%C3%ADa_Pem%C3%A1n> a ns1:Entidad ;
     ns1:nombre "José María Pemán" ;
     ns1:wikidata_id "Q964355" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q964355" ;
-    owl:sameAs "https://wikidata.org/entity/Q964355" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q964355>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q964355> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_Marchena> a ns1:Entidad ;
     ns1:nombre "José Marchena Ruiz de Cueto" ;
     ns1:wikidata_id "Q3182028" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3182028" ;
-    owl:sameAs "https://wikidata.org/entity/Q3182028" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3182028>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3182028> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_Salamanca_y_Mayol> a ns1:Entidad ;
     ns1:nombre "José de Salamanca, 1st Count of los Llanos" ;
     ns1:wikidata_id "Q3177141" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3177141" ;
-    owl:sameAs "https://wikidata.org/entity/Q3177141" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3177141>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3177141> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_Tamayo> a ns1:Entidad ;
     ns1:nombre "José Tamayo" ;
     ns1:wikidata_id "Q3774880" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3774880" ;
-    owl:sameAs "https://wikidata.org/entity/Q3774880" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3774880>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3774880> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_Ysbert> a ns1:Entidad ;
     ns1:nombre "José Isbert" ;
     ns1:wikidata_id "Q965469" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q965469" ;
-    owl:sameAs "https://wikidata.org/entity/Q965469" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q965469>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q965469> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_Zorrilla> a ns1:Entidad ;
     ns1:nombre "José Zorrilla" ;
     ns1:wikidata_id "Q331863" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q331863" ;
-    owl:sameAs "https://wikidata.org/entity/Q331863" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q331863>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q331863> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_de_Nebra> a ns1:Entidad ;
     ns1:nombre "José de Nebra" ;
     ns1:wikidata_id "Q1246203" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1246203" ;
-    owl:sameAs "https://wikidata.org/entity/Q1246203" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1246203>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1246203> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_de_Villarreal> a ns1:Entidad ;
     ns1:nombre "José de Villarreal" ;
     ns1:wikidata_id "Q5946383" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5946383" ;
-    owl:sameAs "https://wikidata.org/entity/Q5946383" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5946383>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5946383> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_del_Castillo> a ns1:Entidad ;
     ns1:nombre "José del Castillo" ;
     ns1:wikidata_id "Q2598238" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2598238" ;
-    owl:sameAs "https://wikidata.org/entity/Q2598238" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2598238>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2598238> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Jos%C3%A9_del_Olmo> a ns1:Entidad ;
     ns1:nombre "José del Olmo" ;
     ns1:wikidata_id "Q5402831" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5402831" ;
-    owl:sameAs "https://wikidata.org/entity/Q5402831" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5402831>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5402831> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Josefina_Carabias> a ns1:Entidad ;
     ns1:nombre "Josefina Carabias" ;
     ns1:wikidata_id "Q5936628" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5936628" ;
-    owl:sameAs "https://wikidata.org/entity/Q5936628" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5936628>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5936628> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Juan_Agust%C3%ADn_Ce%C3%A1n_Berm%C3%BAdez> a ns1:Entidad ;
     ns1:nombre "Juan Agustín Ceán Bermúdez" ;
     ns1:wikidata_id "Q3136698" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3136698" ;
-    owl:sameAs "https://wikidata.org/entity/Q3136698" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3136698>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3136698> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Juan_Antonio_Vallejo-N%C3%A1jera> a ns1:Entidad ;
     ns1:nombre "Juan Antonio Vallejo-Nájera" ;
     ns1:wikidata_id "Q5947470" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5947470" ;
-    owl:sameAs "https://wikidata.org/entity/Q5947470" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5947470>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5947470> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Juan_Bautista_Sachetti> a ns1:Entidad ;
     ns1:nombre "Juan Bautista Sachetti" ;
     ns1:wikidata_id "Q2327379" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2327379" ;
-    owl:sameAs "https://wikidata.org/entity/Q2327379" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2327379>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2327379> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Juan_Belmonte> a ns1:Entidad ;
     ns1:nombre "Juan Belmonte" ;
     ns1:wikidata_id "Q715596" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q715596" ;
-    owl:sameAs "https://wikidata.org/entity/Q715596" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q715596>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q715596> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Juan_Carlos_Onetti> a ns1:Entidad ;
     ns1:nombre "Juan Carlos Onetti" ;
     ns1:wikidata_id "Q16873" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q16873" ;
-    owl:sameAs "https://wikidata.org/entity/Q16873" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q16873>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q16873> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Juan_Cristobal> a ns1:Entidad ;
     ns1:nombre "Juan Cristóbal González" ;
     ns1:wikidata_id "Q5948914" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5948914" ;
-    owl:sameAs "https://wikidata.org/entity/Q5948914" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5948914>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5948914> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Juan_Escobedo> a ns1:Entidad ;
     ns1:nombre "Juan de Escobedo" ;
     ns1:wikidata_id "Q3166170" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3166170" ;
-    owl:sameAs "https://wikidata.org/entity/Q3166170" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3166170>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3166170> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Juan_G%C3%B3mez_de_Mora> a ns1:Entidad ;
     ns1:nombre "Juan Gómez de Mora" ;
     ns1:wikidata_id "Q2613012" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2613012" ;
-    owl:sameAs "https://wikidata.org/entity/Q2613012" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2613012>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2613012> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Juan_Gyenes> a ns1:Entidad ;
     ns1:nombre "Juan Gyenes" ;
     ns1:wikidata_id "Q1101760" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1101760" ;
-    owl:sameAs "https://wikidata.org/entity/Q1101760" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1101760>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1101760> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Juan_Mu%C3%B1oz> a ns1:Entidad ;
     ns1:nombre "Juan Muñoz" ;
     ns1:wikidata_id "Q567396" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q567396" ;
-    owl:sameAs "https://wikidata.org/entity/Q567396" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q567396>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q567396> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Juan_Negr%C3%ADn> a ns1:Entidad ;
     ns1:nombre "Juan Negrín" ;
     ns1:wikidata_id "Q312757" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q312757" ;
-    owl:sameAs "https://wikidata.org/entity/Q312757" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q312757>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q312757> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Juan_Pedro_Arnal> a ns1:Entidad ;
     ns1:nombre "Juan Pedro Arnal" ;
     ns1:wikidata_id "Q11041285" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q11041285" ;
-    owl:sameAs "https://wikidata.org/entity/Q11041285" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q11041285>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q11041285> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Juan_de_Caramuel> a ns1:Entidad ;
     ns1:nombre "Juan Caramuel y Lobkowitz" ;
     ns1:wikidata_id "Q689925" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q689925" ;
-    owl:sameAs "https://wikidata.org/entity/Q689925" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q689925>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q689925> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Juan_de_Herrera> a ns1:Entidad ;
     ns1:nombre "Juan de Herrera" ;
     ns1:wikidata_id "Q363914" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q363914" ;
-    owl:sameAs "https://wikidata.org/entity/Q363914" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q363914>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q363914> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Juana_Do%C3%B1a_Jim%C3%A9nez> a ns1:Entidad ;
     ns1:nombre "Juana Doña Jiménez" ;
     ns1:wikidata_id "Q2876086" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2876086" ;
-    owl:sameAs "https://wikidata.org/entity/Q2876086" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2876086>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2876086> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Juana_de_Austria> a ns1:Entidad ;
     ns1:nombre "Joanna of Austria, Grand Duchess of Tuscany" ;
     ns1:wikidata_id "Q84459" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q84459" ;
-    owl:sameAs "https://wikidata.org/entity/Q84459" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q84459>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q84459> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Juli%C3%A1n_Cort%C3%A9s-Cavanillas> a ns1:Entidad ;
     ns1:nombre "Julián Cortés Cavanillas" ;
     ns1:wikidata_id "Q20872403" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q20872403" ;
-    owl:sameAs "https://wikidata.org/entity/Q20872403" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q20872403>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q20872403> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Juli%C3%A1n_Mar%C3%ADas> a ns1:Entidad ;
     ns1:nombre "Julián Marías" ;
     ns1:wikidata_id "Q520726" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q520726" ;
-    owl:sameAs "https://wikidata.org/entity/Q520726" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q520726>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q520726> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Julio_Caro_Baroja> a ns1:Entidad ;
     ns1:nombre "Julio Caro Baroja" ;
     ns1:wikidata_id "Q649627" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q649627" ;
-    owl:sameAs "https://wikidata.org/entity/Q649627" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q649627>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q649627> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Julio_Romero_de_Torres> a ns1:Entidad ;
     ns1:nombre "Julio Romero de Torres" ;
     ns1:wikidata_id "Q1712402" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1712402" ;
-    owl:sameAs "https://wikidata.org/entity/Q1712402" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1712402>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1712402> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Leandro_Fern%C3%A1ndez_de_Morat%C3%ADn> a ns1:Entidad ;
     ns1:nombre "Leandro Fernández de Moratín" ;
     ns1:wikidata_id "Q351132" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q351132" ;
-    owl:sameAs "https://wikidata.org/entity/Q351132" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q351132>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q351132> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Leonardo_Alenza> a ns1:Entidad ;
     ns1:nombre "Leonardo Alenza" ;
     ns1:wikidata_id "Q2696989" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2696989" ;
-    owl:sameAs "https://wikidata.org/entity/Q2696989" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2696989>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2696989> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Leopoldo_Calvo_Sotelo> a ns1:Entidad ;
     ns1:nombre "Leopoldo Calvo-Sotelo" ;
     ns1:wikidata_id "Q273129" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q273129" ;
-    owl:sameAs "https://wikidata.org/entity/Q273129" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q273129>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q273129> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Leopoldo_Panero> a ns1:Entidad ;
     ns1:nombre "Leopoldo Panero" ;
     ns1:wikidata_id "Q594046" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q594046" ;
-    owl:sameAs "https://wikidata.org/entity/Q594046" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q594046>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q594046> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Leopoldo_de_Luis> a ns1:Entidad ;
     ns1:nombre "Leopoldo de Luis" ;
     ns1:wikidata_id "Q369118" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q369118" ;
-    owl:sameAs "https://wikidata.org/entity/Q369118" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q369118>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q369118> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Lorenzo_Coullaut_Valera> a ns1:Entidad ;
     ns1:nombre "Lorenzo Coullaut Valera" ;
     ns1:wikidata_id "Q1388365" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1388365" ;
-    owl:sameAs "https://wikidata.org/entity/Q1388365" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1388365>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1388365> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Lorenzo_de_San_Nicol%C3%A1s> a ns1:Entidad ;
     ns1:nombre "Fray Lorenzo de San Nicolás" ;
     ns1:wikidata_id "Q5494029" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5494029" ;
-    owl:sameAs "https://wikidata.org/entity/Q5494029" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5494029>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5494029> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Lu%C3%ADs_V%C3%A9lez_de_Guevara> a ns1:Entidad ;
     ns1:nombre "Luis Vélez de Guevara" ;
     ns1:wikidata_id "Q1305828" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1305828" ;
-    owl:sameAs "https://wikidata.org/entity/Q1305828" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1305828>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1305828> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Lucio_del_Valle> a ns1:Entidad ;
     ns1:nombre "Lucio del Valle" ;
     ns1:wikidata_id "Q5982356" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5982356" ;
-    owl:sameAs "https://wikidata.org/entity/Q5982356" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5982356>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5982356> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Luigi_Boccherini> a ns1:Entidad ;
     ns1:nombre "Luigi Boccherini" ;
     ns1:wikidata_id "Q189766" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q189766" ;
-    owl:sameAs "https://wikidata.org/entity/Q189766" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q189766>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q189766> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Luis_Bellido_y_Gonz%C3%A1lez> a ns1:Entidad ;
     ns1:nombre "Luis Bellido y González" ;
     ns1:wikidata_id "Q5982882" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5982882" ;
-    owl:sameAs "https://wikidata.org/entity/Q5982882" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5982882>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5982882> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Luis_Bu%C3%B1uel> a ns1:Entidad ;
     ns1:nombre "Luis Buñuel" ;
     ns1:wikidata_id "Q51545" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q51545" ;
-    owl:sameAs "https://wikidata.org/entity/Q51545" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q51545>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q51545> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Luis_Carandell> a ns1:Entidad ;
     ns1:nombre "Luis Carandell" ;
     ns1:wikidata_id "Q5983011" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5983011" ;
-    owl:sameAs "https://wikidata.org/entity/Q5983011" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5983011>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5983011> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Luis_Cernuda> a ns1:Entidad ;
     ns1:nombre "Luis Cernuda" ;
     ns1:wikidata_id "Q439578" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q439578" ;
-    owl:sameAs "https://wikidata.org/entity/Q439578" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q439578>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q439578> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Luis_Daoiz> a ns1:Entidad ;
     ns1:nombre "Luis Daoiz y Torres" ;
     ns1:wikidata_id "Q3814064" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3814064" ;
-    owl:sameAs "https://wikidata.org/entity/Q3814064" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3814064>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3814064> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Luis_Fern%C3%A1ndez_de_Sevilla> a ns1:Entidad ;
     ns1:nombre "Luis Fernández de Sevilla" ;
     ns1:wikidata_id "Q5983467" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5983467" ;
-    owl:sameAs "https://wikidata.org/entity/Q5983467" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5983467>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5983467> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Luis_Garc%C3%ADa_Berlanga> a ns1:Entidad ;
     ns1:nombre "Luis García Berlanga" ;
     ns1:wikidata_id "Q381234" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q381234" ;
-    owl:sameAs "https://wikidata.org/entity/Q381234" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q381234>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q381234> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Luis_Guti%C3%A9rrez_de_Soto> a ns1:Entidad ;
     ns1:nombre "Luis Gutiérrez Soto" ;
     ns1:wikidata_id "Q3324260" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3324260" ;
-    owl:sameAs "https://wikidata.org/entity/Q3324260" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3324260>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3324260> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Luis_Moya_Blanco> a ns1:Entidad ;
     ns1:nombre "Luis Moya Blanco" ;
     ns1:wikidata_id "Q10320557" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q10320557" ;
-    owl:sameAs "https://wikidata.org/entity/Q10320557" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q10320557>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q10320557> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Luis_S%C3%A1inz_de_los_Terreros> a ns1:Entidad ;
     ns1:nombre "Luis Sáinz de los Terreros" ;
     ns1:wikidata_id "Q5984316" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5984316" ;
-    owl:sameAs "https://wikidata.org/entity/Q5984316" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5984316>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5984316> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Luisa_Carn%C3%A9s> a ns1:Entidad ;
     ns1:nombre "Luisa Carnés" ;
     ns1:wikidata_id "Q27307959" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q27307959" ;
-    owl:sameAs "https://wikidata.org/entity/Q27307959" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q27307959>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q27307959> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Luisa_Rold%C3%A1n_La_Roldana> a ns1:Entidad ;
     ns1:nombre "Luisa Roldánnnnnn" ;
     ns1:wikidata_id "Q6701326" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q6701326" ;
-    owl:sameAs "https://wikidata.org/entity/Q6701326" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q6701326>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6701326> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Manolo_Caracol> a ns1:Entidad ;
     ns1:nombre "Manolo Caracol" ;
     ns1:wikidata_id "Q1623744" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1623744" ;
-    owl:sameAs "https://wikidata.org/entity/Q1623744" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1623744>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1623744> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Manolo_Tena> a ns1:Entidad ;
     ns1:nombre "Manolo Tena" ;
     ns1:wikidata_id "Q5991720" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5991720" ;
-    owl:sameAs "https://wikidata.org/entity/Q5991720" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5991720>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5991720> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Manuel_Benedito_Vives> a ns1:Entidad ;
     ns1:nombre "Manuel Benedito Vives" ;
     ns1:wikidata_id "Q11690558" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q11690558" ;
-    owl:sameAs "https://wikidata.org/entity/Q11690558" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q11690558>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q11690558> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Manuel_Conde> a ns1:Entidad ;
     ns1:nombre "Manuel Fal Conde" ;
     ns1:wikidata_id "Q531304" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q531304" ;
-    owl:sameAs "https://wikidata.org/entity/Q531304" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q531304>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q531304> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Manuel_Dicenta> a ns1:Entidad ;
     ns1:nombre "Manuel Dicenta" ;
     ns1:wikidata_id "Q9027751" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q9027751" ;
-    owl:sameAs "https://wikidata.org/entity/Q9027751" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q9027751>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q9027751> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Manuel_Garc%C3%ADa_Morente> a ns1:Entidad ;
     ns1:nombre "Manuel García Morente" ;
     ns1:wikidata_id "Q3817940" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3817940" ;
-    owl:sameAs "https://wikidata.org/entity/Q3817940" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3817940>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3817940> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Manuel_Guti%C3%A9rrez_Mellado> a ns1:Entidad ;
     ns1:nombre "Manuel Gutiérrez Mellado" ;
     ns1:wikidata_id "Q2638079" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2638079" ;
-    owl:sameAs "https://wikidata.org/entity/Q2638079" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2638079>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2638079> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Manuel_Machado> a ns1:Entidad ;
     ns1:nombre "Manuel Machado" ;
     ns1:wikidata_id "Q577495" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q577495" ;
-    owl:sameAs "https://wikidata.org/entity/Q577495" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q577495>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q577495> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Manuel_Rodr%C3%ADguez_Manolete> a ns1:Entidad ;
     ns1:nombre "Manolete" ;
     ns1:wikidata_id "Q363911" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q363911" ;
-    owl:sameAs "https://wikidata.org/entity/Q363911" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q363911>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q363911> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Manuel_de_Falla> a ns1:Entidad ;
     ns1:nombre "Manuel de Falla" ;
     ns1:wikidata_id "Q193283" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q193283" ;
-    owl:sameAs "https://wikidata.org/entity/Q193283" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q193283>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q193283> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Mar%C3%ADa_Guerrero> a ns1:Entidad ;
     ns1:nombre "María Guerrero" ;
     ns1:wikidata_id "Q457388" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q457388" ;
-    owl:sameAs "https://wikidata.org/entity/Q457388" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q457388>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q457388> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Mar%C3%ADa_Lej%C3%A1rraga> a ns1:Entidad ;
     ns1:nombre "María Martínez Sierra" ;
     ns1:wikidata_id "Q3816879" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3816879" ;
-    owl:sameAs "https://wikidata.org/entity/Q3816879" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3816879>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3816879> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Mar%C3%ADa_Moliner> a ns1:Entidad ;
     ns1:nombre "María Moliner" ;
     ns1:wikidata_id "Q465162" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q465162" ;
-    owl:sameAs "https://wikidata.org/entity/Q465162" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q465162>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q465162> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Mar%C3%ADa_Zambrano> a ns1:Entidad ;
     ns1:nombre "María Zambrano" ;
     ns1:wikidata_id "Q235134" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q235134" ;
-    owl:sameAs "https://wikidata.org/entity/Q235134" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q235134>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q235134> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Mar%C3%ADa_de_Austria> a ns1:Entidad ;
     ns1:nombre "Maria of Austria, Holy Roman Empress" ;
     ns1:wikidata_id "Q159660" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q159660" ;
-    owl:sameAs "https://wikidata.org/entity/Q159660" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q159660>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q159660> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Marcial_Lalanda> a ns1:Entidad ;
     ns1:nombre "Marcial Lalanda del Pino" ;
     ns1:wikidata_id "Q3289987" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3289987" ;
-    owl:sameAs "https://wikidata.org/entity/Q3289987" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3289987>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3289987> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Mariana_de_Austria> a ns1:Entidad ;
     ns1:nombre "Mariana of Austria" ;
     ns1:wikidata_id "Q311469" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q311469" ;
-    owl:sameAs "https://wikidata.org/entity/Q311469" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q311469>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q311469> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Mariana_de_Jes%C3%BAs> a ns1:Entidad ;
     ns1:nombre "Mariana de Jesús" ;
     ns1:wikidata_id "Q2244260" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2244260" ;
-    owl:sameAs "https://wikidata.org/entity/Q2244260" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2244260>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2244260> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Mariano_Jos%C3%A9_de_Larra> a ns1:Entidad ;
     ns1:nombre "Mariano José de Larra" ;
     ns1:wikidata_id "Q298773" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q298773" ;
-    owl:sameAs "https://wikidata.org/entity/Q298773" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q298773>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q298773> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Mariano_Yela> a ns1:Entidad ;
     ns1:nombre "Mariano Yela" ;
     ns1:wikidata_id "Q5998014" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5998014" ;
-    owl:sameAs "https://wikidata.org/entity/Q5998014" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5998014>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5998014> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Miguel_Fisac> a ns1:Entidad ;
     ns1:nombre "Miguel Fisac" ;
     ns1:wikidata_id "Q3314962" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3314962" ;
-    owl:sameAs "https://wikidata.org/entity/Q3314962" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3314962>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3314962> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Miguel_Hern%C3%A1ndez> a ns1:Entidad ;
     ns1:nombre "Miguel Hernández" ;
     ns1:wikidata_id "Q332088" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q332088" ;
-    owl:sameAs "https://wikidata.org/entity/Q332088" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q332088>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q332088> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Miguel_Jacinto_Mel%C3%A9ndez> a ns1:Entidad ;
     ns1:nombre "Miguel Jacinto Meléndez" ;
     ns1:wikidata_id "Q3068296" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3068296" ;
-    owl:sameAs "https://wikidata.org/entity/Q3068296" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3068296>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3068296> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Miguel_de_Cervantes_Saavedra> a ns1:Entidad ;
     ns1:nombre "Miguel de Cervantes" ;
     ns1:wikidata_id "Q5682" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5682" ;
-    owl:sameAs "https://wikidata.org/entity/Q5682" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5682>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5682> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Mikhail_Ivanovich_Glinka> a ns1:Entidad ;
     ns1:nombre "Mikhail Glinka" ;
     ns1:wikidata_id "Q181885" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q181885" ;
-    owl:sameAs "https://wikidata.org/entity/Q181885" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q181885>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q181885> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Modesto_L%C3%B3pez-Otero> a ns1:Entidad ;
     ns1:nombre "Modesto López Otero" ;
     ns1:wikidata_id "Q6020297" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q6020297" ;
-    owl:sameAs "https://wikidata.org/entity/Q6020297" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q6020297>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6020297> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Napole%C3%B3n_Bonaparte> a ns1:Entidad ;
     ns1:nombre "Napoleon" ;
     ns1:wikidata_id "Q517" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q517" ;
-    owl:sameAs "https://wikidata.org/entity/Q517" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q517>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q517> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Olga_Ramos> a ns1:Entidad ;
     ns1:nombre "Olga Ramos" ;
     ns1:wikidata_id "Q2019706" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2019706" ;
-    owl:sameAs "https://wikidata.org/entity/Q2019706" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2019706>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2019706> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Oscar_Espl%C3%A1> a ns1:Entidad ;
     ns1:nombre "Óscar Esplá" ;
     ns1:wikidata_id "Q3751764" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3751764" ;
-    owl:sameAs "https://wikidata.org/entity/Q3751764" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3751764>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3751764> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/P%C3%ADo_Baroja_y_Nessi> a ns1:Entidad ;
     ns1:nombre "Pio Baroja" ;
     ns1:wikidata_id "Q220980" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q220980" ;
-    owl:sameAs "https://wikidata.org/entity/Q220980" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q220980>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q220980> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Pablo_Picasso> a ns1:Entidad ;
     ns1:nombre "Pablo Picasso" ;
     ns1:wikidata_id "Q5593" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5593" ;
-    owl:sameAs "https://wikidata.org/entity/Q5593" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5593>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5593> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Paco_de_Luc%C3%ADa> a ns1:Entidad ;
     ns1:nombre "Paco de Lucía" ;
     ns1:wikidata_id "Q153300" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q153300" ;
-    owl:sameAs "https://wikidata.org/entity/Q153300" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q153300>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q153300> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Pedro_Berruguete> a ns1:Entidad ;
     ns1:nombre "Pedro Berruguete" ;
     ns1:wikidata_id "Q561783" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q561783" ;
-    owl:sameAs "https://wikidata.org/entity/Q561783" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q561783>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q561783> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Pedro_Bidagor> a ns1:Entidad ;
     ns1:nombre "Pedro Bidagor Lasarte" ;
     ns1:wikidata_id "Q6068322" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q6068322" ;
-    owl:sameAs "https://wikidata.org/entity/Q6068322" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q6068322>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6068322> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Pedro_I_de_Castilla_y_Le%C3%B3n> a ns1:Entidad ;
     ns1:nombre "Pedro I of Castile" ;
     ns1:wikidata_id "Q310963" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q310963" ;
-    owl:sameAs "https://wikidata.org/entity/Q310963" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q310963>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q310963> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Pedro_Poveda> a ns1:Entidad ;
     ns1:nombre "Pedro Poveda Castroverde" ;
     ns1:wikidata_id "Q1312926" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1312926" ;
-    owl:sameAs "https://wikidata.org/entity/Q1312926" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1312926>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1312926> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Pedro_Sainz_Rodr%C3%ADguez> a ns1:Entidad ;
     ns1:nombre "Pedro Sainz Rodríguez" ;
     ns1:wikidata_id "Q7159933" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q7159933" ;
-    owl:sameAs "https://wikidata.org/entity/Q7159933" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q7159933>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q7159933> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Pedro_Salinas> a ns1:Entidad ;
     ns1:nombre "Pedro Salinas" ;
     ns1:wikidata_id "Q379789" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q379789" ;
-    owl:sameAs "https://wikidata.org/entity/Q379789" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q379789>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q379789> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Pedro_de_Alb%C3%A9niz> a ns1:Entidad ;
     ns1:nombre "Pedro Albéniz" ;
     ns1:wikidata_id "Q351442" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q351442" ;
-    owl:sameAs "https://wikidata.org/entity/Q351442" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q351442>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q351442> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Pedro_de_R%C3%A9pide> a ns1:Entidad ;
     ns1:nombre "Pedro de Répide" ;
     ns1:wikidata_id "Q6070574" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q6070574" ;
-    owl:sameAs "https://wikidata.org/entity/Q6070574" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q6070574>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6070574> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Pedro_de_Ribera> a ns1:Entidad ;
     ns1:nombre "Pedro de Ribera" ;
     ns1:wikidata_id "Q3049047" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3049047" ;
-    owl:sameAs "https://wikidata.org/entity/Q3049047" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3049047>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3049047> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Pepe_Hillo> a ns1:Entidad ;
     ns1:nombre "José Delgado Guerra" ;
     ns1:wikidata_id "Q2606579" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2606579" ;
-    owl:sameAs "https://wikidata.org/entity/Q2606579" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2606579>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2606579> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Pilar_de_Valderrama_Guiomar> a ns1:Entidad ;
     ns1:nombre "Pilar de Valderrama" ;
     ns1:wikidata_id "Q16619010" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q16619010" ;
-    owl:sameAs "https://wikidata.org/entity/Q16619010" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q16619010>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q16619010> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Pr%C3%B3spero_Merim%C3%A9e> a ns1:Entidad ;
     ns1:nombre "Prosper Mérimée" ;
     ns1:wikidata_id "Q160333" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q160333" ;
-    owl:sameAs "https://wikidata.org/entity/Q160333" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q160333>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q160333> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Rafael_Alberti> a ns1:Entidad ;
     ns1:nombre "Rafael Alberti Merollo" ;
     ns1:wikidata_id "Q118936" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q118936" ;
-    owl:sameAs "https://wikidata.org/entity/Q118936" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q118936>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q118936> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Rafael_Altamira> a ns1:Entidad ;
     ns1:nombre "Rafael Altamira y Crevea" ;
     ns1:wikidata_id "Q425592" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q425592" ;
-    owl:sameAs "https://wikidata.org/entity/Q425592" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q425592>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q425592> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Rafael_Gil> a ns1:Entidad ;
     ns1:nombre "Rafael Gil" ;
     ns1:wikidata_id "Q499951" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q499951" ;
-    owl:sameAs "https://wikidata.org/entity/Q499951" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q499951>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q499951> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Rafael_Rodr%C3%ADguez_Albert> a ns1:Entidad ;
     ns1:nombre "Rafael Rodríguez Albert" ;
     ns1:wikidata_id "Q17278910" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q17278910" ;
-    owl:sameAs "https://wikidata.org/entity/Q17278910" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q17278910>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q17278910> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Rafael_de_Penagos> a ns1:Entidad ;
     ns1:nombre "Rafael de Penagos" ;
     ns1:wikidata_id "Q11160767" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q11160767" ;
-    owl:sameAs "https://wikidata.org/entity/Q11160767" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q11160767>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q11160767> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Rafael_del_Riego> a ns1:Entidad ;
     ns1:nombre "Rafael del Riego" ;
     ns1:wikidata_id "Q203036" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q203036" ;
-    owl:sameAs "https://wikidata.org/entity/Q203036" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q203036>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q203036> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Ram%C3%B3n_Barce> a ns1:Entidad ;
     ns1:nombre "Ramón Barce" ;
     ns1:wikidata_id "Q1947131" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1947131" ;
-    owl:sameAs "https://wikidata.org/entity/Q1947131" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1947131>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1947131> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Ram%C3%B3n_G%C3%B3mez_de_la_Serna> a ns1:Entidad ;
     ns1:nombre "Ramón Gómez de la Serna" ;
     ns1:wikidata_id "Q444893" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q444893" ;
-    owl:sameAs "https://wikidata.org/entity/Q444893" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q444893>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q444893> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Ram%C3%B3n_J._Sender> a ns1:Entidad ;
     ns1:nombre "Ramón J. Sender" ;
     ns1:wikidata_id "Q734397" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q734397" ;
-    owl:sameAs "https://wikidata.org/entity/Q734397" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q734397>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q734397> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Ram%C3%B3n_Men%C3%A9ndez_Pidal> a ns1:Entidad ;
     ns1:nombre "Ramón Menéndez Pidal" ;
     ns1:wikidata_id "Q381953" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q381953" ;
-    owl:sameAs "https://wikidata.org/entity/Q381953" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q381953>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q381953> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Ram%C3%B3n_de_Mesonero_Romanos> a ns1:Entidad ;
     ns1:nombre "Ramón de Mesonero Romanos" ;
     ns1:wikidata_id "Q1545524" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1545524" ;
-    owl:sameAs "https://wikidata.org/entity/Q1545524" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1545524>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1545524> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Ram%C3%B3n_del_Valle-Incl%C3%A1n> a ns1:Entidad ;
     ns1:nombre "Ramón María del Valle-Inclán" ;
     ns1:wikidata_id "Q311001" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q311001" ;
-    owl:sameAs "https://wikidata.org/entity/Q311001" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q311001>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q311001> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Ramiro_de_Maeztu> a ns1:Entidad ;
     ns1:nombre "Ramiro de Maeztu" ;
     ns1:wikidata_id "Q1340223" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1340223" ;
-    owl:sameAs "https://wikidata.org/entity/Q1340223" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1340223>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1340223> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Regino_S%C3%A1inz_de_la_Maza> a ns1:Entidad ;
     ns1:nombre "Regino Sainz de la Maza" ;
     ns1:wikidata_id "Q735285" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q735285" ;
-    owl:sameAs "https://wikidata.org/entity/Q735285" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q735285>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q735285> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Reynaldo_Hahn> a ns1:Entidad ;
     ns1:nombre "Reynaldo Hahn" ;
     ns1:wikidata_id "Q432938" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q432938" ;
-    owl:sameAs "https://wikidata.org/entity/Q432938" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q432938>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q432938> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Ricardo_Bellver> a ns1:Entidad ;
     ns1:nombre "Ricardo Bellver" ;
     ns1:wikidata_id "Q1252443" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1252443" ;
-    owl:sameAs "https://wikidata.org/entity/Q1252443" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1252443>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1252443> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Roberto_Domingo_Fallola> a ns1:Entidad ;
     ns1:nombre "Roberto Domingo" ;
     ns1:wikidata_id "Q55988402" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q55988402" ;
-    owl:sameAs "https://wikidata.org/entity/Q55988402" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q55988402>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q55988402> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Rodrigo_Calder%C3%B3n> a ns1:Entidad ;
     ns1:nombre "Rodrigo Calderón, Count of Oliva" ;
     ns1:wikidata_id "Q2739893" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2739893" ;
-    owl:sameAs "https://wikidata.org/entity/Q2739893" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2739893>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2739893> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Rosal%C3%ADa_de_Castro> a ns1:Entidad ;
     ns1:nombre "Rosalía de Castro" ;
     ns1:wikidata_id "Q464264" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q464264" ;
-    owl:sameAs "https://wikidata.org/entity/Q464264" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q464264>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q464264> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Ruy_Gonz%C3%A1lez_de_Clavijo> a ns1:Entidad ;
     ns1:nombre "Ruy Gonzáles de Clavijo" ;
     ns1:wikidata_id "Q725872" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q725872" ;
-    owl:sameAs "https://wikidata.org/entity/Q725872" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q725872>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q725872> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Salvador_Bacarisse> a ns1:Entidad ;
     ns1:nombre "Salvador Bacarisse" ;
     ns1:wikidata_id "Q112643" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q112643" ;
-    owl:sameAs "https://wikidata.org/entity/Q112643" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q112643>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q112643> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/San_Francisco_de_As%C3%ADs> a ns1:Entidad ;
     ns1:nombre "Francis of Assisi" ;
     ns1:wikidata_id "Q676555" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q676555" ;
-    owl:sameAs "https://wikidata.org/entity/Q676555" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q676555>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q676555> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/San_Juan_de_la_Cruz> a ns1:Entidad ;
     ns1:nombre "John of the Cross" ;
     ns1:wikidata_id "Q190388" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q190388" ;
-    owl:sameAs "https://wikidata.org/entity/Q190388" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q190388>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q190388> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Santa_Mar%C3%ADa_Micaela> a ns1:Entidad ;
     ns1:nombre "Maria Micaela Desmaisieres" ;
     ns1:wikidata_id "Q440077" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q440077" ;
-    owl:sameAs "https://wikidata.org/entity/Q440077" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q440077>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q440077> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Santa_Teresa_de_Jes%C3%BAs> a ns1:Entidad ;
     ns1:nombre "Teresa of Ávila" ;
     ns1:wikidata_id "Q174880" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q174880" ;
-    owl:sameAs "https://wikidata.org/entity/Q174880" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q174880>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q174880> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Santiago_Am%C3%B3n> a ns1:Entidad ;
     ns1:nombre "Santiago Amón Hortelano" ;
     ns1:wikidata_id "Q6120816" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q6120816" ;
-    owl:sameAs "https://wikidata.org/entity/Q6120816" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q6120816>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6120816> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Santiago_Bernab%C3%A9u> a ns1:Entidad ;
     ns1:nombre "Santiago Bernabéu Yeste" ;
     ns1:wikidata_id "Q223156" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q223156" ;
-    owl:sameAs "https://wikidata.org/entity/Q223156" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q223156>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q223156> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Santiago_Bonavia> a ns1:Entidad ;
     ns1:nombre "Santiago Bonavía" ;
     ns1:wikidata_id "Q7420227" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q7420227" ;
-    owl:sameAs "https://wikidata.org/entity/Q7420227" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q7420227>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q7420227> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Sebasti%C3%A1n_Herrera_Barnuevo> a ns1:Entidad ;
     ns1:nombre "Sebastián Herrera Barnuevo" ;
     ns1:wikidata_id "Q3822204" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3822204" ;
-    owl:sameAs "https://wikidata.org/entity/Q3822204" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3822204>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3822204> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Sebasti%C3%A1n_de_Romero_Radigales> a ns1:Entidad ;
     ns1:nombre "Sebastián Romero Radigales" ;
     ns1:wikidata_id "Q2902550" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2902550" ;
-    owl:sameAs "https://wikidata.org/entity/Q2902550" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2902550>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2902550> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Serguei_Prokofiev> a ns1:Entidad ;
     ns1:nombre "Sergei Prokofiev" ;
     ns1:wikidata_id "Q49481" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q49481" ;
-    owl:sameAs "https://wikidata.org/entity/Q49481" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q49481>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q49481> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Te%C3%B3filo_Gautier> a ns1:Entidad ;
     ns1:nombre "Théophile Gautier" ;
     ns1:wikidata_id "Q183713" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q183713" ;
-    owl:sameAs "https://wikidata.org/entity/Q183713" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q183713>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q183713> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Teodoro_Ardemans> a ns1:Entidad ;
     ns1:nombre "Teodoro Ardemans" ;
     ns1:wikidata_id "Q7701077" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q7701077" ;
-    owl:sameAs "https://wikidata.org/entity/Q7701077" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q7701077>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q7701077> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Teresa_Berganza> a ns1:Entidad ;
     ns1:nombre "Teresa Berganza" ;
     ns1:wikidata_id "Q233876" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q233876" ;
-    owl:sameAs "https://wikidata.org/entity/Q233876" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q233876>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q233876> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Timoteo_P%C3%A9rez_Rubio> a ns1:Entidad ;
     ns1:nombre "Timoteo Pérez Rubio" ;
     ns1:wikidata_id "Q6147067" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q6147067" ;
-    owl:sameAs "https://wikidata.org/entity/Q6147067" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q6147067>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6147067> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Torcuato_Fern%C3%A1ndez-Miranda_Hevia> a ns1:Entidad ;
     ns1:nombre "Torcuato Fernández-Miranda" ;
     ns1:wikidata_id "Q645325" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q645325" ;
-    owl:sameAs "https://wikidata.org/entity/Q645325" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q645325>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q645325> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/V%C3%ADctor_Ruiz_Iriarte> a ns1:Entidad ;
     ns1:nombre "Víctor Ruiz Iriarte" ;
     ns1:wikidata_id "Q6165721" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q6165721" ;
-    owl:sameAs "https://wikidata.org/entity/Q6165721" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q6165721>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q6165721> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Valeriano_Weyler_Nicolau> a ns1:Entidad ;
     ns1:nombre "Valeriano Weyler" ;
     ns1:wikidata_id "Q732892" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q732892" ;
-    owl:sameAs "https://wikidata.org/entity/Q732892" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q732892>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q732892> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Ventura_Rodriguez> a ns1:Entidad ;
     ns1:nombre "Ventura Rodríguez" ;
     ns1:wikidata_id "Q2565889" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2565889" ;
-    owl:sameAs "https://wikidata.org/entity/Q2565889" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2565889>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2565889> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Vicente_Carducho> a ns1:Entidad ;
     ns1:nombre "Vincenzo Carducci" ;
     ns1:wikidata_id "Q369521" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q369521" ;
-    owl:sameAs "https://wikidata.org/entity/Q369521" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q369521>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q369521> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Vicente_Zabala> a ns1:Entidad ;
     ns1:nombre "Vicente Zabala de la Serna" ;
     ns1:wikidata_id "Q72014796" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q72014796" ;
-    owl:sameAs "https://wikidata.org/entity/Q72014796" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q72014796>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q72014796> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Victor_Hugo> a ns1:Entidad ;
     ns1:nombre "Victor Hugo" ;
     ns1:wikidata_id "Q535" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q535" ;
-    owl:sameAs "https://wikidata.org/entity/Q535" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q535>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q535> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Victoria_Kent> a ns1:Entidad ;
     ns1:nombre "Victoria Kent" ;
     ns1:wikidata_id "Q2743181" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2743181" ;
-    owl:sameAs "https://wikidata.org/entity/Q2743181" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2743181>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2743181> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Victorio_Macho> a ns1:Entidad ;
     ns1:nombre "Victorio Macho Rogado" ;
     ns1:wikidata_id "Q3302484" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3302484" ;
-    owl:sameAs "https://wikidata.org/entity/Q3302484" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3302484>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3302484> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Wenceslao_Fern%C3%A1ndez_Fl%C3%B3rez> a ns1:Entidad ;
     ns1:nombre "Wenceslao Fernández Flórez" ;
     ns1:wikidata_id "Q1377191" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1377191" ;
-    owl:sameAs "https://wikidata.org/entity/Q1377191" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1377191>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1377191> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Xavier_Zubiri> a ns1:Entidad ;
     ns1:nombre "Xavier Zubiri" ;
     ns1:wikidata_id "Q680632" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q680632" ;
-    owl:sameAs "https://wikidata.org/entity/Q680632" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q680632>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q680632> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Ubicacion/GEO_382396752383> a ns1:Ubicacion ;
     ns1:latitud "40.382396"^^xsd:float ;
@@ -8394,68 +8394,68 @@
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Diego_de_Silva_Vel%C3%A1zquez> a ns1:Entidad ;
     ns1:nombre "Diego Velázquez" ;
     ns1:wikidata_id "Q297" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q297" ;
-    owl:sameAs "https://wikidata.org/entity/Q297" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q297>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q297> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Emilia_Pardo_Baz%C3%A1n> a ns1:Entidad ;
     ns1:nombre "Emilia Pardo Bazán" ;
     ns1:wikidata_id "Q275929" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q275929" ;
-    owl:sameAs "https://wikidata.org/entity/Q275929" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q275929>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q275929> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/F%C3%A9lix_Lope_de_Vega> a ns1:Entidad ;
     ns1:nombre "Lope de Vega" ;
     ns1:wikidata_id "Q165257" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q165257" ;
-    owl:sameAs "https://wikidata.org/entity/Q165257" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q165257>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q165257> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Francisco_Sabatini> a ns1:Entidad ;
     ns1:nombre "Francesco Sabatini" ;
     ns1:wikidata_id "Q2454966" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2454966" ;
-    owl:sameAs "https://wikidata.org/entity/Q2454966" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2454966>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2454966> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Francisco_de_Goya> a ns1:Entidad ;
     ns1:nombre "Francisco de Goya" ;
     ns1:wikidata_id "Q5432" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q5432" ;
-    owl:sameAs "https://wikidata.org/entity/Q5432" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q5432>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5432> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Gerardo_Diego> a ns1:Entidad ;
     ns1:nombre "Gerardo Diego" ;
     ns1:wikidata_id "Q382815" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q382815" ;
-    owl:sameAs "https://wikidata.org/entity/Q382815" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q382815>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q382815> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Gloria_Fuertes> a ns1:Entidad ;
     ns1:nombre "Gloria Fuertes" ;
     ns1:wikidata_id "Q3323486" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q3323486" ;
-    owl:sameAs "https://wikidata.org/entity/Q3323486" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q3323486>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q3323486> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Manuel_L%C3%B3pez-Quiroga> a ns1:Entidad ;
     ns1:nombre "Manuel Quiroga" ;
     ns1:wikidata_id "Q2470399" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2470399" ;
-    owl:sameAs "https://wikidata.org/entity/Q2470399" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2470399>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2470399> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Mariano_Benlliure> a ns1:Entidad ;
     ns1:nombre "Mariano Benlliure" ;
     ns1:wikidata_id "Q2402329" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2402329" ;
-    owl:sameAs "https://wikidata.org/entity/Q2402329" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2402329>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2402329> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Miguel_Mihura> a ns1:Entidad ;
     ns1:nombre "Miguel Mihura" ;
     ns1:wikidata_id "Q239249" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q239249" ;
-    owl:sameAs "https://wikidata.org/entity/Q239249" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q239249>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q239249> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Severo_Ochoa> a ns1:Entidad ;
     ns1:nombre "Severo Ochoa" ;
     ns1:wikidata_id "Q233957" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q233957" ;
-    owl:sameAs "https://wikidata.org/entity/Q233957" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q233957>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q233957> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Ubicacion/GEO_411453708293> a ns1:Ubicacion ;
     ns1:latitud "40.411453"^^xsd:float ;
@@ -8500,60 +8500,60 @@
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/Benito_P%C3%A9rez_Gald%C3%B3s> a ns1:Entidad ;
     ns1:nombre "Benito Pérez Galdós" ;
     ns1:wikidata_id "Q189869" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q189869" ;
-    owl:sameAs "https://wikidata.org/entity/Q189869" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q189869>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q189869> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Entidad/San_Isidro_Labrador> a ns1:Entidad ;
     ns1:nombre "Isidore the Laborer" ;
     ns1:wikidata_id "Q379685" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q379685" ;
-    owl:sameAs "https://wikidata.org/entity/Q379685" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q379685>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q379685> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Distrito/Arganzuela> a ns1:Distrito ;
     ns1:nombre "Arganzuela" ;
     ns1:wikidata_id "Q2000929" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2000929" ;
-    owl:sameAs "https://wikidata.org/entity/Q2000929" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2000929>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2000929> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Distrito/Tetu%C3%A1n> a ns1:Distrito ;
     ns1:nombre "Tetuán" ;
     ns1:wikidata_id "Q1773540" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1773540" ;
-    owl:sameAs "https://wikidata.org/entity/Q1773540" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1773540>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1773540> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Distrito/Moncloa-Aravaca> a ns1:Distrito ;
     ns1:nombre "Moncloa-Aravaca" ;
     ns1:wikidata_id "Q2017682" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2017682" ;
-    owl:sameAs "https://wikidata.org/entity/Q2017682" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2017682>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2017682> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Distrito/Chamart%C3%ADn> a ns1:Distrito ;
     ns1:nombre "Chamartín" ;
     ns1:wikidata_id "Q1766348" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1766348" ;
-    owl:sameAs "https://wikidata.org/entity/Q1766348" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1766348>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1766348> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Distrito/Retiro> a ns1:Distrito ;
     ns1:nombre "Retiro" ;
     ns1:wikidata_id "Q2002296" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q2002296" ;
-    owl:sameAs "https://wikidata.org/entity/Q2002296" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q2002296>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2002296> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Distrito/Chamber%C3%AD> a ns1:Distrito ;
     ns1:nombre "Chamberí" ;
     ns1:wikidata_id "Q1763370" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1763370" ;
-    owl:sameAs "https://wikidata.org/entity/Q1763370" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1763370>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1763370> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Distrito/Salamanca> a ns1:Distrito ;
     ns1:nombre "Salamanca" ;
     ns1:wikidata_id "Q1773521" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1773521" ;
-    owl:sameAs "https://wikidata.org/entity/Q1773521" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1773521>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1773521> .
 
 <http://placasdemadrid.linkeddata.es/placas-madrid/resource/Distrito/Centro> a ns1:Distrito ;
     ns1:nombre "Centro" ;
     ns1:wikidata_id "Q1763376" ;
-    ns1:wikidata_uri "https://wikidata.org/entity/Q1763376" ;
-    owl:sameAs "https://wikidata.org/entity/Q1763376" .
+    ns1:wikidata_uri "<http://www.wikidata.org/entity/Q1763376>" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1763376> .
 

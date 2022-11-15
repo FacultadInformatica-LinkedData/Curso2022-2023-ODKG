@@ -22,32 +22,32 @@
 #################################################################
 
 ### https://www.healthfinder.io/group08/resource/Defibrillator/2017-48
-https://www.healthfinder.io/group08/resource/Defibrillator/2017-48 a nsdata:Defibrillator;
+https://www.healthfinder.io/group08/resource/Defibrillator/2017-48 a nsont:Defibrillator;
         geo:location <https://www.healthfinder.io/group08/resource/Address/CALLE%20dE%20Monasterio%20de%20Las%20Huelgas%2015,%2028049,%20Madrid>.
 
 ### https://www.healthfinder.io/group08/resource/Clinic/db7282901da891bea2fcd73840caad1c
-https://www.healthfinder.io/group08/resource/Clinic/db7282901da891bea2fcd73840caad1c a nsdata:Clinic;
+https://www.healthfinder.io/group08/resource/Clinic/db7282901da891bea2fcd73840caad1c a nsont:Clinic;
 	nsont:typologyOfClinic "Hospital%20especializado"^^xsd:string;
         nsont:specialization "Fisioterapia"^^xsd:string;
         geo:location <https://www.healthfinder.io/group08/resource/Address/CTRA%20M-515%20(POZUELO)%2061,%20EDIFICIO%20A-C-D,%2028220,%20Majadahonda>.
 
 ### https://www.healthfinder.io/group08/resource/Address/CALLE%20dE%20Monasterio%20de%20Las%20Huelgas%2015,%2028049,%20Madrid
-https://www.healthfinder.io/group08/resource/Address/CALLE%20dE%20Monasterio%20de%20Las%20Huelgas%2015,%2028049,%20Madrid a nsdata:Address;
+https://www.healthfinder.io/group08/resource/Address/CALLE%20dE%20Monasterio%20de%20Las%20Huelgas%2015,%2028049,%20Madrid a nsont:Address;
 	geo:latitude 44.3766^^xsd:float;
         geo:longitude -4.39919^^xsd:float;
 	nsont:location "CALLE de Monasterio de Las Huelgas 15, 28049, Madrid"^^xsd:string;
         nsont:isIn <https://www.healthfinder.io/group08/resource/City/Madrid>
 
 ### https://www.healthfinder.io/group08/resource/Address/CTRA%20M-515%20(POZUELO)%2061,%20EDIFICIO%20A-C-D,%2028220,%20Majadahonda
-https://www.healthfinder.io/group08/resource/Address/CTRA%20M-515%20(POZUELO)%2061,%20EDIFICIO%20A-C-D,%2028220,%20Majadahonda a nsdata:Address;
+https://www.healthfinder.io/group08/resource/Address/CTRA%20M-515%20(POZUELO)%2061,%20EDIFICIO%20A-C-D,%2028220,%20Majadahonda a nsont:Address;
 	geo:latitude 44.7872^^xsd:float;
         geo:longitude -4.27057^^xsd:float;
 	nsont:location "CTRA M-515 (POZUELO) 61, EDIFICIO A-C-D, 28220, Majadahonda"^^xsd:string;
         nsont:isIn <https://www.healthfinder.io/group08/resource/City/20Majadahonda>
 
 ### https://www.healthfinder.io/group08/resource/City/Madrid
-https://www.healthfinder.io/group08/resource/City/Madrid a nsdata:City;
+https://www.healthfinder.io/group08/resource/City/Madrid a nsont:City;
 
 ### https://www.healthfinder.io/group08/resource/City/Majadahonda
-https://www.healthfinder.io/group08/resource/City/Majadahonda a nsdata:City;
+https://www.healthfinder.io/group08/resource/City/Majadahonda a nsont:City;
 

@@ -1,10 +1,10 @@
-@prefix : <http://smartcity.airquality.es/airquality/ontology/ont#> .
+@prefix: <http://smartcity.airquality.es/airquality/ontology/ont#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/xml/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .   
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix saref:<https://saref.etsi.org/core/v3.1.1/>
+@prefix saref: <https://saref.etsi.org/core/v3.1.1/>
 @base <http://smartcity.airquality.es/airquality/ontology/ont> .
 
 
@@ -20,10 +20,10 @@
 
 
 
-###  http://smartcity.airquality.es/airquality/ontology/ont#hasStation
+###  http://smartcity.airquality.es/airquality/ontology/ont#isLocatedIn
 :isLocatedIn rdf:type owl:ObjectProperty ;
-        rdfs:domain :Municipality ;
-        rdfs:range :Station .
+        rdfs:domain :Station ;
+        rdfs:range :Municipality .
 
 
 
@@ -43,13 +43,13 @@
 ###  http://smartcity.airquality.es/airquality/ontology/ont#latitude
 :latitude rdf:type owl:DatatypeProperty ;
         rdfs:domain :Station ;
-        rdfs:range xsd:real .
+        rdfs:range xsd:float .
 
 
 ###  http://smartcity.airquality.es/airquality/ontology/ont#longitude
 :longitude rdf:type owl:DatatypeProperty ;
         rdfs:domain :Station ;
-        rdfs:range xsd:real .
+        rdfs:range xsd:float .
 
 
 ###  http://smartcity.airquality.es/airquality/ontology/ont#hasStationName
@@ -57,10 +57,6 @@
         rdfs:domain :Station ;
         rdfs:range xsd:string .
 
-###  http://smartcity.airquality.es/airquality/ontology/ont#isMeasureIn
-:isMeasureIn rdf:type owl:DatatypeProperty ;
-        rdfs:domain :Magnitude ;
-        rdfs:range xsd:string .
 
 ###  http://smartcity.airquality.es/airquality/ontology/ont#hasMagnitudeName
 :hasMagnitudeName rdf:type owl:DatatypeProperty ;
@@ -79,11 +75,10 @@
 
 
 
-
 ###  http://smartcity.airquality.es/airquality/ontology/ont#Station
-:Station owl:SubClassOf saref:Device .
+:Station owl:subClassOf saref:Device .
 
 
 
 ###  http://smartcity.airquality.es/airquality/ontology/ont#Magnitude
-:Magnitude owl:SubClassOf saref:Measurement .
+:Magnitude owl:subClassOf saref:Measurement .

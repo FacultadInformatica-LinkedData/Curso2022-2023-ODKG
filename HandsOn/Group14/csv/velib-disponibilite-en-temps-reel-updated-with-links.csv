@@ -451,7 +451,7 @@ Identifiant station,Nom station,Station en fonctionnement,Capacité de la statio
 9023,Laffitte - Italiens,true,33,1,31,21,10,true,true,2022-10-05T08:01:06Z,48.871815737396304,2.337201547845077,Paris,https://www.wikidata.org/wiki/Q90
 13016,Primo Levi - Frigos,true,34,0,34,20,14,true,true,2022-10-05T08:00:09Z,48.83094844846017,2.37965351592796,Paris,https://www.wikidata.org/wiki/Q90
 26001,Gare d'Asnières sur Seine,true,24,5,17,13,4,true,true,2022-10-05T07:59:38Z,48.90636459217474,2.2835066914558415,Asnières-sur-Seine,https://www.wikidata.org/wiki/Q191415
-44102,Verdun - Adrien Damalix,true,26,20,3,0,3,true,true,2022-10-05T07:59:26Z,48.8222334178559,2.4215328320860863,Saint-Maurice,https://www.wikidata.org/wiki/Q21603
+44102,Verdun - Adrien Damalix,true,26,20,3,0,3,true,true,2022-10-05T07:59:26Z,48.8222334178559,2.4215328320860863,Saint-Maurice,https://www.wikidata.org/wiki/Q274327
 17047,Courcelles - Pierre Demours,true,26,16,7,2,5,true,true,2022-10-05T07:57:17Z,48.883769733273496,2.29858466343129,Paris,https://www.wikidata.org/wiki/Q90
 19039,Edouard Pailleron - Simon Bolivar,true,24,23,1,0,1,true,true,2022-10-05T08:00:24Z,48.87979886049996,2.374839261174202,Paris,https://www.wikidata.org/wiki/Q90
 6016,Danton - Serpente,true,22,7,13,13,0,true,true,2022-10-05T07:59:30Z,48.85229736258167,2.3414132371544834,Paris,https://www.wikidata.org/wiki/Q90
@@ -680,7 +680,7 @@ Identifiant station,Nom station,Station en fonctionnement,Capacité de la statio
 15060,Place de la Montagne du Goulet,true,21,11,9,8,1,true,true,2022-10-05T08:01:01Z,48.8443415,2.2773844,Paris,https://www.wikidata.org/wiki/Q90
 18114,Véron - Lepic,true,23,22,1,0,1,true,true,2022-10-05T07:53:27Z,48.88526123395252,2.334559857845307,Paris,https://www.wikidata.org/wiki/Q90
 16007,Longchamp - Place d'Iéna,true,40,1,38,10,28,true,true,2022-10-05T08:00:44Z,48.86491723343388,2.2926748171448708,Paris,https://www.wikidata.org/wiki/Q90
-44103,Pont De Charenton,true,18,12,5,5,0,true,true,2022-10-05T07:57:16Z,48.8179685,2.4199531,Saint-Maurice,https://www.wikidata.org/wiki/Q21603
+44103,Pont De Charenton,true,18,12,5,5,0,true,true,2022-10-05T07:57:16Z,48.8179685,2.4199531,Saint-Maurice,https://www.wikidata.org/wiki/Q274327
 20002,Square de la rue Pixérécourt,true,15,15,0,0,0,true,true,2022-10-05T07:51:19Z,48.8736824,2.3960278,Paris,https://www.wikidata.org/wiki/Q90
 22403,Pierre Brossolette - Adolphe Pinard,true,24,17,6,1,5,true,true,2022-10-05T07:56:52Z,48.82177227954821,2.313155829906464,Malakoff,https://www.wikidata.org/wiki/Q253721
 16014,Eylau - Trocadéro,true,24,16,5,2,3,true,true,2022-10-05T08:00:29Z,48.863354122371,2.2864209115505,Paris,https://www.wikidata.org/wiki/Q90
@@ -810,7 +810,7 @@ Identifiant station,Nom station,Station en fonctionnement,Capacité de la statio
 14131,Jourdan - Monticelli,true,30,26,3,1,2,true,true,2022-10-05T07:59:53Z,48.822032,2.329095,Paris,https://www.wikidata.org/wiki/Q90
 35007,Benjamin Delessert - Jean Lolive,true,21,11,5,2,3,true,true,2022-10-05T07:53:34Z,48.89392043619345,2.417981922626496,Pantin,https://www.wikidata.org/wiki/Q209086
 17023,Porte d'Asnières,true,36,31,4,2,2,true,true,2022-10-05T07:57:51Z,48.89035817610495,2.3036286234855656,Paris,https://www.wikidata.org/wiki/Q90
-44101,Place Mongolfier,true,39,22,16,16,0,true,true,2022-10-05T07:59:17Z,48.815160030060376,2.4592879414558415,Saint-Maurice,https://www.wikidata.org/wiki/Q21603
+44101,Place Mongolfier,true,39,22,16,16,0,true,true,2022-10-05T07:59:17Z,48.815160030060376,2.4592879414558415,Saint-Maurice,https://www.wikidata.org/wiki/Q274327
 19108,Gaston Tessier - Rosa Parks RER,true,37,27,9,6,3,true,true,2022-10-05T07:55:26Z,48.8963765,2.3743692,Paris,https://www.wikidata.org/wiki/Q90
 13032,Italie - Jardin Joan Miro,true,26,25,0,0,0,true,true,2022-10-05T08:00:49Z,48.81990914045756,2.3592948541045193,Paris,https://www.wikidata.org/wiki/Q90
 4016,Lobau - Hôtel de Ville,true,60,26,32,22,10,true,true,2022-10-05T08:00:44Z,48.8562118,2.3532536,Paris,https://www.wikidata.org/wiki/Q90
@@ -1395,7 +1395,6 @@ Identifiant station,Nom station,Station en fonctionnement,Capacité de la statio
 22507,Châteaudun - Place de la Liberté,true,26,6,17,9,8,true,true,2022-10-05T07:56:34Z,48.90970830301211,2.2454486480600626,La Garenne-Colombes,https://www.wikidata.org/wiki/Q236658
 21302,Aristide Briand - Place de la Résistance,true,25,4,24,23,1,true,true,2022-10-05T07:59:58Z,48.82124248401006,2.2511002421379094,Issy-les-Moulineaux,https://www.wikidata.org/wiki/Q135265
 12165,Champs de Manoeuvre - Cartoucherie,true,20,8,12,9,3,true,true,2022-10-05T07:56:38Z,48.835261,2.447974,Paris,https://www.wikidata.org/wiki/Q90
-34012,Bateliers - Quai de Seine,false,26,26,0,0,0,false,false,2022-10-05T07:59:35Z,48.915817585516,2.3239533298594,Saint-Ouen-sur-Seine,https://www.wikidata.org/wiki/Q208889
 23201,Avenir,true,45,20,24,15,9,true,true,2022-10-05T08:01:03Z,48.8103438,2.3003776,Châtillon,https://www.wikidata.org/wiki/Q212947
 31301,Gare RER,true,30,1,23,6,17,true,true,2022-10-05T07:58:35Z,48.896241412268,2.4595758300992,Noisy-le-Sec,https://www.wikidata.org/wiki/Q370224
 22602,Place Henri Dunant - Gare RER,true,31,13,18,12,6,true,true,2022-10-05T08:00:44Z,48.787543,2.2907628,Fontenay-aux-Roses,https://www.wikidata.org/wiki/Q269166

@@ -12,48 +12,52 @@ ns: a owl:Ontology ;
     dc:title "Dialisis centers" ;
     owl:versionInfo "0.0.1" .
 
-ns:center a owl:Class ;
+ns:Center a owl:Class ;
     rdfs:label "center" .
 
-ns:city a owl:Class ;
+ns:City a owl:Class ;
     rdfs:label "city" .
 
-ns:entity a owl:Class ;
+ns:Entity a owl:Class ;
     rdfs:label "entity" .
 
 ns:has_address a owl:DatatypeProperty ;
     rdfs:label "has_address" ;
+    rdfs:domain ns:Center .
     rdfs:range xsd:string .
 
 ns:has_phone a owl:DatatypeProperty ;
     rdfs:label "has_phone" ;
+    rdfs:domain ns:Center .
     rdfs:range xsd:string .
 
-ns:health_area a owl:Class ;
+ns:Health_area a owl:Class ;
     rdfs:label "health_area" .
 
 ns:managed_by a owl:ObjectProperty ;
     rdfs:label "managed_by" .
+    rdfs:domain ns:Center .
+    rdfs:range ns:Entity.
 
-ns:province a owl:Class ;
+ns:Province a owl:Class ;
     rdfs:label "province" .
 
 gn:locatedIn a owl:ObjectProperty ;
     rdfs:label "located in" .
 
-gn:name a owl:DatatypeProperty ;
-    rdfs:label "name" ;
-    rdfs:range xsd:string .
 
 rdfs:label a owl:DatatypeProperty ;
     rdfs:label "label" ;
+    rdfs:domain rdfs:Resource .
     rdfs:range xsd:string .
 
 geo:lat a owl:DatatypeProperty ;
     rdfs:label "lat" ;
+    rdfs:domain ns:Center .
     rdfs:range xsd:float .
 
 geo:long a owl:DatatypeProperty ;
     rdfs:label "long" ;
+    rdfs:domain ns:Center .
     rdfs:range xsd:float .
 

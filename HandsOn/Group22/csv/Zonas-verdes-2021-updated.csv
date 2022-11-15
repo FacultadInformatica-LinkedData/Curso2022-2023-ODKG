@@ -1,4 +1,4 @@
-identifier,archive_number,district,type,location,destinatation,solar_m2
+identifier,archive_number,district,type,location,destination,solar_m2
 http://www.group22.org/gz/resource/GreenZones/300000,300000,http://www.group22.org/gz/resource/District/D1,http://www.group22.org/gz/resource/GreenZone/G1,http://www.group22.org/gz/resource/Location/L1,http://www.group22.org/gz/resource/Destinatation/DES1,5025.42
 http://www.group22.org/gz/resource/GreenZones/300001,300001,http://www.group22.org/gz/resource/District/D1,http://www.group22.org/gz/resource/GreenZone/G1,http://www.group22.org/gz/resource/Location/L2,http://www.group22.org/gz/resource/Destinatation/DES2,26814.0
 http://www.group22.org/gz/resource/GreenZones/300002,300002,http://www.group22.org/gz/resource/District/D1,http://www.group22.org/gz/resource/GreenZone/G1,http://www.group22.org/gz/resource/Location/L3,http://www.group22.org/gz/resource/Destinatation/DES1,2979.2

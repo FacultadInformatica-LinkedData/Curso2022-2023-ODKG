@@ -1,0 +1,16 @@
+PREFIX vocab: <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#>
+SELECT ?number ?solar WHERE { 
+    ?s a vocab:GreenZone. 
+    ?s vocab:districtInfo ?number.
+    ?s vocab:solar ?solar
+}
+
+
+PREFIX vocab: <http://www.odkg.group22.org/gz/ontology/MadridGreenZones#>
+SELECT ?woodland ?namespecies ?units WHERE { 
+    ?woodland a vocab:Woodland. 
+    ?woodland vocab:hasSpecies ?species.
+    ?species a vocab:Species.
+    ?species vocab:speciesName ?namespecies.
+    ?woodland vocab:infoSpecies ?units
+}

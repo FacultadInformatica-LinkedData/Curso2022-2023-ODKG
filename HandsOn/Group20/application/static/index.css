@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+  background-color: lightblue;
+  padding: 1rem;
+  color: gray;
+}
+
+.grid-container {
+  text-align: center;
+}
+
+.container-fluid {
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#map {
+  height: 750px;
+  width: 1350px;
+}

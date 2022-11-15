@@ -10,19 +10,21 @@
 :municipality7 a onto:Municipality;
 	onto:hasMunicipalityName Madrid^^xsd:string .
 
+:microgramo_por_metrocubico :isInstanceOf saref:UnifOfMeasure;
+
 :station4 a onto:Station;
 	onto:hasStationName Puerta España^^xsd:string;
     onto:isLocatedIn municipality7;
-	onto:latitude -37.122.567^^xsd:real;
-	onto:longitude 404.238.823^^xsd:real;
+	onto:latitude -37.122.567^^xsd:float;
+	onto:longitude 404.238.823^^xsd:float;
     saref:hasMeasurement magnitude9 .
 	
 
 :magnitude9 a onto:Magnitude;
 	onto:hasMagnitudeName NO2^^xsd:string;
-	onto:isMeasureIn ug/m2^^xsd:string;
+	saref:isMeasureIn microgramo_por_metrocubico;
 	saref:hasTimestamp 2022-04-01T11:15:30.000+0200^^xsd:dateTime;
-	saref:hasValue 10.0^^xsd:real .
+	saref:hasValue 10.0^^xsd:float .
 	
 
 

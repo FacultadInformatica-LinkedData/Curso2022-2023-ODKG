@@ -4,6 +4,7 @@ from settings import HELIO_SERVER
 sparql = SPARQLWrapper(HELIO_SERVER)
 
 SELECT_ALL = """
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX ns: <http://placasdemadrid.linkeddata.es/placas-madrid/ontology/>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>

@@ -19,10 +19,10 @@ DISTRICT_COLORS = {
     "Centro" : "black",
     "Salamanca" : "purple",
     "Tetuán" : "gray",
-    "Moratalaz" : "lightgreen",
+    "Moratalaz" : "lightblue",
     "Latina" : "orange",
     "Chamberí" : "beige",
-    "Puente_de_Vallecas" : "lightgray",
+    "Puente de Vallecas" : "lightgray",
     "Carabanchel" : "cadetblue",
     "Retiro" : "red",
 }

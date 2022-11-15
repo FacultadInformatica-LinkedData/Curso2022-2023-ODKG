@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+	<!-- <link rel="STYLESHEET" href="../main.css"> -->
+	<link rel="STYLESHEET" href="main.css">
+	<title>Green Zones</title>
+	<script type="text/javascript" src = "http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.11&sensor=false" type="text/javascript"></script>
+	<meta charset="utf-8" >
+	<!-- los scripts header, implementan el jquery pada pooder realizar las funciones de scrolldown para poder cambiar los headers mientras realizamos el scrolldown, de modo 
+		que siempre tenemos el scrolldown en la pagina con los botones de navegacion listos-->
+</head>
+<body>
+	<header>
+		<div class="textWrapper">
+			<H1>GREEN ZONES</H1>
+		</div>
+	</header>
+	<div class="marginTopOpen" id = "noHeader" style="color: black;">
+		<select name="idSelectSpecie" id="idSelectSpecie" onchange="selectSpecie();">
+			<option value="0">Seleccione una especie</option>
+			<option value="ACER_NEGUNDO">ACER_NEGUNDO</option>
+			<option value="ACER_PSEUDOPLATANUS">ACER_PSEUDOPLATANUS</option>
+			<option value="AESCULUS_HIPPOCASTANUM">AESCULUS_HIPPOCASTANUM</option>
+			<option value="CATALPA_BIGNONIOIDES">CATALPA_BIGNONIOIDES</option>
+			<option value="CEDRUS_DEODARA">CEDRUS_DEODARA</option>
+			<option value="CELTIS_AUSTRALIS">CELTIS_AUSTRALIS</option>
+			<option value="CERCIS_SILIQUASTRUM">CERCIS_SILIQUASTRUM</option>
+			<option value="CUPRESSUS_ARIZONICA">CUPRESSUS_ARIZONICA</option>
+			<option value="CUPRESSUS_SEMPERVIRENS">CUPRESSUS_SEMPERVIRENS</option>
+			<option value="CUPRESSUS_X_LEYLANDII">CUPRESSUS_X_LEYLANDII</option>
+			<option value="GLEDITSIA_TRIACANTHOS">GLEDITSIA_TRIACANTHOS</option>
+			<option value="KOELREUTERIA_PANICULATA">KOELREUTERIA_PANICULATA</option>
+			<option value="LIGUSTRUM_JAPONICUM">LIGUSTRUM_JAPONICUM</option>
+			<option value="LIQUIDAMBAR_STYRACIFLUA">LIQUIDAMBAR_STYRACIFLUA</option>
+			<option value="MELIA_AZEDARACH">MELIA_AZEDARACH</option>
+			<option value="MORUS_ALBA">MORUS_ALBA</option>
+			<option value="OTROS">OTROS</option>
+			<option value="PINUS_HALEPENSIS">PINUS_HALEPENSIS</option>
+			<option value="PINUS_PINEA">PINUS_PINEA</option>
+			<option value="PLATANUS_ORIENTALIS">PLATANUS_ORIENTALIS</option>
+			<option value="PLATANUS_X_HISPANICA">PLATANUS_X_HISPANICA</option>
+			<option value="POPULUS_ALBA">POPULUS_ALBA</option>
+			<option value="POPULUS_ALBA_BOLLEANA">POPULUS_ALBA_BOLLEANA</option>
+			<option value="POPULUS_X_CANADENSIS">POPULUS_X_CANADENSIS</option>
+			<option value="PRUNUS_CERASIFERA">PRUNUS_CERASIFERA</option>
+			<option value="PYRUS_CALLERYANA">PYRUS_CALLERYANA</option>
+			<option value="PRUNUS_CERASIFERA_SUBSP_PISSARDII">PRUNUS_CERASIFERA_SUBSP_PISSARDII</option>
+			<option value="PYRUS_CALLERYANA_CHANTICLEER">PYRUS_CALLERYANA_CHANTICLEER</option>
+			<option value="STYPHNOLOBIUM_JAPONICUM">STYPHNOLOBIUM_JAPONICUM</option>
+			<option value="ROBINIA_PSEUDOACACIA">ROBINIA_PSEUDOACACIA</option>
+			<option value="ULMUS_MINOR">ULMUS_MINOR</option>
+			<option value="ULMUS_PUMILA">ULMUS_PUMILA</option>
+			<option value="ULMUS_SP">ULMUS_SP</option>
+		</select>
+		<br>
+		<div id = "mostrarSpecies" style="color: black;">
+			
+		</div>
+	</div>
+	<div class="marginTopOpen" id = "noHeader">
+		<select name="idSelectDistrict" id="idSelectDistrict" onchange="selectDistrict();">
+			<option value="0">Seleccione un distrito</option>
+			<option value="CENTRO">CENTRO</option>
+			<option value="ARGANZUELA">ARGANZUELA</option>
+			<option value="RETIRO">RETIRO</option>
+			<option value="SALAMANCA">SALAMANCA</option>
+			<option value="CHAMARTIN">CHAMARTIN</option>
+			<option value="TETUAN">TETUAN</option>
+			<option value="CHAMBERI">CHAMBERI</option>
+			<option value="FUENCARRAL_EL_PARDO">FUENCARRAL_EL_PARDO</option>
+			<option value="MONCLOA_ARAVACA">MONCLOA_ARAVACA</option>
+			<option value="LATINA">LATINA</option>
+			<option value="CARABANCHEL">CARABANCHEL</option>
+			<option value="USERA">USERA</option>
+			<option value="PUENTE_DE_VALLECAS">PUENTE_DE_VALLECAS</option>
+			<option value="MORATALAZ">MORATALAZ</option>
+			<option value="CIUDAD_LINEAL">CIUDAD_LINEAL</option>
+			<option value="HORTALEZA">HORTALEZA</option>
+			<option value="VILLAVERDE">VILLAVERDE</option>
+			<option value="VILLA_DE_VALLECAS">VILLA_DE_VALLECAS</option>
+			<option value="VICALVARO">VICALVARO</option>
+			<option value="SAN_BLAS_CANILLEJAS">SAN_BLAS_CANILLEJAS</option>
+			<option value="BARAJAS">BARAJAS</option>
+		</select>
+		<br>
+		<div id = "mostrarDistrict" style="color: black;">
+			
+		</div>
+		
+	</div>
+	<div id="map_canvas" style="width: 800px; height:500px;"></div>
+
+</body>
+<script type="text/javascript">
+	function selectSpecie(){
+		var all = document.getElementById("idSelectSpecie").value
+		
+		var myUrl="http://localhost:9000/sparql?query=PREFIX%20vocab%3A%20%3Chttp%3A%2F%2Fwww.odkg.group22.org%2Fgz%2Fontology%2FMadridGreenZones%23%3E%0ASELECT%20%3Fnamedistrict%20%3Fwoodland%20%3Fnamespecies%20%3Funits%20WHERE%20%7B%20%0A%20%20%20%20%3Fdistrict%20a%20vocab%3ADistrict.%0A%20%20%20%20%3Fdistrict%20vocab%3AdistrictName%20%3Fnamedistrict.%0A%20%20%20%20%3Fdistrict%20vocab%3AhasWoodland%20%3Fwoodland.%0A%20%20%20%20%3Fwoodland%20a%20vocab%3AWoodland.%20%0A%20%20%20%20%3Fwoodland%20vocab%3AhasSpecies%20%3Fspecies.%0A%20%20%20%20%3Fspecies%20a%20vocab%3ASpecies.%0A%20%20%20%20%3Fspecies%20vocab%3AspeciesName%20%3Fnamespecies.%0A%20%20filter(%20%3Fnamespecies%20%3D%20%22"+String(all)+"%22).%0A%20%20%20%20%3Fwoodland%20vocab%3AunitSpecies%20%3Funits%0A%7D";
+		$.ajax({
+			url: myUrl,
+			type: 'GET',
+			dataType: "json",
+			success: function (results) {
+				//do something
+				var text = "Specimen per district: <br/><br/><br/>"
+				var total = 0
+
+                // map options
+                var options = {
+					zoom: 11,
+					center: new google.maps.LatLng(40.412402, -3.707443), // centered Es
+					mapTypeId: google.maps.MapTypeId.TERRAIN,
+					mapTypeControl: false
+				}
+				var locations = [
+					['CENTRO', 40.412402, -3.707443],
+					['ARGANZUELA', 40.399003, -3.710149],
+					['RETIRO', 40.411691, -3.674895],
+					['SALAMANCA', 40.428207, -3.686765],
+					['CHAMARTIN', 40.461754, -3.686575],
+					['TETUAN', 40.459177, -3.697976],
+					['CHAMBERI', 40.434626, -3.713214],
+					['FUENCARRAL_EL_PARDO', 40.534194, -3.784459],
+					['MONCLOA_ARAVACA', 40.442592, -3.753642],
+					['LATINA', 40.404063, -3.745776],
+					['CARABANCHEL', 40.377977, -3.751264],
+					['USERA', 40.382647, -3.709860],
+					['PUENTE_DE_VALLECAS', 40.387219, -3.669548],
+					['MORATALAZ', 40.407276, -3.656971],
+					['CIUDAD_LINEAL', 40.445671, -3.654371],
+					['HORTALEZA', 40.469534, -3.642532],
+					['VILLAVERDE',40.346914, -3.710678],
+					['VILLA_DE_VALLECAS', 40.367058, -3.606144],
+					['VICALVARO', 40.394076, -3.602903 ],
+					['SAN_BLAS_CANILLEJAS', 40.432208, -3.627872 ],
+					['BARAJAS', 40.465436, -3.595149 ]
+					]
+				var map = new google.maps.Map(document.getElementById('map_canvas'), options)
+
+				for(var i = 0; i<results.results.bindings.length;i++){
+					text = text+"-"+results.results.bindings[i].namedistrict.value+": "+results.results.bindings[i].units.value+"<br/>"
+					total = total + parseInt(results.results.bindings[i].units.value)
+                    var pos0 = 0
+                    var pos1 = 0
+                    for(var j = 0; j<locations.length;j++){
+                        if(locations[j][0] === results.results.bindings[i].namedistrict.value){
+                            pos0 = locations[j][1]
+                            pos1 = locations[j][2]
+                        }
+                        
+                    }
+					var marker = new google.maps.Marker({
+                        
+                        position: new google.maps.LatLng(pos0, pos1),
+                        map: map,
+                        title: 'Click Me ' + i
+                    });
+
+                    // process multiple info windows
+                    (function(marker, i) {
+                        // add click event
+                        google.maps.event.addListener(marker, 'click', function() {
+                            infowindow = new google.maps.InfoWindow({
+                                content: ''+results.results.bindings[i].namedistrict.value+": "+results.results.bindings[i].units.value
+                            });
+                            infowindow.open(map, marker);
+                        });
+                    })(marker, i);
+				}
+				text = text + "<br/><br/> Total: "+total
+				$("#mostrarSpecies").html(text)
+			},
+			error: function(e) {
+				alert('Error: '+e);
+			}
+		});
+	}
+
+	function selectDistrict(){
+		var all = document.getElementById("idSelectDistrict").value
+		var myUrl="http://localhost:9000/sparql?query=PREFIX%20vocab%3A%20%3Chttp%3A%2F%2Fwww.odkg.group22.org%2Fgz%2Fontology%2FMadridGreenZones%23%3E%0ASELECT%20%3Fnamedistrict%20%3Fwoodland%20%3Fnamespecies%20%3Funits%20WHERE%20%7B%20%0A%20%20%20%20%3Fdistrict%20a%20vocab%3ADistrict.%0A%20%20%20%20%3Fdistrict%20vocab%3AdistrictName%20%3Fnamedistrict.%0A%20%20filter%20(%3Fnamedistrict%20%3D%20%22TETUAN%22).%0A%20%20%20%20%3Fdistrict%20vocab%3AhasWoodland%20%3Fwoodland.%0A%20%20%20%20%3Fwoodland%20a%20vocab%3AWoodland.%20%0A%20%20%20%20%3Fwoodland%20vocab%3AhasSpecies%20%3Fspecies.%0A%20%20%20%20%3Fspecies%20a%20vocab%3ASpecies.%0A%20%20%20%20%3Fspecies%20vocab%3AspeciesName%20%3Fnamespecies.%0A%20%20%20%20%3Fwoodland%20vocab%3AunitSpecies%20%3Funits%0A%7D%0A";
+		$.ajax({
+			url: myUrl,
+			type: 'GET',
+			dataType: "json",
+			success: function (results) {
+				//do something
+				var text = "Species in the district: <br/><br/><br/>"
+				var total = 0
+
+
+				// map options
+				var options = {
+					zoom: 11,
+					center: new google.maps.LatLng(40.412402, -3.707443), // centered Es
+					mapTypeId: google.maps.MapTypeId.TERRAIN,
+					mapTypeControl: false
+				}
+				var locations = [
+					['CENTRO', 40.412402, -3.707443],
+					['ARGANZUELA', 40.399003, -3.710149],
+					['RETIRO', 40.411691, -3.674895],
+					['SALAMANCA', 40.428207, -3.686765],
+					['CHAMARTIN', 40.461754, -3.686575],
+					['TETUAN', 40.459177, -3.697976],
+					['CHAMBERI', 40.434626, -3.713214],
+					['FUENCARRAL_EL_PARDO', 40.534194, -3.784459],
+					['MONCLOA_ARAVACA', 40.442592, -3.753642],
+					['LATINA', 40.404063, -3.745776],
+					['CARABANCHEL', 40.377977, -3.751264],
+					['USERA', 40.382647, -3.709860],
+					['PUENTE_DE_VALLECAS', 40.387219, -3.669548],
+					['MORATALAZ', 40.407276, -3.656971],
+					['CIUDAD_LINEAL', 40.445671, -3.654371],
+					['HORTALEZA', 40.469534, -3.642532],
+					['VILLAVERDE',40.346914, -3.710678],
+					['VILLA_DE_VALLECAS', 40.367058, -3.606144],
+					['VICALVARO', 40.394076, -3.602903 ],
+					['SAN_BLAS_CANILLEJAS', 40.432208, -3.627872 ],
+					['BARAJAS', 40.465436, -3.595149 ]
+					]
+				var map = new google.maps.Map(document.getElementById('map_canvas'), options)
+					
+
+
+				
+				for(var i = 0; i<results.results.bindings.length;i++){
+					text = text+"-"+results.results.bindings[i].namespecies.value+": "+results.results.bindings[i].units.value+"<br/>"
+					total = total + parseInt(results.results.bindings[i].units.value)
+                    var pos0 = 0
+                    var pos1 = 0
+                    for(var j = 0; j<locations.length;j++){
+                        if(locations[j][0] === all){
+                            pos0 = locations[j][1]
+                            pos1 = locations[j][2]
+                        }
+                        
+                    }
+					var marker = new google.maps.Marker({
+                        
+                        position: new google.maps.LatLng(pos0, pos1),
+                        map: map,
+                        title: 'Click Me ' + i
+                    });
+
+                    // process multiple info windows
+                    (function(marker, i) {
+                        // add click event
+                        google.maps.event.addListener(marker, 'click', function() {
+                            infowindow = new google.maps.InfoWindow({
+                                content: ""+results.results.bindings[i].namespecies.value+": "+results.results.bindings[i].units.value,
+                            });
+                            infowindow.open(map, marker);
+                        });
+                    })(marker, i);
+				}
+				text = text + "<br/><br/> Total: "+total
+				$("#mostrarDistrict").html(text)
+				
+			},
+			error: function(e) {
+				alert('Error: '+e);
+			}
+		});
+	}
+    
+</script>
+<script type="text/javascript">
+	// check DOM Ready
+	$(document).ready(function() {
+		// execute
+		(function() {
+			// map options
+			var options = {
+				zoom: 10,
+				center: new google.maps.LatLng(40.412402, -3.707443), // centered Es
+				mapTypeId: google.maps.MapTypeId.TERRAIN,
+				mapTypeControl: false
+			};
+			var locations = [
+					['CENTRO', 40.412402, -3.707443],
+					['ARGANZUELA', 40.399003, -3.710149],
+					['RETIRO', 40.411691, -3.674895],
+					['SALAMANCA', 40.428207, -3.686765],
+					['CHAMARTIN', 40.461754, -3.686575],
+					['TETUAN', 40.459177, -3.697976],
+					['CHAMBERI', 40.434626, -3.713214],
+					['FUENCARRAL_EL_PARDO', 40.534194, -3.784459],
+					['MONCLOA_ARAVACA', 40.442592, -3.753642],
+					['LATINA', 40.404063, -3.745776],
+					['CARABANCHEL', 40.377977, -3.751264],
+					['USERA', 40.382647, -3.709860],
+					['PUENTE_DE_VALLECAS', 40.387219, -3.669548],
+					['MORATALAZ', 40.407276, -3.656971],
+					['CIUDAD_LINEAL', 40.445671, -3.654371],
+					['HORTALEZA', 40.469534, -3.642532],
+					['VILLAVERDE',40.346914, -3.710678],
+					['VILLA_DE_VALLECAS', 40.367058, -3.606144],
+					['VICALVARO', 40.394076, -3.602903 ],
+					['SAN_BLAS_CANILLEJAS', 40.432208, -3.627872 ],
+					['BARAJAS', 40.465436, -3.595149 ]
+					];
+			// init map
+			var map = new google.maps.Map(document.getElementById('map_canvas'), options);
+
+			// NY and CA sample Lat / Lng
+			var southWest = new google.maps.LatLng(40.744656, -74.005966);
+			var northEast = new google.maps.LatLng(34.052234, -118.243685);
+			var lngSpan = northEast.lng() - southWest.lng();
+			var latSpan = northEast.lat() - southWest.lat();
+
+		})();
+	});
+	</script>
+</html>

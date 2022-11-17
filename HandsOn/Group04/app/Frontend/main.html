@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang=en>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>OpenMadrid - Fountains and restrooms</title>
+    </head>
+
+    <body>
+    
+        <div id="header" class="parallax">
+            <img id="logo" src="assets/logo.png" style="max-width:60%;">
+        </div>
+        
+        <div class="wrapper">
+            <h1>Search by District</h1>
+            <div class="parameters">
+                <div class="elements">
+                    <h1>Select the elements to search</h1>
+                    <div id="boxes">
+                        <div class="checkbox">
+                            <p>Fountains</p>
+                            <input type="checkbox" id="fountains" checked>
+                        </div>
+                    
+                        <div class="checkbox">
+                            <p>Restrooms</p>
+                            <input type="checkbox" id="restrooms">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="elements">
+                    <h1>Choose the district</h1>
+                    <div class="select">
+                        <select name="format" id="format">
+                           <option value="1.0">Centro</option>
+                           <option value="2.0">Arganzuela</option>
+                           <option value="3.0">Retiro</option>
+                           <option value="4.0">Salamanca</option>
+                           <option value="5.0">Chamartín</option>
+                           <option value="6.0">Tetuán</option>
+                           <option value="7.0">Chamberí</option>
+                           <option value="8.0">Fuencarral-El Pardo</option>
+                           <option value="9.0">Moncloa-Aravaca</option>
+                           <option value="10.0">Latina</option>
+                           <option value="11.0">Carabanchel</option>
+                           <option value="12.0">Usera</option>
+                           <option value="13.0">Puente de Vallecas</option>
+                           <option value="14.0">Moratalaz</option>
+                           <option value="15.0">Ciudad Lineal</option>
+                           <option value="16.0">Hortaleza</option>
+                           <option value="17.0">Villaverde</option>
+                           <option value="18.0">Villa de Vallecas</option>
+                           <option value="19.0">Vicálvaro</option>
+                           <option value="20.0">San Blas</option>
+                           <option value="21.0">Barajas</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="search">
+                <span><a onclick="request()" href="#result"></a></span>
+            </div>
+        </div>
+
+        <div id="result" class="parallax">
+            <div id="container">
+
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <h1>Search by Neighborhood</h1>
+            <div class="parameters">
+                <div class="elements">
+                    <h1>Select the elements to search</h1>
+                    <div id="boxes">
+                        <div class="checkbox">
+                            <p>Fountains</p>
+                            <input type="checkbox" id="linked_fountains" checked>
+                        </div>
+                    
+                        <div class="checkbox">
+                            <p>Restrooms</p>
+                            <input type="checkbox" id="linked_restrooms">
+                        </div>
+                    </div>
+                </div>
+                <div class="elements">
+                    <h1>Write the neighborhood</h1>
+                    <div class="box">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="input" name="txt" id="linked_search">
+                    </div>
+                </div>
+            </div>
+            <div class="search">
+                <span><a onclick="linked_request()" href="#linked_result"></a></span>
+            </div>
+        </div>
+
+        <div id="linked_result" class="parallax">
+            <div id="linked_container">
+
+            </div>
+        </div>
+
+        <footer>
+            ODKG - All rights reserved
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
